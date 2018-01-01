@@ -286,6 +286,7 @@ void* gop_server_start(void* what) {
 // Recive the returned message.
 
                     secret_encode(buffer_send, "blank");
+
                     send(
                           number_return,
                           buffer_send,
@@ -299,7 +300,6 @@ void* gop_server_start(void* what) {
                           10240,
                           0
                         );
-
 
                     usleep(step_connection * 1000000);
 

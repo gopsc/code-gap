@@ -700,6 +700,7 @@ int judgement_message_information(
         for ( i=0; i<=3; i++ ) {
 
             if (
+
                    strcmp(
                            gop_connection.how[i],
                           "Connectted"
@@ -711,6 +712,7 @@ int judgement_message_information(
                           "Sopi"
                          )
                    == 0
+
                ) {
 
                 strcpy(gop_connection.command[i], "Sopi.");}}
@@ -735,15 +737,14 @@ int judgement_message_information(
 // It means giving you  sopi
 //    when  a host send sopi
 
-        if ( that_site == 0 ) {
+        if ( strcmp(gop_connection.how[that_site], "Sopi") == 0 ) {
 
-            strcat      (buffer_send,      "Sopi."      );}
 
-        else {
+            output_print("string",    "Get Sopi back\n");
 
-            strcat      (buffer_send, "Who is that now?");}
+            strcat      (buffer_send, "Sopi."          );
 
-        return 1;}
+            return 1;}}
 
 //-----------------------------------------------
 

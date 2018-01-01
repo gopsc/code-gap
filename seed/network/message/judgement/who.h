@@ -42,6 +42,7 @@ int judgement_message_who(
 
     else {
 
-// This should not used in other situations
+// This is fine...
+// omg..
 
-        return 0;}}
+        return 1;}}

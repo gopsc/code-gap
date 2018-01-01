@@ -28,6 +28,16 @@ int control_message(
 //========================================================
 
         if (
+             ! judgement_message_blank(
+                                        that_site,
+                                        pointer_recv,
+                                        buffer_send
+                                      )
+           ) { return 0; }
+
+//========================================================
+
+        if (
                ! judgement_message_hello(
                                           that_site,
                                           pointer_recv,
@@ -67,8 +77,10 @@ int control_message(
         for ( i = 0; i <= 3; i++ ) {
 
             if (
+
                    strcmp( gop_connection.how[i], "Connectted" ) == 0 
             ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0 
+
                ) {
 
                 strcat(buffer_send, "Information of guest.\n"    );
@@ -130,7 +142,6 @@ int control_message(
 
             strcat(buffer_send, "Who is that?");}
 
-
         return 1;}
 
 
@@ -162,6 +173,7 @@ int control_message(
 
         if (
              ! judgement_message_blank(
+                                        that_site,
                                         pointer_recv,
                                         buffer_send
                                       )

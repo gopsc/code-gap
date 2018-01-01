@@ -44,7 +44,7 @@ int judgement_message_hello(
 
     else {
 
-// This is not used for other situations
+// This is fine...
 
-        return 0;}}
+        return 1;}}
 
