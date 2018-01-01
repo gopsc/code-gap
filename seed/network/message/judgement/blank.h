@@ -23,10 +23,12 @@ int judgement_message_blank(
 
     else {
 
+// It print every new cnonecting
+/*
         output_print("string", "Network "              );
         output_print("int",    (char*)&that_site       );
         output_print("string", " Got a blank message\n");
-
+*/
         strcat(buffer_send, "Who is that?");
 
         return 0;}}
