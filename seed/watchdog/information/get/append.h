@@ -70,12 +70,11 @@ int information_append(
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
 /*|*/   strcat(message, "Status           : ");                                                                                                          //|
-/*|*/   if ( that_flag.main   ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
-/*|*/   if ( that_flag.deamon ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
 /*|*/   if ( that_flag.dog    ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
 /*|*/   if ( that_flag.server ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
 /*|*/   if ( that_flag.client ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
 /*|*/   if ( that_flag.sound  ) { strcat(message, "o"); } else { strcat(message, " "); }                                           strcat(message, "\n");//|
+/*|*/   if ( that_flag.deamon ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
 /*|*/                                                                                                                                                    //|
 //|========================================================================================================================================================|
 

@@ -433,23 +433,17 @@ int judgement_message_information(
 
             else if ( pointer_recv == strstr(pointer_recv, "Status           : ") ) {
 
+// dog,
+// server,
+// client,
+// sound,
+// daemon
+
                 pointer_recv = strstr(pointer_recv, " :")+3;
 
 
-                if      ( *pointer_recv == 'o' ) {
 
-                    gop_connection.flag[that_site].main   = 1;}
-
-                pointer_recv++;
-                pointer_recv++;
-
-
-                if      ( *pointer_recv == 'o' ) {
-
-                    gop_connection.flag[that_site].deamon = 1;}
-
-                pointer_recv++;
-                pointer_recv++;
+                gop_connection.flag[that_site].main   = 1;
 
 
                 if      ( *pointer_recv == 'o' ) {
@@ -478,7 +472,15 @@ int judgement_message_information(
 
                 if      ( *pointer_recv == 'o' ) {
 
-                    gop_connection.flag[that_site].sound  = 1;}}
+                    gop_connection.flag[that_site].sound = 1;}
+
+                pointer_recv++;
+                pointer_recv++;
+
+
+                if      ( *pointer_recv == 'o' ) {
+
+                    gop_connection.flag[that_site].deamon = 1;}}
 
 
 
