@@ -1,7 +1,7 @@
 void ft_show( int site ) {
 
     double max_f   = 100;
-    double h       = 24;      // High
+    double h       = 23;      // High
     double w       = 40;      // Long
     double dirta_w = (N/4)/w;
 
