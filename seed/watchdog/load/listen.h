@@ -164,7 +164,9 @@ int load_listen() {
 // The last line was no enter
 //  so we don't need to judge did it get the pointer
 
-                       *pointer_enter = '\0';
+                        if ( pointer_enter != NULL ) {
+
+                           *pointer_enter = '\0';}
 
 // Tranform the convent
 
@@ -172,12 +174,13 @@ int load_listen() {
 
 
 // reset it
+                        if ( pointer_enter != NULL ) {
 
-                       *pointer_enter = '\n';
+                           *pointer_enter = '\n';
 
-                        pointer_enter ++;
+                            pointer_enter ++;
 
-                         number_step  ++;
+                             number_step  ++;}
 
 
 // end this loop when it's no more enter

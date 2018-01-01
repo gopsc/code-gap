@@ -17,13 +17,13 @@ int action_TxL() {
     char   buffer_commandline  [128];
 
 
-    strcpy(buffer_commandline, "gcc "                   );
-    strcat(buffer_commandline,  path_the                );
-    strcat(buffer_commandline, "/"                      );
-    strcat(buffer_commandline,  name_the                );
-    strcat(buffer_commandline, "/box/c/example/deamon.c");
-    strcat(buffer_commandline, " -o"                    );
-    strcat(buffer_commandline, " /etc/init.d/?"         );
+    strcpy(buffer_commandline, "gcc "                          );
+    strcat(buffer_commandline,  path_the                       );
+    strcat(buffer_commandline, "/"                             );
+    strcat(buffer_commandline,  name_the                       );
+    strcat(buffer_commandline, "/box/c/Linux/example/deamon.c" );
+    strcat(buffer_commandline, " -o"                           );
+    strcat(buffer_commandline, " /etc/init.d/?"                );
 
     system(buffer_commandline);
 
@@ -33,8 +33,8 @@ int action_TxL() {
     system("ln /etc/init.d/? /etc/rc6.d/K10?");
 
 
-    strcat(buffer_commandline, "service ? start"        );
-    system(buffer_commandline);
+    strcpy(buffer_commandline, "service ? restart" );
+    system(buffer_commandline                      );
 
 
     return 1;}
