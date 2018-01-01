@@ -304,15 +304,12 @@ int control_command(
 //-----------------------------------------------------------------------
 
         if ( strstr(that_command, "Clean update.") == that_command ) {
-<<<<<<< HEAD
-=======
 
             action_update_clean(that_site, buffer_send);}
 
 //-----------------------------------------------------------------------
 
         else {
->>>>>>> fcb2c5f34b1501b808a66e002230ce79a3233011
 
             action_else(that_site, that_command, buffer_send);
 

@@ -118,11 +118,7 @@ int  load_update(int that_site) {
                    != 0
                ) {
 
-                strcpy(gop_connection.command[i], "Clean update.");
 
-<<<<<<< HEAD
-                break;}}}}
-=======
             
                 strcpy(gop_connection.command[i], "Clean update.");
 
@@ -130,4 +126,3 @@ int  load_update(int that_site) {
 
 
   return 0;}
->>>>>>> fcb2c5f34b1501b808a66e002230ce79a3233011
