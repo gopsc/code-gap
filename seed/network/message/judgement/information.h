@@ -341,11 +341,13 @@ int judgement_message_information(
                *pointer_next = '\0';
 
 
-// The first  ip is local,
-// the second ip is blank
-//  in the final line
 
-                int number_ip = 2;
+
+
+// This is the index of
+// where u arrived
+
+                int number_ip = 1;
 
 
 
@@ -364,6 +366,17 @@ int judgement_message_information(
                     else {
 
                         number_ip ++;}}
+
+
+
+// The first  ip is local,
+// the second ip is blank
+//  in the final line
+//
+// and just can
+//     like a local ip
+
+                number_ip ++;
 
 
 
