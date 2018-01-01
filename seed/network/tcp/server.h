@@ -329,7 +329,7 @@ void* gop_server_start(void* what) {
 
                     if ( strcmp(gop_connection.how[num_site], "Wait") == 0 ) {
 
-                        output_print( "string", "Connectted  by     "               );
+                        output_print( "string", "Connectted  by    "                );
                         output_print( "string",  gop_connection.address_ip[num_site]);
                         output_print( "string", "\n"                                );
 

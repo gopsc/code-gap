@@ -157,7 +157,7 @@ void* gop_client_start(void* what) {
 
 // New connection, print it
 
-                        output_print("string", "Connectting to     "         );
+                        output_print("string", "Connectting to    "          );
                         output_print("string",  gop_connection.address_ip[0] );
                         output_print("string", "\n"                          );
 
