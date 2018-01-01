@@ -1,0 +1,10 @@
+
+/*
+    ofstream that_file;
+
+    that_file.open(file_name, ios::app );
+
+    that_file << words;
+
+    that_file.close();}
+*/

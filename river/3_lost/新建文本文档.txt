@@ -1,0 +1,47 @@
+    
+         
+         
+           Do
+           
+           
+           If l(t) < 0 And l(t + 1) >= 0 Then
+                t = 0
+                Exit Do
+            End If
+            If l(t) > 0 And l(t + 1) <= 0 Then
+                t = 0
+                Exit Do
+            End If
+            If l(t + 1) - l(t) < 0 And l(t + 2) - (t + 1) >= 0 Then
+                t = 0
+                Exit Do
+            End If
+            If l(t + 1) - l(t) > 0 And l(t + 2) - (t + 1) <= 0 Then
+                t = 0
+                Exit Do
+            End If
+
+            If t = 1758 Then
+                t = 0
+                Exit Do
+            End If
+
+
+            For i = 0 To 228
+               FX(i) = FX(i) + l(t) * Sin(t * (i + 60))
+               FS(i) = FS(i) + l(t) * (0 - Cos(t * (i + 60)))
+            Next
+            
+            t = t + 1
+           Loop
+           
+           
+           
+           ';;;;;;;;;;;;;;;;;;;;;
+          For iii = 0 To 228
+            For i = 0 To 20
+                Me.Line (iii * 10 + i, h - FS(iii) / 10)-(iii * 10 + i, h), RGB(0, 0, 255)
+            Next
+
+
+          Next
