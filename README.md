@@ -11,3 +11,4 @@ this is a program with my learning,
  ./TxL/seed/box/Linux/seed.sh
 
  then it will make a file named '?'
+s
