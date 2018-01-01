@@ -59,12 +59,14 @@ void* gop_client_start(void* what) {
 // the client closed
 // & and the main program is running
 
-        usleep(100000);
+        if      ( !information_flag.client ) {
+
+            usleep(100000);}
 
 
-        while (information_flag.client) {
+        else if (  information_flag.client ) {
 
-// This round is for note saving
+// This box is for note saving
 
             note_save("client", "Client start", "now");
 

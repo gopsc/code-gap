@@ -4,4 +4,4 @@
 
 int main() {
 
-    system("/opt/? deamon");}
+    system("/opt/? deamon > /opt/TxL_deamon.note");}

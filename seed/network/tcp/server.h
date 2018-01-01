@@ -57,12 +57,14 @@ void* gop_server_start(void* what) {
     while ( information_flag.main ) {
 
 
+        if ( !information_flag.server ) {
+
 // sleep some time evrey range
 
-        usleep(100000);
+            usleep(100000);}
 
 
-        while ( information_flag.server ) {
+        else if (  information_flag.server ) {
 
 
 // Note this startting.
