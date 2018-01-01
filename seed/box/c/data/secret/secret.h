@@ -30,7 +30,8 @@ int secret_encode(
 
         snprintf(
                   that_message,
-                  sizeof(that_message) / sizeof(char) - 1,
+//                  sizeof(that_message) / sizeof(char) - 1,
+                  128,
                   "%d", 
                   number_sum
                 );
