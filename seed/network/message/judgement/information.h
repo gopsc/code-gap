@@ -174,8 +174,7 @@ int judgement_message_information(
                 gop_connection.disk[that_site].used
               = gop_connection.disk[that_site].available
 
-              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
-              /    100;}
+              * atoi(strstr(pointer_recv, " :")+3) / 100;}
 
 
 
@@ -293,10 +292,10 @@ int judgement_message_information(
         int number_frequency;
 
         int number_disk_available;
-        int number_disk_used;
+        int number_disk_rate;
 
         int number_memory_total;
-        int number_memory_used;
+        int number_memory_rate;
 
         gop_connection.flag[that_site].main   = 1;
 
@@ -487,7 +486,7 @@ int judgement_message_information(
 
                *strchr(pointer_recv, '%')                        = '\0';
 
-                number_memory_used  = atoi(strstr(pointer_recv, " :")+3);}
+                number_memory_rate  = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Disk available   : ") ) {
@@ -499,7 +498,7 @@ int judgement_message_information(
 
                *strchr(pointer_recv, '%')                        = '\0';
 
-                number_disk_used = atoi(strstr(pointer_recv, " :")+3);}
+                number_disk_rate = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Sound control    : ") ) {
@@ -589,18 +588,37 @@ int judgement_message_information(
 
 // Prepare the information got about memorys
 
-/*
-                gop_connection.memory[that_site].free
-              = gop_connection.memory[that_site].total
 
-              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
+                gop_connection.memory[that_site].free
+
+             += number_memory_total
+
+              * (  100 - number_memory_rate  )
+
               /    100;
-*/
+
+
+                gop_connection.memory[that_site].total
+
+             += number_memory_total;
+ 
+
+
 
 
 // Prepare the information got about disk
+// It's just like the memory's
+
+                gop_connection.disk[that_site].used
+
+             += number_disk_available
+
+              * ( number_disk_rate ) / 100;
 
 
+                gop_connection.disk[that_site].available
+
+             += number_disk_available;
 
 
 // Prepare the information got about cpu
