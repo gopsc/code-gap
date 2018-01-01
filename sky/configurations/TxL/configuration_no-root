@@ -11,7 +11,8 @@
 
 path              /data/data/com.termux/files/home/TxL
 name              seed
-data              trees/0
+data              trees
+backup            river
 
 
 

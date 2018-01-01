@@ -8,27 +8,67 @@ int  load_update(
                 ) {
 
 
-    char   buffer_commandline_rm[129];
-    char   buffer_commandline_mv[129];
 
-    int    num_file   = 0;
-    char   buffer_file[129];
-    char   buffer_words[10240];
-    char   buffer_update[129];
-    char   buffer_mix[129];
+// This is for saving the id
+//   of each file
 
-    strcpy(buffer_commandline_rm, "rm -rf "        );
-    strcat(buffer_commandline_rm, path_the         );
-    strcat(buffer_commandline_rm, "/"              );
-    strcat(buffer_commandline_rm, name_the         );
+    int    number_file   = 0;
 
-    strcpy(buffer_commandline_mv, "mv "            );
-    strcat(buffer_commandline_mv, path_the         );
-    strcat(buffer_commandline_mv, "/downloads");
-    strcat(buffer_commandline_mv, " "              );
-    strcat(buffer_commandline_mv, path_the         );
-    strcat(buffer_commandline_mv, "/"              );
-    strcat(buffer_commandline_mv, name_the         );
+
+// This is for saving the name of the file
+
+    char   buffer_file  [128];
+
+
+// This is for saving the convent of the file
+
+    char   buffer_words [10240];
+
+
+
+// This is for saving the path of the download file
+
+    char   buffer_update[128];
+
+
+
+// This is for saving the mixing number of the file
+
+    char   buffer_mix   [128];
+
+
+
+
+
+
+
+// Check where the river saved
+
+    int number_backup = 1;
+
+
+
+
+
+
+// This is for the command of moving file
+
+    char   buffer_commandline_save[128];
+    char   buffer_commandline_load[128];
+
+
+    strcpy(buffer_commandline_save, "mv "            );
+    strcat(buffer_commandline_save, path_the         );
+    strcat(buffer_commandline_save, "/"              );
+    strcat(buffer_commandline_save, name_the         );
+
+    strcpy(buffer_commandline_load, "mv "            );
+    strcat(buffer_commandline_load, path_the         );
+    strcat(buffer_commandline_load, "/downloads"     );
+    strcat(buffer_commandline_load, " "              );
+    strcat(buffer_commandline_load, path_the         );
+    strcat(buffer_commandline_load, "/"              );
+    strcat(buffer_commandline_load, name_the         );
 
     strcpy(gop_connection.update[that_site],     "");
 
@@ -38,8 +78,8 @@ int  load_update(
 
 
 
-    commandline_get(buffer_commandline_rm, buffer_words);
-    commandline_get(buffer_commandline_mv, buffer_words);
+    commandline_get(buffer_commandline_save, buffer_words);
+    commandline_get(buffer_commandline_load, buffer_words);
 
 
 
@@ -63,7 +103,7 @@ int  load_update(
 
         if ( !is_file(buffer_mix) ) {
 
-                      num_file  = 0;
+                   number_file  = 0;
             strcpy(buffer_file, buffer_update);
             strcat(buffer_file, ".0");
 
@@ -72,7 +112,7 @@ int  load_update(
 
                 file_get (buffer_file,   buffer_words);
 
-                if ( num_file == 0 ) {
+                if ( number_file == 0 ) {
 
                     file_save  (buffer_mix, buffer_words);}
 
@@ -80,10 +120,10 @@ int  load_update(
 
                     file_append(buffer_mix, buffer_words);}
 
-                num_file++;
+                number_file++;
                 strcpy(buffer_file, buffer_update);
                 strcat(buffer_file, "."          );
-                snprintf(buffer_words, sizeof(buffer_words) / sizeof(char) - 1, "%d", num_file);
+                snprintf(buffer_words, sizeof(buffer_words) / sizeof(char) - 1, "%d", number_file);
                 strcat(buffer_file, buffer_words );}
 
 
@@ -97,8 +137,8 @@ int  load_update(
 
     strcpy(gop_connection.update[that_site], path_the);
 
-    commandline_get(buffer_commandline_rm, buffer_words);
-    commandline_get(buffer_commandline_mv, buffer_words);
+    commandline_get(buffer_commandline_save, buffer_words);
+    commandline_get(buffer_commandline_load, buffer_words);
 
     output_print( "string", "Done.\n" );
 

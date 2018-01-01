@@ -12,6 +12,7 @@
 path              /opt/TxL
 name              seed
 data              trees
+backup            river
 
 
 

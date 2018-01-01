@@ -95,9 +95,11 @@ int action_update(
 
 
             for (
+
                     pointer_update  =        buffer_update_words     ;
                     pointer_update != NULL                           ;
                     pointer_update  = strchr(pointer_update + 1, ',')
+
                 ) {
 
 
