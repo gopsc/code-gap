@@ -1,0 +1,8 @@
+2017年6月3日 11:56
+fft by Python3
+import math
+sound = []
+N = 4096
+w = 456
+F = 1
+展开全文

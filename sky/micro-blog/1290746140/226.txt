@@ -1,0 +1,3 @@
+2016年5月3日 05:19
+Formula Euler : ∫±∞ f(t)e^(-iωt) dx
+=∫±∞ f(t)·1／(cos(ωt)+isin(ωt)) dx

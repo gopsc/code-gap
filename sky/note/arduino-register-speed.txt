@@ -1,0 +1,171 @@
+
+
+
+
+Arduino Uno 采样速度
+
+
+
+首先测试一下普通的 Arduino UNO 的采样速度
+
+// the setup routine runs once when you press reset:
+
+void setup() {
+
+  // initialize serial communication at 9600 bits per second:
+
+  Serial.begin(9600);
+
+  analogReference(INTERNAL); //调用板载1.1V基准源
+
+}
+
+ 
+
+void loop() {
+
+  int i;
+
+  float voltage;
+
+  int sensorValue;
+
+  unsigned long elsp=millis();
+
+  for (i=0;i<10000;i++)
+
+    {
+
+      // read the input on analog pin 0:
+
+      sensorValue = analogRead(A0);
+
+    } 
+
+  Serial.println(millis()-elsp);
+
+  delay(10000);
+
+}
+ 
+
+运行结果是 1120 左右，就是说采样10000次用时1.12s，采样频率大约是 8928.57Hz (次/秒)。
+
+找了一段代码【参考6】能够提高采样速度
+
+
+// defines for setting and clearing register bits
+
+#ifndef cbi
+
+#define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit))
+
+#endif
+
+#ifndef sbi
+
+#define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
+
+#endif
+ 
+
+写个程序测试一下
+
+
+// the setup routine runs once when you press reset:
+
+void setup() {
+
+  // initialize serial communication at 9600 bits per second:
+
+  Serial.begin(9600);
+
+  analogReference(INTERNAL); //调用板载1.1V基准源
+
+ 
+
+// set prescale to 16
+
+sbi(ADCSRA,ADPS2) ;
+
+cbi(ADCSRA,ADPS1) ;
+
+cbi(ADCSRA,ADPS0) ; 
+
+}
+
+ 
+
+ 
+
+void loop() {
+
+  int i;
+
+  float voltage;
+
+  int sensorValue;
+
+  unsigned long elsp=millis();
+
+  for (i=0;i<10000;i++)
+
+    {
+
+      // read the input on analog pin 0:
+
+      sensorValue = analogRead(A0);
+
+       
+
+    } 
+
+  Serial.println(millis()-elsp);
+
+  delay(10000);
+
+}
+ 
+
+运行输出结果在 170 左右，就是说采样10000次用时0.170s，采样频率大约是 58823.53Hz (次/秒)。
+
+
+
+
+原理上来说Arduino 的 ADC 是用一种逐次逼近比较的方法来进行ADC转换的。通俗的说就是内部有一个比较器，每次内部升高一个电压和外部指定的Pin进行比较，根据大于小于来判定外部指定脚上的电压。资料说做这样一个比较大约需要10次，13个机器周期。而比较的频率是主控频率分频给出来的，有一个分频因子，默认是128，分频因子越小，比较的速度也就越快。
+
+
+1 2 3 speed
+0 0 0 2
+0 0 1 2
+0 1 0 4
+...   128
+
+
+这里只是简单说一下，如果想了解ADC具体的工作原理，请阅读参考中提到的文章。
+
+
+多说两句批评一下《Arduino技术内幕》这本书，刚开始我是阅读这本书来学习Arduino ADC的，但是阅读的时候感觉一直在外面游荡，不知道是原作者不懂还是翻译的人不明白，反正这一章的介绍让我一头雾水。
+
+
+
+
+
+参考：
+
+1.	http://www.geek-workshop.com/thread-1848-1-1.html Arduino入门教程–第十七课–使用内部基准源进行ADC采样
+
+2.	冷知识-这次讲ADC采样率-11月8号更新-上传高速率采样库-后续加入示波器库
+http://www.geek-workshop.com/thread-11511-1-1.html
+
+3.	http://apcmag.com/arduino-analog-to-digital-converter-how-it-works.htm/ 介绍 Arduino ADC 如何工作
+
+4.	http://www.microsmart.co.za/technical/2014/03/01/advanced-arduino-adc/
+
+5.	http://wenku.baidu.com/link?url=I3DA7sWeIOxPntLf89u_MO8V30InxZlEWzDu7BxsXPQlJtprgkzUsdQmIEiBPSOBrdq1_iccg-qxxkOh1ROvfz3C9vbt55Axy_f1JAFZJTq 基于Arduino的音乐频谱显示器方案概述
+
+6.	http://forum.arduino.cc/index.php?topic=6549.0
+
+7.	http://meettechniek.info/embedded/arduino-analog.html Arduino: Analog measurements
+
+本条目发布于 2015 年 4 月 3 日 | 属于 Funny 分类，被贴了 Arduino 标签 | 作者是 ziv2013 |
