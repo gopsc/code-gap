@@ -42,7 +42,12 @@ int action_else(
 // still think
 // it's sop
 // but the connectter does not
-  
+
+
+
+
+
+
             if (
 
                    strcmp(gop_connection.how    [that_site], "Sop" ) == 0
@@ -53,15 +58,24 @@ int action_else(
 // When the sop meet this situation,
 //  get the sopi back.
 
+
+
+
+
+
                  output_print("string",      "Get sopi back.\n");
 
                  clean_connection(that_site, "sopi"            );
+
 
                  return 1;}
 
 
 
-            return 0;}
+// If this is not a server
+// do not do anything
+
+            return 1;}
 
 
 
@@ -87,7 +101,7 @@ int action_else(
 //  something happened,
 //  they got a little mess
 //
-//  there's 1 or 2 pieves message
+//  there's 1 or 2 pieces of message
 //
 // 'the sopi' still think it's sop
 //  This happened.
@@ -95,21 +109,45 @@ int action_else(
 //   and dose not know why
 //   and sopi still finished
 
+
+
+
             return 0;}
+
+
+
+
 
 
 
         else {
 
+// It's not "Information of ..."
+//      nor "Here"
+
+
 
             output_print( "string",         "Network "                    );
             output_print( "int"   ,  (char*)&that_site                    );
-            output_print( "string",         " dose not understand : \n\"" );
+            output_print( "string",         " dose not understand : \n"   );
+
+            output_print( "string",         "\\*"                         );
             output_print( "string",          that_command                 );
-            output_print( "string",         "\"\n"                        );}
+            output_print( "string",         "\n"                          );
+            output_print( "string",         "*\\"                         );}
+
+
+
+
 
 
         return 0;}
+
+
+
+// If it's not a user used
+//    this function
+// there must be a mistake
 
 
     return 0;}

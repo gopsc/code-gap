@@ -9,9 +9,13 @@ int judgement_message_command (
 
                               ) {
 
+// This function got a command of
+//   message and do something
 
 
 
+
+// This is for check what type is the user function
 
     char that_type[16];
 
@@ -19,6 +23,10 @@ int judgement_message_command (
 
 
 
+
+
+
+// For computer, the human was master, teacher ?
 
     if      (  that_site == -1 ) {
 
@@ -62,6 +70,8 @@ int judgement_message_command (
 
 
     if ( strcmp(that_type, "master") == 0 ) {
+
+
 
 
 
@@ -243,6 +253,10 @@ int judgement_message_command (
             return 0;}
 
 
+
+
+
+
         return 1;}
 
 
@@ -264,6 +278,11 @@ int judgement_message_command (
                 == 0
              ) {
 
+
+
+
+
+
 //-----------------------------------------------------------------------
 
         if      ( strcmp(that_command, "Sopi.") == 0 ) {
@@ -275,6 +294,7 @@ int judgement_message_command (
         else if ( strstr(that_command, "Update.") == that_command ) {
 
             action_update(that_site, that_command, buffer_send);}
+
 //-----------------------------------------------------------------------
 
         else if ( strstr(that_command,                     "Clean update.")  == that_command ) {
@@ -302,9 +322,15 @@ int judgement_message_command (
 
         else {
 
+// Something unknow is gotten,
+// handdle it and reutern the number means "wrong"
+
             action_else(that_site, that_command, buffer_send);
 
             return 0;}
+
+
+
 
 
         return 1;}
@@ -324,13 +350,17 @@ int judgement_message_command (
 
 
     else if (
-                strcmp( that_type, "host" )
-                == 0
+
+                 strcmp( that_type, "host" )
+                 == 0
+
              ) {
 
-
-
 // Host's "recived commands" are "judgement"
+// Here's host's send command control
+
+
+
 
 //-----------------------------------------------------------------------
 
@@ -347,7 +377,14 @@ int judgement_message_command (
             return 0;}
 
 
+
+
+
+
         return 1;}
+
+
+
 
 
     return 0;}
