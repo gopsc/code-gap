@@ -404,15 +404,15 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/blank.h"              );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judge/blank.h"                  );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/hello.h"              );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judge/hello.h"                  );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/who.h"                );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judge/who.h"                    );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/information.h"        );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judge/information.h"            );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/command.h"            );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judge/command.h"                );
 
 
 

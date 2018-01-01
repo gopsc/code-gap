@@ -151,13 +151,13 @@ int main( int argc, char *argv[] ) {
 
 
 
-// Judgement for the command typed
+// Judge for the command typed
 
-                judgement_message_command(
-                                           -1,
-                                           buffer_command,
-                                           buffer_command
-                                         );
+                judge_message_command(
+                                       -1,
+                                       buffer_command,
+                                       buffer_command
+                                     );
 
 
 

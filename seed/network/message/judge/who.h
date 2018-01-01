@@ -1,9 +1,11 @@
 
-int judgement_message_who(
-                             int   that_site,
-                             char* pointer_recv,
-                             char* buffer_send
-                         ) {
+int judge_message_who(
+
+                         int   that_site,
+                         char* pointer_recv,
+                         char* buffer_send
+
+                     ) {
 
 // This is gop station
 // Who is that now?

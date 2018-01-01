@@ -1,12 +1,12 @@
 
 
-int judgement_message_command (
+int judge_message_command (
 
-                                  int   that_site,
-                                  char* that_command,
-                                  char* buffer_send
+                              int   that_site,
+                              char* that_command,
+                              char* buffer_send
 
-                              ) {
+                          ) {
 
 // This function got a command of
 //   message and do something

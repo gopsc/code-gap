@@ -1,11 +1,11 @@
 
-int judgement_message_hello(
+int judge_message_hello(
 
-                               int   that_site,
-                               char* pointer_recv,
-                               char* buffer_send
+                           int   that_site,
+                           char* pointer_recv,
+                           char* buffer_send
 
-                           ) {
+                       ) {
 
 // This is gop station
 // Who is that now?

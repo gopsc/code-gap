@@ -1,4 +1,7 @@
 
+
+
+
 int control_message(
                        int   that_site,
                        char* buffer_recv,
@@ -14,7 +17,10 @@ int control_message(
 
 
 
-//========================================================
+
+
+
+
 
     if (
                strcmp(gop_connection.how[that_site], "Connectting") == 0
@@ -25,37 +31,52 @@ int control_message(
         strcpy( buffer_send, "This is gop station." );
         strcat( buffer_send, "\n");
 
-//========================================================
+
+
+
+
 
         if (
-             ! judgement_message_blank(
-                                        that_site,
-                                        pointer_recv,
-                                        buffer_send
-                                      )
+             ! judge_message_blank(
+                                    that_site,
+                                    pointer_recv,
+                                    buffer_send
+                                  )
            ) { return 0; }
 
-//========================================================
+
+
+
+
+
 
         if (
-               ! judgement_message_hello(
-                                          that_site,
-                                          pointer_recv,
-                                          buffer_send
-                                        )
+               ! judge_message_hello(
+                                      that_site,
+                                      pointer_recv,
+                                      buffer_send
+                                    )
            ) { return 0; }
 
-//========================================================
+
+
+
+
+
 
         if (
-               ! judgement_message_who(
-                                        that_site,
-                                        pointer_recv,
-                                        buffer_send
-                                      )
+               ! judge_message_who(
+                                    that_site,
+                                    pointer_recv,
+                                    buffer_send
+                                  )
            ) { return 0; }
 
-//========================================================
+
+
+
+
+
 // This is gop station, send information
 
         strcat         (buffer_send, "Information of host.\n");
@@ -70,7 +91,12 @@ int control_message(
                             information_sound,
                             information_flag
                            );
+
         strcat         (buffer_send, symbol_next );
+
+
+
+// Append th information of the clients
 
         int i;
 
@@ -98,7 +124,9 @@ int control_message(
 
                 strcat(buffer_send, symbol_next                  );}}
 
-//========================================================
+
+
+
 
 // This is gop station,
 // (command)
@@ -109,7 +137,9 @@ int control_message(
 
         pointer_recv = strchr(pointer_recv, '\n') + 1;
 
-//========================================================
+
+
+
 
 // Get information of host.
 
@@ -123,11 +153,11 @@ int control_message(
 
                 *pointer_next = '\0';}
 
-            judgement_message_command(
-                                          that_site,
-                                       pointer_recv,
-                                        buffer_send
-                                     );
+            judge_message_command(
+                                      that_site,
+                                   pointer_recv,
+                                    buffer_send
+                                 );
 
             if ( pointer_next != NULL ) {
 
@@ -156,7 +186,7 @@ int control_message(
 
 
 
-//========================================================
+
 
     else if (
                 strcmp(gop_connection.how[that_site], "Connectted")
@@ -169,55 +199,82 @@ int control_message(
         strcpy(buffer_send, "This is gop station.");
         strcat(buffer_send, "\n"                  );
 
-//========================================================
+
+
+
+
+
+
+
+
 
         if (
-             ! judgement_message_blank(
-                                        that_site,
-                                        pointer_recv,
-                                        buffer_send
-                                      )
+             ! judge_message_blank(
+                                    that_site,
+                                    pointer_recv,
+                                    buffer_send
+                                  )
            ) { return 0; }
 
-//========================================================
+
+
+
 
 // SHOW ITSELF
 
         if (
-               ! judgement_message_hello(
-                                          that_site,
-                                          pointer_recv,
-                                          buffer_send
-                                        )
+               ! judge_message_hello(
+                                      that_site,
+                                      pointer_recv,
+                                      buffer_send
+                                    )
             ) { return 0; }
 
-//========================================================
+
+
 
 // WHO IT IS
 
         if (
-               ! judgement_message_who(
-                                        that_site,
-                                        pointer_recv,
-                                        buffer_send
-                                      )
+               ! judge_message_who(
+                                    that_site,
+                                    pointer_recv,
+                                    buffer_send
+                                  )
            ) { return 0; }
 
+
+
+
 //========================================================
+
+
+
 
 // Other message just like audio
 
         control_message_data( that_site, buffer_send );
 
-//========================================================
 
+
+
+
+//========================================================
 // Get imformation.
 
         pointer_recv = strchr(pointer_recv, '\n') + 1;
 
+
+
+
 // Read the information of client.
 
         char* pointer_next;
+
+
+
+
+// we won't know how long it was and we judge it every time
 
         do {
 
@@ -227,11 +284,11 @@ int control_message(
 
                 *pointer_next = '\0';}
 
-            judgement_message_information(
-                                           that_site,
-                                           pointer_recv,
-                                           buffer_send
-                                         );
+            judge_message_information(
+                                       that_site,
+                                       pointer_recv,
+                                       buffer_send
+                                     );
 
             if ( pointer_next != NULL ) {
 
@@ -241,7 +298,9 @@ int control_message(
 
         } while ( pointer_next != NULL );
 
-//========================================================
+
+
+
 
 // Read the command of this host.
 
@@ -250,11 +309,11 @@ int control_message(
         ||     strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
            ) {
 
-            judgement_message_command(
-                                       that_site,
-                                       gop_connection.command[that_site],
-                                       buffer_send
-                                     );}}
+            judge_message_command(
+                                   that_site,
+                                   gop_connection.command[that_site],
+                                   buffer_send
+                                 );}}
 
 
         if ( buffer_send[strlen(buffer_send)-1] == '\n' ) {

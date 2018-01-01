@@ -1,12 +1,12 @@
 
 
-int judgement_message_blank(
+int judge_message_blank(
 
-                                int   that_site,
-                                char* pointer_recv,
-                                char* buffer_send
+                            int   that_site,
+                            char* pointer_recv,
+                            char* buffer_send
 
-                           ) {
+                       ) {
 
 
 

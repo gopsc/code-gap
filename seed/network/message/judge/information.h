@@ -1,10 +1,12 @@
 
 
-int judgement_message_information(
-                                     int   that_site,
-                                     char* pointer_recv,
-                                     char* buffer_send
-                                 ) {
+int judge_message_information(
+
+                                 int   that_site,
+                                 char* pointer_recv,
+                                 char* buffer_send
+
+                             ) {
 
 //PS. the varitable 'pointer_recv' was selected before
 //        so there is just a command leave.
