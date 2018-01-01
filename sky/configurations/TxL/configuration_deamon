@@ -11,7 +11,7 @@
 
 path              /opt/TxL
 name              seed
-data              trees
+data              trees/0
 
 
 

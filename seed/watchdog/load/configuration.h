@@ -243,14 +243,14 @@ int load_configure() {
 //================================================================
 
         int i;
-        for ( i=1; i<=19; i++ ) {
+        for ( i=1; i<=20; i++ ) {
 
             if ( strstr(that_file, target_configure[i]) != NULL ) {
 
                 strcpy( buffer_file,         strstr(that_file, target_configure[i]) );
-               *strchr( buffer_file,         '\n' ) = '\0';
-                strcpy( buffer_file,         strrchr(buffer_file, ' ')+1 );
-                strcpy( result_configure[i], buffer_file );}}
+               *strchr( buffer_file,         '\n'                                   ) = '\0';
+                strcpy( buffer_file,         strrchr(buffer_file, ' ')+1            );
+                strcpy( result_configure[i], buffer_file                            );}}
 
 //================================================================
 
@@ -277,7 +277,6 @@ int load_configure() {
         rate             = atof(result_configure[18]);
         channels         = atof(result_configure[19]);
         N                = atof(result_configure[20]);}
-
 
 //================================================================
 
