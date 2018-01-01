@@ -15,5 +15,3 @@ Then you can process it:
 Then type it again,
 
 /opt/?
-
-Fun, right?
