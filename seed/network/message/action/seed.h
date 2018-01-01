@@ -334,6 +334,8 @@ int action_seed (
 
     action_seed_append( buffer_file, buffer_path, "/network/message/data/update/build.h"            );
 
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/backup.h"           );
+
     action_seed_append( buffer_file, buffer_path, "/network/message/data/update/load.h"             );
 
     action_seed_append( buffer_file, buffer_path, "/network/message/data/update/append.h"           );

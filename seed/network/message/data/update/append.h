@@ -5,31 +5,51 @@ int append_message_data_update(
                                   char* buffer_send
                               ) {
 
+
+
+
+
     if (
+
            strcmp(gop_connection.how[that_site], "Connectted"  ) != 0
     &&     strcmp(gop_connection.how[that_site], "Sopi"        ) != 0
+
        ) {
+
 
         return 0;}
 
 
     else {
 
-// count_update means times between tow update message
 
         if ( count_update < count_update_max ) {
 
+
+// count_update means times between tow update message
+
             count_update++;
 
-            return 0;}
+            return 1;}
+
+
 
         else {
 
+// it's time to send update
+// clean the buffer
+
             count_update = 0;
+
+
+
+// connect the send buffer
 
             strcat(buffer_send, "Update.");
             strcat(buffer_send, "\n");
 
+
+// Prepare
 
             char buffer_file          [102400];
             char buffer_file_length   [16];
@@ -37,7 +57,9 @@ int append_message_data_update(
             char buffer_step          [16];
 
 
-            char   buffer_path_start  [33];
+// get the start path
+
+            char   buffer_path_start  [32];
             strcpy(buffer_path_start, path_the);
             strcat(buffer_path_start, "/"     );
             strcat(buffer_path_start, name_the);

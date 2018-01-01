@@ -1,13 +1,25 @@
 
+
+
 int control_message_update( char* path_update ) {
 
 
-//    /opt/gop/?
 
-            char    path_update_start[129];
+
+//  TxL/?
+//
+//  prepare the start path
+//  i think it was good if u can give a target
+//  it could be any path
+// &i don't know how to do
+
+            char    path_update_start[128];
+
             strcpy (path_update_start, path_the);
             strcat (path_update_start, "/"     );
             strcat (path_update_start, name_the);
+
+// it's for
 
             DIR*    pointer_dirent = NULL;
     struct  dirent* ent            = NULL;
@@ -15,9 +27,9 @@ int control_message_update( char* path_update ) {
 
 
 
-// is saving what file we are send
+// for saving what file we are send
 
-            char    that_file[129];
+            char    that_file[128];
             strcpy (that_file, "");
 
 
@@ -27,6 +39,10 @@ int control_message_update( char* path_update ) {
 
 
     if ( strcmp(path_update, path_update_start) != 0 ) {
+
+// if the appending
+// is not a beginning
+//   full back a name
 
         strcpy(that_file, strrchr(path_update, '/') + 1);
 
@@ -45,9 +61,12 @@ int control_message_update( char* path_update ) {
 
 
 
-// Sometimes it return the dirent before.
+
+// Sometimes it return the dirent u got before.
 
     pointer_dirent = opendir(path_update);
+
+
 
 
 
@@ -55,7 +74,9 @@ int control_message_update( char* path_update ) {
 
     if ( strcmp(that_file, "") != 0 ) {
 
+
         ent = readdir( pointer_dirent );
+
 
         while ( strcmp(that_file, ent->d_name) != 0 ) {
 

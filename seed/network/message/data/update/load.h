@@ -32,6 +32,10 @@ int  load_update(
 
 
 
+
+
+
+
 // This is for saving the mixing number of the file
 
     char   buffer_mix   [128];
@@ -42,35 +46,57 @@ int  load_update(
 
 
 
+
+
+
 // Check where the river saved
 
-    int number_backup = 1;
 
+// this is for the id of backup
 
+    snprintf(
 
-
+              buffer_file,
+              sizeof(buffer_file) / sizeof(char),
+              "%d",
+              count_backup() + 1
+            );
 
 
 // This is for the command of moving file
 
-    char   buffer_commandline_save[128];
-    char   buffer_commandline_load[128];
+    char   buffer_commandline_save  [128];
+    char   buffer_commandline_remove[128];
+    char   buffer_commandline_load  [128];
 
 
-    strcpy(buffer_commandline_save, "mv "            );
-    strcat(buffer_commandline_save, path_the         );
-    strcat(buffer_commandline_save, "/"              );
-    strcat(buffer_commandline_save, name_the         );
+    strcpy(buffer_commandline_save,   "mv "            );
+    strcat(buffer_commandline_save,   path_the         );
+    strcat(buffer_commandline_save,   "/"              );
+    strcat(buffer_commandline_save,   name_the         );
+    strcat(buffer_commandline_save,   " "              );
+    strcat(buffer_commandline_save,   path_the         );
+    strcat(buffer_commandline_save,   "/"              );
+    strcat(buffer_commandline_save,   name_backup      );
+    strcat(buffer_commandline_save,   "/"              );
+    strcat(buffer_commandline_save,   buffer_file      );
 
-    strcpy(buffer_commandline_load, "mv "            );
-    strcat(buffer_commandline_load, path_the         );
-    strcat(buffer_commandline_load, "/downloads"     );
-    strcat(buffer_commandline_load, " "              );
-    strcat(buffer_commandline_load, path_the         );
-    strcat(buffer_commandline_load, "/"              );
-    strcat(buffer_commandline_load, name_the         );
 
-    strcpy(gop_connection.update[that_site],     "");
+    strcpy(buffer_commandline_remove, "rm -rf "        );
+    strcat(buffer_commandline_remove, path_the         );
+    strcat(buffer_commandline_remove, "/"              );
+    strcat(buffer_commandline_remove, name_the         );
+
+
+    strcpy(buffer_commandline_load,   "mv "            );
+    strcat(buffer_commandline_load,   path_the         );
+    strcat(buffer_commandline_load,   "/downloads"     );
+    strcat(buffer_commandline_load,   " "              );
+    strcat(buffer_commandline_load,   path_the         );
+    strcat(buffer_commandline_load,   "/"              );
+    strcat(buffer_commandline_load,   name_the         );
+
+    strcpy(gop_connection.update[that_site],         "");
 
 
     output_print( "string", "Load update...\n" );
@@ -137,8 +163,8 @@ int  load_update(
 
     strcpy(gop_connection.update[that_site], path_the);
 
-    commandline_get(buffer_commandline_save, buffer_words);
-    commandline_get(buffer_commandline_load, buffer_words);
+    commandline_get(buffer_commandline_remove, buffer_words);
+    commandline_get(buffer_commandline_load,   buffer_words);
 
     output_print( "string", "Done.\n" );
 

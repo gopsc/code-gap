@@ -30,8 +30,6 @@ int main( int argc, char *argv[] ) {
 
 
 
-
-
     output_print( "string", "\n" );
 
 
@@ -58,12 +56,13 @@ int main( int argc, char *argv[] ) {
 
 
 
+// wait the dog run a circle
 
     while ( !information_flag.start ) {
 
 
-
         usleep(100000);}
+
 
 
 
