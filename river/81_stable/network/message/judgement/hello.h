@@ -21,20 +21,13 @@ int judgement_message_hello(
 
     if (
 
-              strstr(pointer_recv, "This is ") == pointer_recv
-           && strstr(pointer_recv, "\n")       != NULL
+              strstr(pointer_recv, "This is ") != pointer_recv
+           || strstr(pointer_recv, "\n")       == NULL
 
        ) {
 
-// This is fine...
-// omg...
-
-        return 1;}
 
 
-
-
-    else {
 
         output_print( "string",        "Network with no smile " );
         output_print( "int"   , (char*)&that_site               );
@@ -47,5 +40,11 @@ int judgement_message_hello(
 
         strcat(buffer_send,    "Who is that?");
 
-        return 0;}}
+        return 0;}
+
+    else {
+
+// This is fine...
+
+        return 1;}}
 

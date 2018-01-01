@@ -20,18 +20,10 @@ int judgement_message_who(
 
     if (
            strstr(pointer_recv, "This is gop station.")
-           ==    pointer_recv
-    ||    strstr(pointer_recv, "This is a leaf.")
-           ==     pointer_recv
+           != pointer_recv
+    &&    strstr(pointer_recv, "This is a leaf.")
+           !=     pointer_recv
        ) {
-
-// This is fine...
-// omg..
-
-        return 1;}
-
-
-    else {
 
 
         output_print( "string",         "Network "                 );
@@ -46,4 +38,11 @@ int judgement_message_who(
 
         strcat(buffer_send,    "Who is that?");
 
-        return 0;}}
+        return 0;}
+
+    else {
+
+// This is fine...
+// omg..
+
+        return 1;}}
