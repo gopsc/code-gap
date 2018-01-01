@@ -233,11 +233,21 @@ int control_message(
 
 // Read the command of this host.
 
-        control_command(
-                         that_site,
-                         gop_connection.command[that_site],
-                         buffer_send
-                       );}
+        if (
+               strcmp(gop_connection.how[that_site], "Connectted") == 0
+        ||     strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
+           ) {
+
+            control_command(
+                             that_site,
+                             gop_connection.command[that_site],
+                             buffer_send
+                           );}}
+
+
+        if ( buffer_send[strlen(buffer_send)-1] == '\n' ) {
+
+            strcat(buffer_send, "Who is that?");}
 
 
     return 1;}
