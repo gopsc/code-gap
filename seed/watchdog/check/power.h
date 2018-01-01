@@ -4,13 +4,15 @@ int check_power() {
 
 
     time_t time_now      = time(NULL);
+
     char   that_data[128];
-    char   that_path[33];
+    char   that_path[32];
 
            strcpy(that_path, path_the          );
            strcat(that_path, "/"               );
            strcat(that_path, name_data         );
-           strcat(that_path, "/note/power.note");
+
+           strcat(that_path, "/0/power.note"   );
 
 
 
@@ -27,7 +29,9 @@ int check_power() {
 
 
     file_get( that_path, that_data );
+
     note_clear( "power", "all" );
+
     note_save(  "power", "Check power", "now" );
 
 
@@ -38,6 +42,8 @@ int check_power() {
     if ( strcmp(that_data,   "" )  != 0 ) {
 
        *strchr( that_data+2, '\n' ) = '\0';
+
+
 
         if ( (int)time_now - atoi(that_data + 2) > 3 ) {
 
@@ -50,6 +56,10 @@ int check_power() {
 
             note_save("dog",     "Power off", that_data + 2);
 
-            note_save("corde",   "Power off", that_data + 2);}}
+            note_save("corde",   "Power off", that_data + 2);
 
-    return 1;}
+
+            return 1;}}
+
+
+    return 0;}
