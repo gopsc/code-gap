@@ -2,6 +2,19 @@
 void * gop_connector ( void * what ) {
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Standart preparing.
 
     struct sockaddr_in    address;
@@ -9,7 +22,6 @@ void * gop_connector ( void * what ) {
            int            number_return;
            char           buffer_recv [ 10240 ];
            char           buffer_send [ 10240 ];
-           char           that_buffer [ 10240 ];
 
 
 
@@ -25,7 +37,7 @@ void * gop_connector ( void * what ) {
 
     while (  ! gop_about.flag.start  ) {
 
-        usleep ( gop_about.configurations.step_connection * 100000 );}
+        usleep ( gop_configurations.step_connection * 100000 );}
 
 
 
@@ -40,9 +52,9 @@ void * gop_connector ( void * what ) {
 //
 //  so we load it here first time
 
-    strcpy ( gop_connection.address_ip [ 0 ],  gop_about.configurations.address_to );
+    strcpy ( gop_connection.address_ip [ 0 ],  gop_configurations.address_to );
 
-             gop_connection.port       [ 0 ] = gop_about.configurations.   port_to;
+             gop_connection.port       [ 0 ] = gop_configurations.   port_to;
 
 
 
@@ -264,12 +276,14 @@ void * gop_connector ( void * what ) {
 
 // prepare the note
 
-                        strcpy ( that_buffer, "Connectting to "                );
-                        strcat ( that_buffer,  gop_connection.address_ip [ 0 ] );
+                        char bufer_note [ 32 ];
+
+                        strcpy ( bufer_note, "Connectting to "                );
+                        strcat ( bufer_note,  gop_connection.address_ip [ 0 ] );
 
 // save the note
 
-                        note_save ( "connector", that_buffer, "now" );
+                        note_save ( "connector", bufer_note, "now" );
 
 
 // set how
@@ -326,7 +340,7 @@ void * gop_connector ( void * what ) {
 //
 // It could be balance.
 
-                    usleep ( gop_about.configurations.step_connection * 100000 );}
+                    usleep ( gop_configurations.step_connection * 100000 );
 
 
 
@@ -341,9 +355,15 @@ void * gop_connector ( void * what ) {
 //
 //  or it could couse a mistake
 
-                gop_connection.connection [ 0 ] = 0;
+                    gop_connection.connection [ 0 ] = 0;}
 
 
+
+
+
+
+// this connection has a result
+//
 // now close it
 
                 close ( gop_connection.descriptor [ 0 ] );
@@ -361,6 +381,15 @@ void * gop_connector ( void * what ) {
 
                 leave:
                 sleep ( 0 );}
+
+
+
+
+
+
+
+
+
 
 
 // The round of connection is

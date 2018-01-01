@@ -6,6 +6,8 @@
 
 
 // the flags
+//
+// used in gop_about in watchdog/information/build.h
 
 struct gopi_flag {
 
@@ -31,6 +33,8 @@ struct gopi_flag {
 
 
 // the configurations
+//
+// used here and everywhere
 
 struct gopi_configurations {
 
