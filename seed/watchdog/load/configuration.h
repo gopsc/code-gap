@@ -11,7 +11,7 @@ int load_configure() {
 // Prepare the values,
 //         the start path used is certaintlly
 
-    char buffer_path     [128]     = "/opt/TxL/seed/configuration";
+    char buffer_path     [128];
 
 
 // For saving files
@@ -36,27 +36,70 @@ int load_configure() {
 
 
 // Check path.
+//
+// Get the user
+//    only root can access /opt/TxL
 
     commandline_get("whoami", that_file);
 
 
 
 
-    if    ( strcmp(that_file, "root\n") == 0 ) {
+
+// The mode of deamon
+
+    if    ( number_args > 1                       ) {
+
+        if    (
+
+                  strcmp(buffer_args[1], "deamon") == 0
+        &&        strcmp(that_file,      "root\n") == 0
+
+              ) {
+
+
+            strcpy(buffer_path, "/opt/TxL/sky/configurations/TxL/configuration_deamon");
+
+
+            if    ( !is_file(buffer_path) ) {
+
+
+                strcpy(buffer_path, "/opt/TxL/seed/configuration");}}}
+
+
+
+
+
+// The mode of terminal
+//  of root
+
+    else if   ( strcmp(that_file, "root\n") == 0 ) {
+
+
+        strcpy(buffer_path, "/opt/TxL/seed/configuration");
+
 
         if    ( !is_file(buffer_path) ) {
 
             strcpy(buffer_path, "TxL/seed/configuration");}}
 
-    else {
+
+// The mode of terminal
+//  of no root
+
+    else if   ( strcmp(that_file, "root\n") == 1 ){
+
 
         strcpy(buffer_path, "/opt/TxL/sky/configurations/TxL/configuration_no-root");
+
 
         if ( !is_file(buffer_path) ) {
 
             strcpy(buffer_path, "TxL/sky/configurations/TxL/configuration_no-root");}}
 
 //================================================================
+// There's still no configuration file
+//   ask the user
 
     while ( !is_file(buffer_path) ) {
 
@@ -73,13 +116,30 @@ int load_configure() {
 
             *strchr(buffer_path, '\n')  = '\0';}}
 
+
+
+// print the file path for test
+
 //    printf("%s\n", buffer_path);
 
+
+
+// Get the file
+
     file_get(buffer_path, that_file);
+
+
+// sometimes it maybe a empty file
 
     if ( strcmp(that_file, "") == 0 ) {
 
         information_flag.main = 0;}
+
+
+
+
+// If is's not a empty file
+// read it
 
     else {
 

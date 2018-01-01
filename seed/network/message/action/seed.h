@@ -179,47 +179,47 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/head/Linux.h"                      );
-    action_seed_append( buffer_file, buffer_path, "/box/c/head/variable.h"                   );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/Linux.h"                   );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variable.h"                );
 
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build.h"            );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build.h"               );
 
-    action_seed_append( buffer_file, buffer_path, "/network/build.h"                         );
+    action_seed_append( buffer_file, buffer_path, "/network/build.h"                            );
 
-    action_seed_append( buffer_file, buffer_path, "/sound/build.h"                           );
+    action_seed_append( buffer_file, buffer_path, "/sound/build.h"                              );
 
 
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/data/translate/number_word.h"      );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/data/translate/number_word.h"       );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/IO/output/print.h"          );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/IO/output/print.h"           );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/dirent/is.h"    );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/dirent/is.h"     );
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/file/is.h"      );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/is.h"       );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/file/get.h"     );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/get.h"      );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/file/save.h"    );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/save.h"     );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/file/append.h"  );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/append.h"   );
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/process/deamon/deamon.h"    );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/process/deamon/deamon.h"     );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/process/commandline/shell.h");
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/process/commandline/shell.h" );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/data/secret/secret.h"              );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/data/secret/secret.h"               );
 
 
 
@@ -227,69 +227,69 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/note/save.h"                    );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/note/save.h"                           );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/note/clear.h"                   );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/note/clear.h"                          );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/user.h"      );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/user.h"             );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/name.h"      );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/name.h"             );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/build.h"     );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/build.h"            );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/ip/build.h"         );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/ip/build.h"                );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/rate.h"         );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/rate.h"                );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/temperature.h"  );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/temperature.h"         );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/frequency.h"    );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/frequency.h"           );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/cores.h"        );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/cores.h"               );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/build.h"        );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/build.h"               );
 
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/memory/build.h"     );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/memory/build.h"            );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/disk/build.h"       );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/disk/build.h"              );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/sound/alsa.h"       );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/sound/alsa.h"              );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/get/append.h"       );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/get/append.h"              );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/check/network.h"                );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/check/network.h"                       );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/check/power.h"                  );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/check/power.h"                         );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/check/root.h"                   );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/check/root.h"                          );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/check/update.h"                 );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/check/update.h"                        );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/load/configuration.h"           );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/load/configuration.h"                  );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/load/symbol.h"                  );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/load/symbol.h"                         );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/load/listen.h"                  );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/load/listen.h"                         );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/show/information.h"             );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/show/information.h"                    );
 
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/dog.h"                          );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/dog.h"                                 );
 
 
 
@@ -297,13 +297,13 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/sound/ft/show.h"                         );
+    action_seed_append( buffer_file, buffer_path, "/sound/ft/show.h"                                );
 
-    action_seed_append( buffer_file, buffer_path, "/sound/ft/dft.h"                          );
+    action_seed_append( buffer_file, buffer_path, "/sound/ft/dft.h"                                 );
 
-    action_seed_append( buffer_file, buffer_path, "/sound/ft/fft.h"                          );
+    action_seed_append( buffer_file, buffer_path, "/sound/ft/fft.h"                                 );
 
-    action_seed_append( buffer_file, buffer_path, "/sound/ft/test.h"                         );
+    action_seed_append( buffer_file, buffer_path, "/sound/ft/test.h"                                );
 
 
 
@@ -311,7 +311,7 @@ int action_seed (
 
 
 
-
+// add the sound code
 
     if      ( strcmp(that_type, "base") == 0 ) {
 
@@ -328,19 +328,23 @@ int action_seed (
 
 
 
+// The data code
+//  is for send some data
+//  in the network connection
+
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/build.h"            );
+
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/load.h"             );
+
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/append.h"           );
 
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/build.h"     );
-
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/load.h"      );
-
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/append.h"    );
 
 
 
 
-
-
+// Append the action codes
+// it's moving
 
     strcpy    ( buffer_dirent,             buffer_path             );
 
@@ -398,37 +402,37 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/blank.h"       );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/blank.h"              );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/hello.h"       );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/hello.h"              );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/who.h"         );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/who.h"                );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/information.h" );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/information.h"        );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/command.h"     );
-
-
-
-
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/build.h"            );
-
-
-    action_seed_append( buffer_file, buffer_path, "/network/message/build.h"                 );
+    action_seed_append( buffer_file, buffer_path, "/network/message/judgement/command.h"            );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/network/tcp/server.h"                    );
 
-    action_seed_append( buffer_file, buffer_path, "/network/tcp/client.h"                    );
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/build.h"                   );
 
 
+    action_seed_append( buffer_file, buffer_path, "/network/message/build.h"                        );
+
+
+
+    action_seed_append( buffer_file, buffer_path, "/network/tcp/server.h"                           );
+
+    action_seed_append( buffer_file, buffer_path, "/network/tcp/client.h"                           );
 
 
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/build.c"                                 );
+
+
+    action_seed_append( buffer_file, buffer_path, "/build.c"                                        );
 
 
 

@@ -24,7 +24,8 @@ int main( int argc, char *argv[] ) {
 
 
 
-// If command, turn gopi to a deamon.
+// If command, turn gopi to a deamon
+
     init_deamon();
 
 
@@ -53,7 +54,7 @@ int main( int argc, char *argv[] ) {
 
 
 
-    char buffer_command[128] = "";
+    char buffer_command[129] = "";
 
 
 
@@ -102,8 +103,6 @@ int main( int argc, char *argv[] ) {
         if ( information_flag.deamon ) {
 
 
-
-
             usleep(100000);}
 
 
@@ -117,7 +116,7 @@ int main( int argc, char *argv[] ) {
 
 // Get the command
 
-            fgets(buffer_command,100, stdin);
+            fgets(buffer_command,129, stdin);
 
 
 
@@ -130,28 +129,30 @@ int main( int argc, char *argv[] ) {
             if ( strcmp(buffer_command, "") == 0 ) {
 
 
-
                 usleep(100000);}
 
 
 
-
+// Read the command
 
             else {
 
 
+// The end of the command
+//    will be a '\n'
 
                 buffer_command[strlen(buffer_command)-1] = '\0';
                                strcat(buffer_command,      ".");
 
 
 
+// Print a '\n'
 
                 output_print( "string", "\n" );
 
 
 
-
+// Judgement for the command typed
 
                 judgement_message_command(
                                            -1,
@@ -161,13 +162,14 @@ int main( int argc, char *argv[] ) {
 
 
 
+// Clear the buffer
 
                 strcpy(buffer_command, "");}}}
 
 
 
 
-
+// The end of this program
 
     note_save("command", "Command close", "now");}
 

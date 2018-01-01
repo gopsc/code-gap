@@ -7,7 +7,15 @@ void init_deamon() {
 
         if ( strcmp(buffer_args[1], "deamon") == 0 ) {
 
+
             information_flag.deamon = 1;
+
+
+// Maybe it need to wait
+//   for some of program
+
+            usleep(100000);
+
             output_print("string", "Start deamon...\n");
 
 
@@ -16,11 +24,13 @@ void init_deamon() {
             int pid = fork();
 
             if      ( pid     ) {
+
                 // It's the father ps, exit it.
 
                 exit(0);}
 
             else if ( pid < 0 ) {
+
                 // fork failled, exit it.
 
                 exit(1);}
@@ -33,6 +43,7 @@ void init_deamon() {
             // Make the 1st son ps become a
             //      new session and ps group leader
             //      and leave control terminal
+
             setsid();
 
 
@@ -40,11 +51,13 @@ void init_deamon() {
             pid = fork();
 
             if      ( pid     ) {
+
                 // It's the 1st son ps, exit it.
 
                 exit(0);}
 
             else if ( pid < 0 ) {
+
                 // fork failled, exit it.
 
                 exit(1);}
@@ -62,6 +75,7 @@ void init_deamon() {
             for ( i=0; i<number_nofile; ++i) {
 
                 close(i);
+
                 chdir("/");  //Change work dirent.
                 umask(0);    //Reset file building modeling
 
