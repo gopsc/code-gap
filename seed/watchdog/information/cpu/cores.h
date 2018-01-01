@@ -12,12 +12,16 @@ int information_CPU_cores_get() {
 //  there should be
 // some Enter there
 
-    char      that_file  [10240] = "\n\n\n\n";
+    char      that_file  [10240] = "\n\n";
+
+
 
 
 // There's 'processor' in
 // the words sometimes
-    char    target_name  [17]    = "\nprocessor";
+    char    target_name  [16]    = "\nprocessor";
+
+
 
 
 // u should put a pointer
@@ -27,10 +31,18 @@ int information_CPU_cores_get() {
 
 
 
+
+
+
+
 // Put the words in the
 //  Second site
 
-    file_get("/proc/cpuinfo",  that_file + 1);
+    file_get("/proc/cpuinfo",  that_file + 2);
+
+
+
+
 
 // Start the loop
 
@@ -40,9 +52,16 @@ int information_CPU_cores_get() {
 
         pointer_file = strstr( pointer_file + 1, target_name );}
 
+
+
+
+
 // Get the data
 
     information_cpu.cores = num_result;
+
+
+
 
 
     return 1;}
