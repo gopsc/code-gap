@@ -20,3 +20,13 @@ iface wlan1 inet static
 
 	address 110.110.110.110
 	netmask 255.255.255.240
+
+
+auto wlan3
+allow-hotplug wlan3
+iface wlan3 inet dhcp
+
+	wpa-ssid gopi
+	wpa-psk  44112233
+
+
