@@ -100,6 +100,7 @@ void  load_update(int that_site) {
 
 
     int i;
+
     for ( i=0; i<=3; i++ ) {
 
 
@@ -117,7 +118,6 @@ void  load_update(int that_site) {
                    != 0
                ) {
 
+                strcpy(gop_connection.command[i], "Clean update.");
 
-            
-                strcpy(gop_connection.command[i], "Update.");
                 break;}}}}

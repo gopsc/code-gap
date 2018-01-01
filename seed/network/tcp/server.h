@@ -4,34 +4,18 @@
 void* gop_server_start(void* what) {
 
 
-
-
-// Wait for information getting done.
-
-    while ( !information_flag.start ) {
-
-        usleep(100000);}
-
-
-// Note this startting.
-
-    note_save( "server", "Server start", "now" );
-
-
-
-
-
-
 // Declare these variable.
 
-    int               number_return;
-    char              buffer_recv[4][10240];
-    char              buffer_send[10240];
-    char              that_buffer[10240];
-    char              that_over[9];
-    char              that_address[33];
+           int         number_return;
+           char        buffer_recv[4][10240];
+           char        buffer_send[10240];
+           char        that_buffer[10240];
+           char        that_over[9];
+           char        that_address[33];
 
-
+    struct sockaddr_in address   ;
+    struct sockaddr_in address_by;
+           socklen_t   lenth     ;
 
 
     strcpy( gop_connection.how[1], "Wait" );
@@ -39,39 +23,69 @@ void* gop_server_start(void* what) {
     strcpy( gop_connection.how[3], "Wait" );
 
 
- 
-    struct sockaddr_in address;
-    struct sockaddr_in address_by;
-           socklen_t   lenth;
 
 
 
 
 
+// Wait for the information getting done.
+
+    while ( !information_flag.start ) {
+
+        usleep(100000);}
 
 
+
+
+
+// This line is for the wrong
+// when a connection is closed
+// &
+// it could be useful in networking
+// somewhere
 
     signal(SIGPIPE, SIG_IGN);
 
-    while( information_flag.main ) {
-
-        if      ( !information_flag.server ) {
-
-            usleep(step_connection * 1000000);}
 
 
 
 
 
-        else if (  information_flag.server ) {
+// Parpering finished,
+//  then the round could start.
+
+    while ( information_flag.main ) {
+
+
+// sleep some time evrey range
+
+        usleep(100000);
+
+
+        while ( information_flag.server ) {
+
+
+// Note this startting.
+
+            note_save( "server", "Server start", "now" );
+
+
+// This round is for
+// preparing.
+
+
+// Create socket
 
             gop_connection.port[1]        = port_this;
-            gop_connection.descriptor[1]  = socket(
-                                                    AF_INET,
-                                                    SOCK_STREAM,
-                                                    0
-                                                  );
+            gop_connection.descriptor[1]  = socket   (
+                                                       AF_INET,
+                                                       SOCK_STREAM,
+                                                       0
+                                                     );
+
 //-----------------------------------------------------------------------------------
+// Setting the
+// socket attribution
 
             address.sin_family         = AF_INET;
             address.sin_port           = htons(gop_connection.port[1]);
@@ -79,17 +93,26 @@ void* gop_server_start(void* what) {
 
             lenth                      = sizeof(address_by);
 
+// If failled, close it
 
             if ( gop_connection.descriptor[1] == -1 ) {
 
                 perror("Server socket created failled");
+
                 information_flag.server = 0;}
 
 //-----------------------------------------------------------------------------------
+// When a server closed
+// something ran &the
+// ip address
+// will be not avalable for
+// minutes
+// use this is OK
 
             int that_num = 1;
+
             if (
-                   setsockopt( 
+                   setsockopt(
                                gop_connection.descriptor[1],
                                SOL_SOCKET,
                                SO_REUSEADDR,
@@ -103,10 +126,17 @@ void* gop_server_start(void* what) {
 
                 information_flag.server = 0;}
 
+// P.S.
+//     the networking is
+//        another program &
+//     when this is shutting down
+//          that would be still running.
+
 //-----------------------------------------------------------------------------------
+// Starting this program binding.
 
             if (
-                   bind( 
+                   bind(
                                             gop_connection.descriptor[1],
                          (struct sockaddr*)&address,
                                      sizeof(address)
@@ -115,6 +145,7 @@ void* gop_server_start(void* what) {
                ) {
 
                 perror("Server binding failled");
+
                 information_flag.server = 0;}
 
 //-----------------------------------------------------------------------------------
@@ -134,7 +165,7 @@ void* gop_server_start(void* what) {
 
 // Loop start.
 
-            while(information_flag.server) {
+            while (information_flag.server) {
 
 // Accept connection.
 
@@ -146,7 +177,12 @@ void* gop_server_start(void* what) {
 
                 if ( number_return == -1 ) {
 
-                    //perror("Server acceptting failled");
+// When the mode of no-wait
+//   is opening.
+//   do not print
+// accepting error message
+
+                    perror("Server acceptting failled");
 
                     usleep(100000);
 
@@ -161,29 +197,28 @@ void* gop_server_start(void* what) {
                       );
 
 //-----------------------------------------------------------------------------------
-
 // Connection message is already here.
 // Find the site for this.
 // Find is there is's site
-//      or a free site.
+//      or a free     site.
 
                 int        num_free       = 0;
                 int        num_site       = 0;
 
 //-----------------------------------------------------------------------------------
-
 // find free site.
 
                 int i;
+
                 for     ( i=1; i<=3; i++ ) {
 
                     if  ( strcmp(gop_connection.address_ip[i], "") == 0 ) {
 
                         num_free = i;
+
                         break;}}
 
 //-----------------------------------------------------------------------------------
-
 // Find it's site.
 
                 for     ( i=1; i<=3; i++ ) {
@@ -191,10 +226,10 @@ void* gop_server_start(void* what) {
                     if  ( strcmp(gop_connection.address_ip[i], that_address) == 0 ) {
 
                         num_site = i;
+
                         break;}}
 
 //-----------------------------------------------------------------------------------
-
 // If it's a new site,
 //    set a site for it.
 //
@@ -208,7 +243,6 @@ void* gop_server_start(void* what) {
                 else if ( num_site == 0   &&   num_free == 0 ) {
 
 //-----------------------------------------------------------------------------------
-
 // Note this smile.
 
                     output_print( "string", "Smile to           "           );
@@ -221,8 +255,7 @@ void* gop_server_start(void* what) {
                     note_save("server", that_buffer, "now");
 
 //-----------------------------------------------------------------------------------
-
-// Prepare this smile.
+// Preparing for this smile.
 
                     strcpy(buffer_send, "This is gop station.");
                     strcat(buffer_send, "\n");
@@ -230,7 +263,6 @@ void* gop_server_start(void* what) {
                     strcat(buffer_send, "\n");
 
 //-----------------------------------------------------------------------------------
-
 // Find the connectting device
 //      who can be be connectted
 
@@ -241,18 +273,15 @@ void* gop_server_start(void* what) {
                     num_smile = 1+4*(rand()/(RAND_MAX+1.0));
 
 //-----------------------------------------------------------------------------------
-
 // Add it's ip to smile message.
 
                     strcat( buffer_send, gop_connection.address_ip[num_smile]);
                     secret_encode(buffer_send, "blank");
 
 //-----------------------------------------------------------------------------------
-
 // Send it
 // and
-// Recive the last message.
-
+// Recive the returned message.
 
                     secret_encode(buffer_send, "blank");
                     send(
@@ -270,7 +299,6 @@ void* gop_server_start(void* what) {
                         );
 
 
-
                     usleep(step_connection * 1000000);
 
                     close(number_return);
@@ -278,10 +306,9 @@ void* gop_server_start(void* what) {
                     continue;}
 
 //-----------------------------------------------------------------------------------
-
 // After findind site
 //       for this connection,
-// prepare for translation.
+// preparing  for connection.
 
                 if ( num_site != 0 ) {
 
@@ -294,10 +321,9 @@ void* gop_server_start(void* what) {
                     strcpy(gop_connection.address_ip[num_site], that_address);
 
 //-----------------------------------------------------------------------------------
-
-// If is's new , 
-//   notice and
-//   note this connection.
+// If is's new ,
+//  notice and
+//  note  this connection.
 
                     if ( strcmp(gop_connection.how[num_site], "Wait") == 0 ) {
 
@@ -315,7 +341,6 @@ void* gop_server_start(void* what) {
                         strcpy( gop_connection.how[num_site], "Connectted" );}
 
 //-----------------------------------------------------------------------------------
-
 // Control send message.
 
                     secret_decode(buffer_recv[num_site], "blank");
@@ -339,18 +364,19 @@ void* gop_server_start(void* what) {
                           0
                         );
 
+// Do note wait,
+// or get client connectting
+// no banance
 //                    usleep(step_connection * 1000000);
 
-                    close(number_return);
+                    close(number_return);}}
 
 
+           note_save( "server", "Server close", "now");
 
-                    if ( !information_flag.server ) {
-
-                        close(gop_connection.descriptor[1]);}}}}}
+           close(gop_connection.descriptor[1]);}}
 
 //-----------------------------------------------------------------------------------
 
-    note_save( "server", "Server close", "now" );
 
     pthread_exit(NULL);}

@@ -294,13 +294,7 @@ void control_command(
 
 //-----------------------------------------------------------------------
 
-        if      ( strstr(that_command, "Update.") == that_command ) {
-
-            action_update(that_site, that_command, buffer_send);}
-
-//-----------------------------------------------------------------------
-
-        else if ( strstr(that_command, "Clean update.") == that_command ) {
+        if ( strstr(that_command, "Clean update.") == that_command ) {
 
             action_update_clean(that_site, buffer_send);}
 
