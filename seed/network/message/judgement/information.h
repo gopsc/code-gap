@@ -28,8 +28,14 @@ int judgement_message_information(
 
     else if ( strstr(pointer_recv, "Information of host." ) == pointer_recv ) {
 
+
+
               pointer_recv   = strchr(pointer_recv, '\n' ) + 1;
         char* pointer_next   = strchr(pointer_recv, '\n' )    ;
+
+
+
+        gop_connection.flag[that_site].main   = 1;
 
 
 
@@ -133,30 +139,44 @@ int judgement_message_information(
 
             else if ( pointer_recv == strstr(pointer_recv, "Memory total     : ") ) {
 
-                gop_connection.memory[that_site].total           = atoi(strstr(pointer_recv, " :")+3);}
+
+                gop_connection.memory[that_site].total = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Memory used rate : ") ) {
 
                *strchr(pointer_recv, '%')                        = '\0';
 
+
                 gop_connection.memory[that_site].free
               = gop_connection.memory[that_site].total
-              * (100 - atoi(strstr(pointer_recv, " :")+3)) / 100;}
+
+              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
+              /    100;}
+
+
+
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Disk available   : ") ) {
 
-                gop_connection.disk[that_site].available         = atoi(strstr(pointer_recv, " :")+3);}
+
+                gop_connection.disk[that_site].available = atoi(strstr(pointer_recv, " :")+3);}
+
+
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Disk user rate   : ") ) {
 
                *strchr(pointer_recv, '%')                        = '\0';
 
+
                 gop_connection.disk[that_site].used
               = gop_connection.disk[that_site].available
-              * (100 - atoi(strstr(pointer_recv, " :")+3)) / 100;}
+
+              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
+              /    100;}
+
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Sound control    : ") ) {
@@ -179,28 +199,12 @@ int judgement_message_information(
                 pointer_recv = strstr(pointer_recv, " :")+3;
 
 
-                if      ( *pointer_recv == 'o' ) {
+// dog,
+// server,
+// client,
+// sound,
+// daemon
 
-                    gop_connection.flag[that_site].main   = 1;}
-
-                else if ( *pointer_recv == ' ' ) {
-
-                    gop_connection.flag[that_site].main   = 0;}
-
-                pointer_recv++;
-                pointer_recv++;
-
-
-                if      ( *pointer_recv == 'o' ) {
-
-                    gop_connection.flag[that_site].deamon = 1;}
-
-                else if ( *pointer_recv == ' ' ) {
-
-                    gop_connection.flag[that_site].deamon = 0;}
-
-                pointer_recv++;
-                pointer_recv++;
 
 
                 if      ( *pointer_recv == 'o' ) {
@@ -239,13 +243,26 @@ int judgement_message_information(
                 pointer_recv++;
 
 
+
                 if      ( *pointer_recv == 'o' ) {
 
                     gop_connection.flag[that_site].sound  = 1;}
 
                 else if ( *pointer_recv == ' ' ) {
 
-                    gop_connection.flag[that_site].sound  = 0;}}
+                    gop_connection.flag[that_site].sound  = 0;}
+
+                pointer_recv++;
+                pointer_recv++;
+
+
+                if      ( *pointer_recv == 'o' ) {
+
+                    gop_connection.flag[that_site].deamon = 1;}
+
+                else if ( *pointer_recv == ' ' ) {
+
+                    gop_connection.flag[that_site].deamon = 0;}}
 
 
 
@@ -264,8 +281,25 @@ int judgement_message_information(
     else if ( strstr(pointer_recv, "Information of guest.") == pointer_recv ) {
 
 
+
+
               pointer_recv   = strchr(pointer_recv, '\n' ) + 1;
         char* pointer_next   = strchr(pointer_recv, '\n' )    ;
+
+
+
+
+        int number_cores;
+        int number_frequency;
+
+        int number_disk_available;
+        int number_disk_used;
+
+        int number_memory_total;
+        int number_memory_used;
+
+        gop_connection.flag[that_site].main   = 1;
+
 
 
 
@@ -280,22 +314,26 @@ int judgement_message_information(
 
             else if ( pointer_recv == strstr(pointer_recv, "Name             : ") ) {
 
-                strcpy(gop_connection.system[that_site].name,   ","                         );
+                strcat(gop_connection.system[that_site].name,   ","                         );
                 strcat(gop_connection.system[that_site].name,   strstr(pointer_recv, " :")+3);}
 
             else if ( pointer_recv == strstr(pointer_recv, "System           : ") ) {
 
-                strcpy(gop_connection.system[that_site].system, ","                         );
+                strcat(gop_connection.system[that_site].system, ","                         );
                 strcat(gop_connection.system[that_site].system, strstr(pointer_recv, " :")+3);}
 
             else if ( pointer_recv == strstr(pointer_recv, "User             : ") ) {
 
-                strcpy(gop_connection.system[that_site].user,   ","                         );
+                strcat(gop_connection.system[that_site].user,   ","                         );
                 strcat(gop_connection.system[that_site].user,   strstr(pointer_recv, " :")+3);}
 
             else if ( pointer_recv == strstr(pointer_recv, "IP               : ") ) {
 
+
+
                 gop_connection.network[that_site].number += atoi(strstr(pointer_recv, " :" )+3);
+
+
 
                *pointer_next = '\n';
                 pointer_recv = strchr(pointer_recv, '\n'  ) +1;
@@ -303,30 +341,61 @@ int judgement_message_information(
                *pointer_next = '\0';
 
 
-                int number_ip = 1;
+// The first  ip is local,
+// the second ip is blank
+//  in the final line
+
+                int number_ip = 2;
+
+
+
+// Count the ip u've gottens
 
                 int i;
+
                 for ( i=1; i<=32; i++ ) {
+
 
                     if ( strcmp(gop_connection.network[that_site].ip[number_ip][2], "") == 0 ) {
 
-                        break;}}
+                        break;}
+
+
+                    else {
+
+                        number_ip ++;}}
+
+
+
+// Copy the  new ip
+//   in this new information
 
                 char* pointer_network;
+
                 for (
-                                     pointer_network   =        pointer_recv;
-                        strcmp("\n", pointer_network) != 0                  ;
-                                     pointer_network   = strchr(pointer_recv, '\n')
+
+                                      pointer_network    =        pointer_recv;
+                        strcmp( "\n", pointer_network ) != 0                  ;
+                                      pointer_network    = strchr(pointer_recv, '\n')
+
                     ) {
 
+
+// After the first loop,
+//  it plus every time.
+
                     if ( pointer_recv != pointer_network ) {
+
                         pointer_network = pointer_network + 1;}
 
+
+// now copy it
 
                     strcpy(
                             gop_connection.network[that_site].ip[number_ip][1],
                             pointer_network
                           );
+
                    *strstr(
                             gop_connection.network[that_site].ip[number_ip][1],
                             " : "
@@ -337,30 +406,50 @@ int judgement_message_information(
                             gop_connection.network[that_site].ip[number_ip][2],
                             strstr(pointer_network, " : ") + 3
                           );
+
                    *strchr( gop_connection.network[that_site].ip[number_ip][2], '\n' )
                    ='\0';
 
 
                     pointer_recv = pointer_network + 1;
 
+
+
+
+// The local ip lo,
+//
+//  if always be same
+//
+// dose not need to note ?
+
+                    if (
+
+                         strcmp(gop_connection.network[that_site].ip[number_ip][1], "lo")
+                    !=  0
+
+                    &&   strcmp(gop_connection.network[that_site].ip[number_ip][2], "127.0.0.1")
+                    !=  0
+
+                       )
+
                     number_ip++;}}
+
+
 
 
             else if ( pointer_recv == strstr(pointer_recv, "CPU cores        : ") ) {
 
-                gop_connection.cpu[that_site].cores             += atoi(strstr(pointer_recv, " :")+3);}
+                number_cores     = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "CPU frequency    : ") ) {
 
-                gop_connection.cpu[that_site].frequency         += atoi(strstr(pointer_recv, " :")+3);
-
-                gop_connection.cpu[that_site].frequency
-              = gop_connection.cpu[that_site].frequency
-              / gop_connection.cpu[that_site].cores;}
+                number_frequency = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "CPU temperature  : ") ) {
+
+
 
                 if ( gop_connection.cpu[that_site].temperature < atoi(strstr(pointer_recv, " :")+3) ) {
 
@@ -378,42 +467,26 @@ int judgement_message_information(
 
             else if ( pointer_recv == strstr(pointer_recv, "Memory total     : ") ) {
 
-                gop_connection.memory[that_site].total          += atoi(strstr(pointer_recv, " :")+3);}
+                number_memory_total = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Memory used rate : ") ) {
 
                *strchr(pointer_recv, '%')                        = '\0';
 
-                gop_connection.memory[that_site].free
-             =  gop_connection.memory[that_site].free
-
-             + (
-                        gop_connection.memory[that_site].total
-             -  ( 100 - gop_connection.memory[that_site].free  * 100 )
-               )
-
-             * (100 - atoi(strstr(pointer_recv, " :")+3)) / 100;}
+                number_memory_used  = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Disk available   : ") ) {
 
-                gop_connection.disk[that_site].available        += atoi(strstr(pointer_recv, " :")+3);}
+                number_disk_available = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Disk user rate   : ") ) {
 
                *strchr(pointer_recv, '%')                        = '\0';
 
-                gop_connection.disk[that_site].used
-             =  gop_connection.disk[that_site].used
-
-             + (
-                        gop_connection.disk[that_site].available
-             -  ( 100 - gop_connection.disk[that_site].used  * 100 )
-               )
-
-             * (100 - atoi(strstr(pointer_recv, " :")+3)) / 100;}
+                number_disk_used = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Sound control    : ") ) {
@@ -442,8 +515,8 @@ int judgement_message_information(
                 pointer_recv = strstr(pointer_recv, " :")+3;
 
 
-
                 gop_connection.flag[that_site].main   = 1;
+
 
 
                 if      ( *pointer_recv == 'o' ) {
@@ -485,11 +558,54 @@ int judgement_message_information(
 
 
 
+// This piece of
+// information is read over,
+// return the words and
+//  fresh the pointer
+
            *pointer_next = '\n';
 
             pointer_recv = pointer_next + 1;
 
             pointer_next = strchr(pointer_recv, '\n' );}
+
+
+
+
+
+
+// Prepare the information got about memorys
+/*
+                gop_connection.memory[that_site].free
+              = gop_connection.memory[that_site].total
+
+              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
+              /    100;
+*/
+
+
+// Prepare the information got about disk
+
+
+
+
+// Prepare the information got about cpu
+
+        number_frequency
+
+      = gop_connection.cpu[that_site].cores      * gop_connection.cpu[that_site].frequency
+
+      +                        number_cores      * number_frequency;
+
+
+        gop_connection.cpu[that_site].cores     += number_cores;
+
+
+        gop_connection.cpu[that_site].frequency
+
+      = number_frequency / gop_connection.cpu[that_site].cores;
+
+
 
 
         return 1;}
