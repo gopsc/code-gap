@@ -230,7 +230,7 @@ int control_command(
             return 0;}
 
 
-        reuturn 1;}
+        return 1;}
 
 
 
