@@ -30,10 +30,10 @@ int    number_listen = 1;
 
 
 double result_sound[200][513];
-//                     [num][ t ]
+//                 [num][ t ]
 
 double result_ft[200][513];
-//                  [ t ][ w ]
+//              [ t ][ w ]
 
 double buffer_listen[100][513][200];
 //                  [num][ w ][ t ]

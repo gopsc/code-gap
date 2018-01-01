@@ -32,12 +32,12 @@ void fft(int site) {
 
 
 
+/*
+          result_sound[site][(int)n] * cos(2*M_PI*w/N * (n-round+round))
 
-   //       result_sound[site][(int)n] * cos(2*M_PI*w/N * (n-round+round))
-
-   //     = result_sound[site][(int)n] * cos(2*M_PI*w/N*(n-round)) * cos(2*M_PI*(double)w/N*round)
-   //     - result_sound[site][(int)n] * sin(2*M_PI*w/N*(n-round)) * sin(2*M_PI*(double)w/N*round)
-
+        = result_sound[site][(int)n] * cos(2*M_PI*w/N*(n-round)) * cos(2*M_PI*(double)w/N*round)
+        - result_sound[site][(int)n] * sin(2*M_PI*w/N*(n-round)) * sin(2*M_PI*(double)w/N*round)
+*/
 
 
     double bin_fft[257][3];
@@ -46,6 +46,7 @@ void fft(int site) {
 
         bin_fft[(int)w][1] = 0;
         bin_fft[(int)w][2] = 0;
+
         for ( round=1; round<=32; round++ ){
 
 
@@ -70,6 +71,7 @@ void fft(int site) {
 
 /*
         if (mo >= 1) {
+
             output_print( "double", (char*)&w    );
             output_print( "string",        ":"   );
             output_print( "double", (char*)&mo   );

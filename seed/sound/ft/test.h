@@ -1,7 +1,12 @@
+
+
 void test_ft(const char* site) {
+
+
 
     double t;
     double n;
+
     for( n=1;n<=4096;n=n+1 ) {
 
         t=n/4096;

@@ -9,7 +9,7 @@ int action_show_sound() {
 
     if ( !information_flag.sound_show ) {
 
-        output_print( "string", "Sound Start." );
+        output_print( "string", "Sound Show Start.\n" );
 
         information_flag.sound      = 1;
         information_flag.sound_show = 1;}
@@ -19,6 +19,8 @@ int action_show_sound() {
 
 
     else if ( information_flag.sound_show ) {
+
+       output_print( "string", "Sound keep going.\n" );
 
         information_flag.sound_show = 0;}
 

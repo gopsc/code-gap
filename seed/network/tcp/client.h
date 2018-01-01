@@ -92,11 +92,16 @@ void* gop_client_start(void* what) {
 
                 for ( i=1; i<=information_network.number; i++ ) {
 
-                    if ( strcmp(
+                    if (
+
+                          strcmp(
                                 gop_connection.address_ip[0],
                                 information_network.ip[i][2]
                                )
                           == 0
+
+                    &&    information_flag.sound
+
                        ) {
 
                         usleep(step_connection * 1000000);

@@ -72,7 +72,7 @@ void* gop_corde(void* what) {
 
         if (
                !information_flag.sound
-        ||      information_flag.number_capture == 0
+        ||      information_sound.number_capture == 0
            ) {
 
             usleep(100000);}
@@ -109,27 +109,26 @@ void* gop_corde(void* what) {
 
             if ( information_sound.device_capture == 0 ) {
 
-                 information_sound.device_capture = 1;}
+                 information_sound.device_capture = 1;}//information_sound.number_capture;}
 
 
 // If the device always reset
 // turn device
 
-            else if ( number_turnning > 9 ) {
+            else if ( number_turnning > 2 ) {
 
                 number_turnning = 0;
 
                 output_print("string", "The target of capture device is turnning.\n");
 
 
-                if ( information_sound.number_capture > information_sound.device_capture ) {
+                if ( information_sound.device_capture > 1 ) {
 
-                    information_sound.device_capture++;}
+                    information_sound.device_capture--;}
 
                 else {
 
-                    information_sound.device_capture = 1;}}
-
+                    information_sound.device_capture = information_sound.number_capture;}}
 
 
 
@@ -145,10 +144,11 @@ void* gop_corde(void* what) {
             latency_max  = 2048;         /* in frames / 2 */
             resample     = 1;
 
-            chandle      = new snd_pcm_t*;
+// it goes wrong in c code
+//            chandle      =  snd_pcm_t*;
+            chandle      = NULL;
 
             number_error = 0;
-
 
 
 
@@ -159,7 +159,7 @@ void* gop_corde(void* what) {
 
             number_error = snd_pcm_open(
                                         &chandle,
-                                         information_sound.device[1][informaiton_sound.device_capture],
+                                         information_sound.device[1][information_sound.device_capture],
                                          SND_PCM_STREAM_CAPTURE,
                                          SND_PCM_NONBLOCK
                                        );
@@ -185,7 +185,7 @@ void* gop_corde(void* what) {
                                                 );
             if ( number_error < 0 ) {
 
-                output("string", "Sound corde: configuration broken\n");
+                output_print("string", "Sound corde: configuration broken\n");
 
                 information_flag.sound = 0;
 
@@ -198,7 +198,7 @@ void* gop_corde(void* what) {
                                                                 ct_params,
                                                                 1
                                                               );
-            if ( number_error ) < 0) {
+            if ( number_error < 0) {
 
                 output_print("string", "Sound corde: resample setup failled\n");
 
@@ -219,7 +219,7 @@ void* gop_corde(void* what) {
 //--------------------------------------------------------------------------
 //将配置空间限制为仅包含一种格式。
 
-//            snd_pcm_format_t    format   = SND_PCM_FORMAT_S16_LE;
+            snd_pcm_format_t    format   = SND_PCM_FORMAT_S16_LE;
 
             number_error = snd_pcm_hw_params_set_format(
                                                          chandle,
@@ -253,11 +253,12 @@ void* gop_corde(void* what) {
                 else if ( channels == 2 ) {
                     channels = 1; }
 
+
                 snd_pcm_drop(chandle);
                 snd_pcm_hw_free(chandle);
                 snd_pcm_close(chandle);
 
-                number_changed++;
+                number_turnning++;
 
                 usleep(100000);
 
@@ -278,7 +279,7 @@ void* gop_corde(void* what) {
 
                 output_print("string",         "Sound corde: rate Hz ");
                 output_print("string",         "not available for : " );
-                output_print("int"      (char*)&rate                  );
+                output_print("int"   ,  (char*)&rate                  );
                 output_print("string",         "\n"                   );
 
                 break;}
@@ -339,11 +340,12 @@ void* gop_corde(void* what) {
                                                                    c_params,
                                                                   &periodsize
                                                                  );
-            if ( number_error ) < 0 ) {
+            if ( number_error < 0 ) {
 
-                output_print("string",       "Sound corde: unable to ");
-                output_print("string",       "set buffer size for : " );
-                output_print("int"   , (char*)bufsize * 2             );
+                output_print("string",       "Sound corde: unable to " );
+                output_print("string",       "set buffer size for : "  );
+                output_print("int"   , (char*)bufsize                  );
+                output_print("string",        "\n"                     );
 
                 break;}
 
@@ -364,12 +366,14 @@ void* gop_corde(void* what) {
                                                                    c_params,
                                                                   &periodsize,
                                                                    0
-                                                                 )
+                                                                 );
+
             if ( number_error < 0 ) {
 
                 output_print("string",        "Sound corde: unable to ");
                 output_print("string",        "set period size  for : ");
                 output_print("int"   , (char*)&periodsize              );
+                output_print("string",        "\n"                     );
 
                 break;}
 
@@ -506,16 +510,16 @@ void* gop_corde(void* what) {
 
                 break;}
 
+
 //--------------------------------------------------------------------------
 
-            number_error = snd_pcm_start(chandle);
+            number_error = number_error = snd_pcm_start(chandle);
 
             if ( number_error < 0 ) {
 
                 output_print("string", "Sound corde: go error\n");
 
                 break;}
-
 
 
 
@@ -543,11 +547,16 @@ void* gop_corde(void* what) {
             int number_force        = 0;
 
 
-//
+// sometimes it went wrong , print same data
+// this is for compare
 
             int number_force_buffer = 0;
+
+
+
+
             int number_round        = 0;
-            int number_reset        = 0;
+
 
 
 // this is to note how aloud this piece of voice is
@@ -565,9 +574,14 @@ void* gop_corde(void* what) {
             int number_step_snake   = 1;
 
 
-//
+// how long this corde will keep
 
             int number_count        = 0;
+
+
+// sometime it goes bad, always return the same data
+
+            int number_reset        = 0;
 
 
 
@@ -594,7 +608,7 @@ void* gop_corde(void* what) {
 
                     r = snd_pcm_readi(chandle, buffer_sound, latency);
 
-              } while (r == -EAGAIN);
+                  } while (r == -EAGAIN);
 
 
 
@@ -602,29 +616,53 @@ void* gop_corde(void* what) {
 
 // Take the data
 
+                int i;
+
                 for (
-                        int i  = 0;
-                            i <= 21;
-                            i  = i+1
+                        i  = 0;
+                        i <= 21;
+                        i  = i+1
                     ) {
 
-                    number_force_buffer++;
 
-// Get date
-                    number_force =  *((int*)buffer_sound+i)/10000   -   number_force;
+
+// What is this
+
+//                    number_force_buffer++;
+
+
+
+
+
+// Get data
+// the data number is too big
+
+                    number_force =  *((int*)buffer_sound+i)/100000;
+
+
+// some device strange
+//   we should do some
+
+//                    number_force =  *((long*)buffer_sound+i)/100000   -   number_force;
+
+
 
 
 // Check date
-                    if (number_force >= 100) {
+                    if (number_force >= 200) {
 
                         number_aloud++;}
 
+
+
 // Save date
-                    if ( number_step < 400) {
+                    if ( number_step < 200) {
 
                         result_sound[number_step+0][number_step_snake] = number_force;}
 
                     number_step_snake++;
+
+
 
 
 // Update date for next getting
@@ -636,34 +674,47 @@ void* gop_corde(void* what) {
 
                     if ( number_step_snake > N ) {
 
+// be ready to start next looop
+
                         number_step_snake = 1;
 
 
 
 
+// for test
+/*
+                        if ( !information_flag.sound_show ) {
 
-                        if ( number_step < 400 ) {
+                            output_print("int", (char*)&number_aloud);
+                            output_print("string",     "\n");}
+*/
+
+
+
+
+// when this count buffer is not 0
+// we keep listen and be ready to get out and fft
+
+                        if ( number_aloud >= 200 ) {
+
+                            number_count = 9;}
+
+
+
+                        if ( number_step < 100 ) {
 
                             number_step++;}
 
-
-
-
-                        if ( number_aloud >= 50 ) {
-
-                            number_count = 5;}
-
-
                         else {
 
-                            if      ( number_count > 0 ) {
+                            if      ( number_count > 1 ) {
 
-                                number_count--;
+                                number_count--;}
 
 
                             else if ( number_count == 1 ) {
 
-                                    flag_sound = false;}}}
+                                information_flag.sound = 0;}}
 
 
 
@@ -697,7 +748,7 @@ void* gop_corde(void* what) {
 
                     if ( number_reset    < 0 ) {
 
-                        number_reset    = 0;}}
+                       number_reset    = 0;}}
 
 
                 else {
@@ -710,18 +761,20 @@ void* gop_corde(void* what) {
 
 // If it always get same data
 // reset it
-                    if ( number_reset >= 10 ) {
+                    if ( number_reset >= 9 ) {
 
                         output_print("string", "Sound corde: reset\n");
+
+                        number_count = 0;
 
                         break;}}}
 
 //--------------------------------------------------------------------------
 // close it
 
-            snd_pcm_drop(chandle);
+            snd_pcm_drop   (chandle);
             snd_pcm_hw_free(chandle);
-            snd_pcm_close(chandle);
+            snd_pcm_close  (chandle);
 
 
 
@@ -735,31 +788,40 @@ void* gop_corde(void* what) {
 
 
 
-
+// it will cause note save many times and data wrong
 
             if ( number_count == 1 ) {
-
 
 // When it's testing,
 // we could need to know
 // how many piece of data it get
 
-                if ( flag_sound_show == false ) {
+                if ( information_flag.sound_show == 0 ) {
 
                     output_print("int",   (char*)&number_step);
                     output_print("string",       "\n"        );}
 
+
+
 // Doing snake calculate,
 //   it's a number of 400
 
-//                for ( int i=1; i<=number_step and i<400; i++) {
+                int i;
 
-//                    fft(i);
+                for (
+
+                        i  = 1;
+                        i <= number_step  &&  i < 200;
+                        i ++
+
+                    ) {
+
+                    fft(i);
 
 // The speed of snake,
 //      mast be changed
 
-                    if ( flag_sound_show ) {
+                    if ( information_flag.sound_show ) {
 
                         usleep(100000);}}
 
@@ -769,9 +831,11 @@ void* gop_corde(void* what) {
 
 
 // Save this voice.
+// we dose not have it
 
-                if ( flag_sound_save ) {
-                    listen_save(number_step);}
+//                if ( information_flag.sound_save ) {
+
+//                    listen_save(number_step);}
 
 
 
@@ -789,12 +853,24 @@ void* gop_corde(void* what) {
 
 
 
-                flag_sound = true;}}}
+                information_flag.sound = 1;}
 
 
 
 
 
-    note_save("corde", "Corde close");
+            else {
+
+                note_save("corde", "Alsa corde close", "now");}}}
+
+
+
+
 
     pthread_exit(NULL);}
+
+
+
+
+
+
