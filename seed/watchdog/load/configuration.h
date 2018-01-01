@@ -1,27 +1,46 @@
 
 int load_configure() {
 
-//================================================================
+
 
     output_print( "string", "Load configure...\n" );
 
-//================================================================
 
-    char buffer_path[128] = "/opt/TxL/seed/configuration";
 
-    char that_file       [1024];
+
+// Prepare the values,
+//         the start path used is certaintlly
+
+    char buffer_path     [128]     = "/opt/TxL/seed/configuration";
+
+
+// For saving files
+// and saving configurations
+
+    char   that_file     [1024];
     char buffer_file     [1024];
     char target_configure[21][128];
     char result_configure[21][128];
 
-//================================================================
+
+// If ur running a server or client program
+// and you wander change the target ip
+// you mast close it first,
+// then turn it up again
 
     int bool_reset = 0;
 
-//================================================================
+
+
+
+
+
 // Check path.
 
     commandline_get("whoami", that_file);
+
+
+
 
     if    ( strcmp(that_file, "root\n") == 0 ) {
 
@@ -31,11 +50,11 @@ int load_configure() {
 
     else {
 
-        strcpy(buffer_path, "/opt/TxL/sky/configurations/configuration_no-root");
+        strcpy(buffer_path, "/opt/TxL/sky/configurations/TxL/configuration_no-root");
 
         if ( !is_file(buffer_path) ) {
 
-            strcpy(buffer_path, "TxL/sky/configurations/configuration_no-root");}}
+            strcpy(buffer_path, "TxL/sky/configurations/TxL/configuration_no-root");}}
 
 //================================================================
 

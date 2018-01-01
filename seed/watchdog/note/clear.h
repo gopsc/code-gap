@@ -2,12 +2,15 @@
 int note_clear(
 
                  const char* that_name,
-                 const char* that_command
+                 const char* that_type
 
              ) {
 
 
-    char           that_path[129];
+    char           that_path[128];
+
+
+// Prepare the path
 
     strcpy(that_path, path_the );
     strcat(that_path, "/"      );
@@ -21,10 +24,20 @@ int note_clear(
 
 
 
-    if ( strcmp(that_command, "all") == 0 ) {
+    if ( strcmp(that_type, "all") == 0 ) {
 
+// The save the words of blank
 
         file_save(that_path, "");
 
+        return 1;}
 
-        return 1;}}
+
+
+    else {
+
+// Got a wrong type of it
+
+        return 0;}}
+
+

@@ -8,7 +8,7 @@ int note_save(
              ) {
 
 
-
+// Prepare
 
            char    that_time[3][128];
            char    that_path[128];
@@ -18,10 +18,13 @@ int note_save(
 
 
 
+// judgement the time
+// i will note
 
     if ( strcmp(target_time, "now") == 0 ) {
 
-
+// Get the  time
+//     this time
 
         gettimeofday( &time_now, NULL );
 
@@ -35,6 +38,7 @@ int note_save(
 
     else {
 
+// Use the time recived
 
         strcpy( that_time[1], target_time );}
 
@@ -42,7 +46,7 @@ int note_save(
 
 
 
-
+// Prepare the path
 
     strcpy(that_path, path_the      );
     strcat(that_path, "/"           );
@@ -53,6 +57,9 @@ int note_save(
     strcat(that_path, that_name     );
     strcat(that_path, ".note"       );
 
+
+
+// Append the file
 
     file_append(that_path, "\n\n");
 
