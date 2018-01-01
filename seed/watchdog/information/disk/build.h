@@ -4,10 +4,10 @@ int information_disk_get() {
 
 
 
-    char that_file       [2048];
-    char that_buffer     [16];
+    char   that_file     [2048];
+    char   that_buffer   [16];
     char buffer_available[16];
-    char buffer_used     [16];
+    char buffer_size     [16];
 
 
 
@@ -33,14 +33,14 @@ int information_disk_get() {
         sscanf(
                 that_file, "%s %s %s %s",
                 that_buffer,
-                buffer_available,
+                buffer_size,
                 that_buffer,
-                buffer_used
+                buffer_available
               );
 
 
-        information_disk.available = atoi(buffer_available);
-        information_disk.used      = atoi(buffer_used);}
+        information_disk.size      = atoi(buffer_size);
+        information_disk.available = atoi(buffer_available);}
 
 
     return 1;}

@@ -31,8 +31,8 @@ struct gopi_memory {
 
 struct gopi_disk {
 
-    unsigned long  available;
-    unsigned long  used     ;};
+    unsigned long  size     ;
+    unsigned long  available;};
 
 
 //-------------------------------------------------------------------------

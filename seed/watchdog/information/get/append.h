@@ -55,9 +55,9 @@ int information_append(
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
-/*|*/   strcat(message, "Disk available   : ");                     snprintf(buffer_message, 31, "%lu", that_disk.available);                            //|
+/*|*/   strcat(message, "Disk size        : ");                     snprintf(buffer_message, 31, "%lu", that_disk.size);                                 //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Disk user rate   : ");                     snprintf(buffer_message, 31, "%lu",     (100*that_disk.used)/that_disk.available);   //|
+/*|*/   strcat(message, "Disk user rate   : ");                     snprintf(buffer_message, 31, "%lu", 100-(100*that_disk.available)/that_disk.size);   //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|

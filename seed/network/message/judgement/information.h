@@ -158,10 +158,10 @@ int judgement_message_information(
 
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Disk available   : ") ) {
+            else if ( pointer_recv == strstr(pointer_recv, "Disk size        : ") ) {
 
 
-                gop_connection.disk[that_site].available = atoi(strstr(pointer_recv, " :")+3);}
+                gop_connection.disk[that_site].size = atoi(strstr(pointer_recv, " :")+3);}
 
 
 
@@ -171,8 +171,8 @@ int judgement_message_information(
                *strchr(pointer_recv, '%')                        = '\0';
 
 
-                gop_connection.disk[that_site].used
-              = gop_connection.disk[that_site].available
+                gop_connection.disk[that_site].available
+              = gop_connection.disk[that_site].size
 
               * atoi(strstr(pointer_recv, " :")+3) / 100;}
 
@@ -291,7 +291,7 @@ int judgement_message_information(
         int number_cores;
         int number_frequency;
 
-        int number_disk_available;
+        int number_disk_size;
         int number_disk_rate;
 
         int number_memory_total;
@@ -489,9 +489,9 @@ int judgement_message_information(
                 number_memory_rate  = atoi(strstr(pointer_recv, " :")+3);}
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Disk available   : ") ) {
+            else if ( pointer_recv == strstr(pointer_recv, "Disk size        : ") ) {
 
-                number_disk_available = atoi(strstr(pointer_recv, " :")+3);}
+                number_disk_size    = atoi(strstr(pointer_recv, " :")+3);}
 
 
             else if ( pointer_recv == strstr(pointer_recv, "Disk user rate   : ") ) {
@@ -609,16 +609,18 @@ int judgement_message_information(
 // Prepare the information got about disk
 // It's just like the memory's
 
-                gop_connection.disk[that_site].used
-
-             += number_disk_available
-
-              * ( number_disk_rate ) / 100;
-
-
                 gop_connection.disk[that_site].available
 
-             += number_disk_available;
+             += number_disk_size
+
+              * ( 100 - number_disk_rate )
+
+              /   100;
+
+
+                gop_connection.disk[that_site].size
+
+             += number_disk_size;
 
 
 // Prepare the information got about cpu
