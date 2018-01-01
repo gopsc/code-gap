@@ -1,10 +1,23 @@
 
-void action_information() {
+
+
+
+int action_information() {
+
+
 
     char   buffer_information[2049];
+
     strcpy(buffer_information, "");
 
+
+
+
     system("clear");
+
+
+
+
 
     information_append(
                         buffer_information,
@@ -18,26 +31,49 @@ void action_information() {
                       );
 
 
-    output_print("string", "------------------------------\n" );
-    output_print("string",  buffer_information                );
-    output_print("string", "\n"                               );
+
     output_print("string", "------------------------------\n" );
 
+    output_print("string",  buffer_information                );
+
+    output_print("string", "\n"                               );
+
+    output_print("string", "------------------------------\n" );
+
+
+
+
+
     int i;
+
+
     for (
+
             i=0;
             i<4;
             i++
+
         ) {
 
+
+
+
+
         if (
+
                strcmp( gop_connection.how[i], "Connectted" ) == 0 
         ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0 
+
            ) {
+
+
 
             strcpy(buffer_information, "");
 
+
+
             information_append(
+
                                 buffer_information,
                                 gop_connection.system [i],
                                 gop_connection.network[i],
@@ -46,9 +82,16 @@ void action_information() {
                                 gop_connection.disk   [i],
                                 gop_connection.sound  [i],
                                 gop_connection.flag   [i]
+
                               );
+
+
             output_print( "string", buffer_information                 );
+
             output_print( "string", "\n"                               );
+
             output_print( "string", "------------------------------\n" );}}
 
-    return;}
+
+
+    return 1;}

@@ -1,9 +1,15 @@
 
-int control_command(
-                       int   that_site,
-                       char* that_command,
-                       char* buffer_send
-                   ) {
+
+
+int judgement_message_command (
+
+                                  int   that_site,
+                                  char* that_command,
+                                  char* buffer_send
+
+                              ) {
+
+
 
 
 
@@ -22,8 +28,8 @@ int control_command(
 
 
     else if (
-               strcmp(gop_connection.how[that_site], "Connectted") == 0
-    ||         strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
+                strcmp(gop_connection.how[that_site], "Connectted") == 0
+         ||     strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
             ) {
 
         strcpy(that_type, "host");}
@@ -32,11 +38,18 @@ int control_command(
 
 
     else if (
-               strcmp(gop_connection.how[that_site], "Connectting") == 0
-    ||         strcmp(gop_connection.how[that_site], "Sop"        ) == 0
+                strcmp(gop_connection.how[that_site], "Connectting") == 0
+         ||     strcmp(gop_connection.how[that_site], "Sop"        ) == 0
             ) {
 
         strcpy(that_type, "guest");}
+
+
+
+
+
+
+
 
 
 
@@ -234,7 +247,17 @@ int control_command(
 
 
 
-//=======================================================================
+
+
+
+
+
+
+
+
+
+
+
 
     else if (
                 strcmp( that_type, "guest" )
@@ -288,7 +311,15 @@ int control_command(
 
 
 
-//=======================================================================
+
+
+
+
+
+
+
+
+
 
 
 
@@ -320,3 +351,4 @@ int control_command(
 
 
     return 0;}
+
