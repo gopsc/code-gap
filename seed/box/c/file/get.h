@@ -7,7 +7,7 @@ void file_get(
 
 
     FILE *buffer_file         = NULL;
-    char  that_buffer[129];
+    char  that_buffer[128];
 
 
 
@@ -22,8 +22,14 @@ void file_get(
 
 
         while( fgets(that_buffer, 128, (FILE*)buffer_file) != NULL ) {
-            strcat(that_result, that_buffer);}
 
+//            if ( sizeof(that_result) - strlen(that_result) >= 128 ) {
+
+//                break;}
+
+//            else {
+
+                strcat(that_result, that_buffer);}//}
 
         fclose(buffer_file);}}
 

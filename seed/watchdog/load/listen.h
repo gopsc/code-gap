@@ -1,5 +1,5 @@
 
-void load_listen() {
+int load_listen() {
 
     output_print( "string", "Load listen...\n" );
 
@@ -16,7 +16,7 @@ void load_listen() {
 
 
 
-// ~/sound/listen/word/number/w/t
+// ~/listen/word/number/w/t
 
     strcpy(buffer_path, path_the   );
     strcat(buffer_path, "/"        );

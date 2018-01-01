@@ -33,7 +33,7 @@ void output_print(
 
         if ( strcmp(that_type, "double") == 0 ) {
 
-            printf("%f",  *(double*)that_words);}}
+            printf("%lf",  *(double*)that_words);}}
 
 
     else if ( information_flag.deamon ) {

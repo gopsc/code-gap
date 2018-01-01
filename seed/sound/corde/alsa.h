@@ -10,33 +10,26 @@ void* gop_corde(void* what) {
 
 // Start this module after watchdog is ready
 
-    while ( !flag_start ) {
+    while ( !information_flag.start ) {
         usleep(100000);}
-
-// Save note for this module
-
-    note_save("corde", "Corde start");
 
 // Setup sound path
 
     strcpy(path_sound, path_the    );
-    strcat(path_sound, "/gop/sound");
+    strcat(path_sound, "/sky/sound");
 
 
 // Start
 
-    int number_change;
+    int number_changed;
 
     while ( information_flag.main ) {
-
-
-
 
 // Wait when there's no capture devices
 
         if (
-              !information_flag.sound
-        ||     information_flag.number_capture == 0
+               !information_flag.sound
+        ||      information_flag.number_capture == 0
            ) {
 
             usleep(100000);}
@@ -44,16 +37,17 @@ void* gop_corde(void* what) {
         else {
 
 
+// A clear, useful note system can make
+//
+//   user know more changes about this thing.
+//   it's important.
 
-
-
-
-
+            note_save("corde", "Alsa corde start", "now");
 
 
 // If corde always reset , change corde device
 
-            number_change++;
+            number_changed++;
 
 
 // Auto find capture device
@@ -66,10 +60,10 @@ void* gop_corde(void* what) {
 // If the device always reset
 // turn device
 
-            else if ( number_change > 9 ) {
+            else if ( number_changed > 9 ) {
 
-                number_change = 0;
-                output_print("string", "Capture device turn.");
+                number_changed = 0;
+                output_print("string", "The target of capture device is turnning.\n");
 
 
                 if ( information_sound.number_capture > information_sound.device_capture ) {
@@ -82,34 +76,6 @@ void* gop_corde(void* what) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             int buffer_size = 0;            /* auto */
             int period_size = 0;            /* auto */
             int latency_min = 32;           /* in frames / 2 */
@@ -118,6 +84,7 @@ void* gop_corde(void* what) {
 
             snd_pcm_t             *chandle;
             int err;
+
 //--------------------------------------------------------------------------
 
             if ((err = snd_pcm_open(&chandle, info_sound.device[1][info_sound.device_capture], SND_PCM_STREAM_CAPTURE, SND_PCM_NONBLOCK)) < 0) {
@@ -180,7 +147,7 @@ void* gop_corde(void* what) {
                 snd_pcm_hw_free(chandle);
                 snd_pcm_close(chandle);
 
-                number_change++;
+                number_changed++;
 
                 continue;}
 //--------------------------------------------------------------------------
@@ -451,14 +418,14 @@ void* gop_corde(void* what) {
 // when it get different data
 // don't reset it
 
-                    number_change--;
+                    number_changed--;
                     number_reset--;
 
-                    if (number_change<0) {
-                        number_change=0;}
+                    if (number_changed < 0) {
+                        number_changed = 0;}
 
-                    if (number_reset<0) {
-                        number_reset=0;}}
+                    if (number_reset < 0) {
+                        number_reset = 0;}}
 
 
 

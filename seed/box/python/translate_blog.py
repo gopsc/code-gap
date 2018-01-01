@@ -21,7 +21,7 @@ buffer_time  = []
 
 while 1:
 
-    buffer_file  = "/opt/gop/library/micro-blog/"
+    buffer_file  = "/opt/TxL/sky/micro-blog/"
     buffer_file += that_id
     buffer_file += "/"
     buffer_file += str(buffer_count)
@@ -121,7 +121,7 @@ while 1:
 
 print(buffer_count)
 
-buffer_file  = "/opt/gop/note/" + that_id + ".note"
+buffer_file  = "/opt/TxL/sky/note/" + that_id + ".note"
 buffer_file  = open(buffer_file, "w")
 buffer_file.writelines(buffer_note)
 buffer_file.close()
