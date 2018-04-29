@@ -1,16 +1,13 @@
 this is a program with my learning,
 
      maybe it's not meaningful
-    ( android is comming ,,,,, )
+      android programer is comming ,
      but it's just meaningful to me..
 
 
 
-Put it into the path:
+ it's start with this script
 
-/opt/TxL
+ ./TxL/seed/box/Linux/seed.sh
 
-
-And it's start with this script
-
-bash /opt/TxL/seed/box/Linux/seed.sh
+ then it will make a file named '?'
