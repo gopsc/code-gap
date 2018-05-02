@@ -89,9 +89,9 @@ void action_seed       (
     action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/file/save.h"    );
     action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/file/append.h"  );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/section/deamon/deamon.h"    );
+    action_seed_append( buffer_file, buffer_path, "/box/c/system/process/deamon/deamon.h"    );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/system/section/commandline/shell.h");
+    action_seed_append( buffer_file, buffer_path, "/box/c/system/process/commandline/shell.h");
 
     action_seed_append( buffer_file, buffer_path, "/box/c/data/secret/secret.h"              );
 
@@ -123,7 +123,7 @@ void action_seed       (
     action_seed_append( buffer_file, buffer_path, "/watchdog/check/root.h"                   );
     action_seed_append( buffer_file, buffer_path, "/watchdog/check/update.h"                 );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/load/configure.h"               );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/load/configuration.h"           );
     action_seed_append( buffer_file, buffer_path, "/watchdog/load/symbol.h"                  );
     action_seed_append( buffer_file, buffer_path, "/watchdog/load/listen.h"                  );
 

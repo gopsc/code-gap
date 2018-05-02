@@ -7,7 +7,7 @@ void load_configure() {
 
 //================================================================
 
-    char buffer_path[128] = "/opt/TxL/seed/configure";
+    char buffer_path[128] = "/opt/TxL/seed/configuration";
 
     char that_file       [1025];
     char buffer_file     [1025];
@@ -19,11 +19,30 @@ void load_configure() {
     int bool_reset = 0;
 
 //================================================================
+// Check path.
+
+    commandline_get("whoami", that_file);
+
+    if    ( strcmp(that_file, "root") == 0 ) {
+
+        if    ( !is_file(buffer_path) ) {
+
+            strcpy(buffer_path, "TxL/seed/configuration");}}
+
+    else {
+
+        strcpy(buffer_path, "/opt/TxL/sky/configurations/configuration_no-root");
+
+        if ( !is_file(buffer_path) ) {
+
+            strcpy(buffer_path, "TxL/sky/configurations/configuration_no-root");}}
+
+//================================================================
 
     while ( !is_file(buffer_path) ) {
 
-        output_print( "string", "\nCan't find the configure file. :(\n" );
-        output_print( "string", " type a new path:"                     );
+        output_print( "string", "\nCan't find the configuration file. :(\n" );
+        output_print( "string", " type a new path:"                         );
 
         fgets(buffer_path,128, stdin);
 

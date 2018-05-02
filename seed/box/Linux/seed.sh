@@ -18,9 +18,9 @@ cat  $address/box/c/system/file-system/file/get.h      >> $addres2
 cat  $address/box/c/system/file-system/file/save.h     >> $addres2
 cat  $address/box/c/system/file-system/file/append.h   >> $addres2
 cat  $address/box/c/system/IO/output/print.h           >> $addres2
-cat  $address/box/c/system/section/commandline/shell.h >> $addres2
+cat  $address/box/c/system/process/commandline/shell.h >> $addres2
 
-cat  $address/watchdog/load/configure.h                >> $addres2
+cat  $address/watchdog/load/configuration.h            >> $addres2
 
 cat  $address/network/message/command/action/seed.h    >> $addres2
 cat  $address/network/message/command/action/flower.h  >> $addres2

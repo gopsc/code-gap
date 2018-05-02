@@ -55,11 +55,11 @@ void init_deamon() {
             //     any more
 
 
-            char buffer_max-file[16];
-            int  number_max-file     = atoi(buffer_max-file);
+            char buffer_nofile[16];
+            int  number_nofile     = atoi(buffer_nofile);
             int  i;
 
-            for ( i=0; i<number_max-file; ++i) {
+            for ( i=0; i<number_nofile; ++i) {
 
                 close(i);
                 chdir("/");  //Change work dirent.
