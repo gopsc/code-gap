@@ -12,12 +12,13 @@ cat  $address/box/c/head/variable.h                    >> $addres2
 cat  $address/watchdog/information/build.h             >> $addres2
 cat  $address/network/build.h                          >> $addres2
 
+cat  $address/box/c/data/translate/number_word.h       >> $addres2
+cat  $address/box/c/system/IO/output/print.h           >> $addres2
 cat  $address/box/c/system/file-system/dirent/is.h     >> $addres2
 cat  $address/box/c/system/file-system/file/is.h       >> $addres2
 cat  $address/box/c/system/file-system/file/get.h      >> $addres2
 cat  $address/box/c/system/file-system/file/save.h     >> $addres2
 cat  $address/box/c/system/file-system/file/append.h   >> $addres2
-cat  $address/box/c/system/IO/output/print.h           >> $addres2
 cat  $address/box/c/system/process/commandline/shell.h >> $addres2
 
 cat  $address/watchdog/load/configuration.h            >> $addres2

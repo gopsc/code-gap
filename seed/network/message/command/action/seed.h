@@ -80,6 +80,8 @@ void action_seed       (
     action_seed_append( buffer_file, buffer_path, "/sound/build.h"                           );
 
 
+    action_seed_append( buffer_file, buffer_path, "/box/c/data/translate/number_word.h"      );
+
     action_seed_append( buffer_file, buffer_path, "/box/c/system/IO/output/print.h"          );
 
     action_seed_append( buffer_file, buffer_path, "/box/c/system/file-system/dirent/is.h"    );
