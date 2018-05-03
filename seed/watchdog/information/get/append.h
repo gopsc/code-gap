@@ -11,7 +11,7 @@ void* information_append(
                         ) {
 
 //|========================================================================================================================================================|
-/*|*/   char buffer_message[129];                                                                                                                        //|
+/*|*/   char buffer_message[32];                                                                                                                         //|
 /*|*/                                                                                                                                                    //|
 /*|*/   strcat(message, "Name             : ");                                                                                                          //|
 /*|*/   strcat(message, that_system.name);                                                                                         strcat(message, "\n");//|
@@ -21,11 +21,11 @@ void* information_append(
 /*|*/   strcat(message, that_system.user);                                                                                         strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
 /*|*/                                                                                                                                                    //|
-/*|*/   strcat(message, "Time             : ");                     gcvt(time(NULL),                        10, buffer_message);                         //|
+/*|*/   strcat(message, "Time             : ");                     snprintf(buffer_message, 31, "%d", time(NULL));                                      //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
 /*|*/                                                                                                                                                    //|
-/*|*/   strcat(message, "IP               : ");                     gcvt(that_network.number,        10, buffer_message);                                //|
+/*|*/   strcat(message, "IP               : ");                     snprintf(buffer_message, 31, "%d", that_network.number);                             //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
 /*|*/   int i ;                                                                                                                                          //|
@@ -39,33 +39,33 @@ void* information_append(
 /*|*/       strcat(message, "\n");}                                                                                                                      //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
-/*|*/   strcat(message, "CPU cores        : ");                     gcvt(that_cpu.cores,             10, buffer_message);                                //|
+/*|*/   strcat(message, "CPU cores        : ");                     snprintf(buffer_message, 31, "%d", that_cpu.cores);                                  //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "CPU frequency    : ");                     gcvt(that_cpu.frequency,         10, buffer_message);                                //|
+/*|*/   strcat(message, "CPU frequency    : ");                     snprintf(buffer_message, 31, "%d", that_cpu.frequency);                              //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "CPU temperature  : ");                     gcvt(that_cpu.temperature,       10, buffer_message);                                //|
+/*|*/   strcat(message, "CPU temperature  : ");                     snprintf(buffer_message, 31, "%d", that_cpu.temperature);                            //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "CPU rate         : ");                     gcvt(that_cpu.rate,              10, buffer_message);                                //|
+/*|*/   strcat(message, "CPU rate         : ");                     snprintf(buffer_message, 31, "%d", that_cpu.rate);                                   //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
-/*|*/   strcat(message, "Memory total     : ");                     gcvt(that_memory.total,          10, buffer_message);                                //|
+/*|*/   strcat(message, "Memory total     : ");                     snprintf(buffer_message, 31, "%d", that_memory.total);                               //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Memory used rate : ");                     gcvt(100-(100*that_memory.free)/that_memory.total, 10, buffer_message);              //|
+/*|*/   strcat(message, "Memory used rate : ");                     snprintf(buffer_message, 31, "%d", 100-(100*that_memory.free)/that_memory.total);    //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
-/*|*/   strcat(message, "Disk available   : ");                     gcvt(that_disk.available,        10, buffer_message);                                //|
+/*|*/   strcat(message, "Disk available   : ");                     snprintf(buffer_message, 31, "%d", that_disk.available);                             //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Disk user rate   : ");                     gcvt(100-(100*that_disk.used)/that_disk.available, 10, buffer_message);              //|
+/*|*/   strcat(message, "Disk user rate   : ");                     snprintf(buffer_message, 31, "%d",100-(100*that_disk.used)/that_disk.available);     //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
-/*|*/   strcat(message, "Sound control    : ");                     gcvt(that_sound.number_control,  10, buffer_message);                                //|
+/*|*/   strcat(message, "Sound control    : ");                     snprintf(buffer_message, 31, "%d", that_sound.number_control);                       //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Sound capture    : ");                     gcvt(that_sound.number_capture,  10, buffer_message);                                //|
+/*|*/   strcat(message, "Sound capture    : ");                     snprintf(buffer_message, 31, "%d", that_sound.number_capture);                       //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Sound playback   : ");                     gcvt(that_sound.number_playback, 10, buffer_message);                                //|
+/*|*/   strcat(message, "Sound playback   : ");                     snprintf(buffer_message, 31, "%d", that_sound.number_playback);                      //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|

@@ -79,7 +79,7 @@ void  load_update(int that_site) {
                 num_file++;
                 strcpy(buffer_file, buffer_update);
                 strcat(buffer_file, "."          );
-                gcvt  (num_file, 2, buffer_words );
+                snprintf(buffer_words, sizeof(buffer_words) / sizeof(char) - 1, "%d", num_file);
                 strcat(buffer_file, buffer_words );}
 
 

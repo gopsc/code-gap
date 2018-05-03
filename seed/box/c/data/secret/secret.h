@@ -24,7 +24,12 @@ void* secret_encode(
 
             number_sum += (int)that_message[i];}
 
-        gcvt(number_sum, 10, that_message);}
+        snprintf(
+                  that_message,
+                  sizeof(that_message) / sizeof(char) - 1,
+                  "%d", 
+                  number_sum
+                );}
 
 
     else if ( strcmp(that_type, "blank") == 0 ) {

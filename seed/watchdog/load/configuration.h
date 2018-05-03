@@ -9,8 +9,8 @@ void load_configure() {
 
     char buffer_path[128] = "/opt/TxL/seed/configuration";
 
-    char that_file       [1025];
-    char buffer_file     [1025];
+    char that_file       [1024];
+    char buffer_file     [1024];
     char target_configure[21][128];
     char result_configure[21][128];
 
@@ -54,7 +54,7 @@ void load_configure() {
 
             *strchr(buffer_path, '\n')  = '\0';}}
 
-    printf("%s\n", buffer_path);
+//    printf("%s\n", buffer_path);
 
     file_get(buffer_path, that_file);
 

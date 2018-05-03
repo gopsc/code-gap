@@ -27,7 +27,6 @@ int append_message_data_update(
             strcat(buffer_send, "\n");
 
 
-
             char buffer_file          [102400];
             char buffer_file_length   [16];
             char buffer_sum           [16];
@@ -38,7 +37,6 @@ int append_message_data_update(
             strcpy(buffer_path_start, path_the);
             strcat(buffer_path_start, "/"     );
             strcat(buffer_path_start, name_the);
-
 
 
             if ( strcmp(gop_connection.update[that_site], buffer_path_start) == 0 ) {
@@ -52,8 +50,9 @@ int append_message_data_update(
 
                     return 1;}}
 
+
             file_get(gop_connection.update[that_site], buffer_file       );
-            gcvt    (strlen(buffer_file), 10,          buffer_file_length);
+            snprintf(buffer_file_length, sizeof(buffer_file_length) / sizeof(char) - 1, "%d", strlen(buffer_file));
 
 
             if ( gop_connection.step_update[that_site] * size_update > strlen(buffer_file) ) {
@@ -100,7 +99,8 @@ int append_message_data_update(
 
             file_get(gop_connection.update[that_site], buffer_file);
 
-            gcvt    (strlen(buffer_file), 10, buffer_file_length);
+            snprintf(buffer_file_length, sizeof(buffer_file_length) / sizeof(char) - 1, "%d", strlen(buffer_file));
+
 
 // show file name if it have not begin
 
@@ -112,7 +112,7 @@ int append_message_data_update(
                 output_print( "string", "\n"                             );}
 
 
-            gcvt(gop_connection.step_update[that_site], 10, buffer_step);
+            snprintf(buffer_step, sizeof(buffer_step) / sizeof(char) - 1, "%d", gop_connection.step_update[that_site]);
 
             strcat(buffer_send, strstr(gop_connection.update[that_site], name_the) + strlen(name_the));
             strcat(buffer_send, ",");
@@ -123,17 +123,18 @@ int append_message_data_update(
 
             if ( (gop_connection.step_update[that_site]+1) * size_update > atoi(buffer_file_length) ) {
 
-                gcvt  (
-                       strlen(buffer_file) - (gop_connection.step_update[that_site]) * size_update,
-                       10,
-                       buffer_file_length
-                      );
+                snprintf(
+                         buffer_file_length,
+                         sizeof(buffer_file_length) / sizeof(char) - 1,
+                         "%d",
+                         strlen(buffer_file) - (gop_connection.step_update[that_site]) * size_update
+                        );
                 strcat(buffer_send, buffer_file_length);}
 
             else {
 
-                gcvt  (size_update, 10, buffer_file_length);
-                strcat(buffer_send,     buffer_file_length);}
+                snprintf(buffer_file_length, sizeof(buffer_file_length) / sizeof(char) - 1, "%d", size_update);
+                strcat  (buffer_send,        buffer_file_length);}
 
             strcat(buffer_send, ","       );
             strcat(buffer_send, buffer_sum);

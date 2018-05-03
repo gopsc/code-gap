@@ -16,10 +16,11 @@ void note_save(
 
         gettimeofday( &time_now, NULL );
 
-        gcvt(         time_now.tv_sec,          10, that_time[1] );
-        gcvt( (double)time_now.tv_usec/1000000, 10, that_time[2] );
+        snprintf( that_time[1], sizeof(that_time[1]) / sizeof(char) -1, time_now.tv_sec         );
+        snprintf( that_time[2], sizeof(that_time[2]) / sizeof(char) -1, time_now.tv_usec/1000000);
 
-        strcat( that_time[1], that_time[2]+1 );}
+        strcat( that_time[1], "."          );
+        strcat( that_time[1], that_time[2] );}
 
     else {
 

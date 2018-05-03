@@ -36,7 +36,7 @@ int load_listen() {
 
     do {
 
-        gcvt(number_listen, 10, buffer_buffer);
+        snprintf(buffer_buffer, sizeof(buffer_buffer) / sizeof(char) - 1, "%d", number_listen);
 
         strcpy(buffer_name, buffer_path);
         strcat(buffer_name, "/");
@@ -53,7 +53,7 @@ int load_listen() {
             int w;
             for ( w=1; w<=N; w++) {
 
-                gcvt(w, 10, buffer_buffer);
+                snprintf(buffer_buffer, sizeof(buffer_buffer) / sizeof(char) - 1, "%d", w);
 
                 strcpy(buffer_file, buffer_name);
                 strcat(buffer_file, "/");
