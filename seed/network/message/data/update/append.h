@@ -6,10 +6,14 @@ int append_message_data_update(
                                ) {
 
     if (
-           strcmp(gop_connection.how[that_site], "Connectted"  ) == 0
-    ||     strcmp(gop_connection.how[that_site], "Sopi"        ) == 0
+           strcmp(gop_connection.how[that_site], "Connectted"  ) != 0
+    ||     strcmp(gop_connection.how[that_site], "Sopi"        ) != 0
        ) {
 
+        return 0;}
+
+
+    else {
 
 // count_update means times between tow update message
 

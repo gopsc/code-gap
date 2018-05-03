@@ -1,5 +1,5 @@
 
-void check_power() {
+int check_power() {
 
 
 
@@ -50,5 +50,6 @@ void check_power() {
 
             note_save("dog",     "Power off", that_data + 2);
 
-            note_save("corde",   "Power off", that_data + 2);}}}
+            note_save("corde",   "Power off", that_data + 2);}}
 
+    return 1;}

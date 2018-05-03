@@ -1,5 +1,5 @@
 
-void information_memory_get(){
+int information_memory_get(){
 
 
     FILE* that_file             = fopen("/proc/meminfo", "r");
@@ -13,16 +13,6 @@ void information_memory_get(){
     fgets (buffer_result, sizeof(buffer_result), that_file);
     sscanf(buffer_result, "%s %lu",        buffer_name, &information_memory.free);
 
-    fclose(that_file);}
+    fclose(that_file);
 
-
-
-
-
-
-
-
-
-
-
-
+    return 1;}

@@ -28,17 +28,9 @@ void* gop_dog(void* what){
     check_update();
 
 
+    output_print( "string", "Done\n"               );
 
-
-
-
-    output_print( "string", "Done\n" );
-
-
-
-
-
-    note_save("dog", "WatchDog start", "now");
+    note_save   ( "dog",    "WatchDog start", "now");
 
 
     while (information_flag.main) {

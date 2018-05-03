@@ -83,4 +83,6 @@ int load_listen() {
 
                   } while ( buffer_pointer != NULL );}}}
 
-  } while ( is_dirent(buffer_name) );}
+  } while ( is_dirent(buffer_name) );
+
+    return 1;}

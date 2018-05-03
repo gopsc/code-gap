@@ -1,4 +1,5 @@
-void information_CPU_temperature_get() {
+
+int information_CPU_temperature_get() {
 
     char   path_temperature[65] = "/sys/class/thermal/thermal_zone0/temp";
     char buffer_temperature[33];
@@ -38,4 +39,7 @@ void information_CPU_temperature_get() {
 
         else {
 
-            information_cpu.temperature = number_temperature;}}}
+            information_cpu.temperature = number_temperature;}}
+
+
+    return 1;}

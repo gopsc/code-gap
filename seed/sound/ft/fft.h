@@ -40,7 +40,7 @@ void fft(int site) {
 
 
 
-    double bin_fft[257][2];
+    double bin_fft[257][3];
 
     for ( w=1; w<=N/2; w++ ) {
 

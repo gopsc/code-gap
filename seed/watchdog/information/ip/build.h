@@ -1,6 +1,6 @@
 
 
-void information_ip_get() {
+int information_ip_get() {
 
 
     struct    ifaddrs* buffer_struct         = NULL;
@@ -11,13 +11,15 @@ void information_ip_get() {
               int      number_ip             = 0;
 
 
-
     while ( buffer_struct != NULL ) {
 
+// IPv4
+
         if (
-            buffer_struct
-            ->ifa_addr
-            ->sa_family == AF_INET
+               buffer_struct
+               ->            ifa_addr
+               ->            sa_family
+               ==            AF_INET
            ) {
 
             buffer_pointer = &(
@@ -45,6 +47,8 @@ void information_ip_get() {
                   );}
 
 /*
+// IPv6
+
         else if (
                  buffer_struct
                  ->ifa_addr
@@ -78,12 +82,11 @@ void information_ip_get() {
 */
 
 
-
         buffer_struct = buffer_struct->ifa_next;}
 
     information_network.number = number_ip;
 
-    freeifaddrs(buffer_struct);}
+    freeifaddrs(buffer_struct);
 
 
 
@@ -166,5 +169,9 @@ void information_ip_get() {
 
 
 
-    information_ip_number = number_ip[1];}
+    information_ip_number = number_ip[1];
+
+
 */
+
+    return 1;}

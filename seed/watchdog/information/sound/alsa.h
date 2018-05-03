@@ -1,10 +1,9 @@
-void information_sound_get() {
 
+int information_sound_get() {
 
 
     DIR           *buffer_dirent;
     struct dirent *pointer_dirent;
-
 
     information_sound.number_control  = 0;
     information_sound.number_capture  = 0;
@@ -20,13 +19,6 @@ void information_sound_get() {
     char buffer[3][3];
 
 
-
-
-
-
-
-
-
     buffer_dirent = opendir("/dev/snd");
 
     pointer_dirent = readdir(buffer_dirent);
@@ -34,24 +26,9 @@ void information_sound_get() {
     closedir(buffer_dirent);
 
 
-
-
-
-
-
-
-
-
     while ( ( pointer_dirent = readdir(buffer_dirent) ) != NULL ) {
 
         strcpy(buffer_name, pointer_dirent->d_name);
-
-
-
-
-
-
-
 
         if ( strstr(buffer_name, "control") == buffer_name ) {
 
@@ -62,17 +39,7 @@ void information_sound_get() {
            strcpy( buffer_name, strstr(buffer_name, "pcm")+3 );
 
 
-
-
-
-
-
-
-
-
-
            if (buffer_name[4] == 'c') {
-
 
                number_capture++;
 
@@ -87,9 +54,7 @@ void information_sound_get() {
                strcpy(information_sound.device[1][number_capture], buffer_id);}
 
 
-
            else if (buffer_name[4] == 'p') {
-
 
                number_playback++;
 
@@ -104,8 +69,8 @@ void information_sound_get() {
                strcpy(information_sound.device[2][number_playback], buffer_id);}}}
 
 
-
-
     information_sound.number_control  = number_control;
     information_sound.number_capture  = number_capture;
-    information_sound.number_playback = number_playback;}
+    information_sound.number_playback = number_playback;
+
+    return 1;}

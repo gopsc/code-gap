@@ -1,6 +1,5 @@
 
-void check_update() {
-
+int check_update() {
 
     char    buffer_path[65];
     char    buffer_commandline[65];
@@ -15,4 +14,6 @@ void check_update() {
 
     if ( is_dirent(buffer_path) ) {
 
-        commandline_get(buffer_commandline, buffer_path);}}
+        commandline_get(buffer_commandline, buffer_path);}
+
+    return 1;}

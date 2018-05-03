@@ -1,14 +1,14 @@
 
-void* information_append(
-                                   char*        message     ,
-                            struct gopi_system  that_system ,
-                            struct gopi_network that_network,
-                            struct gopi_cpu     that_cpu    ,
-                            struct gopi_memory  that_memory ,
-                            struct gopi_disk    that_disk   ,
-                            struct gopi_sound   that_sound  ,
-                            struct gopi_flag    that_flag
-                        ) {
+int information_append(
+                                 char*        message     ,
+                          struct gopi_system  that_system ,
+                          struct gopi_network that_network,
+                          struct gopi_cpu     that_cpu    ,
+                          struct gopi_memory  that_memory ,
+                          struct gopi_disk    that_disk   ,
+                          struct gopi_sound   that_sound  ,
+                          struct gopi_flag    that_flag
+                      ) {
 
 //|========================================================================================================================================================|
 /*|*/   char buffer_message[32];                                                                                                                         //|
@@ -21,7 +21,7 @@ void* information_append(
 /*|*/   strcat(message, that_system.user);                                                                                         strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
 /*|*/                                                                                                                                                    //|
-/*|*/   strcat(message, "Time             : ");                     snprintf(buffer_message, 31, "%d", time(NULL));                                      //|
+/*|*/   strcat(message, "Time             : ");                     snprintf(buffer_message, 31, "%ld", time(NULL));                                     //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
 /*|*/                                                                                                                                                    //|
@@ -49,15 +49,15 @@ void* information_append(
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
-/*|*/   strcat(message, "Memory total     : ");                     snprintf(buffer_message, 31, "%d", that_memory.total);                               //|
+/*|*/   strcat(message, "Memory total     : ");                     snprintf(buffer_message, 31, "%lu", that_memory.total);                              //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Memory used rate : ");                     snprintf(buffer_message, 31, "%d", 100-(100*that_memory.free)/that_memory.total);    //|
+/*|*/   strcat(message, "Memory used rate : ");                     snprintf(buffer_message, 31, "%lu", 100-(100*that_memory.free)/that_memory.total);   //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
-/*|*/   strcat(message, "Disk available   : ");                     snprintf(buffer_message, 31, "%d", that_disk.available);                             //|
+/*|*/   strcat(message, "Disk available   : ");                     snprintf(buffer_message, 31, "%lu", that_disk.available);                            //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
-/*|*/   strcat(message, "Disk user rate   : ");                     snprintf(buffer_message, 31, "%d",100-(100*that_disk.used)/that_disk.available);     //|
+/*|*/   strcat(message, "Disk user rate   : ");                     snprintf(buffer_message, 31, "%lu",100-(100*that_disk.used)/that_disk.available);    //|
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "%"); //|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
@@ -79,4 +79,4 @@ void* information_append(
 /*|*/                                                                                                                                                    //|
 //|========================================================================================================================================================|
 
-        }
+        return 1;}

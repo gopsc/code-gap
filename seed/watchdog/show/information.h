@@ -1,5 +1,5 @@
 
-void dog_show() {
+int dog_show() {
 
     if ( information_flag.show == 1 ) {
 
@@ -45,4 +45,4 @@ void dog_show() {
                 output_print( "string", buffer_information );
                 output_print( "string", "\n\n"             );}}}
 
-    return;}
+    return 1;}

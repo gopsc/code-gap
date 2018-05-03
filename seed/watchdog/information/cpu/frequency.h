@@ -1,5 +1,5 @@
 
-void information_CPU_frequency_get() {
+int information_CPU_frequency_get() {
 
     char  that_file[10240];
     char  that_result[1024];
@@ -57,4 +57,7 @@ void information_CPU_frequency_get() {
 
             sscanf( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
 
-            information_cpu.frequency = atoi(that_result);}}}
+            information_cpu.frequency = atoi(that_result);}}
+
+
+    return 1;}

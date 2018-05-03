@@ -1,5 +1,5 @@
 
-void check_network() {
+int check_network() {
 
 
     time_t time_now = time(NULL);
@@ -179,4 +179,6 @@ void check_network() {
                 output_print( "string", "Net connection reset.\n" );
 
                 strcpy(gop_connection.address_ip[0], address_to);
-                       gop_connection.port[0]      = port_to;}}}}
+                       gop_connection.port[0]      = port_to;}}}
+
+    return 1;}

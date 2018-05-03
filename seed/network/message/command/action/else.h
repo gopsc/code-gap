@@ -5,15 +5,10 @@ void action_else(
                     char* buffer_send
                 ) {
 
-
-
-
-
     if (
-           gop_connection.how[that_site] == "Connectting"
-    ||     gop_connection.how[that_site] == "Sop"
+           strcmp(gop_connection.how[that_site], "Connectting") == 0
+    ||     strcmp(gop_connection.how[that_site], "Sop"        ) == 0
        ) {
-
 
 
         if (

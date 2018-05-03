@@ -1,4 +1,5 @@
-void information_CPU_rate_get() {
+
+int information_CPU_rate_get() {
 
     struct gopi_cpu buffer_cpu;
 
@@ -71,4 +72,7 @@ void information_CPU_rate_get() {
     else
         that_use = 0;
 
-    information_cpu.rate = that_use;}
+    information_cpu.rate = that_use;
+
+
+    return 1;}

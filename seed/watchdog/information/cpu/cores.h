@@ -1,5 +1,5 @@
 
-void information_CPU_cores_get() {
+int information_CPU_cores_get() {
 
 
     int    num_result        = -1;
@@ -17,5 +17,7 @@ void information_CPU_cores_get() {
         num_result++; 
         pointer_file = strstr(pointer_file + 1,  target_name    );}
 
-    information_cpu.cores = num_result;}
+    information_cpu.cores = num_result;
 
+
+    return 1;}

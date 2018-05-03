@@ -1,5 +1,5 @@
 
-void information_disk_get() {
+int information_disk_get() {
 
     char that_file[2049];
     char that_buffer[17];
@@ -7,7 +7,6 @@ void information_disk_get() {
     char buffer_used[17];
 
     commandline_get("df", that_file);
-
 
 
     if ( strchr(that_file, '\n') != NULL ) {
@@ -26,5 +25,9 @@ void information_disk_get() {
                 buffer_used
               );
 
+
         information_disk.available = atoi(buffer_available);
-        information_disk.used      = atoi(buffer_used);}}
+        information_disk.used      = atoi(buffer_used);}
+
+
+    return 1;}

@@ -1,8 +1,8 @@
 
-void note_clear(
-                   const char* that_name,
-                   const char* that_command
-               ) {
+int note_clear(
+                 const char* that_name,
+                 const char* that_command
+             ) {
 
 
     char           that_path[129];
@@ -18,4 +18,6 @@ void note_clear(
 
 
     if ( strcmp(that_command, "all") == 0 ) {
-        file_save(that_path, "");}}
+        file_save(that_path, "");}
+
+    return 1;}

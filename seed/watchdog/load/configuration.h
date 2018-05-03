@@ -1,5 +1,5 @@
 
-void load_configure() {
+int load_configure() {
 
 //================================================================
 
@@ -207,4 +207,6 @@ void load_configure() {
         strcpy(gop_connection.address_ip[0], address_to);
                gop_connection.port[0]      = port_to    ;
 
-        output_print("string", "Done\n");}}
+        output_print("string", "Done\n");}
+
+    return 1;}

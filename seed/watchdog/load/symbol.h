@@ -1,5 +1,5 @@
 
-void load_symbol() {
+int load_symbol() {
 
 
     output_print( "string", "Load symbol...\n" );
@@ -13,4 +13,4 @@ void load_symbol() {
     strcat(symbol_next, "|  \\|  +--  / \\    |    gap \n");
 
 
-    return;}
+    return 1;}
