@@ -23,7 +23,7 @@ void load_configure() {
 
     commandline_get("whoami", that_file);
 
-    if    ( strcmp(that_file, "root") == 0 ) {
+    if    ( strcmp(that_file, "root\n") == 0 ) {
 
         if    ( !is_file(buffer_path) ) {
 
@@ -54,6 +54,7 @@ void load_configure() {
 
             *strchr(buffer_path, '\n')  = '\0';}}
 
+    printf("%s\n", buffer_path);
 
     file_get(buffer_path, that_file);
 
@@ -62,6 +63,7 @@ void load_configure() {
         information_flag.main = 0;}
 
     else {
+
 
 //================================================================
 // Reboot client when it was block.
