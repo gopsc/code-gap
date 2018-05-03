@@ -1,8 +1,20 @@
 
 int translate_number_word (
                               double that_number,
+                              int    that_round,
                               char*  that_word
                           ) {
+
+    if ( that_number < 0 ) {
+
+        strcpy(that_word, "-");
+
+        that_number = 0 - that_number;}
+
+    else {
+
+        strcpy(that_word, "" );}
+
 
     int    buffer_number       =               (int)that_number;
     double buffer_number_point = that_number -    buffer_number;
@@ -13,19 +25,19 @@ int translate_number_word (
     int  number_this;
     char buffer_word[1024];
 
-
     if ( buffer_number == 0 ) {
 
-        strcpy(buffer_word, "0");}
+        strcat(buffer_word, "0");}
 
     else {
 
-        do {
+        while ( buffer_number != 0 ) {
 
             number_this   = buffer_number * 10 ;
             number_this   = number_this   % 100;
             buffer_number = buffer_number / 10;
 
+printf("%d\n", buffer_number!=0);
 
             if ( number_this == 0  ) {
 
@@ -67,40 +79,38 @@ int translate_number_word (
 
             if ( number_this == 90 ) {
 
-                strcat(buffer_word, "9");}}
+                strcat(buffer_word, "9");}}}
 
-        while ( buffer_number != 0 );}
-
-
-    number_this            = strlen(buffer_word);
-    that_word[number_this] = '\0';
-    number_this            --    ;
+printf("%s\n", buffer_word);
 
     for (
-            buffer_number = 0;
-            number_this  >= 0;
-            number_this  --
+            number_this =  strlen(buffer_word);
+            number_this >= 2                  ;
+            number_this --
         ) {
 
-        that_word[buffer_number] = buffer_word[number_this];
-                  buffer_number ++                         ;}
+        buffer_word[number_this-1] = '\0';
+
+//        printf("%s\n", buffer_word+(number_this-2));
+//        strcat( that_word, buffer_word + (number_this - 2) );
+}
 
 
 // The section after  point.
 
     buffer_number = 0;
 
-    while ( buffer_number_point != 0 ) {
+    while ( that_round > 0 ) {
 
-        printf("%lf\n", buffer_number_point);
+        that_round --;
 
-        buffer_number       =                                   buffer_number       * 10  ;
-        buffer_number      +=                            (int)( buffer_number_point * 10 );
-        buffer_number_point = buffer_number_point * 10 - (int)( buffer_number_point * 10 ); }
+        buffer_number        =                                       buffer_number       * 10  ;
+        buffer_number       +=                                (int)( buffer_number_point * 10 );
+        buffer_number_point  = ( buffer_number_point * 10 ) - (int)( buffer_number_point * 10 ); }
 
     if ( buffer_number != 0 ) {
 
-        translate_number_word(buffer_number, buffer_word);
+        translate_number_word(buffer_number, that_round, buffer_word);
 
         strcat(that_word, ".");
 
