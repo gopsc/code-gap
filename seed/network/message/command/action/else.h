@@ -22,11 +22,11 @@ void action_else(
 
         else {
 
-            output_print( "string",        "Network "                 );
-            output_print( "int",    (char*)&that_site                 );
-            output_print( "string",        "got a unknow command: \n" );
-            output_print( "string",         that_command              );
-            output_print( "string",        "\n"                       );}
+            output_print( "string",        "Network "                    );
+            output_print( "int",    (char*)&that_site                    );
+            output_print( "string",        " got a unknow command: \n\"" );
+            output_print( "string",         that_command                 );
+            output_print( "string",        "\"\n"                        );}
 
 
         strcat      (buffer_send, "What's that?"                  );}}

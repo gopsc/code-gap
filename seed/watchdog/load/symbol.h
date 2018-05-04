@@ -7,10 +7,10 @@ int load_symbol() {
 
 // The flag of 'NEXT'
 
-    strcpy(symbol_next, "\n"                              ); 
-    strcat(symbol_next, "|\\  |  +--  \\ /  -----  B \n"  ); 
-    strcat(symbol_next, "| \\ |  |--   X     |    Y: \n"  );
-    strcat(symbol_next, "|  \\|  +--  / \\    |    gap \n");
+    strcpy(symbol_next, "\n"                                ); 
+    strcat(symbol_next, "|\\  |  +--  \\ /  -----  B \n"    ); 
+    strcat(symbol_next, "| \\ |  |--   X     |    Y: \n"    );
+    strcat(symbol_next, "|  \\|  +--  / \\    |    gap \n\n");
 
 
     return 1;}

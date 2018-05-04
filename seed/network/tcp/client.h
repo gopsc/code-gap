@@ -149,7 +149,7 @@ void* gop_client_start(void* what) {
                 secret_decode(buffer_recv, "blank");
                 control_message( 0, buffer_recv, buffer_send);
                 secret_encode(buffer_send, "blank");
-
+printf("%s\n", buffer_send);
                 send(
                       gop_connection.descriptor[0],
                       buffer_send,
