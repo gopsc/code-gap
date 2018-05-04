@@ -119,7 +119,12 @@ void control_message(
 
                 pointer_recv = pointer_next + strlen(symbol_next);}
 
-            } while ( pointer_next != NULL );}
+          } while ( pointer_next != NULL );
+
+
+        if ( buffer_send[strlen(buffer_send)-1] == '\n' ) {
+
+            strcat(buffer_send, "Who is that now?");}}
 
 
 
