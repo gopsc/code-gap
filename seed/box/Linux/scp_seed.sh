@@ -23,7 +23,9 @@ if [ -f $path/build.c ]; then
 
    scp -r $1:$path ./
 
-   rm  -rf  $path
-   mv  seed $path
+   if [ -d seed ]; then
+      rm  -rf  $path
+      mv  seed $path
+   fi
 
 fi
