@@ -30,7 +30,7 @@ int action_else(
             output_print( "string",         "\"\n"                        );}
 
 
-        strcat      (buffer_send, "What's that?"                  );
+        strcat      (buffer_send, "Who is that?"                          );
 
         return 1;}
 
