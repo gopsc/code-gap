@@ -5,20 +5,11 @@ int action_else(
                    char* buffer_send
                ) {
 
+
     if (
-           strcmp(gop_connection.how[that_site], "Connectted") == 0
-    ||     strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
+           strcmp(gop_connection.how[that_site], "Connectting") == 0
+    ||     strcmp(gop_connection.how[that_site], "Sop"        ) == 0
        ) {
-
-        strcat(buffer_send, "What's that now?");
-
-        return 1;}
-
-
-    else if (
-                strcmp(gop_connection.how[that_site], "Connectting") == 0
-         ||     strcmp(gop_connection.how[that_site], "Sop"        ) == 0
-            ) {
 
 
         if (

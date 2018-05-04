@@ -18,6 +18,10 @@ int judgement_message_information(
            ==     pointer_recv
        ) {
 
+        if ( strcmp(gop_connection.command[that_site], "") == 0 ) {
+
+            strcat(buffer_send, "Who is that now?");}
+
         return 1;}
 
 //-----------------------------------------------
@@ -597,4 +601,7 @@ int judgement_message_information(
 
         strcat(buffer_send, "Who is that now?");
 
-        return 1;}}
+        return 1;}
+
+
+    return 0;}
