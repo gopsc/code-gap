@@ -4702,6 +4702,7 @@ WatchDog start
 Power off
 
 1514770288.754971
+<<<<<<< HEAD
 >>>>>>> 98ef3d5e24415ac99d8d0cde33521b200db94265
 WatchDog close
 
@@ -4739,4 +4740,162 @@ WatchDog close
 WatchDog start
 
 1525454458.139701
+=======
+WatchDog close
+
+1514770388.626013
+WatchDog start
+
+1514770288.554581
+Power off
+
+1514770578.95482
+WatchDog close
+
+1514770579.1578
+WatchDog start
+
+1514770629.107509
+WatchDog close
+
+1514770652.12415
+WatchDog start
+
+1514770628.907137
+Power off
+
+1514770692.346438
+WatchDog close
+
+1514770737.73737
+WatchDog start
+
+1514770692.146058
+Power off
+
+1514770893.544265
+WatchDog close
+
+1514770979.939493
+WatchDog start
+
+1514770893.343886
+Power off
+
+1514770998.263499
+WatchDog close
+
+1514764833.351093
+WatchDog start
+
+1514764844.386952
+WatchDog close
+
+1514764848.544350
+WatchDog start
+
+1514764844.186582
+Power off
+
+1514765292.267715
+WatchDog close
+
+1514765447.833353
+WatchDog start
+
+1514765292.67371
+Power off
+
+1514765456.388357
+WatchDog close
+
+1514765457.108376
+WatchDog start
+
+1514765562.200689
+WatchDog close
+
+1514765562.802637
+WatchDog start
+
+1514765597.15343
+WatchDog close
+
+1514765597.592303
+WatchDog start
+
+1514765645.248872
+WatchDog close
+
+1514765645.308502
+WatchDog start
+
+1514765805.411966
+WatchDog close
+
+1514764921.429578
+WatchDog start
+
+1514764974.13158
+WatchDog close
+
+1514765049.416138
+WatchDog start
+
+1514764973.812793
+Power off
+
+1514765752.311129
+WatchDog close
+
+1514766079.976970
+WatchDog start
+
+1514765752.110776
+Power off
+
+1514766169.308039
+WatchDog close
+
+1514766169.323321
+WatchDog start
+
+1514766427.715558
+WatchDog close
+
+1514766427.928537
+WatchDog start
+
+1514766735.860568
+>>>>>>> a762f48ae0b111a72c0eed5f26eaafdec8cf784b
+WatchDog close
+
+1525454548.383655
+WatchDog start
+
+1525454553.999060
+WatchDog close
+
+1525454555.478917
+WatchDog start
+
+1525454572.772500
+WatchDog close
+
+1525455146.191827
+WatchDog start
+
+1525455245.2803
+WatchDog close
+
+1525455245.749820
+WatchDog start
+
+1525455331.776058
+WatchDog close
+
+1525455332.999286
+WatchDog start
+
+1525455387.752929
 WatchDog close

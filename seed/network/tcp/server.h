@@ -339,7 +339,7 @@ void* gop_server_start(void* what) {
                           0
                         );
 
-                    usleep(step_connection * 1000000);
+//                    usleep(step_connection * 1000000);
 
                     close(number_return);
 

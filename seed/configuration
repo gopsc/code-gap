@@ -38,7 +38,7 @@ address-to        110.110.110.110
 port-to           520
 port-this         520
 
-connect-step      0.1
+connect-step      0.2
 
 update-size       1000
 update-step       0

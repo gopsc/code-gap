@@ -158,7 +158,7 @@ void* gop_client_start(void* what) {
                     );
 
 
-                usleep(/*step_connection*/ 0 * 100000);}
+                usleep( step_connection * 100000);}
 
 //-----------------------------------------------------------------------------------
 
