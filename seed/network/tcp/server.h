@@ -39,7 +39,7 @@ void* gop_server_start(void* what) {
     strcpy( gop_connection.how[3], "Wait" );
 
 
- 
+
     struct sockaddr_in address;
     struct sockaddr_in address_by;
            socklen_t   lenth;
@@ -89,7 +89,7 @@ void* gop_server_start(void* what) {
 
             int that_num = 1;
             if (
-                   setsockopt( 
+                   setsockopt(
                                gop_connection.descriptor[1],
                                SOL_SOCKET,
                                SO_REUSEADDR,
