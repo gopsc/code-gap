@@ -580,16 +580,16 @@ int judgement_message_information(
                 ==      pointer_recv
             ) {
 
+// It means giving you  sopi
+//    when  a host send sopi
 
-        if ( that_site != 0 ) {
+        if ( that_site == 0 ) {
 
-            output_print("string",    "Send Sopi.\n");
-
-            strcat      (buffer_send,      "Sopi."  );}
+            strcat      (buffer_send,      "Sopi."      );}
 
         else {
 
-            strcat(buffer_send, "Who is that now?");}
+            strcat      (buffer_send, "Who is that now?");}
 
         return 1;}
 
@@ -599,7 +599,8 @@ int judgement_message_information(
 
         strcat(buffer_send, "Who is that now?");
 
-        return 1;}
+        return 0;}
 
+//===============================================
 
     return 0;}
