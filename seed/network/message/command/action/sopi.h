@@ -38,7 +38,7 @@ int action_sopi(
         clean_connection(that_site, "sopi");
 
         strcpy(buffer_send,           "This is gop station.\n");
-        strcat(buffer_send,           "Who is that now?"      );
+        strcat(buffer_send,           "Who is that?"          );
 
         return 1;}
 

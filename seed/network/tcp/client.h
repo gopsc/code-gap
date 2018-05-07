@@ -55,6 +55,12 @@ void* gop_client_start(void* what) {
 
     while (information_flag.main) {
 
+// Sleep sometimes when
+// the client closed
+// & and the main program is running
+
+        usleep(100000);
+
 
         while (information_flag.client) {
 

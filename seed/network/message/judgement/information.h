@@ -564,9 +564,9 @@ int judgement_message_information(
                 strcpy(gop_connection.command[i], "Sopi.");}}
 
 
-        clean_connection( that_site, "sopi");
+        clean_connection( that_site,   "sopi"  );
 
-        strcat(buffer_send, "Sopi.");
+        strcat          ( buffer_send, "Sopi." );
 
         return 1;}
 
