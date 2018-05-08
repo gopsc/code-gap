@@ -1,9 +1,9 @@
 
-void control_command(
-                              int   that_site,
-                              char* that_command,
-                              char* buffer_send
-                    ) {
+int control_command(
+                       int   that_site,
+                       char* that_command,
+                       char* buffer_send
+                   ) {
 
 
 
@@ -51,7 +51,7 @@ void control_command(
     if ( strcmp(that_type, "master") == 0 ) {
 
 
-        
+
 
         if      ( strcmp(that_command, "Help." ) == 0 ) {
 
@@ -225,13 +225,16 @@ void control_command(
 
         else {
 
-            action_else(that_site, that_command, buffer_send);}}
+            action_else(that_site, that_command, buffer_send);
+
+            return 0;}
+
+
+        reuturn 1;}
 
 
 
 //=======================================================================
-
-
 
     else if (
                 strcmp( that_type, "guest" )
@@ -271,11 +274,17 @@ void control_command(
         else if ( strstr(that_command, "Smile. ") == that_command ) {
 
             action_smile(that_site, that_command, buffer_send);}
+
 //-----------------------------------------------------------------------
 
         else {
 
-            action_else(that_site, that_command, buffer_send);}}
+            action_else(that_site, that_command, buffer_send);
+
+            return 0;}
+
+
+        return 1;}
 
 
 
@@ -294,13 +303,7 @@ void control_command(
 
 //-----------------------------------------------------------------------
 
-        if      ( strstr(that_command, "Update.") == that_command ) {
-
-            action_update(that_site, that_command, buffer_send);}
-
-//-----------------------------------------------------------------------
-
-        else if ( strstr(that_command, "Clean update.") == that_command ) {
+        if ( strstr(that_command, "Clean update.") == that_command ) {
 
             action_update_clean(that_site, buffer_send);}
 
@@ -308,4 +311,12 @@ void control_command(
 
         else {
 
-            action_else(that_site, that_command, buffer_send);}}}
+            action_else(that_site, that_command, buffer_send);
+
+            return 0;}
+
+
+        return 1;}
+
+
+    return 0;}

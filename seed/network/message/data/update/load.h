@@ -1,7 +1,7 @@
 
 
 
-void  load_update(int that_site) {
+int  load_update(int that_site) {
 
 
     char   buffer_commandline_rm[129];
@@ -100,6 +100,7 @@ void  load_update(int that_site) {
 
 
     int i;
+
     for ( i=0; i<=3; i++ ) {
 
 
@@ -119,5 +120,9 @@ void  load_update(int that_site) {
 
 
             
-                strcpy(gop_connection.command[i], "Update.");
-                break;}}}}
+                strcpy(gop_connection.command[i], "Clean update.");
+
+                break;}}}
+
+
+  return 0;}
