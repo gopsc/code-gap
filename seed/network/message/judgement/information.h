@@ -329,7 +329,11 @@ int judgement_message_information(
 
             else if ( pointer_recv == strstr(pointer_recv, "IP               : ") ) {
 
+
+
                 gop_connection.network[that_site].number += atoi(strstr(pointer_recv, " :" )+3);
+
+
 
                *pointer_next = '\n';
                 pointer_recv = strchr(pointer_recv, '\n'  ) +1;
@@ -337,30 +341,74 @@ int judgement_message_information(
                *pointer_next = '\0';
 
 
+
+
+
+// This is the index of
+// where u arrived
+
                 int number_ip = 1;
 
+
+
+// Count the ip u've gottens
+
                 int i;
+
                 for ( i=1; i<=32; i++ ) {
+
 
                     if ( strcmp(gop_connection.network[that_site].ip[number_ip][2], "") == 0 ) {
 
-                        break;}}
+                        break;}
+
+
+                    else {
+
+                        number_ip ++;}}
+
+
+
+// The first  ip is local,
+// the second ip is blank
+//  in the final line
+//
+// and just can
+//     like a local ip
+
+                number_ip ++;
+
+
+
+// Copy the  new ip
+//   in this new information
 
                 char* pointer_network;
+
                 for (
-                                     pointer_network   =        pointer_recv;
-                        strcmp("\n", pointer_network) != 0                  ;
-                                     pointer_network   = strchr(pointer_recv, '\n')
+
+                                      pointer_network    =        pointer_recv;
+                        strcmp( "\n", pointer_network ) != 0                  ;
+                                      pointer_network    = strchr(pointer_recv, '\n')
+
                     ) {
 
+
+// After the first loop,
+//  it plus every time.
+
                     if ( pointer_recv != pointer_network ) {
+
                         pointer_network = pointer_network + 1;}
 
+
+// now copy it
 
                     strcpy(
                             gop_connection.network[that_site].ip[number_ip][1],
                             pointer_network
                           );
+
                    *strstr(
                             gop_connection.network[that_site].ip[number_ip][1],
                             " : "
@@ -371,13 +419,35 @@ int judgement_message_information(
                             gop_connection.network[that_site].ip[number_ip][2],
                             strstr(pointer_network, " : ") + 3
                           );
+
                    *strchr( gop_connection.network[that_site].ip[number_ip][2], '\n' )
                    ='\0';
 
 
                     pointer_recv = pointer_network + 1;
 
+
+
+
+// The local ip lo,
+//
+//  if always be same
+//
+// dose not need to note ?
+
+                    if (
+
+                         strcmp(gop_connection.network[that_site].ip[number_ip][1], "lo")
+                    !=  0
+
+                    &&   strcmp(gop_connection.network[that_site].ip[number_ip][2], "127.0.0.1")
+                    !=  0
+
+                       )
+
                     number_ip++;}}
+
+
 
 
             else if ( pointer_recv == strstr(pointer_recv, "CPU cores        : ") ) {
@@ -391,6 +461,8 @@ int judgement_message_information(
 
 
             else if ( pointer_recv == strstr(pointer_recv, "CPU temperature  : ") ) {
+
+
 
                 if ( gop_connection.cpu[that_site].temperature < atoi(strstr(pointer_recv, " :")+3) ) {
 
@@ -516,7 +588,17 @@ int judgement_message_information(
 
 
 // Prepare the information got about memorys
+<<<<<<< HEAD
 
+=======
+/*
+                gop_connection.memory[that_site].free
+              = gop_connection.memory[that_site].total
+
+              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
+              /    100;
+*/
+>>>>>>> 91c494adf6af6e415fdcace5f72629e6603bb054
 
 
 // Prepare the information got about disk

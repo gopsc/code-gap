@@ -1,0 +1,66 @@
+
+
+
+
+
+ When my android device
+ send a http request
+ returned
+
+
+ GET / HTTP/1.1
+ Host: 110.110.110.107:520
+ Connection: keep-alive
+ Accept-Language: zh-CN,zh,en-US,en
+ Upgrade-Insecure-Requests: 1
+ User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T555C Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.4 Chrome/56.0.2924.87 Safari/537.36
+ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+ Accept-Encoding: gzip, deflate, sdch
+
+
+
+ & when my orangepi device
+   send a  http request
+   that returned
+
+
+ GET / HTTP/1.1
+ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+ User-Agent: Mozilla/5.0 (X11; Linux) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/1.1.6 Safari/537.36
+ DNT: 1
+ Accept-language: C
+ Connection: Keep-Alive
+ Accept-Encoding: gzip
+ Host: 110.110.110.107:520
+
+ t: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+ Accept-Encoding: gzip, deflate, sdch
+ Accept-Language: zh-CN,zh;q=0.8
+
+
+
+
+
+
+ There's some pieecs of commands in it below
+
+ "GET / HTTP/1.1"
+ "Accept: "                    (text/html...)
+ "User-Agent: "                (Mozolla/5.0 (X11; Linux) ...)
+ "Connection: "                (keep-alive)
+ "Aceept-Encoding: "           (gzip...)
+ "Host: "                      (ip:port)
+ "Accept-Language: "           (zh-CN,zh,en-US,en...)
+
+ "Upgrade-Insecure-Requests: " (1)
+("DNT: ")                      (1)
+("Accep-language: ")           (zh-CN,zh,en-US,en...)
+("t: ")                        (text/html...)
+
+
+
+
+
+ Let's try to send a requestion to a URL web
+
+

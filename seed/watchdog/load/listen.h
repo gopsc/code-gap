@@ -8,20 +8,20 @@ int load_listen() {
 
 
 
-    char buffer_path[129];
-    char buffer_name[129];
-    char buffer_file[129];
+    char buffer_path[128];
+    char buffer_name[128];
+    char buffer_file[128];
     char buffer_word[10240];
 
 
 
 
-// ~/listen/word/number/w/t
+// TxL/trees/number/w/t
 
     strcpy(buffer_path, path_the   );
     strcat(buffer_path, "/"        );
     strcat(buffer_path, name_data  );
-    strcat(buffer_path, "/word"    );
+
 
     int   number_step;
     char* buffer_pointer;
