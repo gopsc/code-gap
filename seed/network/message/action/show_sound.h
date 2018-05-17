@@ -1,5 +1,10 @@
 
-void action_show_sound() {
+
+
+int action_show_sound() {
+
+
+
 
 
     if ( !information_flag.sound_show ) {
@@ -9,6 +14,28 @@ void action_show_sound() {
         information_flag.sound      = 1;
         information_flag.sound_show = 1;}
 
+
+
+
+
     else if ( information_flag.sound_show ) {
 
-        information_flag.sound_show = 0;}}
+        information_flag.sound_show = 0;}
+
+
+
+
+   else {
+
+
+        return 0;}
+
+
+
+
+
+
+    return 1;}
+
+
+

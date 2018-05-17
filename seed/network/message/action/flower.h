@@ -1,5 +1,12 @@
 
-void action_flower( const char* that_type ) {
+
+
+
+int action_flower(
+
+                     const char* that_type
+
+                 ) {
 
 
 
@@ -38,4 +45,7 @@ void action_flower( const char* that_type ) {
 
     commandline_get(buffer_commandline, buffer_result);
 
-    remove(buffer_file);}
+    remove(buffer_file);
+
+
+    return 1;}

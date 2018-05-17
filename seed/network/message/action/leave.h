@@ -1,5 +1,10 @@
 
-void action_leave() {
+
+
+
+int action_leave() {
+
+
 
 
 // exit all of threads
@@ -16,15 +21,28 @@ void action_leave() {
 
 
 
+
+
+
+
 // Maybe socket is loop,
 //   shut it down.
 //   program  can be shutdown by itself.
 
     usleep  (2 * 1000000 * step_connection          );
+
     shutdown(gop_connection.descriptor[0], SHUT_RDWR);
     shutdown(gop_connection.descriptor[1], SHUT_RDWR);
 
 
 
+
 //Threads need time to exit
-    pthread_exit(NULL);}
+
+    pthread_exit(NULL);
+
+
+
+
+
+    return 1;}

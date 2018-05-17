@@ -43,7 +43,7 @@ void* gop_corde(void* what) {
 
 // Setup sound path
 
-    strcpy(path_sound, path_the    );
+    strcpy(path_sound, path_the      );
     strcat(path_sound, "/trees/sound");
 
 

@@ -111,11 +111,11 @@ int control_message(
 
                 *pointer_next = '\0';}
 
-            control_command(
-                                that_site,
-                             pointer_recv,
-                              buffer_send
-                           );
+            judgement_message_command(
+                                          that_site,
+                                       pointer_recv,
+                                        buffer_send
+                                     );
 
             if ( pointer_next != NULL ) {
 
@@ -238,11 +238,11 @@ int control_message(
         ||     strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
            ) {
 
-            control_command(
-                             that_site,
-                             gop_connection.command[that_site],
-                             buffer_send
-                           );}}
+            judgement_message_command(
+                                       that_site,
+                                       gop_connection.command[that_site],
+                                       buffer_send
+                                     );}}
 
 
         if ( buffer_send[strlen(buffer_send)-1] == '\n' ) {
