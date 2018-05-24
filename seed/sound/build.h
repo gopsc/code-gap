@@ -1,6 +1,19 @@
 
 
 
+// Sometimes i wanna use alsa
+//
+// maybe sometimes we need to use
+// adc, network, or python or otherss
+
+//char type_corde   [32] = "blank";
+
+
+
+
+
+
+
 // The saving path of
 //     sound  files
 
@@ -10,6 +23,8 @@ char  path_sound[128];
 // The number of words' file
 
 int    number_listen = 1;
+
+
 
 
 

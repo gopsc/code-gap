@@ -537,16 +537,37 @@ void* gop_corde(void* what) {
 
 
 // ready to corde
+//
+// this is for saving the value of force
+ 
+            int number_force        = 0;
 
 
-            int     number_force_buffer = 0;
-            int     number_round        = 0;
-            int     number_force        = 0;
-            int     number_reset        = 0;
-            int     number_aloud        = 0;
-            int     number_step         = 1;
-            int     number_step2        = 1;
-            int     number_count        = 0;
+//
+
+            int number_force_buffer = 0;
+            int number_round        = 0;
+            int number_reset        = 0;
+
+
+// this is to note how aloud this piece of voice is
+
+            int number_aloud        = 0;
+
+
+//
+
+            int number_step         = 1;
+
+
+// this is to note the step of snake round
+
+            int number_step_snake   = 1;
+
+
+//
+
+            int number_count        = 0;
 
 
 
@@ -561,9 +582,10 @@ void* gop_corde(void* what) {
 
             while( information_flag.sound ) {
 
+// start code
 
 
-//--------------------------------------------------------------------------
+
 // Read date
 
                 long r;
@@ -574,10 +596,17 @@ void* gop_corde(void* what) {
 
               } while (r == -EAGAIN);
 
-//--------------------------------------------------------------------------
+
+
+
+
 // Take the data
 
-                for (int i=0; i<=21; i=i+1) {
+                for (
+                        int i  = 0;
+                            i <= 21;
+                            i  = i+1
+                    ) {
 
                     number_force_buffer++;
 
@@ -587,44 +616,56 @@ void* gop_corde(void* what) {
 
 // Check date
                     if (number_force >= 100) {
+
                         number_aloud++;}
 
 // Save date
                     if ( number_step < 400) {
-                        result_sound[number_step+0][number_step2] = number_force;}
 
-                    number_step2++;
+                        result_sound[number_step+0][number_step_snake] = number_force;}
+
+                    number_step_snake++;
 
 
 // Update date for next getting
 
-                    number_force = result_sound[number_step+0][number_step2-1];
+                    number_force = result_sound[number_step+0][number_step_snake-1];
 
 
 //--------------------------------------------------------------------------
 
-                    if ( number_step2 > N ) {
-                        number_step2 = 1;
+                    if ( number_step_snake > N ) {
+
+                        number_step_snake = 1;
+
+
+
+
+
+                        if ( number_step < 400 ) {
+
+                            number_step++;}
+
+
+
 
                         if ( number_aloud >= 50 ) {
 
-                            number_count = 5;
+                            number_count = 5;}
 
-                            if ( number_step < 400 ) {
-                                number_step++;}}
 
                         else {
 
-                            if ( number_count > 0 ) {
+                            if      ( number_count > 0 ) {
 
                                 number_count--;
 
 
-                                if ( number_step < 400 ) {
-                                    number_step++;}
+                            else if ( number_count == 1 ) {
 
-                                if ( number_count == 1 ) {
                                     flag_sound = false;}}}
+
+
 
                         number_aloud = 0;}}
 
@@ -644,19 +685,19 @@ void* gop_corde(void* what) {
 // don't reset it
 
                     number_turnning--;
-                    number_reset  --;
+                    number_reset   --;
 
 // If number_turnning is so low,
 //    that data will be too deep,
 //    that never come back.
 
-                    if (number_turnning < 0) {
+                    if ( number_turnning < 0 ) {
 
                         number_turnning = 0;}
 
-                    if (number_reset < 0) {
+                    if ( number_reset    < 0 ) {
 
-                        number_reset = 0;}}
+                        number_reset    = 0;}}
 
 
                 else {
@@ -711,9 +752,9 @@ void* gop_corde(void* what) {
 // Doing snake calculate,
 //   it's a number of 400
 
-                for ( int i=1; i<=number_step and i<400; i++) {
+//                for ( int i=1; i<=number_step and i<400; i++) {
 
-                    fft(i);
+//                    fft(i);
 
 // The speed of snake,
 //      mast be changed

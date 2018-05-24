@@ -140,6 +140,12 @@ int judge_message_command (
 
 //-----------------------------------------------------------------------
 
+        else if ( strcmp(that_command, "Shine.")       == 0 ) {
+
+            action_shine();}
+
+//-----------------------------------------------------------------------
+
         else if ( strcmp(that_command, "Flower base.") == 0 ) {
 
             output_print ( "string", "...\n"   );
