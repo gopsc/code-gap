@@ -6,9 +6,27 @@ this is a program with my learning,
 
 
 
- it's start with this script
 
- ./TxL/seed/box/Linux/seed.sh
+ first
+
+     cd ./TxL
+
+
+ it's a beginning with this script
+
+     ./seed/box/Linux/seed.sh
+
 
  then it will make a file named '?'
-s
+
+
+     sudo ./?
+
+
+ then try again
+
+
+     sudo ./?
+
+
+  ok , just like that... :D
