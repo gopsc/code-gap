@@ -199,7 +199,7 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/IO/output/print.h"           );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/output/print.h"           );
 
     action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/dirent/is.h"     );
 
@@ -213,9 +213,9 @@ int action_seed (
     action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/append.h"   );
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/process/deamon/deamon.h"     );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/process/deamon.h"     );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/process/commandline/shell.h" );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/commandline/shell.h" );
 
 
 
@@ -346,7 +346,7 @@ int action_seed (
 
 
 // Append the action codes
-// it's moving
+// it's instatic
 
     strcpy    ( buffer_dirent,             buffer_path             );
 
@@ -402,7 +402,10 @@ int action_seed (
 
 
 
-
+// the module of judge
+// means to take the words get on network
+//
+// the plan is using the trees system
 
     action_seed_append( buffer_file, buffer_path, "/network/message/judge/blank.h"                  );
 
@@ -416,13 +419,19 @@ int action_seed (
 
 
 
+// appending data to the message
 
     action_seed_append( buffer_file, buffer_path, "/network/message/data/build.h"                   );
 
 
+
+// build the network message system
+
     action_seed_append( buffer_file, buffer_path, "/network/message/build.h"                        );
 
 
+
+// the translate system of network
 
     action_seed_append( buffer_file, buffer_path, "/network/tcp/server.h"                           );
 
@@ -432,7 +441,7 @@ int action_seed (
 
 
 
-
+// build the
 
     action_seed_append( buffer_file, buffer_path, "/build.c"                                        );
 

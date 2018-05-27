@@ -44,7 +44,7 @@ cat  $address/network/build.h                                >> $addres2
 cat  $address/box/c/Linux/data/translate/number_word.h       >> $addres2
 
 
-cat  $address/box/c/Linux/system/IO/output/print.h           >> $addres2
+cat  $address/box/c/Linux/system/output/print.h             >> $addres2
 
 
 
@@ -58,7 +58,7 @@ cat  $address/box/c/Linux/system/file-system/file/append.h   >> $addres2
 
 
 
-cat  $address/box/c/Linux/system/process/commandline/shell.h >> $addres2
+cat  $address/box/c/Linux/system/commandline/shell.h         >> $addres2
 
 
 

@@ -24,18 +24,42 @@ void* gop_dog(void* what){
     check_update();
 
 
+
     output_print( "string", "Done\n"               );
+
+
+
+
+
+
+
+// note this
 
     note_save   ( "dog",    "WatchDog start", "now");
 
 
+
+
+
+
     while (information_flag.main) {
+
+
+// u can not run this program just for watchdog
+// u wanna others, right?
 
         if      ( !information_flag.dog ) {
 
             usleep(100000);}
 
+
+
         else if (  information_flag.dog ) {
+
+
+
+
+// run the functions
 
             information_user_get();   usleep(100000);
             information_name_get();   usleep(100000);
@@ -49,13 +73,20 @@ void* gop_dog(void* what){
             check_power();            usleep(100000);
             dog_show();               usleep(100000);
 
+
+// it means the dog finished one time at least
+
             information_flag.start = 1;}}
 
 
 
 
-
+// note this
 
     note_save("dog", "WatchDog close", "now");
+
+
+
+// sirisly i don't know what dose matter is u add this line
 
     pthread_exit(NULL);}
