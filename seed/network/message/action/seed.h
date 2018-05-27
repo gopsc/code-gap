@@ -270,7 +270,7 @@ int action_seed (
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/check/power.h"                         );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/check/root.h"                          );
+//    action_seed_append( buffer_file, buffer_path, "/watchdog/check/root.h"                          );
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/check/update.h"                        );
 

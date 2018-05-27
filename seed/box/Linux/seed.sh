@@ -16,7 +16,7 @@ echo "..."
 
 
 
-address=./TxL/seed
+address=./seed
 
 addres2=$address/flower.c
 
@@ -81,7 +81,7 @@ cat  $address/box/c/Linux/code/seed.c                        >> $addres2
 
 
 
-gcc  $addres2 -o $address/../../?
+gcc  $addres2 -o $address/../?
 
 
 rm   $addres2

@@ -17,7 +17,8 @@ void* gop_dog(void* what){
     load_listen();
 
 // TxL needs jurisdiction of root.
-    check_root();
+// and no more
+//    check_root();
 
 // When a update was stop, files left.
 // Must be after loading.

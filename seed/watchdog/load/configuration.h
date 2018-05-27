@@ -34,7 +34,7 @@ int load_configure() {
 
 
 // If ur running a server or client program
-// and you wander change the target ip
+// and you wanna change the target ip
 // you mast close it first,
 // then turn it up again
 
@@ -61,9 +61,13 @@ int load_configure() {
 
     if    ( number_args > 1                       ) {
 
+
+// deamon program usually is run by root
+
         if    (
 
                   strcmp(buffer_args[1], "deamon") == 0
+
         &&        strcmp(that_file,      "root\n") == 0
 
               ) {
@@ -85,6 +89,7 @@ int load_configure() {
 
 
 
+
 // The mode of terminal
 //  of root
 
@@ -99,7 +104,10 @@ int load_configure() {
 
         if    ( !is_file(buffer_path) ) {
 
-            strcpy(buffer_path, "TxL/seed/configuration");}}
+            strcpy(buffer_path, "seed/configuration");}}
+
+
+
 
 
 
@@ -107,6 +115,7 @@ int load_configure() {
 //  of no root
 
     else if   ( strcmp(that_file, "root\n") == 1 ){
+
 
 // if it is not the root user, try to load the no-root configuration
 
@@ -117,7 +126,7 @@ int load_configure() {
 
         if ( !is_file(buffer_path) ) {
 
-            strcpy(buffer_path, "TxL/sky/configurations/TxL/configuration_no-root");}}
+            strcpy(buffer_path, "sky/configurations/TxL/configuration_no-root");}}
 
 
 

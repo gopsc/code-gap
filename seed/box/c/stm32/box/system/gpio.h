@@ -1,4 +1,9 @@
+// maybe it's not needed
 
+typedef number_status_gpio {
+
+    LED_OFF=0;
+    LED_ON;} NUMBER_STATUS_LED;
 
 
 
