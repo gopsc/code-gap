@@ -75,7 +75,7 @@ cat  $address/network/message/action/flower.h                >> $addres2
 
 
 
-cat  $address/box/c/Linux/example/seed.c                     >> $addres2
+cat  $address/box/c/Linux/code/seed.c                        >> $addres2
 
 
 

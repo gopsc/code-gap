@@ -1,14 +1,43 @@
 
-void init_deamon() {
 
 
 
-    if ( number_args > 1 ) {
 
-        if ( strcmp(buffer_args[1], "deamon") == 0 ) {
+int init_deamon() {
 
+
+
+
+
+    if ( number_args <= 1 ) {
+
+// it is not the deamon mode
+
+        return 1;}
+
+
+
+    else {
+
+
+        if ( strcmp(buffer_args[1], "deamon") != 0 ) {
+
+
+// it is not deamon mode
+
+            return 1;}
+
+
+
+         else {
+
+// it is deamon mode
 
             information_flag.deamon = 1;
+
+
+
+
 
 
 // Maybe it need to wait
@@ -27,13 +56,13 @@ void init_deamon() {
 
                 // It's the father ps, exit it.
 
-                exit(0);}
+                return 0;}
 
             else if ( pid < 0 ) {
 
                 // fork failled, exit it.
 
-                exit(1);}
+                return 0;}
 
             // Now it's the first son ps.
 
@@ -54,13 +83,13 @@ void init_deamon() {
 
                 // It's the 1st son ps, exit it.
 
-                exit(0);}
+                return 0;}
 
             else if ( pid < 0 ) {
 
                 // fork failled, exit it.
 
-                exit(1);}
+                return 0;;}
 
             // Now it's the second son ps.
             //     the 2nd son ps is
@@ -69,7 +98,11 @@ void init_deamon() {
 
 
             char buffer_nofile[16];
+
             int  number_nofile     = atoi(buffer_nofile);
+
+
+
             int  i;
 
             for ( i=0; i<number_nofile; ++i) {
@@ -77,6 +110,12 @@ void init_deamon() {
                 close(i);
 
                 chdir("/");  //Change work dirent.
+
                 umask(0);    //Reset file building modeling
 
-                return;}}}}
+                return 1;}
+
+
+// something goes wrong
+
+            return 0;}}}
