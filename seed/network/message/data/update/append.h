@@ -16,21 +16,40 @@ int append_message_data_update(
 
        ) {
 
+// ?
+//   others should not come here
 
         return 0;}
 
 
+
+
+
+
+
+
+
     else {
+
+// enter the program
+
+
 
 
         if ( count_update < count_update_max ) {
 
-
 // count_update means times between tow update message
+//
+// this is not update time
 
             count_update++;
 
             return 1;}
+
+
+
+
+
 
 
 
@@ -43,10 +62,16 @@ int append_message_data_update(
 
 
 
+
+
+
+
 // connect the send buffer
 
             strcat(buffer_send, "Update.");
             strcat(buffer_send, "\n");
+
+
 
 
 // Prepare
@@ -57,120 +82,404 @@ int append_message_data_update(
             char buffer_step          [16];
 
 
+
+
 // get the start path
 
             char   buffer_path_start  [32];
+
             strcpy(buffer_path_start, path_the);
             strcat(buffer_path_start, "/"     );
             strcat(buffer_path_start, name_the);
 
 
+
+
+
+
+
+
+
+
+// start
+
             if ( strcmp(gop_connection.update[that_site], buffer_path_start) == 0 ) {
+
+
+// the loop program returned wrong flag
+//
+// if this is just like started just before
+//
+// there're two kind of possibility
+//
+// it is a beginning, something goes wrong
+// or it's end
+//
+//
+// but we read the returned before
+//
+//  so if it's like a beginning now
+//
+//  it must be a beginning
+//
+//  because we we will clean the buffer when the
+
+
+
+
+
 
                 if ( control_message_update(gop_connection.update[that_site]) == 0 ) {
 
+
+// so we just loop it first
+//
+// if it returned a special value that means something really goes wrong
+//
+// it is done, we should never send a update message and we can fix it
+
                     output_print( "string", "There is no TxL source.\n" );
 
-                    strcpy(gop_connection.update[that_site], ""     );
-                    strcat(buffer_send,                      "Done.");
 
-                    return 1;}}
+// clean it.
+
+                    strcpy(gop_connection.update[that_site], "" );
 
 
-            file_get(gop_connection.update[that_site], buffer_file       );
-            snprintf(buffer_file_length, sizeof(buffer_file_length) / sizeof(char) - 1, "%d", strlen(buffer_file));
+// clean buffer of send
+
+                   *strstr(buffer_send, "Update.") = '\0';
+
+
+// this is a wrong,,,
+
+                    return 0;}}
+
+
+
+
+
+
+
+// ok we had loop it before in the judging's value
+//
+//   now we get the files
+
+            file_get( gop_connection.update[that_site], buffer_file );
+
+
+// and get the length of the file
+
+            snprintf(
+                      buffer_file_length,
+                      sizeof(buffer_file_length) / sizeof(char) - 1,
+                      "%d",
+                      strlen(buffer_file)
+                    );
+
+
+
+
+
+
+
+// some file is very long, we can't send it once
+//
+// even if we can't read it unless used the changed buffer size
+//
+//  and i still can't use that :c
 
 
             if ( gop_connection.step_update[that_site] * size_update > strlen(buffer_file) ) {
 
-                if ( control_message_update(gop_connection.update[that_site]) == 0 ) {
+//
+// the value named 'step_update' means how many times we have send it
+//
+// and if this is over the last time of send this file already,
+//
+//  we should loop it again
+//
+// for next append
+
+
+
+
+
+
+// loop it again
+
+                if ( control_message_update(gop_connection.update[that_site]) != 0 ) {
+
+// this is the last step, but not the last file
+//
+//  and be ready to send next file;
+
+                    gop_connection.step_update[that_site] = 0;}
+
+
+
+
+
+
+
+
+                else {
+
+// if it is normal before
+//
+// and returned wrong now
+//
+// it means there is no another one file now
+
+
+// clean it and send message
+
+
+                    strcpy(gop_connection.update     [that_site], ""        );
+
+                           gop_connection.step_update[that_site] = 0;
+
+
+
+// print out and send message
 
                     output_print( "string",                       "Done.\n" );
-                           gop_connection.step_update[that_site] = 0         ;
-                    strcpy(gop_connection.update     [that_site], ""        );
-                    strcat(buffer_send,                           "Done."   );
+
+                    strcat      (buffer_send,                     "Done."   );
+
+
+
+
+
+// ready to update to another one
+//
+// something went worng, can't send update together
 
                     int i;
-                    for ( i = that_site + 1; i <= 3; i++ ) {
+
+                    for (
+                            i  = that_site + 1;
+                            i <= 3;
+                            i ++
+                        ) {
+
 
                         if (
                                strcmp(gop_connection.how[i],     "Sopi")       == 0
                         ||     strcmp(gop_connection.how[i],     "Connectted") == 0
                            ) {
 
+// it is next sop client
+//
+// send the update
+
                             strcpy(gop_connection.command[that_site], ""             );
-                            strcpy(gop_connection.command[i],    "Clean update.");
+                            strcpy(gop_connection.command[i],         "Clean update.");
+
+
+// update one client once
+
                             break;}}
 
-                    return 1;}
 
-                else {
 
-                    gop_connection.step_update[that_site] = 0;}}
+// this update is done, return it
+
+                    return 1;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// start the update sending
+
+
+// the information format of update
+//
+// File name:   ...
+// File step:   ...
+// File length: ...
+// File sum:    ...
+
+
 
 
 // get the numer of sums;
+//
+//
+// first should get the file convent
+//
+// it seems like already got the file convent before
+//
+// but that was check
 
-            file_get(gop_connection.update[that_site], buffer_file);
 
-            strcpy(buffer_file, buffer_file + gop_connection.step_update[that_site] * size_update);
-                   buffer_file[size_update] = '\0';
+            file_get     (gop_connection.update[that_site], buffer_file);
+
+// prepare
+//
+// if the length < path
+//
+// don't worry,
+// path end flag will be where after the end flag there
+
+            strcpy       (buffer_file, buffer_file + gop_connection.step_update[that_site] * size_update);
+
+                          buffer_file[size_update] = '\0';
+
+// get the value of sum
 
             secret_encode(buffer_file, "sum");
 
-            strcpy(buffer_sum, buffer_file);
+// get that
+
+            strcpy       (buffer_sum, buffer_file);
 
 
 
+
+
+// reget the file convent
 
             file_get(gop_connection.update[that_site], buffer_file);
 
-            snprintf(buffer_file_length, sizeof(buffer_file_length) / sizeof(char) - 1, "%d", strlen(buffer_file));
-
-
-// show file name if it have not begin
-
-            if ( gop_connection.step_update[that_site] == 0 ) {
-
-                output_print( "string", gop_connection.update[that_site] );
-                output_print( "string", "    send size : "               );
-                output_print( "string", buffer_file_length               );
-                output_print( "string", "\n"                             );}
-
-
-            snprintf(buffer_step, sizeof(buffer_step) / sizeof(char) - 1, "%d", gop_connection.step_update[that_site]);
-
-            strcat(buffer_send, strstr(gop_connection.update[that_site], name_the) + strlen(name_the));
-            strcat(buffer_send, ",");
-            strcat(buffer_send, buffer_step);
-            strcat(buffer_send, ",");
 
 
 
-            if ( (gop_connection.step_update[that_site]+1) * size_update > atoi(buffer_file_length) ) {
+
+
+// get the new file's length
+
+            if (
+
+                   ( gop_connection.step_update[that_site]+1 * size_update )
+
+                   > atoi(buffer_file_length)
+
+               ) {
+
+// if this is the last file
+//
+// the size is the left
 
                 snprintf(
-                         buffer_file_length,
-                         sizeof(buffer_file_length) / sizeof(char) - 1,
-                         "%d",
-                         strlen(buffer_file) - (gop_connection.step_update[that_site]) * size_update
-                        );
-                strcat(buffer_send, buffer_file_length);}
+
+                          buffer_file_length,
+                          sizeof(buffer_file_length) / sizeof(char) - 1,
+                          "%d",
+                          strlen(buffer_file) - gop_connection.step_update[that_site] * size_update
+
+                        );}
 
             else {
 
-                snprintf(buffer_file_length, sizeof(buffer_file_length) / sizeof(char) - 1, "%d", size_update);
-                strcat  (buffer_send,        buffer_file_length);}
+// if this is not the last file
+//
+// the size is as the plan
 
+                snprintf(
+                          buffer_file_length,
+                          sizeof(buffer_file_length) / sizeof(char) - 1,
+                          "%d",
+                          size_update
+                        );}
+
+
+
+// go to turn the step
+
+            snprintf(buffer_step, sizeof(buffer_step) / sizeof(char) - 1, "%d", gop_connection.step_update[that_site]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// make the update information
+
+            strcat(
+                    buffer_send,
+                    strstr(gop_connection.update[that_site], name_the) + strlen(name_the)
+                  );
+
+            strcat(buffer_send, ",");
+            strcat(buffer_send, buffer_step);
+            strcat(buffer_send, ",");
+            strcat(buffer_send, buffer_file_length);
             strcat(buffer_send, ","       );
             strcat(buffer_send, buffer_sum);
             strcat(buffer_send, "."       );
             strcat(buffer_send, "\n"      );
 
-            strcpy(buffer_file, buffer_file + gop_connection.step_update[that_site] * size_update);
+
+
+
+// this is the main convent
+//
+// prepare the convent of file
+
+            strcpy(
+                    buffer_file,
+                    buffer_file + gop_connection.step_update[that_site] * size_update
+                  );
+
                    buffer_file[size_update] = '\0';
 
+
+
+// cat the convent of file
+
             strcat(buffer_send, buffer_file);
-            gop_connection.step_update[that_site]++;}
+
+
+
+
+// plus the step of update
+
+            gop_connection.step_update[that_site]++;
+
+
+
+
+
+
+// show file name if it have not begin
+
+// print the file name
+//
+// i think something could change
+// to have a beautiful interface
+//
+// and these output message have a type different
+
+            if ( gop_connection.step_update[that_site] == 0 ) {
+
+                output_print( "string", gop_connection.update[that_site] );
+                output_print( "string", " send size : "                  );
+                output_print( "string", buffer_file_length               );
+                output_print( "string", "\n"                             );}}
+
+
+
+
+// appending done, return it
 
         return 1;}}
