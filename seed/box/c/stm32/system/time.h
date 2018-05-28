@@ -25,7 +25,7 @@
 //
 //  but it seems like number there
 
-unsigned char number_count_us;
+ unsigned short number_count_sleep
 
 
 
@@ -35,7 +35,7 @@ unsigned char number_count_us;
 
 
 
-
+// prepare the system tick and the count number
 
 int init_delay() {
 
@@ -50,7 +50,7 @@ int init_delay() {
 //
 //      103 - 9
 
-    number_count_delay = 9;}
+    number_count_sleep = 9;}
 
 
 
@@ -65,7 +65,7 @@ int init_delay() {
 //
 // maybe someday it can use the seed code straightly
 
-int gop_sleep( unsigned short us ) {
+int gop_sleep( unsigned short number_seconds ) {
 
 
 // this is to save the result of 'SysTick->ctrl'
@@ -78,14 +78,14 @@ int gop_sleep( unsigned short us ) {
 // ??
 // turn it?
 
-    us &= 0x00FFFFFF;
+    number_seconds &= 0x00FFFFFF;
 
 
 
 
 // prepare
 
-    SysTick->LOAD = us * number_count_delay;
+    SysTick->LOAD = number_seconds * number_count_sleep * 1000000;
     SysTick->VAL  = 0;
     SysTick->CTRL = 1;
 
@@ -125,3 +125,5 @@ int gop_sleep( unsigned short us ) {
 // don't know what will happen when the system tick with a wrong
 
     return 1;}
+
+
