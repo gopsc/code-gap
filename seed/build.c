@@ -1,14 +1,41 @@
-  
+
+pthread_t thread[4];
+
+
+
+// many of strange ideas
+
+void* gop[2][1024][1024][2];
+
+
+void* dream( void* that_type ) {
+
+
+// your dreams, the others does not know
 
 
 
 
+    return that_type;}
 
-pthread_t    thread[6];
 
 
 
 int main( int argc, char *argv[] ) {
+
+// 0/0.note
+//
+// read
+// read : zero
+
+    gop[0][0][0][0] = malloc( 4  + 1  );    strcpy( (char*)gop[0][0][0][0], "char"        );
+    gop[0][0][0][1] = malloc( 4  + 1  );    strcpy( (char*)gop[0][0][0][1], "read"        );
+    gop[0][0][1][0] = malloc( 4  + 1  );    strcpy( (char*)gop[0][0][1][0], "char"        );
+    gop[0][0][1][1] = malloc( 11 + 1  );    strcpy( (char*)gop[0][0][1][1], "read : zero" );
+
+    printf("%s\n", (char*)gop[0][0][0][1]);
+
+    pthread_create (&thread[0], NULL, dream, (void*)"me");
 
 
 
