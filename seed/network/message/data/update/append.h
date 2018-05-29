@@ -192,7 +192,7 @@ int append_message_data_update(
 
             if ( gop_connection.step_update[that_site] * size_update > strlen(buffer_file) ) {
 
-//
+
 // the value named 'step_update' means how many times we have send it
 //
 // and if this is over the last time of send this file already,
@@ -209,6 +209,7 @@ int append_message_data_update(
 // loop it again
 
                 if ( control_message_update(gop_connection.update[that_site]) != 0 ) {
+
 
 // this is the last step, but not the last file
 //
@@ -299,7 +300,6 @@ int append_message_data_update(
 
 
 
-
 // start the update sending
 
 
@@ -356,14 +356,13 @@ int append_message_data_update(
 
 
 
-
-// get the new file's length
+// get the length we've send
 
             if (
 
-                   ( gop_connection.step_update[that_site]+1 * size_update )
+                   ( (gop_connection.step_update[that_site] + 1) * size_update )
 
-                   > atoi(buffer_file_length)
+                   >  strlen(buffer_file)
 
                ) {
 
@@ -470,7 +469,7 @@ int append_message_data_update(
 //
 // and these output message have a type different
 
-            if ( gop_connection.step_update[that_site] == 0 ) {
+            if ( gop_connection.step_update[that_site] == 0 + 1 ) {
 
                 output_print( "string", gop_connection.update[that_site] );
                 output_print( "string", " send size : "                  );
