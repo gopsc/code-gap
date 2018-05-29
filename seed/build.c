@@ -5,13 +5,290 @@ pthread_t thread[4];
 
 // many of strange ideas
 
-void* gop[2][1024][1024][2];
+void ***** gop;
 
 
-void* dream( void* that_type ) {
+
+
+
+
+
+
+
+int here () {
+
+
+// gop [type] [number] [line] [data]
+//
+// gop [ 1 ]  [  1  ]  [ 2 ]  [ 2 ]
+
+/*
+
+ 0/0.note
+
+ read
+
+ read    : one
+ read me : 1
+
+*/
+
+
+    if (gop == NULL) {
+
+        gop = malloc ( 1 * sizeof ( void * ) );}
+
+
+
+
+    if (gop[0] == NULL) {
+
+        gop[0] = malloc ( 1 * sizeof ( void * ) );}
+
+
+
+
+    if (gop[0][0] == NULL) {
+
+        gop[0][0] = malloc ( 2 * sizeof ( void * ) );}
+
+
+
+
+    if (gop[0][0][0] == NULL) {
+
+        gop[0][0][0] = malloc ( 2 * sizeof ( void * ) );}
+
+
+
+
+    if (gop[0][0][1] == NULL) {
+
+        gop[0][0][1] = malloc ( 2 * sizeof ( void * ) );}
+
+
+
+
+    if (gop[0][0][2] == NULL) {
+
+        gop[0][0][2] = malloc ( 2 * sizeof ( void * ) );}
+
+
+
+
+    if (gop[0][0][0][0] == NULL) {
+
+        gop[0][0][0][0] = malloc ( 4 * sizeof ( char ) );
+
+
+        if ( NULL != gop[0][0][0][0] ) {
+
+            strcpy ( ( char * )gop[0][0][0][0], "read" );}
+
+        else {
+
+            return 0;}}
+
+
+
+
+    if (gop[0][0][0][1] == NULL) {
+
+        gop[0][0][0][1] = malloc ( sizeof ( int ) );
+
+
+        if ( NULL != gop[0][0][0][1] ) {
+
+            * ( int * ) gop[0][0][0][1] = 9;}
+
+
+        else {
+
+            return 0;}}
+
+
+
+
+    if (gop[0][0][1][0] == NULL) {
+
+        gop[0][0][1][0] = malloc ( 10 * sizeof ( char ) );
+
+
+        if ( NULL != gop[0][0][1][0] ) {
+
+            strcpy ( ( char * ) gop[0][0][1][0], "read : one");}
+
+
+        else {
+
+            return 0;}}
+
+
+
+
+    if (gop[0][0][1][1] == NULL) {
+
+        gop[0][0][1][1] = malloc ( sizeof ( int ) );
+
+
+        if ( NULL != gop[0][0][1][1] ) {
+
+           * ( int * ) gop[0][0][1][1] = -1;}
+
+
+        else {
+
+            return 0;}}
+
+
+
+
+    if (gop[0][0][2][0] == NULL) {
+
+        gop[0][0][2][0] = malloc ( 11 * sizeof ( char ) );
+
+
+        if ( NULL != gop[0][0][2][0] ) {
+
+            strcpy ( ( char * )gop[0][0][2][0], "read me : 1");}
+
+
+        else {
+
+            return 0;}}
+
+
+
+
+    if (gop[0][0][2][1] == NULL) {
+
+        gop[0][0][2][1] = malloc ( sizeof ( int ) );
+
+
+        if ( NULL != gop[0][0][2][1] ) {
+
+            * ( int * )gop[0][0][2][1] = -1;}
+
+
+        else {
+
+            return 0;}}
+
+
+
+
+
+
+    return 1;}
+
+
+
+
+
+
+
+
+
+void * dream ( void * that_type ) {
 
 
 // your dreams, the others does not know
+
+
+    int one   = 0;
+    int two   = 0;
+    int three = 0;
+    int four  = 0;
+
+
+
+
+
+
+
+
+
+
+// fall sleep, like a river, like forever
+
+    sleep :
+
+
+
+
+
+
+
+    if (
+
+            strcmp (
+                       ( char * ) gop [one] [two] [three] [four],               ( char * ) that_type
+                   )
+            == 0
+
+        ) {
+
+        goto about;}
+
+
+    else {
+
+        two ++;}
+
+
+
+
+
+
+
+    if ( gop [one] [two] != NULL ) {
+
+        goto sleep;}
+
+
+    else {
+
+        one   = -1;
+        two   = -1;
+        three = -1;
+        four  = -1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// when u dreamed about something, u just did not know others
+
+    about :
+
+
+
+
+
+
+
+
+    printf (
+
+             "%s %d %d %d %d\n",
+
+              that_type,
+
+                   one,  two,  three,  four
+
+           );
+
+
+
 
 
 
@@ -21,21 +298,34 @@ void* dream( void* that_type ) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int main( int argc, char *argv[] ) {
 
-// 0/0.note
-//
-// read
-// read : zero
 
-    gop[0][0][0][0] = malloc( 4  + 1  );    strcpy( (char*)gop[0][0][0][0], "char"        );
-    gop[0][0][0][1] = malloc( 4  + 1  );    strcpy( (char*)gop[0][0][0][1], "read"        );
-    gop[0][0][1][0] = malloc( 4  + 1  );    strcpy( (char*)gop[0][0][1][0], "char"        );
-    gop[0][0][1][1] = malloc( 11 + 1  );    strcpy( (char*)gop[0][0][1][1], "read : zero" );
+// make the dream
 
-    printf("%s\n", (char*)gop[0][0][0][1]);
+    here ();
 
-    pthread_create (&thread[0], NULL, dream, (void*)"me");
+    pthread_create (
+                              & thread [0],
+                                NULL,
+                                dream,
+                     ( void * ) gop [0] [0] [0] [0]
+                   );
 
 
 
@@ -79,7 +369,7 @@ int main( int argc, char *argv[] ) {
 
 
 
-    char buffer_command[129] = "";
+    char buffer_command[128] = "";
 
 
 
