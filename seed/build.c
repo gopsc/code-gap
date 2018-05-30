@@ -34,145 +34,69 @@ int here () {
 */
 
 
-    if (gop == NULL) {
+    if (gop != NULL) {
 
-        gop = malloc ( 1 * sizeof ( void * ) );}
+        return 0;}
 
 
 
 
-    if (gop[0] == NULL) {
+    else {
 
-        gop[0] = malloc ( 1 * sizeof ( void * ) );}
 
+        if ( NULL == (          gop             = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
 
+        if ( NULL == (          gop[0]          = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
 
+        if ( NULL == (          gop[0][0]       = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
-    if (gop[0][0] == NULL) {
+        if ( NULL == (          gop[0][0][0]    = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
-        gop[0][0] = malloc ( 2 * sizeof ( void * ) );}
+        if ( NULL == (          gop[0][0][1]    = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
+        if ( NULL == (          gop[0][0][2]    = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
 
 
-    if (gop[0][0][0] == NULL) {
 
-        gop[0][0][0] = malloc ( 2 * sizeof ( void * ) );}
+        if ( NULL != (          gop[0][0][0][0] = malloc ( 4  * sizeof ( char ) )         ) )  {
 
+            strcpy ( ( char * ) gop[0][0][0][0], "read" );}                               else { return 0;}
 
 
 
-    if (gop[0][0][1] == NULL) {
 
-        gop[0][0][1] = malloc ( 2 * sizeof ( void * ) );}
+        if ( NULL != (          gop[0][0][0][1] = malloc (      sizeof ( int ) )          ) )  {
 
+            * ( int * ) gop[0][0][0][1] = 9;}                                             else { return 0;}
 
 
 
-    if (gop[0][0][2] == NULL) {
 
-        gop[0][0][2] = malloc ( 2 * sizeof ( void * ) );}
+        if ( NULL != (          gop[0][0][1][0] = malloc ( 10 * sizeof ( char ) )         ) )  {
 
+            strcpy ( ( char * ) gop[0][0][1][0], "read : one");}                          else { return 0;}
 
 
 
-    if (gop[0][0][0][0] == NULL) {
 
-        gop[0][0][0][0] = malloc ( 4 * sizeof ( char ) );
+        if ( NULL != (          gop[0][0][1][1] = malloc (      sizeof ( int ) )          ) )  {
 
+           * ( int * ) gop[0][0][1][1] = -1;}                                             else { return 0;}
 
-        if ( NULL != gop[0][0][0][0] ) {
 
-            strcpy ( ( char * )gop[0][0][0][0], "read" );}
 
-        else {
 
-            return 0;}}
+        if ( NULL != (          gop[0][0][2][0] = malloc ( 11 * sizeof ( char ) )         ) )  {
 
+            strcpy ( ( char * )gop[0][0][2][0], "read me : 1");}                          else { return 0;}
 
 
 
-    if (gop[0][0][0][1] == NULL) {
 
-        gop[0][0][0][1] = malloc ( sizeof ( int ) );
+        if ( NULL != (          gop[0][0][2][1] = malloc (      sizeof ( int ) )          ) )  {
 
-
-        if ( NULL != gop[0][0][0][1] ) {
-
-            * ( int * ) gop[0][0][0][1] = 9;}
-
-
-        else {
-
-            return 0;}}
-
-
-
-
-    if (gop[0][0][1][0] == NULL) {
-
-        gop[0][0][1][0] = malloc ( 10 * sizeof ( char ) );
-
-
-        if ( NULL != gop[0][0][1][0] ) {
-
-            strcpy ( ( char * ) gop[0][0][1][0], "read : one");}
-
-
-        else {
-
-            return 0;}}
-
-
-
-
-    if (gop[0][0][1][1] == NULL) {
-
-        gop[0][0][1][1] = malloc ( sizeof ( int ) );
-
-
-        if ( NULL != gop[0][0][1][1] ) {
-
-           * ( int * ) gop[0][0][1][1] = -1;}
-
-
-        else {
-
-            return 0;}}
-
-
-
-
-    if (gop[0][0][2][0] == NULL) {
-
-        gop[0][0][2][0] = malloc ( 11 * sizeof ( char ) );
-
-
-        if ( NULL != gop[0][0][2][0] ) {
-
-            strcpy ( ( char * )gop[0][0][2][0], "read me : 1");}
-
-
-        else {
-
-            return 0;}}
-
-
-
-
-    if (gop[0][0][2][1] == NULL) {
-
-        gop[0][0][2][1] = malloc ( sizeof ( int ) );
-
-
-        if ( NULL != gop[0][0][2][1] ) {
-
-            * ( int * )gop[0][0][2][1] = -1;}
-
-
-        else {
-
-            return 0;}}
+            * ( int * )gop[0][0][2][1] = -1;}                                             else { return 0;}}
 
 
 
@@ -212,6 +136,7 @@ void * dream ( void * that_type ) {
 // fall sleep, like a river, like forever
 
     sleep :
+
 
 
 
@@ -316,9 +241,10 @@ void * dream ( void * that_type ) {
 int main( int argc, char *argv[] ) {
 
 
+
 // make the dream
 
-    here ();
+    if ( here () )
 
     pthread_create (
                               & thread [0],
