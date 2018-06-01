@@ -749,6 +749,81 @@ int judge_message_information(
             return 1;}}
 
 //-----------------------------------------------
+/*
+
+<start>
+
+80 HTTP/1.1
+Host:www.soso.com
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*//*;q=0.8
+User-Agent:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.114 Safari/537.36
+Accept-Language:zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4,en-GB;q=0.2
+
+<end>
+
+*/
+
+    else if (
+
+                strstr( pointer_recv, "GET" ) != NULL
+
+            ) {
+
+
+
+        strcpy ( pointer_recv, "<start>\n\n" );
+
+        strcat ( pointer_recv, "520 HTTP/1.1\n"                                                  );
+        strcat ( pointer_recv, "host:gop\n"                                                      );
+        strcat ( pointer_recv, "Accept: text/html\n"                                             );
+        strcat ( pointer_recv, "User-Agent:gop\n"                                                );
+        strcat ( pointer_recv, "User-Language:zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4,en-GB;q=0.2\n" );
+
+        strcat ( pointer_recv, "\n\n<end>\n\n" );
+
+
+
+        strcat ( pointer_recv, "<html>\n" );
+
+        strcat ( pointer_recv, "<head><title>gop</title></head>\n" );
+
+        strcat ( pointer_recv, "body bgcolor=\"white\">\n" );
+        strcat ( pointer_recv, "<center><h1>"              );
+
+        strcat ( pointer_recv, information_system.name     );
+        strcat ( pointer_recv, "</h1></center>\n"          );
+
+        strcat ( pointer_recv, "</body>\n" );
+        strcat ( pointer_recv, "</html>\n" );
+
+
+        return 1;}
+
+/*
+
+
+<html>
+
+
+<head><title>400 Bad Request</title></head>
+
+
+
+<body bgcolor="white">
+
+
+<center><h1>400 Bad Request</h1></center>
+
+<hr><center>nginx</center>
+
+
+</body>
+
+
+</html>
+
+*/
+//-----------------------------------------------
 
     else {
 
