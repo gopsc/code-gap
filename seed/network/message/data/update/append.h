@@ -44,7 +44,9 @@ int append_message_data_update(
 
             count_update++;
 
-            return 1;}
+
+
+            return 0;}
 
 
 
@@ -68,8 +70,8 @@ int append_message_data_update(
 
 // connect the send buffer
 
-            strcat(buffer_send, "Update.");
-            strcat(buffer_send, "\n");
+            strcat ( buffer_send, "Update." );
+            strcat ( buffer_send, "\n"      );
 
 
 

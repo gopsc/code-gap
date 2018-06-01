@@ -58,11 +58,18 @@ int main(int argc,char **argv){
         page=PAGE;
     }
     fprintf(stdout,"page:%s,hostName:%s\n",page,host);
+
     sock=create_tcp_socket();
+
     ip=get_ip(host);
+
     fprintf(stderr,"IP is %s\n",ip);
+
     remote=(struct sockaddr_in *)malloc(sizeof(struct sockaddr_in*));
+
     remote->sin_family=AF_INET;
+
+
     tmpres=inet_pton(AF_INET,ip,(void *)(&(remote->sin_addr.s_addr)));
     if(tmpres<0){
         perror("Can't set remote->sin_addr.s_addr");
@@ -77,6 +84,8 @@ int main(int argc,char **argv){
         exit(1);
     }
     get =build_get_query(host,page);
+
+
     fprintf(stdout,"<start>\n%s\n<end>\n",get);
     int sent=0;
     while(sent<strlen(get)){
@@ -91,6 +100,8 @@ int main(int argc,char **argv){
     int htmlstart=0;
     char *htmlcontent;
     while((tmpres=recv(sock,buf,BUFSIZ,0))>0){
+printf("%s\n1\n2\n", buf);
+
         if(htmlstart==0){
             htmlcontent=strstr(buf,"\r\n\r\n");
             if(htmlcontent!=NULL){
@@ -102,6 +113,7 @@ int main(int argc,char **argv){
         }
         if(htmlstart){
             fprintf(stdout,htmlcontent);
+            printf("1\n");
         }
         memset(buf,0,tmpres);
        // fprintf(stdout,"\n\n\ntmpres Value:%d\n",tmpres);
@@ -131,7 +143,9 @@ char *get_ip(char *host){
     struct hostent *hent;
     int iplen=15;
     char *ip=(char *)malloc(iplen+1);
+
     memset(ip,0,iplen+1);
+
     if((hent=gethostbyname(host))==NULL){
         perror("Can't get ip");
         exit(1);

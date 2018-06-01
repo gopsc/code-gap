@@ -603,7 +603,7 @@ int judge_message_information(
                 gop_connection.memory[that_site].total
 
              += number_memory_total;
- 
+
 
 
 

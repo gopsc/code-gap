@@ -104,8 +104,8 @@ int control_message(
 
             if (
 
-                   strcmp( gop_connection.how[i], "Connectted" ) == 0 
-            ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0 
+                   strcmp( gop_connection.how[i], "Connectted" ) == 0
+            ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0
 
                ) {
 

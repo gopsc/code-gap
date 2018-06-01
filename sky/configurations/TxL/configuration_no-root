@@ -35,14 +35,14 @@ sound-save        off
 
 
 
-address-to        110.110.110.110
+address-to        192.168.4.3
 port-to           520
 port-this         520
 
 connect-step      0.1
 
-update-size       1000
-update-step       0
+update-size       1024
+update-step       1
 
 
 
