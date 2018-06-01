@@ -78,14 +78,17 @@ int here () {
                        /                              \
                       /                                \
                      /                                  \
-          ---------------------------        ------------------
-      [0] |  read         | 4 | 9 |      [0] | 0 | 0 | 0 | 0 | ...
-          ---------------------------        ------------------
-      [1] |  read : one   | 0 | 9 |      [1] | ......
-          ---------------------------        --
-      [2] |  read me : 1  | 0 | 9 |      [2] | ......
-          ---------------------------        --
-
+                                           -------------------------------------------------
+                                           |
+          ------------------               |   -------------------------------    |   ---
+      [0] |  read         | ...       [0]  |   |  0 | 9 | 4 | 0 | 0 | 1 | 0 | ... |   |
+          ------------------               |   -------------------------------    |   |     _   _   _   _   _   _
+      [1] |  read : one   | ...       [1]  |   | -1 | 9 | 0 | ......              |   |    |_| |_| |_| |_| |_| |_|
+          ------------------               |   ---------------                    |   |
+      [2] |  read me : 1  | ...       [2]  |   | -1 | 9 | 0 | ......              |   |
+          ------------------               |   ---------------                    |   ---
+                                           |
+                                           ------------------------------------------------
 */
 
 
@@ -105,15 +108,28 @@ int here () {
 
         if ( NULL == (          gop             = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
 
+
         if ( NULL == (          gop[0]          = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
 
         if ( NULL == (          gop[0][0]       = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
-        if ( NULL == (          gop[0][0][0]    = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
+        if ( NULL == (          gop[0][1]       = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
-        if ( NULL == (          gop[0][0][1]    = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
 
-        if ( NULL == (          gop[0][0][2]    = malloc ( 2  * sizeof ( void * ) )        ) )  { return 0; }
+        if ( NULL == (          gop[0][0][0]    = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
+        if ( NULL == (          gop[0][0][1]    = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
+        if ( NULL == (          gop[0][0][2]    = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
+
+        if ( NULL == (          gop[0][1][0]    = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
+        if ( NULL == (          gop[0][1][1]    = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
+        if ( NULL == (          gop[0][1][2]    = malloc ( 1  * sizeof ( void * ) )        ) )  { return 0; }
+
 
 
 
@@ -125,23 +141,11 @@ int here () {
 
 
 
-        if ( NULL != (          gop[0][0][0][1] = malloc (      sizeof ( int ) )          ) )  {
-
-            * ( int * ) gop[0][0][0][1] = 9;}                                             else { return 0;}
-
-
-
 
         if ( NULL != (          gop[0][0][1][0] = malloc ( 10 * sizeof ( char ) )         ) )  {
 
             strcpy ( ( char * ) gop[0][0][1][0], "read : one");}                          else { return 0;}
 
-
-
-
-        if ( NULL != (          gop[0][0][1][1] = malloc (      sizeof ( int ) )          ) )  {
-
-           * ( int * ) gop[0][0][1][1] = -1;}                                             else { return 0;}
 
 
 
@@ -153,10 +157,29 @@ int here () {
 
 
 
-        if ( NULL != (          gop[0][0][2][1] = malloc (      sizeof ( int ) )          ) )  {
+        if ( NULL != (          gop[0][1][0][0] = malloc (      sizeof ( short ) )        ) )  {
 
-            * ( int * ) gop[0][0][2][1] = -1;}                                            else { return 0;}}
+            (   ( short * ) gop[0][1][0][0]   )  [0]  = 0;
+            (   ( short * ) gop[0][1][0][0]   )  [1]  = 9;
+            (   ( short * ) gop[0][1][0][0]   )  [2]  = 0;}                               else { return 0;}
 
+
+
+
+        if ( NULL != (          gop[0][1][1][0] = malloc ( sizeof ( short ) )             ) ) {
+
+            ( ( short * ) gop[0][1][1][0] ) [0] = -1;
+            ( ( short * ) gop[0][1][1][0] ) [1] = 9 ;
+            ( ( short * ) gop[0][1][1][0] ) [2] = 0 ;}                                    else { return 0;}
+
+
+
+
+        if ( NULL != (          gop[0][1][2][0] = malloc ( sizeof ( short ) ) ) ) {
+
+            ( ( short * ) gop[0][1][2][0] ) [0] = -1;
+            ( ( short * ) gop[0][1][2][0] ) [1] = 9 ;
+            ( ( short * ) gop[0][1][2][0] ) [2] = 0 ;}                                    else { return 0;}}
 
 
 
@@ -172,17 +195,25 @@ int here () {
 
 
 
-void * dream ( void * that_type ) {
+
+
+
+
+
+
+
+
+
+
+
+
+void * dream ( void * that_dream ) {
 
 
 // your dreams, the others does not know
 
 
-    int one   = 0;
-    int two   = 0;
-    int three = 0;
-    int four  = 0;
-
+    that_dream   =   realloc(   gop [ * ( short * ) that_dream ] [1] [0] [0],   1 + 2 + 4 );
 
 
 
@@ -197,11 +228,13 @@ void * dream ( void * that_type ) {
     sleep :
 
 
+    ( ( short * ) gop [ * ( short * ) that_dream ] [1] [0] [0] ) [3]  = 0;
+    ( ( short * ) gop [ * ( short * ) that_dream ] [1] [0] [0] ) [4]  = 0;
+    ( ( short * ) gop [ * ( short * ) that_dream ] [1] [0] [0] ) [5]  = 0;
+    ( ( short * ) gop [ * ( short * ) that_dream ] [1] [0] [0] ) [6]  = 0;
+    ( ( short * ) gop [ * ( short * ) that_dream ] [1] [0] [0] ) [2] += 4;
 
-
-
-
-
+/*
 
     if (
 
@@ -237,7 +270,7 @@ void * dream ( void * that_type ) {
         three = -1;
         four  = -1;}
 
-
+*/
 
 
 
@@ -263,11 +296,15 @@ void * dream ( void * that_type ) {
 
     printf (
 
-             "%s %d %d %d %d\n",
+             "%s %d %d %d %d \n",
 
-              that_type,
+                 ( char  *  )   gop [ * ( short * ) that_dream ] [0] [0] [0],
 
-                   one,  two,  three,  four
+
+               ( ( short *  )   gop [ * ( short * ) that_dream ] [1] [0] [0]   )  [3],
+               ( ( short *  )   gop [ * ( short * ) that_dream ] [1] [0] [0]   )  [4],
+               ( ( short *  )   gop [ * ( short * ) that_dream ] [1] [0] [0]   )  [5],
+               ( ( short *  )   gop [ * ( short * ) that_dream ] [1] [0] [0]   )  [6]
 
            );
 
@@ -277,7 +314,7 @@ void * dream ( void * that_type ) {
 
 
 
-    return that_type;}
+    return NULL ;}
 
 
 
@@ -309,8 +346,21 @@ int main( int argc, char *argv[] ) {
                               & thread [0],
                                 NULL,
                                 dream,
-                     ( void * ) gop [0] [0] [0] [0]
+                     ( void * ) gop [0] [1] [0] [0]
                    );
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

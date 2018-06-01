@@ -1,8 +1,11 @@
 
-face the esp8266 8 pins module
+face the esp8266 8 pins module, the pins is dowm
 
- and from the high to the down
-from the right to the left
+ and from the high to the down, from the right to the left
+
+
+
+
 
 
   number    pin-id      gpio-id    name          description
