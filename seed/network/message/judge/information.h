@@ -8,8 +8,11 @@ int judge_message_information(
 
                              ) {
 
+
+
+
 //PS. the varitable 'pointer_recv' was selected before
-//        so there is just a command leave.
+//        so there is just onw command there.
 
 //-----------------------------------------------
 
@@ -19,6 +22,10 @@ int judge_message_information(
     ||     strstr(pointer_recv, "Recive.")
            ==     pointer_recv
        ) {
+
+// if u don't want to do anythong,
+//  & so do the anther one
+// just keep this relationship
 
         if ( strcmp(gop_connection.command[that_site], "") == 0 ) {
 
@@ -765,21 +772,26 @@ Accept-Language:zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4,en-GB;q=0.2
 
     else if (
 
-                strstr( pointer_recv, "GET" ) != NULL
+                strstr ( pointer_recv, "GET " ) != NULL
+         &&     strstr ( pointer_recv, "HTTP" ) != NULL
 
             ) {
 
 
 
+
         strcpy ( pointer_recv, "<start>\n\n" );
 
+        strcat ( pointer_recv, "GET "                                                            );
         strcat ( pointer_recv, "520 HTTP/1.1\n"                                                  );
         strcat ( pointer_recv, "host:gop\n"                                                      );
         strcat ( pointer_recv, "Accept: text/html\n"                                             );
         strcat ( pointer_recv, "User-Agent:gop\n"                                                );
         strcat ( pointer_recv, "User-Language:zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4,en-GB;q=0.2\n" );
 
-        strcat ( pointer_recv, "\n\n<end>\n\n" );
+        strcat ( pointer_recv, "\n<end>\n\n" );
+
+
 
 
 
@@ -797,32 +809,12 @@ Accept-Language:zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4,en-GB;q=0.2
         strcat ( pointer_recv, "</html>\n" );
 
 
-        return 1;}
+        return 1;
 
-/*
-
-
-<html>
-
-
-<head><title>400 Bad Request</title></head>
+        }
 
 
 
-<body bgcolor="white">
-
-
-<center><h1>400 Bad Request</h1></center>
-
-<hr><center>nginx</center>
-
-
-</body>
-
-
-</html>
-
-*/
 //-----------------------------------------------
 
     else {

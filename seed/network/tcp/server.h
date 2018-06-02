@@ -1,17 +1,18 @@
 
 
 
-void* gop_server_start(void* what) {
+void * gop_server_start ( void * what ) {
 
 
 // Declare these variable.
 
            int         number_return;
+
            char        buffer_recv[4][10240];
            char        buffer_send[10240];
            char        that_buffer[10240];
-           char        that_over[9];
-           char        that_address[33];
+           char        that_address[32];
+
 
     struct sockaddr_in address   ;
     struct sockaddr_in address_by;
@@ -366,10 +367,13 @@ void* gop_server_start(void* what) {
                           0
                         );
 
+
 // Do note wait,
 // or get client connectting
 // no banance
+//
 //                    usleep(step_connection * 1000000);
+
 
                     close(number_return);}}
 

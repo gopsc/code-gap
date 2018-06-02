@@ -29,7 +29,7 @@ addres2=$address/flower.c
 
 cat  $address/box/c/Linux/head/Linux.h                       >> $addres2
 
-cat  $address/box/c/Linux/head/variable.h                    >> $addres2
+cat  $address/box/c/Linux/head/variables.h                   >> $addres2
 
 
 

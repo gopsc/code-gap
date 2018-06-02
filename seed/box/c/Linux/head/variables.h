@@ -34,8 +34,6 @@ float  step_connection;
 char   symbol_next[128];
 
 int    size_update;
-int    count_update;
-int    count_update_max;
 
 //-------------------------sound-------------------------
 

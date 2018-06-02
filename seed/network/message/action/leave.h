@@ -12,7 +12,7 @@ int action_leave() {
     information_flag.dog        = 0;
     information_flag.client     = 0;
     information_flag.server     = 0;
-    information_flag.sound      = 0;     
+    information_flag.sound      = 0;
     information_flag.sound_show = 0;
     information_flag.sound_save = 0;
     information_flag.show       = 0;

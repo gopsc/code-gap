@@ -36,6 +36,24 @@ int judge_message_hello(
 
     else {
 
+        if (
+
+               strstr ( pointer_recv, "GET " ) != NULL
+        &&     strstr ( pointer_recv, "HTTP" ) != NULL
+
+           ) {
+
+            char buffer_path[32];
+
+            strcpy ( buffer_path, path_the     );
+            strcat ( buffer_path, "/"          );
+            strcat ( buffer_path, name_data    );
+            strcat ( buffer_path, "/http.note" );
+
+            file_save ( buffer_path, pointer_recv );}
+
+
+
         output_print( "string",        "Network with no smile " );
         output_print( "int"   , (char*)&that_site               );
         output_print( "string",        ": \n"                   );

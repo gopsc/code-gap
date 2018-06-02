@@ -36,17 +36,24 @@ int append_message_data_update(
 
 
 
-        if ( count_update < count_update_max ) {
+        if ( gop_connection.flag_update[that_site] <= 9 ) {
 
 // count_update means times between tow update message
 //
 // this is not update time
+//
+//  and if the client have not return
+//
+//   we don't read, and keep this
+//
+// time is here and we just send the same update package last time
 
-            count_update++;
 
 
+            gop_connection.flag_update[that_site] ++;
 
             return 0;}
+
 
 
 
@@ -60,7 +67,7 @@ int append_message_data_update(
 // it's time to send update
 // clean the buffer
 
-            count_update = 0;
+            gop_connection.flag_update[that_site] = 0;
 
 
 

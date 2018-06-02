@@ -180,7 +180,7 @@ int action_seed (
 
 
     action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/Linux.h"                   );
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variable.h"                );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variables.h"               );
 
 
 

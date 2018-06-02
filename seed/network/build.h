@@ -1,20 +1,22 @@
 
 struct gopi_connection {
 
-           char        how        [4][17]     ;
-           time_t      time       [4]         ;
+           char        how        [4][16];
+           time_t      time       [4];
 
-           int         descriptor [2]         ;
-           char        address_ip [4][129]    ;
-           int         port       [2]         ;
+           int         descriptor [2];
+           int         connection [2];
+           char        address_ip [4][128];
+           int         port       [2];
 
-           char        command    [4][128]    ;
+           char        command    [4][128];
 
-           char        update     [4][10240]  ;
-           int         step_update[4]         ;
+           char        update     [4][10240];
+           int         step_update[4];
+           int         flag_update[4];
 
-           char        video      [4][102400] ;
-           char        audio      [4][102400] ;
+           char        video      [4][102400];
+           char        audio      [4][102400];
 
     struct gopi_system  system    [4];
     struct gopi_network network   [4];
@@ -31,30 +33,57 @@ struct gopi_connection {
 //==========================================================================
 
 void clean_connection(
+
                                int   that_site,
                          const char* that_type
+
                      ) {
+
+
 
     if      ( strcmp(that_type, "all")     == 0 ) {
 
 
-            strcpy(gop_connection.how        [that_site],  "Wait");
-            strcpy(gop_connection.command    [that_site],  ""    );
-            strcpy(gop_connection.update     [that_site],  ""    );
-                   gop_connection.step_update[that_site]   = 0    ;
+            strcpy ( gop_connection.how        [that_site],  "Wait" );
+
+            strcpy ( gop_connection.command    [that_site],  ""     );
+
+            strcpy ( gop_connection.audio      [that_site],  ""     );
+            strcpy ( gop_connection.video      [that_site],  ""     );
+
+            strcpy ( gop_connection.update     [that_site],  ""    );
+                     gop_connection.step_update[that_site]   = 0;
+                     gop_connection.flag_update[that_site]   = 0;
+
+
+
 
         if ( that_site != 0 ) {
 
             strcpy(gop_connection.address_ip [that_site],  ""    );
                    gop_connection.port       [that_site] = 0      ;}}
 
+
+
+
+
 //==========================================================================
 
     else if ( strcmp(that_type, "sopi")    == 0 ) {
 
-        strcpy(gop_connection.command    [that_site],  "");
-        strcpy(gop_connection.update     [that_site],  "");
-               gop_connection.step_update[that_site] = 0  ;
+
+
+
+        strcpy ( gop_connection.command    [that_site],  "" );
+
+        strcpy ( gop_connection.audio      [that_site],  "" );
+        strcpy ( gop_connection.video      [that_site],  "" );
+
+        strcpy ( gop_connection.update     [that_site],  "" );
+                 gop_connection.step_update[that_site] = 0   ;
+                 gop_connection.flag_update[that_site] = 0   ;
+
+
 
         if      (
                   strcmp(
@@ -63,7 +92,9 @@ void clean_connection(
                         )
                   == 0
            ) {
-               strcpy(gop_connection.how[that_site], "Sop");}
+
+               strcpy ( gop_connection.how[that_site], "Sop" );}
+
 
         else if (
                   strcmp(
@@ -72,7 +103,9 @@ void clean_connection(
                         )
                == 0
            ) {
-               strcpy(gop_connection.how[that_site], "Connectted");}
+
+               strcpy ( gop_connection.how[that_site], "Connectted" );}
+
 
         else if (
                   strcmp(
@@ -81,7 +114,9 @@ void clean_connection(
                         )
                == 0
            ) {
-               strcpy(gop_connection.how[that_site], "Sopi");}
+
+               strcpy ( gop_connection.how[that_site], "Sopi" );}
+
 
         else if (
                   strcmp(
@@ -90,14 +125,17 @@ void clean_connection(
                         )
                == 0
            ) {
-               strcpy(gop_connection.how[that_site], "Connectting");}}
+
+               strcpy ( gop_connection.how[that_site], "Connectting" );}}
 
 //==========================================================================
 
     else if ( strcmp(that_type, "update") == 0 ) {
 
-        strcpy(gop_connection.update     [that_site],  "");
-               gop_connection.step_update[that_site] = 0;}
+
+        strcpy ( gop_connection.update     [that_site],  "" );
+                 gop_connection.step_update[that_site] = 0;
+                 gop_connection.flag_update[that_site] = 0;}
 
 
     return;}

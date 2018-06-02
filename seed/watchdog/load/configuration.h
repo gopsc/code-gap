@@ -24,8 +24,9 @@ int load_configure() {
 
     char   that_file     [1024];
     char buffer_file     [1024];
-    char target_configure[22][128];
-    char result_configure[22][128];
+
+    char target_configuration[21][128];
+    char result_configuration[21][128];
 
 
 
@@ -73,6 +74,9 @@ int load_configure() {
               ) {
 
 
+
+
+
 // If it's deamon mode, load the configuration file
 
             strcpy(buffer_path, "/opt/TxL/sky/configurations/TxL/configuration_deamon");
@@ -84,6 +88,8 @@ int load_configure() {
 // If the deamon configuration is not found, load the common configuration file
 
                 strcpy(buffer_path, "/opt/TxL/seed/configuration");}}}
+
+
 
 
 
@@ -111,10 +117,12 @@ int load_configure() {
 
 
 
+
+
 // The mode of terminal
 //  of no root
 
-    else if   ( strcmp(that_file, "root\n") == 1 ){
+    else if   ( strcmp(that_file, "root\n") != 0 ){
 
 
 // if it is not the root user, try to load the no-root configuration
@@ -148,6 +156,7 @@ int load_configure() {
         output_print( "string", "\n"               );
 
 
+
 // it always take a '\n' at the end
 
         if ( strchr(buffer_path, '\n') != NULL ) {
@@ -166,6 +175,15 @@ int load_configure() {
 
 
 
+
+
+
+
+
+
+
+
+
 // Get the file
 
     file_get(buffer_path, that_file);
@@ -174,21 +192,21 @@ int load_configure() {
 
 
 
+
+
+
+
+
+
 // sometimes it maybe a empty file
-//  the watchdog will keep running
+// but the watchdog will keep running
 //
-/*
-    if ( strcmp(that_file, "") == 0 ) {
-
-        information_flag.main = 0;}
-*/
 
 
 
-// If is's not a empty file
-// read it
-
-//    else {
+// if it's not a empty file
+//
+// it will be read
 
 
 //================================================================
@@ -209,6 +227,7 @@ int load_configure() {
         bool_reset              = 1;
 
         information_flag.client = 0;
+
 
         shutdown(gop_connection.descriptor[0], SHUT_RDWR);}
 
@@ -253,7 +272,21 @@ int load_configure() {
 
         information_flag.server = 0;
 
-        shutdown(gop_connection.descriptor[1], SHUT_RDWR);}
+        shutdown(gop_connection.descriptor[1], SHUT_RDWR);
+
+
+        int i;
+
+        for ( i = 1; i < 4; i++ ) {
+
+            if (
+
+                   gop_connection.connection[i] != 0
+            ||     gop_connection.connection[i] != -1
+
+               ) {
+
+                shutdown ( gop_connection.connection[i], SHUT_RDWR );}}}
 
 
 
@@ -295,51 +328,51 @@ int load_configure() {
     if ( bool_reset ) {
 
         output_print( "string"                       , "Reset...");
-        usleep      ( 1000000 * (1 + step_connection)            );}
+
+        usleep      ( 1000000 );}
 
 //================================================================
 
-    strcpy(target_configure[1] , "path "          );
-    strcpy(target_configure[2] , "name "          );
-    strcpy(target_configure[3] , "data "          );
-    strcpy(target_configure[4] , "backup "        );
-    strcpy(target_configure[5] , "main "          );
-    strcpy(target_configure[6] , "dog "           );
-    strcpy(target_configure[7] , "show "          );
-    strcpy(target_configure[8] , "client "        );
-    strcpy(target_configure[9] , "server "        );
-    strcpy(target_configure[10] , "sound "         );
-    strcpy(target_configure[11], "sound-show "    );
-    strcpy(target_configure[12], "sound-save "    );
-    strcpy(target_configure[13], "address-to "    );
-    strcpy(target_configure[14], "port-to "       );
-    strcpy(target_configure[15], "port-this "     );
-    strcpy(target_configure[16], "connect-step "  );
-    strcpy(target_configure[17], "update-size "   );
-    strcpy(target_configure[18], "update-step "   );
-    strcpy(target_configure[19], "sound-rate "    );
-    strcpy(target_configure[20], "sound-channels ");
-    strcpy(target_configure[21], "ft-N "          );
+    strcpy ( target_configuration[1] , "path "           );
+    strcpy ( target_configuration[2] , "name "           );
+    strcpy ( target_configuration[3] , "data "           );
+    strcpy ( target_configuration[4] , "backup "         );
+    strcpy ( target_configuration[5] , "main "           );
+    strcpy ( target_configuration[6] , "dog "            );
+    strcpy ( target_configuration[7] , "show "           );
+    strcpy ( target_configuration[8] , "client "         );
+    strcpy ( target_configuration[9] , "server "         );
+    strcpy ( target_configuration[10] , "sound "         );
+    strcpy ( target_configuration[11], "sound-show "     );
+    strcpy ( target_configuration[12], "sound-save "     );
+    strcpy ( target_configuration[13], "address-to "     );
+    strcpy ( target_configuration[14], "port-to "        );
+    strcpy ( target_configuration[15], "port-this "      );
+    strcpy ( target_configuration[16], "connect-step "   );
+    strcpy ( target_configuration[17], "update-size "    );
+    strcpy ( target_configuration[18], "sound-rate "     );
+    strcpy ( target_configuration[19], "sound-channels " );
+    strcpy ( target_configuration[20], "ft-N "           );
 
 
 
 //================================================================
-
-
 
     int i;
 
-    for ( i=1; i<=21; i++ ) {
+    for ( i=1; i<=20; i++ ) {
 
-        if ( strstr(that_file, target_configure[i]) != NULL ) {
 
-            strcpy( buffer_file,         strstr(that_file, target_configure[i]) );
+        if ( strstr(that_file, target_configuration[i]) != NULL ) {
 
-           *strchr( buffer_file,         '\n'                                   ) = '\0';
 
-            strcpy( buffer_file,         strrchr(buffer_file, ' ')+1            );
+            strcpy( buffer_file,         strstr(that_file, target_configuration[i]) );
 
-            strcpy( result_configure[i], buffer_file                            );}}
+           *strchr( buffer_file,         '\n'                         ) = '\0';
+
+            strcpy( buffer_file,         strrchr(buffer_file, ' ') +1 );
+
+            strcpy( result_configuration[i], buffer_file              );}}
 
 
 
@@ -347,36 +380,35 @@ int load_configure() {
 
 
 
-    strcpy(path_the,    result_configure[1]);
-    strcpy(name_the,    result_configure[2]);
-    strcpy(name_data,   result_configure[3]);
-    strcpy(name_backup, result_configure[4]);
+    strcpy ( path_the,    result_configuration[1] );
+    strcpy ( name_the,    result_configuration[2] );
+    strcpy ( name_data,   result_configuration[3] );
+    strcpy ( name_backup, result_configuration[4] );
 
-    if ( strcmp(result_configure[5],  "on") == 0 ) {information_flag.main       = 1;} else {information_flag.main       = 0;}
-    if ( strcmp(result_configure[6],  "on") == 0 ) {information_flag.dog        = 1;} else {information_flag.dog        = 0;}
-    if ( strcmp(result_configure[7],  "on") == 0 ) {information_flag.show       = 1;} else {information_flag.show       = 0;}
-    if ( strcmp(result_configure[8],  "on") == 0 ) {information_flag.client     = 1;} else {information_flag.client     = 0;}
-    if ( strcmp(result_configure[9],  "on") == 0 ) {information_flag.server     = 1;} else {information_flag.server     = 0;}
-    if ( strcmp(result_configure[10],  "on") == 0 ) {information_flag.sound      = 1;} else {information_flag.sound      = 0;}
-    if ( strcmp(result_configure[11], "on") == 0 ) {information_flag.sound_show = 1;} else {information_flag.sound_show = 0;}
-    if ( strcmp(result_configure[12], "on") == 0 ) {information_flag.sound_save = 1;} else {information_flag.sound_save = 0;}
-
-
-
-
-    strcpy(address_to, result_configure[13]);
+    if ( strcmp(result_configuration[5],  "on") == 0 ) { information_flag.main       = 1;} else { information_flag.main       = 0;}
+    if ( strcmp(result_configuration[6],  "on") == 0 ) { information_flag.dog        = 1;} else { information_flag.dog        = 0;}
+    if ( strcmp(result_configuration[7],  "on") == 0 ) { information_flag.show       = 1;} else { information_flag.show       = 0;}
+    if ( strcmp(result_configuration[8],  "on") == 0 ) { information_flag.client     = 1;} else { information_flag.client     = 0;}
+    if ( strcmp(result_configuration[9],  "on") == 0 ) { information_flag.server     = 1;} else { information_flag.server     = 0;}
+    if ( strcmp(result_configuration[10], "on") == 0 ) { information_flag.sound      = 1;} else { information_flag.sound      = 0;}
+    if ( strcmp(result_configuration[11], "on") == 0 ) { information_flag.sound_show = 1;} else { information_flag.sound_show = 0;}
+    if ( strcmp(result_configuration[12], "on") == 0 ) { information_flag.sound_save = 1;} else { information_flag.sound_save = 0;}
 
 
 
 
-    port_to          = atof(result_configure[14]);
-    port_this        = atof(result_configure[15]);
-    step_connection  = atof(result_configure[16]);
-    size_update      = atof(result_configure[17]);
-    count_update_max = atof(result_configure[18]);
-    rate             = atof(result_configure[19]);
-    channels         = atof(result_configure[20]);
-    N                = atof(result_configure[21]);
+    strcpy ( address_to, result_configuration[13] );
+
+
+
+
+    port_to          = atof ( result_configuration[14] );
+    port_this        = atof ( result_configuration[15] );
+    step_connection  = atof ( result_configuration[16] );
+    size_update      = atof ( result_configuration[17] );
+    rate             = atof ( result_configuration[18] );
+    channels         = atof ( result_configuration[19] );
+    N                = atof ( result_configuration[20] );
 
 
 
