@@ -3,10 +3,8 @@
 
 
 this is a program with my learning,
-
-     maybe it's not meaningful
-      android programer is comming ,
-     but it's just meaningful to me..
+maybe it's not meaningful
+but it's just meaningful to me..
 
 
 
@@ -33,3 +31,4 @@ this is a program with my learning,
 
 
   ok , just like that... :D
+  then, you can see
