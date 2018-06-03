@@ -70,7 +70,16 @@ int main(int argc,char **argv){
     remote->sin_family=AF_INET;
 
 
+
+
+
     tmpres=inet_pton(AF_INET,ip,(void *)(&(remote->sin_addr.s_addr)));
+
+
+
+
+
+
     if(tmpres<0){
         perror("Can't set remote->sin_addr.s_addr");
         exit(1);
@@ -78,7 +87,11 @@ int main(int argc,char **argv){
         fprintf(stderr,"%s is not a valid IP address\n",ip);
         exit(1);
     }
+
+
+
     remote->sin_port=htons(PORT);
+
     if(connect(sock,(struct sockaddr *)remote,sizeof(struct sockaddr))<0){
         perror("Could not connect!\n");
         exit(1);
@@ -128,9 +141,20 @@ printf("%s\n1\n2\n", buf);
     close(sock);
     return 0;
 }
+
+
+
+
+
 void usage(){
     fprintf(stderr,"USAGE:htmlget host [page]\n\thost:the website hostname. ex:www.baidu.com\n\tpage:the page to retrieve. ex:index.html,default:/\n");
 }
+
+
+
+
+
+
 int create_tcp_socket(){
     int sock;
     if((sock=socket(AF_INET,SOCK_STREAM,IPPROTO_TCP))<0){
@@ -139,6 +163,13 @@ int create_tcp_socket(){
     }
     return sock;
 }
+
+
+
+
+
+
+
 char *get_ip(char *host){
     struct hostent *hent;
     int iplen=15;
@@ -156,6 +187,11 @@ char *get_ip(char *host){
     }
     return ip;
 }
+
+
+
+
+
 char *build_get_query(char *host,char *page){
     char *query;
     char *getpage=page;
