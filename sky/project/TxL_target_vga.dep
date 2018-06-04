@@ -1,0 +1,3 @@
+Dependencies for Project 'TxL', Target 'target_vga': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_hd.s)(0x5B14CE81)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x--list .\startup_stm32f10x_hd.lst --xref -o .\startup_stm32f10x_hd.o --depend .\startup_stm32f10x_hd.d)
+F (.\build.c)(0x5B14FBC4)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-o .\build.o --omf_browse .\build.crf --depend .\build.d)
