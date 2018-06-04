@@ -34,10 +34,11 @@ void* gop_client_start(void* what) {
 
 // Prepare the information of start.
 
-    strcpy(gop_connection.address_ip[0], address_to);
-           gop_connection.port[0]      = port_to;
+    strcpy ( gop_connection.address_ip[0],  address_to);
+             gop_connection.port[0]       = port_to;
 
-    strcpy(gop_connection.how[0],        "Wait");
+    strcpy ( gop_connection.how[0],        "Wait");
+             gop_connection.connection[0] = -1;
 
 
 
