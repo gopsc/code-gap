@@ -1,5 +1,12 @@
 
+1: ?
+2: https://www.arduino.cn/thread-12488-1-1.html
 
+
+
+
+
+one
 
 
 Arduino Uno 采样速度
@@ -169,3 +176,100 @@ http://www.geek-workshop.com/thread-11511-1-1.html
 7.	http://meettechniek.info/embedded/arduino-analog.html Arduino: Analog measurements
 
 本条目发布于 2015 年 4 月 3 日 | 属于 Funny 分类，被贴了 Arduino 标签 | 作者是 ziv2013 |
+
+
+
+
+
+
+
+
+
+two
+
+雖然 Arduino 的 analogRead( ) 預設的sampling rate 理論值是 9600 Hz,
+接近 10KHz,
+但這是因為 Arduino 的 ADC 之  Prescaler 被設為 128,
+所以假設 Arduino 的時脈(Clock)是 16MHz,
+則 ADC clock = 16MHz / 128 = 125KHz;
+一次 ADC 轉換要踢它13下, 就是要 13 clock (tick),
+於是變成 125KHz/13 = 9600Hz
+不過那只是理論值, 因為你的程序本身也要花時間,
+如果你用一個 for Loop 全力一直做 analogRead(A0),
+那一秒鐘也只能讀取大約 8925 次, 達不到理論值 9600次 !!
+不過,
+Prescaler是可以改的!
+把 ADC 的 Prescaler 改為 16,
+則理論的 Sample Rate 可達 16MHz / 16 / 13 = 76.8KHz
+但是實測只有大約 58KHz
+若 ADC 的 Prescaler 改為 8,
+則理論的 Sample Rate 可達 153KHz, 但實測只有大約93.5KHz
+可是一般不建議把 Prescaler 設在 16以下, 否則ADC轉換不太準
+
+以下是測試用 Prescaler 16, 採樣頻率 大約 58KHz
+
+
+
+
+
+
+
+
+//////
+// speed up sampling rate -- by [email]tsaiwn@cs.nctu.edu.tw[/email]
+const int pin = A0;
+const int n = 1000;  // sample 採樣 1000 次
+void setup() {
+  Serial.begin(9600);
+  //setP32( ); // Prescaler = 32
+  //setP8( );   // Prescaler = 8
+  setP16( );   // Prescaler = 16
+  //setP128( ); // Prescaler = 128 = default
+  for(int i=0; i< 543; i++) analogRead(A0); // 熱身 :-)
+  Serial.println(String("Sample ") + n + " times, pin=" + pin);
+  Serial.flush( );
+  delay(568);
+}
+void loop( ) { // 
+  long begt, runt, total;
+  total = 0;  // clear before sampling
+  begt = micros();
+  for(int i=0; i< n; i++) {
+     total += analogRead(pin);
+  }
+  runt = micros() - begt;  // elapsed time
+  Serial.println(String("Average=") + total/n);
+  Serial.print(String("Time per sample: ")+runt/1.0/n +"us");
+  Serial.println(String(", Frequency: ")+1000000.0/runt*n +" Hz");
+  delay(5566);
+}// loop(
+void setP32( ) {
+  Serial.println("ADC Prescaler = 32");  // 101
+  ADCSRA |=  (1 << ADPS2);  // 1
+  ADCSRA &=  ~(1 << ADPS1);  // 0
+  ADCSRA |=  (1 << ADPS0);  // 1
+}
+void setP16( ) {
+  Serial.println("ADC Prescaler = 16");  // 100
+  ADCSRA |=  (1 << ADPS2);  // 1
+  ADCSRA &=  ~(1 << ADPS1);  // 0
+  ADCSRA &=  ~(1 << ADPS0);  // 0
+}
+void setP8( ) {  // prescaler = 8
+  Serial.println("ADC Prescaler = 8");  // 011
+  ADCSRA &=  ~(1 << ADPS2);  // 0
+  ADCSRA |=  (1 << ADPS1);  // 1
+  ADCSRA |=  (1 << ADPS0);  // 1
+}
+void setP4( ) {  // prescaler = 4
+  Serial.println("ADC Prescaler = 4");  // 010
+  ADCSRA &=  ~(1 << ADPS2);  // 0
+  ADCSRA |=  (1 << ADPS1);  // 1
+  ADCSRA &=  ~(1 << ADPS0);  // 0
+}
+void setP128( ) { // 默認就是這樣
+  Serial.println("ADC Prescaler = 128");  // 111
+  ADCSRA |=  (1 << ADPS2);  // 1
+  ADCSRA |=  (1 << ADPS1);  // 1
+  ADCSRA |=  (1 << ADPS0);  // 1
+} // setP128
