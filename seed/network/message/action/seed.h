@@ -2,7 +2,9 @@
 int action_seed_append (
 
                            const char* that_result,
+
                            const char* that_path,
+
                            const char* that_target
 
                        ) {
@@ -433,9 +435,9 @@ int action_seed (
 
 // the translate system of network
 
-    action_seed_append( buffer_file, buffer_path, "/network/tcp/server.h"                           );
+    action_seed_append( buffer_file, buffer_path, "/network/tcp/connectted.h"                       );
 
-    action_seed_append( buffer_file, buffer_path, "/network/tcp/client.h"                           );
+    action_seed_append( buffer_file, buffer_path, "/network/tcp/connector.h"                        );
 
 
 

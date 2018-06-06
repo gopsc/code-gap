@@ -390,9 +390,9 @@ int main( int argc, char *argv[] ) {
 
     pthread_create (&thread[1], NULL, gop_dog         , NULL);
 
-    pthread_create (&thread[2], NULL, gop_server_start, NULL);
+    pthread_create (&thread[2], NULL, gop_connectted  , NULL);
 
-    pthread_create (&thread[3], NULL, gop_client_start, NULL);
+    pthread_create (&thread[3], NULL, gop_connector   , NULL);
 
     pthread_create (&thread[4], NULL, gop_corde       , NULL);
 
@@ -425,16 +425,16 @@ int main( int argc, char *argv[] ) {
 
 // Deamon got blank alway in deamon.
 
-    if ( information_flag.main && (!information_flag.deamon) ) {
+    if (  information_flag.main  &&  ( ! information_flag.deamon )  ) {
 
 
 
-        output_print( "string", "\n we met somewhere \n\n" );}
+        output_print ( "string", "\n we met somewhere \n\n" );}
 
 
 
 
-    note_save("command", "Command start", "now");
+    note_save ( "command", "Command start", "now" );
 
 
 

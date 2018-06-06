@@ -2,8 +2,12 @@
 
 // This is stm32 vga program
 //  use onenet kylin mini board
-//  connectted gop net
-//  and proved the vga display output
+//  connectted to gop could
+//  proved the vga display output
+//
+// of cause, this is plan,,
+
+
 
 
 // here are the head files

@@ -1,14 +1,17 @@
 
-int information_append(
-                                 char*        message     ,
-                          struct gopi_system  that_system ,
-                          struct gopi_network that_network,
-                          struct gopi_cpu     that_cpu    ,
-                          struct gopi_memory  that_memory ,
-                          struct gopi_disk    that_disk   ,
-                          struct gopi_sound   that_sound  ,
-                          struct gopi_flag    that_flag
-                      ) {
+int information_append (
+
+                                  char *       message     ,
+
+                           struct gopi_system  that_system ,
+                           struct gopi_network that_network,
+                           struct gopi_cpu     that_cpu    ,
+                           struct gopi_memory  that_memory ,
+                           struct gopi_disk    that_disk   ,
+                           struct gopi_sound   that_sound  ,
+                           struct gopi_flag    that_flag
+
+                       ) {
 
 //|========================================================================================================================================================|
 /*|*/   char buffer_message[32];                                                                                                                         //|
@@ -69,13 +72,13 @@ int information_append(
 /*|*/   strcat(message, buffer_message);                                                                                           strcat(message, "\n");//|
 /*|*/                                                                                                                              strcat(message, "\n");//|
 /*|*/                                                                                                                                                    //|
-/*|*/   strcat(message, "Status           : ");                                                                                                          //|
-/*|*/   if ( that_flag.dog    ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
-/*|*/   if ( that_flag.server ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
-/*|*/   if ( that_flag.client ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
-/*|*/   if ( that_flag.sound  ) { strcat(message, "o"); } else { strcat(message, " "); }                                           strcat(message, "\n");//|
-/*|*/   if ( that_flag.deamon ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
-/*|*/                                                                                                                                                    //|
+/*|*/   strcat(message, "Status           : ");                                                                                                              //|
+/*|*/   if ( that_flag.dog        ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
+/*|*/   if ( that_flag.connectted ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
+/*|*/   if ( that_flag.connector  ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
+/*|*/   if ( that_flag.sound      ) { strcat(message, "o"); } else { strcat(message, " "); }                                           strcat(message, "\n");//|
+/*|*/   if ( that_flag.deamon     ) { strcat(message, "o"); } else { strcat(message, " "); } strcat(message, " ");                                           //|
+/*|*/                                                                                                                                                        //|
 //|========================================================================================================================================================|
 
         return 1;}

@@ -229,11 +229,11 @@ int judge_message_information(
 
                 if      ( *pointer_recv == 'o' ) {
 
-                    gop_connection.flag[that_site].server = 1;}
+                    gop_connection.flag[that_site].connectted = 1;}
 
                 else if ( *pointer_recv == ' ' ) {
 
-                    gop_connection.flag[that_site].server = 0;}
+                    gop_connection.flag[that_site].connectted = 0;}
 
                 pointer_recv++;
                 pointer_recv++;
@@ -241,11 +241,11 @@ int judge_message_information(
 
                 if      ( *pointer_recv == 'o' ) {
 
-                    gop_connection.flag[that_site].client = 1;}
+                    gop_connection.flag[that_site].connector = 1;}
 
                 else if ( *pointer_recv == ' ' ) {
 
-                    gop_connection.flag[that_site].client = 0;}
+                    gop_connection.flag[that_site].connector = 0;}
 
                 pointer_recv++;
                 pointer_recv++;
@@ -560,7 +560,7 @@ int judge_message_information(
 
                 if      ( *pointer_recv == 'o' ) {
 
-                    gop_connection.flag[that_site].server = 1;}
+                    gop_connection.flag[that_site].connector = 1;}
 
                 pointer_recv++;
                 pointer_recv++;
@@ -568,7 +568,7 @@ int judge_message_information(
 
                 if      ( *pointer_recv == 'o' ) {
 
-                    gop_connection.flag[that_site].client = 1;}
+                    gop_connection.flag[that_site].connector = 1;}
 
                 pointer_recv++;
                 pointer_recv++;

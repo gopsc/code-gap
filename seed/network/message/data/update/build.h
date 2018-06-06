@@ -12,6 +12,8 @@ int control_message_update( char* path_update ) {
 //  i think it was good if u can give a target
 //  it could be any path
 // &i don't know how to do
+//
+// i can use a box
 
             char    path_update_start[128];
 
@@ -19,10 +21,16 @@ int control_message_update( char* path_update ) {
             strcat (path_update_start, "/"     );
             strcat (path_update_start, name_the);
 
-// it's for
+
+
+
+
+// it's for  the dirent
 
             DIR*    pointer_dirent = NULL;
     struct  dirent* ent            = NULL;
+
+
 
 
 

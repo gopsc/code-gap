@@ -10,6 +10,7 @@ char   name_backup[128] = "";
 //------------------------mind---------------------------
 
 struct gopi_flag {
+
     int    main      ;
     int    deamon    ;
 
@@ -17,8 +18,8 @@ struct gopi_flag {
     int    start     ;
     int    show      ;
 
-    int    client    ;
-    int    server    ;
+    int    connector ;
+    int    connectted;
 
     int    sound     ;
     int    sound_show;
