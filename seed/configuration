@@ -10,6 +10,7 @@
 
 
 path              /opt/TxL
+
 name              seed
 data              trees
 backup            river
@@ -23,8 +24,8 @@ main              on
 dog               on
 show              off
 
-client            on
-server            on
+connector         on
+connectted        on
 
 sound             off
 sound-show        off

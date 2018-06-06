@@ -34,13 +34,26 @@ void * gop_connector ( void * what ) {
 
 // Prepare the information of start.
 //
-// dog will load this
-/*
+// dog will load this when it had started
+//
+// and other thing should do this as a lowest time
+//
+//  so we load it here first time
+
     strcpy ( gop_connection.address_ip[0],  address_to );
              gop_connection.port[0]       = port_to;
-*/
+
+
+
+
+
+// prepare the status of network
+//
+// maybe i should movethis to ~/network/build.h
 
     strcpy ( gop_connection.how[0],        "Wait"      );
+
+
 
 // this usually is 0 at first, and sop don't clear it, if dog check this, dog can shut it
 
@@ -82,7 +95,16 @@ void * gop_connector ( void * what ) {
 
 // This round for connection
 
-//-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 // If there isn't a available ip,
 // do       not continue,
 // will  be complicated
@@ -92,6 +114,10 @@ void * gop_connector ( void * what ) {
                     usleep ( step_connection * 1000000 );
 
                     goto leave;}
+
+
+
+
 
 
 

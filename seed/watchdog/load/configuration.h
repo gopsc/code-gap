@@ -50,6 +50,8 @@ int load_configure () {
 //
 // Get the user
 //    only root can access /opt/TxL
+//
+// the information not get at this time
 
     commandline_get ( "whoami", that_file );
 
@@ -339,7 +341,7 @@ int load_configure () {
 
 //================================================================
 
-*/
+
 
 
 
@@ -356,6 +358,7 @@ int load_configure () {
 
         usleep      ( 1000000 );}
 
+*/
 
 
 
@@ -473,10 +476,26 @@ int load_configure () {
 // dog will check it
 //
 // we load this here because connector should be able to set a target instead of connect this address every time
+//
+// this load should be after the connector start
+//
+//  and we could move it to be after of the dog run first circle
+//
+//   so if this is the first load we don't neet load address
+//
+//   if it's not we should load again
+//
+// because connector don't load address everytime cause something we give that a target
 
-    strcpy ( gop_connection.address_ip [ 0 ], address_to );
 
-    gop_connection.port [ 0 ]      = port_to    ;
+
+
+    if ( information_flag.start ) {
+
+
+        strcpy ( gop_connection.address_ip [ 0 ], address_to );
+
+        gop_connection.port [ 0 ]      = port_to    ;}
 
 
 
