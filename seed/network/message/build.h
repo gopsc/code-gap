@@ -23,13 +23,13 @@ int control_message(
 
 
     if (
-               strcmp(gop_connection.how[that_site], "Connectting") == 0
-            || strcmp(gop_connection.how[that_site], "Sop")         == 0
+               strcmp ( gop_connection.how [ that_site ], "Connectting" ) == 0
+            || strcmp ( gop_connection.how [ that_site ], "Sop"         ) == 0
        ) {
 
 
         strcpy( buffer_send, "This is gop station." );
-        strcat( buffer_send, "\n");
+        strcat( buffer_send, "\n" );
 
 
 
@@ -37,11 +37,11 @@ int control_message(
 
 
         if (
-             ! judge_message_blank(
-                                    that_site,
-                                    pointer_recv,
-                                    buffer_send
-                                  )
+             ! judge_message_blank (
+                                     that_site,
+                                     pointer_recv,
+                                     buffer_send
+                                   )
            ) { return 0; }
 
 
@@ -51,11 +51,11 @@ int control_message(
 
 
         if (
-               ! judge_message_hello(
-                                      that_site,
-                                      pointer_recv,
-                                      buffer_send
-                                    )
+               ! judge_message_hello (
+                                       that_site,
+                                       pointer_recv,
+                                       buffer_send
+                                     )
            ) { return 0; }
 
 
@@ -65,11 +65,11 @@ int control_message(
 
 
         if (
-               ! judge_message_who(
-                                    that_site,
-                                    pointer_recv,
-                                    buffer_send
-                                  )
+               ! judge_message_who (
+                                     that_site,
+                                     pointer_recv,
+                                     buffer_send
+                                   )
            ) { return 0; }
 
 
@@ -79,20 +79,31 @@ int control_message(
 
 // This is gop station, send information
 
-        strcat         (buffer_send, "Information of host.\n");
+        strcat ( buffer_send, "Information of host.\n" );
 
-        information_append(
-                            buffer_send,
-                            information_system,
-                            information_network,
-                            information_cpu,
-                            information_memory,
-                            information_disk,
-                            information_sound,
-                            information_flag
+// this is old code now
+/*
+        information_append (
+                             buffer_send,
+                             information_system,
+                             information_network,
+                             information_cpu,
+                             information_memory,
+                             information_disk,
+                             information_sound,
+                             information_flag
                            );
+*/
 
-        strcat         (buffer_send, symbol_next );
+        information_append (
+                             buffer_send,
+                             gop_about
+                           )
+
+
+// we use a complicate symbol to understand two piece of message
+
+        strcat ( buffer_send, symbol_next );
 
 
 
@@ -100,29 +111,42 @@ int control_message(
 
         int i;
 
-        for ( i = 0; i <= 3; i++ ) {
+        for (  i = 0; i <= 3; i ++  ) {
 
             if (
 
-                   strcmp( gop_connection.how[i], "Connectted" ) == 0
-            ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0
+                   strcmp( gop_connection.how [ i ], "Connectted" ) == 0
+            ||     strcmp( gop_connection.how [ i ], "Sopi"       ) == 0
 
                ) {
 
                 strcat(buffer_send, "Information of guest.\n"    );
 
-                information_append(
-                                    buffer_send,
-                                    gop_connection.system [i],
-                                    gop_connection.network[i],
-                                    gop_connection.cpu    [i],
-                                    gop_connection.memory [i],
-                                    gop_connection.disk   [i],
-                                    gop_connection.sound  [i],
-                                    gop_connection.flag   [i]
-                                  );
 
-                strcat(buffer_send, symbol_next                  );}}
+
+// maybe sometimes we could use it again
+//
+// whatever, this is a big-disk time
+/*
+                information_append (
+                                     buffer_send,
+                                     gop_connection.system  [ i ],
+                                     gop_connection.network [ i ],
+                                     gop_connection.cpu     [ i ],
+                                     gop_connection.memory  [ i ],
+                                     gop_connection.disk    [ i ],
+                                     gop_connection.sound   [ i ],
+                                     gop_connection.flag    [ i ]
+                                   );
+*/
+
+                information_append (
+                                     buffer_send,
+                                     gop_network.about [ i ]
+                                   );
+
+
+                strcat ( buffer_send, symbol_next );}}
 
 
 
@@ -135,7 +159,11 @@ int control_message(
 // ...
 
 
-        pointer_recv = strchr(pointer_recv, '\n') + 1;
+// the start path
+//
+//  we found the hello before, then next line is the beginning of this message
+
+        pointer_recv = strchr ( pointer_recv, '\n' ) + 1;
 
 
 
@@ -147,30 +175,68 @@ int control_message(
 
         do {
 
-            pointer_next  = strstr(pointer_recv, symbol_next);
+// find next symbol
+//
+// symbol start with a enter type
+//
+// and the end with two of it
+//
+// so this will be found easier
 
-            if ( pointer_next != NULL ) {
 
-                *pointer_next = '\0';}
+// get the place of symbol
 
-            judge_message_command(
-                                      that_site,
-                                   pointer_recv,
-                                    buffer_send
-                                 );
+            pointer_next  = strstr ( pointer_recv, symbol_next );
 
-            if ( pointer_next != NULL ) {
 
-               *pointer_next = '\n';
+// if it's the end of the message,
+//
+// there won't be a symbol
+//
+// if not we read this piece
+//
+// we save the path of the symbol
+
+            if (  pointer_next != NULL  ) {
+
+               * pointer_next = '\0';}
+
+
+
+// and we read it
+
+            judge_message_command (
+                                       that_site,
+                                    pointer_recv,
+                                     buffer_send
+                                  );
+
+
+
+// if this is not a end, we return it, and jump over this symbol
+
+            if (  pointer_next != NULL  ) {
+
+              * pointer_next = '\n';
 
                 pointer_recv = pointer_next + strlen(symbol_next);}
 
-          } while ( pointer_next != NULL );
 
 
-        if ( buffer_send[strlen(buffer_send)-1] == '\n' ) {
+// and if this range we found the end, we exit
 
-            strcat(buffer_send, "Who is that?");}
+          } while (  pointer_next != NULL  );
+
+
+
+
+
+
+// sometimes we could not found a known message, we add recive here
+
+        if (  buffer_send [ strlen ( buffer_send ) - 1 ]  == '\n'  ) {
+
+            strcat ( buffer_send, "Who is that?" );}
 
         return 1;}
 
@@ -188,16 +254,24 @@ int control_message(
 
 
 
+
+
+// i want let this be dissapear, very single connector and connectted use the same command
+
+
     else if (
-                strcmp(gop_connection.how[that_site], "Connectted")
+
+                strcmp ( gop_connection.how [ that_site ], "Connectted" )
                 == 0
-    ||          strcmp(gop_connection.how[that_site], "Sopi")
+
+    ||          strcmp ( gop_connection.how [ that_site ], "Sopi"       )
                 == 0
+
             ) {
 
 
-        strcpy(buffer_send, "This is gop station.");
-        strcat(buffer_send, "\n"                  );
+        strcpy ( buffer_send, "This is gop station." );
+        strcat ( buffer_send, "\n"                   );
 
 
 
@@ -209,11 +283,11 @@ int control_message(
 
 
         if (
-             ! judge_message_blank(
-                                    that_site,
-                                    pointer_recv,
-                                    buffer_send
-                                  )
+             ! judge_message_blank (
+                                        that_site,
+                                     pointer_recv,
+                                      buffer_send
+                                   )
            ) { return 0; }
 
 
@@ -223,11 +297,11 @@ int control_message(
 // SHOW ITSELF
 
         if (
-               ! judge_message_hello(
-                                      that_site,
-                                      pointer_recv,
-                                      buffer_send
-                                    )
+               ! judge_message_hello (
+                                          that_site,
+                                       pointer_recv,
+                                        buffer_send
+                                     )
             ) { return 0; }
 
 
@@ -236,40 +310,54 @@ int control_message(
 // WHO IT IS
 
         if (
-               ! judge_message_who(
-                                    that_site,
-                                    pointer_recv,
-                                    buffer_send
-                                  )
+               ! judge_message_who (
+                                        that_site,
+                                     pointer_recv,
+                                      buffer_send
+                                   )
            ) { return 0; }
 
 
 
 
-//========================================================
+
+
+
+
+
 
 
 
 
 // Other message just like audio
 
-        control_message_data( that_site, buffer_send );
+        control_message_data ( that_site, buffer_send );
 
 
 
 
 
-//========================================================
+
+
+
+
+
 // Get imformation.
 
-        pointer_recv = strchr(pointer_recv, '\n') + 1;
+        pointer_recv = strchr ( pointer_recv, '\n' ) + 1;
 
 
 
 
 // Read the information of client.
 
-        char* pointer_next;
+
+
+// we don't let the buffer of next one
+//
+// to save this message, we let the buffer of recive to do this
+
+        char * pointer_next;
 
 
 
@@ -278,25 +366,59 @@ int control_message(
 
         do {
 
-            pointer_next = strstr(pointer_recv, symbol_next);
 
-            if ( pointer_next != NULL ) {
+// find the place the next symbol
 
-                *pointer_next = '\0';}
+            pointer_next = strstr ( pointer_recv, symbol_next );
+
+
+
+
+// we just read this line and we just move is be a end signal
+//
+// and we don't change this buffer of path, so we could return it later
+//
+// if it's not the last one, we do this and change the buffer of path later
+
+            if (  pointer_next != NULL  ) {
+
+               * pointer_next = '\0';}
+
+
+// judge it
 
             judge_message_information(
-                                       that_site,
+                                          that_site,
                                        pointer_recv,
-                                       buffer_send
+                                        buffer_send
                                      );
 
-            if ( pointer_next != NULL ) {
 
-               *pointer_next = '\n';
 
-                pointer_recv = pointer_next + strlen(symbol_next);}
+// ok we return it
+//
+// and jump over the symbol
+//
+// if it's not the last one
 
-        } while ( pointer_next != NULL );
+            if (  pointer_next != NULL  ) {
+
+              * pointer_next = '\n';
+
+                pointer_recv = pointer_next + strlen ( symbol_next );}
+
+
+
+
+// if this is not the last one we start again
+
+        } while (  pointer_next != NULL  );
+
+
+
+
+
+
 
 
 
@@ -305,20 +427,40 @@ int control_message(
 // Read the command of this host.
 
         if (
-               strcmp(gop_connection.how[that_site], "Connectted") == 0
-        ||     strcmp(gop_connection.how[that_site], "Sopi"      ) == 0
+               strcmp ( gop_connection.how[that_site], "Connectted" ) == 0
+        ||     strcmp ( gop_connection.how[that_site], "Sopi"       ) == 0
            ) {
 
-            judge_message_command(
-                                   that_site,
-                                   gop_connection.command[that_site],
-                                   buffer_send
-                                 );}}
+
+// the action we do
+//
+// and the message we send
+//
+// will do at one time
+
+            judge_message_command (
+                                        that_site,
+                                         gop_connection.command [ that_site ],
+                                      buffer_send
+                                  );}}
 
 
-        if ( buffer_send[strlen(buffer_send)-1] == '\n' ) {
+
+
+
+
+
+// if we don't send any action
+//
+// we append a normal return here
+
+        if (  buffer_send [ strlen ( buffer_send ) - 1 ]  == '\n'  ) {
 
             strcat(buffer_send, "Who is that?");}
 
+
+
+
+// ok we've done this
 
     return 1;}

@@ -1,44 +1,41 @@
 
 
+// if u type a blank type, just show the informations
 
-
-int action_information() {
-
-
-
-    char   buffer_information[2049];
-
-    strcpy(buffer_information, "");
+int action_information () {
 
 
 
+    char   buffer_information [ 2048 ];
 
-    system("clear");
+    strcpy ( buffer_information, "" );
 
 
 
 
-
-    information_append(
-                        buffer_information,
-                        information_system,
-                        information_network,
-                        information_cpu,
-                        information_memory,
-                        information_disk,
-                        information_sound,
-                        information_flag
-                      );
+    system ( "clear" );
 
 
 
-    output_print("string", "------------------------------\n" );
 
-    output_print("string",  buffer_information                );
 
-    output_print("string", "\n"                               );
+    information_append (
 
-    output_print("string", "------------------------------\n" );
+                         buffer_information,
+
+                         gop_about
+
+                       );
+
+
+
+    output_print ( "string", "------------------------------\n" );
+
+    output_print ( "string",  buffer_information                );
+
+    output_print ( "string", "\n"                               );
+
+    output_print ( "string", "------------------------------\n" );
 
 
 
@@ -49,9 +46,9 @@ int action_information() {
 
     for (
 
-            i=0;
-            i<4;
-            i++
+            i = 0;
+            i < 4;
+            i ++
 
         ) {
 
@@ -61,8 +58,8 @@ int action_information() {
 
         if (
 
-               strcmp( gop_connection.how[i], "Connectted" ) == 0 
-        ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0 
+               strcmp( gop_connection.how[i], "Connectted" ) == 0
+        ||     strcmp( gop_connection.how[i], "Sopi"       ) == 0
 
            ) {
 
@@ -72,23 +69,28 @@ int action_information() {
 
 
 
-            information_append(
+            information_append (
 
-                                buffer_information,
-                                gop_connection.system [i],
-                                gop_connection.network[i],
-                                gop_connection.cpu    [i],
-                                gop_connection.memory [i],
-                                gop_connection.disk   [i],
-                                gop_connection.sound  [i],
-                                gop_connection.flag   [i]
+                                 buffer_information,
 
-                              );
+                                 gop_about
+
+// this is difficult to deal these
+/*
+                                 gop_connection.system [i],
+                                 gop_connection.network[i],
+                                 gop_connection.cpu    [i],
+                                 gop_connection.memory [i],
+                                 gop_connection.disk   [i],
+                                 gop_connection.sound  [i],
+                                 gop_connection.flag   [i]
+*/
+                               );
 
 
-            output_print( "string", buffer_information                 );
+            output_print ( "string", buffer_information );
 
-            output_print( "string", "\n"                               );
+            output_print( "string", "\n"                );
 
             output_print( "string", "------------------------------\n" );}}
 

@@ -1,47 +1,56 @@
 
+
+
+
+
+// we use this function to save a piece of code
+
+
 int action_seed_append (
 
-                           const char* that_result,
+                           const char * that_result,
 
-                           const char* that_path,
+                           const char * that_path,
 
-                           const char* that_target
+                           const char * that_target
 
                        ) {
 
 
 
 
-    char         buffer_file                 [128];
+    char         buffer_file [ 128 ];
 
 
 
-    strcpy     ( buffer_file,                that_path   );
+    strcpy     ( buffer_file, that_path   );
 
-    strcat     ( buffer_file,                that_target );
-
-
-
-    char         buffer_words                [102400];
+    strcat     ( buffer_file, that_target );
 
 
 
+    char         buffer_words [ 102400 ];
 
 
 
 
 
 
-    if ( !is_file(buffer_file) ) {
+
+// sometimes this file is not here
+//
+// maybe we should exit this
+
+    if (  ! is_file ( buffer_file )  ) {
 
 
 
 
-        output_print("string", "This file we can't find it:   ");
+        output_print ( "string", "This file we can't find it:   " );
 
-        output_print("string", buffer_file                     );
+        output_print ( "string", buffer_file );
 
-        output_print("string", "\n"                            );
+        output_print ( "string", "\n"        );
 
 
 
@@ -53,19 +62,19 @@ int action_seed_append (
     else {
 
 
-        file_append(that_result,                "\n//"      );
+        file_append ( that_result,                "\n//"      );
 
-        file_append(that_result,                "=========" );
+        file_append ( that_result,                "=========" );
 
-        file_append(that_result,                "=========" );
+        file_append ( that_result,                "=========" );
 
-        file_append(that_result,                buffer_file );
-
-
+        file_append ( that_result,                buffer_file );
 
 
 
-        if  ( 63 > (int)strlen(buffer_file) ) {
+
+
+        if  (  63  >  ( int ) strlen ( buffer_file )  ) {
 
 
 
@@ -76,7 +85,7 @@ int action_seed_append (
             for (
 
                     i = 0;
-                    i <      63 - (int)strlen(buffer_file);
+                    i <      63 - ( int ) strlen ( buffer_file );
                     i ++
 
                 ) {
@@ -84,18 +93,18 @@ int action_seed_append (
 
 
 
-                file_append(that_result,        "="         );}}
+                file_append ( that_result, "=" );}}
 
 
 
 
-        file_append(that_result,                "\n"        );
+        file_append ( that_result, "\n" );
 
 
-        file_get   (buffer_file,                buffer_words);
+        file_get ( buffer_file, buffer_words );
 
 
-        file_append(that_result,                buffer_words);
+        file_append ( that_result, buffer_words );
 
 
 
@@ -116,7 +125,9 @@ int action_seed_append (
 
 
 int action_seed (
-                    const char* that_type
+
+                    const char * that_type
+
                 ) {
 
 
@@ -124,7 +135,7 @@ int action_seed (
 
 
 
-            char        buffer_path               [128];
+            char        buffer_path               [ 128 ];
 
 
             strcpy    ( buffer_path,               path_the                );
@@ -138,7 +149,7 @@ int action_seed (
 
 
 
-            char        buffer_file               [128];
+            char        buffer_file               [ 128 ];
 
 
 
@@ -150,21 +161,21 @@ int action_seed (
 
 
 
-            char        buffer_dirent             [128];
+            char        buffer_dirent             [ 128 ];
 
 
-            char        buffer_file_action        [128];
-
-
-
+            char        buffer_file_action        [ 128 ];
 
 
 
-            DIR*        pointer_dirent;
 
 
 
-    struct  dirent*     ent;
+            DIR *       pointer_dirent;
+
+
+
+    struct  dirent *    ent;
 
 
 

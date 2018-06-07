@@ -4,28 +4,47 @@
 
 #include <alsa/asoundlib.h>
 
-void* gop_corde(void* what) {
+void * gop_corde ( void * what ) {
+
+
+
+
+
+
+
+
+
 
 
 // Preparing for this.
 
-    int buffer_size;
-    int period_size;
+    int  buffer_size;
+    int  period_size;
+
     int latency_min;
     int latency_max;
+
     int resample;
 
-    snd_pcm_t* chandle;
+    snd_pcm_t * chandle;
+
+
+
+
 
 
 // this is for saving what error it is
 
     int number_error;
 
+
+
+
+
 // this count is for cuont
 //  how many times it try
 // there is something wrong
-// when  it is big.
+// when  it is too big.
 //  Start this module after watchdog is ready
 
     int number_turnning;
@@ -36,16 +55,24 @@ void* gop_corde(void* what) {
 
 // Wait the dog.
 
-    while ( !information_flag.start ) {
+    while ( ! gop_about.flag.start ) {
 
-        usleep(100000);}
+        usleep ( 100000 );}
+
+
 
 
 // Setup sound path
-
-    strcpy(path_sound, path_the      );
-    strcat(path_sound, "/trees/sound");
-
+//
+// this sould be saved at the new one in the trees
+//
+// and we have a number to save the new one now
+//
+// so we could not use this
+/*
+    strcpy ( path_sound, path_the       );
+    strcat ( path_sound, "/trees/sound" );
+*/
 
 
 
@@ -62,7 +89,7 @@ void* gop_corde(void* what) {
 
 // Start.
 
-    while ( information_flag.main ) {
+    while ( gop_about.flag.main ) {
 
 
 
@@ -71,15 +98,25 @@ void* gop_corde(void* what) {
 //   there's no capture devices
 
         if (
-               !information_flag.sound
-        ||      information_sound.number_capture == 0
+
+               ! gop_about.flag.sound
+        ||       gop_about.sound.number_capture == 0
+
            ) {
 
-            usleep(100000);}
+            usleep ( 100000 );}
 
         else {
 
 // It's start.
+
+
+
+
+
+
+
+
 
 
 
@@ -89,7 +126,7 @@ void* gop_corde(void* what) {
 //   user know more differences about this thing.
 //   it's important.
 
-            note_save("corde", "Alsa corde start", "now");
+            note_save ( "corde", "alsa corde start", "now" );
 
 
 
@@ -98,7 +135,7 @@ void* gop_corde(void* what) {
 
 // If corde always reset , change corde device
 
-            number_turnning++;
+            number_turnning ++;
 
 
 
@@ -107,9 +144,13 @@ void* gop_corde(void* what) {
 
 // Auto find capture device
 
-            if ( information_sound.device_capture == 0 ) {
+            if ( gop_about.sound.device_capture == 0 ) {
 
-                 information_sound.device_capture = 1;}//information_sound.number_capture;}
+                 gop_about.sound.device_capture = 1;}//information_sound.number_capture;}
+
+
+
+
 
 
 // If the device always reset
@@ -119,16 +160,17 @@ void* gop_corde(void* what) {
 
                 number_turnning = 0;
 
-                output_print("string", "The target of capture device is turnning.\n");
+                output_print ( "string", "The target of capture device is turnning.\n" );
 
 
-                if ( information_sound.device_capture > 1 ) {
+                if ( gop_about.sound.device_capture > 1 ) {
 
-                    information_sound.device_capture--;}
+                    gop_about.sound.device_capture --;}
+
 
                 else {
 
-                    information_sound.device_capture = information_sound.number_capture;}}
+                    gop_about.sound.device_capture = gop_about.sound.number_capture;}}
 
 
 
@@ -594,7 +636,7 @@ void* gop_corde(void* what) {
 //  Setting finished,
 //    corde program start
 
-            while( information_flag.sound ) {
+            while ( gop_about.flag.sound ) {
 
 // start code
 
@@ -796,7 +838,7 @@ void* gop_corde(void* what) {
 // we could need to know
 // how many piece of data it get
 
-                if ( information_flag.sound_show == 0 ) {
+                if ( ! gop_about.flag.sound_show ) {
 
                     output_print("int",   (char*)&number_step);
                     output_print("string",       "\n"        );}
@@ -821,7 +863,7 @@ void* gop_corde(void* what) {
 // The speed of snake,
 //      mast be changed
 
-                    if ( information_flag.sound_show ) {
+                    if ( gop_about.flag.sound_show ) {
 
                         usleep(100000);}}
 
@@ -861,7 +903,7 @@ void* gop_corde(void* what) {
 
             else {
 
-                note_save("corde", "Alsa corde close", "now");}}}
+                note_save("corde", "alsa corde close", "now");}}}
 
 
 

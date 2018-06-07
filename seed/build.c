@@ -1,5 +1,5 @@
 
-pthread_t thread[4];
+pthread_t thread [ 4 ];
 
 
 
@@ -368,8 +368,8 @@ int main( int argc, char *argv[] ) {
 
 // Sometimes other thread will use the args.
 
-    number_args = argc;
-    buffer_args = argv;
+    gop_about.configurations.number_options = argc;
+    gop_about.configurations.buffer_options = argv;
 
 
 
@@ -378,42 +378,42 @@ int main( int argc, char *argv[] ) {
 
 // If command, turn gopi to a deamon
 
-    init_deamon();
+    init_deamon ();
 
 
 
-    output_print( "string", "\n" );
-
-
-
-
-
-    pthread_create (&thread[1], NULL, gop_dog         , NULL);
-
-    pthread_create (&thread[2], NULL, gop_connectted  , NULL);
-
-    pthread_create (&thread[3], NULL, gop_connector   , NULL);
-
-    pthread_create (&thread[4], NULL, gop_corde       , NULL);
+    output_print ( "string", "\n" );
 
 
 
 
 
+    pthread_create (  & thread [ 1 ],  NULL,  gop_dog      ,  NULL );
+
+    pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL );
+
+    pthread_create (  & thread [ 3 ], NULL,  gop_connector ,  NULL );
+
+    pthread_create (  & thread [ 4 ], NULL,  gop_corde     ,  NULL );
 
 
 
 
-    char buffer_command[128] = "";
+
+
+
+
+
+    char buffer_command [ 128 ]  =  "";
 
 
 
 // wait the dog run a circle
 
-    while ( !information_flag.start ) {
+    while (  ! gop_about.flag.start  ) {
 
 
-        usleep(100000);}
+        usleep ( 100000 );}
 
 
 
@@ -425,7 +425,7 @@ int main( int argc, char *argv[] ) {
 
 // Deamon got blank alway in deamon.
 
-    if (  information_flag.main  &&  ( ! information_flag.deamon )  ) {
+    if (  gop_about.flag.main  &&  ( ! gop_about.flag.deamon )  ) {
 
 
 
@@ -443,7 +443,7 @@ int main( int argc, char *argv[] ) {
 
 
 
-    while ( information_flag.main ) {
+    while ( gop_about.flag.main ) {
 
 
 
@@ -451,10 +451,10 @@ int main( int argc, char *argv[] ) {
 // When it is deamon process,
 // that goes   wrong.
 
-        if ( information_flag.deamon ) {
+        if ( gop_about.flag.deamon ) {
 
 
-            usleep(100000);}
+            usleep ( 100000 );}
 
 
 
@@ -467,7 +467,7 @@ int main( int argc, char *argv[] ) {
 
 // Get the command
 
-            fgets(buffer_command,129, stdin);
+            fgets ( buffer_command, 128,  stdin );
 
 
 
@@ -477,10 +477,10 @@ int main( int argc, char *argv[] ) {
 // Sometimes its goes wrong,
 //     just  return blank chars.
 
-            if ( strcmp(buffer_command, "") == 0 ) {
+            if ( strcmp ( buffer_command, "" )  == 0  ) {
 
 
-                usleep(100000);}
+                usleep ( 100000 );}
 
 
 
@@ -492,37 +492,42 @@ int main( int argc, char *argv[] ) {
 // The end of the command
 //    will be a '\n'
 
-                buffer_command[strlen(buffer_command)-1] = '\0';
-                               strcat(buffer_command,      ".");
+                buffer_command [ strlen ( buffer_command ) - 1 ]   = '.'  ;
+
+// we don't need to do that with this
+//
+// :)
+
+//                                 strcat ( buffer_command,             "." );
 
 
 
 // Print a '\n'
 
-                output_print( "string", "\n" );
+                output_print ( "string", "\n" );
 
 
 
 // Judge for the command typed
 
-                judge_message_command(
-                                       -1,
-                                       buffer_command,
-                                       buffer_command
-                                     );
+                judge_message_command (
+                                        -1,
+                                        buffer_command,
+                                        buffer_command
+                                      );
 
 
 
 // Clear the buffer
 
-                strcpy(buffer_command, "");}}}
+                strcpy ( buffer_command, "" );}}}
 
 
 
 
 // The end of this program
 
-    note_save("command", "Command close", "now");}
+    note_save ( "command", "Command close", "now" );}
 
 
 

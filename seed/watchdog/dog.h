@@ -4,20 +4,33 @@
 void * gop_dog ( void * what ) {
 
 
+
+
+
+// some values will be a number used by another program
+//
+//   so we clean it first
+
+    clean_this ();
+
+
+
+
+
 // Load configure from:
 // {path}/{name}/configure
 
-    load_configure();
+    load_configure ();
 
 
 // Prepare the symbal just like 'NEXT'
 
-    load_symbol();
+    load_symbol ();
 
 
 // Listen modle of sound , it need a word libary loading.
 
-    load_listen();
+    load_listen ();
 
 
 // TxL needs jurisdiction of root.
@@ -29,11 +42,11 @@ void * gop_dog ( void * what ) {
 // When a update was stop, files left.
 // Must be after loading.
 
-    check_update();
+    check_update ();
 
 
 
-    output_print( "string", "Done\n"               );
+    output_print ( "string", "Done\n"               );
 
 
 
@@ -43,26 +56,26 @@ void * gop_dog ( void * what ) {
 
 // note this
 
-    note_save   ( "dog",    "WatchDog start", "now");
+    note_save   ( "dog",    "WatchDog start", "now" );
 
 
 
 
 
 
-    while ( information_flag.main ) {
+    while (  gop_about.flag.main  ) {
 
 
 // u can not run this program just for watchdog
 // u wanna others, right?
 
-        if      ( ! information_flag.dog ) {
+        if      (  ! gop_about.flag.dog  ) {
 
-            usleep( 100000 );}
+            usleep ( 100000 );}
 
 
 
-        else if (  information_flag.dog ) {
+        else if (  gop_about.flag.dog  ) {
 
 
 
@@ -107,7 +120,7 @@ void * gop_dog ( void * what ) {
 
 // it means the dog finished one time at least
 
-            information_flag.start = 1;}}
+            gop_about.flag.start = 1;}}
 
 
 

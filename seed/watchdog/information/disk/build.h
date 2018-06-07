@@ -20,6 +20,8 @@ int information_disk_get () {
 //
 // we should find a way to do this
 
+
+
     if (  strcmp ( information_system.name, "localhost" )  == 0  ) {
 
 // on termux, the permisson is different

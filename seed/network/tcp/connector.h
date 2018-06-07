@@ -7,9 +7,9 @@ void * gop_connector ( void * what ) {
     struct sockaddr_in    address;
 
            int            number_return;
-           char           buffer_recv[10240];
-           char           buffer_send[10240];
-           char           that_buffer[10240];
+           char           buffer_recv [ 10240 ];
+           char           buffer_send [ 10240 ];
+           char           that_buffer [ 10240 ];
 
 
 
@@ -23,9 +23,9 @@ void * gop_connector ( void * what ) {
 
 // Wait the dog start on.
 
-    while ( ! information_flag.start ) {
+    while (  ! gop_about.flag.start  ) {
 
-        usleep ( step_connection * 100000 );}
+        usleep ( gop_about.configurations.step_connection * 100000 );}
 
 
 
@@ -40,8 +40,9 @@ void * gop_connector ( void * what ) {
 //
 //  so we load it here first time
 
-    strcpy ( gop_connection.address_ip[0],  address_to );
-             gop_connection.port[0]       = port_to;
+    strcpy ( gop_connection.address_ip [ 0 ],  gop_about.configurations.address_to );
+
+             gop_connection.port       [ 0 ] = gop_about.configurations.   port_to;
 
 
 
@@ -51,13 +52,13 @@ void * gop_connector ( void * what ) {
 //
 // maybe i should movethis to ~/network/build.h
 
-    strcpy ( gop_connection.how[0],        "Wait"      );
+    strcpy ( gop_connection.how [ 0 ], "Wait" );
 
 
 
 // this usually is 0 at first, and sop don't clear it, if dog check this, dog can shut it
 
-             gop_connection.connection[0] = 0;
+             gop_connection.connection [ 0 ] = 0;
 
 
 
@@ -73,25 +74,31 @@ void * gop_connector ( void * what ) {
 
 
 
-    while ( information_flag.main ) {
+    while ( gop_about.flag.main ) {
+
+
+
 
 // Sleep sometimes when
 // the client closed
 // & and the main program is running
 
-        if      ( ! information_flag.connector ) {
+        if      ( ! gop_about.flag.connector ) {
 
             usleep ( 100000 );}
 
 
-        else if (  information_flag.connector ) {
+
+
+
+        else {
 
 // This box is for note saving
 
-            note_save ( "connector", "Client start", "now" );
+            note_save ( "connector", "Connector start", "now" );
 
 
-            while ( information_flag.connector ) {
+            while ( gop_about.flag.connector ) {
 
 // This round for connection
 
@@ -108,10 +115,16 @@ void * gop_connector ( void * what ) {
 // If there isn't a available ip,
 // do       not continue,
 // will  be complicated
+//
+// connector will be stack here
+//
+// and don't move for long time
+//
+// :(
 
-                if ( information_network.number <= 1 ) {
+                if ( gop_about.network.number <= 1 ) {
 
-                    usleep ( step_connection * 1000000 );
+                    usleep ( gop_about.configurations.step_connection * 1000000 );
 
                     goto leave;}
 
@@ -127,24 +140,24 @@ void * gop_connector ( void * what ) {
 
                 int i;
 
-                for ( i=1; i<=information_network.number; i++ ) {
+                for ( i = 1; i <= gop_about.network.number; i ++ ) {
 
                     if (
 
-                          strcmp(
+                          strcmp (
 
-                                gop_connection.address_ip[0],
+                                   gop_connection.address_ip [ 0 ],
 
-                                information_network.ip[i][2]
+                                   gop_about.network.ip [ i ] [ 2 ]
 
-                               )
+                                  )
                           == 0
 
-                    &&    information_flag.sound
+                    &&    gop_about.flag.sound
 
                        ) {
 
-                        usleep ( step_connection * 1000000 );
+                        usleep ( gop_about.configurations.step_connection * 1000000 );
 
 
                         goto leave;}}
@@ -155,8 +168,8 @@ void * gop_connector ( void * what ) {
                 struct sockaddr_in address;
 
                 address.sin_family      = AF_INET;
-                address.sin_port        = htons     ( gop_connection.port[0]       );
-                address.sin_addr.s_addr = inet_addr ( gop_connection.address_ip[0] );
+                address.sin_port        = htons     ( gop_connection.port [ 0 ]       );
+                address.sin_addr.s_addr = inet_addr ( gop_connection.address_ip [ 0 ] );
 
 
 
@@ -169,19 +182,19 @@ void * gop_connector ( void * what ) {
 //
 // just to connection
 
-                gop_connection.descriptor[0] = socket(
-                                                       AF_INET,
-                                                       SOCK_STREAM,
-                                                       0
-                                                     );
+                gop_connection.descriptor [ 0 ] = socket (
+                                                           AF_INET,
+                                                           SOCK_STREAM,
+                                                           0
+                                                         );
 
 // If something goes wrong, & it could not creat
 //  a socket, turn it off,
 // we could turn it again from outside
 
-                if ( gop_connection.descriptor[0] == -1 ) {
+                if (  gop_connection.descriptor [ 0 ]  == -1  ) {
 
-                    information_flag.connector = 0;}
+                    gop_about.flag.connector = 0;}
 
 
 
@@ -193,21 +206,21 @@ void * gop_connector ( void * what ) {
 
 // Connect to the target
 
-                number_return = connect(
+                number_return = connect (
 
-                                             gop_connection.descriptor[0],
+                                              gop_connection.descriptor [ 0 ],
 
-                     ( struct sockaddr * ) & address,
+                      ( struct sockaddr * ) & address,
 
-                                             sizeof ( address )
+                                              sizeof ( address )
 
-                                       );
+                                        );
 
 // No result wait few secends
 
-                if ( number_return == -1 ) {
+                if (  number_return == -1  ) {
 
-                    usleep(100000);}
+                    usleep ( 100000 );}
 
 
 
@@ -219,19 +232,19 @@ void * gop_connector ( void * what ) {
 
 // If got a connection
 
-                else if ( number_return >= 0 ) {
+                else if (  number_return >= 0  ) {
 
 
 
 // fresh the description of connection
 
-                    gop_connection.connection[0] = number_return;
+                    gop_connection.connection [ 0 ] = number_return;
 
 
 
 // Fresh the time pointer
 
-                    gop_connection.time[0] = time(NULL);
+                    gop_connection.time [ 0 ] = time ( NULL );
 
 
 
@@ -241,27 +254,27 @@ void * gop_connector ( void * what ) {
 
 // if ths is a new connection, we should set it
 
-                    if (  strcmp ( gop_connection.how[0], "Wait" ) == 0  ) {
+                    if (  strcmp ( gop_connection.how [ 0 ], "Wait" )  == 0  ) {
 
 // New connection, print it
 
-                        output_print ( "string", "Connectting to    "          );
-                        output_print ( "string",  gop_connection.address_ip[0] );
-                        output_print ( "string", "\n"                          );
+                        output_print ( "string", "Connectting to    "             );
+                        output_print ( "string",  gop_connection.address_ip [ 0 ] );
+                        output_print ( "string", "\n"                             );
 
 // prepare the note
 
-                        strcpy ( that_buffer, "Connectting to "             );
-                        strcat ( that_buffer,  gop_connection.address_ip[0] );
+                        strcpy ( that_buffer, "Connectting to "                );
+                        strcat ( that_buffer,  gop_connection.address_ip [ 0 ] );
 
 // save the note
 
-                        note_save( "connector", that_buffer, "now" );
+                        note_save ( "connector", that_buffer, "now" );
 
 
 // set how
 
-                        strcpy ( gop_connection.how[0], "Connectting" );}
+                        strcpy ( gop_connection.how [ 0 ], "Connectting" );}
 
 
 
@@ -278,11 +291,11 @@ void * gop_connector ( void * what ) {
 
 // recive from master first
 
-                    recv(
-                          gop_connection.descriptor[0],
-                          buffer_recv, 10240,
-                          0
-                        );
+                    recv (
+                           gop_connection.descriptor [ 0 ],
+                           buffer_recv, 10240,
+                           0
+                         );
 
 // The secret code
 
@@ -296,13 +309,13 @@ void * gop_connector ( void * what ) {
 
 // resolve the secret
 
-                    secret_encode(buffer_send, "blank");
+                    secret_encode ( buffer_send, "blank" );
 
 
 // ok send it
 
                     send(
-                          gop_connection.descriptor[0],
+                          gop_connection.descriptor [ 0 ],
                           buffer_send,
                           10240,
                           0
@@ -313,7 +326,7 @@ void * gop_connector ( void * what ) {
 //
 // It could be balance.
 
-                    usleep( step_connection * 100000);}
+                    usleep ( gop_about.configurations.step_connection * 100000 );}
 
 
 
@@ -328,12 +341,12 @@ void * gop_connector ( void * what ) {
 //
 //  or it could couse a mistake
 
-                gop_connection.connection[0] = 0;
+                gop_connection.connection [ 0 ] = 0;
 
 
 // now close it
 
-                close ( gop_connection.descriptor[0] );
+                close ( gop_connection.descriptor [ 0 ] );
 
 
 
@@ -347,15 +360,15 @@ void * gop_connector ( void * what ) {
 // over the connectting
 
                 leave:
-                sleep(0);}
+                sleep ( 0 );}
 
 
 // The round of connection is
 // over, it is time to save note
 
-            note_save("connector", "Client close", "now");}}
+            note_save ( "connector", "Client close", "now" );}}
 
 
 
 
-    pthread_exit(NULL);}
+    pthread_exit ( NULL );}

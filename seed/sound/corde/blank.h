@@ -1,37 +1,38 @@
 
-void* gop_corde(void* what) {
+void * gop_corde ( void * what ) {
 
 
 
 
 
-    while ( !information_flag.start ) {
-        usleep(100000);}
+    while ( ! gop_about.flag.start ) {
+
+        usleep ( 100000 );}
 
 
 
 
-    while ( information_flag.main ) {
+    while ( gop_about.flag.main ) {
 
 
-        if ( !information_flag.sound ) {
+        if ( ! gop_about.flag.sound ) {
 
-            usleep(100000);}
+            usleep ( 100000 );}
 
 
         else {
 
 
-            note_save("corde", "Blank Corde start", "now");
+            note_save ( "corde", "blank Corde start", "now" );
 
 
-            while ( information_flag.sound ) {
+            while ( gop_about.flag.sound ) {
 
-                usleep(100000);}
-
-
-            note_save("corde", "Blank Corde close", "now");}}
+                usleep ( 100000 );}
 
 
+            note_save ( "corde", "blank Corde close", "now" );}}
 
-    pthread_exit(NULL);}
+
+
+    pthread_exit ( NULL );}

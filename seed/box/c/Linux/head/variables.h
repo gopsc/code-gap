@@ -1,13 +1,11 @@
 
-int          number_args;
-char**       buffer_args;
 
-char   path_the   [128] = "";
-char   name_the   [128] = "";
-char   name_data  [128] = "";
-char   name_backup[128] = "";
 
-//------------------------mind---------------------------
+
+
+
+
+// the flags
 
 struct gopi_flag {
 
@@ -23,23 +21,53 @@ struct gopi_flag {
 
     int    sound     ;
     int    sound_show;
-    int    sound_save;} information_flag;
+    int    sound_save;};
+
+
+
+
+
+
+
+
+// the configurations
+
+struct gopi_configurations {
+
+
+
+
+// about the option u open the program
+
+    int    number_options;
+    char*  buffer_options [ 32 ];
+
+// about the file-system
+
+    char   path_the    [ 128 ];
+    char   name_the    [ 128 ];
+    char   name_date   [ 128 ];
+    char   name_backup [ 128 ];
+
 
 //-------------------------net---------------------------
 
-char   address_to[16];
-int    port_to;
-int    port_this;
+    char   address_to [ 16 ];
+    int    port_to;
+    int    port_this;
 
-float  step_connection;
-char   symbol_next[128];
+    float  step_connection;
+    char   symbol_next [ 128 ];
 
-int    size_update;
+    int    size_update;
 
 //-------------------------sound-------------------------
 
-int    rate;
-int    channels;
-int    N;
+    int    rate;
+    int    channels;
+    int    N;
 
+
+
+    } gop_configurations;
 

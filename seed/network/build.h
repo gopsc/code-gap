@@ -18,6 +18,11 @@ struct gopi_connection {
            char        video      [4][102400];
            char        audio      [4][102400];
 
+
+// we don't use this we use one include this
+//
+// :D
+/*
     struct gopi_system  system    [4];
     struct gopi_network network   [4];
     struct gopi_cpu     cpu       [4];
@@ -25,19 +30,38 @@ struct gopi_connection {
     struct gopi_disk    disk      [4];
     struct gopi_sound   sound     [4];
     struct gopi_flag    flag      [4];
+*/
 
-           char         note      [4]   [1024];
+
+    struct gopi_about   about [ 4 ];
+
+
+           char         note [ 4 ] [ 1024 ];
+
+
+
+
+
+
 
     } gop_connection;
 
-//==========================================================================
 
-int clean_connection(
 
-                              int    that_site,
-                        const char * that_type
 
-                    ) {
+
+
+
+
+
+
+
+int clean_connection (
+
+                               int    that_site,
+                         const char * that_type
+
+                     ) {
 
 
 
