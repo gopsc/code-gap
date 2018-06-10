@@ -1,9 +1,13 @@
 
 int check_network () {
 
+
+
+
+
 // this function is to check network going,
 //
-//   maybe i should put it into the file named network/build.h
+//   maybe i should put them into the file named network/build.h
 
 
 
@@ -17,6 +21,8 @@ int check_network () {
 // Get the time for comparing
 
     time_t  time_now  =  time ( NULL );
+
+
 
 
 
@@ -62,6 +68,8 @@ int check_network () {
 
     for (  i = 0; i <= 4; i ++  ) {
 
+
+
 // p.s
 //
 // 4th  is time number and connection descriptor
@@ -73,12 +81,32 @@ int check_network () {
 
 
 
+
+
+
 // check the time out
 //
-// it's different for 4
+//   and reconnect by speed, return the connect not by configuration
+//
+// if for first 0-3
+//
+//
+//
+// and it's different for 4
+//
+//  it is to note smile things
 
 
         if (  i < 4  ) {
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,17 +192,20 @@ int check_network () {
 
 
 
-// check is the connection running
+// check
+//
+// is the connection still running but another not ?
+//
 //
 // this is better to short than connection running, 3 seconds may be ok
 
 
-// ...
 
                     if (  gop_connection.connection [ i ]  !=  0  ) {
 
 // it is still  send / recive
-
+//
+// ...
                         }}
 
 
@@ -252,6 +283,8 @@ int check_network () {
 
 
 
+
+
 // the way for connecteed
 
                     else {
@@ -271,6 +304,7 @@ int check_network () {
                         strcpy(that_note,    "connectted close with ");
                         strcat(that_note,     gop_connection.address_ip[i]);
 
+// save it
 
                         note_save("connectted", that_note, "now");}}}
 
@@ -300,6 +334,10 @@ int check_network () {
 // make them faster, make it good
 //
 //
+// faster be faster
+//
+//
+//
 //
 // and
 //
@@ -315,14 +353,34 @@ int check_network () {
 
 
         if (
-               strcmp ( gop_connection.how [ i ],          "Connectted" ) == 0
-        &&     strcmp ( gop_connection.informastion [ i ], ""           ) != 0
+
+               strcmp ( gop_connection.how [ i ],          "Connectted" )  == 0
+
+        &&     strcmp ( gop_connection.informastion [ i ], ""           )  != 0
+
            ) {
 
-            char* that_pointer;
-            char  that_buffer[1024];
+
+
+
+// since i used information trees i used them straightly
+//
+// instead of read the information here
+
+
+
+/*
+            char *  that_pointer;
+
+            char    that_buffer [ 1024 ];
+
+
             int   number_cores;
+
             int   number_frequency;
+
+
+
 
             strcpy(
                     that_buffer,
@@ -351,12 +409,29 @@ int check_network () {
 
             number_frequency = atoi ( that_buffer );
 
+*/
 
 
+
+
+
+
+
+// compare them
+//
+//
+// at the beginning, we let them change site
+//
+// when quicker is quicker more than 2 times
+//
+//  but now we let it quicker more any one little
 
             if (
-                              number_cores *             number_frequency
-                   > information_cpu.cores * information_cpu.frequency * 2
+
+                     gop_network.about.cpu.cores  *  gop_network.about.cpu.frequency
+
+                   >         gop_about.cpu.cores  *          gop_about.cpu.frequency
+
                ) {
 
 
@@ -368,12 +443,54 @@ int check_network () {
 
 
 
-                char    buffer_ip[33];
-                strcpy ( buffer_ip, gop_connection.address_ip [ 0 ] );
 
-                for ( int ii=1; ii<=information_ip_number; ii++) {
+
+// if we connect to ourself in the configuration
+//
+// we dont let it connect to us again
+//
+// then we are going to connect them
+//
+// make a loop
+//
+//
+// so we let it connect itself
+
+
+
+
+
+                char    buffer_ip [ 32 ];
+
+// by default, we want it connect to what we connect
+
+                strcpy (  buffer_ip, gop_connection.address_ip [ 0 ]  );
+
+
+
+
+
+
+
+// compare it with address here
+//
+// if it is a address here, we change the plan
+//
+// and let it connect to itself
+
+
+                int ii;
+
+                for (  ii = 1; ii <= information_ip_number; ii ++  ) {
+
 
                     if (  strcmp ( buffer_ip, information_ip [ ii ] [ 2 ] ) == 0  ) {
+
+
+
+// the connector connect  our address, don't send it
+//
+// send the address itself
 
                          strcpy ( buffer_ip, gop_connection.address_ip[i] );
 
@@ -381,20 +498,39 @@ int check_network () {
 
 
 
-                output_print ( "string", "Smile to a big one : " );
+
+
+// prepare the message
+
+                output_print ( "string", "smile to bigger : " );
                 output_print ( "string",  buffer_ip              );
                 output_print ( "string", "\n"                    );
 
 
 
                 char     buffer_command [ 32 ];
+
                 strcpy ( buffer_command,     "Smile."   );
                 strcat ( buffer_command,     "\n"       );
                 strcat ( buffer_command,      buffer_ip );
 
+// and the port
+// ...
 
-                         gop_connection.time [ 0 ]      = time ( NULL );
-                strcpy ( gop_connection.command [ i ],    buffer_command );
+
+// why we fresh the time note
+
+                         gop_connection.time       [ 0 ]      = time ( NULL );
+
+
+// load the message we will send
+
+                strcpy ( gop_connection.command    [ i ], buffer_command                  );
+
+
+
+// connect to this bigger
+
                 strcpy ( gop_connection.address_ip [ 0 ], gop_connection.address_ip [ i ] );}}
 
 
