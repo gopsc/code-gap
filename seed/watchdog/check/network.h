@@ -1,6 +1,16 @@
 
 int check_network () {
 
+// this function is to check network going,
+//
+//   maybe i should put it into the file named network/build.h
+
+
+
+
+
+
+
 
 
 
@@ -12,13 +22,20 @@ int check_network () {
 
 
 
-// If it's a new startting
+
+
+
+// if it's a new startting
 //
-//  the time note is zero
+//  the time note zero
 //
-//  and it make something wrong
+//
+//   so something goes wrong
 //
 //  and we fix it
+
+
+
 
     int i;
 
@@ -37,17 +54,11 @@ int check_network () {
 
 
 
-// If connection is available,
-//
-// check the time of last loop.
-//
-//
-// Restet when it's stop over 9 seconeds
-//
-// (  it's 3 seconds at the beginning, and we changed it  )
-//
-// and make sure it's not a new starting
 
+
+
+
+// check them  1 by 1
 
     for (  i = 0; i <= 4; i ++  ) {
 
@@ -73,6 +84,22 @@ int check_network () {
 
 
 
+
+// if connection is available,
+//
+// check the time of last connectting.
+//
+//
+// clean them when it's stop over 9 seconeds
+//
+// (  it's 3 seconds at the beginning, and we changed it  )
+//
+//
+// and make sure it's not a new starting
+//
+//
+//
+//
 // if they doesn't move over 9 secend, and are connecttd
 //
 // this time could be not conectted
@@ -80,7 +107,11 @@ int check_network () {
 // we do something
 //
 //
+//
 // and sometimes the connection does not finish
+//
+// and another went away
+//
 //
 //  we should let it go
 //
@@ -95,13 +126,25 @@ int check_network () {
                ) {
 
 
-
-
-
-
 // if it isn't keep talking
-//
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 3 seconds for  recive / send  waitting
 //
 // 9 seconds for doesn't connect
@@ -110,11 +153,18 @@ int check_network () {
 
 
 
+                if  (
 
-                if  (  time_now - gop_connection.time [ i ]  >=  3  ) {
+                        time_now - gop_connection.time [ i ]  >=  3
+                &&      time_now - gop_connection.time [ i ]  <   9
+
+                    ) {
 
 
-// check the connection running
+
+
+
+// check is the connection running
 //
 // this is better to short than connection running, 3 seconds may be ok
 
@@ -132,7 +182,19 @@ int check_network () {
 
 
 
-// if they don't connect
+
+
+
+
+
+
+
+
+
+// if they are not connectted any more
+//
+// we should clean them
+
 
                 else if  (  time_now - gop_connection.time [ i ]  >=  9  ) {
 
@@ -142,14 +204,16 @@ int check_network () {
 
 
 
-// prepare to note his
+// prepare to note this
 
                     char buffer_note [ 32 ];
 
 
 
 
-// clean all about this 
+
+
+// clean all about this
 
                     clean_connection ( i, "all" );
 
@@ -157,9 +221,13 @@ int check_network () {
 
 
 
-// it's two way betwin connector and connectted
+// it's two way betwin   connector and connectted
 //
 // to note
+//
+//
+//
+// and this is connector's
 
                     if (  i == 0  ) {
 
@@ -181,6 +249,10 @@ int check_network () {
 
 
 
+
+
+
+// the way for connecteed
 
                     else {
 
@@ -215,17 +287,33 @@ int check_network () {
 
 
 // reconnect to the high speed one
-
-
-
-
+//
+//
+// this is good
+//
+// cause connectted by several
+//
+//  make this slow
+//
+//  the highspeed to do this, make them connect stable
+//
+// make them faster, make it good
+//
+//
+//
+// and
+//
 // They are high speed board i used
 //
 //   do not need this for now
 //
 //  may restart it in the mind of trees plan
+//
+//
+//  maybe now
 
-/*
+
+
         if (
                strcmp ( gop_connection.how [ i ],          "Connectted" ) == 0
         &&     strcmp ( gop_connection.informastion [ i ], ""           ) != 0
@@ -308,7 +396,6 @@ int check_network () {
                          gop_connection.time [ 0 ]      = time ( NULL );
                 strcpy ( gop_connection.command [ i ],    buffer_command );
                 strcpy ( gop_connection.address_ip [ 0 ], gop_connection.address_ip [ i ] );}}
-*/
 
 
 
@@ -327,12 +414,19 @@ int check_network () {
 
 
 
-// if we let it connect some addrees before
+
+// if we let it connect some addrees
 //
-// we let it come back when it don't connect anymore
+// by some way without configuration before
+//
+//
+// this usually be a special thing
+//
+// we let it come back when it don't connect it anymore
 //
 //
 // not for smile this relation
+
 
             if (
 
@@ -438,7 +532,7 @@ int check_network () {
 
 
 // it is for smile  and  can't recive or send
-      
+
         if (
                time_now  -  gop_connection.time [ i ]        >=  9  )
 
