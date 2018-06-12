@@ -17,6 +17,10 @@ void * gop_corde ( void * what ) {
 
 
 // Preparing for this.
+//
+// ... i actually don't understand them
+//
+// :D
 
     int  buffer_size;
     int  period_size;
@@ -648,9 +652,9 @@ void * gop_corde ( void * what ) {
 
                 do {
 
-                    r = snd_pcm_readi(chandle, buffer_sound, latency);
+                    r = snd_pcm_readi ( chandle, buffer_sound, latency );
 
-                  } while (r == -EAGAIN);
+                  } while (  r  ==  - EAGAIN  );
 
 
 
@@ -679,42 +683,114 @@ void * gop_corde ( void * what ) {
 // Get data
 // the data number is too big
 
-                    number_force =  *((int*)buffer_sound+i)/100000;
+                    number_force =  * ( ( int * ) buffer_sound + i ) / 100000;
 
 
 // some device strange
 //   we should do some
 
-//                    number_force =  *((long*)buffer_sound+i)/100000   -   number_force;
+//                    number_force =  * ( ( long * ) buffer_sound + i ) / 100000   -   number_force;
 
 
 
 
-// Check date
-                    if (number_force >= 200) {
+
+
+
+
+// check data
+
+// alsa have already set time, so we could not to set the time judged
+
+
+
+
+
+
+
+
+
+
+
+// if we found a voice
+
+                    if ( number_force >= 200 ) {
 
                         number_aloud++;}
 
 
 
+
+
+
+
+
+
+
+
 // Save date
+//
+// this will be ok
+//
+// |                                                             |
+// |  -----------------------------123456...--->---------------  |
+// |                                                             |
+//
+// just like water
+//
+// the force could be banance when it start to note a big voice
+
+
+
+
                     if ( number_step < 200) {
 
-                        result_sound[number_step+0][number_step_snake] = number_force;}
 
-                    number_step_snake++;
+                        result_sound [ number_step + 0 ] [ number_step_snake ] = number_force;}
+
+
+
+
+
+// take a step
+
+                    number_step_snake ++;
+
+
+
+
 
 
 
 
 // Update date for next getting
+//
+// we need to compare maybe
 
-                    number_force = result_sound[number_step+0][number_step_snake-1];
+//                    number_force = result_sound [ number_step + 0 ] [ number_step_snake - 1 ];
 
 
-//--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+// judge the loop
+
 
                     if ( number_step_snake > N ) {
+
+
+
+// whatever,
 
 // be ready to start next looop
 
@@ -724,6 +800,7 @@ void * gop_corde ( void * what ) {
 
 
 // for test
+
 /*
                         if ( !information_flag.sound_show ) {
 
@@ -735,9 +812,10 @@ void * gop_corde ( void * what ) {
 
 
 // when this count buffer is not 0
+
 // we keep listen and be ready to get out and fft
 
-                        if ( number_aloud >= 200 ) {
+                        if (  number_aloud >= 200  ) {
 
                             number_count = 9;}
 
