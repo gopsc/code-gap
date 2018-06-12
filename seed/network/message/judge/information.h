@@ -1,46 +1,85 @@
 
 
-int judge_message_information(
+int judge_message_information (
 
-                                 int   that_site,
-                                 char* pointer_recv,
-                                 char* buffer_send
+                                  int       that_site,
+                                  char * pointer_recv,
+                                  char *  buffer_send
 
-                             ) {
+                              ) {
 
 
 
 
 //PS. the varitable 'pointer_recv' was selected before
-//        so there is just onw command there.
 
-//-----------------------------------------------
+//        so there is one piece of command there.
+
+
+
+
+
+
 
     if (
-           strstr(pointer_recv, "Here."  )
-           ==     pointer_recv
-    ||     strstr(pointer_recv, "Recive.")
-           ==     pointer_recv
+
+           strstr ( pointer_recv, "Here."  )  ==  pointer_recv
+
+    ||     strstr ( pointer_recv, "Recive.")  ==  pointer_recv
+
        ) {
 
+
+
 // if u don't want to do anythong,
+
 //  & so do the anther one
+
 // just keep this relationship
 
-        if ( strcmp(gop_connection.command[that_site], "") == 0 ) {
 
-            strcat(buffer_send, "Who is that now?");}
+
+
+
+// and we don't need to add the ask, we ask if we don't thout out
+
+
+//        if ( strcmp(gop_connection.command[that_site], "") == 0 ) {
+
+//            strcat(buffer_send, "Who is that now?");}
+
+
+
+
+// so we do nothing..:D
 
         return 1;}
 
-//-----------------------------------------------
-
-    else if ( strstr(pointer_recv, "Information of host." ) == pointer_recv ) {
 
 
 
-              pointer_recv   = strchr(pointer_recv, '\n' ) + 1;
-        char* pointer_next   = strchr(pointer_recv, '\n' )    ;
+
+
+
+
+
+
+
+
+
+
+    else if  (  strstr ( pointer_recv, "Information of host." )  ==  pointer_recv   ) {
+
+
+// this is to send the information i used
+
+
+
+
+// the first loop set
+
+               pointer_recv   =  strchr(pointer_recv, '\n' ) + 1;
+        char * pointer_next   =  strchr(pointer_recv, '\n' )    ;
 
 
 
