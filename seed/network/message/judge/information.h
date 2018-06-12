@@ -21,6 +21,17 @@ int judge_message_information (
 
 
 
+
+
+
+
+
+
+
+
+// when there is not a command, we send this hello
+
+
     if (
 
            strstr ( pointer_recv, "Here."  )  ==  pointer_recv
@@ -33,7 +44,7 @@ int judge_message_information (
 
 // if u don't want to do anythong,
 
-//  & so do the anther one
+//  & so do anothers
 
 // just keep this relationship
 
@@ -44,9 +55,9 @@ int judge_message_information (
 // and we don't need to add the ask, we ask if we don't thout out
 
 
-//        if ( strcmp(gop_connection.command[that_site], "") == 0 ) {
+//        if (  strcmp ( gop_connection.command [ that_site ], "" )  ==  0 ) {
 
-//            strcat(buffer_send, "Who is that now?");}
+//            strcat ( buffer_send, "Who is that now?" );}
 
 
 
@@ -66,35 +77,92 @@ int judge_message_information (
 
 
 
-
+// this is to send information i used
 
     else if  (  strstr ( pointer_recv, "Information of host." )  ==  pointer_recv   ) {
 
+// we use 'information of it' & 'information of mate' next big change
 
-// this is to send the information i used
 
 
 
 
 // the first loop set
 
+// pointer_recive note this path
+
+// pointer_next note the path last one at this line
+
+// maybe blank pointer
+
+
+// and noto network address
+
+// when read this, we read lines after this
+
+// all of the address
+
+
                pointer_recv   =  strchr(pointer_recv, '\n' ) + 1;
         char * pointer_next   =  strchr(pointer_recv, '\n' )    ;
 
 
 
-        gop_connection.flag[that_site].main   = 1;
 
 
 
-        while ( strchr(pointer_recv, '\n') != NULL ) {
-
-           *pointer_next = '\0';
+// start the set
 
 
-            if      ( 0            == strcmp(pointer_recv, "") ) {
+// first we clean it
+
+// ...
+
+
+
+// we've recived the message
+
+// so it is running
+
+        gop_connection . about [ that_site ] . flag . main   =  1;
+
+
+
+
+
+
+
+
+
+// if this not the end
+
+// we read this, to the pointer of next
+
+// if it is, it read this
+
+        while (  strchr ( pointer_recv, '\n' )  !=  NULL  ) {
+
+           * pointer_next = '\0';
+
+
+
+
+
+
+
+// went over the blank lines
+
+// there're several blank lines make us easy to see
+
+            if      (  0  ==  strcmp ( pointer_recv, "" )  ) {
 
                 ;}
+
+
+
+
+
+// read the name of
 
             else if ( pointer_recv == strstr(pointer_recv, "Name             : ") ) {
 

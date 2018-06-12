@@ -1,22 +1,30 @@
 
 struct gopi_connection {
 
-           char        how        [4][16];
-           time_t      time       [5];
+           char        how         [ 4 ] [ 16 ];
+           time_t      time        [ 5 ];
 
-           int         descriptor [2];
-           int         connection [5];
-           char        address_ip [4][128];
-           int         port       [2];
+           int         descriptor  [ 2 ];
+           int         connection  [ 5 ];
+           char        address_ip  [ 4 ] [ 128 ];
+           int         port        [ 2 ];
 
-           char        command    [4][128];
+           char        command     [ 4 ] [ 128 ];
 
-           char        update     [4][10240];
-           int         step_update[4];
-           int         flag_update[4];
+           char        update      [ 4 ] [ 10240 ];
+           int         step_update [ 4 ];
+           int         flag_update [ 4 ];
 
+
+
+
+// we're ready to note them :D
+
+/*
            char        video      [4][102400];
            char        audio      [4][102400];
+*/
+
 
 
 // we don't use this we use one include this
@@ -36,7 +44,12 @@ struct gopi_connection {
     struct gopi_about   about [ 4 ];
 
 
-           char         note [ 4 ] [ 1024 ];
+
+
+// maybe there're strange things like bettery
+
+
+//           char         note [ 4 ] [ 1024 ];
 
 
 
@@ -53,13 +66,18 @@ struct gopi_connection {
 
 
 
+// maybe we should bring the struct to the function
 
+// but it one network there
+
+// and maybe not
 
 
 int clean_connection (
 
-                               int    that_site,
-                         const char * that_type
+//                         struct gop_network that_network,
+                               int          that_site,
+                         const char *       that_type
 
                      ) {
 
@@ -74,29 +92,38 @@ int clean_connection (
     if (  strcmp ( that_type, "all" ) == 0  ) {
 
 
-        strcpy ( gop_connection.how        [that_site],  "Wait" );
+        strcpy ( gop_connection.how        [ that_site ],  "Wait" );
 
-        strcpy ( gop_connection.command    [that_site],  ""     );
+        strcpy ( gop_connection.command    [ that_site ],  ""     );
 
-        strcpy ( gop_connection.audio      [that_site],  ""     );
-        strcpy ( gop_connection.video      [that_site],  ""     );
+        strcpy ( gop_connection.audio      [ that_site ],  ""     );
+        strcpy ( gop_connection.video      [ that_site ],  ""     );
 
-//we use this function straightly
+
+
+
+// we use this function straightly
+
+// clean the update message
 
         clean_connection ( that_site, "update" );
 
 /*
-        strcpy ( gop_connection.update     [that_site],  ""    );
-                 gop_connection.step_update[that_site]   = 0;
-                 gop_connection.flag_update[that_site]   = 0;
+        strcpy ( gop_connection.update     [ that_site ],  ""    );
+                 gop_connection.step_update[ that_site ]   = 0;
+                 gop_connection.flag_update[ that_site ]   = 0;
 */
 
 
 
-        if ( that_site != 0 ) {
+// not clean the address for connector
 
-            strcpy(gop_connection.address_ip [that_site],  ""    );
-                   gop_connection.port       [that_site] = 0      ;}
+//  these will keep to save the address we go to
+
+        if (  that_site != 0  ) {
+
+            strcpy ( gop_connection.address_ip [ that_site ],  ""    );
+                     gop_connection.port       [ that_site ] = 0      ;}
 
 
 // now return it
@@ -107,7 +134,10 @@ int clean_connection (
 
 
 
-//==========================================================================
+
+
+
+
 
     else if (  strcmp ( that_type, "sopi" ) == 0  ) {
 
@@ -115,10 +145,18 @@ int clean_connection (
 // the clean for sopi changing
 
 
-        strcpy ( gop_connection.command    [that_site],  "" );
+        strcpy ( gop_connection.command    [ that_site ],  "" );
 
-        strcpy ( gop_connection.audio      [that_site],  "" );
-        strcpy ( gop_connection.video      [that_site],  "" );
+
+
+// it is coming,,
+
+/*
+        strcpy ( gop_connection.audio      [ that_site ],  "" );
+        strcpy ( gop_connection.video      [ that_site ],  "" );
+*/
+
+
 
 
 // the update end
@@ -126,9 +164,9 @@ int clean_connection (
         clean_connection ( that_site, "update" );
 
 /*
-        strcpy ( gop_connection.update     [that_site],  "" );
-                 gop_connection.step_update[that_site] = 0   ;
-                 gop_connection.flag_update[that_site] = 0   ;
+        strcpy ( gop_connection.update      [ that_site ],  "" );
+                 gop_connection.step_update [ that_site ] = 0   ;
+                 gop_connection.flag_update [ that_site ] = 0   ;
 */
 
 
@@ -138,21 +176,23 @@ int clean_connection (
 
         if      (
                   strcmp(
-                          gop_connection.how[that_site],
+                          gop_connection.how [ that_site ],
 
                          "Connectted"
                         )
                   == 0
            ) {
 
-               strcpy ( gop_connection.how[that_site], "Sop" );
+               strcpy ( gop_connection.how [ that_site ], "Sop" );
 
                return 1;}
 
 
+
+
         else if (
                   strcmp(
-                          gop_connection.how[that_site],
+                          gop_connection.how [ that_site ],
 
                          "Sop"
                         )
@@ -162,6 +202,7 @@ int clean_connection (
                strcpy ( gop_connection.how[that_site], "Connectted" );
 
                return 1;}
+
 
 
         else if (
@@ -176,6 +217,7 @@ int clean_connection (
                strcpy ( gop_connection.how[that_site], "Sopi" );
 
                return 1;}
+
 
 
         else if (
@@ -193,7 +235,9 @@ int clean_connection (
 
 
 
-// somethong went to this and return a wrong
+// it's in plan should, sometimes
+
+// somethong went to this and return a zero
 
     return 0;}
 
@@ -210,13 +254,15 @@ int clean_connection (
 
     else if (  strcmp ( that_type, "update" ) == 0  ) {
 
+
 // we just don't wanna update this time
 //
 // just clean all the update things
 
-        strcpy ( gop_connection.update     [that_site],  "" );
-                 gop_connection.step_update[that_site] = 0;
-                 gop_connection.flag_update[that_site] = 0;
+
+        strcpy ( gop_connection.update      [ that_site ],  "" );
+                 gop_connection.step_update [ that_site ] = 0;
+                 gop_connection.flag_update [ that_site ] = 0;
 
         return 1;}
 
@@ -231,7 +277,17 @@ int clean_connection (
 
 // sometimes another didn't send the message, it will be stack, then this can fix it
 
+// and we check them with dog
+
+// and added about the connection about smile there
+
+
+// may copy the code to here
+
+
+/*
     else if (  strcmp ( that_type, "check" ) == 0  ) {
+
 
 
 
@@ -246,17 +302,18 @@ int clean_connection (
 
 // for connector, the description of connection is the description of network
 //
-//  so we just shut it down for a little time to let the mistake do not happen
+//  so we just shut it down for a little time to let the mistake don't happen
 //
 // but if something just restart it when this check shut it down but the connector file does not return
 //
 //   a mistake coule happen
 //
-// maybe i should not allow the the connector turn on?
+// maybe i should not allow the the connector turn on when it's check?
+
 
             if (  that_site == 0  ) {
 
-                information_flag.connector = 0;}
+                gop_about.flag.connector = 0;}
 
 
 // shut it down
@@ -270,7 +327,7 @@ int clean_connection (
             if ( that_site == 0 ) {
 
                 information_flag.connector = 1;}}}
-
+*/
 
 
 
