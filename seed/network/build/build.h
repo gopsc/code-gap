@@ -1,5 +1,10 @@
 
+
+
+// change the name to network soon
+
 struct gopi_connection {
+
 
            char        how         [ 4 ] [ 16 ];
            time_t      time        [ 5 ];

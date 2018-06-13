@@ -116,13 +116,16 @@ int judge_message_information (
 
 // first we clean it
 
-// ...
+//        clean_about ( gop_connection . about [ that_site ] );
 
 
 
 // we've recived the message
 
 // so it is running
+
+
+// maybe we add it to clean
 
         gop_connection . about [ that_site ] . flag . main   =  1;
 
@@ -137,6 +140,9 @@ int judge_message_information (
 // if this not the end
 
 // we read this, to the pointer of next
+
+// and return soon
+
 
 // if it is, it read this
 
@@ -162,74 +168,336 @@ int judge_message_information (
 
 
 
-// read the name of
+// read the name of that
 
-            else if ( pointer_recv == strstr(pointer_recv, "Name             : ") ) {
+            else if (  pointer_recv == strstr ( pointer_recv, "Name             : " )  ) {
 
-                strcpy(gop_connection.system[that_site].name,   strstr(pointer_recv, " :")+3);}
+// it always start with a ':'
 
-            else if ( pointer_recv == strstr(pointer_recv, "System           : ") ) {
+                strcpy (
 
-                strcpy(gop_connection.system[that_site].system, strstr(pointer_recv, " :")+3);}
+                          gop_connection . about . system [ that_site ] . name,
 
-            else if ( pointer_recv == strstr(pointer_recv, "User             : ") ) {
+                          strstr ( pointer_recv, " :" ) + 3
 
-                strcpy(gop_connection.system[that_site].user,   strstr(pointer_recv, " :")+3);}
+                       );}
 
-            else if ( pointer_recv == strstr(pointer_recv, "IP               : ") ) {
 
-                gop_connection.network[that_site].number = atoi(strstr(pointer_recv, " :" )+3);
 
-               *pointer_next = '\n';
-                pointer_recv = strchr(pointer_recv, '\n'  ) +1;
-                pointer_next = strstr(pointer_next, "\n\n") +1;
-               *pointer_next = '\0';
 
+// read system name
+
+            else if (  pointer_recv == strstr ( pointer_recv, "System           : " )  ) {
+
+                strcpy (
+                          gop_connection . about . system [ that_site ] . system,
+
+                          strstr ( pointer_recv, " :" ) + 3
+
+                       );}
+
+
+
+
+// read user name
+
+            else if (  pointer_recv == strstr ( pointer_recv, "User             : " ) ) {
+
+                strcpy (
+
+                         gop_connection . about . system [ that_site ] . user,
+
+                         strstr ( pointer_recv, " :" ) + 3
+
+                       );}
+
+
+
+
+
+
+
+
+
+
+
+
+
+            else if (  pointer_recv == strstr ( pointer_recv, "IP               : " ) ) {
+
+
+// why
+
+// network address alway start with a number of them
+
+
+
+                gop_connection . about . network [ that_site ] . number
+
+                =  atoi (  strstr ( pointer_recv, " :"  ) + 3 );
+
+
+
+
+
+
+
+
+// prepare
+
+
+
+
+
+
+
+// return the last one
+
+// we will read next lines
+
+// change the convent we've read
+
+               * pointer_next  =  '\n';
+
+
+
+
+// start with next line
+
+                 pointer_recv  =  strchr ( pointer_recv, '\n'  ) + 1;
+
+
+
+
+// to the last one
+
+/*
+   address  :  2
+       name : address
+       name : address
+
+   ...
+*/
+
+                 pointer_next  =  strstr ( pointer_next, "\n\n" );
+
+               * pointer_next  =  '\0';
+
+
+
+
+
+
+
+// prepare to read them
+
+
+// the number of the address we've read
 
                 int number_ip = 1;
 
-                char* pointer_network;
+
+
+
+// this is to save the line we will read
+
+// may null happened
+
+// the pointer maybe last
+
+
+// pointer of network will be used for return when this happened
+
+
+
+// this has name and address one line
+
+// and use this to find the path
+
+
+                char * pointer_network;
+
+
+
+
+
+
+
+// we read them line by line
+
+// to the blank line
+
+// then this is the last one
+
+
                 for (
-                                     pointer_network   =        pointer_recv;
-                        strcmp("\n", pointer_network) != 0                  ;
-                                     pointer_network   = strchr(pointer_recv, '\n')
+                                       pointer_network    =           pointer_recv;
+                        strcmp ( "\n", pointer_network ) !=  0 ;
+                                       pointer_network    =  strchr ( pointer_recv, '\n' )
                     ) {
 
-                    if ( pointer_recv != pointer_network ) {
-                        pointer_network = pointer_network + 1;}
 
+
+// the pointer of network  we use it to  miss the null happened
+
+
+// after first set, we fresh the pointer of network
+
+// but pointer we've read not
+
+
+// if not, it isn't first line
+
+// we fresh it
+
+
+
+                    if (  pointer_recv  !=  pointer_network  ) {
+
+
+//  jump over the '\n'
+
+                        pointer_network  =  pointer_network + 1;
+
+
+// fresh the pointer we've read
+
+                        pointer_recv     =  pointer_network;}
+
+
+
+
+
+
+
+// prepare to note them
+
+
+
+
+
+
+// start here
+
+
+// we should jump over the blank charactor
+
+/*
+         name : address
+    name-long : address
+*/
+
+
+                  while (  * pointer_recv  ==  ' ' )  ) {
+
+                      pointer_recv ++;
+
+
+
+
+
+// to here
+
+                    pointer_network = strstr (  pointer_recv, " : " );
+
+                    pointer_network =  '\0';
+
+
+
+// note it
 
                     strcpy(
-                            gop_connection.network[that_site].ip[number_ip][1],
-                            pointer_network
+
+                            gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 1 ],
+
+                            pointer_recv
+
                           );
-                   *strstr(
-                            gop_connection.network[that_site].ip[number_ip][1],
-                            " : "
-                          )
-                   ='\0';
+
+// return it
+
+                  * pointer_network  =  ' ';
+
+
+
+
+
+
+
+
+
+
+// the address start here
+
+                    pointer_recv  =  strstr ( pointer_recv, " : " + 3 );
+
+
+// to here
+
+                    pointer_network  =  strchr ( pointer_recv, '\n' );
+
+                  * pointer_network  =  '\0';
+
+
+
+
+
+// note the address
 
                     strcpy(
-                            gop_connection.network[that_site].ip[number_ip][2],
-                            strstr(pointer_network, " : ") + 3
+
+                            gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 2 ],
+
+                            pointer_recv
+
                           );
-                   *strchr( gop_connection.network[that_site].ip[number_ip][2], '\n' )
-                   ='\0';
+
+// return it
+
+                  * pointer_network  =  '\0';
 
 
-                    pointer_recv = pointer_network + 1;
 
-                    number_ip++;}
 
-                for ( ; number_ip<=32; number_ip++ ) {
 
-                    if   ( strcmp(gop_connection.network[that_site].ip[number_ip][2], "") != 0 ) {
+// don't need to, because we have fresh this when we jumped to the address' beginning
 
-                        strcpy(gop_connection.network[that_site].ip[number_ip][2], "");}
+//                    pointer_recv = pointer_recv + 1;
+
+
+
+// plus it
+
+                    number_ip ++;}
+
+
+
+
+// clean it
+
+// we use them in the watchdog/information soon
+
+/*
+                for ( ; number_ip <= 32; number_ip ++ ) {
+
+                    if   ( strcmp ( gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 2 ], "") != 0 ) {
+
+                        strcpy (  gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 2 ], ""  );}
 
                     else {
 
-                        break;}}}
+                        break;}}
+*/
+
+                }
+
+
+
+
+
+
+
+
 
 
 
