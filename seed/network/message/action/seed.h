@@ -29,6 +29,23 @@ int action_seed_append (
 
 
 
+
+// this is not easy, maybe the file is too long
+
+// we can't read it
+
+
+/*
+
+    char * buffer_words;
+
+           buffer_words = malloc (  file_length ( that_target )  );
+
+    free ( buffer_words );
+
+*/
+
+
     char         buffer_words [ 102400 ];
 
 
@@ -38,8 +55,9 @@ int action_seed_append (
 
 
 // sometimes this file is not here
-//
-// maybe we should exit this
+
+// maybe we should exit this seed
+
 
     if (  ! is_file ( buffer_file )  ) {
 
@@ -59,7 +77,27 @@ int action_seed_append (
 
 
 
+
+
+
+// if this file exist
+
+// prepare to add it
+
+
     else {
+
+
+
+
+
+
+// make the title
+
+
+// maybe we should make a buffer to note this
+
+// then append once to finish it
 
 
         file_append ( that_result,                "\n//"      );
@@ -74,13 +112,16 @@ int action_seed_append (
 
 
 
+// titles don't have a same length,
+
+// and of cause
+
+
         if  (  63  >  ( int ) strlen ( buffer_file )  ) {
 
 
 
             int i;
-
-
 
             for (
 
@@ -98,11 +139,26 @@ int action_seed_append (
 
 
 
+// titile finished
+
         file_append ( that_result, "\n" );
+
+
+
+
+
+
+
+// get the convent
 
 
         file_get ( buffer_file, buffer_words );
 
+
+
+
+
+// save it
 
         file_append ( that_result, buffer_words );
 
@@ -132,7 +188,9 @@ int action_seed (
 
 
 
+// where the code is
 
+// and it could be changed
 
 
             char        buffer_path               [ 128 ];
@@ -148,6 +206,8 @@ int action_seed (
 
 
 
+// the file we will make named flower
+
 
             char        buffer_file               [ 128 ];
 
@@ -161,6 +221,12 @@ int action_seed (
 
 
 
+
+// there is a file named action
+
+// we auto add file in that
+
+
             char        buffer_dirent             [ 128 ];
 
 
@@ -168,11 +234,7 @@ int action_seed (
 
 
 
-
-
-
             DIR *       pointer_dirent;
-
 
 
     struct  dirent *    ent;
@@ -193,16 +255,32 @@ int action_seed (
 
 
     action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/Linux.h"                   );
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variables.h"               );
 
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variables.h"               );
 
 
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/information/build.h"               );
 
-    action_seed_append( buffer_file, buffer_path, "/network/build.h"                            );
+    action_seed_append( buffer_file, buffer_path, "/network/build/build.h"                      );
+    action_seed_append( buffer_file, buffer_path, "/network/build/check/connection.h"           );
+    action_seed_append( buffer_file, buffer_path, "/network/build/clean/connection.h"           );
 
     action_seed_append( buffer_file, buffer_path, "/sound/build.h"                              );
+
+
+
+
+
+// put this to the last of  head and build list
+
+// then it can use the struct of configuration to note configurations everywhere
+
+
+// but if we don't have them in code, we set a head of blank to fill them
+
+//    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variables.h"               );
+
 
 
 

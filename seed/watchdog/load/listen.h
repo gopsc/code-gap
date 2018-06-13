@@ -1,15 +1,21 @@
 
 int load_listen() {
 
+
+
+
     output_print( "string", "Load listen...\n" );
 
 
 
 
 // the path of the files saved
+
 // now it is trees/*
 
-    char buffer_path[128];
+    char buffer_path [ 128 ];
+
+
 
 
 // It's for saving the name of the dirent

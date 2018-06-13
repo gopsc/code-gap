@@ -33,8 +33,11 @@ struct gopi_flag {
 
 
 // the configurations
-//
+
 // used here and everywhere
+
+// maybe then we should put them every where
+
 
 struct gopi_configurations {
 

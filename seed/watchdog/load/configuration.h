@@ -1,25 +1,38 @@
 
+
+
+
 int load_configure () {
 
 
+
+
+
+// we start this load, and it will print in the output manage
 
     output_print ( "string", "Load configure...\n" );
 
 
 
 
+
+
+
+
 // Prepare the values,
-//         the start path used is certaintlly
 
-    char buffer_path     [128];
-
+//         the start path used is certaintly
 
 
-
+    char buffer_path     [ 128 ];
 
 
 
-// For saving files
+
+
+
+
+// for saving files
 // and saving configurations
 
     char   that_file     [ 1024 ];
@@ -34,12 +47,21 @@ int load_configure () {
 
 
 
+
+
 // If ur running a server or client program
+
 // and you wanna change the target ip
+
 // you mast close it first,
+
 // then turn it up again
 
-    int bool_reset = 0;
+
+
+//    int bool_reset = 0;
+
+
 
 
 
@@ -84,10 +106,13 @@ int load_configure () {
             strcpy ( buffer_path, "/opt/TxL/sky/configurations/TxL/configuration_deamon" );
 
 
-            if    (  ! is_file ( buffer_path )  ) {
+
 
 
 // If the deamon configuration is not found, load the common configuration file
+
+            if    (  ! is_file ( buffer_path )  ) {
+
 
                 strcpy ( buffer_path, "/opt/TxL/seed/configuration" );}}}
 
@@ -103,14 +128,22 @@ int load_configure () {
 
     else if   (  strcmp ( that_file, "root\n" ) == 0  ) {
 
+
+
+
 // be ready to get the common configuration file
 
         strcpy ( buffer_path, "/opt/TxL/seed/configuration" );
 
 
+
+
+
 // if it's not found, try the dirent where you are
 
         if    (  ! is_file ( buffer_path )  ) {
+
+
 
             strcpy ( buffer_path, "seed/configuration" );}}
 
@@ -127,9 +160,15 @@ int load_configure () {
     else if   (  strcmp ( that_file, "root\n" ) != 0  ){
 
 
+
+
+
 // if it is not the root user, try to load the no-root configuration
 
         strcpy ( buffer_path, "/opt/TxL/sky/configurations/TxL/configuration_no-root" );
+
+
+
 
 
 // if it's not found, try the dirent where you are
@@ -170,6 +209,8 @@ int load_configure () {
 
 
 // print the file path for test
+
+// use this in text
 
 //    printf("%s\n", buffer_path);
 
@@ -222,7 +263,11 @@ int load_configure () {
 
 
 // we don't need to reboot it
+
 //  because we could check it straightly
+
+// by dog
+
 /*
 // Reboot client when it was block.
 
@@ -364,6 +409,8 @@ int load_configure () {
 
 
 
+
+
     strcpy ( target_configuration [ 1  ], "path "           );
     strcpy ( target_configuration [ 2  ], "name "           );
     strcpy ( target_configuration [ 3  ], "data "           );
@@ -400,55 +447,59 @@ int load_configure () {
 
     int i;
 
-    for ( i=1; i<=20; i++ ) {
+    for (  i = 1; i <= 20; i ++  ) {
 
 
-        if ( strstr(that_file, target_configuration [ i ] ) != NULL ) {
+
+// find the name of configurations in the file
 
 
-            strcpy( buffer_file,         strstr ( that_file, target_configuration[i] ) );
+        if ( strstr ( that_file, target_configuration [ i ] ) != NULL ) {
+
+
+            strcpy( buffer_file,         strstr ( that_file, target_configuration [ i ] ) );
 
            *strchr( buffer_file,         '\n'                         ) = '\0';
 
             strcpy( buffer_file,         strrchr(buffer_file, ' ') +1 );
 
-            strcpy( result_configuration[i], buffer_file              );}}
+            strcpy( result_configuration [ i ], buffer_file              );}}
 
 
 
 
 
 
-    strcpy ( path_the,    result_configuration [ 1 ] );
-    strcpy ( name_the,    result_configuration [ 2 ] );
-    strcpy ( name_data,   result_configuration [ 3 ] );
-    strcpy ( name_backup, result_configuration [ 4 ] );
+    strcpy ( gop_configurations . path_the,    result_configuration [ 1 ] );
+    strcpy ( gop_configurations . name_the,    result_configuration [ 2 ] );
+    strcpy ( gop_configurations . name_data,   result_configuration [ 3 ] );
+    strcpy ( gop_configurations . name_backup, result_configuration [ 4 ] );
 
 
-    if (  strcmp ( result_configuration [ 5  ], "on") == 0  ) { information_flag.main       = 1;}  else { information_flag.main       = 0;}
-    if (  strcmp ( result_configuration [ 6  ], "on") == 0  ) { information_flag.dog        = 1;}  else { information_flag.dog        = 0;}
-    if (  strcmp ( result_configuration [ 7  ], "on") == 0  ) { information_flag.show       = 1;}  else { information_flag.show       = 0;}
-    if (  strcmp ( result_configuration [ 8  ], "on") == 0  ) { information_flag.connector  = 1;}  else { information_flag.connector  = 0;}
-    if (  strcmp ( result_configuration [ 9  ], "on") == 0  ) { information_flag.connectted = 1;}  else { information_flag.connectted = 0;}
-    if (  strcmp ( result_configuration [ 10 ], "on") == 0  ) { information_flag.sound      = 1;}  else { information_flag.sound      = 0;}
-    if (  strcmp ( result_configuration [ 11 ], "on") == 0  ) { information_flag.sound_show = 1;}  else { information_flag.sound_show = 0;}
-    if (  strcmp ( result_configuration [ 12 ], "on") == 0  ) { information_flag.sound_save = 1;}  else { information_flag.sound_save = 0;}
-
-
-
-
-    strcpy ( address_to, result_configuration [ 13 ] );
+    if (  strcmp ( result_configuration [ 5  ], "on") == 0  ) { gop_about . flag . main       = 1;}  else { gop_about . flag . main       = 0;}
+    if (  strcmp ( result_configuration [ 6  ], "on") == 0  ) { gop_about . flag . dog        = 1;}  else { gop_about . flag . dog        = 0;}
+    if (  strcmp ( result_configuration [ 7  ], "on") == 0  ) { gop_about . flag . show       = 1;}  else { gop_about . flag . show       = 0;}
+    if (  strcmp ( result_configuration [ 8  ], "on") == 0  ) { gop_about . flag . connector  = 1;}  else { gop_about . flag . connector  = 0;}
+    if (  strcmp ( result_configuration [ 9  ], "on") == 0  ) { gop_about . flag . connectted = 1;}  else { gop_about . flag . connectted = 0;}
+    if (  strcmp ( result_configuration [ 10 ], "on") == 0  ) { gop_about . flag . sound      = 1;}  else { gop_about . flag . sound      = 0;}
+    if (  strcmp ( result_configuration [ 11 ], "on") == 0  ) { gop_about . flag . sound_show = 1;}  else { gop_about . flag . sound_show = 0;}
+    if (  strcmp ( result_configuration [ 12 ], "on") == 0  ) { gop_about . flag . sound_save = 1;}  else { gop_about . flag . sound_save = 0;}
 
 
 
 
-    port_to          = atof ( result_configuration [ 14 ] );
-    port_this        = atof ( result_configuration [ 15 ] );
-    step_connection  = atof ( result_configuration [ 16 ] );
-    size_update      = atof ( result_configuration [ 17 ] );
-    rate             = atof ( result_configuration [ 18 ] );
-    channels         = atof ( result_configuration [ 19 ] );
-    N                = atof ( result_configuration [ 20 ] );
+    strcpy ( gop_configurations . address_to, result_configuration [ 13 ] );
+
+
+
+
+    gop_configurations . port_to          = atof ( result_configuration [ 14 ] );
+    gop_configurations . port_this        = atof ( result_configuration [ 15 ] );
+    gop_configurations . step_connection  = atof ( result_configuration [ 16 ] );
+    gop_configurations . size_update      = atof ( result_configuration [ 17 ] );
+    gop_configurations . rate             = atof ( result_configuration [ 18 ] );
+    gop_configurations . channels         = atof ( result_configuration [ 19 ] );
+    gop_configurations . N                = atof ( result_configuration [ 20 ] );
 
 
 
@@ -472,22 +523,25 @@ int load_configure () {
 
 
 // reset is not nessensary
-//
+
 // dog will check it
-//
+
 // we load this here because connector should be able to set a target instead of connect this address every time
-//
+
+
 // this load should be after the connector start
-//
+
 //  and we could move it to be after of the dog run first circle
-//
+
+
 //   so if this is the first load we don't neet load address
-//
+
 //   if it's not we should load again
-//
+
 // because connector don't load address everytime cause something we give that a target
 
 
+// and check reset is too slow
 
 
     if ( information_flag.start ) {
