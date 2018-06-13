@@ -255,4 +255,266 @@ int control_message(
 
 
 
-// if this is not a end, we return it, and jump over
+// if this is not a end, we return it, and jump over this symbol
+
+            if (  pointer_next != NULL  ) {
+
+              * pointer_next =  '\n';
+
+                pointer_recv =  pointer_next  +  strlen ( symbol_next );}
+
+
+
+// and if this range we found the end, we exit
+
+          } while (  pointer_next != NULL  );
+
+
+
+
+
+
+// sometimes we could not found a known message, we add recive here
+
+        if (  buffer_send [ strlen ( buffer_send ) - 1 ]  == '\n'  ) {
+
+            strcat ( buffer_send, "Who is that?" );}
+
+        return 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// i want let this be dissapear, very single connector and connectted use the same command
+
+
+    else if (
+
+                strcmp ( gop_connection.how [ that_site ], "Connectted" )  == 0
+
+    ||          strcmp ( gop_connection.how [ that_site ], "Sopi"       )  == 0
+
+            ) {
+
+
+        strcpy ( buffer_send, "This is gop station." );
+        strcat ( buffer_send, "\n"                   );
+
+
+
+
+
+
+
+
+
+
+        if (
+        
+             ! judge_message_blank (  that_site,  pointer_recv,  buffer_send  )
+             
+           ) {
+           
+            return 0; }
+
+
+
+
+
+// SHOW ITSELF
+
+        if (
+                ! judge_message_hello (  that_site,  pointer_recv,  buffer_send  )
+                
+            ) {
+            
+             return 0; }
+
+
+
+
+// WHO IT IS
+
+        if (
+               ! judge_message_who (  that_site,  pointer_recv,  buffer_send  )
+               
+           ) { 
+           
+            return 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Other message just like audio
+
+        control_message_data ( that_site, buffer_send );
+
+
+
+
+
+
+
+
+
+
+// Get imformation.
+
+        pointer_recv = strchr ( pointer_recv, '\n' ) + 1;
+
+
+
+
+// Read the information of client.
+
+
+
+/*
+
+ we don't let the pointer of next one
+
+ to save this message, we let the buffer of recive to do this
+
+*/
+
+        char * pointer_next;
+
+
+
+
+// we won't know how long it was and we judge it every time
+
+        do {
+
+
+
+
+// find the place the next symbol
+
+            pointer_next = strstr ( pointer_recv, symbol_next );
+
+
+
+
+// we just read this line and we just move it be a end signal
+
+// and we don't change this buffer of path, so we could return it later
+
+// if it's not the last one, we do this and change the buffer of path later
+
+
+            if (  pointer_next != NULL  ) {
+
+               * pointer_next = '\0';}
+
+
+
+
+// judge it
+
+            judge_message_information (  that_site,   pointer_recv,   buffer_send  );
+
+
+
+
+// ok we return it
+
+// and jump over the symbol
+
+// if it's not the last one
+
+            if (  pointer_next != NULL  ) {
+
+              * pointer_next = '\n';
+
+// it is strange maybe \0 is a charactor
+
+                pointer_recv = pointer_next + strlen ( symbol_next );}
+
+
+
+
+// if this is not the last one we start again
+
+        } while (  pointer_next != NULL  );
+
+
+
+
+
+
+
+
+
+
+
+// Read the command of this host.
+
+        if (
+               strcmp (  gop_connection . how [ that_site], "Connectted"  ) == 0
+        ||     strcmp (  gop_connection . how [ that_site], "Sopi"        ) == 0
+           ) {
+
+
+/*
+
+ the action we do
+
+ and the message we send
+
+ will do at one time
+
+
+ and there's no host soon
+ 
+ we prepare when we type them
+
+*/
+
+            judge_message_command (  that_site,  gop_connection.command [ that_site ],  buffer_send  );}}
+
+
+
+
+
+
+/*
+
+ if we don't send any action
+
+ we append a normal return here
+
+*/
+
+        if (  buffer_send [ strlen ( buffer_send ) - 1 ]  == '\n'  ) {
+
+            strcat ( buffer_send, "Who is that?" );}
+
+
+
+
+// ok we've done this
+
+    return 1;}
