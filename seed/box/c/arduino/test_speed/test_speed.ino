@@ -1,4 +1,15 @@
 
+
+
+/*
+
+ test the speed of analog regist
+ 
+ 870000+ for uno
+ 345567+ for gr-citrus
+
+*/
+
     long number_time  = 0;
 
 
@@ -17,12 +28,12 @@ void loop() {
     
   // put your main code here, to run repeatedly:
 
-  number_time  = millis();
+  number_time  = micros();
 
   
   for ( int i=1; i<8000; i++ ) {
 
       analogRead ( A0 );}
 
-  Serial.println( millis() - number_time );
+  Serial.println( micros() - number_time );
 }
