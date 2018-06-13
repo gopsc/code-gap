@@ -6,9 +6,12 @@
 
 
 void setup() {
+
   // put your setup code here, to run once:
   
-    Serial.begin(9600);
+    analogReference ( INTERNAL );
+
+    Serial.begin ( 9600 );
 
     number_limit = 100;}
 
@@ -22,11 +25,11 @@ void loop() {
   
   for ( int i=1; i<8000; i++ ) {
 
-      analogRead ( A0 );
+      Serial.println ( analogRead ( A0 ) );
       
       if  (  0 > number_limit  ) {
         
         delay(0);}}
 
-  Serial.println( millis() - number_time );
+//  Serial.println( millis() - number_time );
 }
