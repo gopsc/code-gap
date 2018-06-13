@@ -438,14 +438,15 @@ int action_seed (
 //  is for send some data
 //  in the network connection
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/build.h"            );
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/build.h"  );
+v
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/backup.h" );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/backup.h"           );
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/append.h" );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/load.h"             );
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/next.h"   );
 
-    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/append.h"           );
-
+    action_seed_append( buffer_file, buffer_path, "/network/message/data/update/load.h"   );
 
 
 

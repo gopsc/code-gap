@@ -115,17 +115,17 @@ int control_message(
 
             if (
 
-                   strcmp( gop_connection.how [ i ], "Connectted" ) == 0
-            ||     strcmp( gop_connection.how [ i ], "Sopi"       ) == 0
+                   strcmp ( gop_connection.how [ i ], "Connectted" ) == 0
+            ||     strcmp ( gop_connection.how [ i ], "Sopi"       ) == 0
 
                ) {
 
-                strcat(buffer_send, "Information of guest.\n"    );
+                strcat ( buffer_send, "Information of guest.\n" );
 
 
 
 // maybe sometimes we could use it again
-//
+
 // whatever, this is a big-disk time
 /*
                 information_append (
@@ -233,6 +233,9 @@ int control_message(
 
 
 // sometimes we could not found a known message, we add recive here
+
+// recive this they could sleep
+
 
         if (  buffer_send [ strlen ( buffer_send ) - 1 ]  == '\n'  ) {
 
