@@ -39,7 +39,7 @@ int action_seed_append (
 
     char * buffer_words;
 
-           buffer_words = malloc (  file_length ( that_target )  );
+           buffer_words = malloc (   (  file_length ( that_target ) + 1  )   *   sizeof ( char );
 
     free ( buffer_words );
 
@@ -244,6 +244,11 @@ int action_seed (
 
 
 
+
+
+
+// clean it
+
             file_save ( buffer_file,              ""                                         );
 
 
@@ -260,7 +265,7 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build.h"               );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build/build.h"         );
 
     action_seed_append( buffer_file, buffer_path, "/network/build/build.h"                      );
     action_seed_append( buffer_file, buffer_path, "/network/build/check/connection.h"           );
@@ -323,6 +328,16 @@ int action_seed (
     action_seed_append( buffer_file, buffer_path, "/watchdog/note/clear.h"                          );
 
 
+
+// get them form a convent, maybe from network
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build/load.h"         );
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build/load_mate.h"         );
+
+
+
+// get them from system
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/user.h"             );
 
