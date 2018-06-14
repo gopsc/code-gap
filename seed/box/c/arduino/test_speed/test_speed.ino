@@ -1,6 +1,15 @@
 
-    int  number_count = 0;
-    int  number_limit = 100;
+
+
+/*
+
+ test the speed of analog regist
+ 
+ 870000+ for uno
+ 345567+ for gr-citrus
+
+*/
+
     long number_time  = 0;
 
 
@@ -11,25 +20,20 @@ void setup() {
   
     analogReference ( INTERNAL );
 
-    Serial.begin ( 9600 );
-
-    number_limit = 100;}
+    Serial.begin ( 9600 );}
 
 
 
 void loop() {
+    
   // put your main code here, to run repeatedly:
 
-  number_time  = millis();
+  number_time  = micros();
 
   
   for ( int i=1; i<8000; i++ ) {
 
-      Serial.println ( analogRead ( A0 ) );
-      
-      if  (  0 > number_limit  ) {
-        
-        delay(0);}}
+      analogRead ( A0 );}
 
-//  Serial.println( millis() - number_time );
+  Serial.println( micros() - number_time );
 }
