@@ -515,88 +515,122 @@ int load_about (
 
 
 
+// about cpu
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU cores        : " )  ) {
+
+                that_about . cpu [ that_site ] . cores  =  atoi (  strstr ( pointer_convent, " :" )  + 3  );}
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "CPU cores        : ") ) {
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU frequency    : " )  ) {
 
-                gop_connection.cpu[that_site].cores              = atoi(strstr(pointer_recv, " :")+3);}
-
-
-            else if ( pointer_recv == strstr(pointer_recv, "CPU frequency    : ") ) {
-
-                gop_connection.cpu[that_site].frequency          = atoi(strstr(pointer_recv, " :")+3);}
+                that_about . cpu [ that_site ] . frequency  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "CPU temperature  : ") ) {
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU temperature  : " )  ) {
 
-                gop_connection.cpu[that_site].temperature        = atoi(strstr(pointer_recv, " :")+3);}
-
-
-            else if ( pointer_recv == strstr(pointer_recv, "CPU rate         : ") ) {
-
-                gop_connection.cpu[that_site].rate               = atoi(strstr(pointer_recv, " :")+3);}
+                that_about . cpu [ that_site ] . temperature  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Memory total     : ") ) {
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU rate         : " )  ) {
+
+/*
+
+ maybe there's a little \0
+
+ and we could see
+
+*/
+
+              * strchr ( pointer_convent, '%' ) = '\0';
+
+                that_about . cpu [ that_site ] . rate  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
-                gop_connection.memory[that_site].total = atoi(strstr(pointer_recv, " :")+3);}
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Memory total     : " )  ) {
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Memory used rate : ") ) {
-
-               *strchr(pointer_recv, '%')                        = '\0';
+                that_about . memory [ that_site ] . total  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
-                gop_connection.memory[that_site].free
-              = gop_connection.memory[that_site].total
-
-              * (  100 -   atoi(strstr(pointer_recv, " :")+3)  )
-              /    100;}
-
-
-
-
-
-            else if ( pointer_recv == strstr(pointer_recv, "Disk size        : ") ) {
-
-
-                gop_connection.disk[that_site].size = atoi(strstr(pointer_recv, " :")+3);}
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Memory used rate : " )  ) {
 
 
 
+              * strchr ( pointer_convent, '%' ) = '\0';
 
-            else if ( pointer_recv == strstr(pointer_recv, "Disk user rate   : ") ) {
+/*
 
-               *strchr(pointer_recv, '%')                        = '\0';
+ it goes wrong when rate send before the total
 
+*/
 
-                gop_connection.disk[that_site].available
-              = gop_connection.disk[that_site].size
+                that_about . memory [ that_site ] . free
 
-              * atoi(strstr(pointer_recv, " :")+3) / 100;}
+              = that_about . memory [ that_site ] . total
+
+              *     (  100 -   atoi (  strstr ( pointer_convent, " :" ) + 3  )  )     / 100;}
 
 
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Sound control    : ") ) {
 
-                gop_connection.sound[that_site].number_control   = atoi(strstr(pointer_recv, " :")+3);}
-
-
-            else if ( pointer_recv == strstr(pointer_recv, "Sound capture    : ") ) {
-
-                gop_connection.sound[that_site].number_capture  = atoi(strstr(pointer_recv, " :")+3);}
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Disk size        : " )  ) {
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Sound playback   : ") ) {
-
-                gop_connection.sound[that_site].number_playback = atoi(strstr(pointer_recv, " :")+3);}
+                that_about . disk [ that_site ] . size  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "Status           : ") ) {
 
-                pointer_recv = strstr(pointer_recv, " :")+3;
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Disk user rate   : " )  ) {
+
+
+              * strchr ( pointer_convent, '%' )  = '\0';
+
+
+/*
+
+ it went wrong when a message without a disk size 
+
+ we should note this rate
+
+*/
+
+                that_about . disk [ that_site ] . available
+
+              = that_about . disk [ that_site ] . size
+
+              *   atoi (  strstr ( pointer_convent, " :" ) + 3  )   / 100;}
+
+
+
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Sound control    : " )  ) {
+
+                that_about . sound [ that_site ] . number_control  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
+
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Sound capture    : " )  ) {
+
+                that_about . sound [ that_site ] . number_capture  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
+
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Sound playback   : " )  ) {
+
+                that_about . sound [ that_site ] . number_playback  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
+
+
+
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Status           : " )  ) {
+
+
+
+
+// prepare
+
+                pointer_convent  =  strstr ( pointer_convent, " :" ) + 3;
 
 
 // dog,
@@ -607,71 +641,83 @@ int load_about (
 
 
 
-                if      ( *pointer_recv == 'o' ) {
+                if      (  * pointer_convent == 'o'  ) {
 
-                    gop_connection.flag[that_site].dog    = 1;}
+                    that_about . flag [ that_site ] . dog  =  1;}
 
-                else if ( *pointer_recv == ' ' ) {
+                else if (  * pointer_convent == ' '  ) {
 
-                    gop_connection.flag[that_site].dog    = 0;}
-
-                pointer_recv++;
-                pointer_recv++;
+                    that_about . flag [ that_site ] . dog  = 0;}
 
 
-                if      ( *pointer_recv == 'o' ) {
-
-                    gop_connection.flag[that_site].connectted = 1;}
-
-                else if ( *pointer_recv == ' ' ) {
-
-                    gop_connection.flag[that_site].connectted = 0;}
-
-                pointer_recv++;
-                pointer_recv++;
+                pointer_convent ++;
+                pointer_convent ++;
 
 
-                if      ( *pointer_recv == 'o' ) {
+                if      (  * pointer_convent == 'o'  ) {
 
-                    gop_connection.flag[that_site].connector = 1;}
+                    that_about . flag [ that_site ] . connectted = 1;}
 
-                else if ( *pointer_recv == ' ' ) {
+                else if (  * pointer_convent == ' '  ) {
 
-                    gop_connection.flag[that_site].connector = 0;}
+                    that_about . flag [ that_site ] . connectted = 0;}
 
-                pointer_recv++;
-                pointer_recv++;
+                pointer_recv ++;
+                pointer_recv ++;
 
 
 
-                if      ( *pointer_recv == 'o' ) {
+                if      (  * pointer_convent == 'o'  ) {
 
-                    gop_connection.flag[that_site].sound  = 1;}
+                    that_about . flag [ that_site ] . connector = 1;}
 
-                else if ( *pointer_recv == ' ' ) {
+                else if (  * pointer_convent == ' '  ) {
 
-                    gop_connection.flag[that_site].sound  = 0;}
-
-                pointer_recv++;
-                pointer_recv++;
+                    that_about . flag [ that_site ] . connector = 0;}
 
 
-                if      ( *pointer_recv == 'o' ) {
-
-                    gop_connection.flag[that_site].deamon = 1;}
-
-                else if ( *pointer_recv == ' ' ) {
-
-                    gop_connection.flag[that_site].deamon = 0;}}
+                pointer_recv ++;
+                pointer_recv ++;
 
 
 
+                if      (  * pointer_convent == 'o'  ) {
 
-           *pointer_next = '\n';
+                    that_about . flag [ that_site ] . sound = 1;}
 
-            pointer_recv = pointer_next + 1;
+                else if (  * pointer_convent == ' '  ) {
 
-            pointer_next = strchr(pointer_recv, '\n' );}
+                    that_about . flag [ that_site ] . sound = 0;}
 
+
+                pointer_recv ++;
+                pointer_recv ++;
+
+
+
+                if      (  * pointer_convent == 'o'  ) {
+
+                    that_about . flag [ that_site ] . deamon = 1;}
+
+                else if (  * pointer_convent == ' '  ) {
+
+                    that_about . flag [ that_site ] . deamon = 0;}}
+
+
+
+
+// prepare for next loop
+
+          * pointer_next = '\n';
+
+            pointer_convent = pointer_next + 1;
+
+            pointer_next = strchr ( pointer_convent, '\n' );}
+
+
+
+
+
+// loop finished
 
         return 1;}
