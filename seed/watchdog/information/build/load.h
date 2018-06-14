@@ -2,34 +2,38 @@
 
 int load_about (
 
-                   gopi_about   that_about,
+                   gopi_about    that_about,
 
-                   char *     buffer_convents
+                   char *     pointer_convents
 
                ) {
 
 
 
+/*
+
+ the first loop set
+
+ pointer_convents note this path
+
+ pointer_next note the path last one at this line
+
+ maybe blank pointer
 
 
-// the first loop set
+ and noto network address
 
-// pointer_recive note this path
+ when read this, we read lines after it
 
-// pointer_next note the path last one at this line
+ include all of the address
 
-// maybe blank pointer
-
-
-// and noto network address
-
-// when read this, we read lines after this
-
-// all of the address
+*/
 
 
-               pointer_recv   =  strchr(pointer_recv, '\n' ) + 1;
-        char * pointer_next   =  strchr(pointer_recv, '\n' )    ;
+
+               pointer_convent   =  strchr ( pointer_convent, '\n' ) + 1;
+
+        char * pointer_next      =  strchr ( pointer_convent, '\n' )    ;
 
 
 
@@ -39,20 +43,32 @@ int load_about (
 // start the set
 
 
-// first we clean it
 
-//        clean_about ( gop_connection . about [ that_site ] );
+/*
+
+ first we clean it
+
+ this come soon
+
+*/
+
+//        clean_about ( that_about [ that_site ] );
 
 
 
-// we've recived the message
 
-// so it is running
+/*
+
+ we've recived the message
+
+ so it is running
 
 
-// maybe we add it to clean
+ maybe we add it to clean
 
-        gop_connection . about [ that_site ] . flag . main   =  1;
+*/
+
+        that_about [ that_site ] . flag . main   =  1;
 
 
 
