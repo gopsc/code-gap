@@ -220,12 +220,13 @@ int action_seed (
 
 
 
+/*
 
+ there is a file named action
 
-// there is a file named action
+ we auto add file in that
 
-// we auto add file in that
-
+*/
 
             char        buffer_dirent             [ 128 ];
 
@@ -261,7 +262,7 @@ int action_seed (
 
     action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/Linux.h"                   );
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variables.h"               );
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/flags.h"                   );
 
 
 
@@ -276,15 +277,18 @@ int action_seed (
 
 
 
+/*
 
-// put this to the last of  head and build list
+ put this to the last of  list of head and build
 
-// then it can use the struct of configuration to note configurations everywhere
+ then it can use the struct of configuration to note configurations everywhere
 
 
-// but if we don't have them in code, we set a head of blank to fill them
+ but if we don't have them in code, we set a head of blank to fill them
 
-//    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/variables.h"               );
+*/
+
+    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/configurations.h"         );
 
 
 

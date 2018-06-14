@@ -1,42 +1,16 @@
 
 
+/*
 
+ the configurations
 
+ used here and everywhere
 
+ maybe then we should put them every where
 
+ let it go
 
-// the flags
-//
-// used in gop_about in watchdog/information/build.h
-
-struct gopi_flag {
-
-    int    main      ;
-    int    deamon    ;
-
-    int    dog       ;
-    int    start     ;
-    int    show      ;
-
-    int    connector ;
-    int    connectted;
-
-    int    sound     ;
-    int    sound_show;
-    int    sound_save;};
-
-
-
-
-
-
-
-
-// the configurations
-
-// used here and everywhere
-
-// maybe then we should put them every where
+*/
 
 
 struct gopi_configurations {
@@ -47,7 +21,8 @@ struct gopi_configurations {
 // about the option u open the program
 
     int    number_options;
-    char*  buffer_options [ 32 ];
+    char * buffer_options [ 8 ];
+
 
 // about the file-system
 

@@ -21,7 +21,7 @@ int load_about (
  maybe blank pointer
 
 
- and noto network address
+ and note network address
 
  when read this, we read lines after it
 
@@ -57,6 +57,9 @@ int load_about (
 
 
 
+
+
+
 /*
 
  we've recived the message
@@ -65,6 +68,11 @@ int load_about (
 
 
  maybe we add it to clean
+
+
+ ok but not
+
+ sometimes we clean it for good and it haven't a connection
 
 */
 
@@ -76,18 +84,20 @@ int load_about (
 
 
 
+/*
+
+ if this not the end
+
+ we read this, to the pointer of next
+
+ and return it soon
 
 
-// if this not the end
+ if it is, we read this
 
-// we read this, to the pointer of next
+*/
 
-// and return soon
-
-
-// if it is, it read this
-
-        while (  strchr ( pointer_recv, '\n' )  !=  NULL  ) {
+        while (  strchr ( pointer_convent, '\n' )  !=  NULL  ) {
 
            * pointer_next = '\0';
 
@@ -95,13 +105,15 @@ int load_about (
 
 
 
+/*
 
+ went over the blank lines
 
-// went over the blank lines
+ there're several blank lines make us easy to see their type
 
-// there're several blank lines make us easy to see
+*/
 
-            if      (  0  ==  strcmp ( pointer_recv, "" )  ) {
+            if      (  0  ==  strcmp ( pointer_convent, "" )  ) {
 
                 ;}
 
@@ -109,17 +121,19 @@ int load_about (
 
 
 
+
 // read the name of that
 
-            else if (  pointer_recv == strstr ( pointer_recv, "Name             : " )  ) {
+            else if (  pointer_convent == strstr ( pointer_convent, "Name             : " )  ) {
+
 
 // it always start with a ':'
 
                 strcpy (
 
-                          gop_connection . about . system [ that_site ] . name,
+                          that_about . system [ that_site ] . name,
 
-                          strstr ( pointer_recv, " :" ) + 3
+                          strstr ( pointer_convent, " :" ) + 3
 
                        );}
 
@@ -128,12 +142,13 @@ int load_about (
 
 // read system name
 
-            else if (  pointer_recv == strstr ( pointer_recv, "System           : " )  ) {
+            else if (  pointer_convent == strstr ( pointer_convent, "System           : " )  ) {
+
 
                 strcpy (
-                          gop_connection . about . system [ that_site ] . system,
+                          that_about . system [ that_site ] . system,
 
-                          strstr ( pointer_recv, " :" ) + 3
+                          strstr ( pointer_convent, " :" ) + 3
 
                        );}
 
@@ -142,13 +157,14 @@ int load_about (
 
 // read user name
 
-            else if (  pointer_recv == strstr ( pointer_recv, "User             : " ) ) {
+            else if (  pointer_convent == strstr ( pointer_convent, "User             : " ) ) {
+
 
                 strcpy (
 
-                         gop_connection . about . system [ that_site ] . user,
+                         that_about . system [ that_site ] . user,
 
-                         strstr ( pointer_recv, " :" ) + 3
+                         strstr ( pointer_convent, " :" ) + 3
 
                        );}
 
@@ -164,18 +180,26 @@ int load_about (
 
 
 
-            else if (  pointer_recv == strstr ( pointer_recv, "IP               : " ) ) {
+            else if (  pointer_convent == strstr ( pointer_convent, "IP               : " ) ) {
+
+/*
+
+ why
+
+ network address alway start with a number of them
 
 
-// why
+ we used it to check address
 
-// network address alway start with a number of them
+ and could not to use it
 
+ and make it clear
 
+*/
 
-                gop_connection . about . network [ that_site ] . number
+                that_about . network [ that_site ] . number
 
-                =  atoi (  strstr ( pointer_recv, " :"  ) + 3 );
+                =  atoi (  strstr ( pointer_convent, " :"  ) + 3  );
 
 
 
@@ -190,13 +214,15 @@ int load_about (
 
 
 
+/*
 
+ return the last one
 
-// return the last one
+ we will read next lines
 
-// we will read next lines
+ change the convent we've read
 
-// change the convent we've read
+*/
 
                * pointer_next  =  '\n';
 
@@ -205,19 +231,25 @@ int load_about (
 
 // start with next line
 
-                 pointer_recv  =  strchr ( pointer_recv, '\n'  ) + 1;
+                 pointer_convent  =  strchr ( pointer_convent, '\n'  ) + 1;
 
 
 
-
-// to the last one
 
 /*
+
+ to the last one
+
+
    address  :  2
        name : address
        name : address
 
    ...
+
+
+ there're two blank type
+
 */
 
                  pointer_next  =  strstr ( pointer_next, "\n\n" );
@@ -233,6 +265,7 @@ int load_about (
 // prepare to read them
 
 
+
 // the number of the address we've read
 
                 int number_ip = 1;
@@ -240,21 +273,24 @@ int load_about (
 
 
 
-// this is to save the line we will read
 
-// may null happened
+/*
 
-// the pointer maybe last
+ this is to save the line we will read
+
+ may null happened
+
+ the pointer maybe last
 
 
-// pointer of network will be used for return when this happened
+ pointer of network will be used for return when this happened
 
 
+ they has name and address one line
 
-// this has name and address one line
+ and use this to find the path
 
-// and use this to find the path
-
+*/
 
                 char * pointer_network;
 
@@ -262,38 +298,46 @@ int load_about (
 
 
 
+/*
 
+ we read them line by line
 
-// we read them line by line
+ to the blank line
 
-// to the blank line
+ then this is the last one
 
-// then this is the last one
-
+*/
 
                 for (
-                                       pointer_network    =           pointer_recv;
+                                       pointer_network    =           pointer_convent;
                         strcmp ( "\n", pointer_network ) !=  0 ;
-                                       pointer_network    =  strchr ( pointer_recv, '\n' )
+                                       pointer_network    =  strchr ( pointer_convent, '\n' )
                     ) {
 
 
+/*
 
-// the pointer of network  we use it to  miss the null happened
-
-
-// after first set, we fresh the pointer of network
-
-// but pointer we've read not
+ the pointer of network  we use it to  miss the null happened
 
 
-// if not, it isn't first line
+ we fresh it first out of the loop
 
-// we fresh it
+ after first set, we fresh the pointer of network
+
+ in the loop
 
 
+ but pointer we've read we've used  not
 
-                    if (  pointer_recv  !=  pointer_network  ) {
+
+ if not, it isn't first line
+
+ we fresh it
+
+*/
+
+
+                    if (  pointer_convent  !=  pointer_network  ) {
 
 
 //  jump over the '\n'
@@ -303,7 +347,7 @@ int load_about (
 
 // fresh the pointer we've read
 
-                        pointer_recv     =  pointer_network;}
+                        pointer_convent  =  pointer_network;}
 
 
 
@@ -321,17 +365,20 @@ int load_about (
 // start here
 
 
-// we should jump over the blank charactor
-
 /*
+
+ we should jump over the blank charactor
+
+
          name : address
     name-long : address
+
 */
 
 
-                  while (  * pointer_recv  ==  ' ' )  ) {
+                  while (  * pointer_convent  ==  ' ' )  ) {
 
-                      pointer_recv ++;
+                      pointer_convent ++;
 
 
 
@@ -339,7 +386,7 @@ int load_about (
 
 // to here
 
-                    pointer_network = strstr (  pointer_recv, " : " );
+                    pointer_network = strstr (  pointer_convent, " : " );
 
                     pointer_network =  '\0';
 
@@ -349,9 +396,9 @@ int load_about (
 
                     strcpy(
 
-                            gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 1 ],
+                            that_about . network [ that_site ] . ip [ number_ip ] [ 1 ],
 
-                            pointer_recv
+                            pointer_convent
 
                           );
 
@@ -370,12 +417,22 @@ int load_about (
 
 // the address start here
 
-                    pointer_recv  =  strstr ( pointer_recv, " : " + 3 );
+
+
+// the pointer of network  point  ' : '
+
+                    pointer_convent  =  pointer_network + 3 );
+
+
 
 
 // to here
 
-                    pointer_network  =  strchr ( pointer_recv, '\n' );
+
+
+// the last one of this line
+
+                    pointer_network  =  strchr ( pointer_convent, '\n' );
 
                   * pointer_network  =  '\0';
 
@@ -387,11 +444,13 @@ int load_about (
 
                     strcpy(
 
-                            gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 2 ],
+                            that_about . network [ that_site ] . ip [ number_ip ] [ 2 ],
 
-                            pointer_recv
+                            pointer_convent
 
                           );
+
+
 
 // return it
 
@@ -400,35 +459,51 @@ int load_about (
 
 
 
+/*
 
-// don't need to, because we have fresh this when we jumped to the address' beginning
+ don't need to do this
 
-//                    pointer_recv = pointer_recv + 1;
+ because we have fresh this when we had jumped to the address' beginning
+
+*/
+
+//                    pointer_convent = pointer_convent + 1;
 
 
 
-// plus it
+
+// plus this count
 
                     number_ip ++;}
 
 
 
 
-// clean it
+/*
 
-// we use them in the watchdog/information soon
+ read address it is over
+
+ clean it
+
+ we clean them in  watchdog/information/build/clean.h  soon
+
+*/
 
 /*
                 for ( ; number_ip <= 32; number_ip ++ ) {
 
-                    if   ( strcmp ( gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 2 ], "") != 0 ) {
+                    if   ( strcmp ( that_about . network [ that_site ] . ip [ number_ip ] [ 2 ], "") != 0 ) {
 
-                        strcpy (  gop_connection . about . network [ that_site ] . ip [ number_ip ] [ 2 ], ""  );}
+                        strcpy (  that_about . network [ that_site ] . ip [ number_ip ] [ 2 ], ""  );}
 
                     else {
 
                         break;}}
 */
+
+
+
+// read address number and them it is over
 
                 }
 
@@ -500,6 +575,7 @@ int load_about (
               = gop_connection.disk[that_site].size
 
               * atoi(strstr(pointer_recv, " :")+3) / 100;}
+
 
 
 

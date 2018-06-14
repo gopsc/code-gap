@@ -7,18 +7,33 @@ void * gop_dog ( void * what ) {
 
 
 
-// some values will be a number used by another program
-//
-//   so we clean it first
+/*
+
+ some values will be a number used by another program
+
+   so we clean it first
+
+*/
 
     clean_this ();
 
 
 
 
+/*
 
-// Load configure from:
-// {path}/{name}/configure
+ Load configure from:
+
+ {path}/{name}/configure
+
+
+ first we load configurations without flag of main
+
+ cause it is empty at first
+
+ and this is the beginning
+
+*/
 
     load_configure ();
 
