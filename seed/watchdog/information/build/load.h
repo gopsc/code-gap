@@ -4,7 +4,7 @@ int load_about (
 
                    gopi_about    that_about,
 
-                   char *     pointer_convents
+                   char *     pointer_convent
 
                ) {
 
@@ -14,7 +14,7 @@ int load_about (
 
  the first loop set
 
- pointer_convents note this path
+ pointer_convent note this path
 
  pointer_next note the path last one at this line
 
@@ -23,9 +23,9 @@ int load_about (
 
  and note network address
 
- when read this, we read lines after it
+ when read this, we read lines after this line
 
- include all of the address
+ read the address
 
 */
 

@@ -6,21 +6,26 @@ int load_about_mate (
 
                               gopi_about   that_about,
 
-                              char *     buffer_convents
+                              char *     buffer_convent
 
                           ) {
 
 
+
+
+
+
 // we use malloc to do this soon
 
+//      reallac ( pointer_about, number_mate + 1 );
 
 
 
 
 
 
-              pointer_recv   = strchr(pointer_recv, '\n' ) + 1;
-        char* pointer_next   = strchr(pointer_recv, '\n' )    ;
+               pointer_convent = strchr ( pointer_convent, '\n' ) + 1;
+        char * pointer_next    = strchr ( pointer_convent, '\n' )    ;
 
 
 
