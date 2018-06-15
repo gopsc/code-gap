@@ -16,7 +16,7 @@ int load_about (
 
  pointer_convent note this path
 
- pointer_next note the path last one at this line
+ pointer_next note the path last one of this line
 
  maybe blank pointer
 
@@ -31,7 +31,16 @@ int load_about (
 
 
 
+
+
+// start at next line
+
                pointer_convent   =  strchr ( pointer_convent, '\n' ) + 1;
+
+
+
+
+// to the one last of this line
 
         char * pointer_next      =  strchr ( pointer_convent, '\n' )    ;
 
@@ -86,7 +95,7 @@ int load_about (
 
 /*
 
- if this not the end
+ if this isn't the end
 
  we read this, to the pointer of next
 

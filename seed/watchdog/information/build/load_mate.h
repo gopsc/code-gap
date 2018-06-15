@@ -15,7 +15,18 @@ int load_about_mate (
 
 
 
-// we use malloc to do this soon
+
+
+
+
+/*
+
+ we use malloc to do this soon
+
+ then we can know about mates'
+
+*/
+
 
 //      reallac ( pointer_about, number_mate + 1 );
 
@@ -24,10 +35,38 @@ int load_about_mate (
 
 
 
+
+
+/*
+
+ start at the first line
+
+
+ to the last one of this line
+
+*/
+
                pointer_convent = strchr ( pointer_convent, '\n' ) + 1;
+
         char * pointer_next    = strchr ( pointer_convent, '\n' )    ;
 
 
+
+
+
+
+
+
+
+/*
+
+ think about it
+
+ soon we use realloc
+
+ and we could know about mates'
+
+*/
 
 
         int number_cores;
@@ -39,36 +78,138 @@ int load_about_mate (
         int number_memory_total;
         int number_memory_rate;
 
-        gop_connection.flag[that_site].main   = 1;
 
 
 
 
-        while ( strchr(pointer_recv, '\n') != NULL ) {
-
-           *pointer_next = '\0';
 
 
-            if      ( 0            == strcmp(pointer_recv, "") ) {
+/*
+
+ ok u got about that
+
+ so u can know it's running
+
+*/
+
+
+
+
+        that_about . flag [ that_site ] . main  =  1;
+
+
+
+
+
+
+
+/*
+
+ if this isn't the last line
+
+ we read to it
+
+
+ if this not
+
+ we read it
+
+*/
+
+        while  (  strchr ( pointer_convent, '\n' )  !=  NULL  ) {
+
+          * pointer_next  =  '\0';
+
+
+
+
+
+
+
+
+
+// we jump over the blank one
+
+
+            if      (  0  ==  strcmp ( pointer_convent, "" )  ) {
 
                 ;}
 
-            else if ( pointer_recv == strstr(pointer_recv, "Name             : ") ) {
-
-                strcat(gop_connection.system[that_site].name,   ","                         );
-                strcat(gop_connection.system[that_site].name,   strstr(pointer_recv, " :")+3);}
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "System           : ") ) {
+/*
 
-                strcat(gop_connection.system[that_site].system, ","                         );
-                strcat(gop_connection.system[that_site].system, strstr(pointer_recv, " :")+3);}
+ we read this mate's name
+
+ from that
+
+*/
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "User             : ") ) {
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Name             : " )  ) {
 
-                strcat(gop_connection.system[that_site].user,   ","                         );
-                strcat(gop_connection.system[that_site].user,   strstr(pointer_recv, " :")+3);}
+
+/*
+
+ this and it's mates
+
+ could work together
+
+*/
+
+                strcat ( that_about . system [ that_site ] . name,   "," );
+
+                strcat ( that_about . system [ that_site ] . name,   strstr ( pointer_convent, " :" ) + 3 );}
+
+
+
+
+
+
+// we read the system that use
+
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "System           : ") ) {
+
+
+                strcat ( that_about . system [ that_site ] . system, "," );
+
+                strcat ( that_about . system [ that_site ] . system, strstr ( pointer_convent, " :" ) + 3  );}
+
+
+
+
+/*
+
+ we read the user of that
+
+
+ for raspbrrypi it is root, dietpi, everyone like gop
+
+ for arduino or stm32, gr-citrus
+
+ that is,,
+
+*/
+
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "User             : " )  ) {
+
+
+                strcat ( that_about . system [ that_site ] . user,   ","                         );
+
+                strcat ( that_about . system [ that_site ] . user,   strstr ( pointer_convent, " :" ) + 3  );}
+
+
+
+
+
+
+
+
+
+
+
+// this is a loop in loop
 
 
             else if ( pointer_recv == strstr(pointer_recv, "IP               : ") ) {
