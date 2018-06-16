@@ -11,11 +11,13 @@ int judge_message_information (
 
 
 
-// PS. the varitable 'pointer_recv' was selected before
+/*
 
-//        so there is one piece of command there.
+ PS. the varitable 'pointer_recv' was selected before
 
+        so there is one piece of command there.
 
+*/
 
 
 
@@ -41,24 +43,31 @@ int judge_message_information (
        ) {
 
 
+/*
 
-// if u don't want to do anythong,
+ if u don't want to do anythong,
 
-//  & so do anothers
+  & so do anothers
 
-// just keep this relationship
+ just keep this relationship
 
+*/
 
-
-
-
-// and we don't need to add the ask, we ask if we don't thought out
 
 
 /*
+
+ and we don't need to add the ask, we ask if we don't thought out
+
+ but it's not sames
+
+*/
+
+
+
         if (  strcmp ( gop_connection.command [ that_site ], "" )  ==  0 ) {
 
-*/            strcat ( buffer_send, "Who is that now?" );}
+            strcat ( buffer_send, "Who is that now?" );}
 
 
 
@@ -83,10 +92,28 @@ int judge_message_information (
     else if  (  strstr ( pointer_recv, "Information of host." )  ==  pointer_recv   ) {
 
 
+/*
 
-// we use 'information of it' & 'information of mate' next big change
+ we use 'information of it' & 'information of mate' next big change
 
-// and we move it to it's mother site
+ and we move it to it's mother site
+
+*/
+
+
+
+
+
+/*
+
+ moved from watchdog/information/load.h
+
+ so we can send a complete content
+
+*/
+
+
+        pointer_recv   =  strchr ( pointer_recv, '\n' ) + 1;
 
 
 
@@ -104,6 +131,11 @@ int judge_message_information (
 
 
     else if ( strstr(pointer_recv, "Information of guest.") == pointer_recv ) {
+
+
+
+
+        pointer_recv   =  strchr ( pointer_recv, '\n' ) + 1;
 
 
         load_about_mate ( gop_network . about [ that_site ], pointer_recv );
@@ -245,30 +277,4 @@ int judge_message_information (
 
 // we will add this if they don't have a repeat
 
-//        strcat ( buffer_send, "Who is that now?" );
-
-
-
-// maybe we print it out
-
-// i want a box to show it, one line one time
-
-        output_print ( "string", "network " );
-        output_print ( "int",    ( char * ) & that_site  );
-        output_print ( "string", " got a message couldn't understand \n" );
-
-
-
-
-
-        return 0;}
-
-
-
-
-
-
-
-// something goes in heres
-
-    return 0;}
+//        strcat ( buff

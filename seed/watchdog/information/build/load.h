@@ -4,7 +4,7 @@ int load_about (
 
                    gopi_about    that_about,
 
-                   char *     pointer_convent
+                   char *     pointer_content
 
                ) {
 
@@ -14,7 +14,7 @@ int load_about (
 
  the first loop set
 
- pointer_convent note this path
+ pointer_content note this path
 
  pointer_next note the path last one of this line
 
@@ -33,9 +33,18 @@ int load_about (
 
 
 
-// start at next line
+/*
 
-               pointer_convent   =  strchr ( pointer_convent, '\n' ) + 1;
+ start at next line
+
+
+ move it to network/message/judge/information.h
+
+ so we can recive the complete content
+
+*/
+
+//               pointer_convent   =  strchr ( pointer_convent, '\n' ) + 1;
 
 
 
@@ -43,6 +52,16 @@ int load_about (
 // to the one last of this line
 
         char * pointer_next      =  strchr ( pointer_convent, '\n' )    ;
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -118,7 +137,7 @@ int load_about (
 
  went over the blank lines
 
- there're several blank lines make us easy to see their type
+ there're blank lines make us easy to see them
 
 */
 

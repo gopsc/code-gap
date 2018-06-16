@@ -6,7 +6,7 @@ int load_about_mate (
 
                               gopi_about   that_about,
 
-                              char *     buffer_convent
+                              char *     buffer_content
 
                           ) {
 
@@ -23,7 +23,10 @@ int load_about_mate (
 
  we use malloc to do this soon
 
- then we can know about mates'
+ then we can know about mates
+
+
+ use 'mate' to note its ship
 
 */
 
@@ -37,22 +40,23 @@ int load_about_mate (
 
 
 
+
+
 /*
 
  start at the first line
 
-
  to the last one of this line
+
+
+ and move startting set to the network/message/judge/informastion.h
 
 */
 
-               pointer_convent = strchr ( pointer_convent, '\n' ) + 1;
 
-        char * pointer_next    = strchr ( pointer_convent, '\n' )    ;
+//               pointer_convent = strchr ( pointer_convent, '\n' ) + 1;
 
-
-
-
+        char * pointer_next = strchr ( pointer_convent, '\n' ) ;
 
 
 
@@ -64,18 +68,32 @@ int load_about_mate (
 
  soon we use realloc
 
- and we could know about mates'
+ and  we could know about mates
+
+
+ then we use 'rate' to note them
+
+ then we could not see a mass
+
+ about size is still zero
+
+ and we know its rate
 
 */
 
 
         int number_cores;
+
         int number_frequency;
 
+
         int number_disk_size;
+
         int number_disk_rate;
 
+
         int number_memory_total;
+
         int number_memory_rate;
 
 
@@ -110,7 +128,7 @@ int load_about_mate (
  we read to it
 
 
- if this not
+ if this is the last one of this line
 
  we read it
 
@@ -128,8 +146,15 @@ int load_about_mate (
 
 
 
-// we jump over the blank one
 
+
+/*
+
+ we jump over the blank one
+
+ they help us understand more easily
+
+*/
 
             if      (  0  ==  strcmp ( pointer_convent, "" )  ) {
 
@@ -166,7 +191,7 @@ int load_about_mate (
 
 
 
-// we read the system that use
+// we read the system it used
 
 
             else if  (  pointer_convent  ==  strstr ( pointer_convent, "System           : ") ) {
@@ -179,16 +204,18 @@ int load_about_mate (
 
 
 
+
 /*
 
  we read the user of that
 
 
- for raspbrrypi it is root, dietpi, everyone like gop
+ for raspbrrypi it is root, dietpi, gop ...
 
  for arduino or stm32, gr-citrus
 
  that is,,
+
 
 */
 
@@ -212,38 +239,87 @@ int load_about_mate (
 // this is a loop in loop
 
 
-            else if ( pointer_recv == strstr(pointer_recv, "IP               : ") ) {
-
-
-
-                gop_connection.network[that_site].number += atoi(strstr(pointer_recv, " :" )+3);
-
-
-
-               *pointer_next = '\n';
-                pointer_recv = strchr(pointer_recv, '\n'  ) +1;
-                pointer_next = strstr(pointer_next, "\n\n") +1;
-               *pointer_next = '\0';
+            else if  (  pointer_convent  ==  strstr ( pointer_convent, "IP               : " )  ) {
 
 
 
 
 
-// This is the index of
-// where u arrived
+// we add them to its address
+
+
+                that_about . network [ that_site ] . number
+
+             += atoi (  strstr ( pointer_convent, " :" ) + 3  );
+
+
+
+
+
+
+
+
+/*
+
+ return it
+
+ we are going to read the lines
+
+ after this line
+
+*/
+
+              * pointer_next = '\n';
+
+
+
+
+// start at next line
+
+                pointer_convent = strchr ( pointer_convent, '\n'  ) + 1;
+
+
+
+// to the last of address
+
+                pointer_next    = strstr ( pointer_next, "\n\n"   ) + 1;
+
+              * pointer_next = '\0';
+
+
+
+
+
+
+
+
+
+/*
+
+ This is the index of
+
+ where u noted
+
+*/
+
 
                 int number_ip = 1;
 
 
 
-// Count the ip u've gottens
+
+
+
+
+// Count the ip we have noted
+
 
                 int i;
 
-                for ( i=1; i<=32; i++ ) {
+                for (  i = 1; i <= 32; i ++  ) {
 
 
-                    if ( strcmp(gop_connection.network[that_site].ip[number_ip][2], "") == 0 ) {
+                    if  (  strcmp ( that_about . network [ that_site ] . ip [ number_ip ] [2], "") == 0 ) {
 
                         break;}
 
@@ -254,35 +330,69 @@ int load_about_mate (
 
 
 
-// The first  ip is local,
-// the second ip is blank
-//  in the final line
-//
-// and just can
-//     like a local ip
+/*
+
+ The first  ip is local,
+
+ the second ip is blank
+
+  in the final line
+
+ and just can
+
+     like a local ip
+
+
+ termux may have not local ip
+
+*/
+
 
                 number_ip ++;
 
 
 
-// Copy the  new ip
-//   in this new information
+/*
 
-                char* pointer_network;
+ Copy new ip
+
+
+ we use this pointer to note path
+
+ could be null
+
+
+ then we could not lost the path
+
+*/
+
+                char * pointer_network;
 
                 for (
 
-                                      pointer_network    =        pointer_recv;
-                        strcmp( "\n", pointer_network ) != 0                  ;
-                                      pointer_network    = strchr(pointer_recv, '\n')
+                                       pointer_network     =          pointer_convent;
+
+                        strcmp ( "\n", pointer_network )  != 0 ;
+
+                                       pointer_network     = strchr ( pointer_convent, '\n')
 
                     ) {
 
 
-// After the first loop,
-//  it plus every time.
 
-                    if ( pointer_recv != pointer_network ) {
+/*
+
+ After the first loop,
+
+  it plus every time.
+
+
+ we set it before so they are same at first
+
+*/
+
+
+                    if  (  pointer_convent  !=  pointer_network  ) {
 
                         pointer_network = pointer_network + 1;}
 

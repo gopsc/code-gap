@@ -31,10 +31,14 @@ struct gopi_connection {
 */
 
 
+/*
 
-// we don't use this we use one include this
-//
-// :D
+ we don't use this we use one include this
+
+ :D
+
+*/
+
 /*
     struct gopi_system  system    [4];
     struct gopi_network network   [4];
@@ -46,7 +50,22 @@ struct gopi_connection {
 */
 
 
+
+
+
     struct gopi_about   about [ 4 ];
+
+
+
+/*
+
+ then we could add lots of mates
+
+*/
+
+//    * gopi_about  about [ 4 ];
+
+
 
 
 
