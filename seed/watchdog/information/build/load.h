@@ -44,14 +44,15 @@ int load_about (
 
 */
 
-//               pointer_convent   =  strchr ( pointer_convent, '\n' ) + 1;
+//               pointer_content   =  strchr ( pointer_content, '\n' ) + 1;
 
 
 
 
-// to the one last of this line
 
-        char * pointer_next      =  strchr ( pointer_convent, '\n' )    ;
+// to the one next of this line
+
+        char * pointer_next      =  strchr ( pointer_content, '\n' )    ;
 
 
 
@@ -110,6 +111,21 @@ int load_about (
 
 
 
+/*
+
+ loop it line by line
+
+*/
+
+
+        while (  strchr ( pointer_content, '\n' )  !=  NULL  ) {
+
+
+
+
+
+
+
 
 
 /*
@@ -125,9 +141,12 @@ int load_about (
 
 */
 
-        while (  strchr ( pointer_convent, '\n' )  !=  NULL  ) {
 
            * pointer_next = '\0';
+
+
+
+
 
 
 
@@ -137,11 +156,11 @@ int load_about (
 
  went over the blank lines
 
- there're blank lines make us easy to see them
+ there're blank lines let it easy to see them
 
 */
 
-            if      (  0  ==  strcmp ( pointer_convent, "" )  ) {
+            if      (  0  ==  strcmp ( pointer_content, "" )  ) {
 
                 ;}
 
@@ -152,7 +171,7 @@ int load_about (
 
 // read the name of that
 
-            else if (  pointer_convent == strstr ( pointer_convent, "Name             : " )  ) {
+            else if (  pointer_content  ==  strstr ( pointer_content, "Name             : " )  ) {
 
 
 // it always start with a ':'
@@ -161,7 +180,7 @@ int load_about (
 
                           that_about . system [ that_site ] . name,
 
-                          strstr ( pointer_convent, " :" ) + 3
+                          strstr ( pointer_content, " :" ) + 3
 
                        );}
 
@@ -170,13 +189,13 @@ int load_about (
 
 // read system name
 
-            else if (  pointer_convent == strstr ( pointer_convent, "System           : " )  ) {
+            else if (  pointer_content == strstr ( pointer_content, "System           : " )  ) {
 
 
                 strcpy (
                           that_about . system [ that_site ] . system,
 
-                          strstr ( pointer_convent, " :" ) + 3
+                          strstr ( pointer_content, " :" ) + 3
 
                        );}
 
@@ -185,14 +204,14 @@ int load_about (
 
 // read user name
 
-            else if (  pointer_convent == strstr ( pointer_convent, "User             : " ) ) {
+            else if (  pointer_content == strstr ( pointer_content, "User             : " ) ) {
 
 
                 strcpy (
 
                          that_about . system [ that_site ] . user,
 
-                         strstr ( pointer_convent, " :" ) + 3
+                         strstr ( pointer_content, " :" ) + 3
 
                        );}
 
@@ -208,7 +227,7 @@ int load_about (
 
 
 
-            else if (  pointer_convent == strstr ( pointer_convent, "IP               : " ) ) {
+            else if (  pointer_content == strstr ( pointer_content, "IP               : " ) ) {
 
 /*
 
@@ -227,7 +246,7 @@ int load_about (
 
                 that_about . network [ that_site ] . number
 
-                =  atoi (  strstr ( pointer_convent, " :"  ) + 3  );
+                =  atoi (  strstr ( pointer_content, " :"  ) + 3  );
 
 
 
@@ -248,7 +267,7 @@ int load_about (
 
  we will read next lines
 
- change the convent we've read
+ change the content we've read
 
 */
 
@@ -259,7 +278,7 @@ int load_about (
 
 // start with next line
 
-                 pointer_convent  =  strchr ( pointer_convent, '\n'  ) + 1;
+                 pointer_content  =  strchr ( pointer_content, '\n'  ) + 1;
 
 
 
@@ -288,13 +307,14 @@ int load_about (
 
 
 
+/*
+
+ prepare to read them
 
 
-// prepare to read them
+ the number of the address we've read
 
-
-
-// the number of the address we've read
+*/
 
                 int number_ip = 1;
 
@@ -326,6 +346,8 @@ int load_about (
 
 
 
+
+
 /*
 
  we read them line by line
@@ -337,9 +359,9 @@ int load_about (
 */
 
                 for (
-                                       pointer_network    =           pointer_convent;
+                                       pointer_network    =           pointer_content;
                         strcmp ( "\n", pointer_network ) !=  0 ;
-                                       pointer_network    =  strchr ( pointer_convent, '\n' )
+                                       pointer_network    =  strchr ( pointer_content, '\n' )
                     ) {
 
 
@@ -348,7 +370,8 @@ int load_about (
  the pointer of network  we use it to  miss the null happened
 
 
- we fresh it first out of the loop
+ we fresh it first  out of the loop
+
 
  after first set, we fresh the pointer of network
 
@@ -365,7 +388,7 @@ int load_about (
 */
 
 
-                    if (  pointer_convent  !=  pointer_network  ) {
+                    if (  pointer_content  !=  pointer_network  ) {
 
 
 //  jump over the '\n'
@@ -375,7 +398,7 @@ int load_about (
 
 // fresh the pointer we've read
 
-                        pointer_convent  =  pointer_network;}
+                        pointer_content  =  pointer_network;}
 
 
 
@@ -404,9 +427,9 @@ int load_about (
 */
 
 
-                  while (  * pointer_convent  ==  ' ' )  ) {
+                  while (  * pointer_content  ==  ' ' )  ) {
 
-                      pointer_convent ++;
+                      pointer_content ++;
 
 
 
@@ -414,7 +437,7 @@ int load_about (
 
 // to here
 
-                    pointer_network = strstr (  pointer_convent, " : " );
+                    pointer_network = strstr (  pointer_content, " : " );
 
                     pointer_network =  '\0';
 
@@ -422,13 +445,13 @@ int load_about (
 
 // note it
 
-                    strcpy(
+                    strcpy (
 
-                            that_about . network [ that_site ] . ip [ number_ip ] [ 1 ],
+                             that_about . network [ that_site ] . ip [ number_ip ] [ 1 ],
 
-                            pointer_convent
+                             pointer_content
 
-                          );
+                           );
 
 // return it
 
@@ -447,9 +470,14 @@ int load_about (
 
 
 
-// the pointer of network  point  ' : '
+/*
 
-                    pointer_convent  =  pointer_network + 3 );
+ the pointer of network  point  ' : '
+
+ start at after that
+
+*/
+                    pointer_content  =  pointer_network + 3 );
 
 
 
@@ -457,10 +485,13 @@ int load_about (
 // to here
 
 
+/*
 
-// the last one of this line
+ the last one of this line
 
-                    pointer_network  =  strchr ( pointer_convent, '\n' );
+*/
+
+                    pointer_network  =  strchr ( pointer_content, '\n' );
 
                   * pointer_network  =  '\0';
 
@@ -474,7 +505,7 @@ int load_about (
 
                             that_about . network [ that_site ] . ip [ number_ip ] [ 2 ],
 
-                            pointer_convent
+                            pointer_content
 
                           );
 
@@ -489,13 +520,15 @@ int load_about (
 
 /*
 
- don't need to do this
+ don't needto do this
 
  because we have fresh this when we had jumped to the address' beginning
 
 */
 
-//                    pointer_convent = pointer_convent + 1;
+//                    pointer_content = pointer_content + 1;
+
+
 
 
 
@@ -511,7 +544,7 @@ int load_about (
 
  read address it is over
 
- clean it
+ clean it within blank
 
  we clean them in  watchdog/information/build/clean.h  soon
 
@@ -531,7 +564,7 @@ int load_about (
 
 
 
-// read address number and them it is over
+// read address and their number it is over
 
                 }
 
@@ -545,47 +578,67 @@ int load_about (
 
 // about cpu
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU cores        : " )  ) {
+            else if  (  pointer_content  ==  strstr ( pointer_content, "CPU cores        : " )  ) {
 
-                that_about . cpu [ that_site ] . cores  =  atoi (  strstr ( pointer_convent, " :" )  + 3  );}
-
-
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU frequency    : " )  ) {
-
-                that_about . cpu [ that_site ] . frequency  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
+                that_about . cpu [ that_site ] . cores  =  atoi (  strstr ( pointer_content, " :" )  + 3  );}
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU temperature  : " )  ) {
-
-                that_about . cpu [ that_site ] . temperature  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "CPU rate         : " )  ) {
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "CPU frequency    : " )  ) {
+
+                that_about . cpu [ that_site ] . frequency  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_contsent, "CPU temperature  : " )  ) {
+
+                that_about . cpu [ that_site ] . temperature  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "CPU rate         : " )  ) {
 
 /*
 
- maybe there's a little \0
+ maybe there's a little %
 
  and we could see
 
+
+ we read to it
+
+ and jump over after this
+
 */
 
-              * strchr ( pointer_convent, '%' ) = '\0';
+              * strchr ( pointer_content, '%' ) = '\0';
 
-                that_about . cpu [ that_site ] . rate  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
-
-
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Memory total     : " )  ) {
-
-
-                that_about . memory [ that_site ] . total  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
-
-
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Memory used rate : " )  ) {
+                that_about . cpu [ that_site ] . rate  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
 
 
 
-              * strchr ( pointer_convent, '%' ) = '\0';
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Memory total     : " )  ) {
+
+
+                that_about . memory [ that_site ] . total  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Memory used rate : " )  ) {
+
+
+
+              * strchr ( pointer_content, '%' ) = '\0';
 
 /*
 
@@ -597,29 +650,34 @@ int load_about (
 
               = that_about . memory [ that_site ] . total
 
-              *     (  100 -   atoi (  strstr ( pointer_convent, " :" ) + 3  )  )     / 100;}
+              *     (  100 -   atoi (  strstr ( pointer_content, " :" ) + 3  )  )     / 100;}
 
 
 
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Disk size        : " )  ) {
-
-
-                that_about . disk [ that_site ] . size  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
 
 
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Disk user rate   : " )  ) {
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Disk size        : " )  ) {
 
 
-              * strchr ( pointer_convent, '%' )  = '\0';
+                that_about . disk [ that_site ] . size  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Disk user rate   : " )  ) {
+
+
+              * strchr ( pointer_content, '%' )  = '\0';
 
 
 /*
 
- it went wrong when a message without a disk size 
+ it went wrong when a message dosen't bring a disk size 
 
  we should note this rate
 
@@ -629,118 +687,137 @@ int load_about (
 
               = that_about . disk [ that_site ] . size
 
-              *   atoi (  strstr ( pointer_convent, " :" ) + 3  )   / 100;}
+              *   atoi (  strstr ( pointer_content, " :" ) + 3  )   / 100;}
 
 
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Sound control    : " )  ) {
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Sound control    : " )  ) {
 
-                that_about . sound [ that_site ] . number_control  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
-
-
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Sound capture    : " )  ) {
-
-                that_about . sound [ that_site ] . number_capture  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
-
-
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Sound playback   : " )  ) {
-
-                that_about . sound [ that_site ] . number_playback  =  atoi (  strstr ( pointer_convent, " :" ) + 3  );}
+                that_about . sound [ that_site ] . number_control  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
 
 
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Status           : " )  ) {
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Sound capture    : " )  ) {
+
+                that_about . sound [ that_site ] . number_capture  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Sound playback   : " )  ) {
+
+                that_about . sound [ that_site ] . number_playback  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_content  ==  strstr ( pointer_content, "Status           : " )  ) {
 
 
 
 
 // prepare
 
-                pointer_convent  =  strstr ( pointer_convent, " :" ) + 3;
+                pointer_content  =  strstr ( pointer_content, " :" ) + 3;
 
 
-// dog,
-// server,
-// client,
-// sound,
-// daemon
+/*
 
+ dog,
+ server,
+ client,
+ sound,
+ daemon
 
+*/
 
-                if      (  * pointer_convent == 'o'  ) {
+                if      (  * pointer_content == 'o'  ) {
 
                     that_about . flag [ that_site ] . dog  =  1;}
 
-                else if (  * pointer_convent == ' '  ) {
+                else if (  * pointer_content == ' '  ) {
 
                     that_about . flag [ that_site ] . dog  = 0;}
 
 
-                pointer_convent ++;
-                pointer_convent ++;
+                pointer_content ++;
+                pointer_content ++;
 
 
-                if      (  * pointer_convent == 'o'  ) {
+
+
+                if      (  * pointer_content == 'o'  ) {
 
                     that_about . flag [ that_site ] . connectted = 1;}
 
-                else if (  * pointer_convent == ' '  ) {
+                else if (  * pointer_content == ' '  ) {
 
                     that_about . flag [ that_site ] . connectted = 0;}
 
-                pointer_recv ++;
-                pointer_recv ++;
+                pointer_content ++;
+                pointer_content ++;
 
 
 
-                if      (  * pointer_convent == 'o'  ) {
+
+                if      (  * pointer_content == 'o'  ) {
 
                     that_about . flag [ that_site ] . connector = 1;}
 
-                else if (  * pointer_convent == ' '  ) {
+                else if (  * pointer_content == ' '  ) {
 
                     that_about . flag [ that_site ] . connector = 0;}
 
 
-                pointer_recv ++;
-                pointer_recv ++;
+                pointer_content ++;
+                pointer_content ++;
 
 
 
-                if      (  * pointer_convent == 'o'  ) {
+
+                if      (  * pointer_content == 'o'  ) {
 
                     that_about . flag [ that_site ] . sound = 1;}
 
-                else if (  * pointer_convent == ' '  ) {
+                else if (  * pointer_content == ' '  ) {
 
                     that_about . flag [ that_site ] . sound = 0;}
 
 
-                pointer_recv ++;
-                pointer_recv ++;
+                pointer_content ++;
+                pointer_content ++;
 
 
 
-                if      (  * pointer_convent == 'o'  ) {
+
+                if      (  * pointer_content == 'o'  ) {
 
                     that_about . flag [ that_site ] . deamon = 1;}
 
-                else if (  * pointer_convent == ' '  ) {
+                else if (  * pointer_content == ' '  ) {
 
                     that_about . flag [ that_site ] . deamon = 0;}}
 
 
 
+/*
 
-// prepare for next loop
+ prepare for next loop
+
+ we move it to the network/message/judge/information.h
+
+*/
 
           * pointer_next = '\n';
 
-            pointer_convent = pointer_next + 1;
+            pointer_content = pointer_next + 1;
 
-            pointer_next = strchr ( pointer_convent, '\n' );}
+            pointer_next = strchr ( pointer_content, '\n' );}
 
 
 
