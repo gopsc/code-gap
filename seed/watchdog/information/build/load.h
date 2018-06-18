@@ -10,25 +10,40 @@ int load_about (
 
 
 
+
+
+
 /*
 
  the first loop set
 
- pointer_words note this path
+ pointer_words note where we've read
 
  pointer_next  note the  enter of this line
 
  maybe blank pointer
 
 
- and note network address
 
- when read this, we read lines after this line
+ when we read address, we read lines after this line
 
- read the address
+ change words we have read
+
+ and read the address
 
  
  and return it after addresss
+
+
+
+ thought about let it note the address & its name
+
+ but the enter may lost
+
+ and the symbol of blank pointer may lost
+
+
+ loop may can't quit
 
 */
 
@@ -38,12 +53,16 @@ int load_about (
 
 /*
 
- start at next line
+ first loop set
+
+
+ start at first line
+
 
 
  move it to network/message/judge/information.h
 
- so we can recive the complete content
+ so we got the whole content
 
 */
 
@@ -53,26 +72,35 @@ int load_about (
 
 
 
-// to the one next of this line
+/*
 
-    char * pointer_next      =  strchr ( pointer_words, '\n' )    ;
+ to the one next of this line
 
-
-
-
+ maybe we should put it to the first of loop
 
 
+ this fresh every loop
 
+*/
 
-
-
-
+    char * pointer_next;
 
 
 
 
 
-// start the set
+
+
+
+
+
+
+
+
+
+
+
+// start to set about
 
 
 
@@ -106,6 +134,9 @@ int load_about (
 
  sometimes we clean it for good and it haven't a connection
 
+
+ the main flag set is here
+
 */
 
     that_about [ that_site ] . flag . main   =  1;
@@ -120,12 +151,36 @@ int load_about (
 
  loop it line by line
 
+
+ if the last line of words could not be enter
+
+ we use pointer_next to do line
+
 */
 
 
-    while (  strchr ( pointer_words, '\n' )  !=  NULL  ) {
+    while (  pointer_next  !=  NULL  ) {
 
 
+
+
+
+
+/*
+
+ start at this line
+
+ fresh before and last line of this loop
+
+
+
+ to the next line
+
+ we move it here
+
+*/
+
+        pointer_next  =  strchr ( pointer_words, '\n' );
 
 
 
@@ -152,10 +207,18 @@ int load_about (
 
  and we could set it here make it simple :d
 
+
+
+ this could last line of words
+
+ then we read to this
+
 */
 
 
-      * pointer_next = '\0';
+        if ( pointer_next != NULL ) {
+
+      * pointer_next = '\0';}
 
 
 
@@ -918,16 +981,46 @@ int load_about (
 
  prepare for next loop
 
- we move it to the network/message/judge/information.h
 
+ return it
+
+
+ this could be NULL
+
+ that means we read to this
 
 */
 
-           * pointer_next = '\n';
 
-             pointer_content = pointer_next + 1;
+        if ( pointer_next != NULL ) {
 
-             pointer_next = strchr ( pointer_content, '\n' );}
+
+
+
+          * pointer_next = '\n';
+
+
+// start at next line
+
+            pointer_words = pointer_next + 1;}
+
+
+
+
+
+/*
+
+ loop restart at next line
+
+ we move it to the first of loop
+
+*/
+
+//         pointer_next = strchr ( pointer_words, '\n' );
+
+
+
+        }
 
 
 
