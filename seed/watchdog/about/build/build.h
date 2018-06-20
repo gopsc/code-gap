@@ -60,14 +60,42 @@ struct gopi_sound {
 
 struct gopi_about {
 
+
+
+/*
+
+ sometimes we wanna put it out
+
+ and it may be loading or what
+
+ we set a symbol to sigh
+
+*/
+
+    char symbol [ 16 ];
+
+
+
+
+
+
+
     struct gopi_flag    flag;
 
 
-// we use this about to just save the informaion
-//
-// not for the configuration, network or what
+/*
+
+ we use this about to just save the informaion
+
+ not for the configuration, network or what
+
+
+ we touch af file to save configurations everywhere
+
+*/
 
 //    struct gopi_configurations;
+
 
 
     struct gopi_system  system;
@@ -95,13 +123,57 @@ struct gopi_about {
 
 // this struct is huge, i must use a function to clean it,,
 
-int clean_this ( ) {
 
 
-// first add this before i change the name of the about struct everywhere
-//
-//    or the dog won't run
 
-    gop_about.flag.main = 1;
+int clean_about  (  struct gopi_about that_about  ) {
+
+
+
+
+
+
+
+/*
+
+ first add this before i change the name of the about struct everywhere
+
+    or the dog won't run
+
+
+ and dog do this other way
+
+
+ there is a symbol about this
+
+ if it is reading we don't clean the symbol
+
+ if not we clean it to blank
+
+*/
+
+//    gop_about.flag.main = 1;
+
+
+
+
+
+
+    if (  strcmp ( that_about.symbol, "reading" ) != 0  ) {
+
+
+        strcpy ( that_about.symbol, "wait" );}
+
+
+
+
+/*
+
+ clean about this
+
+ ...
+
+*/
+
 
     return 1;}

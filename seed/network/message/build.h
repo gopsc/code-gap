@@ -77,20 +77,26 @@ int control_message(
 
 
 
+/*
+
+ This is gop station, send information
+
+ we should move it to the data trees
+
+ and no slave any more
 
 
-// This is gop station, send information
+ we use 'about it' and 'about it's mates' soon
 
-// we should move it to the data trees
-
-// and no slave any more
+*/
 
 
-        strcat ( buffer_send, "Information of host.\n" );
+        strcat ( buffer_send, "About host.\n" );
 
 
 
 // this is old code now
+
 /*
         information_append (
                              buffer_send,
@@ -106,11 +112,12 @@ int control_message(
 
 
 
-        information_append (
-                             buffer_send,
-                             gop_about
-                           )
+        put_about (
+                    buffer_words,
+                    gop_about
+                  );
 
+        strcat ( buffer_send, buffer_words );
 
 // we use a complicate symbol to understand two or more piece of message
 
@@ -122,8 +129,15 @@ int control_message(
 
 
 
+/*
 
-// Append th information of the clients
+ Append th information of the clients
+
+
+ append about connector and connectted
+
+*/
+
 
         int i;
 
@@ -136,15 +150,19 @@ int control_message(
 
                ) {
 
-                strcat ( buffer_send, "Information of guest.\n" );
+                strcat ( buffer_send, "About guest.\n" );
 
 
 
 
+/*
 
-// maybe sometimes we could use it again
+ maybe sometimes we could use it again
 
-// whatever, this is a big-disk time
+ whatever, this is a big-disk time
+
+*/
+
 /*
                 information_append (
                                      buffer_send,
@@ -158,11 +176,16 @@ int control_message(
                                    );
 */
 
-                information_append (
-                                     buffer_send,
-                                     gop_network.about [ i ]
-                                   );
 
+
+                put_about (
+                            buffer_words,
+                            gop_network.about [ i ]
+                          );
+
+
+
+                strcat ( buffer_send, buffer_words );
 
                 strcat ( buffer_send, symbol_next );}}
 

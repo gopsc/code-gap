@@ -38,9 +38,9 @@ int load_about (
 
  thought about let it note the address & its name
 
- but the enter may lost
+ but the enter may be clear
 
- and the symbol of blank pointer may lost
+ and the symbol of blank pointer may be lost
 
 
  loop may can't quit
@@ -79,7 +79,7 @@ int load_about (
  maybe we should put it to the first of loop
 
 
- this fresh every loop
+ fresh it every loop
 
 */
 
@@ -109,6 +109,18 @@ int load_about (
  first we clean it
 
  this come soon
+
+
+ clean it to blank could cause blank about it
+
+ and we could let it wait
+
+ make a symbol
+
+
+ if it isn't reading, we clean the symbol
+
+ if it isn't reading, we put the about
 
 */
 

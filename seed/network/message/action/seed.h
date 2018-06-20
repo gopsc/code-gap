@@ -266,7 +266,7 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build/build.h"         );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/build.h"               );
 
     action_seed_append( buffer_file, buffer_path, "/network/build/build.h"                      );
     action_seed_append( buffer_file, buffer_path, "/network/build/check/connection.h"           );
@@ -335,44 +335,47 @@ int action_seed (
 
 // get them form a convent, maybe from network
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build/load.h"         );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/build/load_mate.h"         );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/put.h"                     );
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/load.h"                    );
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/load_mate.h"               );
 
 
 
 // get them from system
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/user.h"             );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/system/user.h"                   );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/name.h"             );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/system/name.h"                   );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/system/build.h"            );
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/ip/build.h"                );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/system/build.h"                  );
 
 
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/rate.h"                );
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/temperature.h"         );
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/frequency.h"           );
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/cores.h"               );
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/cpu/build.h"               );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/ip/build.h"                      );
 
 
 
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/cpu/rate.h"                      );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/memory/build.h"            );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/cpu/temperature.h"              );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/disk/build.h"              );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/cpu/frequency.h"                 );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/sound/alsa.h"              );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/cpu/cores.h"                     );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/information/get/append.h"              );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/cpu/build.h"                     );
+
+
+
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/memory/build.h"                  );
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/disk/build.h"                    );
+
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/sound/alsa.h"                    );
+
 
 
 
@@ -394,7 +397,7 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/show/information.h"                    );
+    action_seed_append( buffer_file, buffer_path, "/watchdog/show/about.h"                          );
 
 
 
