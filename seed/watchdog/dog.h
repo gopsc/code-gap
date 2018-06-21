@@ -9,13 +9,13 @@ void * gop_dog ( void * what ) {
 
 /*
 
- some values will be a number used by another program
+ some values may have a number used by another process
 
    so we clean it first
 
 */
 
-    clean_this ();
+    clean_about ( gop_about );
 
 
 
@@ -24,7 +24,7 @@ void * gop_dog ( void * what ) {
 
  Load configure from:
 
- {path}/{name}/configure
+ {path} / {name} / configure
 
 
  first we load configurations without flag of main
@@ -48,14 +48,22 @@ void * gop_dog ( void * what ) {
     load_listen ();
 
 
-// TxL needs jurisdiction of root.
-// and no more
+/*
+
+ TxL needs jurisdiction of root.
+ and no more
+
+*/
 
 //    check_root();
 
 
-// When a update was stop, files left.
-// Must be after loading.
+/*
+
+ When a update was stop, files left.
+ Must be after loading.
+
+*/
 
     check_update ();
 
@@ -78,38 +86,46 @@ void * gop_dog ( void * what ) {
 
 
 
-    while (  gop_about.flag.main  ) {
+    while (  gop_about . flag . main  ) {
 
 
-// u can not run this program just for watchdog
-// u wanna others, right?
+/*
 
-        if      (  ! gop_about.flag.dog  ) {
+ u can not run this program just for watchdog
+ u wanna others, right?
+
+*/
+
+        if      (  ! gop_about . flag . dog  ) {
 
             usleep ( 100000 );}
 
 
 
-        else if (  gop_about.flag.dog  ) {
+        else if (  gop_about . flag . dog  ) {
 
 
 
 
 // run the functions
 
-            information_user_get ();   usleep ( 100000 );
+            get_about_user ();   usleep ( 100000 );
 
-            information_name_get ();   usleep ( 100000 );
+            get_about_name ();   usleep ( 100000 );
 
-            information_system_get (); usleep ( 100000 );
+            get_about_system (); usleep ( 100000 );
 
 
             information_memory_get (); usleep ( 100000 );
 
 
-// this will take wrong if we used on termux
-//
-//   so sometimes we don't read it
+/*
+
+ this take wrong when we used on termux
+
+   so sometimes we don't read it
+
+*/
 
             information_disk_get ();   usleep ( 100000 );
 
@@ -132,10 +148,17 @@ void * gop_dog ( void * what ) {
 
 
 
+/*
 
-// it means the dog finished one time at least
+  it means the dog finished one time at least
 
-            gop_about.flag.start = 1;}}
+  we have load about some like sound
+
+
+  and we may need to cause we have the symbol
+
+*/
+            gop_about . flag . start  =  1;}}
 
 
 
