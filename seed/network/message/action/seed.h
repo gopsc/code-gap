@@ -336,6 +336,8 @@ int action_seed (
 // get them form a convent, maybe from network
 
 
+    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/clean.h"                   );
+
     action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/put.h"                     );
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/load.h"                    );

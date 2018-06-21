@@ -45,6 +45,9 @@ int load_about (
 
  loop may can't quit
 
+
+ and we could put it after read name & address
+
 */
 
 
@@ -62,6 +65,8 @@ int load_about (
 
  move it to network/message/judge/information.h
 
+ top than here
+
  so we got the whole content
 
 */
@@ -76,7 +81,8 @@ int load_about (
 
  to the one next of this line
 
- maybe we should put it to the first of loop
+
+ maybe we should put it at the first of loop
 
 
  fresh it every loop
@@ -98,13 +104,11 @@ int load_about (
 
 
 
-
-
-// start to set about
-
-
-
 /*
+
+ start to set about
+
+
 
  first we clean it
 
@@ -124,7 +128,9 @@ int load_about (
 
 */
 
-//    clean_about (  that_about [ that_site ]  );
+    strcpy ( that_about . symbol, "read" );
+
+    clean_about (  that_about  );
 
 
 
@@ -151,7 +157,7 @@ int load_about (
 
 */
 
-    that_about [ that_site ] . flag . main   =  1;
+    that_about . flag . main   =  1;
 
 
 
@@ -164,9 +170,12 @@ int load_about (
  loop it line by line
 
 
- if the last line of words could not be enter
+ last line of words could not be enter
 
- we use pointer_next to do line
+ we use pointer_next to note
+
+
+ to miss null
 
 */
 
@@ -182,7 +191,10 @@ int load_about (
 
  start at this line
 
+
  fresh before and last line of this loop
+
+ ...
 
 
 
@@ -221,16 +233,16 @@ int load_about (
 
 
 
- this could last line of words
+ this could be last line of words
 
  then we read to this
 
 */
 
 
-        if ( pointer_next != NULL ) {
+        if  (  pointer_next != NULL  ) {
 
-      * pointer_next = '\0';}
+      * pointer_next  =  '\0';}
 
 
 
@@ -242,9 +254,19 @@ int load_about (
 
 /*
 
+ load here
+
+ and things about it
+
+
+
+
+
+
+
  went over the blank lines
 
- there're blank lines let it easy to see them
+ there're blank lines let it easy to be saw
 
 */
 
@@ -266,9 +288,9 @@ int load_about (
 
             strcpy (
 
-                      that_about . system [ that_site ] . name,
+                      that_about . system . name,
 
-                      strstr ( pointer_content, " :" ) + 3
+                      strstr ( pointer_words, " :" ) + 3
 
                    );}
 
@@ -277,11 +299,11 @@ int load_about (
 
 // read system name
 
-        else if (  pointer_words == strstr ( pointer_words, "System           : " )  ) {
+        else if (  pointer_words  ==  strstr ( pointer_words, "System           : " )  ) {
 
 
             strcpy (
-                      that_about . system [ that_site ] . system,
+                      that_about . system . system,
 
                       strstr ( pointer_words, " :" ) + 3
 
@@ -292,12 +314,12 @@ int load_about (
 
 // read user name
 
-        else if (  pointer_words == strstr ( pointer_words, "User             : " ) ) {
+        else if (  pointer_words  ==  strstr ( pointer_words, "User             : " ) ) {
 
 
             strcpy (
 
-                     that_about . system [ that_site ] . user,
+                     that_about . system . user,
 
                      strstr ( pointer_words, " :" ) + 3
 
@@ -315,7 +337,8 @@ int load_about (
 
 
 
-        else if (  pointer_words == strstr ( pointer_words, "IP               : " ) ) {
+        else if (  pointer_words  ==  strstr ( pointer_words, "IP               : " ) ) {
+
 
 /*
 
@@ -333,7 +356,7 @@ int load_about (
 
 */
 
-            that_about . network [ that_site ] . number
+            that_about . network . number
 
             =  atoi (  strstr ( pointer_words, " :"  ) + 3  );
 
@@ -376,6 +399,7 @@ int load_about (
 
 // start with next line
 
+
             pointer_words  =  strchr ( pointer_words, '\n'  ) + 1;
 
 
@@ -386,6 +410,7 @@ int load_about (
  to the last one of address
 
 
+
    address  :  2
        name : address
        name : address
@@ -393,7 +418,7 @@ int load_about (
    ...
 
 
- there're two blank type
+ there're two blank enter
 
 
 
@@ -421,9 +446,12 @@ int load_about (
 
  maybe we use it to realloc it anyway
 
+
+ maybe we realloc it and don't use it
+
 */
 
-            int number_ip = 1;
+            int  number_ip  =  1;
 
 
 
@@ -434,7 +462,7 @@ int load_about (
 
 /*
 
- this is to save the line we will read
+ this is to note the line we will read
 
  may null happened
 
@@ -448,9 +476,22 @@ int load_about (
 
  and use this to find the path
 
+
+ if use pointer of next to do this
+
+ and return
+
+ that could cause mess
+
+ if we use a single arduino with esp8266 to connect this
+
+ and the there's not a enter after address
+
 */
 
             char * pointer_network;
+
+
 
 
 
@@ -469,11 +510,30 @@ int load_about (
 
 */
 
+
             for (
-                                   pointer_network    =           pointer_words;
-                    strcmp ( "\n", pointer_network ) !=  0 ;
-                                   pointer_network    =  strchr ( pointer_words, '\n' )
+
+                     pointer_network    =           pointer_words;
+
+                     pointer_network   !=  NULL ;
+
+/*
+
+ if it is null
+
+ we read it once
+
+ and quit the loop
+
+ next circle
+
+*/
+                     pointer_network    =  strchr ( pointer_words, '\n' )
+
                 ) {
+
+
+
 
 
 /*
@@ -481,13 +541,13 @@ int load_about (
  symbol
 
 
- one    loop for function
+ one    loop  for function
 
- two    loop for read about
+ two    loop  for read about
 
- three  loop for start to adress
+ three  loop  for start to adress
 
- four   loop for read address
+ four   loop  for read address
 
 */
 
@@ -501,15 +561,15 @@ int load_about (
  the pointer of network  we use it to  miss the null happened
 
 
- we fresh it first  before the loop
+ we fresh it first  at beginning of the loop
 
 
- after first set, we fresh the pointer of network
+ after first put, we fresh the pointer of network
 
  in the loop
 
 
- but pointer we've read we've used  not
+ but pointer we've read we've used haven't
 
 
  if not, it isn't first line
@@ -519,7 +579,7 @@ int load_about (
 */
 
 
-                if (  pointer_words  !=  pointer_network  ) {
+                if  (  pointer_words  !=  pointer_network  ) {
 
 
 
@@ -529,52 +589,88 @@ int load_about (
 
  read over the enter
 
-*/
-
-                    pointer_network  =  pointer_network + 1;
 
 
+ if it is null it is the last one
 
-/*
+ then we won't let it start
 
- we judge it and this is not blank line
+
+
+
+ we saw it before and this is not blank line
 
  fresh the pointer we've read
 
 
  and this could be blank line if this don't have a address
 
- and if there's not a address, we don't use socket maybe
+ and if there's not a address, we don't use socket
 
  maybe like bit coins
 
+
+ and this circle won't start
+
 */
-
-                    pointer_words  =  pointer_network;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-// prepare to note them
 
 
 
 
 /*
 
+ before this we use this pointer to read
+
+ then we plus it every time
+
+ now we plus pointer of words
+
+*/
+
+
+/*
+
+                    if  (  pointer_network  !=  NULL  ) {
+
+
+                    pointer_network  =  pointer_network + 1;
+
+*/
+
+
+
+
+
+
+                    pointer_words  =  pointer_network + 1;}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// prepare to note them
+
+
+
+
+
+
+
+
+
+
  start here
 
 
- we should jump over the blank charactor
+ we should read over the charactors
 
 
          name : address
@@ -583,9 +679,11 @@ int load_about (
 */
 
 
-                while (  * pointer_words  ==  ' ' )  ) {
+                while (  * pointer_words  ==  ' '  ) {
 
                     pointer_words ++;}
+
+
 
 
 
@@ -614,7 +712,7 @@ int load_about (
 
                 strcpy (
 
-                         that_about . network [ that_site ] . ip [ number_ip ] [ 1 ],
+                         that_about . network . ip [ number_ip ] [ 1 ],
 
                          pointer_words
 
@@ -675,7 +773,7 @@ int load_about (
 
                 strcpy(
 
-                        that_about . network [ that_site ] . ip [ number_ip ] [ 2 ],
+                        that_about . networks . ip [ number_ip ] [ 2 ],
 
                         pointer_words
 
@@ -692,9 +790,11 @@ int load_about (
 
 
 
+
+
 /*
 
- don't needto do it
+ don't needto plus it here
 
 
  because we have fresh it
@@ -709,8 +809,23 @@ int load_about (
 
 
 
+/*
 
-// plus this count
+ plus this count
+
+
+
+ soon we won't use it
+
+ we read to the blank box
+
+
+ or we use it
+
+ and we could realloc the pointer of address
+
+*/
+
 
                 number_ip ++;}
 
@@ -730,25 +845,11 @@ int load_about (
 
  we clean them in  watchdog/information/build/clean.h  soon
 
+
+
+ read address and their number finished
+
 */
-
-
-
-
-            for ( ; number_ip <= 32; number_ip ++ ) {
-
-                if   ( strcmp ( that_about . network [ that_site ] . ip [ number_ip ] [ 2 ], "") != 0 ) {
-
-                    strcpy (  that_about . network [ that_site ] . ip [ number_ip ] [ 2 ], ""  );}
-
-                else {
-
-                    break;}}
-
-
-
-
-// read address and their number finished
 
             }
 
@@ -764,29 +865,29 @@ int load_about (
 
         else if  (  pointer_words  ==  strstr ( pointer_words, "CPU cores        : " )  ) {
 
-            that_about . cpu [ that_site ] . cores  =  atoi (  strstr ( pointer_words, " :" )  + 3  );}
+            that_about . cpu . cores  =  atoi (  strstr ( pointer_words, " :" )  + 3  );}
 
 
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "CPU frequency    : " )  ) {
+        else if  (  pointer_words  ==  strstr ( pointer_words, "CPU frequency    : " )  ) {
 
-                that_about . cpu [ that_site ] . frequency  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
-
-
-
-
-
-            else if  (  pointer_content  ==  strstr ( pointer_contsent, "CPU temperature  : " )  ) {
-
-                that_about . cpu [ that_site ] . temperature  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+            that_about . cpu . frequency  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
 
 
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "CPU rate         : " )  ) {
+        else if  (  pointer_words  ==  strstr ( pointer_words, "CPU temperature  : " )  ) {
+
+            that_about . cpu . temperature  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
+
+
+
+
+
+        else if  (  pointer_words  ==  strstr ( pointer_words, "CPU rate         : " )  ) {
 
 /*
 
@@ -801,42 +902,49 @@ int load_about (
 
 */
 
-              * strchr ( pointer_content, '%' ) = '\0';
+                if  (  strchr ( pointer_words, '%' )  !=  NULL  ) {
 
-                that_about . cpu [ that_site ] . rate  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
-
-
+                  * strchr ( pointer_words, '%' ) = '\0';}
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Memory total     : " )  ) {
 
-
-                that_about . memory [ that_site ] . total  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+                that_about . cpu . rate  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
 
 
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Memory used rate : " )  ) {
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Memory total     : " )  ) {
+
+
+                that_about . memory . total  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
 
 
 
-              * strchr ( pointer_content, '%' ) = '\0';
+
+
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Memory used rate : " )  ) {
+
+
+
+              * strchr ( pointer_words, '%' ) = '\0';
 
 /*
 
  it goes wrong when rate send before the total
 
+
+
+ and we use a buffer to note it soon
+
 */
 
-                that_about . memory [ that_site ] . free
+                that_about . memory . free
 
-              = that_about . memory [ that_site ] . total
+              = that_about . memory . total
 
-              *     (  100 -   atoi (  strstr ( pointer_content, " :" ) + 3  )  )     / 100;}
-
-
+              *     (  100 -   atoi (  strstr ( pointer_words, " :" ) + 3  )  )     / 100;}
 
 
 
@@ -844,70 +952,72 @@ int load_about (
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Disk size        : " )  ) {
 
 
-                that_about . disk [ that_site ] . size  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Disk size        : " )  ) {
+
+
+                that_about . disk . size  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
 
 
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Disk user rate   : " )  ) {
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Disk user rate   : " )  ) {
 
 
-              * strchr ( pointer_content, '%' )  = '\0';
+              * strchr ( pointer_words, '%' )  = '\0';
 
 
 /*
 
  it went wrong when a message dosen't bring a disk size 
 
- we should note this rate
+ and we note this rate
 
 */
 
-                that_about . disk [ that_site ] . available
+                that_about . disk . available
 
-              = that_about . disk [ that_site ] . size
+              = that_about . disk . size
 
-              *   atoi (  strstr ( pointer_content, " :" ) + 3  )   / 100;}
-
-
-
-
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Sound control    : " )  ) {
-
-                that_about . sound [ that_site ] . number_control  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+              *   atoi (  strstr ( pointer_words, " :" ) + 3  )   / 100;}
 
 
 
 
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Sound control    : " )  ) {
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Sound capture    : " )  ) {
-
-                that_about . sound [ that_site ] . number_capture  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
+                that_about . sound . number_control  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
 
 
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Sound playback   : " )  ) {
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Sound capture    : " )  ) {
 
-                that_about . sound [ that_site ] . number_playback  =  atoi (  strstr ( pointer_content, " :" ) + 3  );}
-
-
+                that_about . sound . number_capture  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
 
 
 
-            else if  (  pointer_content  ==  strstr ( pointer_content, "Status           : " )  ) {
+
+
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Sound playback   : " )  ) {
+
+                that_about . sound . number_playback  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
+
+
+
+
+
+            else if  (  pointer_words  ==  strstr ( pointer_words, "Status           : " )  ) {
 
 
 
 
 // prepare
 
-                pointer_content  =  strstr ( pointer_content, " :" ) + 3;
+                pointer_words  =  strstr ( pointer_words, " :" ) + 3;
 
 
 /*
@@ -920,72 +1030,78 @@ int load_about (
 
 */
 
-                if      (  * pointer_content == 'o'  ) {
+                if      (  * pointer_words == 'o'  ) {
 
-                    that_about . flag [ that_site ] . dog  =  1;}
-
-                else if (  * pointer_content == ' '  ) {
-
-                    that_about . flag [ that_site ] . dog  = 0;}
+                    that_about . flag . dog  =  1;}
 
 
-                pointer_content ++;
-                pointer_content ++;
+                else if (  * pointer_words == ' '  ) {
+
+                    that_about . flag . dog  =  0;}
 
 
-
-
-                if      (  * pointer_content == 'o'  ) {
-
-                    that_about . flag [ that_site ] . connectted = 1;}
-
-                else if (  * pointer_content == ' '  ) {
-
-                    that_about . flag [ that_site ] . connectted = 0;}
-
-                pointer_content ++;
-                pointer_content ++;
+                pointer_words ++;
+                pointer_words ++;
 
 
 
 
-                if      (  * pointer_content == 'o'  ) {
+                if      (  * pointer_words == 'o'  ) {
 
-                    that_about . flag [ that_site ] . connector = 1;}
-
-                else if (  * pointer_content == ' '  ) {
-
-                    that_about . flag [ that_site ] . connector = 0;}
+                    that_about . flag . connectted = 1;}
 
 
-                pointer_content ++;
-                pointer_content ++;
+                else if (  * pointer_words == ' '  ) {
+
+                    that_about . flag . connectted = 0;}
 
 
-
-
-                if      (  * pointer_content == 'o'  ) {
-
-                    that_about . flag [ that_site ] . sound = 1;}
-
-                else if (  * pointer_content == ' '  ) {
-
-                    that_about . flag [ that_site ] . sound = 0;}
-
-
-                pointer_content ++;
-                pointer_content ++;
+                pointer_words ++;
+                pointer_words ++;
 
 
 
 
-                if      (  * pointer_content == 'o'  ) {
+                if      (  * pointer_words == 'o'  ) {
 
-                    that_about . flag [ that_site ] . deamon = 1;}
+                    that_about . flag . connector = 1;}
 
-                else if (  * pointer_content == ' '  ) {
 
-                    that_about . flag [ that_site ] . deamon = 0;}}
+                else if (  * pointer_words == ' '  ) {
+
+                    that_about . flag . connector = 0;}
+
+
+                pointer_words ++;
+                pointer_words ++;
+
+
+
+
+                if      (  * pointer_words == 'o'  ) {
+
+                    that_about . flag . sound = 1;}
+
+
+                else if (  * pointer_words == ' '  ) {
+
+                    that_about . flag . sound = 0;}
+
+
+                pointer_words ++;
+                pointer_words ++;
+
+
+
+
+                if      (  * pointer_words == 'o'  ) {
+
+                    that_about . flag . deamon = 1;}
+
+
+                else if (  * pointer_words == ' '  ) {
+
+                    that_about . flag . deamon = 0;}}
 
 
 
@@ -1004,7 +1120,7 @@ int load_about (
 */
 
 
-        if ( pointer_next != NULL ) {
+        if  (  pointer_next  !=  NULL  ) {
 
 
 
@@ -1012,7 +1128,10 @@ int load_about (
           * pointer_next = '\n';
 
 
+
+
 // start at next line
+
 
             pointer_words = pointer_next + 1;}
 
