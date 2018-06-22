@@ -93,6 +93,13 @@ struct gopi_about {
 
 
 
+
+
+
+
+
+
+
 /*
 
  we use this about to just save about it
@@ -127,6 +134,17 @@ struct gopi_about {
 
     struct gopi_sound   sound;
 
+
+
+
+/*
+
+ gop could have lots of mates
+
+*/
+
+
+    void * * mates;
 
 
 

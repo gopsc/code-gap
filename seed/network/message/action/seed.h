@@ -30,9 +30,13 @@ int action_seed_append (
 
 
 
-// this is not easy, maybe the file is too long
+/*
 
-// we can't read it
+ this is not easy, maybe the file is too long
+
+ we can't read it
+
+*/
 
 
 /*
@@ -53,11 +57,13 @@ int action_seed_append (
 
 
 
+/*
 
-// sometimes this file is not here
+ sometimes this file is not here
 
-// maybe we should exit this seed
+ maybe we should exit this seed
 
+*/
 
     if (  ! is_file ( buffer_file )  ) {
 
@@ -79,11 +85,13 @@ int action_seed_append (
 
 
 
+/*
 
-// if this file exist
+ if this file exist
 
-// prepare to add it
+ prepare to add it
 
+*/
 
     else {
 
@@ -91,31 +99,37 @@ int action_seed_append (
 
 
 
+/*
 
-// make the title
-
-
-// maybe we should make a buffer to note this
-
-// then append once to finish it
+ make the title
 
 
-        file_append ( that_result,                "\n//"      );
+ maybe we should make a buffer to note it
 
-        file_append ( that_result,                "=========" );
+ append once to finish it
 
-        file_append ( that_result,                "=========" );
-
-        file_append ( that_result,                buffer_file );
+*/
 
 
+        file_append ( that_result,  "\n//"      );
+
+        file_append ( that_result,  "=========" );
+
+        file_append ( that_result,  "=========" );
+
+        file_append ( that_result,  buffer_file );
 
 
 
-// titles don't have a same length,
 
-// and of cause
 
+/*
+
+ titles don't have a same length,
+
+ and of cause
+
+*/
 
         if  (  63  >  ( int ) strlen ( buffer_file )  ) {
 
@@ -142,6 +156,10 @@ int action_seed_append (
 // titile finished
 
         file_append ( that_result, "\n" );
+
+
+
+
 
 
 
@@ -180,6 +198,12 @@ int action_seed_append (
 
 
 
+
+
+
+
+
+
 int action_seed (
 
                     const char * that_type
@@ -188,19 +212,22 @@ int action_seed (
 
 
 
-// where the code is
+/*
 
-// and it could be changed
+ where the code is
+
+ and it could be changed
+
+*/
+
+            char buffer_path [ 128 ];
 
 
-            char        buffer_path               [ 128 ];
+            strcpy ( buffer_path, path_the );
 
+            strcat ( buffer_path, "/" );
 
-            strcpy    ( buffer_path,               path_the                );
-
-            strcat    ( buffer_path,              "/"                      );
-
-            strcat    ( buffer_path,               name_the                );
+            strcat ( buffer_path, name_the );
 
 
 
@@ -209,13 +236,13 @@ int action_seed (
 // the file we will make named flower
 
 
-            char        buffer_file               [ 128 ];
+            char buffer_file [ 128 ];
 
 
 
-            strcpy    ( buffer_file,               path_the                );
+            strcpy ( buffer_file, path_the );
 
-            strcat    ( buffer_file,              "/flower.c"              );
+            strcat ( buffer_file, "/flower.c" );
 
 
 
@@ -228,17 +255,19 @@ int action_seed (
 
 */
 
-            char        buffer_dirent             [ 128 ];
+            char buffer_dirent [ 128 ];
 
 
-            char        buffer_file_action        [ 128 ];
+            char buffer_file_action [ 128 ];
 
 
 
-            DIR *       pointer_dirent;
+
+            DIR *    pointer_dirent;
 
 
-    struct  dirent *    ent;
+    struct  dirent * ent;
+
 
 
 
@@ -250,7 +279,7 @@ int action_seed (
 
 // clean it
 
-            file_save ( buffer_file,              ""                                         );
+    file_save ( buffer_file,  "" );
 
 
 
@@ -281,7 +310,7 @@ int action_seed (
 
  put this to the last of  list of head and build
 
- then it can use the struct of configuration to note configurations everywhere
+ then it can use the struct of configurations to note configurations everywhere
 
 
  but if we don't have them in code, we set a head of blank to fill them
@@ -289,6 +318,8 @@ int action_seed (
 */
 
     action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/configurations.h"         );
+
+
 
 
 

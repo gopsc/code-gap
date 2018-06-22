@@ -2,7 +2,7 @@
 
 /*
 
- the configurations
+ the configuration
 
  used here and everywhere
 
@@ -47,7 +47,7 @@ struct gopi_configurations {
 
     int    rate;
     int    channels;
-    int    N;
+    int    snake;
 
 
 

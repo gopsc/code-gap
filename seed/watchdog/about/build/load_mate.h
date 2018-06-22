@@ -4,11 +4,11 @@
 
 int load_about_mate (
 
-                              gopi_about   that_about,
+                         struct  gopi_about     that_about,
 
-                              char *     buffer_content
+                                 char *       buffer_content
 
-                          ) {
+                    ) {
 
 
 
@@ -23,7 +23,7 @@ int load_about_mate (
 
  we use malloc to do this soon
 
- then we can know about mates
+ then we can know about every mates
 
 
  use 'mate' to note its ship
