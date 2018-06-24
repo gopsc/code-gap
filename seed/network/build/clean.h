@@ -280,6 +280,7 @@ int clean_connection (
 
 
 
+
 /*
 
  let them quit
@@ -287,6 +288,48 @@ int clean_connection (
 */
 
     else if  (  strcmp ( that_type, "quit"  )  ==  0  ) {
+
+
+
+
+
+/*
+
+ it could be accepting or sending
+
+ for connectted
+
+ it is two number point it
+
+ and it's complicate
+
+
+ let the connection quit
+
+*/
+
+        if  (  gop_connection . connection [ that_site ]  !=  -1  ) {
+
+            shutdown ( gop_connection . connection [ that_site ], SHUT_RDWR );}
+
+
+
+
+
+
+// let the socket quit
+
+        if  (  that_site == 0  ) {
+
+            shutdown ( gop_connectio n .descriptor [ 0 ], SHUT_RDWR );}
+
+        else if ( that_site < 4 ) {
+
+            shutdown ( gop_connection . descriptor [ 1 ], SHUT_RDWR );}
+
+
+
+
 
         return 1;}
 

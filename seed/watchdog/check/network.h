@@ -4,21 +4,26 @@ int check_network () {
 
 
 
+/*
 
-// this function is to check network going,
-//
-//   maybe i should put them into the file named network/build.h
+ this function is to check network going,
 
-
-
+   maybe i should put them into the file named network/build.h
 
 
 
+ and yes
 
 
 
 
-// Get the time for comparing
+
+
+
+
+ Get the time for comparing
+
+*/
 
     time_t  time_now  =  time ( NULL );
 
@@ -29,18 +34,18 @@ int check_network () {
 
 
 
+/*
+
+ if it's a new startting
+
+  the time note zero
 
 
-// if it's a new startting
-//
-//  the time note zero
-//
-//
-//   so something goes wrong
-//
-//  and we fix it
+   so something goes wrong
 
+  and we fix it
 
+*/
 
 
     int i;
