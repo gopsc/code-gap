@@ -146,7 +146,7 @@ int load_about_mate (
 */
 
 
-    strcpy ( that_about . symbol, "read" );
+    strcpy ( that_about . symbol, "reading" );
 
 
 

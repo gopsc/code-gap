@@ -24,6 +24,12 @@
 
  and dog do this other way
 
+
+
+ sometimes we clean it
+
+ when lost a connectting
+
 */
 
 
@@ -51,10 +57,10 @@
 
 
 
-    if (  strcmp ( that_about.symbol, "reading" ) != 0  ) {
+    if  (  strcmp ( that_about . symbol, "reading" )  !=  0  ) {
 
 
-        strcpy ( that_about.symbol, "wait" );}
+        strcpy ( that_about . symbol, "waitting" );}
 
 
 
@@ -71,6 +77,25 @@
  ...
 
 */
+
+
+
+
+
+    strcpy ( that_about . system . system, "" );
+
+    strcpy ( that_about . system . name, "" );
+
+    strcpy ( that_about . system . user, "" );
+
+
+
+
+
+
+
+
+
 
 
 

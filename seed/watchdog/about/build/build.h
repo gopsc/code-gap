@@ -88,6 +88,17 @@ struct gopi_about {
 
 
 
+
+
+
+
+/*
+
+ what we should do
+
+*/
+
+
     struct gopi_flag    flag;
 
 
@@ -143,6 +154,8 @@ struct gopi_about {
 
 */
 
+
+    short    number_mates;
 
     void * * mates;
 

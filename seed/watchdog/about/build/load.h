@@ -31,7 +31,7 @@ int load_about (
 
  and read the address
 
- 
+
  and return it after addresss
 
 
@@ -132,7 +132,7 @@ int load_about (
 
 */
 
-    strcpy ( that_about . symbol, "read" );
+    strcpy ( that_about . symbol, "reading" );
 
     clean_about (  that_about  );
 
@@ -1179,7 +1179,7 @@ int load_about (
 */
 
 
-    strcpy ( that_about, "wait" );
+    strcpy ( that_about, "waitting" );
 
 
 
