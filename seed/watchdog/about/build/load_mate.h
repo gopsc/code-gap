@@ -6,7 +6,7 @@ int load_about_mate (
 
                          struct  gopi_about     that_about,
 
-                                 char *       buffer_content
+                                 char *       buffer_words
 
                     ) {
 
@@ -31,7 +31,15 @@ int load_about_mate (
 */
 
 
-//      reallac ( pointer_about, number_mate + 1 );
+/*
+
+    reallac ( pointer_about, number_mate + 1 );
+
+
+    number_mate ++;
+
+*/
+
 
 
 
@@ -54,9 +62,12 @@ int load_about_mate (
 */
 
 
-//               pointer_convent = strchr ( pointer_convent, '\n' ) + 1;
+//           pointer_words = strchr ( pointer_words, '\n' ) + 1;
 
-        char * pointer_next = strchr ( pointer_convent, '\n' ) ;
+
+
+
+
 
 
 
@@ -64,7 +75,31 @@ int load_about_mate (
 
 /*
 
- think about it
+ use pointer of next to note enter we found
+
+ could be blank
+
+*/
+
+
+//    char * pointer_next = strchr ( pointer_words, '\n' ) ;
+
+
+    char * pointer_next;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
  soon we use realloc
 
@@ -82,19 +117,36 @@ int load_about_mate (
 */
 
 
-        int number_cores;
+    int number_cores;
 
-        int number_frequency;
-
-
-        int number_disk_size;
-
-        int number_disk_rate;
+    int number_frequency;
 
 
-        int number_memory_total;
+    int number_disk_size;
 
-        int number_memory_rate;
+    int number_disk_rate;
+
+
+    int number_memory_total;
+
+    int number_memory_rate;
+
+
+
+
+
+
+
+/*
+
+ sometimes dog show it
+
+ and we are loaing
+
+*/
+
+
+    strcpy ( that_about . symbol, "read" );
 
 
 
@@ -113,7 +165,9 @@ int load_about_mate (
 
 
 
-        that_about . flag [ that_site ] . main  =  1;
+    that_about . flag [ that_site ] . main  =  1;
+
+
 
 
 
@@ -134,9 +188,28 @@ int load_about_mate (
 
 */
 
-        while  (  strchr ( pointer_convent, '\n' )  !=  NULL  ) {
 
-          * pointer_next  =  '\0';
+
+//    while  (  strchr ( pointer_words, '\n' )  !=  NULL  ) {
+
+    do {
+
+
+
+
+
+/*
+
+ this maybe last one
+
+ it's blank
+
+*/
+
+
+        if ( pointer_next != NULL ) {
+
+          * pointer_next  =  '\0';}
 
 
 
@@ -152,13 +225,16 @@ int load_about_mate (
 
  we jump over the blank one
 
- they help us understand more easily
+ what help us understand more easily
 
 */
 
-            if      (  0  ==  strcmp ( pointer_convent, "" )  ) {
+        if  (  0  ==  strcmp ( pointer_words, "" )  ) {
 
-                ;}
+            ;}
+
+
+
 
 
 
@@ -171,7 +247,7 @@ int load_about_mate (
 */
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "Name             : " )  ) {
+        else if  (  pointer_words  ==  strstr ( pointer_words, "Name             : " )  ) {
 
 
 /*
@@ -182,9 +258,9 @@ int load_about_mate (
 
 */
 
-                strcat ( that_about . system [ that_site ] . name,   "," );
+            strcat ( that_about . system [ that_site ] . name,   "," );
 
-                strcat ( that_about . system [ that_site ] . name,   strstr ( pointer_convent, " :" ) + 3 );}
+            strcat ( that_about . system [ that_site ] . name,   strstr ( pointer_words, " :" ) + 3 );}
 
 
 
@@ -194,12 +270,13 @@ int load_about_mate (
 // we read the system it used
 
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "System           : ") ) {
+        else if  (  pointer_words  ==  strstr ( pointer_words, "System           : ") ) {
 
 
-                strcat ( that_about . system [ that_site ] . system, "," );
+            strcat ( that_about . system [ that_site ] . system, "," );
 
-                strcat ( that_about . system [ that_site ] . system, strstr ( pointer_convent, " :" ) + 3  );}
+            strcat ( that_about . system [ that_site ] . system, strstr ( pointer_words, " :" ) + 3  );}
+
 
 
 
@@ -219,12 +296,12 @@ int load_about_mate (
 
 */
 
-            else if  (  pointer_convent  ==  strstr ( pointer_convent, "User             : " )  ) {
+        else if  (  pointer_words  ==  strstr ( pointer_words, "User             : " )  ) {
 
 
-                strcat ( that_about . system [ that_site ] . user,   ","                         );
+            strcat ( that_about . system [ that_site ] . user,   ","                         );
 
-                strcat ( that_about . system [ that_site ] . user,   strstr ( pointer_convent, " :" ) + 3  );}
+            strcat ( that_about . system [ that_site ] . user,   strstr ( pointer_words, " :" ) + 3  );}
 
 
 

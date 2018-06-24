@@ -11,9 +11,26 @@ int put_about (
 
 
 
+
+
+
+/*
+
+ wait it finish
+
+*/
+
+
+    while  (  strcmp ( gop_about . symbol, "read" )  ) {
+
+        usleep ( 10000 );}
+
+
+
+
+
+
     strcpy ( buffer_message, "" );
-
-
 
 
 

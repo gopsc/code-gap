@@ -36,7 +36,7 @@ int load_about (
 
 
 
- thought about let it note the address & its name
+ maybe let it note the address & its name
 
  but the enter may be clear
 
@@ -71,7 +71,7 @@ int load_about (
 
 */
 
-//           pointer_words   =  strchr ( pointer_words, '\n' ) + 1;
+//    pointer_words   =  strchr ( pointer_words, '\n' ) + 1;
 
 
 
@@ -89,7 +89,11 @@ int load_about (
 
 */
 
-    char * pointer_next;
+
+//    char * pointer_next = strchr ( pointer_words, '\n' ) ;
+
+
+    char * pointer_next = pointer_words;
 
 
 
@@ -154,6 +158,14 @@ int load_about (
 
 
  the main flag set is here
+
+
+
+ and we could let it read symbol
+
+ 'read' then it's running
+
+ but we don't clean its mate
 
 */
 
@@ -1156,7 +1168,20 @@ int load_about (
 
 
 
+/*
 
-// loop finished
+ loop finished
 
-        return 1;}
+
+
+ read finished
+
+*/
+
+
+    strcpy ( that_about, "wait" );
+
+
+
+
+    return 1;}
