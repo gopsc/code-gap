@@ -297,9 +297,13 @@ int action_seed (
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/build.h"               );
 
+
+
+// dog will use
+
     action_seed_append( buffer_file, buffer_path, "/network/build/build.h"                      );
-    action_seed_append( buffer_file, buffer_path, "/network/build/check/connection.h"           );
-    action_seed_append( buffer_file, buffer_path, "/network/build/clean/connection.h"           );
+    action_seed_append( buffer_file, buffer_path, "/network/build/check.h"                      );
+    action_seed_append( buffer_file, buffer_path, "/network/build/clean.h"                      );
 
     action_seed_append( buffer_file, buffer_path, "/sound/build.h"                              );
 
