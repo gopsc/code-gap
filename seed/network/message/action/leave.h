@@ -6,8 +6,17 @@ int action_leave() {
 
 
 
+/*
 
-// exit all of threads
+ exit all of threads
+
+
+
+ we use clean and could free space
+
+*/
+
+/*
 
     information_flag.dog        = 0;
 
@@ -21,6 +30,9 @@ int action_leave() {
 
     information_flag.main       = 0;
 
+*/
+
+    clean_about ( gop_about );
 
 
 
@@ -28,9 +40,23 @@ int action_leave() {
 
 
 
-// Maybe socket is loop,
-//   shut it down.
-//   program  can be shutdown by itself.
+
+
+/*
+
+ Maybe socket is loop,
+   shut it down.
+   program  can be shutdown by itself.
+
+
+
+ dog will clean this soon :D
+
+*/
+
+
+
+/*
 
     usleep  ( 2 * 1000000 * step_connection );
 
@@ -42,8 +68,58 @@ int action_leave() {
 
     usleep  ( 2 * 1000000 * step_connection );
 
+*/
 
-//Threads need time to exit
+
+
+
+
+
+/*
+
+ soon we use this
+
+
+
+ the connector could be running not notice the flag
+
+*/
+
+
+    usleep (  2  *  step_connection  *  1000000  )
+
+
+    int i;
+
+    for  (  i = 0;  i < 4;  i ++  ) {
+
+        clean_network ( i, that_about, "quit" );}
+
+
+
+
+
+
+
+    usleep (  2  *  step_connection  *  1000000
+
+
+    int i;
+
+    for  (  i = 0;  i < 4;  i ++  ) {
+
+        clean_network ( i, that_about, "all" );}
+
+
+
+
+
+
+
+
+
+
+// Threads need time to quit
 
     pthread_exit ( NULL );
 

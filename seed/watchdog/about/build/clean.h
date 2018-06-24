@@ -143,4 +143,39 @@
 
 
 
+
+/*
+
+ there are space used where mates pointe
+
+ and clean them
+
+
+ could be zero
+
+*/
+
+
+    if  (  that_about . number_mates  >  0  ) {
+
+
+
+
+
+        int i;
+
+        for  (  i = 0;  i < that_about . numbr_mates;  i ++  ) {
+
+
+            clean_about (  ( gopi_about * ) that_about . mates [ i ]  );
+
+
+
+
+
+
+    that_about = 0;
+
+
+
     return 1;}

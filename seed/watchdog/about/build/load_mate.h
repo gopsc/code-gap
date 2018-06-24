@@ -28,17 +28,34 @@ int load_about_mate (
 
  use 'mate' to note its ship
 
-*/
 
 
-/*
-
-    reallac ( pointer_about, number_mate + 1 );
-
-
-    number_mate ++;
+ free space in cleanning
 
 */
+
+
+
+
+
+    if  (  that_about . number_mates  ==  0  )  {
+
+
+        that_about . mates   =   malloc  (  that_about . number_mates   *   sizeof ( void * )  );
+
+
+
+    else {
+
+
+        that_about . mates   =   reallac (  that_about . mates,  that_about . number_mate + 1   *   sizeof ( void * )  );
+
+
+
+
+    that_about .  number_mate ++;
+
+
 
 
 
@@ -114,6 +131,10 @@ int load_about_mate (
 
  and we know its rate
 
+
+
+ this is useful to note the number and thought out the sum of these valus
+
 */
 
 
@@ -143,10 +164,16 @@ int load_about_mate (
 
  and we are loaing
 
+
+
+ about it and about its mates is two pieces of message
+
+ move it to the start of message reading
+
 */
 
 
-    strcpy ( that_about . symbol, "reading" );
+//    strcpy ( that_about . symbol, "reading" );
 
 
 
