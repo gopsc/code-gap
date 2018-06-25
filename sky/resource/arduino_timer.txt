@@ -1,0 +1,26 @@
+
+
+ web 1 :  https://zhidao.baidu.com/question/583749380911581245.html
+
+ web 2 :  https://www.arduino.cn/forum.php?mod=viewthread&tid=4630
+ 
+ web 3 :  https://immaker.org/thread-101-1-1.html
+ 
+ 
+ 
+ 
+ 
+ one
+
+ #include <MsTimer2.h>
+
+ MsTimer2::set ( unsigned long ms, void ( * f ) ()  )
+ MsTimer2::start () 
+ MsTimer2::stop ()
+ 
+ 
+ 
+ 
+ 
+two
+ 
