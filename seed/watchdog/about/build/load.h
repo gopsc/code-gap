@@ -32,7 +32,7 @@ int load_about (
  and read the address
 
 
- and return it after addresss
+ and return it after address
 
 
 
@@ -59,6 +59,7 @@ int load_about (
  first loop set
 
 
+
  start at first line
 
 
@@ -67,9 +68,10 @@ int load_about (
 
  top than here
 
- so we got the whole content
+ so here recive the whole content
 
 */
+
 
 //    pointer_words   =  strchr ( pointer_words, '\n' ) + 1;
 
@@ -82,10 +84,18 @@ int load_about (
  to the one next of this line
 
 
- maybe we should put it at the first of loop
+ maybe we should put it at first of loop
 
 
  fresh it every loop
+
+
+
+ loop check pointer, so it start without blank
+
+ if there isn't a line of message
+
+ it read as a blank line
 
 */
 
@@ -93,7 +103,7 @@ int load_about (
 //    char * pointer_next = strchr ( pointer_words, '\n' ) ;
 
 
-    char * pointer_next = pointer_words;
+    char * pointer_next  =  pointer_words;
 
 
 
@@ -119,22 +129,42 @@ int load_about (
  this come soon
 
 
- clean it to blank could cause blank about it
+
+ clean it to blank could cause blank about it for a while
 
  and we could let it wait
 
  make a symbol
 
 
+
  if it isn't reading, we clean the symbol
 
  if it isn't reading, we put the about
 
+
+
+ move it to top
+
+
+ and we don't and it is continuedd
+
+
+ and we will clean their mates
+
+ then move it to top
+
 */
+
+
+
+/*
 
     strcpy ( that_about . symbol, "reading" );
 
     clean_about (  that_about  );
+
+*/
 
 
 
@@ -154,7 +184,7 @@ int load_about (
 
  ok but not
 
- sometimes we clean it for good and it haven't a connection
+ sometimes we clean it and that haven't a connection
 
 
  the main flag set is here
@@ -163,13 +193,19 @@ int load_about (
 
  and we could let it read symbol
 
- 'read' then it's running
+ 'read' then this is running
 
  but we don't clean its mate
+
+
+
+ but we will
 
 */
 
     that_about . flag . main   =  1;
+
+
 
 
 
@@ -182,7 +218,7 @@ int load_about (
  loop it line by line
 
 
- last line of words could not be enter
+ next line of words could not be enter
 
  we use pointer_next to note
 
@@ -210,9 +246,36 @@ int load_about (
 
 
 
+
+
+
+
+
+
+
+
+
  to the next line
 
  we move it here
+
+
+
+
+ we have set it before the first loop
+
+ after this we set it every loop
+
+
+
+ and we could set it here make it simple :d
+
+
+
+ this could be last line of words
+
+ then we read to this
+
 
 */
 
@@ -233,28 +296,14 @@ int load_about (
  and return it soon
 
 
- if it is, we read this
-
-
- we have set it before the first loop
-
- after this we set it every loop
-
-
- and we could set it here make it simple :d
-
-
-
- this could be last line of words
-
- then we read to this
+ if it is, we read to that
 
 */
 
 
         if  (  pointer_next != NULL  ) {
 
-      * pointer_next  =  '\0';}
+          * pointer_next  =  '\0';}
 
 
 
