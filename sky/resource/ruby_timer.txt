@@ -1,0 +1,12 @@
+
+
+
+
+from   zhidao.baidu.com
+
+def background_run_at(time)
+fork do
+sleep(1) until Time.now > = time
+yield
+end
+end
