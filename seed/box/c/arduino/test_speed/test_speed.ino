@@ -5,8 +5,8 @@
 
  test the speed of analog regist
  
- 870000+ for uno
- 345567+ for gr-citrus
+ 0.00011-     for uno
+ 0.000043196- for gr-citrus
 
 */
 
