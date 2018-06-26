@@ -377,7 +377,6 @@ int action_seed (
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/load.h"                    );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/load_mate.h"               );
 
 
 

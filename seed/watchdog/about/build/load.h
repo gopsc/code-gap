@@ -1055,6 +1055,15 @@ int load_about (
 
 
 
+/*
+
+ sound device
+
+ it is a little comlex
+
+*/
+
+
             else if  (  pointer_words  ==  strstr ( pointer_words, "Sound capture    : " )  ) {
 
                 that_about . sound . number_capture  =  atoi (  strstr ( pointer_words, " :" ) + 3  );}
@@ -1081,6 +1090,9 @@ int load_about (
                 pointer_words  =  strstr ( pointer_words, " :" ) + 3;
 
 
+
+
+
 /*
 
  dog,
@@ -1091,12 +1103,12 @@ int load_about (
 
 */
 
-                if      (  * pointer_words == 'o'  ) {
+                if      (  * pointer_words  ==  'o'  ) {
 
                     that_about . flag . dog  =  1;}
 
 
-                else if (  * pointer_words == ' '  ) {
+                else if (  * pointer_words  ==  ' '  ) {
 
                     that_about . flag . dog  =  0;}
 
@@ -1107,30 +1119,14 @@ int load_about (
 
 
 
-                if      (  * pointer_words == 'o'  ) {
+                if      (  * pointer_words  ==  'o'  ) {
 
-                    that_about . flag . connectted = 1;}
-
-
-                else if (  * pointer_words == ' '  ) {
-
-                    that_about . flag . connectted = 0;}
+                    that_about . flag . connectted  =  1;}
 
 
-                pointer_words ++;
-                pointer_words ++;
+                else if (  * pointer_words  ==  ' '  ) {
 
-
-
-
-                if      (  * pointer_words == 'o'  ) {
-
-                    that_about . flag . connector = 1;}
-
-
-                else if (  * pointer_words == ' '  ) {
-
-                    that_about . flag . connector = 0;}
+                    that_about . flag . connectted  =  0;}
 
 
                 pointer_words ++;
@@ -1139,14 +1135,14 @@ int load_about (
 
 
 
-                if      (  * pointer_words == 'o'  ) {
+                if      (  * pointer_words  ==  'o'  ) {
 
-                    that_about . flag . sound = 1;}
+                    that_about . flag . connector  =  1;}
 
 
-                else if (  * pointer_words == ' '  ) {
+                else if (  * pointer_words  ==  ' '  ) {
 
-                    that_about . flag . sound = 0;}
+                    that_about . flag . connector  =  0;}
 
 
                 pointer_words ++;
@@ -1155,14 +1151,30 @@ int load_about (
 
 
 
-                if      (  * pointer_words == 'o'  ) {
+                if      (  * pointer_words  ==  'o'  ) {
 
-                    that_about . flag . deamon = 1;}
+                    that_about . flag . sound  =  1;}
 
 
-                else if (  * pointer_words == ' '  ) {
+                else if (  * pointer_words  ==  ' '  ) {
 
-                    that_about . flag . deamon = 0;}}
+                    that_about . flag . sound  =  0;}
+
+
+                pointer_words ++;
+                pointer_words ++;
+
+
+
+
+                if      (  * pointer_words  ==  'o'  ) {
+
+                    that_about . flag . deamon  =  1;}
+
+
+                else if (  * pointer_words  ==  ' '  ) {
+
+                    that_about . flag . deamon  =  0;}}
 
 
 
@@ -1194,7 +1206,7 @@ int load_about (
 // start at next line
 
 
-            pointer_words = pointer_next + 1;}
+            pointer_words = pointer_next + 1;
 
 
 
@@ -1206,13 +1218,17 @@ int load_about (
 
  we move it to the first of loop
 
+
+
+ make it clear
+
 */
 
-//         pointer_next = strchr ( pointer_words, '\n' );
+//             pointer_next = strchr ( pointer_words, '\n' );
 
 
 
-        }
+            }}
 
 
 
@@ -1225,10 +1241,12 @@ int load_about (
 
  read finished
 
+ move topper
+
 */
 
 
-    strcpy ( that_about, "waitting" );
+//    strcpy ( that_about, "waitting" );
 
 
 

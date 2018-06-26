@@ -38,6 +38,17 @@ int control_message(
 
 
 
+
+
+
+/*
+
+ sometimes it could be other message
+
+ like html
+
+*/
+
         if (
 
                ! judge_message_blank (  that_site,  pointer_recv,  buffer_send  ) 
@@ -91,7 +102,7 @@ int control_message(
 */
 
 
-        strcat ( buffer_send, "About host.\n" );
+        strcat ( buffer_send, "About me.\n" );
 
 
 
@@ -118,6 +129,7 @@ int control_message(
                   );
 
         strcat ( buffer_send, buffer_words );
+
 
 // we use a complicate symbol to understand two or more piece of message
 
@@ -150,7 +162,7 @@ int control_message(
 
                ) {
 
-                strcat ( buffer_send, "About guest.\n" );
+                strcat ( buffer_send, "About my mate.\n" );
 
 
 
@@ -187,6 +199,7 @@ int control_message(
 
                 strcat ( buffer_send, buffer_words );
 
+
                 strcat ( buffer_send, symbol_next );}}
 
 
@@ -197,22 +210,33 @@ int control_message(
 
 
 
+/*
 
-// This is gop station,
-// (command)
-// ...
-// (end)
-// ...
-
-
-
+ This is gop station,
+ (command)
+ ...
+ (end)
+ ...
 
 
-// the start path
 
-//  we found the hello before, then next line is the beginning of this message
+
+
+
+ the start path
+
+  we found the hello before, then next line is the beginning of this message
+
+*/
+
 
         pointer_recv = strchr ( pointer_recv, '\n' ) + 1;
+
+
+
+
+
+
 
 
 
@@ -224,6 +248,9 @@ int control_message(
 
 
 
+
+
+
 // for is the complex loop
 
         do {
@@ -231,14 +258,17 @@ int control_message(
 
 
 
-// find next symbol
-//
-// symbol start with a enter type  ( it bring one )
-//
-// and the end with two of it
-//
-// so this will be found easier
+/*
 
+ find next symbol
+
+ symbol start with a enter type  ( it bring one )
+
+ and the end with two of it
+
+ so this will be found easier
+
+*/
 
 
 
@@ -288,6 +318,7 @@ int control_message(
 
 
 
+
 // and if this range we found the end, we exit
 
           } while (  pointer_next != NULL  );
@@ -320,8 +351,15 @@ int control_message(
 
 
 
+/*
 
-// i want let this be dissapear, very single connector and connectted use the same command
+ i want let this be dissapear, very single connector and connectted use the same command
+
+
+
+ it, and its mate
+
+*/
 
 
     else if (
@@ -410,11 +448,12 @@ int control_message(
 
 
 
-// Read the information of client.
-
-
-
 /*
+
+ Read the information of client.
+
+
+
 
  we don't let the pointer of next one
 
@@ -423,6 +462,18 @@ int control_message(
 */
 
         char * pointer_next;
+
+
+
+
+
+
+// start
+
+
+    strcpy  (  gop_network . about [ that_site ] . symbol,  "reading"  )
+
+
 
 
 
@@ -440,13 +491,16 @@ int control_message(
 
 
 
+/*
 
-// we just read this line and we just move it be a end signal
+ we just read this line and we just move it be a end signal
 
-// and we don't change this buffer of path, so we could return it later
+ and we don't change this buffer of path, so we could return it later
 
-// if it's not the last one, we do this and change the buffer of path later
 
+ if it's not the last one, we do this and change the buffer of path later
+
+*/
 
             if (  pointer_next != NULL  ) {
 
@@ -462,15 +516,21 @@ int control_message(
 
 
 
-// ok we return it
+/*
 
-// and jump over the symbol
+ ok we return it
 
-// if it's not the last one
+ and jump over the symbol
+
+ if it's not the last one
+
+*/
+
 
             if (  pointer_next != NULL  ) {
 
               * pointer_next = '\n';
+
 
 // it is strange maybe \0 is a charactor
 
@@ -479,12 +539,19 @@ int control_message(
 
 
 
-// if this is not the last one we start again
+// if this isn't the last one we start again
 
         } while (  pointer_next != NULL  );
 
 
 
+
+
+
+
+// ok
+
+    strcpy  (  gop_network . about [ that_site ] . symbol,  "waitting"  )
 
 
 
