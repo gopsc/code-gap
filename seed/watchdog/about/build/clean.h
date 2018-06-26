@@ -144,6 +144,8 @@
 
 
 
+
+
 /*
 
  there are space used where mates pointe
@@ -161,6 +163,11 @@
 
 
 
+/*
+
+ clean them, and free space
+
+*/
 
         int i;
 
@@ -169,12 +176,18 @@
 
             clean_about (  ( gopi_about * ) that_about . mates [ i ]  );
 
+            free ( that_about . mates [ i ] );}
+
 
 
 
 
 
     that_about = 0;
+
+
+
+
 
 
 

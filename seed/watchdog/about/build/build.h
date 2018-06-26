@@ -1,60 +1,112 @@
 
 struct gopi_system {
 
+/*
+
+ then it put about waitting could be little 
+
+*/
+
+    char symbol [ 16 ];
+
     char system [ 1024 ];
     char name   [ 1024 ];
     char user   [ 1024 ];};
 
-//-------------------------------------------------------------------------
+
+
+
+
 
 struct gopi_cpu {
 
-             char name [ 128 ] ;
-    unsigned int  user   ;
-    unsigned int  nice   ;
-    unsigned int  system ;
-    unsigned int  idle   ;
 
-             int cores       ;
-             int frequency   ;
-             int temperature ;
-    unsigned int rate        ;};
 
-//-------------------------------------------------------------------------
+
+/*
+
+ them could not be here
+
+*/
+
+
+             char name [ 128 ];
+
+    unsigned int  user;
+    unsigned int  nice;
+    unsigned int  system;
+    unsigned int  idle;
+
+             int cores;
+             int frequency;
+             int temperature;
+    unsigned int rate;};
+
+
+
+
+
 
 struct gopi_memory {
 
     unsigned long  total;
-    unsigned long  free ;};
+    unsigned long  free ;
 
-//-------------------------------------------------------------------------
+/*
+
+ we note rate straitly
+
+*/
+
+    unsigned long  total;};
+
+
+
+
+
 
 struct gopi_disk {
 
-    unsigned long  size     ;
-    unsigned long  available;};
+    unsigned long  size;
+    unsigned long  available;
+
+/*
+
+ we note rate straitly
+
+*/
+
+    unsigned long  total;};
 
 
-//-------------------------------------------------------------------------
+
+
+
+
 
 struct gopi_network {
 
     char        ip     [ 32 ] [ 3 ] [ 1024 ];
     int         number;};
 
-//-------------------------------------------------------------------------
+
+
+
+
 
 struct gopi_sound {
 
-    int         number_control  ;
-    int         number_capture  ;
-    int         number_playback ;
+    int         number_control;
+    int         number_capture;
+    int         number_playback;
 
     char        device [ 3 ] [ 128 ] [ 16 ];
-    int         device_playback ;
-    int         device_capture  ;};
+    int         device_playback;
+    int         device_capture;};
 
-//-------------------------------------------------------------------------
+
+
+
 
 
 

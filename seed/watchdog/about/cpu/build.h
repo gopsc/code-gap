@@ -1,9 +1,9 @@
 
-int information_cpu_get(){
+int about_cpu () {
 
-    information_CPU_rate_get();
-    information_CPU_temperature_get();
-    information_CPU_cores_get();
-    information_CPU_frequency_get();
+    about_CPU_rate ();
+    about_CPU_temperature ();
+    about_CPU_cores ();
+    about_CPU_frequency ();
 
     return 1;}

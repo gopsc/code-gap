@@ -38,14 +38,24 @@ void * gop_dog ( void * what ) {
     load_configure ();
 
 
+
+
+
+
 // Prepare the symbal just like 'NEXT'
 
     load_symbol ();
 
 
+
+
+
 // Listen modle of sound , it need a word libary loading.
 
     load_listen ();
+
+
+
 
 
 /*
@@ -58,6 +68,10 @@ void * gop_dog ( void * what ) {
 //    check_root();
 
 
+
+
+
+
 /*
 
  When a update was stop, files left.
@@ -66,6 +80,9 @@ void * gop_dog ( void * what ) {
 */
 
     check_update ();
+
+
+
 
 
 
@@ -86,6 +103,11 @@ void * gop_dog ( void * what ) {
 
 
 
+
+
+
+
+
     while (  gop_about . flag . main  ) {
 
 
@@ -94,20 +116,40 @@ void * gop_dog ( void * what ) {
  u can not run this program just for watchdog
  u wanna others, right?
 
+
+
+ maybe
+
 */
 
-        if      (  ! gop_about . flag . dog  ) {
+        if  (  ! gop_about . flag . dog  ) {
 
             usleep ( 100000 );}
 
 
 
-        else if (  gop_about . flag . dog  ) {
+        else if  (  gop_about . flag . dog  ) {
 
 
 
 
 // run the functions
+
+
+
+/*
+
+ then we could wait for it every step
+
+*/
+
+
+/*
+
+            strcpy ( gop_about . system . symbol, "reading" );
+
+*/
+
 
             get_about_user ();   usleep ( 100000 );
 

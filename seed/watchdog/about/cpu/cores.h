@@ -1,44 +1,75 @@
 
-int information_CPU_cores_get() {
-
-
-// When the loop start,
-//   it plus one so
-// the  lines can be smaller
-    int        num_result        = -1;
-
-
-// Somehow,
-//  there should be
-// some Enter there
-
-    char      that_file  [10240] = "\n\n";
+int about_CPU_cores () {
 
 
 
+/*
 
-// There's 'processor' in
-// the words sometimes
-    char    target_name  [16]    = "\nprocessor";
-
-
-
-
-// u should put a pointer
-//  to note where you've read 
-
-    char*  pointer_file          = that_file;
+ When the loop start,
+   it plus one so
+ the  lines can be smaller
 
 
 
+ if we can't found
+
+ could note it
+
+*/
+
+    int  number_result  =  -1;
+
+
+
+/*
+
+ Somehow,
+  there should be
+ some Enter there
+
+*/
+
+    char  buffer_file  [ 10240 ]  =  "\n\n";
 
 
 
 
-// Put the words in the
-//  Second site
+/*
 
-    file_get("/proc/cpuinfo",  that_file + 2);
+ There's 'processor' in
+ the words sometimes
+
+*/
+
+    char  target_name  [ 16 ]  =  "\nprocessor";
+
+
+
+/*
+
+ u should put a pointer
+  to note where you've read 
+
+*/
+
+    char * pointer_file  =  buffer_file;
+
+
+
+
+
+
+/*
+
+ Put the words in the
+ Second site
+
+
+
+ to it's place
+
+*/
+    file_get  (  "/proc/cpuinfo",  buffer_file  +  ( strlen ( buffer_file ) - 1 )  );
 
 
 
@@ -46,11 +77,11 @@ int information_CPU_cores_get() {
 
 // Start the loop
 
-    while( pointer_file != NULL ) {
+    while ( pointer_file != NULL ) {
 
-        num_result++; 
+        number_result ++; 
 
-        pointer_file = strstr( pointer_file + 1, target_name );}
+        pointer_file  =  strstr ( pointer_file + 1, target_name );}
 
 
 
@@ -58,7 +89,7 @@ int information_CPU_cores_get() {
 
 // Get the data
 
-    information_cpu.cores = num_result;
+    gop_about . cpu . cores  =  number_result;
 
 
 

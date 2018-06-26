@@ -1,69 +1,109 @@
 
-int information_CPU_frequency_get() {
+int about_CPU_frequency () {
 
 
 
 
-    char  that_file[10240];
+    char  that_file [ 10240 ];
 
-    char  that_result[1024];
-
-
-
-
-
-    file_get("/proc/cpuinfo", that_file);
-
-    commandline_get("lscpu",  that_result);
+    char  that_result [ 1024 ];
 
 
 
 
 
-    if      ( strstr(that_file, "cpu MHz")  != NULL ) {
+    file_get ( "/proc/cpuinfo", that_file );
 
 
 
-        strcpy( that_file, strstr(that_file,   "cpu MHz") );
-        strcpy( that_file, strstr(that_file, ": ")+2 );
-                          *strchr(that_file, '\n') = '\0';
-
-
-        information_cpu.frequency = atoi(that_file);}
+    commandline_get ( "lscpu",  that_result );
 
 
 
 
 
 
-    else if ( strstr(that_result, "cpu max MHz") != NULL ) {
 
+/*
 
+ don't know where it is
 
-        strcpy( that_result, strstr(that_result, "cpu max MHz") );
+ we try to found
 
-       *strchr( that_result, '\n') = '\0';
-
-        sscanf( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
-
-
-        information_cpu.frequency = atoi(that_result);}
+*/
 
 
 
 
-    else if ( strstr(that_result, "CPU max MHz") != NULL ) {
+    if  (  strstr ( that_file, "cpu MHz" )  !=  NULL  ) {
+
+
+/*
+
+ there it is
+
+*/
+
+
+        strcpy  (  that_file,  strstr ( that_file, "cpu MHz" )     );
+        strcpy  (  that_file,  strstr ( that_file, ": "      ) + 2 );
+
+      * strchr ( that_file, '\n' ) = '\0';
+
+
+        gop_about . cpu . frequency  =  atoi ( that_file );}
 
 
 
-        strcpy( that_result, strstr(that_result, "CPU max MHz") );
-
-       *strchr( that_result, '\n') = '\0';
-
-        sscanf( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
 
 
-        information_cpu.frequency = atoi(that_result);}
+
+/*
+
+ could be other way
+
+*/
+
+
+    else if  (  strstr ( that_result, "cpu max MHz" )  !=  NULL  ) {
+
+
+
+        strcpy  (  that_result,  strstr ( that_result, "cpu max MHz" )  );
+
+      * strchr ( that_result, '\n' ) = '\0';
+
+        sscanf ( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
+
+
+        gop_about . cpu . frequency  =  atoi ( that_result );}
+
+
+
+
+
+/*
+
+ this show up on deepin linux
+
+*/
+
+    else if  (  strstr ( that_result, "CPU max MHz" )  !=  NULL  ) {
+
+
+
+        strcpy  (  that_result,  strstr ( that_result, "CPU max MHz" )  );
+
+      * strchr ( that_result, '\n' ) = '\0';
+
+        sscanf ( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
+
+
+        gop_about . cpu . frequency  =  atoi ( that_result );}
+
+
+
+
 
 
 
@@ -72,29 +112,38 @@ int information_CPU_frequency_get() {
 
 
 
+/*
 
-        if      ( strstr(that_file, "BogoMIPS") != NULL ) {
+ this is not same like hz
 
+ could very small
 
-            strcpy( that_file, strstr(that_file,   "BogoMIPS") );
-            strcpy( that_file, strstr(that_file, ": ")+2 );
-                              *strchr(that_file, '\n') = '\0';
+ on termux
 
+*/
 
-            information_cpu.frequency = atoi(that_file);}
-
-
-
-
-        else if ( strstr(that_file, "Bogomips") != NULL ) {
+        if  (  strstr ( that_file, "BogoMIPS" )  != NULL  ) {
 
 
-            strcpy( that_file, strstr(that_file,   "Bogomips") );
-            strcpy( that_file, strstr(that_file, ": ")+2 );
-                              *strchr(that_file, '\n') = '\0';
+            strcpy ( that_file, strstr ( that_file,  "BogoMIPS") );
+            strcpy ( that_file, strstr ( that_file,  ": "      ) + 2 );
+                              * strchr ( that_file,  '\n'      ) = '\0';
 
 
-            information_cpu.frequency = atoi(that_file);}}
+            gop_about . cpu . frequency  =  atoi ( that_file );}
+
+
+
+
+        else if  (  strstr ( that_file, "Bogomips" )  !=  NULL  ) {
+
+
+            strcpy ( that_file, strstr ( that_file,   "Bogomips" ) );
+            strcpy ( that_file, strstr ( that_file, ": " ) + 2 );
+                              * strchr ( that_file, '\n' ) = '\0';
+
+
+            gop_about . cpu . frequency  =  atoi ( that_file );}}
 
 
 
