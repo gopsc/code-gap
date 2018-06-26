@@ -33,3 +33,15 @@ but it's just meaningful to me..
   ok , just like that... :D
   then, you can see
 
+
+
+
+
+
+
+# sky
+
+the resource and configurations found
+
+they've  grow little bit
+
