@@ -54,15 +54,20 @@ if [ $address != "unknow" ];then
 
 
 
+  if [   -d /opt/backup ];
+  then
+    rm -rf /opt/backup
+  fi
+
+  mkdir /opt/backup
 
 
 
-  rm -rf         /opt/?
-  cp -rf         ${address}/?             /opt
-#  cp             ${address}/?.tar.gz    /opt
-#  tar zxf        /opt/?.tar.gz
-#  mv             ./?                    /opt
-#  rm             /opt/?.tar.gz
+
+  cp -rf         ${address}/seed             /opt/backup
+  rm -rf         /opt/gop/seed
+  cp -rf         /opt/backup/*               /opt/gop/seed
+  rm -rf         /opt/backup
 
 fi
 

@@ -1,11 +1,13 @@
 
+int          number_args;
+char**       buffer_args;
 
 char   path_the[129]  = "";
 char   name_the[129]  = "";
 char   name_data[129] = "";
 
 //------------------------mind---------------------------
-bool     flag_mind;
+bool     flag_mind    = true;
 
 bool     flag_dog     = true;
 bool     flag_show;

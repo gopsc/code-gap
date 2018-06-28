@@ -8,7 +8,7 @@ void information_ip_get() {
 
               void*    that_pointer        = NULL;
               char     buffer_address[129];
-              int      num_ip              = 0;
+              int      number_ip           = 0;
 
 
 
@@ -34,14 +34,14 @@ void information_ip_get() {
                       INET_ADDRSTRLEN
                      );
 
-            num_ip++;
+            number_ip++;
 
             strcpy(
-                   information_ip[num_ip][1],
+                   information_ip[number_ip][1],
                    that_struct->ifa_name
                   );
             strcpy(
-                   information_ip[num_ip][2],
+                   information_ip[number_ip][2],
                    buffer_address
                   );}
 
@@ -66,14 +66,14 @@ void information_ip_get() {
                       INET6_ADDRSTRLEN
                      );
 
-            num_ip[2]++;
+            number_ip[2]++;
 
             strcpy(
-                   information_ip[2][num_ip][1],
+                   information_ip[2][number_ip][1],
                    that_struct->ifa_name
                   );
             strcpy(
-                   information_ip[2][num_ip][2],
+                   information_ip[2][number_ip][2],
                    buffer_address
                   );}
 */
@@ -82,7 +82,7 @@ void information_ip_get() {
 
         that_struct = that_struct->ifa_next;}
 
-    information_ip_num  = num_ip;
+    information_ip_number = number_ip;
 
     freeifaddrs(that_struct);}
 
@@ -117,7 +117,7 @@ void information_ip_get() {
 
 
 
-    int   num_ip[3];
+    int   number_ip[3];
     char  buffer_ip[3][255];
     char* point_ip[3];
 
@@ -130,7 +130,7 @@ void information_ip_get() {
 
     for ( int i=1; i<=2; i=i+1 ) {
 
-        num_ip[i] = 0;
+        number_ip[i] = 0;
 
 // It will goes mass
 
@@ -142,7 +142,7 @@ void information_ip_get() {
 
         while (  strlen(point_ip[i]) != 0 ) {
 
-            num_ip[i]++;
+            number_ip[i]++;
 
 
 
@@ -162,10 +162,10 @@ void information_ip_get() {
 
             point_ip[i]++;
 
-            strcpy(information_ip[num_ip[i]][i], buffer_ip[i]);}}
+            strcpy(information_ip[number_ip[i]][i], buffer_ip[i]);}}
 
 
 
 
-    information_ip_num = num_ip[1];}
+    information_ip_number = number_ip[1];}
 */

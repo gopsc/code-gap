@@ -39,7 +39,8 @@ cat $addres2/watchdog/information/get/build.h                            >> $add
 #cat $addres2/watchdog/check/network.h                                    >> $address
 #cat $addres2/watchdog/check/power.h                                      >> $address
 #cat $addres2/watchdog/check/reboot.h                                     >> $address
-#cat $addres2/watchdog/check/ssh.h                                        >> $address
+cat $addres2/watchdog/check/ssh.h                                        >> $address
+cat $addres2/watchdog/check/root.h                                       >> $address
 
 #cat $addres2/watchdog/load/configure.h                                   >> $address
 #cat $addres2/watchdog/load/listen.h                                      >> $address

@@ -5,36 +5,33 @@ void listen_save( int site ) {
 
 
 
+    char   buffer_name[65];
+    strcpy(buffer_name, path_the);
+    strcat(buffer_name, "/");
+    strcat(buffer_name, name_the);
+    strcat(buffer_name, "/sound/listen/word/");
 
-    string that_name  = path_the;
-           that_name += "/";
-           that_name += name_the;
-           that_name += "/sound/listen/word/";
-
-    string that_file;
-
-    string that;
-
-
+    char buffer_file[65];
+    char buffer_number[33];
+    char buffer_word[204800];
 
 
     for ( int w=1; w<=N; w++ ) {
 
-        that_file  = that_name;
-        that_file += to_string(num_listen);
-        that_file += "/";
-        that_file += to_string(w);
-        that_file += ".w";
+        strcpy(buffer_file,      buffer_name  );
+        gcvt  (number_listen, 2, buffer_number);
+        strcat(buffer_file,      buffer_number);
+        strcat(buffer_file,      "/"          );
+        gcvt  (number_listen, 2, buffer_number);
+        strcat(buffer_file,      buffer_number);
+        strcat(buffer_file,      ".w"         );
 
-        that = "";
+        strcpy(buffer_word, "");
 
         for ( int t=1; t<=site; t++ ) {
 
-            that += to_string(result_ft[t][w]);
-            that += "\n";}
+            gcvt  (result_ft[t][w], 2, buffer_number);
+            strcat(buffer_word,        buffer_number);
+            strcat(buffer_word,        "\n"         );}
 
-        file_save(that_file,that);}}
-
-
-
-
+        file_save(buffer_file, buffer_word);}}

@@ -31,7 +31,7 @@ void* information_get( char* message ) {
 /*|*/                                                                                                                                                 //|
 /*|*/   strcat(message, "CPU CORES       :");                     gcvt(information_cpu.cores,          10, buffer_message);                           //|
 /*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
-/*|*/   strcat(message, "CPU F           :");                     gcvt(information_cpu.f,              10, buffer_message);                           //|
+/*|*/   strcat(message, "CPU FREQUENCY   :");                     gcvt(information_cpu.frequency,      10, buffer_message);                           //|
 /*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
 /*|*/   strcat(message, "CPU TEMPERATURE :");                     gcvt(information_cpu.temperature,    10, buffer_message);                           //|
 /*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|

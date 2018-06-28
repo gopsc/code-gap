@@ -1,6 +1,15 @@
 
-string control_message(int site, string buffer_recv){
+void* control_message(
+                       int   site,
+                       char* buffer_recv,
+                       char* buffer_send
+                     ) {
 
+
+
+
+strcpy(buffer_send, "123");
+/*
 
 
 
@@ -512,4 +521,7 @@ string control_message(int site, string buffer_recv){
                     else {
                         that += "Who is that now?";}}}}
 
-    return that;}
+    return that;
+
+*/
+    }

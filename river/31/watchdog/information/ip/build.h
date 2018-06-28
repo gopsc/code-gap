@@ -4,24 +4,28 @@ void info_ip_get() {
 
 
 
-
-    string that1  = cmd_get("info_ip", "ifconfig | grep 'Link encap' | cut -d' ' -f1");
-    string that2  = cmd_get("info_ip", "ifconfig | grep 'inet addr'  | tr -s ' ' : | cut -d: -f4");
-
-
-    if (that1 == "") {
-        that1 = cmd_get("info_ip", "ifconfig | grep ': '  | tr -s ' ' : | cut -d: -f1");}
-    if (that2 == ""  or  that2.length() < 7) {
-        that2 = cmd_get("info_ip", "ifconfig | grep 'inet 地址'  | tr -s ' ' : | cut -d: -f4");}
-    if (that2 == ""  or  that2.length() < 7) {
-        that2 = cmd_get("info_ip", "ifconfig | grep 'inet '  | tr -s ' ' : | cut -d: -f3");}
+    char that_name[1024];
+    char that_address[1024];
 
 
+    cmd_get( "ifconfig | grep 'Link encap' | cut -d' ' -f1",                        that_name );
+    cmd_get( "ifconfig | grep 'inet addr'  | tr -s ' ' : | cut -d: -f4",            that_address );
 
-    if (that1.substr(that1.length(), 1) != "\n") {
-        that1 += '\n';}
-    if (that2.substr(that2.length(), 1) != "\n") {
-        that2 += '\n';}
+
+    if ( !strcmp(that_name,    "") ) {
+        cmd_get( "ifconfig | grep ': '  | tr -s ' ' : | cut -d: -f1",               that_name );}
+
+    if ( !strcmp(that_address, "") or (strlen(that_address)<7 or strlen(that_address)>15) ) {
+        cmd_get( "ifconfig | grep 'inet 地址'  | tr -s ' ' : | cut -d: -f4",   that_address );}
+
+    if ( !strcmp(that_address, "") or (strlen(that_address)<7 or strlen(that_address)>15) ) {
+        cmd_get( "ifconfig | grep 'inet '  | tr -s ' ' : | cut -d: -f3",            that_address );}
+
+
+//    if (that1.substr(that1.length(), 1) != "\n") {
+//        that1 += '\n';}
+//    if (that2.substr(that2.length(), 1) != "\n") {
+//        that2 += '\n';}
 
 
 
@@ -30,6 +34,7 @@ void info_ip_get() {
     int    num1;
     int    num2;
 
+/*
     while( num1 != -1 and num2 != -1 ) {
 
 
@@ -70,7 +75,7 @@ void info_ip_get() {
             num2  = 1;}}
 
 
-
+*/
 
     point_ip[1] = num_ip;}
 

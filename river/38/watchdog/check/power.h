@@ -1,11 +1,16 @@
 
 void check_power() {
 
+//note_save("Test", "Test", "now");
+/*
+    time_t time_now = time(NULL);
+    char   that_date[33];
+    char   that_time[33];
+    char   that_path[33];
 
-    string path  = path_the;
-           path += "/";
-           path += "gop/note/power.note";
-    string that;
+           strcpy(path, path_the);
+           strcat(path, "/");
+           strcat(path, "gop/note/power.note");
 
 
 
@@ -13,22 +18,20 @@ void check_power() {
 
 
 
-    if ( !is_file(path.c_str()) ) {
+    if ( !is_file(that_path) ) {
 
-        file_save(path, "");}
+        file_save(that_path, "");}
 
     else {
 
-        that = file_get(path);}
+        file_get(that_path, that_date);}
+
+    gcvt( (int)time_now );
+    file_save( that_path,  );
 
 
 
 
-
-
-    time_t time_now = time(NULL);
-
-    file_save( path, to_string(info_time) );
 
 
 
@@ -46,5 +49,7 @@ void check_power() {
 
             note_save("dog",    that1);
 
-            note_save("corde",  that1);}}}
+            note_save("corde",  that1);}}
+*/
+}
 

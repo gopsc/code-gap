@@ -1,3 +1,3 @@
 void* info_user_get(){
 
-    info_user = cmd_get("info_user", "whoami");}
+    cmd_get("whoami", info_user);}

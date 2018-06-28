@@ -11,7 +11,7 @@ void* load_configure() {
 
 
 
-
+    char buffer_path[33] = "/opt/gop/seed/configure";
 
     char that_file[1025];
     char buffer_file[1025];
@@ -20,11 +20,15 @@ void* load_configure() {
 
 
 
+    if ( !is_file(buffer_path) ) {
 
-    if ( is_file("/opt/?/configure") ) {
+        printf("Can't find the configure file. :(\n Type a new path:");
 
-        file_get("/opt/?/configure", that_file);
+        fgets(buffer_path,33, stdin);}
 
+    else {
+
+        file_get(buffer_path, that_file);
 
 
         if ( strcmp(that_file, "") == 0 ) {

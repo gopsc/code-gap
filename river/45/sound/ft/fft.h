@@ -66,8 +66,9 @@ void fft(int site) {
         mo = mo/(N/2);
 
         //if (mo >= 1) {
-        //    cout << w << ":" << mo << endl;}
+        //    printf( "%d:%d\n", w, mo);}
 
         result_ft[site][(int)w] = mo;}
+
     if ( flag_sound_show ) {
         ft_show(site);}}

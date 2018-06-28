@@ -8,9 +8,8 @@
 
 
 
-path              /opt
-name              ?
-data              gop
+path              /opt/gop
+name              seed
 
 
 
@@ -31,7 +30,7 @@ sound-save        off
 
 
 
-address-to        127.0.0.1
+address-to        10.10.10.103
 port-to           520
 port-this         520
 

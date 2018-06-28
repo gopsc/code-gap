@@ -1,8 +1,10 @@
-string decode(string that) {
-    return that;}
+void* decode( char* that_message, const char* that_type ) {
+    if ( strcmp(that_type, "blank") == 0 ) {
+        ;}}
 
-string encode(string that) {
-    return that;}
+void* encode( char* that_message, const char* that_type ) {
+    if ( strcmp(that_type, "blank") == 0 ) {
+        ;}}
 
 
 

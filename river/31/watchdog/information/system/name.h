@@ -1,4 +1,4 @@
 
 void* info_name_get(){
 
-    info_name = cmd_get("info_name", "uname -n");}
+    cmd_get("uname -n", info_name);}

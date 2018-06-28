@@ -1,5 +1,4 @@
 
 void command_test_fft() {
-/*
-    test_ft("fft");
-*/}
+
+    test_ft("fft");}

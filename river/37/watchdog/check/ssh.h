@@ -1,5 +1,12 @@
 void check_ssh() {
 
-    if (cmd_get("dog_check_ssh", "uname -n")=="raspberrypi") {
+    char that_result[129];
 
-        cmd_get("dog_check_ssh", "sudo service ssh restart");}}
+
+
+
+    cmd_get("uname -n", that_result);
+
+    if ( strcmp(that_result, "raspberrypi\n") == 0 ) {
+
+        cmd_get("service ssh result", that_result);}}

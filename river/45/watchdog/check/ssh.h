@@ -5,8 +5,8 @@ void check_ssh() {
 
 
 
-    cmd_get("uname -n", that_result);
+    commandline_get("uname -n", that_result);
 
     if ( strcmp(that_result, "raspberrypi\n") == 0 ) {
 
-        cmd_get("service ssh restart", that_result);}}
+        commandline_get("service ssh restart", that_result);}}

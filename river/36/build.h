@@ -90,7 +90,7 @@ int main( int argc, char *argv[] ) {
             printf( "Take 'Reload listen' to reload listenning date.\n" );
 
             printf( "\n U-DISK COMMANDS FOR TESK!!!\n\n" );
-            printf( "     'Save'\n     'Load'\n     'Test'\n     'Test alsa'\n     'Install'\n" );}
+            printf( "     'Save'\n     'Load'\n     'Test'\n     'Test alsa'\n     'Install'\n     'Remove'\n" );}
 
 ///--------------------------------------------------------------------
 /*
@@ -225,7 +225,7 @@ printf("Closed\n");
             system(cmd);}
 
 
-        else if ( strcmp( command, "Download" ) == 0 ){
+        else if ( strcmp( command, "Remove" ) == 0 ){
 
              printf("...\n");
 
@@ -235,7 +235,7 @@ printf("Closed\n");
              strcat(cmd, path_the);
              strcat(cmd, "/");
              strcat(cmd, name_the);
-             strcat(cmd, "/box/Linux/download.sh");
+             strcat(cmd, "/box/Linux/remove.sh");
 
              system(cmd);
 

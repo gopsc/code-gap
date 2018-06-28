@@ -1,14 +1,19 @@
 
-void note_clear(const char* that_name ) {
+void note_clear( const char* that_name,
+                 const char* that_command ) {
+
 
     char           that_path[129];
 
-
-
     strcpy(that_path, path_the);
-    strcat(that_path, "/gop/note/");
+    strcat(that_path, "/");
+    strcat(that_path, name_data);
+    strcat(that_path, "/note/");
     strcat(that_path, that_name);
     strcat(that_path, ".note");
 
-    file_save(that_path, "");}
 
+
+
+    if ( strcmp(that_command, "all") == 0 ) {
+        file_save(that_path, "");}}

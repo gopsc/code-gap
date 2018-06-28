@@ -3,18 +3,18 @@ void cmd_get(const char* commands, char* that_result) {
 
 
 
-    FILE *read;
-    char  that_buffer[10];
-          that_result[0] = '\0';
+    FILE  *fp_cmd;
+    char   that_buffer[10];
+           that_result[0] = '\0';
 
 
 
-    read = popen(commands, "r");
+    fp_cmd = popen(commands, "r");
 
-    if (read != NULL) {
-
-        while ( fread(that_buffer, sizeof(char), 10, read) != 0 ) {
+    if (fp_cmd != NULL) {
+usleep(100);
+        while ( fgets(that_buffer, 1024, (FILE*)fp_cmd) != NULL ) {
 
             strcat(that_result, that_buffer);}}
 
-    pclose(read);}
+    pclose(fp_cmd);}

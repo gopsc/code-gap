@@ -5,6 +5,7 @@ addres2=/opt/ta
 address=$addres2/flower.cpp
 
 cat $addres2/box/c++/head/Linux.cpp                                      >> $address
+cat $addres2/box/c++/head/variable.h                                     >> $address
 
 
 
@@ -22,6 +23,7 @@ cat $addres2/box/c++/cmd/shell.h                                         >> $add
 
 
 cat $addres2/watchdog/note/save.h                                        >> $address
+cat $addres2/watchdog/note/clear.h                                       >> $address
 cat $addres2/watchdog/information/system/user.h                          >> $address
 cat $addres2/watchdog/information/system/name.h                          >> $address
 cat $addres2/watchdog/information/system/build.h                         >> $address
@@ -36,15 +38,14 @@ cat $addres2/watchdog/information/cpu/build.h                            >> $add
 cat $addres2/watchdog/information/sound/alsa.h                           >> $address
 cat $addres2/watchdog/information/get/build.h                            >> $address
 
-#cat $addres2/watchdog/check/network.h                                    >> $address
-#cat $addres2/watchdog/check/power.h                                      >> $address
-#cat $addres2/watchdog/check/reboot.h                                     >> $address
+cat $addres2/watchdog/check/network.h                                    >> $address
+cat $addres2/watchdog/check/power.h                                      >> $address
 cat $addres2/watchdog/check/ssh.h                                        >> $address
 cat $addres2/watchdog/check/root.h                                       >> $address
 
-#cat $addres2/watchdog/load/configure.h                                   >> $address
+cat $addres2/watchdog/load/configure.h                                   >> $address
 #cat $addres2/watchdog/load/listen.h                                      >> $address
-#cat $addres2/watchdog/show/build.h                                       >> $address
+cat $addres2/watchdog/show/information.h                                 >> $address
 cat $addres2/watchdog/dog.h                                              >> $address
 
 

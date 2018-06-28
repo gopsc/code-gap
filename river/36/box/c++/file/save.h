@@ -2,10 +2,10 @@
 void file_save(const char* that_path, const char* that_words) {
 
 
-    FILE* fp;
+    FILE* that_file;
     int   that_count         = 1;
     char  buffer_path[1024];
-    char* point_path;
+    char* pointer_path;
 
 
 
@@ -13,20 +13,20 @@ void file_save(const char* that_path, const char* that_words) {
     while ( that_count != 0 ) {
 
         strcpy(buffer_path, that_path);
-        point_path = buffer_path;
+        pointer_path = buffer_path;
 
 
 
-        for (int i=0; i<that_count; i++) {
+        for ( int i=0; i<that_count; i++ ) {
 
-            point_path = strstr(point_path + 1, "/");
+            pointer_path = strstr(pointer_path + 1, "/");
 
-            if ( point_path == NULL ) {
+            if ( pointer_path == NULL ) {
                 that_count = 0;}}
 
         if ( that_count != 0 ) {
             that_count++;
-           *point_path = '\0';
+           *pointer_path = '\0';
 
           if ( !is_dir(buffer_path) ) {
               mkdir(buffer_path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);}}}
@@ -34,16 +34,17 @@ void file_save(const char* that_path, const char* that_words) {
 
 
 
-    fp = fopen( that_path, "w" );
+    that_file = fopen( that_path, "w" );
 
-    fprintf( fp, that_words );
+    fprintf( that_file, that_words );
 
-    fclose( fp );}
+    fclose( that_file );}
 
 
 
 
 /*
+// The way of c++ stream
     ofstream fout(that_path.c_str());
 
     fout << words;

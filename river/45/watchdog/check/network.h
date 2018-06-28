@@ -72,8 +72,8 @@ void check_network() {
 
             char* that_pointer;
             char  that_buffer[1024];
-            int   num_cores;
-            int   num_frequency;
+            int   number_cores;
+            int   number_frequency;
 
             strcpy(
                     that_buffer,
@@ -85,7 +85,7 @@ void check_network() {
 
            *strchr(that_buffer, '\n') = '\0';
 
-            num_cores = atoi(that_buffer);
+            number_cores = atoi(that_buffer);
 
 
 
@@ -100,13 +100,13 @@ void check_network() {
 
            *strchr(that_buffer, '\n') = '\0';
 
-            num_frequency = atoi(that_buffer);
+            number_frequency = atoi(that_buffer);
 
 
 
 
             if (
-                                 num_cores *             num_frequency
+                                 number_cores *             number_frequency
                    > information_cpu.cores * information_cpu.frequency * 2
                ) {
 
@@ -126,7 +126,7 @@ void check_network() {
                 char   buffer_ip[33];
                 strcpy(buffer_ip, gop_connection.address_ip[0]);
 
-                for ( int ii=1; ii<=information_ip_num; ii++) {
+                for ( int ii=1; ii<=information_ip_number; ii++) {
 
                     if ( strcmp(buffer_ip, information_ip[ii][2]) == 0) {
 

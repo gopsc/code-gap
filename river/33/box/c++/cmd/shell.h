@@ -5,7 +5,7 @@ void cmd_get(const char* commands, char* that_result) {
 
     FILE  *fp_cmd;
     char   that_buffer[10];
-           that_result[0] = '\0';
+           that_result[0]   = '\0';
 
 
 

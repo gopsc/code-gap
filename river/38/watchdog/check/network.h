@@ -1,7 +1,7 @@
 
 void check_network() {
 
-
+/*
     time_t time_now = time(NULL);
 
 
@@ -124,4 +124,6 @@ void check_network() {
 
                 cout << "NET CONNECT RESET." << endl;
 
-                gop_connect.address_ip[0] = address_to;}}}}
+                gop_connect.address_ip[0] = address_to;}}}
+*/
+}

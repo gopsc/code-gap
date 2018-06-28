@@ -9,7 +9,7 @@ double     result_ft[200][513];
 double     buffer_listen[100][513][200];
 //                      [num][ w ][ t ]
 
-int        num_listen = 1;
+int        number_listen = 1;
 // Number of word's files
 
 char       path_sound[100];

@@ -2,7 +2,7 @@
 struct gopi_connect {
 
            char        how[4][17];
-           time_t      point_time[4];
+           time_t      time[4];
 
            char        command[4][129];
            char        information[4][10240];

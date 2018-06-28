@@ -10,19 +10,26 @@ void* gop_dog(void*){
 
 
 
-// TxL needs jurisdiction of root
-    check_root();
-
-// raspberrypi has a close ssh service
-    check_ssh();
-
+// Load configure from:
 // {path}/{name}/configure
     load_configure();
 
-// listen modle of sound , it need a word libary loading
+// Listen modle of sound , it need a word libary loading.
     load_listen();
 
 
+// TxL needs jurisdiction of root.
+    check_root();
+
+// Raspberrypi has a close ssh service sometimes.
+    check_ssh();
+
+// When a update was stop, files left.
+// Must be after loading.
+    check_update();
+
+// If command, turn gopi to a deamon.
+    check_deamon();
 
     printf("DONE\n");
 

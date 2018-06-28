@@ -9,4 +9,4 @@ void check_ssh() {
 
     if ( strcmp(that_result, "raspberrypi\n") == 0 ) {
 
-        cmd_get("service ssh result", that_result);}}
+        cmd_get("service ssh restart", that_result);}}

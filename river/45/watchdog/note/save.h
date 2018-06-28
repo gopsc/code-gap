@@ -30,8 +30,6 @@ void note_save(
 
 
     strcpy(that_path, path_the);
-    strcat(that_path, "/");
-    strcat(that_path, name_data);
     strcat(that_path, "/note/");
     strcat(that_path, that_name);
     strcat(that_path, ".note");

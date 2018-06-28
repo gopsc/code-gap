@@ -39,7 +39,7 @@ bool message_information_get( int site, char* pointer_recv, char* buffer_send ) 
 // If you connect to yourself,
 // clear it.
 
-        for (int i=1; i<=information_ip_num; i++) {
+        for (int i=1; i<=information_ip_number; i++) {
 
             if (
                  strcmp(

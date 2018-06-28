@@ -8,8 +8,15 @@ void* gop_dog(void*){
 
 
 
+
+
+
+
+// TxL needs jurisdiction of root
+    check_root();
+
 // raspberrypi has a close ssh service
-//    check_ssh();
+    check_ssh();
 
 //    load_configure();
 

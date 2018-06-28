@@ -22,19 +22,19 @@ void* gop_dog(void*){
 
     while(flag_dog){
 
-        info_user_get();
-        info_name_get();
-        info_system_get();
-        info_memory_get();
-//        info_cpu_get();
-        info_ip_get();
-//        info_sound_get();
+        information_user_get();   usleep(100000);
+        information_name_get();   usleep(100000);
+        information_system_get(); usleep(100000);
+        information_memory_get(); usleep(100000);
+        information_cpu_get();    usleep(100000);
+        information_ip_get();     usleep(100000);
+//        information_sound_get(); usleep(100000);
 
-//        check_network();
-//        check_power();
-//        check_reboot();
+//        check_network();         usleep(100000);
+//        check_power();           usleep(100000);
+//        check_reboot();          usleep(100000);
 
-//        dog_show();
+//        dog_show();              usleep(100000);
 
         information_done = true;}
 

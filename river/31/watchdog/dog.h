@@ -10,31 +10,31 @@ void* gop_dog(void*){
 
 // raspberrypi has a close ssh service
 
-    check_ssh();
+//    check_ssh();
 
-    load_configure();
+//    load_configure();
 
 // listen modle of sound , it need a word libary loading
 
-    load_listen();
+//    load_listen();
 
-    printf("DONE\n");
+//    printf("DONE\n");
 
     while(flag_dog){
 
-        info_time_get();
+        info_user_get();
         info_name_get();
         info_system_get();
-        info_memory_get();
-        info_cpu_get();
+//        info_memory_get();
+//        info_cpu_get();
         info_ip_get();
-        info_sound_get();
+//        info_sound_get();
 
-        check_network();
-        check_power();
-        check_reboot();
+//        check_network();
+//        check_power();
+//        check_reboot();
 
-        dog_show();
+//        dog_show();
 
         info_done = true;}
 

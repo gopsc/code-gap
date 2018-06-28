@@ -8,22 +8,23 @@
 
 
 struct gopi_cpu {
-             char name[20];
+
+             char name[129];
     unsigned int  user;
     unsigned int  nice;
     unsigned int  system;
     unsigned int  idle;
 
-              int cores;
-              int f;
-              int temperature;
+             int cores;
+             int frequency;
+             int temperature;
     unsigned int  rate;};
 
 //-------------------------------------------------------------------------
 
 struct gopi_memory {
-    unsigned char name1[20];
-    unsigned char name2[20];
+    unsigned char name1[129];
+    unsigned char name2[129];
 
     unsigned int  total;
     unsigned int  free;};
@@ -31,8 +32,8 @@ struct gopi_memory {
 //-------------------------------------------------------------------------
 
 struct gopi_disk {
-    unsigned int  total;
-    unsigned int  free;};
+    unsigned int  total[10];
+    unsigned int  free[10];};
 
 //-------------------------------------------------------------------------
 
@@ -40,7 +41,7 @@ struct gopi_sound {
     int         num_capture;
     int         num_playback;
     int         num_control;
-    char        device[3][5][20];
+    char        device[3][5][129];
 
     int         device_playback;
     int         device_capture;};
@@ -70,7 +71,3 @@ struct gopi_memory information_memory;
 struct gopi_disk   information_disk;
 struct gopi_cpu    information_cpu;
 struct gopi_sound  information_sound;
-
-struct gopi_cpu    buffer_cpu;
-
-

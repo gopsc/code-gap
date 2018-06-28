@@ -2,23 +2,22 @@ void information_sound_get() {
 
 
 
-    DIR           *that_dirent;
+    DIR           *buffer_dirent;
     struct dirent *pointer_dirent;
 
 
-    information_sound.num_control   = 0;
-    information_sound.num_capture  = 0;
-    information_sound.num_playback = 0;
+    information_sound.number_control  = 0;
+    information_sound.number_capture  = 0;
+    information_sound.number_playback = 0;
 
-    int num_control                = 0;
-    int num_capture                = 0;
-    int num_playback               = 0;
+    int number_control                = 0;
+    int number_capture                = 0;
+    int number_playback               = 0;
 
-    char that_name[17]             = " \0";
-    char that_id[17]               = " \0";
+    char buffer_name[17]              = " \0";
+    char buffer_id[17]                = " \0";
 
-    char that_buffer1[3];
-    char that_buffer2[3];
+    char buffer[2][3];
 
 
 
@@ -28,11 +27,11 @@ void information_sound_get() {
 
 
 
-    that_dirent = opendir("/dev/snd");
+    buffer_dirent = opendir("/dev/snd");
 
-    pointer_dirent = readdir(that_dirent);
+    pointer_dirent = readdir(buffer_dirent);
 
-    closedir(that_dirent);
+    closedir(buffer_dirent);
 
 
 
@@ -43,9 +42,9 @@ void information_sound_get() {
 
 
 
-    while ( ( pointer_dirent = readdir(that_dirent) ) != NULL ) {
+    while ( ( pointer_dirent = readdir(buffer_dirent) ) != NULL ) {
 
-        strcpy(that_name, pointer_dirent->d_name);
+        strcpy(buffer_name, pointer_dirent->d_name);
 
 
 
@@ -54,13 +53,13 @@ void information_sound_get() {
 
 
 
-        if ( strstr(that_name, "control") == that_name ) {
+        if ( strstr(buffer_name, "control") == buffer_name ) {
 
-            num_control++;}
+            number_control++;}
 
-        else if ( strstr(that_name, "pcm") == that_name ){
+        else if ( strstr(buffer_name, "pcm") == buffer_name ){
 
-           strcpy( that_name, strstr(that_name, "pcm")+3 );
+           strcpy( buffer_name, strstr(buffer_name, "pcm")+3 );
 
 
 
@@ -72,43 +71,43 @@ void information_sound_get() {
 
 
 
-           if (that_name[4] == 'c') {
+           if (buffer_name[4] == 'c') {
 
 
-               num_capture++;
+               number_capture++;
 
-               that_buffer1[0] = that_name[1];
-               that_buffer2[0] = that_name[3];
+               buffer[1][0] = buffer_name[1];
+               buffer[2][0] = buffer_name[3];
 
-               strcpy(that_id, "hw:");
-               strcat(that_id, that_buffer1); 
-               strcat(that_id, ",");
-               strcat(that_id, that_buffer2);
+               strcpy(buffer_id, "hw:");
+               strcat(buffer_id, buffer[1]); 
+               strcat(buffer_id, ",");
+               strcat(buffer_id, buffer[2]);
 
-               strcat(information_sound.device[1][num_capture], that_id);}
+               strcat(information_sound.device[1][number_capture], buffer_id);}
 
 
 
-           else if (that_name[4] == 'p') {
+           else if (buffer_name[4] == 'p') {
 
 
-               num_playback++;
+               number_playback++;
 
-               that_buffer1[0] = that_name[1];
-               that_buffer2[0] = that_name[3];
+               buffer[1][0] = buffer_name[1];
+               buffer[2][0] = buffer_name[3];
 
-               strcpy(that_id, "hw:");
-               strcat(that_id, that_buffer1); 
-               strcat(that_id, ",");
-               strcat(that_id, that_buffer2);
+               strcpy(buffer_id, "hw:");
+               strcat(buffer_id, buffer[1]); 
+               strcat(buffer_id, ",");
+               strcat(buffer_id, buffer[2]);
 
-               strcat(information_sound.device[2][num_playback], that_id);}}}
+               strcat(information_sound.device[2][number_playback], buffer_id);}}}
 
 
 
 
 
 
-    information_sound.num_control  = num_control;
-    information_sound.num_capture  = num_capture;
-    information_sound.num_playback = num_playback;}
+    information_sound.number_control  = number_control;
+    information_sound.number_capture  = number_capture;
+    information_sound.number_playback = number_playback;}

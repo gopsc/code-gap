@@ -84,27 +84,39 @@ void control_command(
 
 //-----------------------------------------------------------------------
 
+        else if ( strcmp(that_command, "Save all.") == 0 ) {
+
+            command_save_all();}
+
+//-----------------------------------------------------------------------
+
         else if ( strcmp(that_command, "Load.") == 0 ) {
 
             command_load();}
 
 //-----------------------------------------------------------------------
 
-        else if ( strcmp(that_command, "Test." ) == 0 ) {
+        else if ( strcmp(that_command, "Load all.") == 0 ) {
 
-            command_test();}
-
-//-----------------------------------------------------------------------
-
-        else if ( strcmp(that_command, "Test alsa.") == 0 ) {
-
-            command_test_alsa();}
+            command_load_all();}
 
 //-----------------------------------------------------------------------
 
-        else if ( strcmp(that_command, "Install.") == 0 ) {
+        else if ( strcmp(that_command, "Sprinkle little." ) == 0 ) {
 
-            command_install();}
+            command_sprinkle_little();}
+
+//-----------------------------------------------------------------------
+
+        else if ( strcmp(that_command, "Sprinkle.") == 0 ) {
+
+            command_sprinkle();}
+
+//-----------------------------------------------------------------------
+
+        else if ( strcmp(that_command, "Flower.") == 0 ) {
+
+            command_flower();}
 
 //-----------------------------------------------------------------------
 
@@ -138,9 +150,9 @@ void control_command(
 
 //-----------------------------------------------------------------------
 
-        else if ( strstr(that_command, "Update.") == that_command ) {
+        else if ( strstr(that_command, "Sprinkle away.") == that_command ) {
 
-            command_update(site, that_command, buffer_send);}
+            command_sprinkle_away(site);}
 
 //-----------------------------------------------------------------------
 
@@ -153,6 +165,13 @@ void control_command(
         else if ( strcmp(that_command, "Test fft.") == 0 ) {
 
             command_test_fft();}
+
+//-----------------------------------------------------------------------
+
+        else if ( strstr(that_command, "Python") != NULL ) {
+
+            that_command[strlen(that_command)-1] = '\0';
+            command_python(that_command);}
 
 //-----------------------------------------------------------------------
 
@@ -201,6 +220,11 @@ void control_command(
         else if ( strstr(that_command, "Update.") == that_command ) {
 
             command_update(site, that_command, buffer_send);}
+//-----------------------------------------------------------------------
+
+        else if ( strstr(that_command, "Clean update.") == that_command ) {
+
+            command_update_clean(site, buffer_send);}
 
 //-----------------------------------------------------------------------
 
@@ -239,9 +263,15 @@ void control_command(
 
 //-----------------------------------------------------------------------
 
-        if ( strstr(that_command, "Update.") == that_command ) {
+        if      ( strstr(that_command, "Update.") == that_command ) {
 
             command_update(site, that_command, buffer_send);}
+
+//-----------------------------------------------------------------------
+
+        else if ( strstr(that_command, "Clean update.") == that_command ) {
+
+            command_update_clean(site, buffer_send);}
 
 //-----------------------------------------------------------------------
 

@@ -1,4 +1,5 @@
-void* info_user_get(){
+
+void* information_user_get(){
 
     char that_result[129];
 

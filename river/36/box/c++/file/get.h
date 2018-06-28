@@ -1,6 +1,6 @@
 void file_get(const char* that_path, char* that_result) {
 
-    FILE *fp                = NULL;
+    FILE *that_file         = NULL;
     char  that_buffer[10];
           that_result[0]    = '\0';
 
@@ -10,12 +10,11 @@ void file_get(const char* that_path, char* that_result) {
 
     if ( is_file(that_path) ) {
 
-        fp = fopen(that_path, "r");
+        that_file = fopen(that_path, "r");
+        fclose(that_file);
 
-        while( fgets(that_buffer, 10, (FILE*)fp) != NULL ) {
-            strcat(that_result, that_buffer);}
-
-        fclose(fp);}}
+        while( fgets(that_buffer, 10, (FILE*)that_file) != NULL ) {
+            strcat(that_result, that_buffer);}}}
 
 
 

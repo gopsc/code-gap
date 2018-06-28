@@ -1,20 +1,20 @@
 
-void cmd_get(const char* commands, char* that_result) {
+void cmd_get(const char* that_commands, char* that_result) {
 
 
 
-    FILE  *fp_cmd;
+    FILE  *file_cmd;
     char   that_buffer[1025];
            that_result[0]   = '\0';
 
 
 
-    fp_cmd = popen(commands, "r");
+    file_cmd = popen(that_commands, "r");
 
-    if (fp_cmd != NULL) {
+    if (file_cmd != NULL) {
 
-        while ( fgets(that_buffer, 1024, (FILE*)fp_cmd) != NULL ) {
+        while ( fgets(that_buffer, 1024, (FILE*)file_cmd) != NULL ) {
 
             strcat(that_result, that_buffer);}}
 
-    pclose(fp_cmd);}
+    pclose(file_cmd);}

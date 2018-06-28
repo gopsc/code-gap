@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
 
 
 
-    char command[100] = "";
+    char command[129] = "";
 
 
 
@@ -66,7 +66,7 @@ int main(int argc, char *argv[]){
 
 //---------------------------------------------------------------------
 
-        if ( !strcmp( command, "Help" ) )  {
+        if ( strcmp( command, "Help" ) == 0 )  {
 
             printf( "\n COMMAND LIST\n\n" );
             printf( "Take blank board to get computer & net information.\n" );
@@ -111,7 +111,7 @@ printf("Closed\n");
 */
 //---------------------------------------------------------------------
 /*
-         else if ( !strcmp( command, " " ) ) {
+         else if ( strcmp( command, " " ) == 0 ) {
 
 	            system("clear");
 
@@ -123,7 +123,7 @@ printf("Closed\n");
 */
 //---------------------------------------------------------------------
 
-        else if ( !strcmp( command, "Quit" ) ){
+        else if ( strcmp( command, "Quit" ) == 0 ){
 
 //exit
             flag_dog       = false;
@@ -140,7 +140,7 @@ printf("Closed\n");
 
 //---------------------------------------------------------------------
 
-        else if ( !strcmp( command, "Save" ) ){
+        else if ( strcmp( command, "Save" ) == 0 ){
 
             char cmd[100] = "";
 
@@ -152,7 +152,7 @@ printf("Closed\n");
 
             system(cmd);}
 
-        else if ( !strcmp( command, "Load" ) ){
+        else if ( strcmp( command, "Load" ) == 0 ){
 
             char cmd[100] = "";
 
@@ -168,7 +168,7 @@ printf("Closed\n");
 
 
 
-        else if ( !strcmp( command, "Test" ) ){
+        else if ( strcmp( command, "Test" ) == 0 ){
 
             printf("...\n");
 
@@ -188,7 +188,7 @@ printf("Closed\n");
 
 
 
-        else if ( !strcmp( command, "Test alsa" ) ) {
+        else if ( strcmp( command, "Test alsa" ) == 0 ) {
 
             printf("...\n");
 
@@ -207,7 +207,7 @@ printf("Closed\n");
 
 
 
-        else if ( !strcmp( command, "Install" ) ) {
+        else if ( strcmp( command, "Install" ) == 0 ) {
 
             char cmd[100] = "";
 
@@ -220,7 +220,7 @@ printf("Closed\n");
             system(cmd);}
 
 
-        else if ( !strcmp( command, "Download" ) ){
+        else if ( strcmp( command, "Download" ) == 0 ){
 
              printf("...\n");
 
@@ -238,7 +238,7 @@ printf("Closed\n");
 
 //---------------------------------------------------------------------
 
-        else if ( !strcmp( command, "Show" ) ) {
+        else if ( strcmp( command, "Show" ) == 0 ) {
             if      ( flag_show == false ) {
                  flag_show = true;}
             else if ( flag_show == true ) {
@@ -246,7 +246,7 @@ printf("Closed\n");
 
 //---------------------------------------------------------------------
 
-        else if ( !strcmp( command, "Sound" ) ) {
+        else if ( strcmp( command, "Sound" ) == 0 ) {
 
             if ( !flag_sound ) {
 
@@ -260,7 +260,7 @@ printf("Closed\n");
                  flag_sound_show = false;}}
 
 
-        else if ( !strcmp( command, "Sound show" ) ) {
+        else if ( strcmp( command, "Sound show" ) == 0 ) {
 
             if ( !flag_sound_show ) {
 
@@ -274,13 +274,13 @@ printf("Closed\n");
                  flag_sound_show = false;}}
 //---------------------------------------------------------------------
 /*
-        else if ( !strcmp( command, "Sopi" ) ) {
+        else if ( strcmp( command, "Sopi" == 0) ) {
             for ( int i=0; i<=3; i++) {
                 if ( !strcmp(gop_connect.how[i], "Sop") or !strcmp(gop_connect.how[i], "Connectting") ) {
                     printf("ready to send sopi");
                     gop_connect.command[i] = "Sopi.";}}}
 
-        else if ( !strcmp( command, "Update" ) ) {
+        else if ( strcmp( command, "Update" == 0 ) ) {
             for ( int i=0; i<=3; i++) {
                 if ( !strcmp(gop_connect.how[i], "Connectted") or !strcat(gop_connect.how[i], "Sopi") ) {
                     gop_connect.command[i] = "Update.";}}}
@@ -301,17 +301,22 @@ printf("Closed\n");
 
 //---------------------------------------------------------------------
 
-        else if ( !strcmp( command, "Reload configure" ) ) {
+        else if ( strcmp( command, "Reload configure") == 0 ) {
 
 //            load_configure();
             printf("DONE\n");}
 
 //---------------------------------------------------------------------
 
-        else if ( !strcmp( command, "Reload listen" ) ) {
+        else if ( strcmp( command, "Reload listen") == 0 ) {
 
 //            load_listen();
             printf("DONE\n");}}
+
+
+
+
+
 
 
     note_save("command", "Command close");}

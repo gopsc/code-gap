@@ -3,7 +3,7 @@
 
 
 
-pthread_t    thread[6];
+//pthread_t    thread[6];
 
 
 
@@ -13,10 +13,10 @@ int main(int argc, char *argv[]){
 
     printf("\n");
 
-    pthread_create (&thread[1], NULL, gop_dog,          NULL);
-    pthread_create (&thread[2], NULL, gop_server_start, NULL);
-    pthread_create (&thread[3], NULL, gop_client_start, NULL);
-    pthread_create (&thread[4], NULL, gop_corde ,       NULL);
+//    pthread_create (&thread[1], NULL, gop_dog,          NULL);
+//    pthread_create (&thread[2], NULL, gop_server_start, NULL);
+//    pthread_create (&thread[3], NULL, gop_client_start, NULL);
+//    pthread_create (&thread[4], NULL, gop_corde ,       NULL);
 
 
 
@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 
 
 
-    string command;
+    char command[100];
 
 
 
@@ -32,9 +32,11 @@ int main(int argc, char *argv[]){
 
 
 
+//    while (!info_done) {
+//        usleep(100000);}
 
-    while (!info_done) {
-        gop_delay(0.1);}
+
+
 
 
 
@@ -50,7 +52,7 @@ int main(int argc, char *argv[]){
 
 
         printf("\n");
-        getline(cin, command, '\n');
+        scanf("%s", command);
         printf("\n");
 
 
@@ -59,7 +61,7 @@ int main(int argc, char *argv[]){
 
 //---------------------------------------------------------------------
 
-        if ( command == "Help" ) {
+        if ( !strcmp( command, "Help" ) )  {
 
             printf( "\n COMMAND LIST\n\n" );
             printf( "Take blank board to get computer & net information.\n" );
@@ -78,48 +80,45 @@ int main(int argc, char *argv[]){
             printf( "Take 'Sopi' to get control of net connection.\n" );
             printf( "Take 'Update' to update gopi on your device to another.\n" );
 
+            printf( "\n DATE CONFIGURE.\n\n" );
+            printf( "Take 'Reload configure' to reload configure.\n" );
+            printf( "Take 'Reload listen' to reload listenning date.\n" );
+
             printf( "\n U-DISK COMMANDS FOR TESK!!!\n\n" );
             printf( "     'Save'\n     'Load'\n     'Test'\n     'Test alsa'\n     'Install'\n" );}
 
 ///--------------------------------------------------------------------
+/*
+        else if ( strstr(command, "Connect "), command ) {
 
-        else if ( command.find("Connect ") == 0 ) {
+            if ( strstr(command, ":") != NULL ) {
 
+printf("Closed\n");
 
-
-
-
-            if ( command.find(":") != -1 ) {
-
-                int i;
-                for ( i=8; i<=command.find(":"); i=i+1 ) {
-                    address_to[i-8] = command[i];}
-                address_to[i-7] = '\0';
-
-
+                gop_connect.address_ip[0] = strstr(command, ":") + 1;
                 gop_connect.address_ip[0] = address_to;
                 gop_connect.port[0]       = atoi(command.substr(command.find(":")+1, command.length()).c_str());
 
 
                 flag_client               = true;
 
-                cout << "CONNECT TO " << gop_connect.address_ip[0] << ":" << gop_connect.port[0] << endl;}}
-
+                printf("CONNECT TO %s:%i\n", gop_connect.address_ip[0], gop_connect.port[0]);}}
+*/
 //---------------------------------------------------------------------
-
-         else if ( command == " " ) {
+/*
+         else if ( !strcmp( command, " " ) ) {
 
             system("clear");
 
-            cout << information_get() << endl;
-            cout << gop_connect.information[1];
-            cout << gop_connect.information[2];
-            cout << gop_connect.information[3];
-            cout << gop_connect.information[0];}
-
+            printf("%s\n", information_get());
+            printf("%s",   gop_connect.information[1]);
+            printf("%s",   gop_connect.information[2]);
+            printf("%s",   gop_connect.information[3]);
+            printf("%s",   gop_connect.information[0]);}
+*/
 //---------------------------------------------------------------------
 
-        else if ( command == "Quit" ){
+        else if ( !strcmp( command, "Quit" ) ){
 
 //exit
             flag_dog       = false;
@@ -129,47 +128,54 @@ int main(int argc, char *argv[]){
             flag_show      = false;
 
 //Threads need time to exit
-            gop_delay(0.3);
+            usleep(300000);
 
 //the thread of mind is main thread, when it exit, othes too
             flag_mind      = false;}
 
 //---------------------------------------------------------------------
 
-        else if ( command == "Save" ){
+        else if ( !strcmp( command, "Save" ) ){
 
-            string cmd  = "bash ";
-                   cmd += path_the;
-                   cmd += "/";
-                   cmd += name_the;
-                   cmd += "/box/Linux/save.sh";
-            system(cmd.c_str());}
+            char cmd[100] = "";
+
+            strcat(cmd, "bash ");
+            strcat(cmd, path_the);
+            strcat(cmd, "/");
+            strcat(cmd, name_the);
+            strcat(cmd, "/box/Linux/save.sh");
+
+            system(cmd);}
+
+        else if ( !strcmp( command, "Load" ) ){
+
+            char cmd[100] = "";
+
+            strcat(cmd, "bash " );
+            strcat(cmd, path_the);
+            strcat(cmd, "/"     );
+            strcat(cmd, name_the);
+            strcat(cmd, "/box/Linux/load.sh");
+
+            system(cmd);}
 
 
 
 
-        else if ( command == "Load" ){
 
-            string cmd  = "bash ";
-                   cmd += path_the;
-                   cmd += "/";
-                   cmd += name_the;
-                   cmd += "/box/Linux/load.sh";
-            system(cmd.c_str());}
+        else if ( !strcmp( command, "Test" ) ){
 
-
-
-
-
-        else if ( command == "Test" ){
             printf("...\n");
 
-            string cmd  = "bash ";
-                   cmd += path_the;
-                   cmd += "/";
-                   cmd += name_the;
-                   cmd += "/box/Linux/net.sh";
-            system(cmd.c_str());
+            char cmd[100] = "";
+
+            strcat(cmd, "bash ");
+            strcat(cmd, path_the);
+            strcat(cmd, "/");
+            strcat(cmd, name_the);
+            strcat(cmd, "/box/Linux/net.sh");
+
+            system(cmd);
 
             printf("OVER.\n");}
 
@@ -177,44 +183,57 @@ int main(int argc, char *argv[]){
 
 
 
-        else if ( command == "Test alsa" ) {
+        else if ( !strcmp( command, "Test alsa" ) ) {
+
             printf("...\n");
 
-            string cmd  = "bash ";
-                   cmd += path_the;
-                   cmd += "/";
-                   cmd += name_the;
-                   cmd += "/box/Linux/alsa.sh";
-            system(cmd.c_str());
+            char cmd[100] = "";
+
+            strcat(cmd, "bash ");
+            strcat(cmd, path_the);
+            strcat(cmd, "/");
+            strcat(cmd, name_the);
+            strcat(cmd, "/box/Linux/alsa.sh");
+
+            system(cmd);
 
             printf("OVER.\n");}
 
 
 
 
-        else if ( command == "Install" ){
+        else if ( !strcmp( command, "Install" ) ) {
 
-            string cmd  = "bash ";
-                   cmd += path_the;
-                   cmd += "/";
-                   cmd += name_the;
-                   cmd += "/box/Linux/install.sh";
-            system(cmd.c_str());}
+            char cmd[100] = "";
+
+            strcat(cmd, "bash ");
+            strcat(cmd, path_the);
+            strcat(cmd, "/");
+            strcat(cmd, name_the);
+            strcat(cmd, "/box/Linux/install.sh");
+
+            system(cmd);}
 
 
-        else if ( command == "Download" ) {
+        else if ( !strcmp( command, "Download" ) ){
 
              printf("...\n");
-             string cmd  = "bash ";
-                    cmd += path_the;
-                    cmd += "/";
-                    cmd += name_the;
-                    cmd += "/box/Linux/download.sh";
-             system(cmd.c_str());
+
+             char cmd[100] = "";
+
+             strcat(cmd, "bash ");
+             strcat(cmd, path_the);
+             strcat(cmd, "/");
+             strcat(cmd, name_the);
+             strcat(cmd, "/box/Linux/download.sh");
+
+             system(cmd);
+
              printf("OVER.\n");}
+
 //---------------------------------------------------------------------
 
-        else if ( command == "Show" ) {
+        else if ( !strcmp( command, "Show" ) ) {
             if      ( flag_show == false ) {
                  flag_show = true;}
             else if ( flag_show == true ) {
@@ -222,24 +241,25 @@ int main(int argc, char *argv[]){
 
 //---------------------------------------------------------------------
 
-        else if ( command == "Sound" ) {
+        else if ( !strcmp( command, "Sound" ) ) {
 
             if ( !flag_sound ) {
 
-                cout << "Sound Start." << endl;
+                printf("Sound Start.");
                 flag_sound = true;}
 
             else if ( flag_sound ) {
 
-                 cout << "Sound Stop." << endl;
+                 printf("Sound Stop.");
                  flag_sound      = false;
                  flag_sound_show = false;}}
 
 
-        else if ( command == "Sound show" ) {
+        else if ( !strcmp( command, "Sound show" ) ) {
 
             if ( !flag_sound_show ) {
-                cout << "Sound Start." << endl;
+
+                printf("Sound Start.");
 
                 flag_sound = true;
                 flag_sound_show = true;}
@@ -248,43 +268,42 @@ int main(int argc, char *argv[]){
 
                  flag_sound_show = false;}}
 //---------------------------------------------------------------------
-
-        else if ( command == "Sopi" ) {
+/*
+        else if ( !strcmp( command, "Sopi" ) ) {
             for ( int i=0; i<=3; i++) {
-                if ( gop_connect.how[i] == "Sop" or gop_connect.how[i] == "Connectting" ) {
-                    cout << "ready to send sopi" << endl;
+                if ( !strcmp(gop_connect.how[i], "Sop") or !strcmp(gop_connect.how[i], "Connectting") ) {
+                    printf("ready to send sopi");
                     gop_connect.command[i] = "Sopi.";}}}
 
-        else if ( command == "Update" ) {
+        else if ( !strcmp( command, "Update" ) ) {
             for ( int i=0; i<=3; i++) {
-                if ( gop_connect.how[i] == "Connectted" or gop_connect.how[i] == "Sopi" ) {
+                if ( !strcmp(gop_connect.how[i], "Connectted") or !strcat(gop_connect.how[i], "Sopi") ) {
                     gop_connect.command[i] = "Update.";}}}
-
+*/
 //---------------------------------------------------------------------
-
+/*
         else if ( command == "Test dft" ) {
             test_ft("dft");}
 
         else if ( command == "Test fft" ) {
             test_ft("fft");}
+*/
+//---------------------------------------------------------------------
+
+        else if ( strstr(command, "Command ") != "" ) {
+
+            system( strchr(command,  ' ') );}
 
 //---------------------------------------------------------------------
 
-        else if ( command.find("Command ") == 0 ) {
+        else if ( !strcmp( command, "Reload configure" ) ) {
 
-            command = command.substr(8,command.length());
-            system( (char*)command.c_str() );}
-
-//---------------------------------------------------------------------
-
-        else if ( command == "Reload configure" ) {
-
-            load_configure();
+//            load_configure();
             printf("DONE\n");}
 
 //---------------------------------------------------------------------
 
-        else if ( command == "Reload listen" ) {
+        else if ( !strcmp( command, "Reload listen" ) ) {
 
-            load_listen();
+//            load_listen();
             printf("DONE\n");}}}

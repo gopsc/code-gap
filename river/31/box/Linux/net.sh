@@ -26,10 +26,10 @@ cat $addres2/box/c++/cmd/shell.h                                         >> $add
 
 
 cat $addres2/watchdog/note/save.h                                        >> $address
-#cat $addres2/watchdog/information/system/user.h                          >> $address
-#cat $addres2/watchdog/information/system/name.h                          >> $address
-#cat $addres2/watchdog/information/system/build.h                         >> $address
-#cat $addres2/watchdog/information/ip/build.h                             >> $address
+cat $addres2/watchdog/information/system/user.h                          >> $address
+cat $addres2/watchdog/information/system/name.h                          >> $address
+cat $addres2/watchdog/information/system/build.h                         >> $address
+cat $addres2/watchdog/information/ip/build.h                             >> $address
 #cat $addres2/watchdog/information/memory/build.h                         >> $address
 #cat $addres2/watchdog/information/cpu/INFORMATION.h                      >> $address
 #cat $addres2/watchdog/information/cpu/rate.h                             >> $address
@@ -46,7 +46,7 @@ cat $addres2/watchdog/note/save.h                                        >> $add
 #cat $addres2/watchdog/load/configure.h                                   >> $address
 #cat $addres2/watchdog/load/listen.h                                      >> $address
 #cat $addres2/watchdog/show/build.h                                       >> $address
-#cat $addres2/watchdog/dog.h                                              >> $address
+cat $addres2/watchdog/dog.h                                              >> $address
 
 #cat $addres2/sound/ft/show.h                                             >> $address
 #cat $addres2/sound/ft/dft.h                                              >> $address

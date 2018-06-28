@@ -14,10 +14,3 @@ void dog_show() {
         printf( "%s\n", gop_connection.information[2] );
         printf( "%s\n", gop_connection.information[3] );
         printf( "%s\n", gop_connection.information[0] );}}
-
-
-
-
-
-
-

@@ -1,57 +1,41 @@
 
+
 void info_ip_get() {
 
 
 
+    char that_ip[3][255];
 
-    char that_name[1024];
-    char that_address[1024];
-
-
-    cmd_get( "ifconfig | grep 'Link encap' | cut -d' ' -f1",                        that_name );
-    cmd_get( "ifconfig | grep 'inet addr'  | tr -s ' ' : | cut -d: -f4",            that_address );
-
-
-    if ( !strcmp(that_name,    "") ) {
-        cmd_get( "ifconfig | grep ': '  | tr -s ' ' : | cut -d: -f1",               that_name );}
-
-    if ( !strcmp(that_address, "") or (strlen(that_address)<7 or strlen(that_address)>15) ) {
-        cmd_get( "ifconfig | grep 'inet 地址'  | tr -s ' ' : | cut -d: -f4",   that_address );}
-
-    if ( !strcmp(that_address, "") or (strlen(that_address)<7 or strlen(that_address)>15) ) {
-        cmd_get( "ifconfig | grep 'inet '  | tr -s ' ' : | cut -d: -f3",            that_address );}
-
-
-//    if (that1.substr(that1.length(), 1) != "\n") {
-//        that1 += '\n';}
-//    if (that2.substr(that2.length(), 1) != "\n") {
-//        that2 += '\n';}
+// 1 for name, 2 for address
 
 
 
-
-    int    num_ip = 0;
-    int    num1;
-    int    num2;
-
-/*
-    while( num1 != -1 and num2 != -1 ) {
+    cmd_get( "ifconfig | grep 'Link encap' | cut -d' ' -f1",                        that_ip[1] );
+    cmd_get( "ifconfig | grep 'inet addr'  | tr -s ' ' : | cut -d: -f4",            that_ip[2] );
 
 
-        num_ip++;
-        num1 = that1.find("\n");
-        num2 = that2.find("\n");
+
+    if ( strcmp(that_ip[1], "") == 0 ) {
+        cmd_get( "ifconfig | grep ': '  | tr -s ' ' : | cut -d: -f1",               that_ip[1] );}
+
+    if ( strcmp(that_ip[2], "") == 0   or   strlen(that_ip[2]) < 7 ) {
+        cmd_get( "ifconfig | grep 'inet 地址'  | tr -s ' ' : | cut -d: -f4",   that_ip[2] );}
+
+    if ( strcmp(that_ip[2], "") == 0   or   strlen(that_ip[2]) < 7 ) {
+        cmd_get( "ifconfig | grep 'inet '  | tr -s ' ' : | cut -d: -f3",            that_ip[2] );}
 
 
-        info_ip[1][num_ip][1] = that1.substr(0, num1);
-        info_ip[1][num_ip][2] = that2.substr(0, num2);
+
+    if ( that_ip[1][strlen(that_ip[1])-1] != '\n') {
+        strcat(that_ip[1], "\n");}
+    if ( that_ip[2][strlen(that_ip[2])-1] != '\n') {
+        strcat(that_ip[2], "\n");}
 
 
-        that1                 = that1.substr(num1+1, that1.length());
-        that2                 = that2.substr(num2+1, that2.length());
 
-        num1                  = that1.find("\n");
-        num2                  = that2.find("\n");
+    int   num_ip[3];
+    char  buffer_ip[3][255];
+    char* point_ip[3];
 
 
 
@@ -59,25 +43,47 @@ void info_ip_get() {
 
 
 
-// If a net does not both have a name or a address
 
-        if (num1 == -1 and num2 != -1) {
+    for ( int i=1; i<=2; i=i+1 ) {
 
-            that1 = " \n";
-            num1  = 1;}
+        num_ip[i] = 0;
+
+// It will goes mass
+
+        strcpy(buffer_ip[i], " ");
+
+        point_ip[i] = buffer_ip[i];
+
+// It will goes mass
+
+        while (  strlen(point_ip[i]) != 0 ) {
+
+            num_ip[i]++;
+
+
+
+            strcpy( buffer_ip[i],    that_ip[i]   );
+
+            point_ip[i]    = strstr( buffer_ip[i],    "\n" );
+
+
+
+            if ( strcmp( point_ip[i], "\n") != 0 ) {
+
+                 strcpy( that_ip[i], point_ip[i] + 1 );}
+
+
+
+           *point_ip[i]    = '\0';
+
+            point_ip[i]++;
+
+            strcpy(information_ip[num_ip[i]][i], buffer_ip[i]);}}
 
 
 
 
-        if (num2 == -1 and num2 != -1 ) {
-
-            that2 = " \n";
-            num2  = 1;}}
-
-
-*/
-
-    point_ip[1] = num_ip;}
+    information_ip_num = num_ip[1];}
 
 
 

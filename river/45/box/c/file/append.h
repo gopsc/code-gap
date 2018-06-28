@@ -28,7 +28,7 @@ void file_append(const char* that_path, const char* that_words) {
             that_count++;
            *pointer_path = '\0';
 
-          if ( !is_dir(buffer_path) ) {
+          if ( !is_dirent(buffer_path) ) {
               mkdir(buffer_path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);}}}
 
 

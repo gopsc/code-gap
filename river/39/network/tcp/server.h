@@ -1,46 +1,50 @@
 
+
+
 void* gop_server_start(void*) {
 
 
-    while ( !info_done ) {
-        gop_delay(0.1);}
-
-    note_save("server.note", "Server start");
 
 
+// Wait for information getting.
+
+    while ( !information_done ) {
+
+        usleep(100000);}
+
+
+// Note this startting.
+
+    note_save( "server", "Server start", "now" );
 
 
 
 
 
 
-    char              buffer_recv[3][10240];
+// Declare these variable.
+
+    char              buffer_recv[4][10240];
     char              buffer_send[10240];
-    int               ptr;
-    string            msg;
+    char              that_buffer[10240];
+    char              that_over[9];
+    char              that_address[33];
 
 
 
+// Prepare.
+
+    strcpy( that_over, "\n" );
+    strcat( that_over, "O"  );
+    strcat( that_over, "V"  );
+    strcat( that_over, "E"  );
+    strcat( that_over, "R"  );
+    strcat( that_over, "."  );
 
 
-    string            that_over = "\n";
-                      that_over += "O";
-                      that_over += "V";
-                      that_over += "E";
-                      that_over += "R";
-                      that_over += ".";
-
-
-
-
-
-
-    gop_connect.port[1] = port_this;
-    gop_connect.fd[1]   = socket(AF_INET, SOCK_STREAM, 0);
-
-
-
-
+    strcpy( gop_connect.how[1], "Wait" );
+    strcpy( gop_connect.how[2], "Wait" );
+    strcpy( gop_connect.how[3], "Wait" );
 
 
     struct sockaddr_in address;
@@ -50,112 +54,162 @@ void* gop_server_start(void*) {
 
     struct sockaddr_in address_by;
 
-           socklen_t   lenth            = sizeof(address_by);
+           socklen_t   lenth      = sizeof(address_by);
+
+
+    gop_connect.port[1] = port_this;
+    gop_connect.fd[1]   = socket(
+                                  AF_INET,
+                                  SOCK_STREAM,
+                                  0
+                                 );
+
+
+    bind( 
+                             gop_connect.fd[1],
+          (struct sockaddr*)&address,
+                             sizeof(address)
+         );
+
+
+    listen(
+            gop_connect.fd[1],
+            3
+          );
 
 
 
 
 
-
-
-
-
-
-    bind(gop_connect.fd[1], (struct sockaddr*)&address, sizeof(address));
-
-    listen(gop_connect.fd[1], 3);
-
-
-
-    gop_connect.how[1] = "Wait";
-    gop_connect.how[2] = "Wait";
-    gop_connect.how[3] = "Wait";
-
-
-
+// Circulate start.
 
     while(flag_server) {
 
 
 
+// Accept connection.
 
-        int        connection = accept(gop_connect.fd[1], (struct sockaddr*)&address_by, &lenth);
+        int    connection = accept(
+                                     gop_connect.fd[1],
+                  (struct sockaddr*)&address_by,
+                                    &lenth
+                                   );
+
+// Note the ip
+
+        strcpy(
+                that_address,
+                inet_ntoa(address_by.sin_addr)
+              );
 
 
-        string     that       = inet_ntoa(address_by.sin_addr);
 
 
 
+// Connection message is already here.
+// Find the site for this.
+// Find is there is's site
+//      or a free site.
+
+        int        num_free       = 0;
+        int        num_site       = 0;
 
 
-
-
-
-        int        free       = 0;
-        int        site       = 0;
-
+// find free site.
 
         for     ( int i=1; i<=3; i++ ) {
-            if  ( gop_connect.address_ip[i] == "" ) {
 
-                free = i;
+            if  ( strcmp(gop_connect.address_ip[i], "") == 0 ) {
+
+                num_free = i;
+                break;}}
+
+// Find it's site.
+
+        for     ( int i=1; i<=3; i++ ) {
+
+            if  ( strcmp(gop_connect.address_ip[i], that_address) == 0 ) {
+
+                num_site = i;
                 break;}}
 
 
-        for     ( int i=1; i<=3; i++ ) {
-            if  ( gop_connect.address_ip[i] == that ) {
+// If it's a new site,
+//    set a site for it.
+//
+// If sites' full,
+//    smile to it.
 
-                site = i;
-                break;}}
+        if      ( num_free != 0   and   num_site == 0 ) {
 
+            num_site = num_free;}
 
-        if      ( free != 0 and site == 0 ) {
-
-            site = free;}
-
-        else if ( site == 0 and free == 0 ) {
-
-
-            msg  = "This is gop station.";
-            msg += '\n';
-            msg += "Smile.";
-            msg += '\n';
+        else if ( num_site == 0   and   num_free == 0 ) {
 
 
+// Note this smile.
 
-            int that_smile = -1;
+            printf(
+                    "SMILE TO %s\n",
+                    inet_ntoa(address_by.sin_addr)
+                  );
 
-            srand(unsigned(time(0)));
+            strcpy(that_buffer, "Smile to ");
+            strcat(that_buffer, inet_ntoa(address_by.sin_addr));
 
-            while ( ( gop_connect.information[that_smile]).find("Linux") == -1 ) {
-
-                that_smile = 1+4*(rand()/(RAND_MAX+1.0));}
-
-
-            msg += gop_connect.address_ip[that_smile];
-//            msg += that_over;
-            msg  = encode(msg);
-
-            for ( ptr=0; ptr<msg.length(); ptr++ ) {
-                buffer_send[ptr] = msg[ptr];}
-            buffer_send[ptr] = '\0';
+            note_save("server", that_buffer, "now");
 
 
-            send(connection, buffer_send, 10240,0);
+// Prepare this smile.
 
-            gop_delay(step_connect);
-
-            recv(connection, buffer_recv[site], 10240,0);
-
-
-
-            cout << "SMILE TO " << inet_ntoa(address_by.sin_addr) << endl;
-
-            string that_note  = "Smile to ";
-                   that_note += inet_ntoa(address_by.sin_addr);
-            note_save("server.note", that_note);
+            strcpy(buffer_send, "This is gop station.");
+            strcat(buffer_send, "\n");
+            strcat(buffer_send, "Smile.");
+            strcat(buffer_send, "\n");
 
 
+// Find the connectting device
+//      who can be be connectted
+
+            int num_smile = -1;
+
+            srand( unsigned(time(0)) );
+
+            do  {
+
+                num_smile = 1+4*(rand()/(RAND_MAX+1.0));
+
+          } while ( strstr(gop_connect.information[num_smile], "Linux") == NULL );
+
+
+// Add it's ip to smile message.
+
+            strcat( buffer_send, gop_connect.address_ip[num_smile]);
+//            strcat(msg, that_over);
+            encode(buffer_send, "blank");
+
+
+// Send it
+// and
+// Recive the last message.
+
+            send(
+                  connection,
+                  buffer_send,
+                  10240,
+                  0
+                );
+
+            recv(
+                 connection,
+                 buffer_recv[0],
+                 10240,
+                 0
+                );
+
+
+
+            usleep(step_connection * 1000000);
 
             continue;}
 
@@ -163,53 +217,68 @@ void* gop_server_start(void*) {
 
 
 
-        if ( site != 0 ) {
+
+// After findind site
+//       for this connection,
+// prepare for translation.
+
+        if ( num_site != 0 ) {
 
 
+// Update the time pointer,
+// and the connecttion ip
+
+                   gop_connect.time[num_site]       = time(NULL);
+
+            strcpy(gop_connect.address_ip[num_site], that_address);
 
 
+// If is's new , 
+//   notice and
+//   note this connection.
+
+            if ( strcmp(gop_connect.how[num_site], "Wait") == 0 ) {
+
+                printf(
+                       "CONNECTTED BY %s\n",
+                       gop_connect.address_ip[num_site]
+                      );
+
+                strcpy( that_buffer, "Connectted by " );
+                strcat( that_buffer, gop_connect.address_ip[num_site] );
+
+                note_save("server", that_buffer, "now");
 
 
-            gop_connect.point_time[site]  = time(NULL);
-            gop_connect.address_ip[site]  = that;
+                strcpy( buffer_recv[num_site], "" );
+                strcpy( gop_connect.how[num_site], "Connectted" );}
 
 
+// Control send message.
+
+            decode(buffer_recv[num_site], "blank");
+            control_message( num_site, buffer_recv[num_site], buffer_send );
+            encode(buffer_send,           "blank");
 
 
-            if ( gop_connect.how[site] == "Wait" ) {
+// Execute it.
+
+            send(
+                 connection,
+                 buffer_send,
+                 10240,
+                 0
+                );
+
+            recv(
+                 connection,
+                 buffer_recv[num_site],
+                 10240,
+                 0
+                );
 
 
-
-                cout << "CONNECTTED BY " << gop_connect.address_ip[site] << endl;
-
-                string that_note  = "Connectted by ";
-                       that_note += gop_connect.address_ip[site];
-
-                note_save("server.note", that_note);
-
-
-                buffer_recv[site][0] = '\0';
-                gop_connect.how[site] = "Connectted";}
-
-
-
-
-            msg = control_message( site, decode(buffer_recv[site]) );
-            msg = encode(msg);
-
-
-            for ( ptr=0; ptr<msg.length(); ptr++ ) {
-                buffer_send[ptr] = msg[ptr];}
-            buffer_send[ptr] = '\0';
-
-
-            send(connection, buffer_send, 10240,0);
-
-            gop_delay(step_connect);
-
-            recv(connection, buffer_recv[site], 10240,0);}
-
-
+            usleep(step_connection * 1000000);}
 
 
 
@@ -220,9 +289,6 @@ void* gop_server_start(void*) {
 
 
 
-
-
-
-
     close(gop_connect.fd[1]);
-    note_save("server.note", "Server close");}
+
+    note_save( "server", "Server close", "now" );}

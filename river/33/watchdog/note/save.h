@@ -2,9 +2,9 @@
 void note_save(const char* that_name, const char* that_words ) {
 
     time_t         time_now            = time(NULL);
-    char           that_time[2][1024];
+    char           that_time[3][129];
     char*        buffer_time;
-    char           that_path[1024];
+    char           that_path[1025];
     struct timeval time_test;
 
 
@@ -17,6 +17,7 @@ void note_save(const char* that_name, const char* that_words ) {
     gcvt( (double)time_test.tv_usec/1000000, 10, that_time[2] );
 
     buffer_time = that_time[2]+1;
+
     strcat( that_time[1], buffer_time );
 
 

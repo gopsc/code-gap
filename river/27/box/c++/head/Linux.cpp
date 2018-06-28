@@ -1,27 +1,26 @@
 
 //g++ ./seed.cpp -lpthread -lasound -std=c++0x -o gopi
 
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <dirent.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+//#include <fstream>
+//#include <sstream>
+//#include <dirent.h>
 
 #include <pthread.h>
-#include <time.h>
-#include <sys/socket.h>
+//#include <time.h>
+//#include <sys/socket.h>
 #include <unistd.h>
 
-#include <sys/types.h>
-#include <sys/stat.h>
+//#include <sys/types.h>
+//#include <sys/stat.h>
 
-#include <ifaddrs.h>
-#include <arpa/inet.h>
+//#include <ifaddrs.h>
+//#include <arpa/inet.h>
 
 
-#include <math.h>
-#include <string.h>
-
-using namespace std;
+//#include <math.h>
 
 
 
@@ -29,12 +28,12 @@ using namespace std;
 
 
 
-string   path_the;
-string   name_the;
+char   path_the[100]  = "/opt";
+char   name_the[100]  = "ta";
 
 
 //------------------------mind---------------------------
-bool     flag_mind;
+bool     flag_mind = true;
 
 bool     flag_dog = true;
 bool     flag_show;

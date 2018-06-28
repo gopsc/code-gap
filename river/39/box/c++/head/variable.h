@@ -2,7 +2,7 @@
 
 char   path_the[129]  = "";
 char   name_the[129]  = "";
-char   name_date[129] = "";
+char   name_data[129] = "";
 
 //------------------------mind---------------------------
 bool     flag_mind;
@@ -21,7 +21,7 @@ char     address_to[16];
 int      port_to;
 int      port_this;
 
-float    step_connect;
+float    step_connection;
 int      size_update;
 int      count_update;
 int      count_update_max;

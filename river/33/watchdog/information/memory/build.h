@@ -1,16 +1,16 @@
 
 void info_memory_get(){
-    int n;
-    FILE* fd;
-    char buffer[256];
 
-    fd = fopen("/proc/meminfo","r");
 
-    fgets (buffer, sizeof(buffer), fd);
-    sscanf(buffer, "%s %u %s", info_memory.name1, &info_memory.total, info_memory.name2);
+    FILE* fd         = fopen("/proc/meminfo", "r");
+    char  buffer_result[256];
 
-    fgets (buffer, sizeof(buffer), fd);
-    sscanf(buffer, "%s %u", info_memory.name2, &info_memory.free);
+
+    fgets (buffer_result, sizeof(buffer_result), fd);
+    sscanf(buffer_result, "%s %u %s",     information_memory.name1, &information_memory.total, information_memory.name2);
+
+    fgets (buffer_result, sizeof(buffer_result), fd);
+    sscanf(buffer_result, "%s %u",        information_memory.name2, &information_memory.free);
 
     fclose(fd);}
 

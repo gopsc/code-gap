@@ -44,10 +44,16 @@ cat $addres2/watchdog/check/ssh.h                                        >> $add
 cat $addres2/watchdog/check/root.h                                       >> $address
 
 cat $addres2/watchdog/load/configure.h                                   >> $address
-#cat $addres2/watchdog/load/listen.h                                      >> $address
+cat $addres2/watchdog/load/listen.h                                      >> $address
 cat $addres2/watchdog/show/information.h                                 >> $address
 cat $addres2/watchdog/dog.h                                              >> $address
 
+cat $addres2/network/message/code/blank.h                                >> $address
+#cat $addres2/network/message/update/build.h                              >> $address
+#cat $addres2/network/message/update/mix.h                                >> $address
+cat $addres2/network/message/control/build.h                             >> $address
+cat $addres2/network/tcp/server.h                                        >> $address
+cat $addres2/network/tcp/client.h                                        >> $address
 
 #cat $addres2/sound/ft/show.h                                             >> $address
 #cat $addres2/sound/ft/dft.h                                              >> $address
@@ -55,14 +61,6 @@ cat $addres2/watchdog/dog.h                                              >> $add
 #cat $addres2/sound/ft/test.h                                             >> $address
 #cat $addres2/sound/listen/save.h                                         >> $address
 #cat $addres2/sound/corde/blank/build.h                                   >> $address
-
-
-#cat $addres2/network/message/code/blank.h                                >> $address
-#cat $addres2/network/message/update/build.h                              >> $address
-#cat $addres2/network/message/update/mix.h                                >> $address
-#cat $addres2/network/message/control/build.h                             >> $address
-#cat $addres2/network/tcp/server.h                                        >> $address
-#cat $addres2/network/tcp/client.h                                        >> $address
 
 
 

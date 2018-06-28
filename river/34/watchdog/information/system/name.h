@@ -1,5 +1,5 @@
 
-void* info_name_get(){
+void* information_name_get(){
 
     char that_result[129];
 

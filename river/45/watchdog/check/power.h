@@ -8,8 +8,6 @@ void check_power() {
     char   that_path[33];
 
            strcpy(that_path, path_the);
-           strcat(that_path, "/");
-           strcat(that_path, name_data);
            strcat(that_path, "/note/power.note");
 
 
@@ -26,7 +24,7 @@ void check_power() {
 
 
 
-    file_get(   that_path, that_data );
+    file_get( that_path, that_data );
     note_clear( "power", "all" );
     note_save(  "power", "Check power", "now" );
 

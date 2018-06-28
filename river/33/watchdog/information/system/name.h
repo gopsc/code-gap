@@ -1,4 +1,7 @@
 
 void* info_name_get(){
 
-    cmd_get("uname -n", information_name);}
+    char that_result[129];
+
+    cmd_get("uname -n", that_result);
+    strcpy(information_name, that_result);}

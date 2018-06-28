@@ -38,9 +38,9 @@ struct gopi_disk {
 
 struct gopi_sound {
 
-    int         num_capture;
-    int         num_playback;
-    int         num_control;
+    int         number_capture;
+    int         number_playback;
+    int         number_control;
     char        device[3][9][17];
 
     int         device_playback;
@@ -65,7 +65,7 @@ char               information_name[129];
 char               information_system[129];
 
 char               information_ip[10][3][255];
-char               information_ip_num;
+char               information_ip_number;
 
 struct gopi_memory information_memory;
 struct gopi_disk   information_disk;

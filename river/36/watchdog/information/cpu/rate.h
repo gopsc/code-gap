@@ -1,35 +1,26 @@
 void information_CPU_rate_get() {
 
 
-    info_CPU_get(0);
+    information_CPU_status_get(0);
     usleep(100000);
-    info_CPU_get(1);
+    information_CPU_status_get(1);
 
 
     unsigned long od, nd;
     unsigned long id, sd;
-             int  cpu_use = 0;
+             int  that_use = 0;
 
-                  od      = (unsigned long)(information_cpu.user + info_cpu.nice   + info_cpu.system   + info_cpu.idle);
+                  od      = (unsigned long)(information_cpu.user + information_cpu.nice   + information_cpu.system   + information_cpu.idle);
                   nd      = (unsigned long)(buffer_cpu.user      + buffer_cpu.nice + buffer_cpu.system + buffer_cpu.idle);
 
-                  id      = (unsigned long)(buffer_cpu.user   - info_cpu.user);
-                  sd      = (unsigned long)(buffer_cpu.system - info_cpu.system);
+                  id      = (unsigned long)(buffer_cpu.user   - information_cpu.user);
+                  sd      = (unsigned long)(buffer_cpu.system - information_cpu.system);
 
 
 
     if( (nd-od) != 0 )
-        cpu_use = ( (sd+id)* 100 ) / (nd-od);
+        that_use = ( (sd+id)* 100 ) / (nd-od);
     else
-        cpu_use = 0;
+        that_use = 0;
 
-    info_cpu.rate = cpu_use;}
-
-
-
-
-
-
-
-
-
+    information_cpu.rate = that_use;}

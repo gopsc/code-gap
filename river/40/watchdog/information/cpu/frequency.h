@@ -1,6 +1,6 @@
 void information_CPU_frequency_get() {
 
-    char  that_file[2049];
+    char  that_file[10240];
     char  that_result[129];
 
 
@@ -22,9 +22,16 @@ void information_CPU_frequency_get() {
                           *strchr(that_file, '\n') = '\0';
         information_cpu.frequency = atoi(that_file);}
 
+    else if ( strstr(that_file, "Bogomips") != NULL ) {
+
+        strcpy( that_file, strstr(that_file,   "Bogomips") );
+        strcpy( that_file, strstr(that_file, ": ")+2 );
+                          *strchr(that_file, '\n') = '\0';
+        information_cpu.frequency = atoi(that_file);}
+
     else {
 
-        cmd_get("lscpu | grep MHz", that_result);
+        cmd_get("lscpu | grep 'cpu max MHz'", that_result);
 
         if ( strstr(that_result, "\n") != NULL ) {
 

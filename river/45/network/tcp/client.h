@@ -22,7 +22,7 @@ void* gop_client_start(void*) {
 
     struct sockaddr_in    address;
 
-           int            num_return;
+           int            number_return;
            char           buffer_recv[10240];
            char           buffer_send[10240];
            char           that_buffer[10240];
@@ -49,7 +49,7 @@ void* gop_client_start(void*) {
 
 
 
-    while ( information_ip_num == 0 ) {
+    while ( information_ip_number == 0 ) {
 
         usleep(step_connection * 1000000);}
 
@@ -66,7 +66,7 @@ void* gop_client_start(void*) {
 
 // CAN NOT CONNECT MYSELF
 /*
-        for ( int i=1; i<=information_ip_num; i++ ) {
+        for ( int i=1; i<=information_ip_number; i++ ) {
 
             if ( strcmp(
                         gop_connection.address_ip[0],
@@ -102,20 +102,20 @@ void* gop_client_start(void*) {
 
         
 
-        num_return = connect(
+        number_return = connect(
                                                   gop_connection.descriptor[0],
                               (struct sockaddr *)&address,
                                                   sizeof(address)
                              );
 
-        if ( num_return == -1 ) {
+        if ( number_return == -1 ) {
 
             usleep(100000);}
 
 //-----------------------------------------------------------------------------------
 
 
-        else if ( num_return >= 0 ) {
+        else if ( number_return >= 0 ) {
 
 
             gop_connection.time[0] = time(NULL);

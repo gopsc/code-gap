@@ -1,5 +1,5 @@
 
-void info_memory_get(){
+void information_memory_get(){
 
 
     FILE* fd         = fopen("/proc/meminfo", "r");

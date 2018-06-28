@@ -61,19 +61,13 @@ if [ $address != "unknow" ];then
 
 
 
+  if [ ! -d $address ];then
+    mkdir $address
+  fi
 
-#  cp  -rf  /opt/?               ./
-#  tar zcf  ./?.tar.gz        7lc
-#  cp       ./?.tar.gz        ${address}
-
-  rm -rf ${address}/?
-  cp -rf /opt/?                           ${address}
-
-#  cp       /opt/?/box/Linux/load.sh       ${address}
-
-#  rm -rf   ./?
-#  rm       ./?.tar.gz
-
+  mv -f  ${address}/seed                         ${address}/backup
+  cp -rf /opt/gop/seed                           ${address}/seed
+  rm -rf ${address}/backup
 
 fi
 

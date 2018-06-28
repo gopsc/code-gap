@@ -139,29 +139,15 @@ void* control_message(
 
 //-------------------------------------------------------------------------------------
 
-// 
-
-                        if      (
-                                    judgement_message_sopi(
-                                                            site,
-                                                            pointer_recv,
-                                                            buffer_send
-                                                          )
-                                ) {
-
-                            sleep(0);}
-
-//-------------------------------------------------------------------------------------
-
 //It means client is ready
 
-                        else if (
+                        if (
                                     judgement_message_recived(
                                                                site,
                                                                pointer_recv,
                                                                buffer_send
                                                               )
-                                ) {
+                           ) {
 
 //-------------------------------------------------------------------------------------
 
@@ -169,6 +155,4 @@ void* control_message(
                                              site,
                                              gop_connection.command[site],
                                              buffer_send
-                                           );
-
-                            }}}}}}}
+                                           );}}}}}}}

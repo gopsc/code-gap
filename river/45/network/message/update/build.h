@@ -1,62 +1,65 @@
 
-void control_message_update(const char* path_update, char* that_result) {
-
-/*
-
-           //    /opt/7lc
-           string   path_update_start  = path_the;
-                    path_update_start += "/";
-                    path_update_start += name_the;
-
-           DIR      *pDir;
-    struct dirent   *ent       = NULL;
-
-	       // is saving what file we are send
-           string   that_file = "";
+int control_message_update( char* path_update ) {
 
 
+//    /opt/gop/?
+
+            char   path_update_start[129];
+            strcpy(path_update_start, path_the);
+            strcat(path_update_start, "/"     );
+            strcat(path_update_start, name_the);
+
+            DIR*    pointer_dirent;
+    struct  dirent* ent            = NULL;
 
 
+// is saving what file we are send
 
-
-    if (*path_update == "") {
-
-       *path_update = path_update_start;}
-
-
-
-
-
-    if (*path_update != path_update_start) {
-
-        that_file    = (*path_update).substr((*path_update).rfind("/")+1,   (*path_update).length());
-
-        *path_update = (*path_update).substr(0, (*path_update).rfind("/"));}
+            char    that_file[129];
 
 
 
 
 
 
-    pDir = opendir((*path_update).c_str());
+    if ( strcmp(path_update, "") == 0 ) {
 
-
-
-
-    if ( "" != that_file ) {
-
-        ent = readdir( pDir );
-
-        while ( that_file != ent->d_name) {
-
-            ent = readdir( pDir );}}
+       strcpy(path_update, path_update_start);}
 
 
 
 
 
+    if ( strcmp(path_update, path_update_start) != 0 ) {
 
-    ent = readdir( pDir );
+        strcpy(that_file, strrchr(path_update, '/') + 1);
+
+       *strrchr(path_update, '/') = '\0';}
+
+
+
+
+
+
+    pointer_dirent = opendir(path_update);
+
+
+
+
+    if ( strcmp(that_file, "") != 0 ) {
+
+        ent = readdir( pointer_dirent );
+
+        while ( strcmp(that_file, ent->d_name) != 0 ) {
+
+            ent = readdir( pointer_dirent );}}
+
+
+
+
+
+
+    ent = readdir( pointer_dirent );
 
 
 
@@ -66,42 +69,39 @@ void control_message_update(const char* path_update, char* that_result) {
 
             if ( *ent->d_name == '.') {
 
-                ent = readdir(pDir);}
+                ent = readdir(pointer_dirent);}
 
             else {
 
-                *path_update += '/';
-                *path_update += ent->d_name;
+                strcat(path_update, "/");
+                strcat(path_update, ent->d_name);
 
-                closedir( pDir );
+                closedir( pointer_dirent );
 
-                pDir = opendir((*path_update).c_str());
-                ent  = readdir(pDir);}}
+                pointer_dirent = opendir(path_update);
+                ent  = readdir(pointer_dirent);}}
 
 
 
         else if ( (int)ent->d_type == 8 ) {
 
-            *path_update += '/';
-            *path_update += ent->d_name;
+            strcat(path_update, "/");
+            strcat(path_update, ent->d_name);
 
-            closedir( pDir );
-            return *path_update;}}
+            closedir( pointer_dirent );
+            return 1;}}
 
 
      // A dirent is finished
-    if ( *path_update != path_update_start ) {
 
-        closedir( pDir );
-        return control_update(path_update);}
+    if ( strcmp(path_update, path_update_start) != 0 ) {
+
+        closedir( pointer_dirent );
+        return control_message_update(path_update);}
 
 
     else {
 
-        closedir( pDir );
-        *path_update = "";
-        return "Done.";}
-
-*/
-
-}
+        closedir( pointer_dirent );
+        strcpy(path_update, "");
+        return 0;}}

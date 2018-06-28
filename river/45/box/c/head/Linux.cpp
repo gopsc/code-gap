@@ -1,5 +1,5 @@
 
-//g++ ./seed.cpp -lpthread -lasound -std=c++0x -o gopi
+//g++ ./seed.cpp -lpthread -lasound -std=c++0x -o ?
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,6 +17,5 @@
 
 #include <ifaddrs.h>
 #include <arpa/inet.h>
-
 
 #include <math.h>

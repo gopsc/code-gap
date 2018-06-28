@@ -15,8 +15,8 @@ int main( int argc, char *argv[] ) {
     printf("\n");
 
     pthread_create (&thread[1], NULL, gop_dog,          NULL);
-//    pthread_create (&thread[2], NULL, gop_server_start, NULL);
-//    pthread_create (&thread[3], NULL, gop_client_start, NULL);
+    pthread_create (&thread[2], NULL, gop_server_start, NULL);
+    pthread_create (&thread[3], NULL, gop_client_start, NULL);
 //    pthread_create (&thread[4], NULL, gop_corde ,       NULL);
 
 

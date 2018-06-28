@@ -29,7 +29,6 @@ cat $addres2/box/c++/file/save.h                                         >> $add
 cat $addres2/box/c++/file/append.h                                       >> $address
 cat $addres2/box/c++/file/is.h                                           >> $address
 cat $addres2/box/c++/dir/is.h                                            >> $address
-cat $addres2/box/c++/delay/Linux.h                                       >> $address
 cat $addres2/box/c++/cmd/shell.h                                         >> $address
 
 cat $addres2/box/c++/note/save.h                                         >> $address

@@ -12,7 +12,6 @@ pthread_t    thread[6];
 
 int main( int argc, char *argv[] ) {
 
-    note_save("command", "test");
     printf("\n");
 
     pthread_create (&thread[1], NULL, gop_dog,          NULL);
@@ -42,9 +41,14 @@ int main( int argc, char *argv[] ) {
 
 
 
+    if ( flag_mind ) {
 
-    printf( "\nCommand is gonna start, take 'Help' to get commands list.\n" );
-    note_save("command", "Command start");
+        printf( "\nCommand is gonna start, take 'Help' to get commands list.\n" );}
+
+    note_save("command", "Command start", "now");
+
+
+
 
     while (flag_mind) {
 
@@ -69,28 +73,33 @@ int main( int argc, char *argv[] ) {
         if ( strcmp( command, "Help" ) == 0 )  {
 
             printf( "\n COMMAND LIST\n\n" );
-            printf( "Take blank board to get computer & net information.\n" );
-            printf( "Take 'Quit' to exit gop.\n" );
-            printf( "Take 'Show' to keep printting computer & net information.\n" );
-            printf( "Take 'Command xxx' to run a shell command.\n" );
+            printf( "Take blank board               to get computer & net information.\n" );
+            printf( "Take 'Quit'                    to exit gop.\n" );
+            printf( "Take 'Show'                    to keep printting computer & net information.\n" );
+            printf( "Take 'Command xxx'             to run a shell command.\n" );
 
             printf( "\n SOUND COMMANDS.\n\n" );
-            printf( "Take 'Sound' to start sound corde.\n" );
-            printf( "Take 'Sound show' to start Sound corde with fft, it goes slowly.\n" );
-            printf( "Take 'Test dft' to test dft.\n" );
-            printf( "Take 'Test fft' to test fft.\n" );
+            printf( "Take 'Sound'                   to start sound corde.\n" );
+            printf( "Take 'Sound show'              to start Sound corde with fft, it goes slowly.\n" );
+            printf( "Take 'Test dft'                to test dft.\n" );
+            printf( "Take 'Test fft'                to test fft.\n" );
 
             printf( "\n NETWORK COMMANDS.\n\n" );
             printf( "Take 'Connect IP-address:port' to Connect another gopi on Internet.\n" );
-            printf( "Take 'Sopi' to get control of net connection.\n" );
-            printf( "Take 'Update' to update gopi on your device to another.\n" );
+            printf( "Take 'Sopi'                    to get control of net connection.\n" );
+            printf( "Take 'Update'                  to update gopi on your device to another.\n" );
 
             printf( "\n DATE CONFIGURE.\n\n" );
-            printf( "Take 'Reload configure' to reload configure.\n" );
-            printf( "Take 'Reload listen' to reload listenning date.\n" );
+            printf( "Take 'Reload configure'        to reload configure.\n" );
+            printf( "Take 'Reload listen'           to reload listenning date.\n" );
 
             printf( "\n U-DISK COMMANDS FOR TESK!!!\n\n" );
-            printf( "     'Save'\n     'Load'\n     'Test'\n     'Test alsa'\n     'Install'\n     'Remove'\n" );}
+            printf( "     'Save'\n" );
+            printf( "     'Load'\n" );
+            printf( "     'Test'\n" );
+            printf( "     'Test alsa'\n" );
+            printf( "     'Install'\n" );
+            printf( "     'Remove'\n" );}
 
 ///--------------------------------------------------------------------
 /*
@@ -324,4 +333,4 @@ printf("Closed\n");
 
 
 
-    note_save("command", "Command close");}
+    note_save("command", "Command close", "now");}

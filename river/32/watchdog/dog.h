@@ -36,7 +36,7 @@ void* gop_dog(void*){
 
 //        dog_show();
 
-        info_done = true;}
+        information_done = true;}
 
 
 

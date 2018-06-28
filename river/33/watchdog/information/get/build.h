@@ -1,51 +1,60 @@
 
-string information_get() {
+void* information_get( char* message ) {
 
-//|===============================================================================|
-/*|*/   string msg;                                                             //|
-/*|*/   msg += "------------------------------";                    msg += '\n';//|
-/*|*/   msg += info_name;                                           msg += ','; //|
-/*|*/   msg += info_system;                                         msg += '\n';//|
-/*|*/                                                               msg += '\n';//|
-/*|*/   msg += "TIME            :";                                             //|
-/*|*/   msg += to_string(info_time);                                msg += '\n';//|
-/*|*/                                                                           //|
-/*|*/   msg += "IP              :";                                            ;//|
-/*|*/   msg += to_string(info_ip_num);                              msg += '\n';//|
-/*|*/   for ( int i=1 ; i<=info_ip_num; i++ ) {                                 //|
-/*|*/       msg += "                 ";                                         //|
-/*|*/       msg += info_ip[i][2];                                               //|
-/*|*/       msg += '\n';}                                                       //|
-/*|*/                                                               msg += '\n';//|
-/*|*/   msg += "CPU CORES       :";                                             //|
-/*|*/   msg += to_string(info_cpu.cores);                           msg += '\n';//|
-/*|*/   msg += "CPU F           :";                                             //|
-/*|*/   msg += to_string(info_cpu.f);                               msg += '\n';//|
-/*|*/   msg += "CPU TEMPERATURE :";                                             //|
-/*|*/   msg += to_string(info_cpu.temperature);                     msg += '\n';//|
-/*|*/   msg += "CPU RATE        :";                                             //|
-/*|*/   msg += to_string(info_cpu.rate);                            msg += '%'; //|
-/*|*/                                                               msg += '\n';//|
-/*|*/                                                               msg += '\n';//|
-/*|*/   msg += "MEM TOTAL       :";                                             //|
-/*|*/   msg += to_string(info_memory.total);                        msg += '\n';//|
-/*|*/   msg += "MEM USED RATE   :";                                             //|
-/*|*/   msg += to_string(100-(100*info_memory.free)/info_memory.total);         //|
-/*|*/                                                               msg += '%'; //|
-/*|*/                                                               msg += '\n';//|
-/*|*/                                                               msg += '\n';//|
-/*|*/                                                               msg += '\n';//|
-/*|*/   msg += "SOUND CONTROL   :";                                             //|
-/*|*/   msg += to_string(info_sound.num_control);                   msg += '\n';//|
-/*|*/   msg += "SOUND CAPTURE   :";                                             //|
-/*|*/   msg += to_string(info_sound.num_capture);                   msg += '\n';//|
-/*|*/   msg += "SOUND PLAYBACK  :";                                             //|
-/*|*/   msg += to_string(info_sound.num_playback);                  msg += '\n';//|
-/*|*/   msg += "------------------------------";                    msg += '\n';//|
-//|===============================================================================|
+//|=====================================================================================================================================================|
+/*|*/   char buffer_message[129];                                                                                                                     //|
+/*|*/                                                                                                                                                 //|
+/*|*/   strcpy(message, "------------------------------");                                                                      strcat(message, "\n");//|
+/*|*/   strcat(message, "NAME            :");                                                                                                         //|
+/*|*/   strcat(message, information_name);                                                                                                            //|
+/*|*/   strcat(message, "SYSTEM          :");                                                                                                         //|
+/*|*/   strcat(message, information_system);                                                                                                          //|
+/*|*/   strcat(message, "USER            :");                                                                                                         //|
+/*|*/   strcat(message, information_user);                                                                                      strcat(message, "\n");//|
+/*|*/                                                                                                                                                 //|
+/*|*/                                                                                                                                                 //|
+/*|*/   strcat(message, "TIME            :");                     gcvt(time(NULL),                     10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/                                                                                                                                                 //|
+/*|*/                                                                                                                                                 //|
+/*|*/   strcat(message, "IP              :");                     gcvt(information_ip_num,             10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/                                                                                                                                                 //|
+/*|*/   for ( int i=1 ; i<=information_ip_num;               i++ )  {                                                                                 //|
+/*|*/   for ( int ii=1; ii<=15-strlen(information_ip[i][1]); ii++ ) {                                                                                 //|
+/*|*/       strcat(message, " ");}                                                                                                                    //|
+/*|*/       strcat(message, information_ip[i][1]);                                                                                                    //|
+/*|*/       strcat(message, " :");                                                                                                                    //|
+/*|*/       strcat(message, information_ip[i][2]);                                                                                                    //|
+/*|*/       strcat(message, "\n");}                                                                                                                   //|
+/*|*/                                                                                                                           strcat(message, "\n");//|
+/*|*/                                                                                                                                                 //|
+/*|*/   strcat(message, "CPU CORES       :");                     gcvt(information_cpu.cores,          10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "CPU F           :");                     gcvt(information_cpu.f,              10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "CPU TEMPERATURE :");                     gcvt(information_cpu.temperature,    10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "CPU RATE        :");                     gcvt(information_cpu.rate,           10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "%"); //|
+/*|*/                                                                                                                           strcat(message, "\n");//|
+/*|*/                                                                                                                           strcat(message, "\n");//|
+/*|*/   strcat(message, "MEM TOTAL       :");                     gcvt(information_memory.total,       10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "MEM USED RATE   :");                     gcvt(100-(100*information_memory.free)/information_memory.total, 0, buffer_message);//|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "%"); //|
+/*|*/                                                                                                                           strcat(message, "\n");//|
+/*|*/                                                                                                                           strcat(message, "\n");//|
+/*|*/   strcat(message, "SOUND CONTROL   :");                     gcvt(information_sound.num_control,  10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "SOUND CAPTURE   :");                     gcvt(information_sound.num_capture,  10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "SOUND PLAYBACK  :");                     gcvt(information_sound.num_playback, 10, buffer_message);                           //|
+/*|*/   strcat(message, buffer_message);                                                                                        strcat(message, "\n");//|
+/*|*/   strcat(message, "------------------------------");                                                                      strcat(message, "\n");//|
+//|=====================================================================================================================================================|
 
-    return msg;}
-
+        }
 
 
 

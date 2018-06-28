@@ -1,6 +1,6 @@
 
 
-void info_ip_get() {
+void information_ip_get() {
 
 
 

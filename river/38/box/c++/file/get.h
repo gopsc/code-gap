@@ -1,20 +1,28 @@
+
 void file_get(const char* that_path, char* that_result) {
 
+
+
     FILE *that_file         = NULL;
-    char  that_buffer[10];
-          that_result[0]    = '\0';
+    char  that_buffer[129];
 
 
 
 
+
+
+    strcpy( that_result, "" );
 
     if ( is_file(that_path) ) {
 
         that_file = fopen(that_path, "r");
-        fclose(that_file);
 
-        while( fgets(that_buffer, 10, (FILE*)that_file) != NULL ) {
-            strcat(that_result, that_buffer);}}}
+
+        while( fgets(that_buffer, 128, (FILE*)that_file) != NULL ) {
+            strcat(that_result, that_buffer);}
+
+
+        fclose(that_file);}}
 
 
 

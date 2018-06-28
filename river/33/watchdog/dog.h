@@ -25,7 +25,7 @@ void* gop_dog(void*){
         info_user_get();
         info_name_get();
         info_system_get();
-//        info_memory_get();
+        info_memory_get();
 //        info_cpu_get();
         info_ip_get();
 //        info_sound_get();

@@ -8,24 +8,22 @@ void* load_listen() {
 
 
 
-    char that_path[129];
-    char that_name[129];
-    char that_file[129];
-    char that_word[10240];
+    char buffer_path[129];
+    char buffer_name[129];
+    char buffer_file[129];
+    char buffer_word[10240];
 
 
 
 
 // ~/sound/listen/word/number/w/t
 
-    strcpy(that_path, path_the);
-    strcat(that_path, "/");
-    strcat(that_path, name_the);
-    strcat(that_path, "/sound/listen/word");
+    strcpy(buffer_path, path_the);
+    strcat(buffer_path, "/library/word");
 
-    int   num_step;
-    char* that_pointer;
-    char  that_buffer[10240];
+    int   number_step;
+    char* buffer_pointer;
+    char  buffer_buffer[10240];
 
 
 
@@ -36,49 +34,49 @@ void* load_listen() {
 
     do {
 
-        gcvt(num_listen, 10, that_buffer);
+        gcvt(number_listen, 10, buffer_buffer);
 
-        strcpy(that_name, that_path);
-        strcat(that_name, "/");
-        strcat(that_name, that_buffer);
+        strcpy(buffer_name, buffer_path);
+        strcat(buffer_name, "/");
+        strcat(buffer_name, buffer_buffer);
 
-        num_listen++;
+        number_listen++;
 
 
-        if ( is_dir(that_name) ) {
+        if ( is_dirent(buffer_name) ) {
 
-            printf("%s\n", that_name);
+            printf("%s\n", buffer_name);
 
             for ( int w=1; w<=N; w++) {
 
-                gcvt(w, 10, that_buffer);
+                gcvt(w, 10, buffer_buffer);
 
-                strcpy(that_file, that_name);
-                strcat(that_file, "/");
-                strcat(that_file, that_buffer);
-                strcat(that_file, ".w");
+                strcpy(buffer_file, buffer_name);
+                strcat(buffer_file, "/");
+                strcat(buffer_file, buffer_buffer);
+                strcat(buffer_file, ".w");
 
 
 
-                if ( is_file(that_file) ) {
+                if ( is_file(buffer_file) ) {
 
-                    file_get(that_file, that_word);
+                    file_get(buffer_file, buffer_word);
 
-                    num_step     = 1;
+                    number_step     = 1;
 
                     do {
 
-                                       strcpy( that_buffer, that_word );
-                        that_pointer = strchr( that_buffer, '\n' );
+                                         strcpy( buffer_buffer, buffer_word );
+                        buffer_pointer = strchr( buffer_buffer, '\n' );
 
-                        if ( that_pointer != NULL ) {
+                        if ( buffer_pointer != NULL ) {
 
-                           *that_pointer                           = '\0';
-                            buffer_listen[num_listen][w][num_step] = atoi(that_buffer);
+                           *buffer_pointer                           = '\0';
+                            buffer_listen[number_listen][w][number_step] = atoi(buffer_buffer);
 
-                            strcpy( that_word,   that_pointer + 1 );
-                            num_step++;}
+                            strcpy( buffer_word,   buffer_pointer + 1 );
+                            number_step++;}
 
-                  } while ( that_pointer != NULL );}}}
+                  } while ( buffer_pointer != NULL );}}}
 
-  } while ( is_dir(that_name) );}
+  } while ( is_dirent(buffer_name) );}

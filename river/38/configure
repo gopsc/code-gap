@@ -1,9 +1,16 @@
 
 
 
+
+
+
+
+
+
+
 path              /opt
 name              ta
-
+data              gop
 
 
 
@@ -17,26 +24,26 @@ client            on
 server            on
 
 sound             off
-sound show        off
-sound save        off
+sound-show        off
+sound-save        off
 
 
 
 
 
 
-address to        10.10.10.1
-port to           520
-port this         520
+address-to        10.10.10.1
+port-to           520
+port-this         520
 
-connect step      0
+connect-step      0
 
-update size       1000
-update step       0
+update-size       1000
+update-step       0
 
 
 
-sound rate        44100
-sound channels    1
-ft N              512
+sound-rate        44100
+sound-channels    1
+ft-N              512
 

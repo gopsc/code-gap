@@ -3,8 +3,6 @@
 
 void* gop_dog(void*){
 
-    note_save("dog", "WatchDog start", "now");
-
 
 
 
@@ -22,11 +20,19 @@ void* gop_dog(void*){
     load_configure();
 
 // listen modle of sound , it need a word libary loading
-//    load_listen();
+    load_listen();
 
 
 
     printf("DONE\n");
+
+
+
+
+
+
+
+    note_save("dog", "WatchDog start", "now");
 
     while(flag_dog){
 

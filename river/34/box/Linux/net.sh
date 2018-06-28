@@ -30,9 +30,9 @@ cat $addres2/watchdog/information/memory/build.h                         >> $add
 #cat $addres2/watchdog/information/cpu/INFORMATION.h                      >> $address
 #cat $addres2/watchdog/information/cpu/rate.h                             >> $address
 #cat $addres2/watchdog/information/cpu/temperature.h                      >> $address
-#cat $addres2/watchdog/information/cpu/f.h                                >> $address
+cat $addres2/watchdog/information/cpu/frequency.h                        >> $address
 #cat $addres2/watchdog/information/cpu/cores.h                            >> $address
-#cat $addres2/watchdog/information/cpu/build.h                            >> $address
+cat $addres2/watchdog/information/cpu/build.h                            >> $address
 #cat $addres2/watchdog/information/sound/build.h                          >> $address
 cat $addres2/watchdog/information/get/build.h                            >> $address
 

@@ -1,13 +1,4 @@
 
-bool                 info_done = false;
-
-
-char                 info_user[100];
-char                 info_name[100];
-char                 info_system[100];
-char                 info_ip[3][6][3][100];
-int                  point_ip[2];
-
 
 
 
@@ -56,18 +47,30 @@ struct gopi_sound {
 
 
 
-struct gopi_memory info_memory;
-struct gopi_disk   info_disk;
-struct gopi_cpu    info_cpu;
+
+
+
+
+
+
+
+
+
+
+bool               information_done    = false;
+
+char               information_user[129];
+char               information_name[129];
+char               information_system[129];
+
+char               information_ip[10][3][255];
+char               information_ip_num;
+
+struct gopi_memory information_memory;
+struct gopi_disk   information_disk;
+struct gopi_cpu    information_cpu;
+struct gopi_sound  information_sound;
+
 struct gopi_cpu    buffer_cpu;
-
-
-struct gopi_sound    info_sound;
-
-
-
-
-
-
 
 

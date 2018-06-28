@@ -10,7 +10,7 @@ pthread_t    thread[6];
 
 
 
-int main(int argc, char *argv[]){
+int main( int argc, char *argv[] ) {
 
     note_save("command", "test");
     printf("\n");

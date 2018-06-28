@@ -6,7 +6,7 @@ void information_disk_get() {
     char buffer_available[17];
     char buffer_used[17];
 
-    cmd_get("df", that_file);
+    commandline_get("df", that_file);
 
 
 

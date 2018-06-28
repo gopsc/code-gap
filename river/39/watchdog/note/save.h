@@ -1,8 +1,12 @@
 
-void note_save(const char* that_name, const char* that_words, const char* target_time ) {
+void note_save(
+                const char* that_name,
+                const char* that_words,
+                const char* target_time ) {
 
-    char           that_time[3][129];
-    char           that_path[1025];
+
+           char    that_time[3][129];
+           char    that_path[1025];
     struct timeval time_now;
 
 
@@ -25,10 +29,9 @@ void note_save(const char* that_name, const char* that_words, const char* target
 
 
 
-
     strcpy(that_path, path_the);
-    strcpy(that_path, "/");
-    strcpy(that_path, name_date);
+    strcat(that_path, "/");
+    strcat(that_path, name_data);
     strcat(that_path, "/note/");
     strcat(that_path, that_name);
     strcat(that_path, ".note");

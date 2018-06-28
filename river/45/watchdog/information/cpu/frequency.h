@@ -1,3 +1,4 @@
+
 void information_CPU_frequency_get() {
 
     char  that_file[10240];
@@ -31,7 +32,7 @@ void information_CPU_frequency_get() {
 
     else {
 
-        cmd_get("lscpu | grep 'cpu max MHz'", that_result);
+        commandline_get("lscpu | grep 'cpu max MHz'", that_result);
 
         if ( strstr(that_result, "\n") != NULL ) {
 

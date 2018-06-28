@@ -42,7 +42,7 @@ void* gop_corde(void*){
 
 // Wait when there's no capture devices
 
-        if ( !flag_sound or info_sound.num_capture == 0 ) {
+        if ( !flag_sound or info_sound.number_capture == 0 ) {
             gop_delay(0.1);}
         else {
 
@@ -76,7 +76,7 @@ void* gop_corde(void*){
                 cout << "CAPTURE DEVICE TURN." << endl;
 
 
-                if ( info_sound.num_capture > info_sound.device_capture ) {
+                if ( info_sound.number_capture > info_sound.device_capture ) {
 
                     info_sound.device_capture++;}
 
@@ -297,13 +297,13 @@ void* gop_corde(void*){
 
 
             int     that      = 0;
-            int     num_round = 0;
-            int     num_force = 0;
-            int     num_reset = 0;
-            int     num_aloud = 0;
-            int     num_step  = 1;
-            int     num_step2 = 1;
-            int     num_count = 0;
+            int     number_round = 0;
+            int     number_force = 0;
+            int     number_reset = 0;
+            int     number_aloud = 0;
+            int     number_step  = 1;
+            int     number_step2 = 1;
+            int     number_count = 0;
 
 
 
@@ -337,51 +337,51 @@ void* gop_corde(void*){
                     that++;
 
 // Get date
-                    num_force =  *((int*)buffer_sound+i)/10000   -   num_force;
+                    number_force =  *((int*)buffer_sound+i)/10000   -   number_force;
 
 
 // Check date
-                    if (num_force >= 100) {
-                        num_aloud++;}
+                    if (number_force >= 100) {
+                        number_aloud++;}
 
 // Save date
-                    if ( num_step < 400) {
-                        result_sound[num_step+0][num_step2] = num_force;}
+                    if ( number_step < 400) {
+                        result_sound[number_step+0][number_step2] = number_force;}
 
-                    num_step2++;
+                    number_step2++;
 
 
 // Update date for next getting
 
-                    num_force = result_sound[num_step+0][num_step2-1];
+                    number_force = result_sound[number_step+0][number_step2-1];
 
 
 //--------------------------------------------------------------------------
 
-                    if ( num_step2 > N ) {
-                        num_step2 = 1;
+                    if ( number_step2 > N ) {
+                        number_step2 = 1;
 
-                        if ( num_aloud >= 50 ) {
+                        if ( number_aloud >= 50 ) {
 
-                            num_count = 5;
+                            number_count = 5;
 
-                            if ( num_step < 400 ) {
-                                num_step++;}}
+                            if ( number_step < 400 ) {
+                                number_step++;}}
 
                         else {
 
-                            if ( num_count > 0 ) {
+                            if ( number_count > 0 ) {
 
-                                num_count--;
+                                number_count--;
 
 
-                                if ( num_step < 400 ) {
-                                    num_step++;}
+                                if ( number_step < 400 ) {
+                                    number_step++;}
 
-                                if ( num_count == 1 ) {
+                                if ( number_count == 1 ) {
                                     flag_sound = false;}}}
 
-                        num_aloud = 0;}}
+                        number_aloud = 0;}}
 
 //==========================================================================
 
@@ -390,29 +390,29 @@ void* gop_corde(void*){
 
 
 
-                if (that != num_force) {
-                    that  = num_force;
+                if (that != number_force) {
+                    that  = number_force;
 
 // when it get different data
 // don't reset it
 
                     that0--;
-                    num_reset--;
+                    number_reset--;
 
                     if (that0<0) {
                         that0=0;}
 
-                    if (num_reset<0) {
-                        num_reset=0;}}
+                    if (number_reset<0) {
+                        number_reset=0;}}
 
 
 
                 else {
-                    num_reset++;
+                    number_reset++;
 
 // If it always get same data
 // reset it
-                    if (num_reset >= 10) {
+                    if (number_reset >= 10) {
                         cout << "SOUND RESET" <<  endl;
                         break;}}}
 
@@ -431,18 +431,18 @@ void* gop_corde(void*){
 
 
 
-            if ( num_count == 1 ) {
+            if ( number_count == 1 ) {
 
 
 
 
 
                 if ( flag_sound_show == false ) {
-                    cout << num_step << endl;
+                    cout << number_step << endl;
                     }
 
 
-                for ( int i=1; i<=num_step and i<400; i++) {
+                for ( int i=1; i<=number_step and i<400; i++) {
 
                     fft(i);
 
@@ -455,7 +455,7 @@ void* gop_corde(void*){
 
 
                 if ( flag_sound_save ) {
-                    listen_save(num_step);}
+                    listen_save(number_step);}
 
 
 

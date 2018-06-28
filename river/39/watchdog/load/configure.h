@@ -71,7 +71,7 @@ void* load_configure() {
 
             strcat(path_the,   result_configure[1]);
             strcat(name_the,   result_configure[2]);
-            strcat(name_date,  result_configure[3]);
+            strcat(name_data,  result_configure[3]);
 
             if ( strcmp(result_configure[4],  "on") == 0 ) { flag_mind       = true;}
             if ( strcmp(result_configure[5],  "on") == 0 ) { flag_show       = true;}
@@ -85,7 +85,7 @@ void* load_configure() {
 
             port_to          = atof(result_configure[12]);
             port_this        = atof(result_configure[13]);
-            step_connect     = atof(result_configure[14]);
+            step_connection  = atof(result_configure[14]);
             size_update      = atof(result_configure[15]);
             count_update_max = atof(result_configure[16]);
             rate             = atof(result_configure[17]);

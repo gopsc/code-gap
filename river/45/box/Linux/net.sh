@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-addres2=/opt/?
+addres2=/opt/gop/seed
 address=$addres2/flower.cpp
 
 cat $addres2/box/c/head/Linux.cpp                                        >> $address
@@ -14,12 +14,12 @@ cat $addres2/watchdog/information/build.h                                >> $add
 cat $addres2/network/build.h                                             >> $address
 cat $addres2/sound/build.h                                               >> $address
 
-cat $addres2/box/c/dir/is.h                                              >> $address
+cat $addres2/box/c/dirent/is.h                                           >> $address
 cat $addres2/box/c/file/is.h                                             >> $address
 cat $addres2/box/c/file/get.h                                            >> $address
 cat $addres2/box/c/file/save.h                                           >> $address
 cat $addres2/box/c/file/append.h                                         >> $address
-cat $addres2/box/c/cmd/shell.h                                           >> $address
+cat $addres2/box/c/commandline/shell.h                                   >> $address
 cat $addres2/box/c/code/blank.h                                          >> $address
 
 
@@ -44,29 +44,39 @@ cat $addres2/watchdog/check/network.h                                    >> $add
 cat $addres2/watchdog/check/power.h                                      >> $address
 cat $addres2/watchdog/check/ssh.h                                        >> $address
 cat $addres2/watchdog/check/root.h                                       >> $address
+cat $addres2/watchdog/check/update.h                                     >> $address
+cat $addres2/watchdog/check/deamon.h                                     >> $address
 cat $addres2/watchdog/load/configure.h                                   >> $address
 cat $addres2/watchdog/load/listen.h                                      >> $address
 cat $addres2/watchdog/show/information.h                                 >> $address
 cat $addres2/watchdog/dog.h                                              >> $address
 
+
+cat $addres2/sound/ft/show.h                                             >> $address
+cat $addres2/sound/ft/dft.h                                              >> $address
+cat $addres2/sound/ft/fft.h                                              >> $address
+cat $addres2/sound/ft/test.h                                             >> $address
+cat $addres2/sound/listen/save.h                                         >> $address
+cat $addres2/sound/corde/blank/build.h                                   >> $address
+
+
 cat $addres2/network/message/information/put.h                           >> $address
 cat $addres2/network/message/information/get.h                           >> $address
 
 cat $addres2/network/message/update/build.h                              >> $address
-cat $addres2/network/message/update/mix.h                                >> $address
+cat $addres2/network/message/update/load.h                               >> $address
 
 cat $addres2/network/message/judgement/blank.h                           >> $address
 cat $addres2/network/message/judgement/hello.h                           >> $address
 cat $addres2/network/message/judgement/who.h                             >> $address
 cat $addres2/network/message/judgement/recived.h                         >> $address
-cat $addres2/network/message/judgement/sopi.h                            >> $address
 
 
 for file in $addres2/network/message/command/library/*
 do
     if test -f $file
     then
-        cat $file                                                         >> $address
+        cat $file                                                        >> $address
     fi
 done
 
@@ -76,18 +86,10 @@ cat $addres2/network/message/build.h                                     >> $add
 cat $addres2/network/tcp/server.h                                        >> $address
 cat $addres2/network/tcp/client.h                                        >> $address
 
-cat $addres2/sound/ft/show.h                                             >> $address
-#cat $addres2/sound/ft/dft.h                                              >> $address
-#cat $addres2/sound/ft/fft.h                                              >> $address
-#cat $addres2/sound/ft/test.h                                             >> $address
-#cat $addres2/sound/listen/save.h                                         >> $address
-#cat $addres2/sound/corde/blank/build.h                                   >> $address
-
-
 
 
 
 cat $addres2/build.h                                                     >> $address
 
-gcc $address -lpthread -o $addres2/../TxL
+gcc $address -lpthread -lm -o $addres2/../../?
 rm  $address

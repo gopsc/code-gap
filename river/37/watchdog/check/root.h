@@ -1,5 +1,14 @@
 void check_root() {
 
-    if ( cmd_get("watchdog", "whoami") != "root" ) {
+    char that_result[129];
 
-        cout << "WARNNING: NO ROOT." << endl;}}
+
+
+
+
+
+    cmd_get("whoami", that_result);
+
+    if ( strcmp(that_result, "root\n") != 0 ) {
+
+         printf("WARNNING: NO ROOT.\n");}}

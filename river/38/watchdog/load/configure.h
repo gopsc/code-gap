@@ -1,5 +1,6 @@
-string whats_this;
-void load_configure() {
+
+
+void* load_configure() {
 
 
 
@@ -12,87 +13,81 @@ void load_configure() {
 
 
 
-    string that_configure;
-
-
+    char that_file[1025];
+    char buffer_file[1025];
+    char target_configure[20][17];
+    char result_configure[20][17];
 
 
 
 
     if ( is_file("/opt/ta/configure") ) {
 
-        that_configure = file_get("/opt/ta/configure");}
+        file_get("/opt/ta/configure", that_file);
+
+
+
+        if ( strcmp(that_file, "") == 0 ) {
+
+            flag_mind = false;}
+
+        else {
+
+            strcpy(target_configure[1],  "path ");
+            strcpy(target_configure[2],  "name ");
+            strcpy(target_configure[3],  "data ");
+            strcpy(target_configure[4],  "mind ");
+            strcpy(target_configure[5],  "show ");
+            strcpy(target_configure[6],  "client ");
+            strcpy(target_configure[7],  "server ");
+            strcpy(target_configure[8],  "sound ");
+            strcpy(target_configure[9],  "sound-show ");
+            strcpy(target_configure[10], "sound-save ");
+            strcpy(target_configure[11], "address-to ");
+            strcpy(target_configure[12], "port-to ");
+            strcpy(target_configure[13], "port-this ");
+            strcpy(target_configure[14], "connect-step ");
+            strcpy(target_configure[15], "update-size ");
+            strcpy(target_configure[16], "update-step ");
+            strcpy(target_configure[17], "sound-rate ");
+            strcpy(target_configure[18], "sound-channels ");
+            strcpy(target_configure[19], "ft-N ");
+
+
+
+
+            for ( int i=1; i<=19; i++ ) {
+
+                if ( strstr(that_file, target_configure[i]) != NULL ) {
+
+                    strcpy( buffer_file,         strstr(that_file, target_configure[i]) );
+                   *strchr( buffer_file,         '\n' ) = '\0';
+                    strcpy( buffer_file,         strrchr(buffer_file, ' ')+1 );
+                    strcpy( result_configure[i], buffer_file );}}
 
 
 
 
 
+            strcat(path_the,   result_configure[1]);
+            strcat(name_the,   result_configure[2]);
+            strcat(name_date,  result_configure[3]);
 
-    if ( that_configure == "" ) {
+            if ( strcmp(result_configure[4],  "on") == 0 ) { flag_mind       = true;}
+            if ( strcmp(result_configure[5],  "on") == 0 ) { flag_show       = true;}
+            if ( strcmp(result_configure[6],  "on") == 0 ) { flag_client     = true;}
+            if ( strcmp(result_configure[7],  "on") == 0 ) { flag_server     = true;}
+            if ( strcmp(result_configure[8],  "on") == 0 ) { flag_sound      = true;}
+            if ( strcmp(result_configure[9],  "on") == 0 ) { flag_sound_show = true;}
+            if ( strcmp(result_configure[10], "on") == 0 ) { flag_sound_save = true;}
 
-        flag_mind = false;}
+            strcpy(address_to, result_configure[11]);
 
-    else {
-
-        string target_configure[19];
-        string result_configure[19];
-
-
-        target_configure[1]  = "path ";
-        target_configure[2]  = "name ";
-        target_configure[3]  = "mind ";
-        target_configure[4]  = "show ";
-        target_configure[5]  = "client ";
-        target_configure[6]  = "server ";
-        target_configure[7]  = "sound ";
-        target_configure[8]  = "sound show ";
-        target_configure[9] = "sound save ";
-        target_configure[10] = "address to ";
-        target_configure[11] = "port to ";
-        target_configure[12] = "port this ";
-        target_configure[13] = "connect step ";
-        target_configure[14] = "update size ";
-        target_configure[15] = "update step ";
-        target_configure[16] = "sound rate";
-        target_configure[17] = "sound channels ";
-        target_configure[18] = "ft N ";
-
-
-
-
-        int num1;
-        int num2;
-
-        for ( int i=1; i<19; i++ ) {
-
-            num1 = that_configure.find( target_configure[i] );
-
-
-
-
-            if ( num1 != -1 ) {
-
-                num2 = that_configure.find( "\n", num1 );
-
-                result_configure[i] = that_configure.substr( num1, num2-num1 );
-                result_configure[i] = result_configure[i].substr( result_configure[i].rfind(" ")+1, result_configure[i].length() );}}
-
-
-        path_the         = result_configure[1];
-        name_the         = result_configure[2];
-        if (result_configure[3]  == "on") {flag_mind       = true;}
-        if (result_configure[4]  == "on") {flag_show       = true;}
-        if (result_configure[5]  == "on") {flag_client     = true;}
-        if (result_configure[6]  == "on") {flag_server     = true;}
-        if (result_configure[7]  == "on") {flag_sound      = true;}
-        if (result_configure[8]  == "on") {flag_sound_show = true;}
-        if (result_configure[9]  == "on") {flag_sound_save = true;}
-        strcpy(address_to, result_configure[10].c_str());
-        port_to          = atof(result_configure[11].c_str());
-        port_this        = atof(result_configure[12].c_str());
-        step_connect     = atof(result_configure[13].c_str());
-        size_update      = atof(result_configure[14].c_str());
-        count_update_max = atof(result_configure[15].c_str());
-        rate             = atof(result_configure[16].c_str());
-        channels         = atof(result_configure[17].c_str());
-        N                = atof(result_configure[18].c_str());}}
+            port_to          = atof(result_configure[12]);
+            port_this        = atof(result_configure[13]);
+            step_connect     = atof(result_configure[14]);
+            size_update      = atof(result_configure[15]);
+            count_update_max = atof(result_configure[16]);
+            rate             = atof(result_configure[17]);
+            channels         = atof(result_configure[18]);
+            N                = atof(result_configure[19]);}}}

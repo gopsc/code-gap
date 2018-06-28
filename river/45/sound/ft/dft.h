@@ -19,6 +19,6 @@ void dft(int site) {
         mo = sqrt(num*num+numi*numi)/(N/2);
 
         if (mo > 1){
-            cout<<w<<":"<<mo<<"  "<<(int)num<<"  "<<(int)numi<<endl;}
+            printf( "%d:%d  &d  %d\n", w, mo, (int)num, (int)numi );}
 
         result_ft[site][w] = mo;}}

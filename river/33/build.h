@@ -34,8 +34,8 @@ int main(int argc, char *argv[]){
 
 
 
-//    while (!info_done) {
-//        usleep(100000);}
+    while ( !information_done ) {
+        usleep(100000);}
 
 
 
@@ -110,17 +110,22 @@ printf("Closed\n");
                 printf("CONNECT TO %s:%i\n", gop_connect.address_ip[0], gop_connect.port[0]);}}
 */
 //---------------------------------------------------------------------
-/*
+
          else if ( strcmp( command, " " ) == 0 ) {
 
-	            system("clear");
+            char buffer_message[2049];
 
-            printf("%s\n", information_get());
-            printf("%s",   gop_connect.information[1]);
-            printf("%s",   gop_connect.information[2]);
-            printf("%s",   gop_connect.information[3]);
-            printf("%s",   gop_connect.information[0]);}
-*/
+	    system("clear");
+
+            information_get( buffer_message );
+
+            printf( "%s\n", buffer_message );
+//            printf("%s",   gop_connect.information[1]);
+//            printf("%s",   gop_connect.information[2]);
+//            printf("%s",   gop_connect.information[3]);
+//            printf("%s",   gop_connect.information[0]);
+}
+
 //---------------------------------------------------------------------
 
         else if ( strcmp( command, "Quit" ) == 0 ){

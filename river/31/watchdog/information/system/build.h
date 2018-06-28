@@ -1,4 +1,4 @@
 
 void* info_system_get(){
 
-    info_system = cmd_get("info_system", "uname -s");}
+    cmd_get("uname -s", info_system);}

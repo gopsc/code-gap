@@ -1,24 +1,25 @@
 
-void note_save(const char* that_name, const char* that_words ) {
+void note_save(const char* that_name, const char* that_words, const char* target_time ) {
 
-    time_t         time_now            = time(NULL);
     char           that_time[3][129];
-    char*        buffer_time;
     char           that_path[1025];
-    struct timeval time_test;
+    struct timeval time_now;
 
 
 
 
+    if ( strcmp(target_time, "now") == 0 ) {
 
-    gettimeofday( &time_test, NULL );
+        gettimeofday( &time_now, NULL );
 
-    gcvt(         time_test.tv_sec,          10, that_time[1] );
-    gcvt( (double)time_test.tv_usec/1000000, 10, that_time[2] );
+        gcvt(         time_now.tv_sec,          10, that_time[1] );
+        gcvt( (double)time_now.tv_usec/1000000, 10, that_time[2] );
 
-    buffer_time = that_time[2]+1;
+        strcat( that_time[1], that_time[2]+1 );}
 
-    strcat( that_time[1], buffer_time );
+    else {
+
+        strcpy( that_time[1], target_time );}
 
 
 
@@ -26,12 +27,14 @@ void note_save(const char* that_name, const char* that_words ) {
 
 
     strcpy(that_path, path_the);
-    strcat(that_path, "/gop/note/");
+    strcpy(that_path, "/");
+    strcpy(that_path, name_date);
+    strcat(that_path, "/note/");
     strcat(that_path, that_name);
     strcat(that_path, ".note");
 
+    file_append(that_path, "\n\n");
     file_append(that_path, that_time[1]);
     file_append(that_path, "\n");
-    file_append(that_path, that_words);
-    file_append(that_path, "\n\n");}
+    file_append(that_path, that_words);}
 

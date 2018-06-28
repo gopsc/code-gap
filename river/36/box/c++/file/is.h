@@ -1,10 +1,10 @@
 
-bool is_file(const char *path){
+bool is_file(const char *that_path){
 
-    struct stat statbuf;
+    struct stat that_stat;
 
 
-    if (lstat(path, &statbuf) ==0) {
+    if ( lstat(that_path, &that_stat) == 0 ) {
         return true;}
 
     else {

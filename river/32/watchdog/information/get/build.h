@@ -11,10 +11,10 @@ string information_get() {
 /*|*/   msg += to_string(info_time);                                msg += '\n';//|
 /*|*/                                                                           //|
 /*|*/   msg += "IP              :";                                            ;//|
-/*|*/   msg += to_string(point_ip[1]);                              msg += '\n';//|
-/*|*/   for ( int i=1 ; i<=point_ip[1]; i++ ) {                                 //|
+/*|*/   msg += to_string(info_ip_num);                              msg += '\n';//|
+/*|*/   for ( int i=1 ; i<=info_ip_num; i++ ) {                                 //|
 /*|*/       msg += "                 ";                                         //|
-/*|*/       msg += info_ip[1][i][2];                                            //|
+/*|*/       msg += info_ip[i][2];                                               //|
 /*|*/       msg += '\n';}                                                       //|
 /*|*/                                                               msg += '\n';//|
 /*|*/   msg += "CPU CORES       :";                                             //|

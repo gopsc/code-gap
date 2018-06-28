@@ -1,4 +1,5 @@
-void load_listen() {
+
+void* load_listen() {
 
     printf("LOAD LISTEN...\n");
 
@@ -7,21 +8,24 @@ void load_listen() {
 
 
 
+    char that_path[129];
+    char that_name[129];
+    char that_file[129];
+    char that_word[10240];
+
+
+
+
 // ~/sound/listen/word/number/w/t
 
-    string that_path  = path_the;
-           that_path += "/";
-           that_path += name_the;
-           that_path += "/sound/listen/word";
+    strcpy(that_path, path_the);
+    strcat(that_path, "/");
+    strcat(that_path, name_the);
+    strcat(that_path, "/sound/listen/word");
 
-
-    string that_name  = that_path;
-           that_name += "/";
-           that_name += to_string(num_listen);
-
-    string that_file;
-
-    string that;
+    int   num_step;
+    char* that_pointer;
+    char  that_buffer[10240];
 
 
 
@@ -29,54 +33,52 @@ void load_listen() {
 
 
 
-    while (is_dir(that_name.c_str())) {
 
-        cout << that_name << endl;
+    do {
 
+        gcvt(num_listen, 10, that_buffer);
 
-
-
-
-        for ( int w=1; w<=N; w++) {
-
-            that_file  = that_name;
-            that_file += "/";
-            that_file += to_string(w);
-            that_file += ".w";
-
-
-
-            if ( is_file(that_file.c_str()) ) {
-
-
-
-
-                that = file_get(that_file);
-
-
-
-                int num  = 1;
-                int num1 = 0;
-                int num2 = that.find("\n");
-
-
-
-                while ( num2 != -1 ) {
-
-                    buffer_listen[num_listen][w][num] = atoi(that.substr(num1, num2-num1).c_str());
-
-                    num++;
-                    num1 = num2 + 1;
-                    num2 = that.find("\n",num2 + 1);}}}
-
-
-
-
-
-
+        strcpy(that_name, that_path);
+        strcat(that_name, "/");
+        strcat(that_name, that_buffer);
 
         num_listen++;
 
-        that_name  = that_path;
-        that_name += "/";
-        that_name += to_string(num_listen);}}
+
+        if ( is_dir(that_name) ) {
+
+            printf("%s\n", that_name);
+
+            for ( int w=1; w<=N; w++) {
+
+                gcvt(w, 10, that_buffer);
+
+                strcpy(that_file, that_name);
+                strcat(that_file, "/");
+                strcat(that_file, that_buffer);
+                strcat(that_file, ".w");
+
+
+
+                if ( is_file(that_file) ) {
+
+                    file_get(that_file, that_word);
+
+                    num_step     = 1;
+
+                    do {
+
+                                       strcpy( that_buffer, that_word );
+                        that_pointer = strchr( that_buffer, '\n' );
+
+                        if ( that_pointer != NULL ) {
+
+                           *that_pointer                           = '\0';
+                            buffer_listen[num_listen][w][num_step] = atoi(that_buffer);
+
+                            strcpy( that_word,   that_pointer + 1 );
+                            num_step++;}
+
+                  } while ( that_pointer != NULL );}}}
+
+  } while ( is_dir(that_name) );}

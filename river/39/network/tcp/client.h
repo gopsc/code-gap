@@ -1,62 +1,79 @@
+
 void* gop_client_start(void*) {
 
-   while ( !info_done ) {
-        gop_delay(0.1);}
-
-    note_save("client.note", "Client start");
 
 
 
+   while ( !information_done ) {
+
+       usleep(step_connection * 100000);}
 
 
 
-
-    gop_connect.address_ip[0] = address_to;
-    gop_connect.port[0]       = port_to;
-
-
-
-
-    struct sockaddr_in address;
-
-
-
-
-    char   buffer_recv[10240];
-    char   buffer_send[10240];
-
-
-
-
-    int    ptr;
-    string msg;
-
-
-
-
-    gop_connect.how[0]        = "Wait";
+    note_save("client", "Client start", "now");
 
 
 
 
 
-    while ( point_ip[1]==0 ) {
-        gop_delay(0.1);}
+
+
+
+
+
+    struct sockaddr_in    address;
+
+           char           buffer_recv[10240];
+           char           buffer_send[10240];
+           char           that_buffer[10240];
+
+
+
+
+
+    strcpy(gop_connect.address_ip[0], address_to);
+           gop_connect.port[0]         = port_to;
+
+    strcpy(gop_connect.how[0], "Wait");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    while ( information_ip_num == 0 ) {
+
+        usleep(step_connection * 100000);}
+
+
 
 
 
 
     while (flag_client) {
 
+
+
 //-----------------------------------------------------------------------------------
 
 // CAN NOT CONNECT MYSELF
 
-        for ( int i=1; i<=point_ip[1]; i++ ) {
+        for ( int i=1; i<=information_ip_num; i++ ) {
 
-            if ( gop_connect.address_ip[0] == info_ip[1][i][2]) {
+            if ( strcmp(
+                        gop_connect.address_ip[0],
+                        information_ip[i][2])
+                  == 0 ) {
 
-                gop_delay(0.1);
+                usleep(step_connection * 100000);
                 goto leave;}}
 
 //------------------------------------------------------------------------------------
@@ -65,43 +82,65 @@ void* gop_client_start(void*) {
 
         address.sin_family = AF_INET;
         address.sin_port = htons(gop_connect.port[0]);
-        address.sin_addr.s_addr = inet_addr((char*)gop_connect.address_ip[0].c_str());
+        address.sin_addr.s_addr = inet_addr(gop_connect.address_ip[0]);
 
 //-----------------------------------------------------------------------------------
 
-        gop_connect.fd[0] = socket(AF_INET, SOCK_STREAM, 0);
+        gop_connect.fd[0] = socket(
+                                   AF_INET,
+                                   SOCK_STREAM,
+                                   0
+                                  );
 
 //-----------------------------------------------------------------------------------
 
-        if (connect(gop_connect.fd[0], (struct sockaddr *)&address, sizeof(address)) >= 0) {
+        if (
+
+            connect(
+                                          gop_connect.fd[0],
+                      (struct sockaddr *)&address,
+                                          sizeof(address)
+                   ) >= 0
+
+           ) {
 
 //-----------------------------------------------------------------------------------
 
-            gop_connect.point_time[0] = time(NULL);
+            gop_connect.time[0] = time(NULL);
 
-            if ( gop_connect.how[0] == "Wait" ) {
-                cout << "CONNECTTING TO  " << gop_connect.address_ip[0] << endl;
+            if ( strcmp(gop_connect.how[0], "Wait") == 0 ) {
 
-                string that_note  = "Connectting to ";
-                       that_note += gop_connect.address_ip[0];
-                note_save("client.note", that_note);
-                gop_connect.how[0] = "Connectting";}
+                printf( "CONNECTTING TO  %s\n", gop_connect.address_ip[0] );
 
-//-----------------------------------------------------------------------------------
+                strcpy(that_buffer, "Connectting to ");
+                strcat(that_buffer,    gop_connect.address_ip[0]);
 
-            gop_delay(step_connect);
-            recv(gop_connect.fd[0], buffer_recv, 10240, 0);
+                note_save("client", that_buffer, "now");
 
-            msg = control_message( 0, decode(buffer_recv) );
-            msg = encode(msg);
-
-            for ( ptr=0; ptr<msg.length(); ptr++ ) {
-                buffer_send[ptr] = msg[ptr];}
-            buffer_send[ptr] = '\0';
+                strcpy(gop_connect.how[0], "Connectting");}
 
 //-----------------------------------------------------------------------------------
 
-            send(gop_connect.fd[0], buffer_send, 10240, 0);}
+            recv(
+                 gop_connect.fd[0],
+                 buffer_recv, 10240,
+                 0
+                );
+
+            decode(buffer_recv, "blank");
+            control_message( 0, buffer_recv, buffer_send);
+            encode(buffer_send, "blank");
+
+            send(
+                 gop_connect.fd[0],
+                 buffer_send,
+                 10240,
+                 0
+                );
+
+
+
+            usleep(step_connection * 100000);}
 
 //-----------------------------------------------------------------------------------
 
@@ -113,6 +152,7 @@ void* gop_client_start(void*) {
 //===================================================================================
 
 
-    string that_note  = "Client close with ";
-           that_note += gop_connect.address_ip[0];
-    note_save("client.note", that_note);}
+    strcpy(that_buffer, "Client close with ");
+    strcat(that_buffer, gop_connect.address_ip[0]);
+
+    note_save("client", that_buffer, "now");}

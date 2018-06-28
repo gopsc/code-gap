@@ -7,7 +7,8 @@ void command_message() {
 
     information_get( buffer_message );
 
-    printf( "%s\n", buffer_message );
+
+    printf("%s\n", buffer_message );
     printf("%s",   gop_connection.information[1]);
     printf("%s",   gop_connection.information[2]);
     printf("%s",   gop_connection.information[3]);

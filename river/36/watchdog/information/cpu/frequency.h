@@ -1,33 +1,28 @@
 void information_CPU_frequency_get() {
 
-    char  that_file[1025];
-    char  that_result[1025];
-    char* buffer_file;
-    char* point_file;
+    char  that_file[2049];
+    char  that_result[129];
+
+
 
 
     file_get("/proc/cpuinfo", that_file);
 
-
-
-
     if      ( strstr(that_file, "cpu MHz")  != NULL ) {
 
-        strcpy( buffer_file, strstr(that_file,   "cpu MHz") );
-        strcpy( buffer_file, strstr(buffer_file, ": ")+2 );
-                            *strchr(buffer_file, '\n') = '\0';
-        information_cpu.frequency = atoi(buffer_file);}
+        strcpy( that_file, strstr(that_file,   "cpu MHz") );
+        strcpy( that_file, strstr(that_file, ": ")+2 );
+                          *strchr(that_file, '\n') = '\0';
+        information_cpu.frequency = atoi(that_file);}
 
     else if ( strstr(that_file, "BogoMIPS") != NULL ) {
 
-        strcpy( buffer_file, strstr(that_file,    "BogoMIPS") );
-        strcpy( buffer_file, strstr(buffer_file, ": ")+2 );
-                            *strchr(buffer_file, '\n') = '\0';
-        information_cpu.frequency = atoi(buffer_file);}
+        strcpy( that_file, strstr(that_file,   "BogoMIPS") );
+        strcpy( that_file, strstr(that_file, ": ")+2 );
+                          *strchr(that_file, '\n') = '\0';
+        information_cpu.frequency = atoi(that_file);}
 
     else {
-
-
 
         cmd_get("lscpu | grep MHz", that_result);
 

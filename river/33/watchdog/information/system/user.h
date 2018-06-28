@@ -1,3 +1,6 @@
 void* info_user_get(){
 
-    cmd_get("whoami", information_user);}
+    char that_result[129];
+
+    cmd_get("whoami", that_result);
+    strcpy(information_user, that_result);}
