@@ -1,7 +1,18 @@
 
 
 
+
+
+
+
 void * gop_dog ( void * what ) {
+
+
+
+
+
+
+
 
 
 
@@ -16,6 +27,7 @@ void * gop_dog ( void * what ) {
 
 */
 
+
     clean_about ( gop_about );
 
 
@@ -29,7 +41,7 @@ void * gop_dog ( void * what ) {
 
  Load configure from:
 
- {path} / {name} / configure
+ {path} / {name} / configurations
 
 
  first we load configurations without flag of main
@@ -42,9 +54,12 @@ void * gop_dog ( void * what ) {
 
  or dog won't run
 
+
+ gop may check without dog
+
 */
 
-    load_configure ();
+    load_hope ();
 
 
 

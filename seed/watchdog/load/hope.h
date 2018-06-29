@@ -2,7 +2,7 @@
 
 
 
-int load_configurations () {
+int load_hope () {
 
 
 
@@ -10,7 +10,7 @@ int load_configurations () {
 
 // we start this load, and it will print in the output manage
 
-    output_print ( "string", "Load configurations...\n" );
+    output_print ( "string", "Load hope...\n" );
 
 
 
