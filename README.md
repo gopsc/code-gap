@@ -1,5 +1,5 @@
 
-
+# gop seed
 
 
 this is a program with my learning,
@@ -45,3 +45,18 @@ the resource and configurations found
 
 they've  grow little bit
 
+
+# river
+
+all the tools and softwares i used
+
+and forget it
+
+this river is for save the code before as the title
+
+and this is awesome
+
+
+# tree
+
+this is a dream and i don't know if this could finished
