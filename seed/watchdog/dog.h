@@ -183,6 +183,11 @@ void * gop_dog ( void * what ) {
 
 
 
+
+
+
+
+
     while (  gop_about . flag . main  ) {
 
 
@@ -204,6 +209,10 @@ void * gop_dog ( void * what ) {
 
 
         else if  (  gop_about . flag . dog  ) {
+
+
+
+
 
 
 
@@ -250,13 +259,20 @@ void * gop_dog ( void * what ) {
 
 */
 
-            information_cpu_get ();    usleep ( 100000 );
+            gop_about_cpu ();    usleep ( 100000 );
 
 
-            information_ip_get ();     usleep ( 100000 );
+            gop_about_ip ();     usleep ( 100000 );
 
-            information_sound_get ();  usleep ( 100000 );
 
+            gop_about_sound ();  usleep ( 100000 );
+
+
+/*
+
+ check its
+
+*/
 
 
             check_network ();          usleep ( 100000 );

@@ -18,6 +18,7 @@ int judge_message_command (
 /*
 
  This function got a command in
+
    message and do something
 
 */
@@ -28,9 +29,13 @@ int judge_message_command (
 
 
 
-// This is for check what type is the user function
+// This is for check what type it is the user function
+
 
     char that_type [ 16 ];
+
+
+
 
 
 
@@ -115,7 +120,11 @@ int judge_message_command (
         else if  (  strstr ( that_command, "Connect " )  ==  that_commands  ) {
 
 
-// the last one could be the enter
+/*
+
+ the last one could be the enter
+
+*/
 
             that_command [ strlen ( that_command ) - 1 ] = '\0';
 
@@ -128,6 +137,7 @@ int judge_message_command (
 
         else if  (  strcmp ( that_command, " ." )  ==  0  ) {
 
+
             action_about ();}
 
 
@@ -136,6 +146,7 @@ int judge_message_command (
 
 
         else if  (  strcmp ( that_command, "Leave." )  ==  0  ) {
+
 
             action_leave ();}
 
@@ -221,6 +232,7 @@ int judge_message_command (
 
         else if  (  strcmp ( that_command, "Shine." )  ==  0  ) {
 
+
             action_shine ();}
 
 
@@ -292,6 +304,7 @@ int judge_message_command (
 
         else if  (  strcmp ( that_command, "Show." )  ==  0  ) {
 
+
             action_show ();}
 
 
@@ -301,6 +314,7 @@ int judge_message_command (
 
 
         else if  (  strcmp ( that_command, "Sound." )  ==  0  ) {
+
 
             action_sound ();}
 
@@ -312,6 +326,7 @@ int judge_message_command (
 
         else if  (  strcmp ( that_command, "Sound show." )  ==  0  ) {
 
+
             action_show_sound ();}
 
 
@@ -321,6 +336,7 @@ int judge_message_command (
 
 
         else if  (  strcmp ( that_command, "Sopi.")  ==  0  ) {
+
 
             action_sopi ( that_site, buffer_send );}
 
@@ -332,6 +348,7 @@ int judge_message_command (
 
         else if  (  strcmp ( that_command, "Test snake." )  ==  0  ) {
 
+
             test_ft ( "snake" );}
 
 
@@ -341,6 +358,7 @@ int judge_message_command (
 
 
         else if  (  strcmp ( that_command, "Test fft." )  ==  0  ) {
+
 
             test_ft ( "fft" );}
 
@@ -352,7 +370,9 @@ int judge_message_command (
 
         else if  (  strstr ( that_command, "Shell " )  !=  NULL  ) {
 
+
             that_command [ strlen ( that_command ) - 1 ]  =  '\0';
+
 
             action_shell ( that_command );}
 
@@ -364,7 +384,9 @@ int judge_message_command (
 
         else if  (  strstr ( that_command, "Python" )  !=  NULL  ) {
 
+
             that_command [ strlen ( that_command ) - 1 ]  =  '\0';
+
 
             action_python ( that_command );}
 
@@ -376,7 +398,9 @@ int judge_message_command (
 
         else if  (  strstr ( that_command, "Command " )  !=  NULL  ) {
 
+
             that_command [ strlen ( that_command ) - 1 ]  =  '\0';
+
 
             action_command ( that_command );}
 
@@ -386,9 +410,11 @@ int judge_message_command (
 
 
 
-        else if  (  strcmp ( that_command, "Reload configure." )  ==  0  ) {
+        else if  (  strcmp ( that_command, "Reload hopes." )  ==  0  ) {
 
-            action_reload_configure ();
+
+            action_reload_hope ();
+
 
             output_print ( "string", "Over.\n" );}
 
@@ -400,7 +426,9 @@ int judge_message_command (
 
         else if  (  strcmp ( that_command, "Reload listen." )  ==  0  ) {
 
+
             action_reload_listen ();
+
 
             output_print ( "string", "Over.\n" );}
 
@@ -412,7 +440,12 @@ int judge_message_command (
 
         else {
 
+
             action_else ( that_site, that_command, buffer_send );
+
+
+
+
 
 
 
@@ -423,6 +456,8 @@ int judge_message_command (
  :(
 
 */
+
+
             return 0;}
 
 

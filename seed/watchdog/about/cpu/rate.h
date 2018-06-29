@@ -5,7 +5,13 @@ int about_CPU_rate () {
 
 
 
-    struct  gopi_cpu  buffer_cpu;
+
+             char name   [ 2 ] [ 16 ];
+    unsigned int  user   [ 2 ] [ 16 ];
+    unsigned int  nice   [ 2 ] [ 16 ];
+    unsigned int  system [ 2 ] [ 16 ];
+    unsigned int  idle   [ 2 ] [ 16 ];
+
 
 
           FILE *  buffer_file;
@@ -20,20 +26,31 @@ int about_CPU_rate () {
       the first time
 */
 
+
+
+
     buffer_file  =  fopen ( "/proc/stat", "r" );
+
+
+
 
     fgets  (  buffer_words,  sizeof ( buffer_words ),  buffer_file  );
 
+
+
     sscanf (
              buffer_words, "%s %u %u %u %u",
-                                              gop_about . cpu . name,
-                                            & gop_about . cpu . user,
-                                            & gop_about . cpu . nice,
-                                            & gop_about . cpu . system,
-                                            & gop_about . cpu . idle
+                                              buffer_name   [ 0 ],
+                                            & buffer_user   [ 0 ],
+                                            & buffer_nice   [ 0 ],
+                                            & buffer_system [ 0 ],
+                                            & buffer_idle   [ 0 ]
            );
 
     fclose ( buffer_file );
+
+
+
 
 
 
@@ -58,18 +75,22 @@ int about_CPU_rate () {
     buffer_file  =  fopen ( "/proc/stat", "r" );
 
 
+
+
 // get first line
 
     fgets  (  buffer_words,  sizeof ( buffer_words ), buffer_file  );
 
 
 
+
     sscanf ( buffer_words, "%s %u %u %u %u",
-                                              buffer_cpu.name,
-                                            & buffer_cpu.user,
-                                            & buffer_cpu.nice,
-                                            & buffer_cpu.system,
-                                            & buffer_cpu.idle);
+                                              buffer_name   [ 1 ],
+                                            & buffer_user   [ 1 ],
+                                            & buffer_nice   [ 1 ],
+                                            & buffer_system [ 1 ],
+                                            & buffer_idle   [ 1 ]
+
 
     fclose ( buffer_file );
 

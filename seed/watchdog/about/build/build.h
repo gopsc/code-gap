@@ -1,11 +1,18 @@
 
+
+
+
+
 struct gopi_system {
+
+
 
 /*
 
  then it put about waitting could be little 
 
 */
+
 
     char symbol [ 16 ];
 
@@ -38,15 +45,15 @@ struct gopi_cpu {
              char name [ 128 ];
 
 /*
-    unsigned int  user;
-    unsigned int  nice;
-    unsigned int  system;
-    unsigned int  idle;
+    unsigned  int  user;
+    unsigned  int  nice;
+    unsigned  int  system;
+    unsigned  int  idle;
 */
-             int cores;
-             int frequency;
-             int temperature;
-    unsigned int rate;};
+              int  cores;
+              int  frequency;
+              int  temperature;
+    unsigned  int  rate;};
 
 
 
