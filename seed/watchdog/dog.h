@@ -7,15 +7,20 @@ void * gop_dog ( void * what ) {
 
 
 
+
 /*
 
- some values may have a number used by another process
+ some of it may have a number used by another process
 
    so we clean it first
 
 */
 
     clean_about ( gop_about );
+
+
+
+
 
 
 
@@ -33,6 +38,10 @@ void * gop_dog ( void * what ) {
 
  and this is the beginning
 
+
+
+ or dog won't run
+
 */
 
     load_configure ();
@@ -42,7 +51,17 @@ void * gop_dog ( void * what ) {
 
 
 
-// Prepare the symbal just like 'NEXT'
+
+
+
+/*
+
+ Prepare the symbal just like 'NEXT'
+
+
+ and we load one symbol now
+
+*/
 
     load_symbol ();
 
@@ -50,7 +69,18 @@ void * gop_dog ( void * what ) {
 
 
 
-// Listen modle of sound , it need a word libary loading.
+
+
+
+
+/*
+
+ Listen modle of sound , it need a word libary loading.
+
+
+ we use as trees now
+
+*/
 
     load_listen ();
 
@@ -58,9 +88,17 @@ void * gop_dog ( void * what ) {
 
 
 
+
+
+
+
+
+
+
 /*
 
- TxL needs jurisdiction of root.
+ TxL needs root
+
  and no more
 
 */
@@ -72,9 +110,16 @@ void * gop_dog ( void * what ) {
 
 
 
+
+
+
+
+
+
 /*
 
  When a update was stop, files left.
+
  Must be after loading.
 
 */
@@ -86,7 +131,16 @@ void * gop_dog ( void * what ) {
 
 
 
+
+
+
+
+
     output_print ( "string", "Done\n"               );
+
+
+
+
 
 
 
@@ -108,19 +162,25 @@ void * gop_dog ( void * what ) {
 
 
 
+
+
+
+
+
+
     while (  gop_about . flag . main  ) {
 
 
 /*
 
- u can not run this program just for watchdog
- u wanna others, right?
-
-
-
- maybe
+ u maybe run this just for watchdog and maybe not
 
 */
+
+
+
+
+
 
         if  (  ! gop_about . flag . dog  ) {
 
@@ -133,16 +193,15 @@ void * gop_dog ( void * what ) {
 
 
 
-// run the functions
-
-
-
 /*
+
+ run the functions
+
+
 
  then we could wait for it every step
 
 */
-
 
 /*
 
@@ -151,14 +210,15 @@ void * gop_dog ( void * what ) {
 */
 
 
+/*
             get_about_user ();   usleep ( 100000 );
-
+*/
             get_about_name ();   usleep ( 100000 );
 
             get_about_system (); usleep ( 100000 );
 
 
-            information_memory_get (); usleep ( 100000 );
+            get_about_memory (); usleep ( 100000 );
 
 
 /*
@@ -169,8 +229,11 @@ void * gop_dog ( void * what ) {
 
 */
 
-            information_disk_get ();   usleep ( 100000 );
+/*
 
+            get_about_disk ();   usleep ( 100000 );
+
+*/
 
             information_cpu_get ();    usleep ( 100000 );
 

@@ -7,7 +7,9 @@ int about_CPU_rate () {
 
     struct  gopi_cpu  buffer_cpu;
 
+
           FILE *  buffer_file;
+
           char    buffer_words [ 1024 ];
 
 

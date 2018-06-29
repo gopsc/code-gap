@@ -11,7 +11,12 @@ struct gopi_system {
 
     char system [ 1024 ];
     char name   [ 1024 ];
-    char user   [ 1024 ];};
+
+/*
+    char user   [ 1024 ];
+*/
+
+    };
 
 
 
@@ -32,11 +37,12 @@ struct gopi_cpu {
 
              char name [ 128 ];
 
+/*
     unsigned int  user;
     unsigned int  nice;
     unsigned int  system;
     unsigned int  idle;
-
+*/
              int cores;
              int frequency;
              int temperature;

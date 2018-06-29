@@ -7,7 +7,7 @@
 
 
 
- int clean_about  (  struct gopi_about that_about  ) {
+ int clean_about  (  struct  gopi_about  that_about  ) {
 
 
 
@@ -17,12 +17,12 @@
 
 /*
 
- first add this before i change the name of the about struct everywhere
+ first add this before change about name
 
     or the dog won't run
 
 
- and dog do this other way
+ and dog load configurations
 
 
 
@@ -47,11 +47,17 @@
 
 /*
 
- there is a symbol about this
+ there is a symbol about it
 
  if it is reading we don't clean the symbol
 
  if not we clean it to blank
+
+
+
+ we use symbol to little about soon
+
+ then we put them with waitting
 
 */
 
@@ -86,8 +92,10 @@
 
     strcpy ( that_about . system . name, "" );
 
-    strcpy ( that_about . system . user, "" );
 
+/*
+    strcpy ( that_about . system . user, "" );
+*/
 
 
 
