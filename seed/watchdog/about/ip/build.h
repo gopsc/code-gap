@@ -1,185 +1,588 @@
 
 
-int information_ip_get() {
 
 
-    struct    ifaddrs* buffer_struct         = NULL;
-           getifaddrs(&buffer_struct);
+ int about_ip ()
 
-              void*    buffer_pointer        = NULL;
-              char     buffer_address[129];
-              int      number_ip             = 0;
+  {
 
 
-    while ( buffer_struct != NULL ) {
+
+
+
+ struct  ifaddrs  *  buffer_struct  =  NULL;
+
+
+
+
+
+ void * buffer_pointer  =  NULL;
+
+ char   buffer_address [ 128 ];
+
+ int    number_address [ 2 ]  =  [ 0, 0 ];
+
+
+
+
+
+
+
+
+/*
+
+ use free soon
+
+ aftr we could use symbol every step
+
+*/
+
+
+/*
+
+ int i;
+
+ for  (  i = 0;  i <= gop_about . network . number;  i ++   )
+
+  {
+
+ free  (  gop_about . network . ip [ i ]  );
+
+  }
+
+*/
+
+
+
+
+
+
+
+/*
+
+ get address tree
+
+*/
+
+
+ getifaddrs ( & buffer_struct );
+
+
+
+
+
+
+ while  (  buffer_struct  !=  NULL  )
+
+  {
+
+
+
+
+
+
+
+
+
+
+/*
+
+ this address may not gets
+
+*/
+
+
+
+
+
+
+ if (
+
+         buffer_struct
+                       -> ifa_addr
+
+         !=  NULL
+
+     )
+
+
+  {
+
+
+
+
+
+
+
+
+
+
+
 
 // IPv4
 
-        if (
-               buffer_struct
-               ->            ifa_addr
-               !=            NULL
-           ) {
 
-            if (
-                   buffer_struct
-                   ->            ifa_addr
-                  ->            sa_family
-                   ==            AF_INET
-               ) {
+ if (
 
-                buffer_pointer = &(
-                                    (struct sockaddr_in*)buffer_struct
-                                                         ->            ifa_addr
-                                  )
-                                                         ->            sin_addr;
+        buffer_struct
+                      -> ifa_addr
+                                  -> sa_family
 
-                inet_ntop(
-                           AF_INET,
-                           buffer_pointer,
-                           buffer_address,
-                           INET_ADDRSTRLEN
-                         );
+        ==  AF_INET
 
-                number_ip++;
+    )
 
-                strcpy(
-                       information_network.ip[number_ip][1],
-                       buffer_struct->ifa_name
-                      );
 
-                strcpy(
-                       information_network.ip[number_ip][2],
-                       buffer_address
-                      );}
+  {
+
+
+
+
+
+
+ number_address [ 1 ] ++;
+
+
+
+
+ buffer_pointer = & (
+
+                      ( struct sockaddr_in * ) buffer_struct
+                                                             ->  ifa_addr
+                    )
+                      -> sin_addr;
+
+
+
+ inet_ntop (
+
+             AF_INET,
+
+             buffer_pointer,
+
+             buffer_address,
+
+             INET_ADDRSTRLEN
+
+           );
+
+
+
+
+
+ strcpy (
+
+          gop_about . network . ip [  number_ip [ 1 ]  ] [ 1 ],
+
+          buffer_struct -> ifa_name
+
+        );
+
+
+ strcpy (
+
+          gop_about . network . ip [  number_ip [ 1 ]  ] [ 2 ],
+
+          buffer_address
+
+        );
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
 
 /*
-// IPv6
 
-            else if (
-                        buffer_struct
-                        ->            ifa_addr
-                        ->            sa_family
-                        ==            AF_INET6
-                    ) {
+/*
 
-                buffer_pointer = &(
-                                   (struct sockaddr_in*)
-                                   buffer_struct
-                                   ->            ifa_addr
-                                  )
-                                 -> sin_addr;
-
-                inet_ntop(
-                          AF_INET6,
-                          buffer_pointer,
-                          buffer_address,
-                          INET6_ADDRSTRLEN
-                         );
-
-                number_ip[2]++;
+ IPv6
 
 
-                strcpy(
-                       information_network.ip[2][number_ip][1],
-                       buffer_struct->ifa_name
-                      );
+ use a little later
 
-                strcpy(
-                       information_network.ip[2][number_ip][2],
-                       buffer_address
-                      );}
 */
 
-            }
-
-        buffer_struct = buffer_struct->ifa_next;}
-
-
-    information_network.number = number_ip;
-
-    freeifaddrs(buffer_struct);
-
-
-// 1 for name, 2 for address
-
-/*
-    cmd_get( "ifconfig | grep 'Link encap' | cut -d' ' -f1",                        that_ip[1] );
-    cmd_get( "ifconfig | grep 'inet addr'  | tr -s ' ' : | cut -d: -f4",            that_ip[2] );
 
 
 
-    if ( strcmp(that_ip[1], "") == 0 ) {
-        cmd_get( "ifconfig | grep ': '  | tr -s ' ' : | cut -d: -f1",               that_ip[1] );}
+ else if (
 
-    if ( strcmp(that_ip[2], "") == 0   or   strlen(that_ip[2]) < 7 ) {
-        cmd_get( "ifconfig | grep 'inet 地址'  | tr -s ' ' : | cut -d: -f4",   that_ip[2] );}
+             buffer_struct
+                           -> ifa_addr
+                                       -> sa_family
 
-    if ( strcmp(that_ip[2], "") == 0   or   strlen(that_ip[2]) < 7 ) {
-        cmd_get( "ifconfig | grep 'inet '  | tr -s ' ' : | cut -d: -f3",            that_ip[2] );}
+             ==  AF_INET6
 
-
-
-    if ( that_ip[1][strlen(that_ip[1])-1] != '\n') {
-        strcat(that_ip[1], "\n");}
-    if ( that_ip[2][strlen(that_ip[2])-1] != '\n') {
-        strcat(that_ip[2], "\n");}
+         )
 
 
-
-    int   number_ip[3];
-    char  buffer_ip[3][255];
-    char* point_ip[3];
+ {
 
 
 
 
 
-
-
-
-    for ( int i=1; i<=2; i=i+1 ) {
-
-        number_ip[i] = 0;
-
-// It will goes mass
-
-        strcpy(buffer_ip[i], " ");
-
-        point_ip[i] = buffer_ip[i];
-
-// It will goes mass
-
-        while (  strlen(point_ip[i]) != 0 ) {
-
-            number_ip[i]++;
-
-
-
-            strcpy( buffer_ip[i],    that_ip[i]   );
-
-            point_ip[i]    = strstr( buffer_ip[i],    "\n" );
-
-
-
-            if ( strcmp( point_ip[i], "\n") != 0 ) {
-
-                 strcpy( that_ip[i], point_ip[i] + 1 );}
-
-
-
-           *point_ip[i]    = '\0';
-
-            point_ip[i]++;
-
-            strcpy(information_ip[number_ip[i]][i], buffer_ip[i]);}}
+ number_address [ 2 ] ++;
 
 
 
 
-    information_ip_number = number_ip[1];
+ buffer_pointer =
+                  & (
+                      ( struct sockaddr_in * ) buffer_struct
+                                                             -> ifa_addr
+                    )
+                      -> sin_addr;
+
+
+
+ inet_ntop (
+
+             AF_INET6,
+
+             buffer_pointer,
+
+             buffer_address,
+
+             INET6_ADDRSTRLEN
+
+           );
+
+
+
+ strcpy (
+
+          gop_about . network . ip [ 2 ] [  number_address [ 2 ]  ] [ 1 ],
+
+          buffer_struct -> ifa_name
+
+        );
+
+
+ strcpy (
+
+          gop_about . network . ip [ 2 ] [  number_address [ 2 ]  ] [ 2 ],
+
+          buffer_address
+
+         );
+
+
+
+  }
+
 
 
 */
 
-    return 1;}
+
+
+
+
+  }
+
+
+
+
+/*
+
+ get next one's place
+
+*/
+
+ buffer_struct  =  buffer_struct -> ifa_next;
+
+
+
+  }
+
+
+
+
+
+
+
+
+ gop_about . network . number  =  number_address [ 1 ];
+
+
+
+
+ freeifaddrs ( buffer_struct );
+
+
+
+
+ return 1;
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ get address from ifconfig
+
+ some linux don't have this
+
+ maybe we could use ip link
+
+
+
+ 1 for name, 2 for address
+
+*/
+
+
+
+
+/*
+
+
+ commandline_get  (  "ifconfig | grep 'Link encap' | cut -d ' ' -f1",             buffer_address [ 1 ]  );
+
+ commandline_get  (  "ifconfig | grep 'inet addr'  | tr -s ' ' : | cut -d: -f4",  buffer_address [ 2 ]  );
+
+
+
+
+/*
+
+ it use different word
+
+ and some could be another
+
+*/
+
+
+
+
+ if  (  strcmp ( buffer_address [ 1 ], "" )  ==  0  )
+
+  {
+
+ commandline_get  (  "ifconfig | grep ': '  | tr -s ' ' : | cut -d: -f1",  buffer_address [ 1 ] );
+
+  }
+
+
+
+ if  (  strlen ( buffer_address [ 2 ] )  <  7  )
+
+  {
+
+ commandline_get  (  "ifconfig | grep 'inet 地址'  | tr -s ' ' : | cut -d: -f4",  buffer_address [ 2 ]  );
+
+  }
+
+
+
+ if  ( strlen ( buffer_address [ 2 ] )  <  7  )
+
+  {
+
+ commandline_get  (  "ifconfig | grep 'inet '  | tr -s ' ' : | cut -d: -f3",  buffer_address [ 2 ]  );
+
+  }
+
+
+
+
+
+
+
+
+
+// for second read
+
+
+ if  (  buffer_address [ 1 ] [  strlen ( buffer_address [ 1 ] ) - 1  ]  !=  '\n'  )
+
+  {
+
+ strcat ( buffer_address [ 1 ], "\n" );
+
+  }
+
+
+
+
+ if  (  buffer_address [ 2 ] [  strlen ( buffer_address [ 2 ] ) - 1  ]  !=  '\n'  )
+
+  {
+
+ strcat ( buffer_address [ 2 ], "\n" );
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ second read
+
+
+ line by line
+
+*/
+
+
+
+
+
+
+
+ int     number_address [ 3 ];
+
+ char    buffer_address [ 3 ] [ 256 ];
+
+ char * pointer_address [ 3 ];
+
+
+
+
+
+
+
+ int i;
+
+ for  (  i = 1;  i <= 2;  i = i + 1  )
+
+  {
+
+
+
+
+
+ number_address [ i ]  =  0;
+
+
+
+
+
+
+// It will goes mess
+
+
+ strcpy ( buffer_address [ i ], " " );
+
+ pointer_address [ i ]  =  buffer_address [ i ];
+
+
+
+
+
+
+
+
+/*
+
+ here mess
+
+
+ read it long words
+
+*/
+
+ while  (  strlen ( pointer_address [ i ] )  !=  0  )
+
+  {
+
+
+
+
+ number_address [ i ] ++;
+
+
+
+
+
+ strcpy ( buffer_address [ i ], buffer_address [ i ] );
+
+
+
+ pointer_address [ i ]  =  strstr ( buffer_address [ i ],  "\n" );
+
+
+
+
+
+ if  (  strcmp ( pointer_address [ i ], "\n" )  !=  0  )
+
+  {
+
+
+
+
+
+ strcpy ( buffer_address [ i ], pointer_address [ i ] + 1 );
+
+
+
+
+
+ * pointer_address [ i ]  =  '\0';
+
+
+
+ pointer_address [ i ] ++;
+
+
+
+
+ strcpy  (  gop_about . network . ip [  number_address [ i ]  ] [ i ],  buffer_address [ i ]  );
+
+
+
+
+  }
+
+  }
+
+
+  }
+
+
+
+
+ gop_about . network . number  =  number_address [ 1 ];
+
+
+
+
+ return 1;
+
+*/

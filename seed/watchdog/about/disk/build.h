@@ -1,13 +1,42 @@
 
-int information_disk_get () {
+
+
+int about_disk () {
 
 
 
 
     char   file_commandline [ 2048 ];
-    char   that_buffer      [ 16   ];
-    char buffer_available   [ 16   ];
-    char buffer_size        [ 16   ];
+
+
+
+
+// to save the name of option
+
+
+    char buffer_name      [ 16 ];
+
+    char buffer_size      [ 16 ];
+
+    char buffer_used      [ 16 ];
+
+    char buffer_available [ 16 ];
+
+    char buffer_rate      [ 16 ];
+
+    char buffer_path      [ 16 ];
+
+
+
+
+
+/*
+
+ it's different on some Linux system,
+
+ we find a way to do this
+
+*/
 
 
 
@@ -15,28 +44,32 @@ int information_disk_get () {
 
 
 
-
-// it's different on some Linux system,
-//
-// we should find a way to do this
+    if (  strcmp ( gop_about . system . name, "localhost" )  == 0  ) {
 
 
+/*
 
-    if (  strcmp ( information_system.name, "localhost" )  == 0  ) {
+ on termux, the permisson is different
 
-// on termux, the permisson is different
-//
-// things are different with this
+ things are different with this
 
-        information_disk.size = -1;
-        information_disk.available = 0;
+*/
+
+        gop_about . disk . size       =  -1;
+        gop_about . disk . available  =  0;
+
 
         return 1;}
 
 
 
 
+
+
+
 // things usually just like this
+
+
 
     else {
 
@@ -44,7 +77,22 @@ int information_disk_get () {
 
 // get the lable of disk space
 
+
         commandline_get ( "df", file_commandline );
+
+
+
+
+
+/*
+
+ use a loop
+
+ to found the path it hope
+
+*/
+
+
 
 
 
@@ -54,8 +102,11 @@ int information_disk_get () {
 
 
             strcpy(
+
                     file_commandline,
+
                     strchr ( file_commandline, '\n' ) + 1
+
                   );
 
 
@@ -69,24 +120,41 @@ int information_disk_get () {
 
 
             sscanf (
+
                      file_commandline, "%s %s %s %s",
-                     that_buffer,
+
+                     buffer_name,
+
                      buffer_size,
-                     that_buffer,
-                     buffer_available
+
+                     buffer_used,
+
+                     buffer_available,
+
+                     buffer_rate,
+
+                     buffer_path
+
                    );
 
 
 
-            information_disk.size      = atoi ( buffer_size      );
-            information_disk.available = atoi ( buffer_available );
+
+
+            gop_about . disk . size      = atoi ( buffer_size      );
+            gop_about . disk . available = atoi ( buffer_available );
 
 
 
-            return 0;}}
+            return 1;}}
 
 
 
 
+/*
 
-    return 1;}
+ something happened
+
+*/
+
+    return 0;}
