@@ -29,14 +29,14 @@ addres2=$address/flower.c
 
 cat  $address/box/c/Linux/head/Linux.h                       >> $addres2
 
-cat  $address/box/c/Linux/head/variables.h                   >> $addres2
+cat  $address/box/c/Linux/head/hopes.h                       >> $addres2
 
 
 
-cat  $address/watchdog/information/build.h                   >> $addres2
+cat  $address/watchdog/about/build/build.h                   >> $addres2
 
 
-cat  $address/network/build.h                                >> $addres2
+cat  $address/network/build/build.h                          >> $addres2
 
 
 
@@ -44,7 +44,7 @@ cat  $address/network/build.h                                >> $addres2
 cat  $address/box/c/Linux/data/translate/number_word.h       >> $addres2
 
 
-cat  $address/box/c/Linux/system/output/print.h             >> $addres2
+cat  $address/box/c/Linux/system/output/print.h              >> $addres2
 
 
 
@@ -63,7 +63,7 @@ cat  $address/box/c/Linux/system/commandline/shell.h         >> $addres2
 
 
 
-cat  $address/watchdog/load/configuration.h                  >> $addres2
+cat  $address/watchdog/load/hope.h                           >> $addres2
 
 
 

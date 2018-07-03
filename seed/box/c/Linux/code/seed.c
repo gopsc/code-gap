@@ -1,27 +1,33 @@
 
-int main() {
+
+int main ()
+
+
+  {
 
 
 
-    load_configure();
-
-
-
-
-
-    printf("Seed starts...\n");
-
-
-
-
-    action_seed  ("base");
-
-    action_flower("base");
+ load_hope ();
 
 
 
 
-    printf("Over.\n");
+
+ printf ( "seed starts...\n" );
 
 
-    return 1;}
+
+
+ action_seed ( "base" );
+
+
+ action_flower ( "base" );
+
+
+
+
+ printf ( "Over.\n" );
+
+
+
+ return 1;}
