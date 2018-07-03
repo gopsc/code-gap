@@ -1,5 +1,14 @@
 
-int about_sound () {
+
+
+
+
+
+
+int about_sound ()
+
+
+  {
 
 
 
@@ -16,9 +25,9 @@ int about_sound () {
 
 */
 
-    gop_about . sound . number_control  =  0;
-    gop_about . sound . number_capture  =  0;
-    gop_about . sound . number_playback =  0;
+ gop_about . sound . number_control  =  0;
+ gop_about . sound . number_capture  =  0;
+ gop_about . sound . number_playback =  0;
 
 
 
@@ -29,8 +38,8 @@ int about_sound () {
 
 
 
-    DIR           * buffer_dirent;
-    struct dirent * pointer_dirent;
+ DIR           * buffer_dirent;
+ struct dirent * pointer_dirent;
 
 
 
@@ -38,9 +47,9 @@ int about_sound () {
 // to note number
 
 
-    int number_control   =  0;
-    int number_capture   =  0;
-    int number_playback  =  0;
+ int number_control   =  0;
+ int number_capture   =  0;
+ int number_playback  =  0;
 
 
 

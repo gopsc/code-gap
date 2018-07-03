@@ -3,10 +3,25 @@
 
 int about_disk () {
 
+/*
+
+ this take wrong when we used on termux
+
+   so sometimes we don't read it
+
+*/
+
+
+
+
 
 
 
     char   file_commandline [ 2048 ];
+
+
+
+
 
 
 
@@ -30,6 +45,12 @@ int about_disk () {
 
 
 
+
+
+
+
+
+
 /*
 
  it's different on some Linux system,
@@ -47,6 +68,9 @@ int about_disk () {
     if (  strcmp ( gop_about . system . name, "localhost" )  == 0  ) {
 
 
+
+
+
 /*
 
  on termux, the permisson is different
@@ -54,6 +78,8 @@ int about_disk () {
  things are different with this
 
 */
+
+
 
         gop_about . disk . size       =  -1;
         gop_about . disk . available  =  0;
@@ -67,7 +93,12 @@ int about_disk () {
 
 
 
-// things usually just like this
+
+
+
+
+
+// things usually like this
 
 
 
@@ -79,6 +110,11 @@ int about_disk () {
 
 
         commandline_get ( "df", file_commandline );
+
+
+
+
+
 
 
 

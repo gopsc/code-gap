@@ -14,18 +14,40 @@ int action_seed_append (
 
                            const char * that_target
 
-                       ) {
+                       )
+
+  {
 
 
 
 
-    char         buffer_file [ 128 ];
+ char  buffer_file [ 128 ];
 
 
 
-    strcpy     ( buffer_file, that_path   );
 
-    strcat     ( buffer_file, that_target );
+
+
+
+/*
+
+ it is so long to make path every file
+
+ use this to make path here 
+
+
+ and maybe use pointer
+
+*/
+
+
+ strcpy ( buffer_file, that_path );
+
+
+ strcat ( buffer_file, that_target );
+
+
+
 
 
 
@@ -41,16 +63,21 @@ int action_seed_append (
 
 /*
 
-    char * buffer_words;
+ char * buffer_words;
 
-           buffer_words = malloc (   (  file_length ( that_target ) + 1  )   *   sizeof ( char );
+ buffer_words  =  malloc (   (  file_length ( that_target ) + 1  )   *   sizeof ( char );
 
-    free ( buffer_words );
+ free ( buffer_words );
 
 */
 
 
-    char         buffer_words [ 102400 ];
+ char buffer_words [ 102400 ];
+
+
+
+
+
 
 
 
@@ -65,20 +92,29 @@ int action_seed_append (
 
 */
 
-    if (  ! is_file ( buffer_file )  ) {
+
+ if (  ! is_file ( buffer_file )  )
+
+
+  {
 
 
 
+ output_print ( "string", "This file we can't find it:   " );
 
-        output_print ( "string", "This file we can't find it:   " );
+ output_print ( "string", buffer_file );
 
-        output_print ( "string", buffer_file );
-
-        output_print ( "string", "\n"        );
-
+ output_print ( "string", "\n"        );
 
 
-        return 0;}
+
+ return 0;
+
+
+  }
+
+
+
 
 
 
@@ -93,7 +129,12 @@ int action_seed_append (
 
 */
 
-    else {
+
+ else
+
+
+  {
+
 
 
 
@@ -111,13 +152,25 @@ int action_seed_append (
 */
 
 
-        file_append ( that_result,  "\n//"      );
 
-        file_append ( that_result,  "=========" );
+ file_append ( that_result,  "\n//" );
 
-        file_append ( that_result,  "=========" );
 
-        file_append ( that_result,  buffer_file );
+
+ file_append ( that_result,  "=========" );
+
+
+
+ file_append ( that_result,  "=========" );
+
+
+
+
+ file_append ( that_result,  buffer_file );
+
+
+
+
 
 
 
@@ -131,31 +184,52 @@ int action_seed_append (
 
 */
 
-        if  (  63  >  ( int ) strlen ( buffer_file )  ) {
+
+ if  (  63  >  ( int ) strlen ( buffer_file )  )
+
+
+  {
 
 
 
-            int i;
+ int i;
 
-            for (
+ for (
 
-                    i = 0;
-                    i <      63 - ( int ) strlen ( buffer_file );
-                    i ++
+       i = 0;
+       i < 63 - ( int ) strlen ( buffer_file );
+       i ++
 
-                ) {
+     )
+
+  {
 
 
 
 
-                file_append ( that_result, "=" );}}
+ file_append ( that_result, "=" );
+
+
+
+  }
+
+
+  }
+
+
+
+
+
 
 
 
 
 // titile finished
 
-        file_append ( that_result, "\n" );
+
+
+
+ file_append ( that_result, "\n" );
 
 
 
@@ -170,7 +244,7 @@ int action_seed_append (
 // get the convent
 
 
-        file_get ( buffer_file, buffer_words );
+ file_get ( buffer_file, buffer_words );
 
 
 
@@ -178,7 +252,8 @@ int action_seed_append (
 
 // save it
 
-        file_append ( that_result, buffer_words );
+
+ file_append ( that_result, buffer_words );
 
 
 
@@ -186,7 +261,15 @@ int action_seed_append (
 
 
 
-        return 1;}}
+ return 1;
+
+
+
+  }
+
+
+
+  }
 
 
 
@@ -204,11 +287,14 @@ int action_seed_append (
 
 
 
-int action_seed (
+ int action_seed (
 
-                    const char * that_type
+                   const char * that_type
 
-                ) {
+                 )
+
+
+  {
 
 
 
@@ -220,14 +306,17 @@ int action_seed (
 
 */
 
-            char buffer_path [ 128 ];
+ char  buffer_path [ 128 ];
 
 
-            strcpy ( buffer_path, path_the );
 
-            strcat ( buffer_path, "/" );
 
-            strcat ( buffer_path, name_the );
+
+ strcpy ( buffer_path, path_the );
+
+ strcat ( buffer_path, "/" );
+
+ strcat ( buffer_path, name_the );
 
 
 
@@ -236,37 +325,33 @@ int action_seed (
 // the file we will make named flower
 
 
-            char buffer_file [ 128 ];
+ char buffer_file [ 128 ];
 
 
 
-            strcpy ( buffer_file, path_the );
+ strcpy ( buffer_file, path_the );
 
-            strcat ( buffer_file, "/flower.c" );
+ strcat ( buffer_file, "/flower.c" );
+
+
+
 
 
 
 
 /*
 
- there is a file named action
+ there is a dirent named action
 
  we auto add file in that
 
 */
 
-            char buffer_dirent [ 128 ];
+
+ char buffer_dirent [ 128 ];
 
 
-            char buffer_file_action [ 128 ];
-
-
-
-
-            DIR *    pointer_dirent;
-
-
-    struct  dirent * ent;
+ char buffer_file_action [ 128 ];
 
 
 
@@ -274,45 +359,69 @@ int action_seed (
 
 
 
+ DIR * pointer_dirent;
 
 
-
-// clean it
-
-    file_save ( buffer_file,  "" );
-
-
+ struct  dirent * ent;
 
 
 
 
 
-
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/Linux.h"                   );
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/flags.h"                   );
-
-
-
-    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/build.h"               );
-
-
-
-// dog will use
-
-    action_seed_append( buffer_file, buffer_path, "/network/build/build.h"                      );
-    action_seed_append( buffer_file, buffer_path, "/network/build/check.h"                      );
-    action_seed_append( buffer_file, buffer_path, "/network/build/clean.h"                      );
-
-    action_seed_append( buffer_file, buffer_path, "/sound/build.h"                              );
 
 
 
 
 /*
 
- put this to the last of  list of head and build
+ clean it
+
+*/
+
+
+ file_save ( buffer_file,  "" );
+
+
+
+
+
+
+
+
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/head/Linux.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/head/flags.h" );
+
+
+
+ action_seed_append ( buffer_file, buffer_path, "/watchdog/about/build/build.h" );
+
+
+
+
+
+
+/*
+
+ dog will use
+
+*/
+
+ action_seed_append ( buffer_file, buffer_path, "/network/build/build.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/network/build/check.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/network/build/clean.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/sound/build.h" );
+
+
+
+
+/*
+
+ put this to the last of list of head and build
 
  then it can use the struct of configurations to note configurations everywhere
 
@@ -321,7 +430,8 @@ int action_seed (
 
 */
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/head/configurations.h"         );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/head/hopes.h" );
 
 
 
@@ -329,32 +439,38 @@ int action_seed (
 
 
 
+/*
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/data/translate/number_word.h"       );
+ maybe someday we will use it
 
-
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/output/print.h"           );
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/dirent/is.h"     );
+*/
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/is.h"       );
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/get.h"      );
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/save.h"     );
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/append.h"   );
-
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/process/deamon.h"     );
-
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/system/commandline/shell.h" );
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/data/translate/number_word.h" );
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/box/c/Linux/data/secret/secret.h"               );
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/output/print.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/file-system/dirent/is.h" );
+
+ 
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/is.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/get.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/save.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/file-system/file/append.h" );
+
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/process/deamon.h" );
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/system/commandline/shell.h" );
+
+
+
+ action_seed_append ( buffer_file, buffer_path, "/box/c/Linux/data/secret/secret.h" );
 
 
 
@@ -362,16 +478,24 @@ int action_seed (
 
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/note/save.h"                           );
+ action_seed_append ( buffer_file, buffer_path, "/watchdog/note/save.h" );
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/note/clear.h"                          );
-
-
-
-// get them form a convent, maybe from network
+ action_seed_append ( buffer_file, buffer_path, "/watchdog/note/clear.h" );
 
 
-    action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/clean.h"                   );
+
+
+
+
+
+/*
+
+ get them form a convent, maybe from network
+
+*/
+
+
+ action_seed_append ( buffer_file, buffer_path, "/watchdog/about/build/clean.h" );
 
     action_seed_append( buffer_file, buffer_path, "/watchdog/about/build/put.h"                     );
 

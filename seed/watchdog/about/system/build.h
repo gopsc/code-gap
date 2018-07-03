@@ -2,7 +2,13 @@
 
 
 
- int get_about_system () {
+ int about_system ()
+
+
+  {
+
+
+
 
 
 /*
@@ -15,21 +21,99 @@
 
 
 
-     char buffer_result [ 128 ];
-
-
-     commandline_get ( "uname -s", buffer_result );
 
 
 
 
 
-   * strchr ( buffer_result, '\n' )  =  '\0';
-
-
-     strcpy ( gop_about . system . system, buffer_result );
+ char buffer_result [ 128 ];
 
 
 
-     return 1;}
 
+
+
+
+ commandline_get ( "uname -s", buffer_result );
+
+
+
+
+
+ * strchr ( buffer_result, '\n' )  =  '\0';
+
+
+ strcpy ( gop_about . system . system, buffer_result );
+
+
+
+ return 1;
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ get the user for it
+
+
+ could see who
+
+
+
+ and gop dream about it
+
+*/
+
+
+
+/*
+
+
+ int about_user ()
+
+
+  {
+
+
+
+ char buffer_result [ 128 ];
+
+
+
+
+ commandline_get (  "whoami",  buffer_result  );
+
+
+
+
+ * strchr (  buffer_result,  '\n'  )  =  '\0';
+
+
+
+ strcpy (  gop_about_system . user,  buffer_result  );
+
+
+
+ return 1;
+
+
+
+  }
+
+
+*/

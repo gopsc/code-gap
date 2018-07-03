@@ -235,37 +235,30 @@ void * gop_dog ( void * what ) {
 
 
 /*
-            get_about_user ();   usleep ( 100000 );
+            about_user ();   usleep ( 100000 );
 */
-            get_about_name ();   usleep ( 100000 );
+            about_name ();   usleep ( 100000 );
 
-            get_about_system (); usleep ( 100000 );
+            about_system (); usleep ( 100000 );
 
 
-            get_about_memory (); usleep ( 100000 );
+            about_memory (); usleep ( 100000 );
+
 
 
 /*
 
- this take wrong when we used on termux
-
-   so sometimes we don't read it
+            about_disk ();    usleep ( 100000 );
 
 */
 
-/*
-
-            get_about_disk ();   usleep ( 100000 );
-
-*/
-
-            gop_about_cpu ();    usleep ( 100000 );
+            about_cpu ();     usleep ( 100000 );
 
 
-            gop_about_ip ();     usleep ( 100000 );
+            about_address (); usleep ( 100000 );
 
 
-            gop_about_sound ();  usleep ( 100000 );
+            about_sound ();   usleep ( 100000 );
 
 
 /*

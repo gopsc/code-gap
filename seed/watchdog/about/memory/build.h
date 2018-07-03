@@ -1,5 +1,11 @@
 
-int information_memory_get(){
+
+
+
+ int about_memory ()
+
+
+  {
 
 
 
@@ -18,15 +24,21 @@ int information_memory_get(){
 
  so we watch the name and system
 
+
+
+ maybe a small command line for arduino & stm
+
 */
 
-    FILE * that_file = fopen ( "/proc/meminfo", "r" );
+
+
+ FILE *  that_file  =  fopen  (  "/proc/meminfo",  "r"  );
 
 
 
-    char   buffer_result [ 1024 ];
+ char buffer_result [ 1024 ];
 
-    char   buffer_name [ 32 ];
+ char buffer_name [ 32 ];
 
 
 
@@ -41,9 +53,9 @@ int information_memory_get(){
 
 */
 
-    fgets  ( buffer_result,  sizeof ( buffer_result ),  that_file );
+ fgets  (  buffer_result,  sizeof ( buffer_result ),  that_file  );
 
-    sscanf ( buffer_result,  "%s %lu %s",  buffer_name, & gop_about . memory . total,  buffer_name );
+ sscanf (  buffer_result,  "%s %lu %s",  buffer_name, & gop_about . memory . total,  buffer_name );
 
 
 
@@ -56,16 +68,18 @@ int information_memory_get(){
 */
 
 
-    fgets  ( buffer_result,  sizeof ( buffer_result ),  that_file );
+ fgets  (  buffer_result,  sizeof ( buffer_result ),  that_file  );
 
-    sscanf ( buffer_result,  "%s %lu",  buffer_name,  & gop_about . memory . free );
-
-
+ sscanf (  buffer_result,  "%s %lu",  buffer_name,  & gop_about . memory . free  );
 
 
 
 
 
-    fclose ( that_file );
 
-    return 1;}
+
+ fclose ( that_file );
+
+
+
+ return 1;}

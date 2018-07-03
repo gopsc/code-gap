@@ -2,7 +2,7 @@
 
 
 
- int about_ip ()
+ int about_address ()
 
   {
 
