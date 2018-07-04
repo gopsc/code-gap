@@ -1,5 +1,9 @@
 
 
+
+
+
+
 /*
 
  the configuration
@@ -13,18 +17,32 @@
 */
 
 
-struct gopi_configurations {
 
 
 
+struct gopi_hopes {
 
-// about the option u open the program
+
+
+/*
+
+ about the option u open the program
+
+*/
 
     int    number_options;
-    char * buffer_options [ 8 ];
+
+    char * buffer_options [ 32 ];
 
 
-// about the file-system
+
+
+
+/*
+
+ about the file-system
+
+*/
 
     char   path_the    [ 128 ];
     char   name_the    [ 128 ];
@@ -51,5 +69,5 @@ struct gopi_configurations {
 
 
 
-    } gop_configurations;
+ } gop_hopes;
 

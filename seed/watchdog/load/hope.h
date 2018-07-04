@@ -2,15 +2,28 @@
 
 
 
-int load_hope () {
+ int load_hope ()
+
+  {
 
 
 
 
 
-// we start this load, and it will print in the output manage
 
-    output_print ( "string", "Load hope...\n" );
+
+
+/*
+
+ we start this load, and it will print in the output manage
+
+*/
+
+
+ output_print ( "string", "Load hope...\n" );
+
+
+
 
 
 
@@ -26,7 +39,12 @@ int load_hope () {
 
 */
 
-    char buffer_path     [ 128 ];
+
+ char note_path [ 128 ];
+
+
+
+
 
 
 
@@ -42,11 +60,23 @@ int load_hope () {
 
 */
 
-    char   that_file     [ 1024 ];
-    char buffer_file     [ 1024 ];
 
-    char target_configurations [ 21 ] [ 128 ];
-    char result_configurations [ 21 ] [ 128 ];
+
+/*
+
+ for save name of user
+
+*/
+
+ char that_file [ 1024 ];
+
+ char note_file [ 1024 ];
+
+
+ char target_hopes [ 21 ] [ 128 ];
+
+ char result_hopes [ 21 ] [ 128 ];
+
 
 
 
@@ -65,10 +95,18 @@ int load_hope () {
 
  then turn it up again
 
+
+
+ and let dog do this
+
 */
 
 
 //    int bool_reset = 0;
+
+
+
+
 
 
 
@@ -86,46 +124,99 @@ int load_hope () {
 
 */
 
-    commandline_get ( "whoami", that_file );
+
+ commandline_get ( "whoami", that_file );
 
 
 
 
 
 
-// The mode of deamon
-
-    if    (  number_args > 1  ) {
-
-
-// deamon program usually is run by root
-
-        if    (
-
-                  strcmp ( buffer_args [ 1 ], "deamon" ) == 0
-
-        &&        strcmp ( that_file,         "root\n" ) == 0
-
-              ) {
 
 
 
 
+/*
 
-// If it's deamon mode, load the configuration file
+ The mode of deamon
 
-            strcpy ( buffer_path, "/opt/TxL/sky/configurations/TxL/configurations_deamon" );
+*/
 
-
-
-
-
-// If the deamon configuration is not found, load the common configuration file
-
-            if    (  ! is_file ( buffer_path )  ) {
+ if  (  gop_hopes . number_options  >  1  )
 
 
-                strcpy ( buffer_path, "/opt/TxL/seed/configurations" );}}}
+  {
+
+
+
+
+/*
+
+ deamon program usually is run by root
+
+*/
+
+
+
+
+ if (
+
+          strcmp  (  gop_hopes . buffer_options [ 1 ],  "deamon"  )  ==  0
+
+      &&  strcmp  (  that_file, "root\n"  )  ==  0
+
+    )
+
+
+  {
+
+
+
+
+/*
+
+ If it's deamon mode, load the configuration file
+
+*/
+
+ strcpy ( note_path, "/opt/TxL/sky/hopes/TxL/hopes_deamon" );
+
+
+
+
+
+
+/*
+
+ If the deamon configuration is not found, load the common configuration file
+
+*/
+
+ if  (  ! is_file ( note_path )  )
+
+
+  {
+
+
+ strcpy ( note_path, "/opt/TxL/seed/configurations" );
+
+
+  }
+
+
+
+
+  }
+
+
+  }
+
+
+
+
+
+
+
 
 
 
@@ -140,26 +231,23 @@ int load_hope () {
 
 */
 
-    else if   (  strcmp ( that_file, "root\n" ) == 0  ) {
+ else if  (  strcmp ( that_file, "root\n" ) == 0  )
 
 
+  {
 
-
-// be ready to get the common configuration file
-
-        strcpy ( buffer_path, "/opt/TxL/seed/configurations" );
 
 
 
 
 
-// if it's not found, try the dirent where you are
+/*
 
-        if    (  ! is_file ( buffer_path )  ) {
+ be ready to get the common configuration file
 
+*/
 
-
-            strcpy ( buffer_path, "seed/configurations" );}}
+ strcpy ( note_path, "/opt/TxL/seed/hopes" );
 
 
 
@@ -168,28 +256,94 @@ int load_hope () {
 
 
 
-// The mode of terminal
-//  of no root
+/*
 
-    else if   (  strcmp ( that_file, "root\n" ) != 0  ){
+ if it's not found, try the dirent where you are
 
+*/
 
+ if  (  ! is_file ( note_path )  )
 
-
-
-// if it is not the root user, try to load the no-root configuration
-
-        strcpy ( buffer_path, "/opt/TxL/sky/configurations/TxL/configurations_no-root" );
+  {
 
 
+ strcpy ( note_path, "seed/hopes" );
+
+  }
 
 
 
-// if it's not found, try the dirent where you are
 
-        if (  ! is_file ( buffer_path )  ) {
+  }
 
-            strcpy ( buffer_path, "sky/configurations/TxL/configurations_no-root" );}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ The mode of terminal
+  of no root
+
+*/
+
+ else if  (  strcmp ( that_file, "root\n" )  !=  0  )
+
+
+  {
+
+
+
+
+
+
+/*
+
+ if it is not the root user, try to load the no-root configuration
+
+*/
+
+ strcpy ( note_path, "/opt/TxL/sky/hopes/TxL/hopes_no-root" );
+
+
+
+
+
+
+
+/*
+
+ if it's not found, try the dirent where you are
+
+*/
+
+ if (  ! is_file ( note_path )  )
+
+  {
+
+ strcpy ( note_path, "sky/hopes/TxL/hopes_no-root" );
+
+
+  }
+
+
+
+
+
+  }
+
+
 
 
 
@@ -202,24 +356,19 @@ int load_hope () {
 
 */
 
-    while (  ! is_file ( buffer_path )  ) {
+ while  (  ! is_file ( note_path )  )
 
-        output_print ( "string", "\nCan't find the configuration file. :(\n" );
-        output_print ( "string", " type a new path:"                         );
 
-        fgets ( buffer_path,128, stdin );
-
-        output_print ( "string", " u typed:        " );
-        output_print ( "string", buffer_path         );
-        output_print ( "string", "\n"                );
+  {
 
 
 
-// it always take a '\n' at the end
+ output_print ( "string", "\nCan't find hope :(\n" );
+ output_print ( "string", " type a new path:" );
 
-        if (  strchr ( buffer_path, '\n' ) != NULL  ) {
 
-            * strchr ( buffer_path, '\n' )  = '\0';}}
+ fgets ( note_path, 128, stdin );
+
 
 
 
@@ -232,7 +381,41 @@ int load_hope () {
 
 */
 
-//    printf("%s\n", buffer_path);
+
+ output_print ( "string", " u typed:        " );
+
+ output_print ( "string", note_path );
+
+ output_print ( "string", "\n" );
+
+
+
+
+
+
+
+
+
+
+/*
+
+ it always take a '\n' at the end
+
+*/
+
+ if (  strchr ( note_path, '\n' )  !=  NULL  )
+
+  {
+
+ * strchr ( notes_path, '\n' )  = '\0';
+
+  }
+
+
+
+
+
+  }
 
 
 
@@ -247,9 +430,20 @@ int load_hope () {
 
 
 
-// Get the file
 
-    file_get ( buffer_path, that_file );
+
+
+
+
+
+
+/*
+
+ Get the file
+
+*/
+
+ file_get ( note_path, that_file );
 
 
 
@@ -298,43 +492,62 @@ int load_hope () {
 
 // Reboot client when it was block.
 
-    if (
+ if (
 
-         information_flag.connector
-    &&
+     gop_about . flag . connector
 
-       (
-           strcmp ( gop_connection.how [ 0 ], ""    ) == 0
-    ||     strcmp ( gop_connection.how [ 0 ], "Wait") == 0
-       )
+     &&
 
-       ) {
+        (
+          strcmp ( gop_connection . how [ 0 ], ""     )  ==  0
+     ||   strcmp ( gop_connection . how [ 0 ], "Wait" )  ==  0
+        )
 
-        bool_reset              = 1;
-
-        information_flag.connector = 0;
+    )
 
 
-        shutdown ( gop_connection.descriptor [ 0 ], SHUT_RDWR );}
+  {
 
 
 
+ bool_reset = 1;
 
-// Reboot server when it was block.
 
-    if (
+ gop_about . flag . connector  =  0;
 
-         information_flag.connectted
-    &&
 
-       (
+ shutdown ( gop_connection.descriptor [ 0 ], SHUT_RDWR );
+
+
+
+  }
+
+
+
+
+
+
+/*
+
+ Reboot server when it was block.
+
+*/
+
+
+ if (
+
+     gop_about . flag . connectted
+
+     &&
+
+     (
 
        (
             strcmp ( gop_connection.how [ 1 ], ""     ) == 0
          || strcmp ( gop_connection.how [ 1 ], "Wait" ) == 0
        )
 
-    &&
+     &&
 
        (
 
@@ -343,7 +556,7 @@ int load_hope () {
          || strcmp ( gop_connection.how [ 2 ], "Wait" ) == 0
        )
 
-    &&
+     &&
 
        (
             strcmp ( gop_connection.how [ 3 ], ""     ) == 0
@@ -354,27 +567,52 @@ int load_hope () {
 
        )
 
-       ) {
-
-        bool_reset              = 1;
-
-        information_flag.connectted = 0;
-
-        shutdown ( gop_connection.descriptor [ 1 ], SHUT_RDWR );
+    )
 
 
-        int i;
+  {
 
-        for ( i = 1; i < 4; i++ ) {
+ bool_reset = 1;
 
-            if (
+ gop_about . flag . connectted = 0;
 
-                   gop_connection.connection [ i ] != 0
-            ||     gop_connection.connection [ i ] != -1
+ shutdown ( gop_connection.descriptor [ 1 ], SHUT_RDWR );
 
-               ) {
 
-                shutdown ( gop_connection.connection[i], SHUT_RDWR );}}}
+
+
+
+ int i;
+
+ for  (  i = 1;  i < 4;  i ++  )
+
+
+  {
+
+
+
+ if (
+
+         gop_connection.connection [ i ] != 0
+      || gop_connection.connection [ i ] != -1
+
+    )
+
+
+  {
+
+ shutdown ( gop_connection.connection[i], SHUT_RDWR );
+
+
+  }
+
+
+  }
+
+
+
+
+  }
 
 
 
@@ -387,11 +625,19 @@ int load_hope () {
 
 
 
-    if ( information_flag.sound ) {
+ if ( gop_about . flag . sound )
 
-        bool_reset              = 1;
 
-        information_flag.sound  = 0;}
+  {
+
+
+
+ bool_reset = 1;
+
+ gop_about . flag . sound  = 0;
+
+
+  }
 
 
 
@@ -401,18 +647,25 @@ int load_hope () {
 
 
 
-    if ( information_flag.sound_show ) {
+ if ( gop_about . flag . sound_show )
 
-        information_flag.sound_show = 0;}
+  {
 
-//================================================================
+ gop_about . flag . sound_show = 0;
 
-    if ( information_flag.sound_save ) {
-
-        information_flag.sound_save = 0;}
+  }
 
 //================================================================
 
+ if ( gop_about . flag . sound_save )
+
+  {
+
+ gop_about . flag . sound_save = 0;
+
+  }
+
+//================================================================
 
 
 
@@ -422,13 +675,21 @@ int load_hope () {
 
 
 
-// the time to reset
+/*
 
-    if ( bool_reset ) {
+ the time to reset
 
-        output_print( "string"                       , "Reset...");
+*/
 
-        usleep      ( 1000000 );}
+ if ( bool_reset )
+
+  {
+
+ output_print ( "string", "Reset..." );
+
+ usleep ( 1000000 );
+
+  }
 
 */
 

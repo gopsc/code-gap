@@ -3,7 +3,9 @@
 
 
 
-struct gopi_system {
+ struct gopi_system
+
+  {
 
 
 
@@ -14,23 +16,30 @@ struct gopi_system {
 */
 
 
-    char symbol [ 16 ];
+ char symbol [ 16 ];
 
-    char system [ 1024 ];
-    char name   [ 1024 ];
+
+
+ char system [ 1024 ];
+
+ char name   [ 1024 ];
 
 /*
-    char user   [ 1024 ];
+
+ char user   [ 1024 ];
+
 */
 
-    };
+  };
 
 
 
 
 
 
-struct gopi_cpu {
+ struct gopi_cpu
+
+  {
 
 
 
@@ -42,46 +51,42 @@ struct gopi_cpu {
 */
 
 
-             char name [ 128 ];
-
-/*
-    unsigned  int  user;
-    unsigned  int  nice;
-    unsigned  int  system;
-    unsigned  int  idle;
-*/
-              int  cores;
-              int  frequency;
-              int  temperature;
-    unsigned  int  rate;};
+ char name [ 128 ];
 
 
-
-
-
-
-struct gopi_memory {
-
-    unsigned long  total;
-    unsigned long  free ;
 
 /*
 
- we note rate straitly
+ unsigned  int  user;
+ unsigned  int  nice;
+ unsigned  int  system;
+ unsigned  int  idle;
 
 */
 
-    unsigned long  total;};
+
+ int  cores;
+ int  frequency;
+ int  temperature;
+
+ unsigned  int  rate;
+
+
+  };
 
 
 
 
 
 
-struct gopi_disk {
+ struct gopi_memory
 
-    unsigned long  size;
-    unsigned long  available;
+  {
+
+
+ unsigned long  total;
+
+ unsigned long  free ;
 
 /*
 
@@ -89,7 +94,33 @@ struct gopi_disk {
 
 */
 
-    unsigned long  total;};
+ unsigned long  rate;
+
+
+  };
+
+
+
+
+
+
+ struct gopi_disk
+
+  {
+
+ unsigned long  size;
+
+ unsigned long  available;
+
+/*
+
+ we note rate straitly
+
+*/
+
+ unsigned long  rate;
+
+  };
 
 
 
@@ -97,25 +128,18 @@ struct gopi_disk {
 
 
 
-struct gopi_network {
-
-    char        ip     [ 32 ] [ 3 ] [ 1024 ];
-    int         number;};
+ struct gopi_network
 
 
+  {
 
 
+ char ip [ 32 ] [ 3 ] [ 1024 ];
+
+ int  number;
 
 
-struct gopi_sound {
-
-    int         number_control;
-    int         number_capture;
-    int         number_playback;
-
-    char        device [ 3 ] [ 128 ] [ 16 ];
-    int         device_playback;
-    int         device_capture;};
+  };
 
 
 
@@ -124,6 +148,25 @@ struct gopi_sound {
 
 
 
+ struct gopi_sound
+
+  {
+
+ int number_control;
+
+ int number_capture;
+
+ int number_playback;
+
+
+ char  device [ 3 ] [ 128 ] [ 16 ];
+
+ int  device_playback;
+
+ int  device_capture;
+
+
+  };
 
 
 
@@ -131,7 +174,18 @@ struct gopi_sound {
 
 
 
-struct gopi_about {
+
+
+
+
+
+
+
+
+ struct gopi_about
+
+
+  {
 
 
 
@@ -145,7 +199,8 @@ struct gopi_about {
 
 */
 
-    char symbol [ 16 ];
+
+ char symbol [ 16 ];
 
 
 
@@ -164,7 +219,7 @@ struct gopi_about {
 */
 
 
-    struct gopi_flag    flag;
+ struct  gopi_flag  flag;
 
 
 
@@ -183,7 +238,7 @@ struct gopi_about {
  not for the configuration, network or what
 
 
- we touch af file to save configurations
+ we touch a file to save configurations
 
 */
 
@@ -198,17 +253,17 @@ struct gopi_about {
 
 
 
-    struct gopi_system  system;
+ struct gopi_system  system;
 
-    struct gopi_cpu     cpu;
+ struct gopi_cpu  cpu;
 
-    struct gopi_memory  memory;
+ struct gopi_memory  memory;
 
-    struct gopi_disk    disk;
+ struct gopi_disk  disk;
 
-    struct gopi_network network;
+ struct gopi_network  network;
 
-    struct gopi_sound   sound;
+ struct gopi_sound  sound;
 
 
 
@@ -220,7 +275,7 @@ struct gopi_about {
 */
 
 
-    short    number_mates;
+    short  number_mates;
 
     void * * mates;
 

@@ -12,21 +12,29 @@
 */
 
 
-struct gopi_flag {
 
-    int    main      ;
-    int    deamon    ;
+ struct gopi_flag
 
-    int    dog       ;
-    int    start     ;
-    int    show      ;
 
-    int    connector ;
-    int    connectted;
+  {
 
-    int    sound     ;
-    int    sound_show;
-    int    sound_save;};
+
+ int    main;
+ int    deamon;
+
+ int    dog;
+ int    start;
+ int    show;
+
+ int    connector;
+ int    connectted;
+
+ int    sound;
+ int    sound_show;
+ int    sound_save;
+
+
+  };
 
 
 
