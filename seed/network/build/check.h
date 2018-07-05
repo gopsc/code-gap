@@ -2,4 +2,11 @@
 
 
 
-// check connection, connecting, and stack
+/*
+
+ check connection, connecting, and stack
+
+
+ get from ckeck
+
+*/

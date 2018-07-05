@@ -248,6 +248,8 @@
 
  strcat ( note_words, "\n" );
 
+
+
  file_append ( note_name, note_words );
 
 
@@ -319,14 +321,16 @@
 
 
 
- int action_seed (
-
-                   const char * that_type
-
-                 )
+ int action_seed  (  const char * that_type  )
 
 
   {
+
+
+
+
+
+
 
 
 
@@ -345,11 +349,11 @@
 
 
 
- strcpy ( note_path,  gop_configurations . path_the  );
+ strcpy ( note_path,  gop_hopes . path_the  );
 
  strcat ( note_path, "/" );
 
- strcat ( note_path,  gop_configurations . name_the  );
+ strcat ( note_path,  gop_hopes . name_the  );
 
 
 
@@ -372,9 +376,13 @@
 
 
 
- strcpy ( note_file,  gop_configurations . path_the );
+
+
+ strcpy ( note_file,  gop_hopes . path_the );
 
  strcat ( note_file, "/flower.c" );
+
+
 
 
 
@@ -393,19 +401,19 @@
 
  char note_dirent [ 128 ];
 
-
- char note_file_action [ 128 ];
-
-
-
+ char note_name_action [ 128 ];
 
 
 
 
  DIR * pointer_dirent;
 
-
  struct  dirent *  ent;
+
+
+
+
+
 
 
 
@@ -434,15 +442,20 @@
 
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/head/Linux.h" );
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/head/flags.h" );
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/build/Linux.h" );
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/build/flags.h" );
 
 
 
 
 
  action_seed_append ( note_file, note_path, "/watchdog/about/build/build.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/build/hopes.h" );
+
 
 
 /*
@@ -466,12 +479,19 @@
 
  action_seed_append ( note_file, note_path, "/network/build/build.h" );
 
+ action_seed_append ( note_file, note_path, "/network/build/hopes.h" );
+
  action_seed_append ( note_file, note_path, "/network/build/check.h" );
 
  action_seed_append ( note_file, note_path, "/network/build/clean.h" );
 
 
- action_seed_append ( note_file, note_path, "/sound/build.h" );
+
+
+ action_seed_append ( note_file, note_path, "/sound/build/build.h" );
+
+ action_seed_append ( note_file, note_path, "/sound/build/hopes.h" );
+
 
 
 
@@ -489,7 +509,15 @@
 */
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/head/hopes.h" );
+ action_seed_append ( note_file, note_path, "/box/c/Linux/build/hopes.h" );
+
+
+
+
+
+
+
+
 
 
 
