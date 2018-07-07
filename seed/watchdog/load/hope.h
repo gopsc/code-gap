@@ -68,7 +68,7 @@
 
 */
 
- char that_file [ 1024 ];
+ char that_file [ 128 ];
 
  char note_file [ 1024 ];
 
@@ -91,7 +91,7 @@
 
  and you wanna change the target ip
 
- you mast close it first,
+ you must close it first,
 
  then turn it up again
 
@@ -177,6 +177,12 @@
 
  If it's deamon mode, load the configuration file
 
+
+
+ could be different
+
+ maybe we're gonna listen or what
+
 */
 
  strcpy ( note_path, "/opt/TxL/sky/hopes/TxL/hopes_deamon" );
@@ -198,7 +204,7 @@
   {
 
 
- strcpy ( note_path, "/opt/TxL/seed/configurations" );
+ strcpy ( note_path, "/opt/TxL/seed/hopes" );
 
 
   }
@@ -363,8 +369,11 @@
 
 
 
- output_print ( "string", "\nCan't find hope :(\n" );
- output_print ( "string", " type a new path:" );
+
+ output_print ( "string", "\n Can't find hope :(\n" );
+
+ output_print ( "string", "  type a new path:" );
+
 
 
  fgets ( note_path, 128, stdin );
@@ -382,7 +391,7 @@
 */
 
 
- output_print ( "string", " u typed:        " );
+ output_print ( "string", "\n u typed:        " );
 
  output_print ( "string", note_path );
 
@@ -456,6 +465,7 @@
 /*
 
  sometimes it maybe a empty file
+
  but the watchdog will keep running
 
 
@@ -466,6 +476,9 @@
  it will be read
 
  don't worry
+
+
+ dog run once
 
 */
 
@@ -490,7 +503,13 @@
 
 /*
 
-// Reboot client when it was block.
+/*
+
+ Reboot client when it was block.
+
+*/
+
+
 
  if (
 
@@ -515,6 +534,13 @@
 
  gop_about . flag . connector  =  0;
 
+
+
+/*
+
+ could use clean now
+
+*/
 
  shutdown ( gop_connection.descriptor [ 0 ], SHUT_RDWR );
 
@@ -681,6 +707,7 @@
 
 */
 
+
  if ( bool_reset )
 
   {
@@ -699,46 +726,54 @@
 
 
 
-    strcpy ( target_configurations [ 1  ], "path "           );
-    strcpy ( target_configurations [ 2  ], "name "           );
-    strcpy ( target_configurations [ 3  ], "data "           );
-    strcpy ( target_configurations [ 4  ], "backup "         );
-
-    strcpy ( target_configurations [ 5  ], "main "           );
-    strcpy ( target_configurations [ 6  ], "dog "            );
-    strcpy ( target_configurations [ 7  ], "show "           );
-    strcpy ( target_configurations [ 8  ], "connector "      );
-    strcpy ( target_configurations [ 9  ], "connectted "     );
-    strcpy ( target_configurations [ 10 ], "sound "          );
-    strcpy ( target_configurations [ 11 ], "sound-show "     );
-    strcpy ( target_configurations [ 12 ], "sound-save "     );
-
-    strcpy ( target_configurations [ 13 ], "address-to "     );
-    strcpy ( target_configurations [ 14 ], "port-to "        );
-    strcpy ( target_configurations [ 15 ], "port-this "      );
-    strcpy ( target_configurations [ 16 ], "connect-step "   );
-    strcpy ( target_configurations [ 17 ], "update-size "    );
-
-    strcpy ( target_configurations [ 18 ], "sound-rate "     );
-    strcpy ( target_configurations [ 19 ], "sound-channels " );
-    strcpy ( target_configurations [ 20 ], "ft-N "           );
 
 
 
+ strcpy ( target_hopes [ 1  ], "path "           );
+ strcpy ( target_hopes [ 2  ], "name "           );
+ strcpy ( target_hopes [ 3  ], "data "           );
+ strcpy ( target_hopes [ 4  ], "backup "         );
 
+    strcpy ( target_hopes [ 5  ], "main "           );
+    strcpy ( target_hopes [ 6  ], "dog "            );
+    strcpy ( target_hopes [ 7  ], "show "           );
+    strcpy ( target_hopes [ 8  ], "connector "      );
+    strcpy ( target_hopes [ 9  ], "connectted "     );
+    strcpy ( target_hopes [ 10 ], "sound "          );
+    strcpy ( target_hopes [ 11 ], "sound-show "     );
+    strcpy ( target_hopes [ 12 ], "sound-save "     );
 
+    strcpy ( target_hopes [ 13 ], "address-to "     );
+    strcpy ( target_hopes [ 14 ], "port-to "        );
+    strcpy ( target_hopes [ 15 ], "port-this "      );
+    strcpy ( target_hopes [ 16 ], "connect-step "   );
+    strcpy ( target_hopes [ 17 ], "update-size "    );
+
+    strcpy ( target_hopes [ 18 ], "sound-rate "     );
+    strcpy ( target_hopes [ 19 ], "sound-channels " );
+    strcpy ( target_hopes [ 20 ], "ft-N "           );
 
 
 
 
 
-// start the researching
 
+
+
+
+
+
+
+/*
+
+ start the researching
+
+*/
 
 
     int i;
 
-    for (  i = 1; i <= 20; i ++  ) {
+    for (  i = 1;  i <= 20;  i ++  ) {
 
 
 
