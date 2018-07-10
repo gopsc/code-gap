@@ -1,26 +1,108 @@
 
+
+
+
+
+
+
+/*
+
+ something goes wrong with it
+
+ maybe data format wrong
+
+*/
+
+
+
+
+
+
 int translate_number_word (
-                              double that_number,
-                              int    that_round,
-                              char*  that_word
-                          ) {
+
+                              double  that_number,
+
+                              int     that_round,
+
+                              char *  that_word
+
+                          )
 
 
-    if ( that_number < 0 ) {
-
-        strcpy(that_word, "-");
-
-        that_number = 0 - that_number;}
-
-    else {
-
-        strcpy(that_word, "" );}
+  {
 
 
-    int    buffer_number       =               (int)that_number;
-    double buffer_number_point = that_number -    buffer_number;
-    int    buffer_number_this  = 0;
-    char   buffer_word[128]    = "";
+
+
+
+
+
+
+/*
+
+ if it is less than zero
+
+ could set it first
+
+*/
+
+
+
+ if ( that_number < 0 )
+
+
+  {
+
+
+ strcpy ( that_word, "-" );
+
+ that_number = 0 - that_number;
+
+
+  }
+
+
+
+
+ else
+
+
+  {
+
+
+/*
+
+ if not copy it to zero
+
+*/
+
+ strcpy ( that_word, "" );
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ int  note_number  =  ( int ) that_number;
+
+ double  note_number_point  =  that_number - note_number;
+
+ int  note_number_this  =  0;
+
+ char  buffer_word[128]  =  "";
+
+
+
 
     printf("%d %f %d %s\n", buffer_number, buffer_number_point, buffer_number_this, buffer_word);
 

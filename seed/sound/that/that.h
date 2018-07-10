@@ -42,9 +42,15 @@
  The saving path of
      sound  files
 
+
+ we use data of trees
+
 */
 
- char  path_sound [ 128 ];
+
+// char  path_sound [ 128 ];
+
+
 
 
 
@@ -72,7 +78,14 @@
 
   ------<--------1234...-------------
 
+
+
+ maybe use a symbol
+
+ maybe two of it
+
 */
+
 
 
  double result_sound [ 200 ] [ 513 ];

@@ -1,10 +1,60 @@
 
-int load_listen() {
 
 
 
 
-    output_print( "string", "Load listen...\n" );
+
+
+
+
+/*
+
+ won't use it
+
+
+ we use dream to save it
+
+
+*/
+
+
+
+
+
+
+ int load_listen ()
+
+
+  {
+
+
+
+
+
+
+
+
+
+/*
+
+ it always tell us it doing
+
+ maybe use a interface to do this
+
+*/
+
+
+ output_print ( "string", "Load listen...\n" );
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -16,19 +66,49 @@ int load_listen() {
 
 */
 
-    char buffer_path [ 128 ];
+ char note_path [ 128 ];
 
 
 
 
-// It's for saving the name of the dirent
-
-    char buffer_name [ 128 ];
 
 
-// it's for saving the name of the files
 
-    char buffer_file [ 128 ];
+
+
+
+
+
+
+/*
+
+ It's for saving the name of the dirent
+
+*/
+
+
+ char note_name [ 128 ];
+
+
+
+
+
+
+/*
+
+ it's for saving the name of the files
+
+*/
+
+
+ char note_file [ 128 ];
+
+
+
+
+
+
+
 
 
 /*
@@ -38,30 +118,28 @@ int load_listen() {
  soon we use realloc
 
 */
-    char buffer_word [ 10240 ];
 
-
-// Prepare the path
-
-    strcpy ( buffer_path, path_the  );
-    strcat ( buffer_path, "/"       );
-    strcat ( buffer_path, name_data );
+ char note_word [ 10240 ];
 
 
 
-// it is for counting the files
-
-    int   number_step;
 
 
-// if is for reading the file convent
-
-    char * pointer_word;
 
 
-// if is for reading the file entre
 
-    char * pointer_enter;
+/*
+
+ Prepare the path
+
+*/
+
+
+ strcpy ( note_path, gop_hopes . path_the );
+
+ strcat ( note_path, "/" );
+
+ strcat ( note_path, gop_hopes . name_data );
 
 
 
@@ -73,7 +151,62 @@ int load_listen() {
 
 
 
-    do {
+/*
+
+ it is for counting the files
+
+*/
+
+
+ int number_step;
+
+
+
+
+
+
+
+/*
+
+ if is for reading the file convent
+
+*/
+
+
+ char * pointer_word;
+
+
+
+
+
+
+
+/*
+
+ if is for reading the file entre
+
+*/
+
+ char * pointer_enter;
+
+
+
+
+
+
+
+
+
+
+
+ do
+
+
+  {
+
+
+
+
 
 /*
 
@@ -82,12 +215,27 @@ int load_listen() {
 
 */
 
-        snprintf  (
-                     buffer_word,
-                     sizeof ( buffer_word ) / sizeof ( char ) - 1,
-                     "%d",
-                     number_listen
-                  );
+
+ snprintf  (
+
+             note_word,
+
+             sizeof ( note_word ) / sizeof ( char ) - 1,
+
+             "%d",
+
+             number_listen
+
+           );
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,9 +248,16 @@ int load_listen() {
 
 */
 
-        strcpy ( buffer_name, buffer_path );
-        strcat ( buffer_name, "/"         );
-        strcat ( buffer_name, buffer_word );
+
+ strcpy ( note_name, note_path );
+
+ strcat ( note_name, "/"         );
+
+ strcat ( note_name, note_word );
+
+
+
+
 
 
 
@@ -114,7 +269,24 @@ int load_listen() {
 
 */
 
-        number_listen ++;
+ number_listen ++;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -124,13 +296,37 @@ int load_listen() {
 
 */
 
-        if ( is_dirent(buffer_name) ) {
+
+ if  (  is_dirent ( note_name )  )
 
 
-// Print it
+  {
 
-            output_print ( "string",  buffer_name );
-            output_print ( "string", "\n"         );
+
+
+
+
+
+
+
+
+/*
+
+ Print it
+
+*/
+
+
+ output_print ( "string",  note_name );
+
+ output_print ( "string", "\n"         );
+
+
+
+
+
+
+
 
 
 
@@ -146,9 +342,20 @@ int load_listen() {
 
 */
 
-            int w;
+ int w;
 
-            for ( w = 1; w <= N; w++ ) {
+ for  (  w = 1;  w <= N;  w ++  )
+
+
+  {
+
+
+
+
+
+
+
+
 
 
 /*
@@ -158,12 +365,20 @@ int load_listen() {
 
 */
 
-                snprintf (
-                           buffer_word,
-                           sizeof ( buffer_word )  /  sizeof ( char ) - 1,
-                          "%d",
-                           w
-                         );
+ snprintf (
+            note_word,
+            sizeof ( note_word )  /  sizeof ( char ) - 1,
+            "%d",
+            w
+          );
+
+
+
+
+
+
+
+
 
 
 /*
@@ -173,10 +388,19 @@ int load_listen() {
                     .
 */
 
-                strcpy ( buffer_file, buffer_name );
-                strcat ( buffer_file, "/"         );
-                strcat ( buffer_file, buffer_word );
-                strcat ( buffer_file, ".snake"    );
+ strcpy ( note_file, note_name );
+ strcat ( note_file, "/"       );
+ strcat ( note_file, note_word );
+ strcat ( note_file, ".snake"  );
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,70 +412,233 @@ int load_listen() {
 
 */
 
-                     if ( !is_file(buffer_file) ) {
+ if  (  ! is_file ( note_file )  )
 
-                    continue;}
+  {
 
+ continue;
 
-
-// If it is exist
-
-                else if (  is_file(buffer_file) ) {
-
-// get the file
-
-                    file_get(buffer_file, buffer_word);
-
-                    number_step     = 1;
-
-
-
-// Take the loop for
-// read the convent
-//   of the file
-
-
-                    pointer_enter =         buffer_word;
-
-
-                    do {
-
-// set the start path
-
-                        pointer_word =           pointer_enter;
-
-// find the next enter
-
-                        pointer_enter = strchr(  pointer_enter, '\n'  );
+  }
 
 
 
 
-// The last line was no enter
-//  so we don't need to judge did it get the pointer
-
-                        if ( pointer_enter != NULL ) {
-
-                           *pointer_enter = '\0';}
-
-// Tranform the convent
-
-                        buffer_listen[number_listen][w][number_step] = atoi(pointer_word);
 
 
-// reset it
-                        if ( pointer_enter != NULL ) {
-
-                           *pointer_enter = '\n';
-
-                            pointer_enter ++;
-
-                             number_step  ++;}
 
 
-// end this loop when it's no more enter
 
-                  } while ( pointer_enter != NULL );}}}
+/*
+
+ If it is exist
+
+*/
+
+ else if  (  is_file ( note_file )  )
+
+  {
+
+
+
+
+
+
+
+/*
+
+
+ read it
+
+
+
+ get the file
+
+*/
+
+
+ file_get ( note_file, note_word );
+
+
+ number_step = 1;
+
+
+
+
+
+
+
+
+
+/*
+
+ Take the loop for
+ read the convent
+   of the file
+
+
+
+
+ start here
+
+*/
+
+ pointer_enter = note_word;
+
+
+
+
+
+
+
+
+
+ do
+
+
+  {
+
+
+
+/*
+
+ set the start path
+
+
+ start here
+
+*/
+
+ pointer_word = pointer_enter;
+
+
+
+
+
+
+
+
+/*
+
+ find the next enter
+
+*/
+
+ pointer_enter = strchr (  pointer_enter, '\n'  );
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ The last line was no enter
+  so we don't need to judge did it get the pointer
+
+*/
+
+ if ( pointer_enter != NULL )
+
+  {
+
+ * pointer_enter = '\0';
+
+  }
+
+
+
+
+
+
+/*
+
+ Tranform the convent
+
+*/
+
+
+ gop_sound . buffer_listen [ number_listen ] [ w ] [ number_step ]  =  atoi ( pointer_word );
+
+
+
+
+
+
+
+/*
+
+ reset it
+
+*/
+
+
+ if ( pointer_enter != NULL )
+
+
+  {
+
+ * pointer_enter = '\n';
+
+ pointer_enter ++;
+
+ number_step  ++;
+
+  }
+
+
+
+
+
+
+/*
+
+ end this loop when it's no more enter
+
+*/
+
+  } while ( pointer_enter != NULL );
+
+
+
+
+/*
+
+ this range for file exist
+
+*/
+
+  }
+
+
+
+
+
+/*
+
+ this loop to find dirent
+
+*/
+
+  }
+
+
+
+
+
+
+/*
+
+ thiss loop for function
+
+*/
+
+  }
 
 
 
