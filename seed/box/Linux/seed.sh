@@ -33,10 +33,10 @@ cat  $address/box/c/Linux/head/hopes.h                       >> $addres2
 
 
 
-cat  $address/watchdog/about/build/build.h                   >> $addres2
+cat  $address/watchdog/about/that/that.h                     >> $addres2
 
 
-cat  $address/network/build/build.h                          >> $addres2
+cat  $address/network/that/that.h                            >> $addres2
 
 
 

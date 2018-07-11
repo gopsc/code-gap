@@ -3,119 +3,419 @@
 
 
 
-int init_deamon() {
+ int init_deamon ()
 
+  {
 
 
 
 
-    if ( number_args <= 1 ) {
 
-// it is not the deamon mode
 
-        return 1;}
 
+ if (  gop_hopes . number_options  <=  1  )
 
 
-    else {
+  {
 
 
-        if ( strcmp(buffer_args[1], "deamon") != 0 ) {
+/*
 
+ not open
 
-// it is not deamon mode
 
-            return 1;}
+ it isn't deamon mode
 
+*/
 
 
-         else {
+ return 1;
 
-// it is deamon mode
 
-            information_flag.deamon = 1;
+  }
 
 
 
 
 
 
-// Maybe it need to wait
-//   for some of program
 
-            usleep(100000);
 
-            output_print("string", "Start deamon...\n");
 
+ else
 
 
+  {
 
-            int pid = fork();
 
-            if      ( pid     ) {
 
-                // It's the father ps, exit it.
 
-                return 0;}
 
-            else if ( pid < 0 ) {
 
-                // fork failled, exit it.
 
-                return 0;}
 
-            // Now it's the first son ps.
+ if  (  strcmp ( gop_hopes . note_args [ 1 ], "deamon" )  !=  0  )
 
 
 
+  {
 
-            // Make the 1st son ps become a
-            //      new session and ps group leader
-            //      and leave control terminal
 
-            setsid();
+/*
 
+ it isn't deamon mode
 
 
-            pid = fork();
+ not open
 
-            if      ( pid     ) {
+*/
 
-                // It's the 1st son ps, exit it.
 
-                return 0;}
+ return 1;
 
-            else if ( pid < 0 ) {
 
-                // fork failled, exit it.
+  }
 
-                return 0;;}
 
-            // Now it's the second son ps.
-            //     the 2nd son ps is
-            //     not session group leader
-            //     any more
 
 
-            char buffer_nofile[16];
 
-            int  number_nofile     = atoi(buffer_nofile);
 
 
 
-            int  i;
 
-            for ( i=0; i<number_nofile; ++i) {
 
-                close(i);
 
-                chdir("/");  //Change work dirent.
 
-                umask(0);    //Reset file building modeling
 
-                return 1;}
+ else
 
 
-// something goes wrong
+  {
 
-            return 0;}}}
+
+/*
+
+ it is deamon mode
+
+*/
+
+
+ gop_about . flag . deamon = 1;
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ Maybe it need to wait
+   for some of program
+
+*/
+
+
+ gop_wait ( 1000000 );
+
+
+
+
+ output_print ( "string", "Start deamon...\n" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+ int  number_process  =  fork ();
+
+
+
+
+
+
+
+
+
+
+
+ if  (  number_process  )
+
+
+  {
+
+
+
+/*
+
+ It's father process, exit it.
+
+*/
+
+
+ return 0;
+
+
+  }
+
+
+
+
+
+
+
+
+
+ else if  (  number_process  <  0  )
+
+
+  {
+
+
+/*
+
+ fork failled, exit it.
+
+*/
+
+
+ return 0;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ Now it's the first son process session.
+
+
+
+
+ Make the 1st son process session become a
+
+ new session and process session group leader
+
+ and leave control terminal
+
+*/
+
+
+
+
+ setsid ();
+
+
+
+
+
+ number_process  =  fork ();
+
+
+
+
+
+ if ( number_process )
+
+
+  {
+
+
+/*
+
+ It's the 1st son process session, exit it.
+
+*/
+
+
+ return 0;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+ else if  (  number_process  <  0  )
+
+
+  {
+
+
+/*
+
+ fork failled, exit it.
+
+*/
+
+ return 0;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ Now it's the second son process session.
+
+ the 2nd son process session is
+
+ not session group leader
+
+ any more
+
+*/
+
+
+
+ char note_nofile [ 16 ];
+
+
+ int number_nofile  =  atoi ( note_nofile );
+
+
+
+ int i;
+
+ for  (  i = 0;  i < number_nofile;  ++ i  )
+
+
+  {
+
+
+
+
+
+ close(i);
+
+
+
+
+
+
+/*
+
+ Change work dirent.
+
+*/
+
+ chdir ( "/" );
+
+
+
+
+
+
+
+/*
+
+ Reset file building modeling
+
+*/
+
+ umask ( 0 );
+
+
+
+
+
+
+ return 1;
+
+
+
+  }
+
+
+
+
+
+
+
+/*
+
+ something goes wrong
+
+*/
+
+
+ else
+
+  {
+
+ return 0;
+
+  }
+
+
+
+
+
+
+
+
+
+/*
+
+ them for compare
+
+*/
+
+
+  }
+
+
+  }
+
+
+
+
+
+/*
+
+ this loop for function
+
+*/
+
+  }
+
+
+

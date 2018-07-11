@@ -13,7 +13,7 @@ int main ()
 
 
 
- printf ( "seed starts...\n" );
+ output_print ( "seed starts...\n" );
 
 
 
@@ -26,8 +26,11 @@ int main ()
 
 
 
- printf ( "Over.\n" );
+ output_print ( "Over.\n" );
 
 
 
- return 1;}
+ return 1;
+
+
+  }
