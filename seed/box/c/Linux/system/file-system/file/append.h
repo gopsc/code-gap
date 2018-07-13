@@ -3,16 +3,32 @@
 
 
  void file_append (
+
                      const char * that_path,
-                     const char * that_words
+
+                     const char * that_words,
+
+//                     const char * that_type
+
                   )
+
 
   {
 
 
 
+/*
 
- int    buffer_count  =  1;
+ this is for cound how many dirent it is
+
+ may use pointer
+
+*/
+
+ int  note_count  =  1;
+
+
+
 
 
 
@@ -23,7 +39,9 @@
 
 */
 
- char   buffer_path [ 64 ];
+ char   note_path [ 64 ];
+
+
 
  char * pointer_path;
 
@@ -46,7 +64,7 @@
 */
 
 
- while  (  buffer_count  !=  0  )
+ while  (  note_count  !=  0  )
 
 
   {
@@ -62,11 +80,11 @@
 */
 
 
- strcpy ( buffer_path, that_path );
+ strcpy ( note_path, note_path );
 
 
 
- pointer_path = buffer_path;
+ pointer_path = note_path;
 
 
 
@@ -85,7 +103,7 @@
 
  int i;
 
- for  (  i = 0;  i < buffer_count;  i++  )
+ for  (  i = 0;  i < note_count;  i ++  )
 
 
   {
@@ -117,20 +135,57 @@
 
  to here
 
+
+ if we've read all of it
+
+ we could stop
+
 */
+
 
  if  (  pointer_path  ==  NULL  )
 
 
   {
 
- buffer_count = 0;
+
+
+ note_count = 0;
+
+
+
+
+
+/*
+
+ we've read all of it
+
+ maybe a dirent
+
+*/
+
+ if  (  is_dirent ( note_path )  )
+
+  {
+
+ return -1;
+
+  }
+
+
 
 
   }
 
 
 
+
+
+/*
+
+ this range for loop of symbol found
+
+*/
 
 
   }
@@ -148,10 +203,17 @@
 
  check it
 
+
+ if we've read all of it
+
+ check it too
+
+ so we could know if it is a dirent
+
 */
 
 
- if ( buffer_count != 0 )
+ if ( note_count != 0 )
 
 
   {
@@ -165,7 +227,7 @@
 
 */
 
- buffer_count ++;
+ note_count ++;
 
 
 
@@ -193,23 +255,13 @@
 
 */
 
- if  (  ! is_dirent ( buffer_path )  )
+ if  (  ! is_dirent ( note_path )  )
 
 
   {
 
 
- mkdir  (  buffer_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH  );
-
-
-  }
-
-
-
-
-  }
-
-
+ mkdir  (  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH  );
 
 
   }
@@ -220,19 +272,79 @@
 
 /*
 
+ it is for to check
+
+*/
+
+  }
+
+
+
+
+/*
+
+ this loop for check
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
  append file
+
+
+
+ could add a title
+
+
+
+ maybe not
+
+ it use too more base function
+
+ like a high level function
 
 */
 
 
- FILE *  buffer_file  =  fopen ( that_path, "a" );
+
+/*
+
+ if (  strcmp ( that_type, "blank" )  ==  0  )
+
+  {
+
+*/
 
 
- fprintf  (  buffer_file,  "%s",  that_words  );
 
 
- fclose ( buffer_file );
 
+
+
+ FILE *  note_file  =  fopen ( that_path, "a" );
+
+
+ fprintf  (  note_file,  "%s",  that_words  );
+
+
+ fclose ( note_file );
+
+
+
+ return 0;
 
   }
 
