@@ -1,57 +1,63 @@
 
 
-#wget ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
+# wget ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
 
-#tar -xjf alsa-lib-1.1.5.tar.bz2
+# tar -xjf alsa-lib-1.1.5.tar.bz2
 
-#gcc /opt/TxL/flower.c -lm -lpthead (-std=c++0x) (-lasound) (-lwiringpi) /opt/?
-
-
-
-
-
-
-name    seed
-
-data    trees
-
-backup  river
+# gcc /opt/TxL/flower.c -lm -lpthead (-std=c++0x) (-lasound) (-lwiringpi) /opt/?
 
 
 
 
 
 
+ name    seed
 
-main        on
+ data    trees
 
-dog         on
-show        off
-
-connector   on
-connectted  on
-
-sound       off
-sound-show  off
-sound-save  off
+ backup  river
 
 
 
 
 
 
-address-to    192.168.4.3
-port-to       520
-port-this     520
 
-connect-step  0.1
+ main        on
 
-update-size   1024
-update-step   1
+ dog         on
+ show        off
+
+ connector   on
+ connectted  on
+
+ sound       off
+ sound-show  off
+ sound-save  off
 
 
 
-sound-rate      44100
-sound-channels  1
-ft-N            512
+
+# serial 0
+# tcp    3
+# udp    0
+# spi    0
+# iic    0
+
+
+
+ address-to    192.168.4.3
+ port-to       520
+ port-this     520
+
+ connect-step  0.1
+
+ update-size   1024
+ update-step   1
+
+
+
+ sound-rate      44100
+ sound-channels  1
+ ft-N            512
 
