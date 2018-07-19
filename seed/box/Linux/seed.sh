@@ -40,14 +40,6 @@ cat  $address/network/that/that.h                            >> $addres2
 
 
 
-
-cat  $address/box/c/Linux/data/translate/number_word.h       >> $addres2
-
-
-cat  $address/box/c/Linux/system/output/print.h              >> $addres2
-
-
-
 cat  $address/box/c/Linux/system/file-system/dirent/is.h     >> $addres2
 
 
