@@ -16,7 +16,24 @@
 
   {
 
+  
+  
+  
+  
+ /*
+ 
+  could use iic, serial and more
+  
+ */
 
+ /*
+
+ char * type;
+
+ */
+  
+  
+  
  char how [ 4 ] [ 16 ];
 
  time_t  time [ 5 ];
