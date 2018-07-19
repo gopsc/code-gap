@@ -11,7 +11,7 @@
 
 /*
 
- then it put about waitting could be little 
+ then it put about waitting could be little
 
 */
 
@@ -66,7 +66,9 @@
 
 
  int  cores;
+
  int  frequency;
+
  int  temperature;
 
  unsigned  int  rate;
@@ -159,11 +161,11 @@
  int number_playback;
 
 
- char  device [ 3 ] [ 128 ] [ 16 ];
+ char device [ 3 ] [ 128 ] [ 16 ];
 
- int  device_playback;
+ int device_playback;
 
- int  device_capture;
+ int device_capture;
 
 
   };
@@ -189,6 +191,7 @@
 
 
 
+
 /*
 
  sometimes we wanna put it out
@@ -197,7 +200,14 @@
 
  we set a symbol to sigh
 
+
+
+ and sub-about could have a symbol too
+
+ use for loading about
+
 */
+
 
 
  char symbol [ 16 ];

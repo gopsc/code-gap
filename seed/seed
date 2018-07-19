@@ -2,27 +2,33 @@
 
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/build/Linux.h" );
+# list if files
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/build/flags.h" );
-
-
+# we could auto got this from it soon
 
 
 
- action_seed_append ( note_file, note_path, "/watchdog/about/build/build.h" );
 
- action_seed_append ( note_file, note_path, "/watchdog/about/build/hopes.h" );
+ box/c/Linux/that/Linux.h
+
+ box/c/Linux/that/flags.h
 
 
 
-/*
 
- get them form a convent, maybe from network
 
-*/
+ watchdog/about/that/that.h
 
- action_seed_append ( note_file, note_path, "/watchdog/about/build/clean.h" );
+
+
+
+# get them form a convent, maybe from network
+
+
+# watchdog/about/that/hopes.h
+
+
+ watchdog/about/that/clean.h
 
 
 

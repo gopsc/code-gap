@@ -1,24 +1,75 @@
 
 
-int secret_decode(
-                           char* that_message,
-                     const char* that_type
-                 ) {
+ int secret_decode (
+                           char * that_message,
+                     const char * that_type
+                   )
 
-    if ( strcmp(that_type, "blank") == 0 ) {
-
-        return 1;}
+  {
 
 
-    return 0;}
 
 
-int secret_encode(
-                           char* that_message,
-                     const char* that_type
-                 ) {
 
-    if      ( strcmp(that_type, "sum") == 0 ) {
+
+
+ if  (  strcmp ( that_type, "blank" )  ==  0  )
+
+
+  {
+
+ return 0;
+
+  }
+
+
+
+
+/*
+
+ don't know ...
+
+*/
+
+ return -1;
+
+  }
+
+
+
+
+
+
+
+
+ int secret_encode (
+                           char * that_message,
+                     const char * that_type
+                   )
+
+  {
+
+
+
+
+
+
+    if       (  strcmp ( that_type, "drop note" )  ==  0  )
+
+  {
+
+ return 0;
+
+  }
+
+
+
+
+
+
+    else if  (  strcmp ( that_type, "sum" )  ==  0  )
+
+  {
 
         int number_length = strlen(that_message);
         int number_sum    = 0;
