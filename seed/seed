@@ -35,19 +35,17 @@
 
 
 
-/*
 
- dog will use
+# dog will use
 
-*/
 
- action_seed_append ( note_file, note_path, "/network/build/build.h" );
+ network/build/build.h
+ 
+ network/build/hopes.h
 
- action_seed_append ( note_file, note_path, "/network/build/hopes.h" );
+ network/build/check.h
 
- action_seed_append ( note_file, note_path, "/network/build/check.h" );
-
- action_seed_append ( note_file, note_path, "/network/build/clean.h" );
+ network/build/clean.h
 
 
 
