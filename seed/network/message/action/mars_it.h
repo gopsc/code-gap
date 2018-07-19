@@ -2,6 +2,19 @@
 
 
 
+
+/*
+
+ this is for linux
+ 
+ may could put it in a head of lt
+
+*/
+
+
+
+
+
 int action_mars_it() {
 
 
