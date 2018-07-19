@@ -1,5 +1,21 @@
 
 
+
+
+
+
+
+
+
+/*
+
+ make a seed
+ 
+ to get gop
+
+*/
+
+
 int main ()
 
 
@@ -13,7 +29,7 @@ int main ()
 
 
 
- output_print ( "seed starts...\n" );
+ printf ( "%s", "seed starts...\n" );
 
 
 
@@ -26,7 +42,7 @@ int main ()
 
 
 
- output_print ( "Over.\n" );
+ printf ( "%s", "Over.\n" );
 
 
 
