@@ -17,12 +17,14 @@
 
 
 
- watchdog/about/that/that.h
 
 
 
 
 # get them form a convent, maybe from network
+
+
+ watchdog/about/that/that.h
 
 
 # watchdog/about/that/hopes.h
@@ -39,13 +41,15 @@
 # dog will use
 
 
- network/build/build.h
+ network/that/that.h
  
- network/build/hopes.h
+ network/that/hopes.h
 
- network/build/check.h
+ network/that/check.h
 
- network/build/clean.h
+ network/that/clean.h
+
+
 
 
 
