@@ -2,9 +2,9 @@
 # gop seed
 
 
-this is a program with my learning,
+it is a program with my learning,
 maybe it's not meaningful
-but it's just meaningful to me..
+but it's always just meaningful to me..
 
 
 
@@ -41,14 +41,14 @@ but it's just meaningful to me..
 
 # sky
 
-the resource and configurations found
+the resource and hopes found
 
-they've  grow little bit
+they've  grow little bigger
 
 
 # river
 
-all the tools and softwares i used
+all the tools and softwares used
 
 and forget it
 
