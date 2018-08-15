@@ -4,11 +4,14 @@
 
 # tar -xjf alsa-lib-1.1.5.tar.bz2
 
-# gcc /opt/TxL/flower.c -lm -lpthead (-std=c++0x) (-lasound) (-lwiringpi) /opt/?
+# gcc  /opt/TxL/flower.c  (-std=c++0x)  -lm  -lpthead  (-lasound)  (-lwiringpi)  /opt/?
 
 
 
 
+
+
+# where they were
 
 
  name    seed
@@ -23,6 +26,10 @@
 
 
 
+
+# hopes
+
+
  main        on
 
  dog         on
@@ -31,18 +38,38 @@
  connector   on
  connectted  on
 
- sound       off
- sound-show  off
- sound-save  off
 
 
 
 
-# serial 0
-# tcp    3
-# udp    0
-# spi    0
-# iic    0
+
+# plugin by connecttted
+
+# sound       off
+# sound-show  off
+# sound-save  off
+
+
+
+
+
+
+# wirely connector maybe use in dream
+
+
+# serial plug
+ 
+ 
+# sometimes it neeed a serial inside
+
+# serial tty4
+
+
+# tcp    0-connecter 0-connectted
+# udp    0-connecter 0-connectted
+# spi    master
+# iic    master
+
 
 
 
@@ -57,7 +84,11 @@
 
 
 
+
+# maybe use in listenning outside
+
  sound-rate      44100
  sound-channels  1
+
  ft-N            512
 
