@@ -1,43 +1,110 @@
 
-int note_clear(
-
-                 const char* that_name,
-                 const char* that_type
-
-             ) {
-
-
-    char           that_path[128];
-
-
-// Prepare the path
-
-    strcpy(that_path, path_the );
-    strcat(that_path, "/"      );
-    strcat(that_path, name_data);
-
-    strcat(that_path, "/0/"    );
-
-    strcat(that_path, that_name);
-    strcat(that_path, ".note"  );
 
 
 
 
-    if ( strcmp(that_type, "all") == 0 ) {
+ int note_clear (
 
-// The save the words of blank
+                 const char * that_name,
+                 const char * that_type
 
-        file_save(that_path, "");
+                )
+                
+  {
 
-        return 1;}
+
+ char note_path [ 128 ];
+
+
+   
+/*
+
+ Prepare the path
+
+*/
+
+ strcpy ( note_path, path_the  );
+ strcat ( note_path, "/"       );
+ strcat ( note_path, name_data );
+
+ strcat ( note_path, "/0/"     );
+
+ strcat ( note_path, that_name );
+  
+   
+/*
+ 
+ strcat ( note_path, ".note"   );
+
+*/
+
+
+   
+   
+   
+   
+   
+   
+   
+/*
+
+Mmaybe we want more
+
+*/
+
+   
+ if  (  strcmp ( that_type, "all" )  ==  0  )
+ 
+  {
+
+   
+/*
+   
+ The save the words of blank
+
+*/
+   
+   
+ file_save ( that_path, "" );
+
+   
+   
+   
+   
+ return 1;
+ 
+ 
+   }
 
 
 
-    else {
+   
+   
+ else
+ 
+  {
 
-// Got a wrong type of it
+   
+/*
 
-        return 0;}}
+ Got a wrong type of it
+
+
+ we haven't set it yted
+ 
+ maybe i could judge it by dream
+ 
+*/
+   
+   
+ return 0;
+ 
+   
+  }
+ 
+ 
+ 
+ 
+  }
 
 
