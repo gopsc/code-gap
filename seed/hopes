@@ -1,17 +1,27 @@
 
 
-# wget ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
-
-# tar -xjf alsa-lib-1.1.5.tar.bz2
-
-# gcc  /opt/TxL/flower.c  (-std=c++0x)  -lm  -lpthead  (-lasound)  (-lwiringpi)  /opt/?
 
 
+/*
+
+ wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
+
+ tar   -xjf   alsa-lib-1.1.5.tar.bz2
+
+ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   /opt/?
+
+*/
 
 
 
 
-# where they were
+
+/*
+
+ where they were
+
+*/
+
 
 
  name    seed
@@ -27,7 +37,12 @@
 
 
 
-# hopes
+/*
+
+hopes
+
+*/
+
 
 
  main        on
@@ -42,33 +57,82 @@
 
 
 
+/*
 
-# plugin by connecttted
+ plugin by connecttted
 
-# sound       off
-# sound-show  off
-# sound-save  off
+ maybe use at some future
 
-
-
+*/
 
 
+/*
 
-# wirely connector maybe use in dream
+ sound       off
+ sound-show  off
+ sound-save  off
+
+*/
 
 
-# serial plug
+
+
+
+/*
+
+ wirely connector maybe use in dream
+
+ or just use in sound maybe
+  
+*/
+
+
+/*
+
+ serial plug
  
- 
-# sometimes it neeed a serial inside
-
-# serial tty4
+*/
 
 
-# tcp    0-connecter 0-connectted
-# udp    0-connecter 0-connectted
-# spi    master
-# iic    master
+
+
+
+/*
+
+ sometimes it neeed a serial inside
+
+*/
+
+
+/*
+
+ serial tty4
+
+*/
+
+
+
+
+
+
+/*
+
+maybe other kind of net
+
+*/
+
+
+/*
+
+ tcp    0-connecter 0-connectted
+ udp    0-connecter 0-connectted
+ spi    master
+ iic    master
+
+*/
+
+
+
 
 
 
@@ -85,7 +149,16 @@
 
 
 
-# maybe use in listenning outside
+
+
+
+/*
+
+maybe use in listenning outside
+
+*/
+
+
 
  sound-rate      44100
  sound-channels  1
