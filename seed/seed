@@ -11,54 +11,10 @@
 
 
 
- box/c/Linux/that/Linux.h
+ things/c/that/Linux.h
 
- box/c/Linux/that/flags.h
+ things/c/that/flags.h
 
-
-
-
-
-
-
-
-
-# get them form a convent, maybe from network
-
-
- watchdog/about/that/that.h
-
-
-# watchdog/about/that/hopes.h
-
-
- watchdog/about/that/clean.h
-
-
-
-
-
-
-
-# dog will use
-
-
- network/that/that.h
- 
- network/that/hopes.h
-
- network/that/check.h
-
- network/that/clean.h
-
-
-
-
-
-
- action_seed_append ( note_file, note_path, "/sound/build/build.h" );
-
- action_seed_append ( note_file, note_path, "/sound/build/hopes.h" );
 
 
 
@@ -67,9 +23,81 @@
 
 /*
 
- put this to the last of list of head and build
+ get them form a convent, maybe from network
 
- then it can use the struct of configurations to note configurations everywhere
+ good idea
+
+
+ load them after including
+
+ as a structure
+
+*/
+
+ watchdog/about/that/that.h
+
+
+
+
+/*
+
+ take it where they belong
+
+*/
+
+ watchdog/about/that/hopes.c
+
+
+
+
+/*
+
+ things to clean it
+
+ be easier to read
+
+*/
+
+ watchdog/about/that/clean.c
+
+
+
+
+
+
+
+/*
+
+ dog will use
+
+*/
+
+ network/that/that.h
+ 
+ network/that/hopes.c
+
+ network/that/check.c
+
+ network/that/clean.c
+
+
+
+
+
+
+ sound/that/that.h
+
+ sound/that/hopes.c
+
+
+
+
+
+/*
+
+ put it to the end of list of head and build
+
+ then it can use the structure of configurations to note configurations everywhere
 
 
  but if we don't have them in code, we set a head of blank to fill it
@@ -77,7 +105,7 @@
 */
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/build/hopes.h" );
+ things/c/that/hopes.h
 
 
 
@@ -97,38 +125,94 @@
 
  maybe someday we will use it
 
+
+
+ some day we use lots of library file to use it across device
+
+ and i need little number to use gnu library
+
+ so i need take it
+
 */
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/data/translate/number_word.h" );
+ things/c/data/translate/number_word.c
 
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/output/print.h" );
 
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/dirent/is.h" );
+/*
 
- 
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/is.h" );
+ some day use it to display
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/get.h" );
+ as we are on tkinter
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/save.h" );
+*/
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/append.h" );
-
-
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/process/deamon.h" );
-
- action_seed_append ( note_file, note_path, "/box/c/Linux/system/commandline/shell.h" );
+ things/c/system/output/print.c
 
 
 
- action_seed_append ( note_file, note_path, "/box/c/Linux/data/secret/secret.h" );
 
 
+
+/*
+
+ in the things we have ways we take
+
+ and ways from library
+
+ maybe use a dirent to put all library way in
+
+*/
+
+ things/c/system/file-system/dirent/is.c
+
+
+ things/c/system/file-system/file/is.c
+
+ things/c/system/file-system/file/get.c
+
+ things/c/system/file-system/file/save.c
+
+ things/c/system/file-system/file/append.c
+
+
+
+
+
+/*
+
+ someway on the system only
+
+ maybe take as alibrary
+
+*/
+
+ things/c/system/process/deamon.c
+
+
+
+
+/*
+
+ this use a file named stdin
+
+ may be we sould rewrite it on something
+
+*/
+
+ things/c/system/commandline/shell.c
+
+
+
+ things/c/data/secret/that.c
+
+ things/c/data/secret/secrets/drop_note.c
+
+ things/c/data/secret/secrets/sum.c
 
 
 
