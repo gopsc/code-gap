@@ -15,19 +15,19 @@ but it's always just meaningful to me..
 
  it's a beginning with this script
 
-     ./seed/box/Linux/seed.sh
+     bash ./seed/box/Linux/seed.sh
 
 
  then it will make a file named '?'
 
 
-     sudo ./?
+     ./?
 
 
  then try again
 
 
-     sudo ./?
+     ./?
 
 
   ok , just like that... :D
