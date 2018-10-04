@@ -28,10 +28,6 @@
  good idea
 
 
- load them after including
-
- as a structure
-
 */
 
  watchdog/about/that/that.h
@@ -93,7 +89,16 @@
 
 
 
+
+
+
 /*
+
+ load them after including
+
+ as a structure
+
+
 
  put it to the end of list of head and build
 
@@ -121,17 +126,33 @@
 
 
 
+
+
+
+
+
 /*
+
+ ways of box
+ 
+ load them first
+ 
+ they could be use everywhere afterthis
+
+
+
+
+
 
  maybe someday we will use it
 
 
 
- some day we use lots of library file to use it across device
+ some day we use lots of library file to use it by acrossing device
 
- and i need little number to use gnu library
+ and i need almost little number to use gnu library
 
- so i need take it
+ so i need to take it
 
 */
 
@@ -162,11 +183,15 @@
 
  in the things we have ways we take
 
- and ways from library
+ and they're from library
 
  maybe use a dirent to put all library way in
 
+
+ far away from things
+ 
 */
+
 
  things/c/system/file-system/dirent/is.c
 
@@ -208,30 +233,6 @@
 
 
 
- things/c/data/secret/that.c
-
- things/c/data/secret/secrets/drop_note.c
-
- things/c/data/secret/secrets/sum.c
-
-
-
-
-
- action_seed_append ( note_file, note_path, "/watchdog/note/save.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/note/clear.h" );
-
-
-
-
-
-
-
-
- action_seed_append ( note_file, note_path, "/watchdog/about/build/put.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/about/build/load.h" );
 
 
 
@@ -239,65 +240,125 @@
 
 /*
 
+ data doing
+ 
+ write myself
+ 
+ 
+ maybe i should get them far away from ways from librarys
+
+*/
+
+ things/c/data/secret/that.c
+
+ things/c/data/secret/secrets/drop_note.c
+
+ things/c/data/secret/secrets/drop_blank.c
+
+ things/c/data/secret/secrets/sum.c
+
+
+
+
+
+
+
+
+
+
+/*
+ 
+ note doing
+ 
+ should be strong could read note balabala...
+ 
+*/
+ 
+ watchdog/note/save.c
+
+ watchdog/note/clear.c
+
+
+
+
+
+
+
+
+/*
+
+put or load about
+
+use some kind of ways load before
+
+so put them here instead of before at first
+
+*/
+
+ watchdog/about/that/put.c
+
+ watchdog/about/that/load.c
+
+
+
+
+
+
+
+
+/*
+
+ get about
+
+
  get them from system
 
 */
 
- action_seed_append ( note_file, note_path, "/watchdog/about/system/name.h" );
+ watchdog/about/system/name.c
 
- action_seed_append ( note_file, note_path, "/watchdog/about/system/build.h" );
-
-
- action_seed_append ( note_file, note_path, "/watchdog/about/ip/build.h" );
+ watchdog/about/system/build.c
 
 
-
- action_seed_append ( note_file, note_path, "/watchdog/about/cpu/rate.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/about/cpu/temperature.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/about/cpu/frequency.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/about/cpu/cores.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/about/cpu/build.h" );
+ watchdog/about/ip/build.c
 
 
 
+ watchdog/about/cpu/rate.c
 
- action_seed_append ( note_file, note_path, "/watchdog/about/memory/build.h" );
+ watchdog/about/cpu/temperature.c
 
-// action_seed_append ( note_file, note_path, "/watchdog/about/disk/build.h" );
+ watchdog/about/cpu/frequency.c
 
- action_seed_append ( note_file, note_path, "/watchdog/about/sound/alsa.h" );
+ watchdog/about/cpu/cores.c
+
+ watchdog/about/cpu/build.c
 
 
 
 
-// action_seed_append ( note_file, note_path, "/watchdog/check/root.h" );
 
- action_seed_append ( note_file, note_path, "/watchdog/check/network.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/check/power.h" );
-
- action_seed_append ( note_file, note_path, "/watchdog/check/update.h" );
+ watchdog/about/memory/build.c
 
 
 
- action_seed_append ( note_file, note_path, "/watchdog/load/hope.h" );
+/*
 
- action_seed_append ( note_file, note_path, "/watchdog/load/symbol.h" );
+ little difficult
 
- action_seed_append ( note_file, note_path, "/watchdog/load/listen.h" );
+*/
 
-
-
- action_seed_append ( note_file, note_path, "/watchdog/show/about.h" );
+# watchdog/about/disk/build.c
 
 
 
+/*
 
- action_seed_append ( note_file, note_path, "/watchdog/dog.h" );
+ maybe get it blank on some system
+
+*/
+
+ watchdog/about/sound/alsa.c
 
 
 
@@ -305,13 +366,87 @@
 
 
 
- action_seed_append ( note_file, note_path, "/sound/ft/show.h" );
 
- action_seed_append ( note_file, note_path, "/sound/ft/dft.h" );
+/*
 
- action_seed_append ( note_file, note_path, "/sound/ft/fft.h" );
+ check things
+ 
+ 
+ 
+ 
+ now it could run with no root
 
- action_seed_append ( note_file, note_path, "/sound/ft/test.h" );
+*/
+
+# watchdog/check/root.c
+
+ watchdog/check/network.c
+
+ watchdog/check/power.c
+
+ watchdog/check/update.c
+
+
+
+
+/*
+
+ load things
+
+*/
+
+ watchdog/load/hope.c
+
+ watchdog/load/symbol.c
+
+ watchdog/load/listen.c
+
+
+
+
+/*
+
+ dog show
+ 
+ 
+ maybe display on display
+
+*/
+
+ watchdog/show/about.c
+
+
+
+
+
+
+ watchdog/dog.c
+
+
+
+
+
+
+
+
+/*
+
+ sound snake calculate
+ 
+ 
+ high level way
+ 
+ put it below
+
+*/
+
+ sound/ft/show.c
+
+ sound/ft/dft.c
+
+ sound/ft/fft.c
+
+ sound/ft/test.c
 
 
 
@@ -322,32 +457,52 @@
 
  add the sound code
 
+
+ make it pure
+ 
+ use alsa outsite
+
 */
+
+
+/*
 
  if  (  strcmp ( that_type, "base" )  ==  0  )
 
 
   {
 
+*/
 
- action_seed_append ( note_file, note_path, "/sound/corde/blank.h" );
 
+
+ sound/corde/blank.c
+
+
+/*
 
   }
 
+*/
 
 
 
+/*
 
  else if  (  strcmp ( that_type, "alsa" )  ==  0  )
 
 
   {
 
- action_seed_append ( note_file, note_path, "/sound/corde/alsa.h" );
+*/
 
+ sound/corde/alsa.c
+
+/*
 
   }
+
+*/
 
 
 
@@ -364,17 +519,37 @@
 
   like rain, shine ...
 
+
+
+ use other ways to update
+ 
+ client send word next
+ 
 */
 
- action_seed_append ( note_file, note_path, "/network/message/data/update/build.h" );
+ network/message/data/update/build.c
 
- action_seed_append ( note_file, note_path, "/network/message/data/update/backup.h" );
+ network/message/data/update/backup.c
 
- action_seed_append ( note_file, note_path, "/network/message/data/update/append.h" );
+ network/message/data/update/append.c
 
- action_seed_append ( note_file, note_path, "/network/message/data/update/next.h" );
+ network/message/data/update/next.c
 
- action_seed_append ( note_file, note_path, "/network/message/data/update/load.h" );
+ network/message/data/update/load.c
+
+
+/*
+
+ appending data to the message
+
+
+ why put it below
+
+*/
+
+ network/message/data/build.c
+
+
 
 
 
@@ -385,7 +560,24 @@
  Append the action codes
  it's instatic
 
+
+
+
+
+ use a place of dirent to do it
+
 */
+
+ network/message/action
+ 
+ 
+ 
+ 
+
+
+
+
+/*
 
  strcpy ( note_dirent, note_path );
 
@@ -454,9 +646,10 @@
 
 
 
-
-
  closedir ( pointer_dirent );
+
+*/
+
 
 
 
@@ -475,28 +668,20 @@
 */
 
 
- action_seed_append ( note_file, note_path, "/network/message/judge/blank.h" );
+ network/message/judge/blank.c
 
- action_seed_append ( note_file, note_path, "/network/message/judge/hello.h" );
+ network/message/judge/hello.c
 
- action_seed_append ( note_file, note_path, "/network/message/judge/who.h" );
+ network/message/judge/who.c
 
- action_seed_append ( note_file, note_path, "/network/message/judge/information.h" );
+ network/message/judge/information.c
 
- action_seed_append ( note_file, note_path, "/network/message/judge/command.h" );
-
-
+ network/message/judge/command.c
 
 
 
 
-/*
 
- appending data to the message
-
-*/
-
- action_seed_append ( note_file, note_path, "/network/message/data/build.h" );
 
 
 
@@ -508,7 +693,8 @@
 
 */
 
- action_seed_append ( note_file, note_path, "/network/message/build.h" );
+ 
+ network/message/that.c
 
 
 
@@ -518,11 +704,14 @@
 
  the translate system of network
 
+
+ connect things
+ 
 */
 
- action_seed_append ( note_file, note_path, "/network/tcp/connectted.h" );
+ network/tcp/connectted.c
 
- action_seed_append ( note_file, note_path, "/network/tcp/connector.h" );
+ network/tcp/connector.c
 
 
 
@@ -535,6 +724,6 @@
 
 */
 
- action_seed_append(  note_file, note_path, "/build.c" );
+ thing/c/code/that.c
 
 
