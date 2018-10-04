@@ -44,6 +44,9 @@ int translate_number_word (
 
  could set it first
 
+
+ should not change value of the number
+ 
 */
 
 
