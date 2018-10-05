@@ -150,7 +150,7 @@
 
  some day we use lots of library file to use it by acrossing device
 
- and i need almost little number to use gnu library
+ and i need almost little number to use with gnu library
 
  so i need to take it
 
@@ -249,15 +249,13 @@
 
 */
 
- things/c/data/secret/that.c
-
  things/c/data/secret/secrets/drop_note.c
 
  things/c/data/secret/secrets/drop_blank.c
 
  things/c/data/secret/secrets/sum.c
 
-
+ things/c/data/secret/that.c
 
 
 
@@ -348,8 +346,11 @@ so put them here instead of before at first
 
 */
 
-# watchdog/about/disk/build.c
+/*
 
+ watchdog/about/disk/build.c
+
+*/
 
 
 /*
@@ -378,7 +379,11 @@ so put them here instead of before at first
 
 */
 
-# watchdog/check/root.c
+/*
+
+ watchdog/check/root.c
+
+*/
 
  watchdog/check/network.c
 
@@ -494,11 +499,9 @@ so put them here instead of before at first
 
   {
 
-*/
 
  sound/corde/alsa.c
 
-/*
 
   }
 
@@ -558,7 +561,7 @@ so put them here instead of before at first
 /*
 
  Append the action codes
- it's instatic
+ it isn't static
 
 
 
