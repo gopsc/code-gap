@@ -40,7 +40,7 @@ int action_python(
 
         strcat(buffer_command, name_the);
 
-        strcat(buffer_command, "/box/python/");
+        strcat(buffer_command, "/things/python/");
 
         strcat(buffer_command, strstr(that_command, "Python ") + 7);}
 
