@@ -38,6 +38,7 @@
 
 
 
+
  int action_seed (
 
                  )
@@ -47,11 +48,8 @@
 
 
 
-
-
-
-
 /*
+
 
  it is so long to make path every file
 
@@ -63,19 +61,45 @@
 
 
 
+ now we make path by list of seed
 
 
 
+
+
+
+ it is to save name of result
+
+*/
+
+
+ char * note_result [ 64 ]
+
+
+ strcpy ( note_result, gop_hope . path_the );
+
+ strcat ( note_result, "/flower.c" );
+
+
+
+
+
+
+
+
+/*
 
  this to save the name of the code
 
 */
 
 
-/*
+
 
  char  note_name [ 128 ];
 
+
+/*
 
  strcpy ( note_name, that_path );
 
@@ -90,9 +114,33 @@
 
 
 
+
+
 /*
 
- this is not easy, maybe the file is too long
+ this is for dirent read
+
+*/
+
+
+ DIR * pointer_dirent;
+
+
+ struct  dirent *  ent
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ this isn't easy, maybe the file is too long
 
  we can't read it
 
@@ -103,7 +151,10 @@
 
  char * note_words;
 
- note_words  =  malloc (   (  file_length ( that_target ) + 1  )   *   sizeof ( char );
+ note_words  =  malloc (
+                         (  file_length ( that_target ) + 1  )
+                                                                *   sizeof ( char )
+                       );
 
  free ( note_words );
 
@@ -111,6 +162,197 @@
 
 
  char note_words [ 102400 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ they are for read lines
+
+
+
+ when read, we search from a started place and named next place
+
+ and read this file name and let it be a started place
+
+*/
+
+
+
+ char note_seed [ 102400 ];
+
+
+ char * pointer_line = note_seed;
+
+ char * pointer_next;
+
+
+
+
+
+
+
+/*
+
+ ready to read seed list
+
+*/
+
+
+ strcpy ( note_name, gop_hope . path_the );
+
+ strcat ( note_name, gop_hope . name_the );
+
+ strcat ( note_name, "/seed" );
+
+
+
+
+
+
+
+ file_get ( note_name, note_seed );
+
+
+
+
+
+
+
+/*
+
+ drop note and blank
+
+
+*/
+
+
+ secret ( note_seed, "drop note" );
+
+ secret ( note_seed, "drop blank" );
+
+
+
+
+
+
+
+
+
+/*
+
+ start
+
+ read it first
+
+
+
+ make it isn't null
+
+ doesn't need
+
+ start read
+
+*/
+
+
+ do
+
+  {
+
+
+
+/*
+
+ it could be null if it read to the last line
+
+*/
+
+
+ pointer_next = strchr ( pointer_line, '\n' );
+
+
+
+
+
+
+
+
+
+/*
+
+ get name
+
+*/
+
+
+ if ( pointer_next != NULL )
+
+  {
+
+ * pointer_next = '\0';
+
+  }
+
+
+
+
+
+
+
+
+
+
+ strcpy ( note_name, pointer_line );
+
+
+
+
+
+
+
+
+
+
+ if ( pointer_next != NULL )
+
+  {
+
+/*
+
+ return it
+
+*/
+
+ * pointer_next = '\n'
+
+
+
+/*
+
+ get a step
+
+*/
+
+ pointer_line = pointer_next;
+
+  }
+
+
 
 
 
@@ -130,14 +372,17 @@
 */
 
 
- if (  ! is_file ( note_name )  )
+ if (
+          ! is_file   ( note_name )
+      &&  ! is_dirent ( note_name )
+    )
 
 
   {
 
 
 
- output_print ( "string", "This file we can't find it:   " );
+ output_print ( "string", "can't find it:  " );
 
  output_print ( "string", note_name );
 
@@ -145,7 +390,7 @@
 
 
 
- return 0;
+ return -1;
 
 
   }
@@ -167,13 +412,12 @@
 */
 
 
- else
 
+ else if (
+           is_file ( note_name )
+         )
 
   {
-
-
-
 
 
 
@@ -186,9 +430,16 @@
 
  append once to finish it
 
+
+
+
+ it isn't so beautiful actually
+
 */
 
 
+
+/*
 
  strcpy ( note_words, "\n//" );
 
@@ -201,7 +452,7 @@
 
  strcat ( note_words,  note_name );
 
-
+*/
 
 
 
@@ -217,6 +468,8 @@
 
 */
 
+
+/*
 
  if  (  63  >  ( int ) strlen ( note_name )  )
 
@@ -242,6 +495,7 @@
 
 
 
+
  strcat ( note_words, "=" );
 
 
@@ -254,7 +508,7 @@
   }
 
 
-
+*/
 
 
 
@@ -266,14 +520,18 @@
 
 */
 
+/*
 
  strcat ( note_words, "\n" );
 
 
 
+ strcpy ( note_words, "\n\n" );
+
+
  file_append ( note_name, note_words );
 
-
+*/
 
 
 
@@ -304,7 +562,7 @@
 */
 
 
- file_append ( that_result, note_words );
+ file_append ( note_result, note_words );
 
 
 
@@ -312,7 +570,149 @@
 
 
 
- return 1;
+
+
+
+/*
+
+ it is for judging of file and dirent
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+ else if (
+           is_dirent ( note_name )
+         )
+
+  {
+
+
+
+/*
+
+ open and start to read
+
+*/
+
+
+ note_dirent = opendir ( note_name );
+
+
+
+
+
+
+
+ do
+
+  {
+
+
+
+
+
+/*
+
+ read
+
+*/
+
+
+ ent = readdir ( note_dirent );
+
+
+
+
+/*
+
+ save
+
+*/
+
+ if (
+
+         ent != NULL
+      && ent -> d_type == 8
+
+    )
+
+  {
+
+
+ strcpy ( note_name_sub, note_name );
+
+ strcat ( note_name_sub, ent -> d_name );
+
+
+ file_get ( note_name_sub, note_words );
+
+ file_append ( note_result, note_words );
+
+  }
+
+
+
+
+  }  while ( ent != NULL )
+
+
+
+
+
+
+/*
+
+ close dirent
+
+*/
+
+ closedir ( note_dirent );
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ this is for range of seed list reading
+
+*/
+
+  }  while ( pointer_next != NULL )
+
+
+
+
+
+
+/*
+
+ here
+
+*/
+
+
+ return 0;
 
 
 
@@ -342,11 +742,28 @@
 
 
 
+
+
+
+
+
+
+
+/*
+
+ the old
+
+*/
+
+
+/*
+
  int action_seed  (  const char * that_type  )
 
 
   {
 
+*/
 
 
 
@@ -364,6 +781,8 @@
 */
 
 
+/*
+
  char  note_path [ 128 ];
 
 
@@ -376,7 +795,7 @@
 
  strcat ( note_path,  gop_hopes . name_the  );
 
-
+*/
 
 
 
@@ -391,6 +810,8 @@
 */
 
 
+/*
+
  char note_file [ 128 ];
 
 
@@ -403,7 +824,7 @@
 
  strcat ( note_file, "/flower.c" );
 
-
+*/
 
 
 
@@ -420,18 +841,22 @@
 */
 
 
+/*
+
  char note_dirent [ 128 ];
 
  char note_name_action [ 128 ];
 
+*/
 
 
+/*
 
  DIR * pointer_dirent;
 
  struct  dirent *  ent;
 
-
+*/
 
 
 
@@ -452,9 +877,11 @@
 */
 
 
+/*
+
  file_save ( note_file,  "" );
 
-
+*/
 
 
 
@@ -466,5 +893,11 @@
 
 */
 
+
+
+
+/*
+
  return 1;}
 
+*/

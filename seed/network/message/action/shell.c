@@ -29,11 +29,11 @@
 
  strcpy ( buffer_command, "bash " );
 
- strcat ( buffer_command, path_the );
+ strcat ( buffer_command, gop_hope . path_the );
 
  strcat ( buffer_command, "/" );
 
- strcat ( buffer_command, name_the );
+ strcat ( buffer_command, gop_hope . name_the );
 
  strcat ( buffer_command, "/things/shell/" );
 

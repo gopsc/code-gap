@@ -20,7 +20,7 @@
 
 
 
-struct gopi_hopes
+ struct gopi_hopes
 
 
   {
@@ -75,5 +75,5 @@ struct gopi_hopes
 
 
 
- } gop_hopes;
+ } gop_hope;
 

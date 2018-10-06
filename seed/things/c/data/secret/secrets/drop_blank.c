@@ -2,11 +2,8 @@
 
 
 
-/*
+// doing with message
 
-doing with message
-
-*/
 
 
  int secret_drop_blank (
@@ -16,17 +13,19 @@ doing with message
   {
 
 
-/*
 
- clean words
 
-*/
+// clean words
+
+
 
 
 
 
 
  char *  note_message  =   strstr ( that_message, "\n\n" );
+
+
 
 
 
@@ -39,6 +38,48 @@ doing with message
  note_message = strstr ( that_message, "\n\n" );
 
   }
+
+
+
+
+
+
+
+
+
+
+
+// clean blank type at last
+
+
+
+
+ if (
+      * that_message [ strlen ( that_message ) ] == '\n'
+    )
+
+
+
+  {
+
+ * that_message [ strlen ( that_message ) ] = '\0';
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// here
+
 
 
  return 0;
