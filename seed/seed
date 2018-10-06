@@ -1,19 +1,19 @@
 
 
 
-/*
 
- list if files
 
- we could auto got this from it soon
+# list if files
 
-*/
+# we could auto got this from it soon
+
+
 
 
 
  things/c/that/Linux.h
 
- things/c/that/flags.h
+ things/c/that/flags.c
 
 
 
@@ -21,38 +21,38 @@
 
 
 
-/*
-
- get them form a convent, maybe from network
-
- good idea
 
 
-*/
+# get that form a convent, maybe from network
 
- watchdog/about/that/that.h
+# good idea
 
 
 
 
-/*
-
- take it where they belong
-
-*/
-
- watchdog/about/that/hopes.c
+ watchdog/about/that/that.c
 
 
 
 
-/*
 
- things to clean it
 
- be easier to read
+# take it where they belong
 
-*/
+
+
+ watchdog/about/that/hope.c
+
+
+
+
+
+
+# things to clean it
+
+# be easier to read
+
+
 
  watchdog/about/that/clean.c
 
@@ -62,15 +62,15 @@
 
 
 
-/*
 
- dog will use
 
-*/
+# dog will use
 
- network/that/that.h
+
+
+ network/that/that.c
  
- network/that/hopes.c
+ network/that/hope.c
 
  network/that/check.c
 
@@ -81,38 +81,36 @@
 
 
 
- sound/that/that.h
+ sound/that/that.c
 
- sound/that/hopes.c
-
-
+ sound/that/hope.c
 
 
 
 
 
 
-/*
-
- load them after including
-
- as a structure
 
 
 
- put it to the end of list of head and build
 
- then it can use the structure of configurations to note configurations everywhere
+# load them after including
 
-
- but if we don't have them in code, we set a head of blank to fill it
-
-*/
+# as a structure
 
 
- things/c/that/hopes.h
+
+# put it to the end of list of head and build
+
+# then it can use the structure of configurations to note configurations everywhere
 
 
+# but if we don't have anyone in code, we set a head of blank to fill it
+
+
+
+
+ things/c/that/hope.h
 
 
 
@@ -131,30 +129,32 @@
 
 
 
-/*
 
- ways of box
+
+
+
+# ways of box
  
- load them first
+# load them first
  
- they could be use everywhere afterthis
+# they could be use everywhere afterthis
 
 
 
 
 
 
- maybe someday we will use it
+# maybe someday we will use it
 
 
 
- some day we use lots of library file to use it by acrossing device
+# some day we use lots of library file to use it by acrossing device
 
- and i need almost little number to use with gnu library
+# and i need almost little number to use with gnu library
 
- so i need to take it
+# so i need to take it
 
-*/
+
 
 
  things/c/data/translate/number_word.c
@@ -164,13 +164,13 @@
 
 
 
-/*
 
- some day use it to display
 
- as we are on tkinter
+# some day use it to display
 
-*/
+# as we are on tkinter
+
+
 
  things/c/system/output/print.c
 
@@ -179,18 +179,18 @@
 
 
 
-/*
-
- in the things we have ways we take
-
- and they're from library
-
- maybe use a dirent to put all library way in
 
 
- far away from things
+# in the things we have ways we take
+
+# and they're from library
+
+# maybe use a dirent to put all library way in
+
+
+# far away from things
  
-*/
+
 
 
  things/c/system/file-system/dirent/is.c
@@ -208,26 +208,26 @@
 
 
 
-/*
 
- someway on the system only
 
- maybe take as alibrary
+# someway on the system only
 
-*/
+# maybe take as alibrary
+
+
 
  things/c/system/process/deamon.c
 
 
 
 
-/*
 
- this use a file named stdin
 
- may be we sould rewrite it on something
+# this use a file named stdin
 
-*/
+# may be we sould rewrite it on something
+
+
 
  things/c/system/commandline/shell.c
 
@@ -238,16 +238,16 @@
 
 
 
-/*
 
- data doing
- 
- write myself
- 
- 
- maybe i should get them far away from ways from librarys
 
-*/
+# data doing
+ 
+# write myself
+ 
+ 
+# maybe i should get them far away from ways from librarys
+
+
 
  things/c/data/secret/secrets/drop_note.c
 
@@ -264,13 +264,13 @@
 
 
 
-/*
+
  
- note doing
+# note doing
  
- should be strong could read note balabala...
+# should be strong could read note balabala...
  
-*/
+
  
  watchdog/note/save.c
 
@@ -283,15 +283,15 @@
 
 
 
-/*
 
-put or load about
 
-use some kind of ways load before
+# put or load about
 
-so put them here instead of before at first
+# use some kind of ways load before
 
-*/
+# so put them here instead of before at first
+
+
 
  watchdog/about/that/put.c
 
@@ -304,14 +304,14 @@ so put them here instead of before at first
 
 
 
-/*
-
- get about
 
 
- get them from system
+# get about
 
-*/
+
+# get them from system
+
+
 
  watchdog/about/system/name.c
 
@@ -340,24 +340,20 @@ so put them here instead of before at first
 
 
 
-/*
-
- little difficult
-
-*/
-
-/*
-
- watchdog/about/disk/build.c
-
-*/
 
 
-/*
+# little difficult
 
- maybe get it blank on some system
 
-*/
+# watchdog/about/disk/build.c
+
+
+
+
+
+
+# maybe get it blank on some system
+
 
  watchdog/about/sound/alsa.c
 
@@ -368,22 +364,22 @@ so put them here instead of before at first
 
 
 
-/*
 
- check things
+
+# check things
  
  
  
  
- now it could run with no root
+# now it could run with no root
 
-*/
 
-/*
 
- watchdog/check/root.c
 
-*/
+
+# watchdog/check/root.c
+
+
 
  watchdog/check/network.c
 
@@ -394,11 +390,10 @@ so put them here instead of before at first
 
 
 
-/*
 
- load things
 
-*/
+# load things
+
 
  watchdog/load/hope.c
 
@@ -409,14 +404,13 @@ so put them here instead of before at first
 
 
 
-/*
 
- dog show
+
+# dog show
  
  
- maybe display on display
+# maybe display on display
 
-*/
 
  watchdog/show/about.c
 
@@ -434,16 +428,16 @@ so put them here instead of before at first
 
 
 
-/*
 
- sound snake calculate
- 
- 
- high level way
- 
- put it below
 
-*/
+# sound snake calculate
+ 
+ 
+# high level way
+ 
+# put it below
+
+
 
  sound/ft/show.c
 
@@ -458,54 +452,35 @@ so put them here instead of before at first
 
 
 
-/*
-
- add the sound code
 
 
- make it pure
+# add the sound code
+
+
+# make it pure
  
- use alsa outsite
-
-*/
+# use alsa outsite
 
 
-/*
-
- if  (  strcmp ( that_type, "base" )  ==  0  )
 
 
-  {
 
-*/
+
+# if  (  strcmp ( that_type, "base" )  ==  0  )
+
+
+#  {
+
+
 
 
 
  sound/corde/blank.c
 
 
-/*
-
-  }
-
-*/
 
 
-
-/*
-
- else if  (  strcmp ( that_type, "alsa" )  ==  0  )
-
-
-  {
-
-
- sound/corde/alsa.c
-
-
-  }
-
-*/
+#  }
 
 
 
@@ -513,22 +488,41 @@ so put them here instead of before at first
 
 
 
-/*
-
- The data code
-  is for send some data
-  in the network connection
+# else if  (  strcmp ( that_type, "alsa" )  ==  0  )
 
 
-  like rain, shine ...
+#  {
+
+
+# sound/corde/alsa.c
 
 
 
- use other ways to update
+
+
+
+
+
+
+
+
+
+
+
+# The data code
+#  is for send some data
+#  in the network connection
+
+
+#  like rain, shine ...
+
+
+
+# use other ways to update
  
- client send word next
+# client send word next
  
-*/
+
 
  network/message/data/update/build.c
 
@@ -541,35 +535,34 @@ so put them here instead of before at first
  network/message/data/update/load.c
 
 
-/*
-
- appending data to the message
 
 
- why put it below
+# appending data to the message
 
-*/
 
- network/message/data/build.c
+# why put it below
 
+
+ network/message/data/that.c
 
 
 
 
 
 
-/*
-
- Append the action codes
- it isn't static
 
 
 
+# Append the action codes
+# it isn't static
 
 
- use a place of dirent to do it
 
-*/
+
+
+# use a place of dirent to do it
+
+
 
  network/message/action
  
@@ -580,78 +573,76 @@ so put them here instead of before at first
 
 
 
-/*
-
- strcpy ( note_dirent, note_path );
-
- strcat ( note_dirent, "/network/message/action" );
 
 
+# strcpy ( note_dirent, note_path );
 
- pointer_dirent  =  opendir ( note_dirent );
+# strcat ( note_dirent, "/network/message/action" );
 
 
+
+# pointer_dirent  =  opendir ( note_dirent );
 
 
 
 
- do
 
 
-  {
+# do
 
 
-
-
- ent  =  readdir ( pointer_dirent );
+#  {
 
 
 
 
- if  (  ent != NULL  &&  ent -> d_type == 8  )
-
-
-  {
-
-
-
- strcpy (
-
-          note_file_action,
-
-          strstr ( note_dirent,  gop_configurations . name_the ) + strlen ( gop_configurations . name_the )
-
-        );
-
-
- strcat ( note_file_action, "/" );
-
- strcat ( note_file_action, ent->d_name );
+# ent  =  readdir ( pointer_dirent );
 
 
 
 
- action_seed_append (
-                      note_file,
-                      note_path,
-                      note_file_action
+# if  (  ent != NULL  &&  ent -> d_type == 8  )
 
-                    );
+
+#  {
 
 
 
+# strcpy (
 
-  }
+#          note_file_action,
+
+#          strstr ( note_dirent,  gop_configurations . name_the ) + strlen ( gop_configurations . name_the )
+
+#        );
 
 
-  } while ( ent != NULL );
+# strcat ( note_file_action, "/" );
+
+# strcat ( note_file_action, ent->d_name );
 
 
 
 
- closedir ( pointer_dirent );
+# action_seed_append (
+#                      note_file,
+#                      note_path,
+#                      note_file_action
 
-*/
+#                    );
+
+
+
+
+#  }
+
+
+#  } while ( ent != NULL );
+
+
+
+
+# closedir ( pointer_dirent );
 
 
 
@@ -661,14 +652,16 @@ so put them here instead of before at first
 
 
 
-/*
 
- the module of judge
- means to take the words get on network
 
- the plan is using the trees system
 
-*/
+
+# the module of judge
+# means to take the words get on network
+
+# the plan is using the trees system
+
+
 
 
  network/message/judge/blank.c
@@ -690,11 +683,11 @@ so put them here instead of before at first
 
 
 
-/*
 
- build the network message system
 
-*/
+# build the network message system
+
+
 
  
  network/message/that.c
@@ -703,14 +696,14 @@ so put them here instead of before at first
 
 
 
-/*
-
- the translate system of network
 
 
- connect things
+# the translate system of network
+
+
+# connect things
  
-*/
+
 
  network/tcp/connectted.c
 
@@ -721,11 +714,11 @@ so put them here instead of before at first
 
 
 
-/*
 
- build the
 
-*/
+# build the
+
+
 
  thing/c/code/that.c
 

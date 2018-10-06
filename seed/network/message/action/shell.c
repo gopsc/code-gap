@@ -4,16 +4,16 @@
 
  int action_shell (
 
-                    char* that_command
+                    char * that_command
 
                   )
-                  
+
   {
 
 
 
 
- char buffer_command [ 65 ];
+ char buffer_command [ 64 ];
 
 
 
@@ -21,7 +21,7 @@
  if  (
        strstr ( that_command, "Shell " )  !=  NULL
      )
- 
+
   {
 
 
@@ -41,10 +41,13 @@
           buffer_command,
           strstr ( that_command, "Shell " ) + 6
         );
- 
- 
- 
+
+
+
   }
+
+
+
 
 
 /*
@@ -52,12 +55,33 @@
  mabe i should use command get
 
 */
-   
+
+
+ if (
+      0 != strcmp ( buffer_command, "" )
+    )
+
+
+  {
+
+
  system ( buffer_command );
 
 
+ return 0;
 
- return 1;
- 
- 
-   }
+
+  }
+
+
+
+
+
+ else
+
+
+  {
+
+ return -1;
+
+  }

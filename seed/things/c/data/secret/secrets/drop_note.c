@@ -103,7 +103,7 @@
 
 */
 
- char note_flag [ 1 ] [ 1 ] [ 4 ];
+ char note_flag [ 2 ] [ 1 ] [ 4 ];
 
 
  strcpy ( note_flag [ 0 ] [ 0 ], "/" );
@@ -111,18 +111,18 @@
 
  strcpy ( note_flag [ 0 ] [ 1 ], "\n" );
 
-/*
+
 
  strcpy ( note_flag [ 1 ] [ 0 ], "#"  );
  strcpy ( note_flag [ 1 ] [ 1 ], "\n" );
 
-*/
 
- strcpy ( note_flag [ 1 ] [ 0 ], "/" );
- strcat ( note_flag [ 1 ] [ 0 ], "*" );
 
- strcpy ( note_flag [ 1 ] [ 1 ], "*" );
- strcat ( note_flag [ 1 ] [ 1 ], "/" )
+ strcpy ( note_flag [ 2 ] [ 0 ], "/" );
+ strcat ( note_flag [ 2 ] [ 0 ], "*" );
+
+ strcpy ( note_flag [ 2 ] [ 1 ], "*" );
+ strcat ( note_flag [ 2 ] [ 1 ], "/" )
 
 
 
@@ -141,7 +141,7 @@
 
  int i = 0;
 
- for (  i = 0;  i < 2;  i ++  )
+ for (  i = 0;  i < 3;  i ++  )
 
   {
 
@@ -289,6 +289,9 @@
 
  this is to find if it is in note
 
+
+ this could be done at first
+
 */
 
 
@@ -379,6 +382,14 @@
 */
 
 
+
+
+
+/*
+
+ this is for if
+
+*/
 
   }
 

@@ -1,0 +1,157 @@
+
+
+
+
+
+
+# wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
+
+# tar   -xjf   alsa-lib-1.1.5.tar.bz2
+
+
+# gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   /opt/?
+
+
+
+
+
+
+
+
+
+# where they were
+
+
+
+ name    seed
+
+ data    trees
+
+ backup  river
+
+
+
+
+
+
+
+
+
+# hopes
+
+
+
+ main        on
+
+ dog         on
+ show        off
+
+ connector   on
+ connectted  on
+
+
+
+
+
+
+
+# plugin by connecttted
+
+# maybe use at some future
+
+
+# could be use on sound with serial
+
+
+ sound       off
+ sound-show  off
+ sound-save  off
+
+
+
+
+
+
+
+
+
+# wirely connector maybe use in dream
+
+# or just use in sound maybe
+
+
+
+# serial plug
+ 
+
+
+
+
+
+
+
+
+# sometimes it neeed a serial inside
+
+
+
+
+# serial tty4
+
+
+
+
+
+
+
+
+
+# maybe other kind of net
+
+
+
+
+
+
+# tcp    0 connecter 0 connectted
+# udp    0 connecter 0 connectted
+# spi    master
+# iic    master
+
+
+
+
+
+
+
+
+
+ address-to    192.168.4.3
+
+ port-to       520
+ port-this     520
+
+
+ connect-step  0.1
+
+
+ update-size   1024
+ update-step   1
+
+
+
+
+
+
+
+
+
+# maybe use in listenning outside
+
+
+
+ sound-rate      44100
+ sound-channels  1
+
+ ft-N            512
+
