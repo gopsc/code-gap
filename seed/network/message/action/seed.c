@@ -12,9 +12,9 @@
 
 
  forget it we use seed list now
- 
+
   function of seed do this
- 
+
 */
 
 
@@ -23,7 +23,7 @@
 /*
 
  int action_seed_append (
- 
+
                            const char * that_result,
 
                            const char * that_path,
@@ -38,13 +38,24 @@
 
 
 
+ int action_seed (
+
+                 )
+
+  {
+
+
+
+
+
+
 
 
 /*
 
  it is so long to make path every file
 
- use this to make path here 
+ use this to make path here
 
 
  and maybe use pointer

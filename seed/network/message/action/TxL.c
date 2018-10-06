@@ -100,7 +100,7 @@
 
  strcat ( buffer_commandline, name_the );
 
- strcat ( buffer_commandline, "/box/c/Linux/code/deamon.c" );
+ strcat ( buffer_commandline, "things/c/code/deamon.c" );
 
  strcat ( buffer_commandline, " -o" );
 
