@@ -16,38 +16,107 @@
 
   {
 
-  
-  
-  
-  
+
+
+
+
  /*
- 
+
   could use iic, serial and more
-  
+
  */
+
+
+
+
+
+
 
  /*
 
  char * type;
 
  */
-  
-  
-  
+
+
+
+
+
+
+/*
+
+ it is say what type it runs
+
+*/
+
  char how [ 4 ] [ 16 ];
+
+
+
+
+
+
+/*
+
+ if too long it could be stack
+
+*/
 
  time_t  time [ 5 ];
 
+
+
+
+
+/*
+
+ stop it if it stack
+
+ one for connector one for connectted
+
+
+ descriptor is for socket
+
+ connection is for connection
+
+*/
 
  int descriptor [ 2 ];
 
  int connection [ 5 ];
 
 
+
+
+
+
+
+
+
+/*
+
+ this is to save address and port
+
+ one for conncetor to bind
+
+ one for connectted to connect
+
+*/
+
  char address_ip [ 4 ] [ 128 ];
 
  int port [ 2 ];
 
+
+
+
+
+
+/*
+
+ save command here
+
+*/
 
  char command [ 4 ] [ 128 ];
 
@@ -58,9 +127,15 @@
 
 
 
+/*
 
+ save update here
+
+
+*/
 
  char update [ 4 ] [ 10240 ];
+
 
 
 
@@ -102,7 +177,7 @@
 
 /*
 
- char video [ 4 ] [ 102400 ]; 
+ char video [ 4 ] [ 102400 ];
  char audio [ 4 ] [ 102400 ];
 
 */
@@ -153,8 +228,11 @@
 
 */
 
-// * gopi_about  about [ 4 ];
+/*
 
+ * gopi_about  about [ 4 ];
+
+*/
 
 
 

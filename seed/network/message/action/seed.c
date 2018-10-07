@@ -140,6 +140,10 @@
 
 /*
 
+ it is to save words we will save
+
+
+
  this isn't easy, maybe the file is too long
 
  we can't read it
@@ -345,6 +349,11 @@
 /*
 
  get a step
+
+
+ if it is the last one of file
+
+ don't read it again
 
 */
 
@@ -640,27 +649,76 @@
 */
 
  if (
-
          ent != NULL
-      && ent -> d_type == 8
+    )
+
+  {
+
+
+
+ if (
+
+      ent -> d_type == 8
 
     )
 
   {
 
 
+
+/*
+
+ get file name
+
+*/
+
  strcpy ( note_name_sub, note_name );
+
+ strcat ( note_name_sub, "/"  );
 
  strcat ( note_name_sub, ent -> d_name );
 
 
+
+
+/*
+
+ get file
+
+*/
+
  file_get ( note_name_sub, note_words );
+
+
+
+
+/*
+
+ save file
+
+*/
+
+ file_append ( note_result, "\n\n" );
 
  file_append ( note_result, note_words );
 
   }
 
 
+  }
+
+
+
+
+
+
+
+
+/*
+
+ stop dirent reading
+
+*/
 
 
   }  while ( ent != NULL )

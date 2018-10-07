@@ -5,7 +5,7 @@
 
  maybe we should bring the struct to the function
 
- but it one network there
+ but it is one network there
 
  and maybe not
 
@@ -13,15 +13,18 @@
 
 
 
-int clean_connection (
-
-//                         struct gop_network that_network,
-
+ int clean_connection (
+/*
+                         struct gop_network that_network,
+*/
                                int          that_site,
 
                          const char *       that_type
 
-                     ) {
+                      )
+
+
+  {
 
 
 
@@ -34,18 +37,27 @@ int clean_connection (
 
 
 
+/*
 
-// sometimes we forget this connection, we restet it all
+ sometimes we forget this connection, we restet it all
 
-    if (  strcmp ( that_type, "all" ) == 0  ) {
+*/
+
+ if (
+      strcmp ( that_type, "all" ) == 0
+    )
+
+  {
 
 
-        strcpy ( gop_connection . how        [ that_site ],  "Wait" );
+ strcpy ( gop_connection . how        [ that_site ],  "Wait" );
 
-        strcpy ( gop_connection . command    [ that_site ],  ""     );
+ strcpy ( gop_connection . command    [ that_site ],  ""     );
 
-        strcpy ( gop_connection . audio      [ that_site ],  ""     );
-        strcpy ( gop_connection . video      [ that_site ],  ""     );
+
+ strcpy ( gop_connection . audio      [ that_site ],  ""     );
+
+ strcpy ( gop_connection . video      [ that_site ],  ""     );
 
 
 
@@ -57,12 +69,16 @@ int clean_connection (
 
 */
 
-        clean_connection ( that_site, "update" );
+ clean_connection ( that_site, "update" );
 
 /*
-        strcpy ( gop_connection . update      [ that_site ],  ""    );
-                 gop_connection . step_update [ that_site ]   = 0;
-                 gop_connection . flag_update [ that_site ]   = 0;
+
+ strcpy ( gop_connection . update      [ that_site ],  ""    );
+
+          gop_connection . step_update [ that_site ]   = 0;
+
+          gop_connection . flag_update [ that_site ]   = 0;
+
 */
 
 
@@ -79,142 +95,189 @@ int clean_connection (
 
 */
 
-        if (  that_site != 0  ) {
+ if (  that_site != 0  )
 
-            strcpy ( gop_connection . address_ip [ that_site ],  ""    );
-
-                     gop_connection . port       [ that_site ] = 0      ;}
+  {
 
 
+ strcpy ( gop_connection . address_ip [ that_site ],  ""    );
+
+          gop_connection . port       [ that_site ] = 0      ;
 
 
-
-
-
-// now return it
-
-        return 1;}
+  }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    else if (  strcmp ( that_type, "sopi" ) == 0  ) {
-
-
-// the clean for sopi changing
-
-
-        strcpy ( gop_connection . command [ that_site ],  "" );
-
-
-
-// it is coming,,
 
 /*
-        strcpy ( gop_connection . audio [ that_site ],  "" );
-        strcpy ( gop_connection . video [ that_site ],  "" );
+
+ now return it
+
+*/
+
+
+
+ return 0;
+
+
+
+
+
+
+/*
+
+ it is for if
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ else if (  strcmp ( that_type, "sopi" ) == 0  ) {
+
+
+/*
+
+ the clean for sopi changing
+
+*/
+
+ strcpy ( gop_connection . command [ that_site ],  "" );
+
+
+
+
+/*
+
+ it is coming,,
+
+*/
+
+/*
+
+ strcpy ( gop_connection . audio [ that_site ],  "" );
+ strcpy ( gop_connection . video [ that_site ],  "" );
+
+*/
+
+
+
+/*
+
+ the update end
+
+*/
+
+ clean_connection ( that_site, "update" );
+
+/*
+
+ strcpy ( gop_connection . update      [ that_site ],  "" );
+          gop_connection . step_update [ that_site ] = 0   ;
+          gop_connection . flag_update [ that_site ] = 0   ;
 */
 
 
 
 
-// the update end
-
-        clean_connection ( that_site, "update" );
 
 /*
-        strcpy ( gop_connection . update      [ that_site ],  "" );
-                 gop_connection . step_update [ that_site ] = 0   ;
-                 gop_connection . flag_update [ that_site ] = 0   ;
+
+ get sopi
+
+ fresh that
+
+*/
+
+ if      (
+           strcmp (  gop_connection . how [ that_site ],  "Connectted" )  ==  0
+         )
+
+  {
+
+ strcpy ( gop_connection . how [ that_site ], "Sop" );
+
+ return 0;
+
+  }
+
+
+
+
+ else if  (
+            strcmp  (  gop_connection . how [ that_site ],  "Sop"  )  ==  0
+          )
+
+  {
+
+ strcpy ( gop_connection . how [ that_site ], "Connectted" );
+
+ return 0;
+
+  }
+
+
+
+
+ else if (
+           strcmp  (  gop_connection . how [ that_site ],  "Connectting"  )  ==  0
+         )
+
+  {
+
+ strcpy ( gop_connection . how [ that_site ], "Sopi" );
+
+ return 0;
+
+  }
+
+
+
+ else if (
+           strcmp (  gop_connection . how [ that_site ],  "Sopi"  )  ==  0
+
+         )
+
+  {
+
+ strcpy ( gop_connection . how [ that_site ], "Connectting" );
+
+  return 0;
+
+  }
+
+
+
+
+/*
+
+ here
+
 */
 
 
 
+ }
 
-        if      (
-                  strcmp(
-                          gop_connection . how [ that_site ],
-
-                         "Connectted"
-                        )
-                  == 0
-           ) {
-
-               strcpy ( gop_connection . how [ that_site ], "Sop" );
-
-               return 1;}
-
-
-
-
-        else if (
-
-                  strcmp (
-
-                           gop_connection . how [ that_site ],
-
-                          "Sop"
-
-                         )
-                  == 0
-
-                ) {
-
-               strcpy ( gop_connection . how [ that_site ], "Connectted" );
-
-               return 1;}
-
-
-
-        else if (
-
-                  strcmp (
-
-                            gop_connection . how [ that_site ],
-
-                           "Connectting"
-
-                          )
-                  == 0
-
-                ) {
-
-               strcpy ( gop_connection . how [ that_site ], "Sopi" );
-
-               return 1;}
-
-
-
-        else if (
-
-                  strcmp (
-
-                          gop_connection . how [ that_site ],
-
-                         "Sopi"
-
-                        )
-                   == 0
-
-                ) {
-
-               strcpy ( gop_connection . how [ that_site ], "Connectting" );
-
-               return 1;}}
 
 
 
@@ -234,10 +297,20 @@ int clean_connection (
 
  somethong went to this and return a zero
 
+
+ it could be last of it
+
 */
 
 
-    return 0;}
+/*
+
+ return -1;
+
+
+ }
+
+*/
 
 
 
@@ -254,9 +327,11 @@ int clean_connection (
 
 
 
+ else if  (
+            strcmp ( that_type, "update" ) == 0
+          )
 
-
-    else if (  strcmp ( that_type, "update" ) == 0  ) {
+  {
 
 /*
 
@@ -266,11 +341,15 @@ int clean_connection (
 
 */
 
-        strcpy ( gop_connection.update      [ that_site ],  "" );
-                 gop_connection.step_update [ that_site ] = 0;
-                 gop_connection.flag_update [ that_site ] = 0;
+ strcpy ( gop_connection.update      [ that_site ],  "" );
 
-        return 1;}
+          gop_connection.step_update [ that_site ] = 0;
+
+          gop_connection.flag_update [ that_site ] = 0;
+
+ return 0;
+
+  }
 
 
 
@@ -287,7 +366,11 @@ int clean_connection (
 
 */
 
-    else if  (  strcmp ( that_type, "quit"  )  ==  0  ) {
+ else if  (
+            strcmp ( that_type, "quit"  )  ==  0
+          )
+
+  {
 
 
 
@@ -308,34 +391,65 @@ int clean_connection (
 
 */
 
-        if  (  gop_connection . connection [ that_site ]  !=  -1  ) {
+ if  (
+       gop_connection . connection [ that_site ]  !=  -1
+     )
 
-            shutdown ( gop_connection . connection [ that_site ], SHUT_RDWR );}
+  {
 
+ shutdown ( gop_connection . connection [ that_site ], SHUT_RDWR );
 
-
-
-
-
-// let the socket quit
-
-        if  (  that_site == 0  ) {
-
-            shutdown ( gop_connectio n .descriptor [ 0 ], SHUT_RDWR );}
-
-        else if ( that_site < 4 ) {
-
-            shutdown ( gop_connection . descriptor [ 1 ], SHUT_RDWR );}
+  }
 
 
 
 
+/*
 
-        return 1;}
+ let the socket quit
+
+*/
+
+
+ if  (  that_site == 0  )
+
+  {
+
+ shutdown ( gop_connectio n .descriptor [ 0 ], SHUT_RDWR );
+
+  }
+
+
+
+ else if ( that_site < 4 )
+
+  {
+
+ shutdown ( gop_connection . descriptor [ 1 ], SHUT_RDWR );
+
+  }
 
 
 
 
-// something goes wrong
+ return 0;
 
-    return 0;}
+  }
+
+
+
+
+
+
+
+
+
+/*
+
+ something get in
+
+*/
+
+ return -1;
+
+  }
