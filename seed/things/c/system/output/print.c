@@ -13,6 +13,14 @@
 
 
 
+/*
+
+
+ maybe we could output to note and display them
+
+
+*/
+
 
 
  if  (  ! gop_about . flag . deamon  )
