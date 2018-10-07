@@ -1,22 +1,24 @@
 
-void * gop_connector ( void * what ) {
+
+
+
+
+
+ void * gop_connector ( void * what )
+ 
+  {
 
 
 
 
 
 
+/*
 
+ Standart preparing.
 
-
-
-
-
-
-
-
-// Standart preparing.
-
+*/
+     
     struct sockaddr_in    address;
 
            int            number_return;
@@ -32,12 +34,15 @@ void * gop_connector ( void * what ) {
 
 
 
+/*
 
-// Wait the dog start on.
+ Wait the dog start on.
 
-    while (  ! gop_about.flag.start  ) {
+*/
+     
+ while (  ! gop_about . flag . start  ) {
 
-        usleep ( gop_configurations.step_connection * 100000 );}
+ usleep ( gop_hope . step_connection * 100000 );}
 
 
 
