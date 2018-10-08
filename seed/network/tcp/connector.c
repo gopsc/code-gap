@@ -19,19 +19,39 @@
 
 
 
+
+
+
  it will be said
 
 */
 
+/*
 
-    struct sockaddr_in    note_address;
+ struct sockaddr_in    note_address;
+
+*/
 
 
-           int            note_return;
 
-           char           note_recv [ 10240 ];
 
-           char           note__send [ 10240 ];
+/*
+
+ could use connection traightly
+
+ maybe for other ways
+
+*/
+
+/*
+
+ int note_return;
+
+*/
+
+ char note_recv [ 10240 ];
+
+ char note_send [ 10240 ];
 
 
 
@@ -133,9 +153,16 @@
 
  connection for connection
 
+
+ let it be -1 is ok
+
+ make it simple
+
 */
 
- gop_connection . connection [ 0 ] = 0;
+ gop_connection . description [ 0 ] = -1;
+
+ gop_connection . connection [ 0 ] = -1;
 
 
 
@@ -242,6 +269,12 @@
 
 
 
+
+
+
+
+
+
 /*
 
  go
@@ -287,9 +320,11 @@
 
   {
 
- usleep ( gop_about . hope . step_connection  *  1000000 );
+ usleep (  gop_about . hope . step_connection  *  1000000  );
 
- goto leave;}
+ goto leave;
+
+  }
 
 
 
@@ -381,9 +416,9 @@
 
  note_address . sin_family         =  AF_INET;
 
- note_address . sin_port           =  htons     ( gop_connection.port [ 0 ] );
+ note_address . sin_port           =  htons     ( gop_connection . port [ 0 ] );
 
- note_address . sin_addr . s_addr  =  inet_addr ( gop_connection.address_ip [ 0 ] );
+ note_address . sin_addr . s_addr  =  inet_addr ( gop_connection . address_ip [ 0 ] );
 
 
 
@@ -420,7 +455,7 @@
 
 */
 
- if (  gop_connection.descriptor [ 0 ]  == -1  )
+ if (  gop_connection . descriptor [ 0 ]  == -1  )
 
   {
 
@@ -443,15 +478,15 @@
 
 */
 
- number_return = connect (
+ gop_connection . connection [ 0 ]  =  connect (
 
-                           gop_connection.descriptor [ 0 ],
+                                                 gop_connection.descriptor [ 0 ],
 
-   ( struct sockaddr * ) & note_address,
+                         ( struct sockaddr * ) & note_address,
 
-                  sizeof ( note_address )
+                                        sizeof ( note_address )
 
-                         );
+                                               );
 
 
 
@@ -463,7 +498,7 @@
 
 */
 
- if (  number_return == -1  )
+ if (  gop_connection . connection [ 0 ]  ==  -1  )
 
   {
 
@@ -499,7 +534,7 @@
 
 */
 
- else if (  number_return >= 0  )
+ else if ( gop_connection . connection   >=  0  )
 
   {
 
@@ -512,9 +547,16 @@
 
  fresh the description of connection
 
+
+ that is it
+
 */
 
+/*
+
  gop_connection . connection [ 0 ]  =  number_return;
+
+*/
 
 
 
@@ -556,7 +598,7 @@
 
 
 
- char note_print [ 128 ];
+ char note_message [ 128 ];
 
 
 /*
@@ -569,14 +611,33 @@
 */
 
 
- strcpy ( note_print, "connectting to    " );
+ strcpy ( note_message, "connectting to    " );
 
- strcat ( note_print, gop_connection . address_ip [ 0 ] );
-
- strcat ( note_print, "\n" );
+ strcat ( note_message, gop_connection . address_ip [ 0 ] );
 
 
- output_print ( "string", note_print );
+/*
+
+ save note
+
+*/
+
+ note_save ( "connector", note_message, "now" );
+
+
+
+/*
+
+ print it out
+
+*/
+
+ strcat ( note_message, "\n" );
+
+
+ output_print ( "string", note_message );
+
+
 
 
 
@@ -599,11 +660,13 @@
 */
 
 
+/*
 
- strcpy ( note_print, "connectting to " );
+ strcpy ( note_message, "connectting to " );
 
- strcat ( note_print,  gop_connection . address_ip [ 0 ] );
+ strcat ( note_message,  gop_connection . address_ip [ 0 ] );
 
+*/
 
 
 
@@ -611,9 +674,20 @@
 
  save the note
 
+ move it upsite
+
 */
 
- note_save ( "connector", note_print, "now" );
+/*
+
+ note_save ( "connector", note_message, "now" );
+
+*/
+
+
+
+
+
 
 
 
@@ -634,91 +708,62 @@
 
 
 
+/*
 
-// it is ( or it is now )
-//
-// Old connection, continue talking..
+ it is ( or it is now )
 
-
-
-// recive from master first
-
-                    recv (
-                           gop_connection.descriptor [ 0 ],
-                           buffer_recv, 10240,
-                           0
-                         );
-
-// The secret code
-
-                    secret_decode ( buffer_recv, "blank" );
-
-
-// handle this message
-
-                    control_message ( 0, buffer_recv, buffer_send );
-
-
-// resolve the secret
-
-                    secret_encode ( buffer_send, "blank" );
-
-
-// ok send it
-
-                    send(
-                          gop_connection.descriptor [ 0 ],
-                          buffer_send,
-                          10240,
-                          0
-                        );
-
-
-// If clients sleep instead of master,
-//
-// It could be balance.
-
-                    usleep ( gop_configurations.step_connection * 100000 );
+ Old connection, continue talking..
 
 
 
+ recive from master first
 
-// Close the socket
-//
-//       and prepare for next
-//
-//           connection
-//
-// and we should clear the description of connection first
-//
-//  or it could couse a mistake
+*/
 
-                    gop_connection.connection [ 0 ] = 0;}
+ recv (
+
+        gop_connection . descriptor [ 0 ],
+
+        note_recv,
+
+        10240,
+
+        0
+
+      );
+
+
+
+/*
+
+ The secret code
+
+
+ when it could
+
+ maybe add to network/message
+
+*/
+
+/*
+
+ secret_decode ( note_recv, "blank" );
+
+*/
 
 
 
 
 
 
-// this connection has a result
-//
-// now close it
 
-                close ( gop_connection.descriptor [ 0 ] );
+/*
 
+ handle this message
 
+*/
 
-
-
-
-// If something wrong with the target,
-//
-// it's here the program jump to
-//
-// over the connectting
-
-                leave:
-                sleep ( 0 );}
+ control_message ( 0, note_recv, note_send );
 
 
 
@@ -727,15 +772,153 @@
 
 
 
+/*
+
+ resolve the secret
+
+*/
+
+/*
+
+ secret_encode ( note_send, "blank" );
+
+*/
 
 
 
-// The round of connection is
-// over, it is time to save note
-
-            note_save ( "connector", "Client close", "now" );}}
 
 
+/*
+
+ ok send it
+
+*/
+
+ send (
+        gop_connection . descriptor [ 0 ],
+        note_send,
+        10240,
+        0
+      );
 
 
-    pthread_exit ( NULL );}
+
+/*
+
+ If clients sleep instead of master,
+
+ It could be balance.
+
+*/
+ usleep ( gop_hope . step_connection  *  100000 );
+
+
+
+
+
+
+
+/*
+
+ Close the socket
+
+       and prepare for next
+
+           connection
+
+ and we should clear the description of connection first
+
+  or it could couse a mistake
+
+*/
+
+ gop_connection.connection [ 0 ] = -1;
+
+  }
+
+
+
+
+
+/*
+
+ this connection has a result
+
+ now close it
+
+*/
+
+ close ( gop_connection . descriptor [ 0 ] );
+
+
+
+
+
+
+/*
+
+ If something wrong with the target,
+
+ it's here the program jump to
+
+ over the connectting
+
+*/
+
+ leave:
+
+ sleep ( 0 );
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+/*
+
+ The round of connection is
+ over, it is time to save note
+
+*/
+
+ note_save ( "connector", "Client close", "now" );
+
+  }
+
+
+
+
+
+/*
+
+ round of main
+
+*/
+
+  }
+
+
+
+
+
+
+
+/*
+
+ if main thing close
+
+ exit it
+
+*/
+
+ pthread_exit ( NULL );
+
+
+  }
