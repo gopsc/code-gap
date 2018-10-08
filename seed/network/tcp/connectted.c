@@ -1,7 +1,15 @@
 
 
 
-void * gop_connectted ( void * what ) {
+
+
+
+
+
+ void * gop_connectted ( void * what )
+
+
+  {
 
 
 
@@ -9,15 +17,31 @@ void * gop_connectted ( void * what ) {
 
 
 
+/*
 
-// Declare these variable.
+ Declare these variable.
 
-           int         number_return;
 
-           char        buffer_recv[4][10240];
-           char        buffer_send[10240];
-           char        that_buffer[10240];
-           char        that_address[32];
+
+
+
+ maybe we shouldn't take it because we have two note buffer connection and descriptor
+
+*/
+
+/*
+
+ int number_return;
+
+*/
+
+ char buffer_recv [ 4 ] [ 10240 ];
+
+ char buffer_send [ 10240 ];
+
+ char that_buffer [ 10240 ];
+
+ char that_address [ 32 ];
 
 
 

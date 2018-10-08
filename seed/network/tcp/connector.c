@@ -368,6 +368,12 @@
 
 /*
 
+ what's this ??
+
+*/
+
+/*
+
  &&   gop_about . flag . sound
 
 */
@@ -763,7 +769,11 @@
 
 */
 
- control_message ( 0, note_recv, note_send );
+ control_message (
+                   0,
+                   note_recv,
+                   note_send
+                 );
 
 
 
@@ -795,11 +805,21 @@
 */
 
  send (
+
         gop_connection . descriptor [ 0 ],
+
         note_send,
+
         10240,
+
         0
+
       );
+
+
+
+
+
 
 
 
@@ -807,9 +827,10 @@
 
  If clients sleep instead of master,
 
- It could be balance.
+ It could be more balance.
 
 */
+
  usleep ( gop_hope . step_connection  *  100000 );
 
 
@@ -832,7 +853,25 @@
 
 */
 
- gop_connection.connection [ 0 ] = -1;
+
+
+ gop_connection . connection [ 0 ] = -1;
+
+
+
+
+
+
+
+/*
+
+ if connection couldn't be build
+
+ could not close it
+
+*/
+
+
 
   }
 
@@ -888,7 +927,7 @@
 
 */
 
- note_save ( "connector", "Client close", "now" );
+ note_save ( "connector", "client close", "now" );
 
   }
 
