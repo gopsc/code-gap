@@ -35,13 +35,13 @@
 
 */
 
- char buffer_recv [ 4 ] [ 10240 ];
+ char note_recive [ 4 ] [ 10240 ];
 
- char buffer_send [ 10240 ];
+ char note_send [ 10240 ];
 
  char that_buffer [ 10240 ];
 
- char that_address [ 32 ];
+ char note_address [ 32 ];
 
 
 

@@ -37,7 +37,7 @@
 
 /*
 
- could use connection traightly
+ could use network.connection straightly
 
  maybe for other ways
 
@@ -49,7 +49,7 @@
 
 */
 
- char note_recv [ 10240 ];
+ char note_recive [ 10240 ];
 
  char note_send [ 10240 ];
 
@@ -73,7 +73,16 @@
 
   {
 
- usleep ( gop_hope . step_connection * 100000 );
+
+/*
+
+ maybe all the way i use will be in library after this
+
+*/
+
+
+ gop_wait ( gop_hope . step_connection );
+
 
   }
 
@@ -94,7 +103,7 @@
  dog will load this when dog had started
 
 
- and other thing should do this as a lowest time
+ and other thing should do this at a lowest time
 
   so we load it here first time
 
@@ -102,7 +111,7 @@
 
  maybe we should put them all in one dirent with dog
 
- ang named load
+ and named load
 
 */
 
@@ -170,6 +179,11 @@
 
 
 
+
+
+
+
+
 /*
 
  Sometimes when the server close
@@ -213,6 +227,12 @@
 
 
 
+
+
+
+
+
+
 /*
 
  Sleep sometimes when
@@ -228,7 +248,7 @@
   {
 
 
- usleep ( 100000 );
+ gop_wait ( 0.1 );
 
 
   }
@@ -249,6 +269,10 @@
 
 
  else {
+
+
+
+
 
 
 
@@ -315,12 +339,12 @@
 */
 
 
- if ( gop_about . network . number <= 1 )
+ if (  gop_about . network . number  <=  1  )
 
 
   {
 
- usleep (  gop_about . hope . step_connection  *  1000000  );
+ gop_wait (  gop_about . hope . step_connection );
 
  goto leave;
 
@@ -346,9 +370,13 @@
  int i;
 
  for (
-       i  = 1;
-       i <= gop_about . network . number;
+
+       i  =  1;
+
+       i <=  gop_about . network . number;
+
        i ++
+
      )
 
   {
@@ -383,13 +411,30 @@
 
 
 
- usleep ( gop_about . hope . step_connection  *  1000000 );
+ gop_wait ( gop_about . hope . step_connection );
 
 
  goto leave;
 
+
+
+/*
+
+ this is for if
+
+*/
+
   }
 
+
+
+
+
+/*
+
+ this is for for
+
+*/
 
   }
 
@@ -439,6 +484,9 @@
 
  just to connection
 
+
+ maybe it won't lock here, conybe lock at connection
+
 */
 
  gop_connection . descriptor [ 0 ] = socket (
@@ -457,7 +505,7 @@
 
  If something goes wrong, & it could not creat
   a socket, turn it off,
- we could turn it again from outside
+ we could turn it up again from outside
 
 */
 
@@ -508,7 +556,7 @@
 
   {
 
- usleep ( 100000 );
+ gop_wait ( 0.1 );
 
 
 
@@ -540,7 +588,7 @@
 
 */
 
- else if ( gop_connection . connection   >=  0  )
+ else if ( gop_connection . connection  >=  0  )
 
   {
 
@@ -588,7 +636,7 @@
 
 /*
 
- if ths is a new connection, we should set it
+ if this is a new connection, we should set it
 
 */
 
@@ -613,6 +661,8 @@
 
 
  maybe we could make a type for it then it could display on its little box
+
+ like put print to note and display note
 
 */
 
@@ -706,6 +756,14 @@
  strcpy ( gop_connection . how [ 0 ], "Connectting" );
 
 
+
+
+/*
+
+ donee
+
+*/
+
   }
 
 
@@ -730,7 +788,7 @@
 
         gop_connection . descriptor [ 0 ],
 
-        note_recv,
+        note_recive,
 
         10240,
 
@@ -771,7 +829,7 @@
 
  control_message (
                    0,
-                   note_recv,
+                   note_recive,
                    note_send
                  );
 
@@ -831,7 +889,7 @@
 
 */
 
- usleep ( gop_hope . step_connection  *  100000 );
+ gop_wait ( gop_hope . step_connection );
 
 
 
@@ -847,9 +905,10 @@
 
            connection
 
+
  and we should clear the description of connection first
 
-  or it could couse a mistake
+  or it could couse a mess
 
 */
 
@@ -869,11 +928,21 @@
 
  could not close it
 
+
+
+
+ this range is for if it connect success
+
 */
 
 
 
   }
+
+
+
+
+
 
 
 
@@ -888,6 +957,8 @@
 */
 
  close ( gop_connection . descriptor [ 0 ] );
+
+
 
 
 
@@ -909,6 +980,18 @@
  sleep ( 0 );
 
 
+
+
+
+
+/*
+
+ this range is for falg
+
+ 1/3 main range
+
+*/
+
   }
 
 
@@ -929,6 +1012,16 @@
 
  note_save ( "connector", "client close", "now" );
 
+
+
+/*
+
+ this range is for flag range
+
+ 2\3 note saver
+
+*/
+
   }
 
 
@@ -936,6 +1029,8 @@
 
 
 /*
+
+ range 3\3
 
  round of main
 

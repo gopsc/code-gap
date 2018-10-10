@@ -171,6 +171,8 @@
 # as we are on tkinter
 
 
+# maybe save tonot
+
 
  things/c/system/output/print.c
 
@@ -242,7 +244,7 @@
 
 # data doing
  
-# write myself
+# write myself diy
  
  
 # maybe i should get them far away from ways from librarys
@@ -328,7 +330,7 @@
 
  watchdog/about/cpu/frequency.c
 
- watchdog/about/cpu/cores.c
+ watchdog/about/cpu/core.c
 
  watchdog/about/cpu/build.c
 
@@ -378,8 +380,6 @@
 
 
 # watchdog/check/root.c
-
-
 
  watchdog/check/network.c
 
@@ -703,6 +703,7 @@
 
 # connect things
  
+# maybe we could use them in library
 
 
  network/tcp/connectted.c
