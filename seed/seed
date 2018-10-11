@@ -224,6 +224,18 @@
 
 
 
+# wait sometime
+
+# it's different with different system
+
+
+ things/c/system/process/wait.c
+
+
+
+
+
+
 
 # this use a file named stdin
 

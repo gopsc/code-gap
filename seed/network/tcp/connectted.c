@@ -25,7 +25,7 @@
 
 
 
- maybe we shouldn't take it because we have two note buffer connection and descriptor
+ maybe we shouldn't take it because we have two note buffer named connection and descriptor
 
 */
 
@@ -35,56 +35,54 @@
 
 */
 
- char note_recive [ 4 ] [ 10240 ];
 
- char note_send [ 10240 ];
-
- char that_buffer [ 10240 ];
+ char note_buffer [ 10240 ];
 
  char note_address [ 32 ];
 
 
 
+ char note_recive [ 4 ] [ 10240 ]
 
+ char note_send [ 10240 ]
 
 
 
-// this is for note things of connector
 
-    struct sockaddr_in address   ;
-    struct sockaddr_in address_by;
-           socklen_t   lenth     ;
 
 
 
 
 
+/*
 
-// clear it ( maybe i should use a single one function to do this )
+ this is for note things of connector
 
-    strcpy( gop_connection.how[1], "Wait" );
-    strcpy( gop_connection.how[2], "Wait" );
-    strcpy( gop_connection.how[3], "Wait" );
 
+ this for bind
 
+*/
 
 
+ struct sockaddr_in note_address_in;
 
 
 
 
 
+/*
 
+ this for accept
 
+*/
 
+ struct sockaddr_in note_address_by;
 
+        socklen_t   note_lenth;
 
 
-// Wait for the information getting done.
 
-    while ( !information_flag.start ) {
 
-        usleep(100000);}
 
 
 
@@ -97,41 +95,41 @@
 
 
 
+/*
 
-// This line is for the wrong
-// when a connection is closed
-// &
-// it could be useful in networking
-// somewhere
+ clear it ( maybe i should use a single one function to do this )
 
-    signal(SIGPIPE, SIG_IGN);
 
+ and yes
 
+*/
 
+/*
 
+ strcpy ( gop_connection . how [ 1 ], "Wait" );
 
+ strcpy ( gop_connection . how [ 2 ], "Wait" );
 
-// Parpering finished,
-//  then the round could start.
+ strcpy ( gop_connection . how [ 3 ], "Wait" );
 
-    while ( information_flag.main ) {
 
+*/
 
-        if ( !information_flag.connectted ) {
 
-// sleep some time evrey range
+/*
 
-            usleep(100000);}
+ after this, clean by dog
 
+*/
 
+ clean_network ( 1, "all" );
 
+ clean_network ( 2, "all" );
 
-        else if (  information_flag.connectted ) {
+ clean_network ( 3, "all" );
 
 
-// Note this startting.
 
-            note_save( "connectted", "Server start", "now" );
 
 
 
@@ -141,54 +139,44 @@
 
 
 
-// This round is for
-// preparing.
+/*
 
+ Wait for the information getting done.
 
+*/
 
+ while (  ! gop_about . flag . start )
 
-// Create socket
-//
-// we do this every time connectted start
-//
-// then we don't need dog to load this
-//
-// and could restart every time
+  {
 
-            gop_connection.port[1]        = port_this;
+ gop_wait ( 0.1 );
 
-            gop_connection.descriptor[1]  = socket   (
-                                                       AF_INET,
-                                                       SOCK_STREAM,
-                                                       0
-                                                     );
+  }
 
 
 
 
 
 
-// Setting the
-// socket attribution
 
-            address.sin_family         = AF_INET;
-            address.sin_port           = htons(gop_connection.port[1]);
-            address.sin_addr.s_addr    = htonl(INADDR_ANY);
 
-            lenth                      = sizeof(address_by);
 
 
 
 
 
-// If failled, close it
+/*
 
-            if ( gop_connection.descriptor[1] == -1 ) {
+ This line is for the wrong
+ when a connection is closed
+ &
+ it could be useful in networking
+ somewhere
 
+*/
 
-                perror("Server socket created failled");
+ signal ( SIGPIPE, SIG_IGN );
 
-                information_flag.connectted = 0;}
 
 
 
@@ -197,146 +185,81 @@
 
 
 
-// When a server closed
-// something ran &the
-// ip address
-// will be not avalable for
-// minutes
-// use this is OK
 
-            int number_set = 1;
 
-            if (
 
-                   setsockopt(
 
-                               gop_connection.descriptor[1],
-                               SOL_SOCKET,
-                               SO_REUSEADDR,
-                             & number_set,
-                      sizeof ( number_set )
 
-                             )
 
-                   == -1
-               ) {
 
-                perror("Server Setting Failled");
 
-                information_flag.connectted = 0;}
+/*
 
-// P.S.
-//     the networking is
-//        another program &
-//     when this is shutting down
-//          that would be still running.
+ Parpering finished,
+  then the round could start.
 
-//-----------------------------------------------------------------------------------
-// Starting this program binding.
+*/
 
-            if (
-                   bind(
-                                            gop_connection.descriptor[1],
-                         (struct sockaddr*)&address,
-                                     sizeof(address)
-                       )
-                   == -1
-               ) {
+ while (  gop_about . flag . main  )
 
+  {
 
-                perror("Server binding failled");
 
-                information_flag.connectted = 0;}
 
-//-----------------------------------------------------------------------------------
 
-            if (
-                   listen(
-                           gop_connection.descriptor[1],
-                           3
-                         )
-                   == -1
-               ) {
 
-                perror("Server listen failled");
 
-                information_flag.connectted = 0;}
 
-// prepare is filished
 
 
+/*
 
+ this round is for wait it go
 
+*/
 
 
+ if (  ! gop_about . flag . connectted  )
 
+  {
 
 
+/*
 
+ sleep some time evrey range
 
-// Loop start.
+*/
 
-            while ( information_flag.connectted ) {
+ gop_wait ( 0.1 );
 
-// Accept connection.
 
-                number_return = accept(
-                                                               gop_connection.descriptor[1],
-                                       ( struct sockaddr * ) & address_by,
-                                                             & lenth
-                                      );
+  }
 
 
 
 
 
-                if ( number_return == -1 ) {
 
-// When the mode of no-wait
-//   is opening.
-//   do not print
-// accepting error message
-//
-// maybe any problom
 
-                    //perror ("");
 
-                    output_print ( "string", "connectted acceptting wrong" );
 
-                    usleep ( 100000 );
 
-                    continue;}
 
+/*
 
+ this round is for get noted when it go
 
+ and get prepare
 
+*/
 
+ else if (  gop_about . flag . connectted  )
 
-// successed
-//
-// fresh the time [ 4 ] first
-//
-// it's used to note the all of the connection latest time
-//
-// smile connection need this
+  {
 
-                gop_connection.time [ 4 ] = time ( NULL );
 
 
-//
-// fresh the description of connection
-//
-// u could be stack when smiled
-//
-// because we havn't give it a site
-//
-// we use 5
-//
-// cause the connector's connection descriptor is network descriptor
-//
-// and set another next time
 
-                gop_connection.connection [ 4 ] = number_return;
 
 
 
@@ -344,166 +267,143 @@
 
 
 
-// Note the ip
+/*
 
-                strcpy(
-                        that_address,
-                        inet_ntoa ( address_by.sin_addr )
-                      );
+ Note this startting.
 
+*/
 
 
+ note_save ( "connectted", "server start", "now" );
 
 
 
-// Connection message is already here.
-// Find the site for this.
-// Find is there it's site
-//      or a free     site.
 
-                int        number_free       = 0;
-                int        number_site       = 0;
 
 
 
 
 
-// find free site.
 
-                int i;
 
-                for     (  i = 1; i <= 3; i ++  ) {
+/*
 
-                    if  (  strcmp ( gop_connection.address_ip[i], "" ) == 0  ) {
+ start
 
-                        number_free = i;
 
-                        break;}}
 
+ This round is for
+ preparing.
 
 
-// Find it's site.
 
-                for     ( i=1; i<=3; i++ ) {
 
-                    if  (  strcmp ( gop_connection.address_ip[i], that_address ) == 0  ) {
 
-                        number_site = i;
 
-                        break;}}
 
+ Create socket
 
+ we do this every time connectted start
 
+ then we don't need dog to load this
 
+ and could restart every time
 
-// If it's a new site.
-//    set a site for it.
-//
-// If sites' full,
-//    smile to it.
 
-                if      (  number_free != 0   &&   number_site == 0  ) {
+ but sometimes the socket won't close
 
-                    number_site = number_free;}
+*/
 
+ gop_connection . port[1]  =  port_this;
 
+ gop_connection . descriptor[1]  =  socket (
+                                             AF_INET,
+                                             SOCK_STREAM,
+                                             0
+                                           );
+/*
 
+ if socket creat failled ?
 
-                else if (  number_site == 0   &&   number_free == 0  ) {
+*/
 
 
 
-// Note this smile.
 
-                    output_print ( "string", "Smile to           "              );
-                    output_print ( "string",  inet_ntoa ( address_by.sin_addr ) );
-                    output_print ( "string", "\n"                               );
 
-                    strcpy ( that_buffer, "Smile to " );
-                    strcat ( that_buffer, inet_ntoa ( address_by.sin_addr ) );
 
-                    note_save ( "connectted", that_buffer, "now" );
+/*
 
+ Setting the
+ socket attribution
 
+*/
 
+ note_address_in . sin_family         =  AF_INET;
 
-// Preparing for this smile.
+ note_address_in . sin_port           =  htons ( gop_connection . port [ 1 ] );
 
-                    strcpy ( buffer_send, "This is gop station." );
-                    strcat ( buffer_send, "\n"     );
-                    strcat ( buffer_send, "Smile." );
-                    strcat ( buffer_send, "\n"     );
 
+/*
 
+ this is for bindind any address for connect in
 
+*/
 
-// Find the connectting device
-//      who can be be connectted
+ note_address_in . sin_addr . s_addr  =  htonl ( INADDR_ANY );
 
-                    int number_smile = -1;
 
-                    srand ( time ( NULL ) );
+ note_lenth = sizeof ( note_address_by );
 
-                    number_smile =  1 + 4 * (  rand()  /  ( RAND_MAX + 1.0 )  );
 
 
 
 
-// Add it's ip to smile message.
 
-                    strcat ( buffer_send, gop_connection.address_ip [ number_smile ] );
+/*
 
+ If failled, close it
 
+*/
 
+ if ( gop_connection.descriptor[1] == -1 )
 
+  {
 
 
-// Send it
-// and
-// Recive the returned message.
 
 
-// make a secret
 
-                    secret_encode ( buffer_send, "blank" );
 
+ output_print ( "string", "got wrong to create at connectted\n" );
 
-                    send(
-                          number_return,
-                          buffer_send,
-                          10240,
-                          0
-                        );
 
-                    recv(
-                          number_return,
-                          buffer_recv [ 0 ],
-                          10240,
-                          0
-                        );
 
 
-                    usleep ( step_connection * 1000000 );
+/*
 
+ socket create failed don't need to close it
 
+*/
 
 
-// clean the description of connection
+ gop_about . flag . connectted = 0;
 
-                    gop_connection.connection [ 4 ] = 0;
 
 
+/*
 
+ turn out
 
-// cloes this one
+ socket create failed doesn't neet to close it
 
-                    close ( number_return );
+*/
 
+ continue;
 
-// next listen
 
-                    continue;}
 
+  }
 
 
 
@@ -511,129 +411,1031 @@
 
 
 
-// After findind site
-//       for this connection,
-// preparing  for connection.
 
-                if ( number_site != 0 ) {
 
-// we have a site
-//
-// we could fresh the connection descriptor
+/*
 
-                    gop_connection.connection [ 4 ] = 0;
+ When a server closed
+ something ran &the
+ ip address
+ will be not avalable for
+ minutes
+ use this is OK
 
-                    gop_connection.connection [ number_site ] = number_return;
+*/
 
+ int note_set = 1;
 
+ if (
 
-// Update the time pointer,
-// and the connecttion ip
+      setsockopt (
+                   gop_connection . descriptor [ 1 ],
+                   SOL_SOCKET,
+                   SO_REUSEADDR,
+                 & note_set,
+          sizeof ( note_set )
 
-                    gop_connection.time [ number_site ] = time ( NULL );
+                )
+      == -1
+    )
 
-                    strcpy ( gop_connection.address_ip [ number_site ], that_address );
+  {
 
 
 
 
+/*
 
+ maybe the socket should be closed
 
-// If is's new ,
-//  notice and
-//  note  this connection.
+*/
 
-                    if (  strcmp ( gop_connection.how [ number_site ], "Wait" ) == 0  ) {
+ close ( gop_connection . descriptor [ 1 ] );
 
 
+ output_print ( "string", "got wrong to set at connectted\n" );
 
-                        output_print ( "string", "Connectted  by    "                       );
-                        output_print ( "string",  gop_connection.address_ip [ number_site ] );
-                        output_print ( "string", "\n"                                       );
 
-                        strcpy ( that_buffer, "Connectted by "                       );
-                        strcat ( that_buffer, gop_connection.address_ip [ number_site ] );
+ gop_about . flag . connectted = 0;
 
-                        note_save ( "connectted", that_buffer, "now" );
 
+ continue;
 
-                        strcpy ( buffer_recv [ number_site ] ,       ""           );
-                        strcpy ( gop_connection.how [ number_site ], "Connectted" );}
 
 
+  }
 
 
 
-// make the secret maybe
 
-                    secret_decode   ( buffer_recv [ number_site ], "blank" );
 
 
-// control the secret
 
-                    control_message ( number_site, buffer_recv [ number_site ], buffer_send );
 
 
-// resolve this secret
 
-                    secret_encode   ( buffer_send,                 "blank" );
+/*
 
+ P.S.
+     the networking is
+        another program &
+     when this is shutting down
+          that would be still running.
 
-// Execute it.
+-----------------------------------------------------------------------------------
+ Starting this program binding.
 
-                    send(
-                          number_return,
-                          buffer_send,
-                          10240,
-                          0
-                        );
+*/
 
-                    recv(
-                          number_return,
-                          buffer_recv [ number_site ],
-                          10240,
-                          0
-                        );
 
+ if (
 
+      bind (
 
+                                     gop_connection . descriptor [ 1 ],
 
-// Do note wait,
-// or get client connectting
-// no banance
-//
-//                    usleep(step_connection * 1000000);
+             ( struct sockaddr * ) & note_address_in,
 
+                            sizeof ( note_address_in )
 
+           )
 
+      == -1
 
+    )
 
-// clear the connection description
+  {
 
-                    gop_connection.connection [ number_site ] = 0;
 
+ output_print ( "string", "got wrong to bind at connectted\n" );
 
-// close it
 
-                    close ( number_return );}}
+ close ( gop_connection . descriptor [ 1 ] );
 
 
+ gop_about . flag . connectted = 0;
 
 
-// if the connectted closed
-//
-// save this note
+ continue;
 
-           note_save( "connectted", "Server close", "now");
+  }
 
 
 
-// close the network
 
-           close(gop_connection.descriptor[1]);}}
+/*
 
+-----------------------------------------------------------------------------------
 
+*/
 
 
+ if (
 
-    pthread_exit(NULL);}
+      listen (
+
+               gop_connection . descriptor [ 1 ],
+
+               3
+
+             )
+      == -1
+
+    )
+
+  {
+
+ output_print ( "string" "got wrong to listen at connectted\n" );
+
+
+ close ( gop_connection . descriptor [ 1 ] );
+
+
+ gop_about . flag . connectted = 0;
+
+
+ continue;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ prepare is finished
+
+
+
+
+
+
+
+
+
+
+
+
+ prepare finish
+
+ then we just accept and connect ?
+
+
+
+
+
+
+ Loop start.
+
+*/
+
+ while (  gop_about . flag . connectted  )
+
+  {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ Accept connection.
+
+*/
+
+ gop_connection . connection [ 4 ] = accept (
+
+                                              gop_connection . descriptor [ 1 ],
+
+                      ( struct sockaddr * ) & note_address_by,
+
+                                            & note_lenth
+
+                                            );
+
+
+
+
+
+/*
+
+ start value is 0
+
+ if it is 0 or -1
+
+ it means connection have not start
+
+*/
+
+ if ( gop_connection . connection [ 4 ] == -1 )
+
+  {
+
+
+/*
+
+ When the mode of no-wait
+   is opening.
+   do not print
+ accepting error message
+
+ maybe any problom
+
+*/
+
+/*
+
+ perror ("");
+
+*/
+
+
+
+ output_print ( "string", "got wrong to accept at connectted\n" );
+
+
+ gop_wait ( 0.1 );
+
+
+ continue;
+
+
+  }
+
+
+
+
+
+
+/*
+
+ successed
+
+
+ fresh the time [ 4 ] first
+
+ it's used to note the all of the connection latest time
+
+ smile connection need this
+
+ smile connection is where number 4
+
+*/
+
+ gop_connection . time [ 4 ] = time ( NULL );
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ fresh the description of connection
+
+ u could be stack when smiled
+
+ because we havn't give it a site  we use 5
+
+ cause the connector's connection descriptor is network descriptor
+
+ and set another next time
+
+*/
+
+/*
+
+ gop_connection.connection [ 4 ] = number_return;
+
+*/
+
+
+
+
+
+
+/*
+
+ Note the ip
+
+*/
+
+ strcpy (
+
+          note_address,
+
+          inet_ntoa ( address_by . sin_addr )
+
+        );
+
+
+
+
+
+
+/*
+
+ Connection message is already here.
+ Find the site for this.
+ Find is there it's site
+      or a free     site.
+
+*/
+
+ int note_free = 0;
+ int note_site = 0;
+
+
+
+
+
+/*
+
+ find free site.
+
+*/
+
+ int i;
+
+ for     (  i = 1; i <= 3; i ++  )
+
+  {
+
+
+ if (
+
+      strcmp ( gop_connection . address_ip [ i ], "" ) == 0
+
+    )
+
+  {
+
+ note_free = i;
+
+ break;
+
+  }
+
+
+  }
+
+
+
+
+
+
+/*
+
+ Find it's site.
+
+*/
+
+ for (  i = 1;  i <= 3;  i ++ )
+
+  {
+
+
+ if  (
+
+       strcmp ( gop_connection . address_ip [ i ], note_address ) == 0
+
+     )
+
+  {
+
+ note_site = i;
+
+ break;
+
+  }
+
+
+  }
+
+
+
+
+
+
+/*
+
+ If it's a new site.
+    set a site for it.
+
+ If sites' full,
+    smile to it.
+
+
+ else if it is already have a site connect to it
+
+*/
+
+ if (  note_free != 0   &&   note_site == 0  )
+
+  {
+
+ note_site = note_free;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+ else if (  note_site == 0   &&   note_free == 0  )
+
+  {
+
+
+
+/*
+
+ Note this smile.
+
+
+ copy it for once
+
+*/
+
+/*
+
+ output_print ( "string", "Smile to           "              );
+ output_print ( "string",  inet_ntoa ( address_by.sin_addr ) );
+ output_print ( "string", "\n"                               );
+
+*/
+
+ strcpy ( note_buffer, "Smile to " );
+
+ strcat ( note_buffer, inet_ntoa ( note_address_by . sin_addr ) );
+
+
+ note_save ( "connectted", note_buffer, "now" );
+
+
+
+ strcat ( note_buffer, "\n" );
+
+
+ output_print ( "string", note_buffer );
+
+
+ strcpy ( note_buffer, "" );
+
+
+
+
+
+
+
+/*
+
+ Preparing for this smile.
+
+*/
+
+ strcpy ( note_send, "This is gop station." );
+
+ strcat ( note_send, "\n"     );
+
+ strcat ( note_send, "Smile." );
+
+ strcat ( note_send, "\n"     );
+
+
+
+
+/*
+
+ Find the connectting device
+      who can be connectted
+
+*/
+
+ int note_smile = -1;
+
+ srand ( time ( NULL ) );
+
+ note_smile =  1 + 4 * (  rand()  /  ( RAND_MAX + 1.0 )  );
+
+
+
+/*
+
+ maybe we should find the connectors who is not Arduino or stm32 couldn't be connnector
+
+
+
+
+ Add it's ip to smile message.
+
+*/
+
+ strcat (
+          note_send,
+          gop_connection . address_ip [ note_smile ]
+        );
+
+
+
+
+
+
+
+/*
+
+ Send it
+ and
+ Recive the returned message.
+
+
+ make a secret
+
+*/
+
+
+/*
+
+ secret_encode ( buffer_send, "blank" );
+
+*/
+
+
+ send (
+        gop_connection . connection [ 4 ],
+        note_send,
+        10240,
+        0
+      );
+
+ recv (
+        gop_connection . connection [ 4 ],
+        note_recive [ 0 ],
+        10240,
+        0
+      );
+
+
+ gop_wait ( step_connection );
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ close this one
+
+*/
+
+ close ( gop_connection . connection [ 4 ] )
+
+
+
+
+
+
+/*
+
+ clean the description of connection
+
+*/
+
+ gop_connection . connection [ 4 ] = 0;
+
+
+
+
+
+/*
+
+ next listen
+
+*/
+ continue;
+
+
+  }
+
+
+
+
+
+
+
+
+/*
+
+ After findind site
+       for this connection,
+ preparing  for connection.
+
+
+
+ if it not smile
+
+ the value won't be 0
+
+*/
+
+ if ( number_site != 0 )
+
+
+  {
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ we have a site
+
+ we could fresh the connection descriptor
+
+
+ even if it is a old site
+
+ it has been close last time
+
+*/
+
+ gop_connection . connection [ number_site ]  =  gop_connection . connection [ 4 ];
+
+
+ gop_connection . connection [ 4 ]  =  0;
+
+
+
+
+
+
+
+
+/*
+
+ Update the time pointer,
+ and the connecttion ip
+
+*/
+
+ gop_connection . time [ number_site ]  =  time ( NULL );
+
+
+
+/*
+
+ ip address
+
+*/
+
+ strcpy ( gop_connection . address_ip [ number_site ], note_address );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ If is's new ,
+  notice and
+  note  this connection.
+
+*/
+
+ if (
+
+      strcmp ( gop_connection . how [ number_site ], "Wait" ) == 0
+
+    )
+
+  {
+
+
+
+
+/*
+
+ print and note for once
+
+*/
+
+
+/*
+
+ output_print ( "string", "connectted  by    "  );
+ output_print ( "string",  gop_connection . address_ip [ number_site ] );
+ output_print ( "string", "\n" );
+
+*/
+
+
+ strcpy ( note_buffer, "connectted by "  );
+
+ strcat ( note_buffer, gop_connection . address_ip [ number_site ] );
+
+
+ note_save ( "connectted", note_buffer, "now" );
+
+
+
+ strcat ( note_buffer, "\n" );
+
+
+ putput_print ( "string", note_buffer );
+
+
+
+
+
+
+
+ strcpy ( note_recv [ number_site ], "" );
+
+ strcpy ( gop_connection . how [ number_site ], "Connectted" );
+
+
+  }
+
+
+
+
+
+
+
+/*
+
+ make the secret maybe
+
+
+ for last conversation
+
+*/
+
+/*
+
+ secret_decode   ( note_recv [ number_site ], "blank" );
+
+*/
+
+
+
+
+/*
+
+ control the secret
+
+*/
+
+ control_message ( note_site, note_recv [ note_site ], note__send );
+
+
+
+
+
+
+
+/*
+
+ resolve this secret
+
+*/
+
+/*
+
+ secret_encode ( note_send, "blank" );
+
+*/
+
+
+
+
+
+
+/*
+
+ Execute it.
+
+*/
+
+ send (
+        gop_network . connection [ number_site ],
+        note_send,
+        10240,
+        0
+      );
+
+
+ recv (
+        gop_network . connection [ number_site ],
+        note_recv [ number_site ],
+        10240,
+        0
+      );
+
+
+
+
+
+
+
+/*
+
+ Do note wait,
+ or get clients connectting
+ no banance
+
+
+*/
+
+/*
+
+ gop_wait ( step_connection );
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+
+ close it
+
+*/
+
+ close ( gop_connection . connection [ number_site ] );
+
+
+
+
+/*
+
+ clear the connection description
+
+*/
+
+ gop_connection . connection [ number_site ] = 0;
+
+
+
+
+/*
+
+ close it
+
+*/
+
+/*
+
+ close ( number_return );
+
+*/
+
+
+
+
+
+
+
+/*
+
+ this is for accept and if we have a site
+
+*/
+
+  }
+
+
+
+
+
+/*
+
+ this is for round of accept
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+/*
+
+ if the connectted closed
+
+ save this note
+
+*/
+
+ note_save ( "connectted", "server close", "now" );
+
+
+
+
+
+/*
+
+ close the network
+
+*/
+
+ close ( gop_connection . descriptor [ 1 ] );
+
+
+
+
+
+
+
+
+
+
+/*
+
+ this is for if flag of it is open
+
+*/
+
+  }
+
+
+
+/*
+
+ this is for if main flag is open
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+ pthread_exit ( NULL );
+
+
+  }

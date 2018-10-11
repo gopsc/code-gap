@@ -113,6 +113,10 @@
 
  and named load
 
+
+
+ when connection break dog reset it
+
 */
 
 
@@ -515,7 +519,21 @@
 
  gop_about . flag . connector = 0;
 
+
+
+/*
+
+ turn out
+
+*/
+
+/*
+
  goto leave;
+
+*/
+
+ continue;
 
   }
 
@@ -910,7 +928,13 @@
 
   or it could couse a mess
 
+
+ connection maybe closed by connectted
+
 */
+
+
+ close ( gop_connection . connection [ 0 ] );
 
 
 
