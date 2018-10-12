@@ -1,5 +1,21 @@
 
-int check_network () {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ int check_network ()
+
+  {
 
 
 
@@ -25,7 +41,8 @@ int check_network () {
 
 */
 
-    time_t  time_now  =  time ( NULL );
+
+ time_t  time_now  =  time ( NULL );
 
 
 
@@ -48,19 +65,23 @@ int check_network () {
 */
 
 
-    int i;
+ int i;
 
-    for (  i = 0;  i <= 3; i = i + 1  ) {
+ for (  i = 0;  i <= 3; i ++  )
 
+  {
 
-        if (  gop_connection.time [ i ]  == 0  ) {
 
-            gop_connection.time [ i ] = time_now;}}
+ if (  gop_connection . time [ i ]  == 0  )
 
+  {
 
+ gop_connection . time [ i ] = time_now;
 
+  }
 
 
+  }
 
 
 
@@ -69,41 +90,32 @@ int check_network () {
 
 
 
-// check them  1 by 1
 
-    for (  i = 0; i <= 4; i ++  ) {
 
 
 
-// p.s
-//
-// 4th  is time number and connection descriptor
-//
-// for connectted to smile
+/*
 
+ check them  1 by 1
 
+*/
 
 
+ for (  i = 0; i <= 4; i ++  )
 
+  {
 
 
 
+/*
 
-// check the time out
-//
-//   and reconnect by speed, return the connect not by configuration
-//
-// if for first 0-3
-//
-//
-//
-// and it's different for 4
-//
-//  it is to note smile things
+ p.s
 
+ 4th  is time number and connection descriptor
 
-        if (  i < 4  ) {
+ for connectted to smile
 
+*/
 
 
 
@@ -111,55 +123,28 @@ int check_network () {
 
 
 
+/*
 
+ check the time out
 
+   and reconnect by speed, return the connect not by configuration
 
+ if for first 0-3
 
 
 
+ and it's different for 4
 
-// if connection is available,
-//
-// check the time of last connectting.
-//
-//
-// clean them when it's stop over 9 seconeds
-//
-// (  it's 3 seconds at the beginning, and we changed it  )
-//
-//
-// and make sure it's not a new starting
-//
-//
-//
-//
-// if they doesn't move over 9 secend, and are connecttd
-//
-// this time could be not conectted
-//
-// we do something
-//
-//
-//
-// and sometimes the connection does not finish
-//
-// and another went away
-//
-//
-//  we should let it go
-//
-// and this may be more quick than cleaning all of this
+  it is to note smile things
 
+*/
 
-            if (
+ if (  i < 4  )
 
-                      strcmp ( gop_connection.how [ i ], "Wait" )  != 0
-                   && strcmp ( gop_connection.how [ i ], ""     )  != 0
 
-               ) {
+  {
 
 
-// if it isn't keep talking
 
 
 
@@ -171,48 +156,45 @@ int check_network () {
 
 
 
+/*
 
+ if connection is available,
 
+ check the time of last connectting.
 
 
+ clean them when it's stop over 9 seconeds
 
+ (  it's 3 seconds at the beginning, and we changed it  )
 
 
-// 3 seconds for  recive / send  waitting
-//
-// 9 seconds for doesn't connect
+ and make sure it's not a new starting waitting site
 
 
 
 
+ if they doesn't move over 9 secend, and are connecttd
 
-                if  (
+ this time could be not conectted
 
-                        time_now - gop_connection.time [ i ]  >=  3
-                &&      time_now - gop_connection.time [ i ]  <   9
+ we do something
 
-                    ) {
 
 
+ and sometimes the connection does not finish
 
+ and another went away
 
 
-// check
-//
-// is the connection still running but another not ?
-//
-//
-// this is better to short than connection running, 3 seconds may be ok
+ and it could be stack
 
 
 
-                    if (  gop_connection.connection [ i ]  !=  0  ) {
+  we should let it go
 
-// it is still  send / recive
-//
-// ...
-                        }}
+ and this may be more quick than cleaning all of this
 
+*/
 
 
 
@@ -227,103 +209,336 @@ int check_network () {
 
 
 
-// if they are not connectted any more
-//
-// we should clean them
+ if (
 
+      strcmp ( gop_connection . how [ i ], "Wait" )  != 0
+ &&   strcmp ( gop_connection . how [ i ], ""     )  != 0
 
-                else if  (  time_now - gop_connection.time [ i ]  >=  9  ) {
+    )
 
+  {
 
 
+/*
 
+ if it isn't keep talking
 
+*/
 
 
-// prepare to note this
 
-                    char buffer_note [ 32 ];
 
 
 
 
 
 
-// clean all about this
 
-                    clean_connection ( i, "all" );
 
 
 
 
 
-// it's two way betwin   connector and connectted
-//
-// to note
-//
-//
-//
-// and this is connector's
 
-                    if (  i == 0  ) {
+/*
 
+ 3 seconds for  recive / send  waitting
 
-// print it out
+ 9 seconds for doesn't connect
 
-                        output_print ( "string", "connector close with "          );
-                        output_print ( "string",  gop_connection.address_ip [ 0 ] );
-                        output_print ( "string", "\n"                             );
+*/
 
 
-// save the note
 
-                        strcpy ( that_note,   "connectting close with "        );
-                        strcat ( that_note,    gop_connection.address_ip [ 0 ] );
 
+ if  (
 
-                        note_save ( "connector", that_note, "now" );}
+       time_now - gop_connection . time [ i ]  >=  3
+ &&    time_now - gop_connection . time [ i ]  <   9
 
+     )
 
+  {
 
 
 
 
+/*
 
+ check
 
-// the way for connecteed
+ is the connection still running but another not ?
 
-                    else {
 
+ this is better to short than connection running, 3 seconds may be ok
 
-// note connectted note
-//
-// print out
+*/
 
-                        output_print( "string", "connectted close with  "    );
-                        output_print( "string",  gop_connection.address_ip[i]);
-                        output_print( "string", "\n"                         );
 
+ if (  gop_connection . connection [ i ]  >  0  )
 
-// prepare to note
+  {
 
-                        strcpy(that_note,    "connectted close with ");
-                        strcat(that_note,     gop_connection.address_ip[i]);
 
-// save it
 
-                        note_save("connectted", that_note, "now");}}}
+/*
 
+ it is still  send / recive
 
+ ...
 
+*/
 
+ close ( gop_connection . connection [ i ] );
 
 
 
+  }
 
 
 
 
+/*
 
+ this round for if
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ if they are not connectted any more
+
+ we should clean them
+
+*/
+
+ else if  (  time_now - gop_connection . time [ i ]  >=  9  )
+
+  {
+
+
+
+
+
+/*
+
+ prepare to note this
+
+*/
+
+ char note_buffer [ 32 ];
+
+
+
+
+
+/*
+
+ clean all about this
+
+*/
+
+ clean_connection ( i, "all" );
+
+
+
+
+
+
+/*
+
+ it's two way betwin   connector and connectted
+
+ to note
+
+
+
+ and this is connector's
+
+*/
+
+ if (  i == 0  )
+
+  {
+
+
+
+
+
+/*
+
+ print it out
+
+
+ two for once
+
+*/
+
+/*
+
+ output_print ( "string", "connector close with " );
+
+ output_print ( "string",  gop_connection . address_ip [ 0 ] );
+
+ output_print ( "string", "\n" );
+
+*/
+
+
+
+/*
+
+ save the note
+
+*/
+
+ strcpy ( note_buffer,   "connectting close with " );
+
+ strcat ( note_buffer,    gop_connection . address_ip [ 0 ] );
+
+
+ note_save ( "connector", note_buffer, "now" );
+
+
+
+ strcat ( note_buffer, "\n" );
+
+ output_print ( "string", note_buffer );
+
+  }
+
+
+
+
+
+
+
+
+/*
+
+ the way for connecteed
+
+*/
+
+ else {
+
+
+
+
+
+
+
+
+/*
+
+ note connectted note
+
+ print out
+
+*/
+
+/*
+
+ output_print ( "string", "connectted close with  " );
+
+ output_print ( "string",  gop_connection . address_ip [ i ] );
+
+ output_print ( "string", "\n" );
+
+*/
+
+
+/*
+
+ prepare to note
+
+*/
+
+ strcpy ( note_buffer,  "connectted close with " );
+
+ strcat ( note_buffer, gop_connection . address_ip [ i ] );
+
+
+
+/*
+
+ save it
+
+*/
+
+ note_save ( "connectted", note_buffer, "now" );
+
+
+
+ strcat ( note_buffer, "\n" );
+
+ output_print ( "string", note_buffer );
+
+
+
+/*
+
+ for if about its site
+
+*/
+
+  }
+
+
+
+
+
+
+/*
+
+ for if its connection time
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+/*
+
+ this round is for if it is connectting
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 // reconnect to the high speed one
 //
@@ -355,6 +570,7 @@ int check_network () {
 //
 //  maybe now
 
+*/
 
 
         if (
@@ -677,7 +893,7 @@ int check_network () {
         if (
                time_now  -  gop_connection.time [ i ]        >=  9  )
 
-        &&                  gop_connection.connection [ i ]  !=  0
+        &&                  gop_connection.connection [ i ]  >  0
 
            ) {
 
