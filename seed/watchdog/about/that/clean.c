@@ -1,14 +1,19 @@
 
 
 
+/*
 
-// this struct is huge, i must use a function to clean it,,
+ this struct is huge, i must use a function to clean it,,
 
+
+ give a value of its structure and that could clean many where
+
+*/
 
 
 
  int clean_about  (  struct  gopi_about  that_about  )
- 
+
   {
 
 
@@ -35,8 +40,10 @@
 */
 
 
-//    gop_about.flag.main = 1;
 
+ gop_about . flag . main  =  1;
+
+ gop_about . flag . deamon = gop_about . flag . deamon;
 
 
 
@@ -65,10 +72,18 @@
 
 
 
-    if  (  strcmp ( that_about . symbol, "reading" )  !=  0  ) {
+ if  (
+
+       strcmp ( that_about . symbol, "reading" )  !=  0
+
+     )
+
+  {
 
 
-        strcpy ( that_about . symbol, "waitting" );}
+ strcpy ( that_about . symbol, "waitting" );
+
+  }
 
 
 

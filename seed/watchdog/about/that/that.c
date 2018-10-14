@@ -23,8 +23,8 @@
 
 
 
-  
-  
+
+
 /*
 
  1024 is too long to save system name
@@ -48,11 +48,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
  struct gopi_cpu
 
   {
 
 
+/*
+
+ wait...
+
+*/
+
+ char symbol [ 16 ]
 
 
 /*
@@ -65,16 +83,17 @@
  char name [ 128 ];
 
 
-  
-  
+
+
+
 /*
 
  use in cpu/rate
- 
+
  and now it do it itself
 
 */
-  
+
 /*
 
  unsigned  int  user;
@@ -85,8 +104,8 @@
 */
 
 
-  
-  
+
+
  int  cores;
 
  int  frequency;
@@ -97,6 +116,14 @@
 
 
   };
+
+
+
+
+
+
+
+
 
 
 
@@ -128,6 +155,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
  struct gopi_disk
 
   {
@@ -152,6 +191,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
  struct gopi_network
 
 
@@ -159,17 +209,26 @@
 
 
  /*
-  
+
   maybe use malloc straightly
-  
+
  */
- 
+
   char ip [ 32 ] [ 3 ] [ 1024 ];
 
  int  number;
 
 
   };
+
+
+
+
+
+
+
+
+
 
 
 
@@ -189,13 +248,13 @@
  int number_playback;
 
 
-  
+
 /*
-  
+
  for numbers 128 is too long
-  
+
 */
-  
+
  char device [ 3 ] [ 32 ] [ 16 ];
 
  int device_playback;

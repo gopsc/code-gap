@@ -2,10 +2,17 @@
 
 
 
+/*
+
+ don't know what to give maybe a happy smile ?
+
+*/
 
 
+ void * gop_dog ( void * what )
 
-void * gop_dog ( void * what ) {
+
+  {
 
 
 
@@ -28,7 +35,14 @@ void * gop_dog ( void * what ) {
 */
 
 
-    clean_about ( gop_about );
+ clean_about ( gop_about );
+
+
+
+
+
+
+
 
 
 
@@ -57,9 +71,13 @@ void * gop_dog ( void * what ) {
 
  gop may check without dog
 
+
+
+ load from  ( path ) / ( name ) / hope  now
+
 */
 
-    load_hope ();
+ load_hope ();
 
 
 
@@ -78,7 +96,7 @@ void * gop_dog ( void * what ) {
 
 */
 
-    load_symbol ();
+ load_symbol ();
 
 
 
@@ -93,11 +111,11 @@ void * gop_dog ( void * what ) {
  Listen modle of sound , it need a word libary loading.
 
 
- we use as trees now
+ use as trees now
 
 */
 
-    load_listen ();
+ load_listen ();
 
 
 
@@ -118,8 +136,12 @@ void * gop_dog ( void * what ) {
 
 */
 
-//    check_root();
 
+/*
+
+ check_root();
+
+*/
 
 
 
@@ -139,7 +161,7 @@ void * gop_dog ( void * what ) {
 
 */
 
-    check_update ();
+ check_update ();
 
 
 
@@ -151,7 +173,7 @@ void * gop_dog ( void * what ) {
 
 
 
-    output_print ( "string", "Done\n"               );
+ output_print ( "string", "done\n" );
 
 
 
@@ -160,40 +182,49 @@ void * gop_dog ( void * what ) {
 
 
 
-
-
-
-// note this
-
-    note_save   ( "dog",    "WatchDog start", "now" );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    while (  gop_about . flag . main  ) {
 
 
 /*
 
- u maybe run this just for watchdog and maybe not
+ note this
+
+*/
+
+ note_save ( "dog", "start with watchdog", "now" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ while (  gop_about . flag . main  )
+
+  {
+
+
+/*
+
+ maybe run it just for watchdog and maybe not
+
+
+
+ maybe for only once
 
 */
 
@@ -202,13 +233,19 @@ void * gop_dog ( void * what ) {
 
 
 
-        if  (  ! gop_about . flag . dog  ) {
+ if  (  ! gop_about . flag . dog  )
 
-            usleep ( 100000 );}
+  {
+
+ gop_wait ( 0.1 );
+
+  }
 
 
 
-        else if  (  gop_about . flag . dog  ) {
+ else if  (  gop_about . flag . dog  )
+
+  {
 
 
 
@@ -229,36 +266,47 @@ void * gop_dog ( void * what ) {
 
 /*
 
-            strcpy ( gop_about . system . symbol, "reading" );
+ strcpy ( gop_about . system . symbol, "reading" );
 
 */
 
 
 /*
-            about_user ();   usleep ( 100000 );
+
+ about_user ();   gop_wait ( 0.1 );
+
 */
-            about_name ();   usleep ( 100000 );
 
-            about_system (); usleep ( 100000 );
+ about_name ();   gop_wait ( 0.1 );
+
+ about_system (); gop_wait ( 0.1 );
 
 
-            about_memory (); usleep ( 100000 );
+ about_memory (); gop_wait ( 0.1 );
+
 
 
 
 /*
 
-            about_disk ();    usleep ( 100000 );
+ maybe use it at some situation
 
 */
 
-            about_cpu ();     usleep ( 100000 );
+/*
+
+ about_disk ();    gop_wait ( 0.1 );
+
+*/
+
+ about_cpu ();     gop_wait ( 0.1 );
 
 
-            about_address (); usleep ( 100000 );
+ about_address (); gop_wait ( 0.1 );
 
 
-            about_sound ();   usleep ( 100000 );
+ about_sound ();   gop_wait ( 0.1 );
+
 
 
 /*
@@ -268,12 +316,12 @@ void * gop_dog ( void * what ) {
 */
 
 
-            check_network ();          usleep ( 100000 );
+ check_network ();          gop_wait ( 0.1 );
 
-            check_power ();            usleep ( 100000 );
+ check_power ();            gop_wait ( 0.1 );
 
 
-            dog_show ();               usleep ( 100000 );
+ dog_show ();               gop_wait ( 0.1 );
 
 
 
@@ -287,17 +335,78 @@ void * gop_dog ( void * what ) {
   and we may need to cause we have the symbol
 
 */
-            gop_about . flag . start  =  1;}}
+
+ if ( ! gop_about . flag . start )
+
+  {
+
+ gop_about . flag . start  =  1;
+
+  }
 
 
 
 
-// note this
+/*
 
-    note_save ( "dog", "WatchDog close", "now" );
+ this is for if flag of dog is true
+
+*/
+
+  }
 
 
 
-// sirisly i don't know what dose matter is u add this line
 
-    pthread_exit ( NULL );}
+
+/*
+
+ this is for flag of main is tru
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+/*
+
+ note this
+
+*/
+
+ note_save ( "dog", "watchdog close", "now" );
+
+
+
+
+
+
+
+/*
+
+ sirisly i don't know what dose matter is u add this line
+
+*/
+
+ pthread_exit ( NULL );
+
+
+
+
+
+
+/*
+
+ done
+
+*/
+
+  }
