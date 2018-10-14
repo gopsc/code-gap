@@ -11,6 +11,9 @@
 
 /*
 
+ use to put its type now could be wait or what
+
+
  then it put about waitting could be little
 
 */
@@ -20,13 +23,21 @@
 
 
 
- char system [ 1024 ];
+  
+  
+/*
 
- char name   [ 1024 ];
+ 1024 is too long to save system name
+
+*/
+
+ char system [ 128 ];
+
+ char name   [ 128 ];
 
 /*
 
- char user   [ 1024 ];
+ char user   [ 128 ];
 
 */
 
@@ -54,7 +65,16 @@
  char name [ 128 ];
 
 
+  
+  
+/*
 
+ use in cpu/rate
+ 
+ and now it do it itself
+
+*/
+  
 /*
 
  unsigned  int  user;
@@ -65,6 +85,8 @@
 */
 
 
+  
+  
  int  cores;
 
  int  frequency;
@@ -136,7 +158,13 @@
   {
 
 
- char ip [ 32 ] [ 3 ] [ 1024 ];
+ /*
+  
+  maybe use malloc straightly
+  
+ */
+ 
+  char ip [ 32 ] [ 3 ] [ 1024 ];
 
  int  number;
 
@@ -161,7 +189,14 @@
  int number_playback;
 
 
- char device [ 3 ] [ 128 ] [ 16 ];
+  
+/*
+  
+ for numbers 128 is too long
+  
+*/
+  
+ char device [ 3 ] [ 32 ] [ 16 ];
 
  int device_playback;
 
@@ -253,8 +288,11 @@
 */
 
 
-//    struct gopi_configurations;
+/*
 
+ struct gopi_configurations;
+
+*/
 
 
 
