@@ -51,6 +51,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /*
 
  if it's a new startting
@@ -72,16 +81,48 @@
   {
 
 
+
+
+
+/*
+
+ if it is a new site, time flag is zero
+
+*/
+
  if (  gop_connection . time [ i ]  == 0  )
 
+
+
+
   {
+
+
+/*
+
+ clean them
+
+ give them a value
+
+*/
 
  gop_connection . time [ i ] = time_now;
 
   }
 
 
+
+
+
+
   }
+
+
+
+
+
+
+
 
 
 
@@ -287,6 +328,9 @@
 
  ...
 
+
+ after close the connection it return -1 and turn to end of round there
+
 */
 
  close ( gop_connection . connection [ i ] );
@@ -305,6 +349,12 @@
 */
 
   }
+
+
+
+
+
+
 
 
 
@@ -504,6 +554,11 @@
 
 
 
+
+
+
+
+
 /*
 
  for if its connection time
@@ -538,97 +593,113 @@
 
 
 
+
+
+
+
+
+
+
+
 /*
 
-// reconnect to the high speed one
-//
-//
-// this is good
-//
-// cause connectted by several
-//
-//  make this slow
-//
-//  the highspeed to do this, make them connect stable
-//
-// make them faster, make it good
-//
-//
-// faster be faster
-//
-//
-//
-//
-// and
-//
-// They are high speed board i used
-//
-//   do not need this for now
-//
-//  may restart it in the mind of trees plan
-//
-//
-//  maybe now
+ reconnect to the high speed one
+
+
+ this is good
+
+ cause connectted by several
+
+  make this slow
+
+  the highspeed to do this, make them connect stable
+
+ make them faster, make it good
+
+
+ faster be faster
+
+
+
+
+ and
+
+ They are high speed board i used
+
+   do not need this for now
+
+  may restart it in the mind of trees plan
+
+
+  maybe now
 
 */
 
 
-        if (
+ if (
 
-               strcmp ( gop_connection.how [ i ],          "Connectted" )  == 0
+      strcmp ( gop_connection . how [ i ],          "Connectted" )  == 0
 
-        &&     strcmp ( gop_connection.informastion [ i ], ""           )  != 0
-
-           ) {
+ &&   strcmp ( gop_connection . information [ i ],  ""           )  != 0
 
 
+    )
 
 
-// since i used information trees i used them straightly
-//
-// instead of read the information here
+  {
+
 
 
 
 /*
-            char *  that_pointer;
 
-            char    that_buffer [ 1024 ];
+ since i used information trees i used them straightly
 
+ instead of read the information here
 
-            int   number_cores;
-
-            int   number_frequency;
+*/
 
 
+/*
+
+ char *  note_pointer;
+
+ char    note_buffer [ 1024 ];
 
 
-            strcpy(
-                    that_buffer,
-                    strstr(
-                            strstr( gop_connection.information [ i ], "CPU CORES" ),
-                           ":"
-                          ) + 1
-                  );
+ int   note_cores;
 
-           *strchr(that_buffer, '\n') = '\0';
-
-            number_cores = atoi(that_buffer);
+ int   note_frequency;
 
 
 
 
-            strcpy(
-                    that_buffer,
-                    strstr(
-                            strstr( gop_connection.information [ i ], "CPU FREQUENCY" ),
-                           ":"
-                          ) + 1
-                  );
+ strcpy (
+          note_buffer,
+          strstr (
+                   strstr ( gop_connection . information [ i ], "CPU CORES" ),
+                   ":"
+                 ) + 1
+        );
 
-           *strchr ( that_buffer, '\n' ) = '\0';
+ * strchr ( note_buffer, '\n') = '\0';
 
-            number_frequency = atoi ( that_buffer );
+ note_cores = atoi ( note_buffer );
+
+
+
+
+ strcpy (
+          note_buffer,
+          strstr (
+                   strstr( gop_connection . information [ i ], "CPU FREQUENCY" ),
+                   ":"
+                 ) + 1
+        );
+
+ * strchr ( note_buffer, '\n' ) = '\0';
+
+ note_frequency = atoi ( note_buffer );
 
 */
 
@@ -638,121 +709,99 @@
 
 
 
-// compare them
-//
-//
-// at the beginning, we let them change site
-//
-// when quicker is quicker more than 2 times
-//
-//  but now we let it quicker more any one little
 
-            if (
 
-                     gop_network.about.cpu.cores  *  gop_network.about.cpu.frequency
 
-                   >         gop_about.cpu.cores  *          gop_about.cpu.frequency
 
-               ) {
+/*
 
+ compare them
 
 
+ at the beginning, we let them change site
 
-// reconnect for bigger speed
+ when quicker is quicker more than 2 times
 
-                clean_connection( 0, "all" );
+  but now we let it quicker more any one little
 
 
 
+ if the one is blank we don't need to reset it
 
+*/
 
-// if we connect to ourself in the configuration
-//
-// we dont let it connect to us again
-//
-// then we are going to connect them
-//
-// make a loop
-//
-//
-// so we let it connect itself
 
 
+ if (
 
+      gop_network . about . cpu . cores  *  gop_network . about . cpu . frequency
 
+  >             gop_about . cpu . cores  *            gop_about . cpu . frequency
 
-                char    buffer_ip [ 32 ];
+    )
 
-// by default, we want it connect to what we connect
+  {
 
-                strcpy (  buffer_ip, gop_connection.address_ip [ 0 ]  );
 
 
 
+/*
 
+ reconnect for bigger speed
 
+*/
 
+ clean_connection( 0, "all" );
 
-// compare it with address here
-//
-// if it is a address here, we change the plan
-//
-// and let it connect to itself
 
 
-                int ii;
 
-                for (  ii = 1; ii <= information_ip_number; ii ++  ) {
 
 
-                    if (  strcmp ( buffer_ip, information_ip [ ii ] [ 2 ] ) == 0  ) {
 
 
 
-// the connector connect  our address, don't send it
-//
-// send the address itself
 
-                         strcpy ( buffer_ip, gop_connection.address_ip[i] );
 
-                        break;}}
+/*
 
+ if we connect to ourself in the configuration
 
+ we dont let it connect to us again
 
+ then we are going to connect them
 
+ make a loop
 
-// prepare the message
 
-                output_print ( "string", "smile to bigger : " );
-                output_print ( "string",  buffer_ip              );
-                output_print ( "string", "\n"                    );
+ so we let it connect itself
 
 
 
-                char     buffer_command [ 32 ];
+    _________
+   /         \
+   |         v
 
-                strcpy ( buffer_command,     "Smile."   );
-                strcat ( buffer_command,     "\n"       );
-                strcat ( buffer_command,      buffer_ip );
+   we        mate
 
-// and the port
-// ...
+   ^          |       ( loop )
+   |__________|
 
+*/
 
-// why we fresh the time note
 
-                         gop_connection.time       [ 0 ]      = time ( NULL );
 
 
-// load the message we will send
+ char buffer_ip [ 32 ];
 
-                strcpy ( gop_connection.command    [ i ], buffer_command                  );
 
+/*
 
+ by default, we want it connect to what we connect
 
-// connect to this bigger
+*/
 
-                strcpy ( gop_connection.address_ip [ 0 ], gop_connection.address_ip [ i ] );}}
+ strcpy (  buffer_ip, gop_connection . address_ip [ 0 ]  );
 
 
 
@@ -760,150 +809,502 @@
 
 
 
+/*
 
+ compare it with address here
 
+ if it is a address here, we change the plan
 
+ and let it connect to itself
 
+*/
 
 
+ int ii;
 
+ for (
+       ii  = 1;
+       ii <= gop_about . network . ip_number;
+       ii ++
+     )
 
+  {
 
 
+ if (
 
+      strcmp ( note_ip, gop_about . network . ip [ ii ] [ 2 ] ) == 0
 
-// if we let it connect some addrees
-//
-// by some way without configuration before
-//
-//
-// this usually be a special thing
-//
-// we let it come back when it don't connect it anymore
-//
-//
-// not for smile this relation
+    )
 
+  {
 
-            if (
 
-                     strcmp ( gop_connection.how [ 0 ],       "Wait"     )  == 0
 
-            &&     (
 
-                     strcmp ( gop_connection.address_ip [ 0 ], agop_configurations.ddress_to ) != 0
 
-            ||                gop_connection.port [ 0 ] != gop_configurations.port_to
+/*
 
-                   )
+ the connector connect  our address, don't send it
 
-                ) {
+ send the address itself
 
+*/
 
+ strcpy ( note_ip, gop_connection . address_ip [ i ] );
 
+ break;
 
-// if smiled to another, not to reset it.
-//
-//
-// If the target ip in plan
-//
-// connectting to u
-//
-//
-// it make a loop
-//
-//  u connectting to it again
 
 
-                for (  i = 1; i <= 3; i ++  ) {
+/*
 
+ this round for for
 
+*/
 
+  }
 
 
 
 
-// if it smiled before
-//
-// fresh the time note
 
-                    if (
+/*
 
-                           strcmp ( gop_connection.address_ip [ i ], gop_configurations.address_to ) == 0
+ this round for if
 
-                    &&              gop_connection.port [ i ]  ==  gop_configurations.port_to
+*/
 
-                       ) {
+  }
 
 
 
 
-// this time we don't reset it
-//
-// fresh the time..
 
-                        gop_connection.time [ 0 ]  =  time ( NULL );}}
 
 
+/*
 
+ prepare the message
 
+*/
 
 
 
-// if the check time of connectting
-//
-// is in 9 seconds
-//
-//  & the connector doesn't get the
-//
-// ip in the plan
-//
-//    return it
+ char * note_print;
 
+ int * note_print_lenth;
 
-                if (  time_now - gop_connection.time [ 0 ]  >= 9  ) {
 
+ note_print_lenth = malloc ( sizeof ( int ) );
 
-                    output_print( "string", "Network connection reset.\n" );
 
 
-                    strcpy ( gop_connection.address_ip [ 0 ],  gop_configurations.address_to);
+ * note_print_lenth  = strlen ( "smile to bigger : " );
 
-                             gop_connection.port       [ 0 ] = gop_configurations.   port_to;}}}
+ * note_print_lenth += strlen ( note_ip );
 
+ * note_print_lenth += 1;
 
 
 
 
+ note_print = malloc ( * note_print_lenth );
 
 
 
+ strcpy ( note_print, "smile to bigger : " );
 
+ strcat ( note_print, note_ip );
 
+ strcat ( note_print, "\n" );
 
 
+ output_print ( "string", note_print );
 
 
-    else if ( i == 4 ) {
 
+ free ( note_print_lenth );
 
+ free ( note_print );
 
-// it is for smile  and  can't recive or send
 
-        if (
-               time_now  -  gop_connection.time [ i ]        >=  9  )
+/*
 
-        &&                  gop_connection.connection [ i ]  >  0
+ output_print ( "string", "smile to bigger : " );
 
-           ) {
+ output_print ( "string",  buffer_ip );
 
+ output_print ( "string", "\n" );
 
-// let it go
+*/
 
-            }
 
 
 
 
 
-    return 1;}
+
+
+
+
+
+
+ char note_command [ 32 ];
+
+ strcpy ( note_command, "Smile." );
+
+ strcat ( note_command, "\n" );
+
+ strcat ( note_command, note_ip );
+
+
+
+/*
+
+ and the port
+ ...
+
+
+
+ why we fresh the time note
+
+*/
+
+ gop_connection . time [ 0 ] = time ( NULL );
+
+
+
+/*
+
+ load the message we will send
+
+*/
+
+
+ strcpy ( gop_connection . command [ i ], note_command );
+
+
+
+
+
+/*
+
+ connect to this bigger
+
+*/
+
+ strcpy ( gop_connection . address_ip [ 0 ], gop_connection . address_ip [ i ] );
+
+
+
+
+
+/*
+
+ for if cpu
+
+*/
+
+  }
+
+
+
+
+
+
+/*
+
+ for sub-check
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ if we let it connect some addrees
+
+ by some way without configuration before
+
+
+ this usually be a special thing
+
+ we let it come back when it don't connect it anymore
+
+
+ not for smile this relation
+
+*/
+
+ if (
+
+      strcmp ( gop_connection . how [ 0 ], "Wait" )  == 0
+
+
+ &&   (
+
+        strcmp (  gop_connection . address_ip [ 0 ],  gop_hope . network . address_to  ) != 0
+
+        ||        gop_connection . port [ 0 ]    !=   gop_hope . network . port_to
+      )
+
+
+    )
+
+
+  {
+
+
+
+
+
+/*
+
+ if smiled to another, not to reset it.
+
+
+ If the target ip in plan
+
+ connectting to u
+
+
+ it make a loop
+
+  u connectting to it again
+
+
+
+ when it break the list without that ip
+
+ and return
+
+*/
+
+
+ for (  i = 1; i <= 3; i ++  )
+
+
+  {
+
+
+
+
+
+
+
+/*
+
+ if it smiled before
+
+ fresh the time note
+
+*/
+
+ if (
+
+      strcmp ( gop_connection . address_ip [ i ], gop_hope . network . address_to ) == 0
+
+ &&            gop_connection . port [ i ]   ==   gop_hope . network . port_to
+
+    )
+
+  {
+
+
+
+
+/*
+
+ this time we don't reset it
+
+ fresh the time..
+
+
+ time symbol used by another too
+
+ and we should be careful to use it
+
+*/
+
+ gop_connection . time [ 0 ]  =  time ( NULL );
+
+
+
+
+/*
+
+ this round is for if smiled
+
+*/
+
+  }
+
+
+
+
+/*
+
+ this round is for for all connectted
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ if the check time of connectting
+
+ is in 9 seconds
+
+  & the connector doesn't get the
+
+ ip in the plan
+
+    return it
+
+*/
+
+
+ if (  time_now - gop_connection . time [ 0 ]  >= 9  )
+
+  {
+
+
+ output_print( "string", "connection reset.\n" );
+
+
+ strcpy ( gop_connection . address_ip [ 0 ],  gop_hope . network . address_to );
+
+          gop_connection . port [ 0 ]     =   gop_hope .  port_to;
+
+
+  }
+
+
+
+
+/*
+
+ this round is for if it connect to a ip without hope
+
+*/
+
+  }
+
+
+
+
+
+
+/*
+
+ this round is for a site  1 - 3
+
+*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ else if ( i == 4 )
+
+
+  {
+
+
+
+/*
+
+ it is for smile  and  can't recive or send
+
+*/
+
+
+ if (
+      time_now  -  gop_connection . time [ i ]  >=  9
+
+ &&   gop_connection . connection [ i ]  >  0
+
+    )
+
+  {
+
+
+/*
+
+ let it go
+
+*/
+
+ close ( gop_connection . connection [ i ] );
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  return 0;
+
+
+  }
