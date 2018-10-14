@@ -104,6 +104,9 @@
 
  one for connectted to connect
 
+
+ maybe named address
+
 */
 
  char address_ip [ 4 ] [ 128 ];
