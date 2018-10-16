@@ -22,6 +22,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*
 
  first add this before change about name
@@ -43,7 +53,28 @@
 
  gop_about . flag . main  =  1;
 
- gop_about . flag . deamon = gop_about . flag . deamon;
+ gop_about . flag . deamon  =  gop_about . flag . deamon;
+
+
+ gop_about . flag . dog  =  0;
+
+ gop_about . flag . start  =  0;
+
+ gop_about . flag . show  =  0;
+
+
+ gop_about . flag . connector  =  0;
+
+ gop_about . flag . connectted  =  0;
+
+
+ gop_about . flag . sound  =  0;
+
+ gop_about . flag . sound_show  =  0;
+
+ gop_about . flag . sound_save  =  0;
+
+
 
 
 
