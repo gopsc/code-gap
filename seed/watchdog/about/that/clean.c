@@ -8,6 +8,10 @@
 
  give a value of its structure and that could clean many where
 
+
+
+ and could set a clean loop
+
 */
 
 
@@ -20,16 +24,16 @@
 
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -49,28 +53,55 @@
 */
 
 
+ while  (
 
- if  (
+          strcmp ( that_about . symbol, "reading" )  !=  0
 
-       strcmp ( that_about . symbol, "reading" )  !=  0
+        )
 
-     )
 
   {
 
 
- strcpy ( that_about . symbol, "waitting" );
+/*
+
+    it is 0.1  seconds for a connector
+
+ so it is 0.1+ seconds for a about load
+
+
+ actualy them couldn't meet cause we don't clean it after first load
+
+*/
+
+
+ gop_wait ( 0.05 );
 
   }
 
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+/*
+
+ strcpy ( that_about . symbol, "waitting" );
+
+*/
+
+ strcpy ( that_about , symbol, "cleanning" );
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,11 +119,11 @@
 */
 
 
-  
-  
-  
-  
-  
+
+
+
+
+
 
 
 
@@ -124,7 +155,23 @@
 
 
 
+
+
+/*
+
+ it is running default or program get a shutdown
+
+*/
+
  gop_about . flag . main  =  1;
+
+
+
+/*
+
+ it is not get from hope
+
+*/
 
  gop_about . flag . deamon  =  gop_about . flag . deamon;
 
@@ -156,22 +203,50 @@
 
 
 
-  
-  
-  
-  
-  
 
 
 
-    strcpy ( that_about . system . system, "" );
 
-    strcpy ( that_about . system . name, "" );
 
 
 /*
-    strcpy ( that_about . system . user, "" );
+
+ wait connector / connectted exit maybe
+
+ ...
+
 */
+
+
+
+
+
+
+
+
+
+
+
+
+ strcpy ( that_about . system . symbol, "cleanning" );
+
+ strcpy ( that_about . system . system, "" );
+
+ strcpy ( that_about . system . name, "" );
+
+/*
+
+ strcpy ( that_about . system . user, "" );
+
+*/
+
+ strcpy ( that_about . system . symbol, "waitting" );
+
+
+
+
+
+
 
 
 

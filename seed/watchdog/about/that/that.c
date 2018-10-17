@@ -31,13 +31,13 @@
 
 */
 
- char system [ 128 ];
+ char system [ 32 ];
 
- char name   [ 128 ];
+ char name   [ 32 ];
 
 /*
 
- char user   [ 128 ];
+ char user   [ 32 ];
 
 */
 
@@ -64,6 +64,8 @@
   {
 
 
+
+
 /*
 
  wait...
@@ -71,6 +73,10 @@
 */
 
  char symbol [ 16 ]
+
+
+
+
 
 
 /*
@@ -97,8 +103,11 @@
 /*
 
  unsigned  int  user;
+
  unsigned  int  nice;
+
  unsigned  int  system;
+
  unsigned  int  idle;
 
 */
@@ -133,6 +142,10 @@
  struct gopi_memory
 
   {
+
+
+ char symbol [ 16 ];
+
 
 
  unsigned long  total;
@@ -171,6 +184,9 @@
 
   {
 
+ char symbol [ 16 ];
+
+
  unsigned long  size;
 
  unsigned long  available;
@@ -208,13 +224,17 @@
   {
 
 
+ char symbol [ 16 ];
+
+
+
  /*
 
   maybe use malloc straightly
 
  */
 
-  char ip [ 32 ] [ 3 ] [ 1024 ];
+ char ip [ 32 ] [ 3 ] [ 1024 ];
 
  int  number;
 
@@ -240,6 +260,9 @@
  struct gopi_sound
 
   {
+
+ char symbol [ 16 ]
+
 
  int number_control;
 
