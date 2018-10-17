@@ -20,6 +20,79 @@
 
 
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+/*
+
+ there is a symbol about it
+
+ if it is reading we don't clean the symbol
+
+ if not we clean it to blank
+
+
+
+ we use symbol to little about soon
+
+ then we put them with waitting
+
+*/
+
+
+
+ if  (
+
+       strcmp ( that_about . symbol, "reading" )  !=  0
+
+     )
+
+  {
+
+
+ strcpy ( that_about . symbol, "waitting" );
+
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+/*
+
+ clean about this
+
+ ...
+
+*/
+
+
+  
+  
+  
+  
+  
 
 
 
@@ -83,56 +156,11 @@
 
 
 
-
-
-/*
-
- there is a symbol about it
-
- if it is reading we don't clean the symbol
-
- if not we clean it to blank
-
-
-
- we use symbol to little about soon
-
- then we put them with waitting
-
-*/
-
-
-
- if  (
-
-       strcmp ( that_about . symbol, "reading" )  !=  0
-
-     )
-
-  {
-
-
- strcpy ( that_about . symbol, "waitting" );
-
-  }
-
-
-
-
-
-
-
-
-
-/*
-
- clean about this
-
- ...
-
-*/
-
-
+  
+  
+  
+  
+  
 
 
 
