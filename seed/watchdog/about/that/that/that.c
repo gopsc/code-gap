@@ -83,16 +83,6 @@
 
  them could not be here
 
-*/
-
-
- char name [ 128 ];
-
-
-
-
-
-/*
 
  use in cpu/rate
 
@@ -101,6 +91,8 @@
 */
 
 /*
+
+ char name [ 16 ];
 
  unsigned  int  user;
 
@@ -115,7 +107,7 @@
 
 
 
- int  cores;
+ int  core;
 
  int  frequency;
 

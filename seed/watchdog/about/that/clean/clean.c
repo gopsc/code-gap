@@ -16,6 +16,9 @@
 
 
 
+
+
+
  int clean_about  (  struct  gopi_about  that_about  )
 
   {
@@ -53,9 +56,23 @@
 */
 
 
+
+
+
+
+
+
  while  (
 
-          strcmp ( that_about . symbol, "reading" )  !=  0
+/*
+
+          strcmp ( that_about . symbol, "reading" )  ==  0
+
+*/
+
+          strcmp ( that_about . symbol, "waitting" )  != 0
+
+     &&   strcmp ( that_about . symbol, "" ) != 0;
 
         )
 
@@ -63,11 +80,16 @@
   {
 
 
+
+
+
+
+
 /*
 
     it is 0.1  seconds for a connector
 
- so it is 0.1+ seconds for a about load
+ so it is 0.1- seconds for a about load
 
 
  actualy them couldn't meet cause we don't clean it after first load
@@ -93,10 +115,15 @@
 
 
 
+ strcpy ( that_about . flag . symbol, "cleanning" );
 
+ strcpy ( that_about . system . symbol, "cleanning" );
 
+ strcpy ( that_about . cpu . symbol, "cleanning" );
 
+ strcpy ( that_about . memory . symbol, "cleanning" );
 
+ strcpy ( that_about . disk . symbol. "cleanning" );
 
 
 
@@ -157,6 +184,8 @@
 
 
 
+
+
 /*
 
  it is running default or program get a shutdown
@@ -195,7 +224,7 @@
  gop_about . flag . sound_save  =  0;
 
 
-
+ strcpy ( gop_about . flag . symbol, "waitting" );
 
 
 
@@ -227,8 +256,11 @@
 
 
 
+/*
 
  strcpy ( that_about . system . symbol, "cleanning" );
+
+*/
 
  strcpy ( that_about . system . system, "" );
 
@@ -241,6 +273,44 @@
 */
 
  strcpy ( that_about . system . symbol, "waitting" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ that_about . cpu . temperature = 0;
+
+ that_about . cpu . core = 0;
+
+ that_about . cpu . frequency = 0;
+
+ that_about . cpu . rate = 0;
+
+
+/*
+
+ waitting for read, take savnig after read maybe
+
+*/
+
+ strcpy ( that_about . cpu . symbol, "waitting" );
+
+
+
+
 
 
 

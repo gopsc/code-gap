@@ -19,6 +19,9 @@
   {
 
 
+ char symbol [ 16 ];
+
+
  int    main;
  int    deamon;
 

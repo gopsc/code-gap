@@ -26,7 +26,7 @@
 
 
 
- char buffer_result [ 128 ];
+ char note_result [ 128 ];
 
 
 
@@ -34,20 +34,28 @@
 
 
 
- commandline_get ( "uname -s", buffer_result );
+ commandline_get ( "uname -s", note_result );
+
+
+
+/*
+
+ got a enter at end
+
+*/
+
+ * strchr ( note_result, '\n' )  =  '\0';
 
 
 
 
 
- * strchr ( buffer_result, '\n' )  =  '\0';
 
-
- strcpy ( gop_about . system . system, buffer_result );
+ strcpy ( gop_about . system . system, note_result );
 
 
 
- return 1;
+ return 0;
 
 
 
@@ -70,7 +78,7 @@
 /*
 
  dont need to use
- 
+
 */
 
 
@@ -83,13 +91,34 @@
 
 
 
+
+
 /*
+
  int about_user ()
+
   {
- char buffer_result [ 128 ];
- commandline_get (  "whoami",  buffer_result  );
- * strchr (  buffer_result,  '\n'  )  =  '\0';
- strcpy (  gop_about_system . user,  buffer_result  );
- return 1;
+
+ char noet_result [ 128 ];
+
+ commandline_get (  "whoami",  note_result  );
+
+
+ if (
+      strchr ( note_result,'\n' ) != NULL
+    )
+
+  {
+
+ * strchr (  note_result,  '\n'  )  =  '\0';
+
   }
+
+ strcpy (  gop_about_system . user,  note_result  );
+
+ return 0;
+
+  }
+
+
 */

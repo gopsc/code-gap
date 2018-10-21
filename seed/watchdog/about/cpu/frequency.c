@@ -1,22 +1,37 @@
 
-int about_CPU_frequency () {
+
+
+
+ int about_CPU_frequency ()
+
+  {
 
 
 
 
-    char  that_file [ 10240 ];
+ char  note_file [ 10240 ];
 
-    char  that_result [ 1024 ];
-
-
+ char  note_result [ 1024 ];
 
 
 
-    file_get ( "/proc/cpuinfo", that_file );
+
+
+ file_get ( "/proc/cpuinfo", note_file );
 
 
 
-    commandline_get ( "lscpu",  that_result );
+ commandline_get ( "lscpu",  note_result );
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -35,7 +50,9 @@ int about_CPU_frequency () {
 
 
 
-    if  (  strstr ( that_file, "cpu MHz" )  !=  NULL  ) {
+ if  (  strstr ( note_file, "cpu MHz" )  !=  NULL  )
+
+  {
 
 
 /*
@@ -45,13 +62,23 @@ int about_CPU_frequency () {
 */
 
 
-        strcpy  (  that_file,  strstr ( that_file, "cpu MHz" )     );
-        strcpy  (  that_file,  strstr ( that_file, ": "      ) + 2 );
+ strcpy  (  note_file,  strstr ( note_file, "cpu MHz" )     );
 
-      * strchr ( that_file, '\n' ) = '\0';
+ strcpy  (  note_file,  strstr ( note_file, ": "      ) + 2 );
+
+ * strchr ( note_file, '\n' ) = '\0';
 
 
-        gop_about . cpu . frequency  =  atoi ( that_file );}
+ gop_about . cpu . frequency  =  atoi ( note_file );
+
+ }
+
+
+
+
+
+
+
 
 
 
@@ -65,18 +92,25 @@ int about_CPU_frequency () {
 */
 
 
-    else if  (  strstr ( that_result, "cpu max MHz" )  !=  NULL  ) {
+ else if  (  strstr ( that_result, "cpu max MHz" )  !=  NULL  )
+
+  {
 
 
 
-        strcpy  (  that_result,  strstr ( that_result, "cpu max MHz" )  );
+ strcpy  (  note_result,  note ( note_result, "cpu max MHz" )  );
 
-      * strchr ( that_result, '\n' ) = '\0';
+ * strchr ( note_result, '\n' ) = '\0';
 
-        sscanf ( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
+ sscanf ( note_result, "%s %s %s %s", note_file, note_file, note_file, note_result );
 
 
-        gop_about . cpu . frequency  =  atoi ( that_result );}
+ gop_about . cpu . frequency  =  atoi ( note_result );
+
+  }
+
+
+
 
 
 
@@ -88,27 +122,37 @@ int about_CPU_frequency () {
 
 */
 
-    else if  (  strstr ( that_result, "CPU max MHz" )  !=  NULL  ) {
+ else if  (  strstr ( note_result, "CPU max MHz" )  !=  NULL  )
+
+  {
 
 
 
-        strcpy  (  that_result,  strstr ( that_result, "CPU max MHz" )  );
+ strcpy  (  note_result,  strstr ( note_result, "CPU max MHz" )  );
 
-      * strchr ( that_result, '\n' ) = '\0';
+ * strchr ( note_result, '\n' ) = '\0';
 
-        sscanf ( that_result, "%s %s %s %s", that_file, that_file, that_file, that_result );
-
-
-        gop_about . cpu . frequency  =  atoi ( that_result );}
+ sscanf ( note_result, "%s %s %s %s", note_file, note_file, note_file, note_result );
 
 
+ gop_about . cpu . frequency  =  atoi ( note_result );
 
 
-
+  }
 
 
 
-    else {
+
+
+
+
+
+
+
+
+ else
+
+  {
 
 
 
@@ -122,31 +166,56 @@ int about_CPU_frequency () {
 
 */
 
-        if  (  strstr ( that_file, "BogoMIPS" )  != NULL  ) {
+ if  (  strstr ( note_file, "BogoMIPS" )  != NULL  )
+
+  {
 
 
-            strcpy ( that_file, strstr ( that_file,  "BogoMIPS") );
-            strcpy ( that_file, strstr ( that_file,  ": "      ) + 2 );
-                              * strchr ( that_file,  '\n'      ) = '\0';
+ strcpy ( note_file, strstr ( note_file,  "BogoMIPS") );
+
+ strcpy ( that_file, strstr ( that_file,  ": "      ) + 2 );
+
+ * strchr ( note_file,  '\n' ) = '\0';
 
 
-            gop_about . cpu . frequency  =  atoi ( that_file );}
+ gop_about . cpu . frequency  =  atoi ( noet_file );
 
-
-
-
-        else if  (  strstr ( that_file, "Bogomips" )  !=  NULL  ) {
-
-
-            strcpy ( that_file, strstr ( that_file,   "Bogomips" ) );
-            strcpy ( that_file, strstr ( that_file, ": " ) + 2 );
-                              * strchr ( that_file, '\n' ) = '\0';
-
-
-            gop_about . cpu . frequency  =  atoi ( that_file );}}
+  }
 
 
 
 
+ else if  (  strstr ( note_file, "Bogomips" )  !=  NULL  )
 
-    return 1;}
+  {
+
+
+ strcpy ( note_file, strstr ( note_file,   "Bogomips" ) );
+
+ strcpy ( note_file, strstr ( note_file, ": " ) + 2 );
+
+ * strchr ( note_file, '\n' ) = '\0';
+
+
+ gop_about . cpu . frequency  =  atoi ( note_file );
+
+  }
+
+
+
+
+/*
+
+ this round for else
+
+*/
+
+  }
+
+
+
+
+
+ return 0;
+
+  }

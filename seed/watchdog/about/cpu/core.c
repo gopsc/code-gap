@@ -1,5 +1,13 @@
 
-int about_CPU_cores () {
+
+ int about_CPU_core ()
+
+  {
+
+
+
+
+
 
 
 
@@ -13,11 +21,18 @@ int about_CPU_cores () {
 
  if we can't found
 
- could note it
+ could note it straightly
 
 */
 
-    int  number_result  =  -1;
+ int  note_result  =  -1;
+
+
+
+
+
+
+
 
 
 
@@ -29,7 +44,12 @@ int about_CPU_cores () {
 
 */
 
-    char  buffer_file  [ 10240 ]  =  "\n\n";
+ char  note_file  [ 10240 ]  =  "\n\n";
+
+
+
+
+
 
 
 
@@ -41,18 +61,26 @@ int about_CPU_cores () {
 
 */
 
-    char  target_name  [ 16 ]  =  "\nprocessor";
+
+ char  note_target_name  [ 16 ]  =  "\nprocessor";
+
+
+
+
+
 
 
 
 /*
 
  u should put a pointer
-  to note where you've read 
+  to note where you've read
 
 */
 
-    char * pointer_file  =  buffer_file;
+ char * note_pointer_file  =  note_file;
+
+
 
 
 
@@ -69,30 +97,48 @@ int about_CPU_cores () {
  to it's place
 
 */
-    file_get  (  "/proc/cpuinfo",  buffer_file  +  ( strlen ( buffer_file ) - 1 )  );
+
+ file_get  (
+             "/proc/cpuinfo",
+             note_file  +  (  strlen ( note_file )  - 1  )
+           );
 
 
 
 
 
-// Start the loop
 
-    while ( pointer_file != NULL ) {
+/*
 
-        number_result ++; 
+ Start the loop
 
-        pointer_file  =  strstr ( pointer_file + 1, target_name );}
+*/
 
+ while ( note_pointer_file != NULL )
 
+  {
 
+ note_result ++;
 
+ note_pointer_file  =  strstr (  note_pointer_file + 1,  note_target_name  );
 
-// Get the data
-
-    gop_about . cpu . cores  =  number_result;
-
-
-
+  }
 
 
-    return 1;}
+
+
+/*
+
+ Get the data
+
+*/
+
+ gop_about . cpu . cores  =  note_result;
+
+
+
+
+
+ return 0;
+
+  }

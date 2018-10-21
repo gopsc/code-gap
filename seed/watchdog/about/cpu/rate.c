@@ -1,22 +1,24 @@
 
 
 
-int about_CPU_rate () {
+ int about_CPU_rate ()
+
+  {
 
 
 
 
-             char name   [ 2 ] [ 16 ];
-    unsigned int  user   [ 2 ] [ 16 ];
-    unsigned int  nice   [ 2 ] [ 16 ];
-    unsigned int  system [ 2 ] [ 16 ];
-    unsigned int  idle   [ 2 ] [ 16 ];
+          char note_name   [ 2 ] [ 16 ];
+ unsigned int  note_user   [ 2 ] [ 16 ];
+ unsigned int  note_nice   [ 2 ] [ 16 ];
+ unsigned int  note_system [ 2 ] [ 16 ];
+ unsigned int  note_idle   [ 2 ] [ 16 ];
 
 
 
-          FILE *  buffer_file;
+ FILE *  note_file;
 
-          char    buffer_words [ 1024 ];
+ char    note_words [ 1024 ];
 
 
 
@@ -29,25 +31,61 @@ int about_CPU_rate () {
 
 
 
-    buffer_file  =  fopen ( "/proc/stat", "r" );
 
 
 
 
-    fgets  (  buffer_words,  sizeof ( buffer_words ),  buffer_file  );
+/*
+
+ open it
+
+*/
+
+ note_file  =  fopen ( "/proc/stat", "r" );
 
 
 
-    sscanf (
-             buffer_words, "%s %u %u %u %u",
-                                              buffer_name   [ 0 ],
-                                            & buffer_user   [ 0 ],
-                                            & buffer_nice   [ 0 ],
-                                            & buffer_system [ 0 ],
-                                            & buffer_idle   [ 0 ]
+
+
+
+/*
+
+ got a line
+
+*/
+
+ fgets  (  note_words,  sizeof ( note_words ),  note_file  );
+
+
+
+
+
+
+/*
+
+ got its convent
+
+*/
+
+ sscanf (
+          note_words, "%s %u %u %u %u",
+                                           note_name   [ 0 ],
+                                         & note_user   [ 0 ],
+                                         & note_nice   [ 0 ],
+                                         & note_system [ 0 ],
+                                         & note_idle   [ 0 ]
            );
 
-    fclose ( buffer_file );
+
+
+
+/*
+
+ close file
+
+*/
+
+ fclose ( note_file );
 
 
 
@@ -58,41 +96,66 @@ int about_CPU_rate () {
 
 
 
-// Wait 0.1 second.
+/*
 
-    usleep ( 100000 );
+ Wait 0.1 second.
 
+*/
 
-
-
-
-
-
-
-
-// the second time
-
-    buffer_file  =  fopen ( "/proc/stat", "r" );
+ gop_wait ( 0.1 );
 
 
 
 
-// get first line
-
-    fgets  (  buffer_words,  sizeof ( buffer_words ), buffer_file  );
 
 
 
 
-    sscanf ( buffer_words, "%s %u %u %u %u",
-                                              buffer_name   [ 1 ],
-                                            & buffer_user   [ 1 ],
-                                            & buffer_nice   [ 1 ],
-                                            & buffer_system [ 1 ],
-                                            & buffer_idle   [ 1 ]
 
 
-    fclose ( buffer_file );
+
+
+/*
+
+ the second time
+
+
+
+
+
+
+
+
+ open file
+
+*/
+
+ note_file  =  fopen ( "/proc/stat", "r" );
+
+
+
+
+
+/*
+
+ get first line
+
+*/
+
+ fgets  (  note_words,  sizeof ( note_words ), note_file  );
+
+
+
+
+ sscanf ( note_words, "%s %u %u %u %u",
+                                              note_name   [ 1 ],
+                                            & note_user   [ 1 ],
+                                            & note_nice   [ 1 ],
+                                            & note_system [ 1 ],
+                                            & note_idle   [ 1 ]
+
+
+ fclose ( note_file );
 
 //===============================================================
 
@@ -104,37 +167,41 @@ int about_CPU_rate () {
 
 */
 
-    unsigned long od, nd;
-    unsigned long id, sd;
+ unsigned long od, nd;
+ unsigned long id, sd;
 
-             int  that_use = 0;
+          int  note_use = 0;
 
-                  od  =  ( unsigned long ) ( gop_about . cpu . user + gop_about . cpu . nice  +  gop_about . cpu . system  +  gop_about . cpu . idle);
-                  nd  =  ( unsigned long ) (      buffer_cpu . user +      buffer_cpu . nice  +       buffer_cpu . system  +       buffer_cpu . idle);
 
-                  id  =  ( unsigned long ) ( buffer_cpu . user   - gop_about . cpu . user   );
-                  sd  =  ( unsigned long ) ( buffer_cpu . system - gop_about . cpu . system );
+               od  =  ( unsigned long ) ( note_user [ 0 ] + note_nice [ 0 ]  +  note_system [ 0 ]  +  note_ idle [ 0 ] );
+
+               nd  =  ( unsigned long ) ( note_user [ 1 ] + note_nice [ 1 ] + note_system [ 1 ]  + note_idle [ 1 ] );
+
+
+               id  =  ( unsigned long ) ( note_user [ 1 ]   - note_user [ 0 ]   );
+
+               sd  =  ( unsigned long ) ( note_system [ 1 ] - note_system [ 0 ] );
 
 //===============================================================
 
 
 
-    if (  ( nd - od )  !=  0  )
+ if (  ( nd - od )  !=  0  )
 
-        that_use  =  (  ( sd + id ) * 100  )  /  ( nd - od );
+ note_use  =  (  ( sd + id ) * 100  )  /  ( nd - od );
 
-    else
+ else
 
-        that_use = 0;
-
-
-
-
-
-    gop_about . cpu . rate  =  that_use;
+ note_use = 0;
 
 
 
 
 
-    return 1;}
+ gop_about . cpu . rate  =  note_use;
+
+
+
+ return 0;
+
+  }
