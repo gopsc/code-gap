@@ -32,15 +32,6 @@
 
 
 
-
-# take it where they belong
-
-
-# watchdog hopes maybe added after this
-
-# add flag?
-
- watchdog/that/hope.c
  
  
  
@@ -74,13 +65,44 @@
 # be easier to read
 
 
+ watchdog/about/that/clean/system.c
 
- watchdog/about/that/clean.c
+ watchdog/about/that/clean/cpu.c
+
+ watchdog/about/that/clean/memory.c
+ 
+ watchdog/about/that/clean/disk.c
+ 
+ watchdog/about/that/clean/network.c
+ 
+ watchdog/about/that/clean/sonud.c
+ 
+ watchdog/about/that/clean/mate.c
+ 
+
+ watchdog/about/that/clean/that.c
 
 
 
 
 
+
+# take it where they belong
+
+
+# watchdog hopes maybe added after this
+
+# add flag?
+
+ watchdog/that/hope.c
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
@@ -88,9 +110,10 @@
 # dog will use
 
 
- network/that/hope.c
 
  network/that/that.c
+ 
+ network/that/hope.c
  
  network/that/check.c
 
@@ -101,9 +124,17 @@
 
 
 
- sound/that/hope.c
 
  sound/that/that.c
+ 
+ sound/that/hope.c
+
+
+
+
+
+
+
 
 
 
@@ -131,6 +162,23 @@
 
 
  things/c/that/hope.h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
