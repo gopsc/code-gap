@@ -45,10 +45,25 @@
 
  what we should do
 
+
+
+ moved to hope of dog
+ 
+ maybe as a about to add
+
 */
 
+  
+  
+
+/*
 
  struct  gopi_flag  flag;
+
+*/
+  
+  
+ struct gopi_dog dog;
 
 
 
