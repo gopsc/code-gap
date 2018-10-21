@@ -1,13 +1,13 @@
 
 
  int clean_about_network ( gopi_network )
- 
+
   {
-  
-  
-  
-  
-  
+
+
+
+
+
 
 
 
@@ -22,25 +22,58 @@
 
 
 
-    int  number_ip;
+ int  number_ip;
 
 
-    for (
+ for (
 
-           number_ip  = 0;
-           number_ip <= 32;
-           number_ip ++
+       number_ip  = 0;
+       number_ip <= 32;
+       number_ip ++
 
-        ) {
+     )
+
+  {
 
 
-        if  (  strcmp (  that_network . ip [ number_ip ] [ 2 ],  ""  )  !=  0  ) {
 
-            strcpy (  that_network . ip [ number_ip ] [ 2 ],  ""  );}
 
-        else {
 
-            break;}}
+ if  (
+
+       strcmp (  that_network . ip [ number_ip ] [ 2 ],  ""  )  !=  0
+
+     )
+
+  {
+
+ strcpy (  that_network . ip [ number_ip ] [ 2 ],  ""  );
+
+  }
+
+
+
+ else
+
+  {
+
+ break;
+
+  }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -50,8 +83,27 @@
 
  ...
 
+
+
+
+
+ number is for load network by unstatic memory
+
 */
-  
+
+
+ that_network . number = 0;
+
+
+
+
+
+
+
+
+
+
+
  return 0;
-  
+
   }

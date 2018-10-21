@@ -20,7 +20,12 @@
 
   {
 
+
  char symbol [ 16 ];
+
+
+
+
 
 
  unsigned long  size;

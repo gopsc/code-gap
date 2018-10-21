@@ -293,11 +293,10 @@
 
 */
 
-/*
+
 
  about_disk ();    gop_wait ( 0.1 );
 
-*/
 
  about_cpu ();     gop_wait ( 0.1 );
 

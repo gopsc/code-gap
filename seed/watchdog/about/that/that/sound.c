@@ -19,7 +19,13 @@
 
   {
 
- char symbol [ 16 ]
+
+ char symbol [ 16 ];
+
+
+
+
+
 
 
  int number_control;
