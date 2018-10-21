@@ -30,6 +30,21 @@
 
 
 
+
+
+
+# take it where they belong
+
+
+# watchdog hopes maybe added after this
+
+# add flag?
+
+ watchdog/that/hope.c
+ 
+ 
+ 
+
  watchdog/about/that/that/system.c
 
  watchdog/about/that/that/cpu.c
@@ -48,16 +63,6 @@
 
 
 
-
-
-# take it where they belong
-
-
-# watchdog hopes maybe added after this
-
-# add flag?
-
- watchdog/that/hope.c
 
 
 
@@ -83,11 +88,10 @@
 # dog will use
 
 
+ network/that/hope.c
 
  network/that/that.c
  
- network/that/hope.c
-
  network/that/check.c
 
  network/that/clean.c
@@ -97,9 +101,9 @@
 
 
 
- sound/that/that.c
-
  sound/that/hope.c
+
+ sound/that/that.c
 
 
 
