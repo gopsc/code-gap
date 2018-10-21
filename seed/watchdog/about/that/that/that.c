@@ -51,6 +51,9 @@
  
  maybe as a about to add
 
+
+ but dog don't have a symbol
+ 
 */
 
   
@@ -62,9 +65,11 @@
 
 */
   
-  
+/*
+
  struct hope_dog dog;
 
+*/
 
 
 
