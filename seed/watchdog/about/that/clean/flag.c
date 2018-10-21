@@ -10,7 +10,7 @@
 */
 
 
- int clean_flag ( gopi_about that_about )
+ int clean_flag ( gopi_flag that_flag )
  
   {
   
@@ -53,7 +53,7 @@
 
 */
 
- that_about . flag . main  =  1;
+ that_flag . main  =  1;
 
 
 
@@ -61,27 +61,30 @@
 
  it is not get from hope
 
+
+ mates usually open it
+
 */
 
- that_about . flag . deamon  =  gop_about . flag . deamon;
+ that_flag . deamon  =  gop_about . flag . deamon;
 
 
- that_about . flag . dog  =  0;
+ that_flag . dog  =  0;
 
- that_about . flag . start  =  0;
+ that_flag . start  =  0;
 
- that_about . flag . show  =  0;
-
-
- that_about . flag . connector  =  0;
-
- that_about . flag . connectted  =  0;
+ that_flag . show  =  0;
 
 
- that_about . flag . sound  =  0;
+ that_flag . connector  =  0;
 
- that_about . flag . sound_show  =  0;
+ that_flag . connectted  =  0;
 
- that_about . flag . sound_save  =  0;
+
+ that_flag . sound  =  0;
+
+ that_flag . sound_show  =  0;
+
+ that_flag . sound_save  =  0;
   
   }
