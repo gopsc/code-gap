@@ -115,8 +115,12 @@
 
 
 
+/*
+  
  strcpy ( that_about . flag . symbol, "cleanning" );
 
+*/
+  
  strcpy ( that_about . system . symbol, "cleanning" );
 
  strcpy ( that_about . cpu . symbol, "cleanning" );
@@ -149,12 +153,13 @@
 
 
 
+/*
 
  clean_flag ( that_about . flag );
 
  strcpy ( that_about . flag . symbol, "waitting" );
 
-
+*/
 
 
 
@@ -171,6 +176,9 @@
  wait connector / connectted exit maybe
 
  ...
+ 
+ 
+  doesn't need because we just use it at sometime now
 
 */
 
@@ -190,15 +198,7 @@
 
 */
 
- strcpy ( that_about . system . system, "" );
-
- strcpy ( that_about . system . name, "" );
-
-/*
-
- strcpy ( that_about . system . user, "" );
-
-*/
+ clean_about_system ( that_about . system );
 
  strcpy ( that_about . system . symbol, "waitting" );
 
@@ -328,7 +328,7 @@
 
         int i;
 
-        for  (  i = 0;  i < that_about . numbr_mates;  i ++  ) {
+        for  (  i = 0;  i < that_about . number_mates;  i ++  ) {
 
 
             clean_about (  ( gopi_about * ) that_about . mates [ i ]  );
@@ -348,4 +348,115 @@
 
 
 
-    return 1;}
+    return 0;
+    
+    
+      }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+/*
+
+ then it could clean mates of this
+
+
+ doesnt't have it anymore
+ 
+*/
+
+  
+  
+/*
+
+ int clean_flag ( gopi_flag that_flag )
+ 
+  {
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/*
+
+ first add this before change about name
+
+    or the dog won't run
+
+
+ and dog load configurations
+
+
+
+ sometimes we clean it
+
+ when lost a connectting
+
+*/
+
+
+
+
+
+
+
+/*
+
+ it is running default or program get a shutdown
+
+*/
+
+ that_flag . main  =  1;
+
+
+
+/*
+
+ it is not get from hope
+
+
+ mates usually open it
+
+*/
+
+ that_flag . deamon  =  gop_about . flag . deamon;
+
+
+ that_flag . dog  =  0;
+
+ that_flag . start  =  0;
+
+ that_flag . show  =  0;
+
+
+ that_flag . connector  =  0;
+
+ that_flag . connectted  =  0;
+
+
+ that_flag . sound  =  0;
+
+ that_flag . sound_show  =  0;
+
+ that_flag . sound_save  =  0;
+  
+  }
+
+  */
