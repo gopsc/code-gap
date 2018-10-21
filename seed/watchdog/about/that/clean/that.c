@@ -150,81 +150,9 @@
 
 
 
+ clean_flag ( that_about . flag );
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
- first add this before change about name
-
-    or the dog won't run
-
-
- and dog load configurations
-
-
-
- sometimes we clean it
-
- when lost a connectting
-
-*/
-
-
-
-
-
-
-
-/*
-
- it is running default or program get a shutdown
-
-*/
-
- gop_about . flag . main  =  1;
-
-
-
-/*
-
- it is not get from hope
-
-*/
-
- gop_about . flag . deamon  =  gop_about . flag . deamon;
-
-
- gop_about . flag . dog  =  0;
-
- gop_about . flag . start  =  0;
-
- gop_about . flag . show  =  0;
-
-
- gop_about . flag . connector  =  0;
-
- gop_about . flag . connectted  =  0;
-
-
- gop_about . flag . sound  =  0;
-
- gop_about . flag . sound_show  =  0;
-
- gop_about . flag . sound_save  =  0;
-
-
- strcpy ( gop_about . flag . symbol, "waitting" );
+ strcpy ( that_about . flag . symbol, "waitting" );
 
 
 
