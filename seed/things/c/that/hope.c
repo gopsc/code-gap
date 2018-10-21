@@ -66,12 +66,16 @@
 
 
 
+  
+  
+ struct  hope_dog dog;
+  
 
- struct  hopes_net  net;
+ struct  hope_net  net;
 
 
 
- struct  hopes_sound  sound;
+ struct  hope_sound  sound;
 
 
 
