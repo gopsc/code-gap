@@ -237,6 +237,9 @@
  strcpy ( that_about . sound . symbol, "waitting" );
 
 
+ clean_about_mate ( that_about );
+  
+ strcpy ( that_about . symbol, "waitting" );
 
 
 
@@ -271,49 +274,6 @@
 
 
 
-
-
-
-
-/*
-
- maybe we could found blank box
-
- or use realloc
-
-*/
-
-
-
-    int  number_ip;
-
-
-    for (
-
-           number_ip  = 0;
-           number_ip <= 32;
-           number_ip ++
-
-        ) {
-
-
-        if  (  strcmp (  that_about . network . ip [ number_ip ] [ 2 ],  ""  )  !=  0  ) {
-
-            strcpy (  that_about . network . ip [ number_ip ] [ 2 ],  ""  );}
-
-        else {
-
-            break;}}
-
-
-
-/*
-
- and others
-
- ...
-
-*/
 
 
 
