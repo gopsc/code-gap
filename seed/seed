@@ -13,8 +13,6 @@
 
  things/c/that/Linux.h
 
- things/c/that/flags.c
-
 
 
 
@@ -56,7 +54,7 @@
 
 # add flag?
 
-# watchdog/about/that/hope.c
+ watchdog/that/hope.c
 
 
 
