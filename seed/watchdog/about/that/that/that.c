@@ -63,7 +63,7 @@
 */
   
   
- struct gopi_dog dog;
+ struct hope_dog dog;
 
 
 
