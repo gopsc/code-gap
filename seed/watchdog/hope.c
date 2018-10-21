@@ -17,9 +17,18 @@
 
   {
 
+  
+/*
+
+ use it when it is about
+
+*/
+  
+/*
 
  char symbol [ 16 ];
 
+*/
 
  int  main;
  int  deamon;
