@@ -128,6 +128,10 @@
  strcpy ( that_about . memory . symbol, "cleanning" );
 
  strcpy ( that_about . disk . symbol. "cleanning" );
+  
+ strcpy ( that_about . network . symbol. "cleanning" );
+  
+ strcpy ( that_about . sound . symbol. "cleanning" );
 
 
 
@@ -191,6 +195,11 @@
 
 
 
+/*
+
+ waitting for read, take savnig after read maybe
+
+*/
 
 /*
 
@@ -202,39 +211,47 @@
 
  strcpy ( that_about . system . symbol, "waitting" );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- that_about . cpu . temperature = 0;
-
- that_about . cpu . core = 0;
-
- that_about . cpu . frequency = 0;
-
- that_about . cpu . rate = 0;
-
-
-/*
-
- waitting for read, take savnig after read maybe
-
-*/
+  
+ clean_about_cpu ( that_about . cpu );
 
  strcpy ( that_about . cpu . symbol, "waitting" );
+  
+
+ clean_about_system ( that_about . memory );
+
+ strcpy ( that_about . memory . symbol, "waitting" );
+  
+
+ clean_about_system ( that_about . disk );
+
+ strcpy ( that_about . disk . symbol, "waitting" );
+  
+
+ clean_about_system ( that_about . network );
+
+ strcpy ( that_about . network . symbol, "waitting" );
+  
+
+ clean_about_system ( that_about . sound );
+
+ strcpy ( that_about . sound . symbol, "waitting" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
