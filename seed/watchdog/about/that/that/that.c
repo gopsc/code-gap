@@ -48,23 +48,23 @@
 
 
  moved to hope of dog
- 
+
  maybe as a about to add
 
 
  but dog don't have a symbol
- 
+
 */
 
-  
-  
+
+
 
 /*
 
  struct  gopi_flag  flag;
 
 */
-  
+
 /*
 
  struct hope_dog dog;
@@ -127,14 +127,14 @@
 */
 
 
-    short  number_mates;
+    short  number_mate;
 
-    void * * mates;
-
-
+    void * * mate;
 
 
-    } gop_about;
+
+
+    };
 
 
 

@@ -17,13 +17,13 @@
 
   {
 
-  
+
 /*
 
  use it when it is about
 
 */
-  
+
 /*
 
  char symbol [ 16 ];

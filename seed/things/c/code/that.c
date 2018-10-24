@@ -19,12 +19,17 @@
 
  this is what it is
 
+
+ moved to thing/c/that/that.c
+
 */
 
 
+/*
 
  pthread_t  thread  [ 4 ];
 
+*/
 
 
 

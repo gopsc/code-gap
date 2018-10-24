@@ -16,7 +16,7 @@
 
 # moved flag to hope of dog
 
-# things/c/that/flag.h
+# things/c/that/flag.c
 
 
 
@@ -32,7 +32,7 @@
 
 
 
- 
+# it is for things taking before getting 
  
  
 
@@ -83,6 +83,18 @@
  watchdog/about/that/clean/that.c
 
 
+
+
+ watchdog/about/that/put/that.c
+
+ watchdog/about/that/load/that.c
+
+
+
+
+
+
+# there's load about and put about below
 
 
 
@@ -161,16 +173,19 @@
 
 
 
- things/c/that/hope.h
+ things/c/that/hope.c
 
 
 
 
 
 
+# they're in one things
+
+# all of value in a little dream
 
 
-
+ things/c/that/that.c
 
 
 

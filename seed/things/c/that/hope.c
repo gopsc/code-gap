@@ -20,7 +20,7 @@
 
 
 
- struct gopi_hopes
+ struct gopi_hope
 
 
   {
@@ -66,18 +66,17 @@
 
 
 
-  
-  
+
+
  struct  hope_dog dog;
-  
+
 
  struct  hope_net  net;
-
 
 
  struct  hope_sound  sound;
 
 
 
- } gop_hope;
+ };
 

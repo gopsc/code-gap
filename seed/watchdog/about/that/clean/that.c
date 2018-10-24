@@ -53,13 +53,16 @@
 
  then we put them with waitting
 
+
+
+
+
+
+
+
+ it is blank when we clean it at start
+
 */
-
-
-
-
-
-
 
 
  while  (
@@ -116,11 +119,11 @@
 
 
 /*
-  
+
  strcpy ( that_about . flag . symbol, "cleanning" );
 
 */
-  
+
  strcpy ( that_about . system . symbol, "cleanning" );
 
  strcpy ( that_about . cpu . symbol, "cleanning" );
@@ -128,9 +131,9 @@
  strcpy ( that_about . memory . symbol, "cleanning" );
 
  strcpy ( that_about . disk . symbol. "cleanning" );
-  
+
  strcpy ( that_about . network . symbol. "cleanning" );
-  
+
  strcpy ( that_about . sound . symbol. "cleanning" );
 
 
@@ -180,8 +183,8 @@
  wait connector / connectted exit maybe
 
  ...
- 
- 
+
+
   doesn't need because we just use it at sometime now
 
 */
@@ -201,44 +204,97 @@
 
 */
 
+
+
+
 /*
 
  strcpy ( that_about . system . symbol, "cleanning" );
 
 */
 
+
  clean_about_system ( that_about . system );
+
+/*
 
  strcpy ( that_about . system . symbol, "waitting" );
 
-  
+*/
+
+
  clean_about_cpu ( that_about . cpu );
 
+/*
+
  strcpy ( that_about . cpu . symbol, "waitting" );
-  
+
+*/
+
 
  clean_about_system ( that_about . memory );
 
+/*
+
  strcpy ( that_about . memory . symbol, "waitting" );
-  
+
+*/
+
 
  clean_about_system ( that_about . disk );
 
+/*
+
  strcpy ( that_about . disk . symbol, "waitting" );
-  
+
+*/
+
 
  clean_about_system ( that_about . network );
 
+/*
+
  strcpy ( that_about . network . symbol, "waitting" );
-  
+
+*/
+
 
  clean_about_system ( that_about . sound );
 
+/*
+
  strcpy ( that_about . sound . symbol, "waitting" );
+
+*/
 
 
  clean_about_mate ( that_about );
-  
+
+/*
+
+ strcpy ( that_about . symbol, "waitting" );
+
+*/
+
+
+
+
+
+
+
+
+ strcpy ( that_about . system . symbol, "waitting" );
+
+ strcpy ( that_about . cpu . symbol, "waitting" );
+
+ strcpy ( that_about . memory . symbol, "waitting" );
+
+ strcpy ( that_about . disk . symbol, "waitting" );
+
+ strcpy ( that_about . network . symbol, "waitting" );
+
+ strcpy ( that_about . sound . symbol, "waitting" );
+
  strcpy ( that_about . symbol, "waitting" );
 
 
@@ -247,22 +303,21 @@
 
 
 
-
  return 0;
-    
-    
+
+
   }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
 
 
 
