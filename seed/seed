@@ -64,37 +64,44 @@
 
 # be easier to read
 
+# move them cause they couldn't be support by things
 
- watchdog/about/that/clean/system.c
 
- watchdog/about/that/clean/cpu.c
 
- watchdog/about/that/clean/memory.c
+# watchdog/about/that/clean/system.c
+
+# watchdog/about/that/clean/cpu.c
+
+# watchdog/about/that/clean/memory.c
  
- watchdog/about/that/clean/disk.c
+# watchdog/about/that/clean/disk.c
  
- watchdog/about/that/clean/network.c
+# watchdog/about/that/clean/network.c
  
- watchdog/about/that/clean/sonud.c
+# watchdog/about/that/clean/sonud.c
  
- watchdog/about/that/clean/mate.c
+# watchdog/about/that/clean/mate.c
  
 
- watchdog/about/that/clean/that.c
-
-
-
-
- watchdog/about/that/put/that.c
-
- watchdog/about/that/load/that.c
-
+# watchdog/about/that/clean/that.c
 
 
 
 
 
 # there's load about and put about below
+
+
+
+
+
+# watchdog/about/that/put/that.c
+
+# watchdog/about/that/load/that.c
+
+
+
+
 
 
 
@@ -127,9 +134,12 @@
  
  network/that/hope.c
  
- network/that/check.c
+ 
+# net necessary to at start
 
- network/that/clean.c
+# network/that/check.c
+
+# network/that/clean.c
 
 
 
@@ -363,19 +373,34 @@
 
 
  
-# note doing
+
+
+
+
+
+
+
+
+
+
+
+
+ watchdog/about/that/clean/system.c
+
+ watchdog/about/that/clean/cpu.c
+
+ watchdog/about/that/clean/memory.c
  
-# should be strong could read note balabala...
+ watchdog/about/that/clean/disk.c
+ 
+ watchdog/about/that/clean/network.c
+ 
+ watchdog/about/that/clean/sonud.c
+ 
+ watchdog/about/that/clean/mate.c
  
 
- 
- watchdog/note/save.c
-
- watchdog/note/clear.c
-
-
-
-
+ watchdog/about/that/clean/that.c
 
 
 
@@ -390,11 +415,9 @@
 
 
 
- watchdog/about/that/put.c
+ watchdog/about/that/put/that.c
 
- watchdog/about/that/load.c
-
-
+ watchdog/about/that/load/that.c
 
 
 
@@ -403,6 +426,24 @@
 
 
 
+
+
+
+
+
+# note doing
+ 
+# should be strong could read note balabala...
+ 
+
+ 
+ watchdog/note/save.c
+
+ watchdog/note/clear.c
+ 
+ 
+ 
+ 
 # get about
 
 
@@ -514,7 +555,7 @@
 
 
 
- watchdog/dog.c
+ watchdog/that/dog.c
 
 
 
@@ -602,6 +643,19 @@
 
 
 
+
+
+
+
+
+
+
+ network/that/check.c
+
+ network/that/clean.c
+ 
+ 
+ 
 
 
 # The data code
