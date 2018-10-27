@@ -215,16 +215,24 @@ int main ()
 
 
 
+/*
+
+ must give it 3 blank site
+
+ or it crush :<
+
+*/
+
+ void * note_flower = malloc ( 3 * sizeof ( char ) );
+
+ void * note_number = malloc ( 1 * sizeof ( int ) );
+
+ * ( int * ) note_number = 3;
 
 
- char * note_flower = malloc ( 1 );
+ void * note_words = malloc ( 128 * sizeof ( char ) );
 
- int note_number = 0;
-
- char note_words [ 128 ];
-
-
- FILE * note_file;
+ void * note_file;
 
 
 
@@ -241,36 +249,74 @@ int main ()
 
 
  while (
-
-         fgets ( note_words, 128, note_file ) != NULL
+         NULL != fgets (
+                         ( char * ) note_words,
+                                    128,
+                         ( FILE * ) note_file
+                       )
 
        )
 
   {
 
 
- printf ( "test 1 \n" );
+ * ( int * ) note_number  +=  strlen (  ( char * ) note_words  );
 
- note_number += strlen ( note_words ) ;
 
- printf ( "test 2 \n" );
+ note_flower = realloc (
+                           ( char * ) note_flower,
+                         * ( int * )  note_number * sizeof ( char )
+                       );
 
- note_flower = realloc ( note_flower, note_number );
 
- printf ( "test 3 \n" );
+ strcat (
+          ( char * ) note_flower,
+          ( char * ) note_words
+        );
 
- strcat ( note_flower, note_words );
-
- printf ( "test 4 \n" );
 
   }
 
 
- printf ( "%d \n %d \n", strlen ( note_flower ), note_number );
 
 
 
 
+/*
+
+ this for test
+
+*/
+
+/*
+
+ printf (
+          "\n %d \n %d \n",
+           strlen (  ( char * ) note_flower  ),
+         * note_number
+        );
+
+*/
+
+
+
+
+
+
+
+/*
+
+ it use flower
+
+ and that will be free at last
+
+*/
+
+ free ( note_number );
+
+ free ( note_words );
+
+ fclose (  ( FILE * ) note_file  );
 
 
  printf ( "done \n" );
