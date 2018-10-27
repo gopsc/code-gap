@@ -1,39 +1,39 @@
 
 
-#include <stdio.h>
-#include <stdlib.h>
+# include <stdio.h>
+# include <stdlib.h>
 
-//#include <unistd.h>
+//# include <unistd.h>
 
-//#include <math.h>
-//#include <string.h>
-//#include <time.h>       // for time ( NULL )
-
-
+//# include <math.h>
+//# include <string.h>
+//# include <time.h>       // for time ( NULL )
 
 
-//#include <ifaddrs.h>
-//#include <fcntl.h>
-
-//#include <dirent.h>     // for dirent
 
 
-//#include <pthread.h>    // for thread
+//# include <ifaddrs.h>
+//# include <fcntl.h>
+
+//# include <dirent.h>     // for dirent
 
 
-//#include <signal.h>     // for check_deamon() ->
+//# include <pthread.h>    // for thread
+
+
+//# include <signal.h>     // for check_deamon() ->
                         // for tcp block out.
 
-//#include <sys/time.h>   // for note_save() -> gettimeofday()
+//# include <sys/time.h>   // for note_save() -> gettimeofday()
 
-//#include <sys/socket.h> // for network -> socket
+//# include <sys/socket.h> // for network -> socket
 
-#include <sys/stat.h>
+# include <sys/stat.h>
 
-//#include <sys/types.h>  // for check_deamon() ->
-//#include <sys/param.h>  // for ...
+//# include <sys/types.h>  // for check_deamon() ->
+//# include <sys/param.h>  // for ...
 
-//#include <arpa/inet.h>  // for network
+//# include <arpa/inet.h>  // for network
 
 
 
@@ -92,14 +92,6 @@ int main ()
 
 
 
- char * note_flower;
-
- FILE * note_file;
-
-
- char note_words [ 128 ];
-
- int note_number;
 
 
 
@@ -117,20 +109,50 @@ int main ()
 
  read seed
 
+ drop note
+
  save flower
 
 */
 
 
- struct stat note_status;
+
+ printf ( " check seed ... " );
+
+
+
+
+
+
+
+
+
+
+ void  *  note_status;
+
+ note_status  =  malloc (
+                          sizeof ( struct stat )
+                        );
+
+
+
+
+
 
 
 
  if (
 
-      lstat ( "seed/seed", & note_status  ) != 0
+      lstat (
+
+                              "seed/seed",
+             ( struct stat * ) note_status
+
+            ) != 0
 
     )
+
+
 
 
   {
@@ -147,6 +169,11 @@ int main ()
 
 
 
+
+ free ( note_status );
+
+
+ printf ( "done \n" );
 
 
 
@@ -174,16 +201,36 @@ int main ()
 
  read seed   <-
 
+ drop note
+
  get flower
 
 */
 
 
 
+ printf ( " read seed ... " );
 
- note_flower = malloc ( 128 );
 
- note_number = 128;
+
+
+
+
+
+ char * note_flower = malloc ( 1 );
+
+ int note_number = 0;
+
+ char note_words [ 128 ];
+
+
+ FILE * note_file;
+
+
+
+
+
+
 
 
 
@@ -201,29 +248,88 @@ int main ()
 
   {
 
- note_number += 128;
+
+ printf ( "test 1 \n" );
+
+ note_number += strlen ( note_words ) ;
+
+ printf ( "test 2 \n" );
 
  note_flower = realloc ( note_flower, note_number );
 
+ printf ( "test 3 \n" );
+
  strcat ( note_flower, note_words );
+
+ printf ( "test 4 \n" );
 
   }
 
 
-
-
-
-
-
- printf ( "%s \n", note_flower );
-
+ printf ( "%d \n %d \n", strlen ( note_flower ), note_number );
 
 
 
 
 
 
+ printf ( "done \n" );
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ check seed
+
+ read seed
+
+ drop note <-
+
+ save flower
+
+*/
+
+
+
+ char note_word [ 2 ] [ 16 ];
+
+ strcpy ( note_word [ 0 ], "#" );
+
+ strcpy ( note_word [ 1 ], "//" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ free ( note_flower );
 
 
 
