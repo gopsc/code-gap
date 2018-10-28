@@ -6,7 +6,7 @@
 //# include <unistd.h>
 
 //# include <math.h>
-//# include <string.h>
+# include <string.h>
 //# include <time.h>       // for time ( NULL )
 
 
