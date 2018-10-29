@@ -145,7 +145,7 @@ int main ()
 
       lstat (
 
-                              "seed/seed",
+                              "trees/seed/1.note",
              ( struct stat * ) note_status
 
             ) != 0
