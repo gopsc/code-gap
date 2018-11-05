@@ -59,6 +59,12 @@ int main ()
   {
 
 
+
+
+
+
+
+
 /*
 
  load_hope ();
@@ -82,6 +88,24 @@ int main ()
 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ void * note_path  =  malloc (  18  *  sizeof ( char )  );
+
+ strcpy ( note_path, "trees/seed/1.note" );
 
 
 
@@ -140,12 +164,17 @@ int main ()
 
 
 
+/*
+
+ if success it will return something
+
+*/
 
  if (
 
       lstat (
 
-                              "trees/seed/1.note",
+                               note_path,
              ( struct stat * ) note_status
 
             ) != 0
@@ -195,6 +224,20 @@ int main ()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
  check seed
@@ -221,13 +264,19 @@ int main ()
 
  or it crush :<
 
+
+ it is 3 on termux on sumsung 8 cores with 2g memory
+
+ and it is 5 on cygwin on hp 2 cores with 1g memory
+
 */
 
- void * note_flower = malloc ( 3 * sizeof ( char ) );
+
+ void * note_flower = malloc ( 5 * sizeof ( char ) );
 
  void * note_number = malloc ( 1 * sizeof ( int ) );
 
- * ( int * ) note_number = 3;
+ * ( int * ) note_number = 5;
 
 
  void * note_words = malloc ( 128 * sizeof ( char ) );
@@ -243,12 +292,40 @@ int main ()
 
 
 
+ note_file  =  fopen ( note_path, "r" );
 
- note_file  =  fopen ( "seed/seed", "r" );
 
 
+
+/*
+
+ could open a wrong place
+
+*/
+
+ if ( NULL == note_file )
+
+  {
+
+ printf ( "seed couldn't open \n" );
+
+ return -1;
+
+  }
+
+
+
+
+
+
+/*
+
+ if success it return a pointer
+
+*/
 
  while (
+
          NULL != fgets (
                          ( char * ) note_words,
                                     128,
@@ -258,6 +335,7 @@ int main ()
        )
 
   {
+
 
 
  * ( int * ) note_number  +=  strlen (  ( char * ) note_words  );
@@ -338,6 +416,18 @@ int main ()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
  check seed
@@ -352,12 +442,157 @@ int main ()
 
 
 
+/*
+
  char note_word [ 2 ] [ 16 ];
 
  strcpy ( note_word [ 0 ], "#" );
 
  strcpy ( note_word [ 1 ], "//" );
 
+*/
+
+
+
+
+
+
+
+
+
+ void * note_place  =  note_flower;
+
+ void * note_enter;
+
+
+
+ note_status  =  malloc (
+                          sizeof ( struct stat )
+                        );
+
+
+
+
+
+
+
+
+
+ do
+
+  {
+
+
+
+
+ note_enter  =  strchr ( note_place, '\n' );
+
+
+
+
+
+
+
+
+
+
+
+
+ if ( NULL != note_enter )
+
+  {
+
+ * ( char * ) note_enter  =  '\0';
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ if (  * ( char * ) note_place   ==  ' ' )
+
+  {
+
+ note_place ++;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ if (
+
+      lstat (
+
+                    ( char * ) note_place,
+             ( struct stat * ) note_status
+
+            ) != 0
+
+    )
+
+
+  {
+
+ printf ( "%s \n", note_place );
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ if ( NULL != note_enter )
+
+  {
+
+
+ * ( char * ) note_enter  =  '\n';
+ 
+
+ note_place  =  note_enter + 1;
+
+
+  }
+
+
+
+
+
+  } while ( NULL != note_enter );
+
+
+
+
+
+
+ free ( note_status );
 
 
 
@@ -374,8 +609,22 @@ int main ()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+ free ( note_path );
 
  free ( note_flower );
+
 
 
 
