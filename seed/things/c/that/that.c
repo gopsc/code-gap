@@ -7,10 +7,24 @@
 
   {
 
+
+/*
+
+ make it blank and clean
+
+*/
+
+/*
+
  gopi_about about;
 
  gopi_hope hope;
 
+*/
+
+ void * about;
+
+ void * hope;
 
 
 
