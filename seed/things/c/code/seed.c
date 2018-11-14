@@ -494,7 +494,13 @@ int main ()
 
 
 
+/*
 
+ if it isn't the last round
+
+ make it is that we could read
+
+*/
 
 
 
@@ -517,11 +523,20 @@ int main ()
 
 
 
+
+/*
+
+ take blank type away
+
+ always goes wrong here
+
+*/
+
  if (  * ( char * ) note_place   ==  ' ' )
 
   {
 
- note_place ++;
+ note_place  =  note_place + 1;
 
   }
 
@@ -537,6 +552,12 @@ int main ()
 
 
 
+
+/*
+
+ if it is a file that note said
+
+*/
 
 
  if (
@@ -566,7 +587,15 @@ int main ()
 
 
 
+/*
 
+ if it isn't last loop
+
+ return it so
+
+ keep reading
+
+*/
 
  if ( NULL != note_enter )
 
@@ -585,7 +614,27 @@ int main ()
 
 
 
+
+
+
+
+
+/*
+
+ last round exit
+
+*/
+
+
   } while ( NULL != note_enter );
+
+
+
+
+
+
+
+
 
 
 
