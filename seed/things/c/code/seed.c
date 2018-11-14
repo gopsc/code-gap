@@ -101,7 +101,11 @@ int main ()
 
 
 
+/*
 
+ where the seed list
+
+*/
 
  void * note_path  =  malloc (  18  *  sizeof ( char )  );
 
@@ -532,7 +536,10 @@ int main ()
 
 */
 
- if (  * ( char * ) note_place   ==  ' ' )
+
+/*
+
+ while (  * ( char * ) note_place   ==  ' ' )
 
   {
 
@@ -540,6 +547,7 @@ int main ()
 
   }
 
+*/
 
 
 
