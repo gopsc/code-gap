@@ -29,6 +29,17 @@
   {
 
 
+
+
+
+
+
+
+
+
+
+
+
  if  (  strcmp ( that_type, "string" )  ==  0  )
 
 
@@ -41,6 +52,8 @@
 
 
   }
+
+
 
 
 
@@ -60,6 +73,8 @@
 
 
 
+
+
  if  (  strcmp ( that_type, "long" )  ==  0  )
 
   {
@@ -67,6 +82,8 @@
  printf  (  "%ld",  * ( long * ) that_words );
 
   }
+
+
 
 
 
@@ -85,6 +102,8 @@
 
 
 
+
+
  if  (  strcmp ( that_type, "double" )  ==  0  )
 
 
@@ -94,6 +113,8 @@
 
 
   }
+
+
 
 
   }

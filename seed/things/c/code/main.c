@@ -181,6 +181,8 @@
 
 
 
+
+
 /*
 
  If command, turn gopi to a deamon
@@ -189,6 +191,15 @@
 
 
 // init_deamon ();
+
+
+
+
+
+
+
+
+
 
 
 
@@ -225,6 +236,23 @@
  pthread_create (  & thread [ 4 ], NULL,  gop_corde,  NULL  );
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

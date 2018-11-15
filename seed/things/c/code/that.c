@@ -23,7 +23,7 @@
 
 
 
- # include "../../../libraries/Linux.h"
+ # include "../../../libraries/standard/Linux.h"
 
 
 
@@ -189,6 +189,7 @@
  add flag?
 
 */
+
 
 // watchdog/that/hope.c
 
@@ -388,7 +389,7 @@
 
 
 
-// things/c/system/output/print.c
+// # include "../../../things/c/system/output/print.c"
 
 
 
