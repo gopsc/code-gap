@@ -160,11 +160,14 @@ int main ()
 
 
 
- void  *  note_status;
+ void * note_status;
+
+
 
  note_status  =  malloc (
                           sizeof ( struct stat )
                         );
+
 
 
 
@@ -207,7 +210,9 @@ int main ()
 
 
 
+
  free ( note_status );
+
 
 
  printf ( "done \n" );
@@ -507,9 +512,12 @@ int main ()
 
 */
 
+
+
  note_status  =  malloc (
                           sizeof ( struct stat )
                         );
+
 
 
 
@@ -644,8 +652,8 @@ int main ()
 
       lstat (
 
-                    ( char * ) note_place,
-             ( struct stat * ) note_status
+                     ( char * ) note_place,
+              ( struct stat * ) note_status
 
             ) != 0
 
@@ -707,6 +715,7 @@ int main ()
 
 
   } while ( NULL != note_enter );
+
 
 
 

@@ -3,104 +3,101 @@
 
 
 
+# list if files
 
+# we could auto got this from it soon
 
 
 
 
 
+seed/library/Linux.h
 
 
+# moved flag to hope of dog
 
+# things/c/that/flag.c
 
 
 
-/*
 
- this is what it is
 
 
- moved to thing/c/that/that.c
 
-*/
+# get that form a convent, maybe from network
 
+# good idea
 
-/*
 
- pthread_t  thread  [ 4 ];
 
-*/
 
 
+# it is for things taking before getting 
+ 
+ 
 
-/*
+ watchdog/about/that/that/system.c
 
+ watchdog/about/that/that/cpu.c
 
+ watchdog/about/that/that/memory.c
+ 
+ watchdog/about/that/that/disk.c
+ 
+ watchdog/about/that/that/network.c
+ 
+ watchdog/about/that/that/sonud.c
+ 
+ 
+ watchdog/about/that/that/that.c
 
-         __
-        /  \
-        \__/
 
-                                                __
-                                               /  \
-                             ____              \__/
-                            /    \
-                           /      \
-                           \      /
-                            \____/
 
 
-                                        __
-                                       /  \
-                 __                    \__/
-                /  \
-                \__/
 
 
 
 
-*/
 
 
+# things to clean it
 
+# be easier to read
 
+# move them cause they couldn't be support by things
 
 
-/*
 
+# watchdog/about/that/clean/system.c
 
-              _
-             |_|
+# watchdog/about/that/clean/cpu.c
 
+# watchdog/about/that/clean/memory.c
+ 
+# watchdog/about/that/clean/disk.c
+ 
+# watchdog/about/that/clean/network.c
+ 
+# watchdog/about/that/clean/sonud.c
+ 
+# watchdog/about/that/clean/mate.c
+ 
 
+# watchdog/about/that/clean/that.c
 
-              __              ___
-             /  \            /   \
-             \__/            |   |
-                             \___/
 
 
-              ___
-             /   \
-             \___/
 
 
+# there's load about and put about below
 
-              ___
-             /   \
-            |     |
-             \___/
 
 
 
-              ____
-             /    \
-            /      \
-            \      /
-             \____/
 
+# watchdog/about/that/put/that.c
 
-*/
+# watchdog/about/that/load/that.c
 
 
 
@@ -109,21 +106,40 @@
 
 
 
+# take it where they belong
 
 
+# watchdog hopes maybe added after this
 
+# add flag?
 
+ watchdog/that/hope.c
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
 
+# dog will use
 
 
- int main ( int argc, char * argv [] )
 
+ network/that/that.c
+ 
+ network/that/hope.c
+ 
+ 
+# net necessary to at start
 
-  {
+# network/that/check.c
 
+# network/that/clean.c
 
 
 
@@ -131,22 +147,13 @@
 
 
 
-/*
+ sound/that/that.c
+ 
+ sound/that/hope.c
 
- make the dream
 
-*/
 
-/*
-    if ( here () )
 
-    pthread_create (
-                              & thread [ 0 ],
-                                NULL,
-                                dream,
-                     ( void * ) gop [ 0 ] [ 1 ] [ 0 ] [ 0 ]
-                   );
-*/
 
 
 
@@ -160,67 +167,56 @@
 
 
 
+# load them after including
 
+# as a structure
 
 
-/*
 
- Sometimes other thread will use the args.
+# put it to the end of list of head and build
 
-*/
+# then it can use the structure of configurations to note configurations everywhere
 
- gop_about . hope . number_options = argc;
 
- gop_about . hope . buffer_options = argv;
+# but if we don't have anyone in code, we set a head of blank to fill it
 
 
 
 
+ things/c/that/hope.c
 
 
-/*
 
- If command, turn gopi to a deamon
 
-*/
 
- init_deamon ();
 
+# they're in one things
 
+# all of value in a little dream
 
 
+ things/c/that/that.c
 
- output_print ( "string", "\n" );
 
 
 
 
 
- pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );
 
- pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL  );
 
- pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
 
 
 
 
 
-/*
 
- plug in
 
 
- maybe
 
-*/
 
 
-/*
 
- pthread_create (  & thread [ 4 ], NULL,  gop_corde,  NULL  );
 
-*/
 
 
 
@@ -228,54 +224,50 @@
 
 
 
- char note_command [ 128 ]  =  "";
 
 
+# ways of box
+ 
+# load them first
+ 
+# they could be use everywhere afterthis
 
-/*
 
- wait the dog run a circle
 
-*/
 
- while (  ! gop_about . flag . start  )
 
-  {
 
- gop_wait ( 0.1 );
+# maybe someday we will use it
 
-  }
 
 
+# some day we use lots of library file to use it by acrossing device
 
+# and i need almost little number to use with gnu library
 
+# so i need to take it
 
 
 
 
-/*
+ things/c/data/translate/number_word.c
 
- keyboard input got blank always in deamon.
 
-*/
 
- if (
 
-         gop_about . flag . main
 
- &&  ( ! gop_about . flag . deamon )
 
-    )
 
-  {
 
+# some day use it to display
 
+# as we are on tkinter
 
- output_print ( "string", "\n we met somewhere \n\n" );
 
+# maybe save tonot
 
 
-  }
+ things/c/system/output/print.c
 
 
 
@@ -284,19 +276,28 @@
 
 
 
+# in the things we have ways we take
 
+# and they're from library
 
+# maybe use a dirent to put all library way in
 
 
+# far away from things
+ 
 
 
 
+ things/c/system/file-system/dirent/is.c
 
 
- note_save ( "command", "command start", "now" );
+ things/c/system/file-system/file/is.c
 
+ things/c/system/file-system/file/get.c
 
+ things/c/system/file-system/file/save.c
 
+ things/c/system/file-system/file/append.c
 
 
 
@@ -304,62 +305,64 @@
 
 
 
+# someway on the system only
 
+# maybe take as alibrary
 
 
 
- while ( gop_about . flag . main )
+ things/c/system/process/deamon.c
 
-  {
 
 
 
 
+# wait sometime
 
-/*
+# it's different with different system
 
- When it is deamon process,
- that goes   wrong.
 
-*/
+ things/c/system/process/wait.c
 
- if ( gop_about . flag . deamon )
 
-  {
 
 
- gop_wait ( 0.1 );
 
 
-  }
 
+# this use a file named stdin
 
+# may be we sould rewrite it on something
 
 
 
- else
+ things/c/system/commandline/shell.c
 
-  {
 
 
 
-/*
 
- Get the command
 
 
 
- 128 charactors could be enough
 
-*/
 
+# data doing
+ 
+# write myself diy
+ 
+ 
+# maybe i should get them far away from ways from librarys
 
- fgets ( note_command, 128,  stdin );
 
 
+ things/c/data/secret/secrets/drop_note.c
 
+ things/c/data/secret/secrets/drop_blank.c
 
+ things/c/data/secret/secrets/sum.c
 
+ things/c/data/secret/that.c
 
 
 
@@ -367,176 +370,506 @@
 
 
 
-/*
 
- Sometimes its goes wrong,
-     just  return blank chars.
 
+ 
 
- if just key in enter it could return \n
 
-*/
 
- if (
 
-      strcmp ( note_command, "" )  == 0
 
-    )
 
-  {
 
 
- gop_wait ( 0.1 );
 
 
-  }
 
 
+ watchdog/about/that/clean/system.c
 
+ watchdog/about/that/clean/cpu.c
 
+ watchdog/about/that/clean/memory.c
+ 
+ watchdog/about/that/clean/disk.c
+ 
+ watchdog/about/that/clean/network.c
+ 
+ watchdog/about/that/clean/sonud.c
+ 
+ watchdog/about/that/clean/mate.c
+ 
 
+ watchdog/about/that/clean/that.c
 
 
 
 
 
 
+# put or load about
 
-/*
+# use some kind of ways load before
 
- Read the command
+# so put them here instead of before at first
 
-*/
 
- else
 
-  {
+ watchdog/about/that/put/that.c
 
+ watchdog/about/that/load/that.c
 
 
-/*
 
- The end of the command
-    will be a '\n'
 
-*/
 
- note_command [  strlen ( note_command ) - 1  ]   =   '.';
 
 
 
-/*
 
- we don't need to do that with this
 
- :)
 
-*/
 
 
-/*
+# note doing
+ 
+# should be strong could read note balabala...
+ 
 
- strcat ( buffer_command, "." );
+ 
+ watchdog/note/save.c
 
-*/
+ watchdog/note/clear.c
+ 
+ 
+ 
+ 
+# get about
 
 
+# get them from system
 
-/*
 
- Print a '\n'
 
-*/
+ watchdog/about/system/name.c
 
- output_print ( "string", "\n" );
+ watchdog/about/system/build.c
 
 
+ watchdog/about/ip/build.c
 
 
 
+ watchdog/about/cpu/rate.c
 
-/*
+ watchdog/about/cpu/temperature.c
 
- Judge for the command typed
+ watchdog/about/cpu/frequency.c
 
-*/
+ watchdog/about/cpu/core.c
 
- judge_message_command (
-                         -1,
-                         note_command,
-                         note_command
-                       );
+ watchdog/about/cpu/build.c
 
 
 
-/*
 
- Clear the buffer
 
-*/
+ watchdog/about/memory/build.c
 
- strcpy ( note_command, "" );
 
 
 
 
+# little difficult
 
 
+# watchdog/about/disk/build.c
 
-/*
 
- this round for if keyboard in
 
-*/
 
 
-  }
 
+# maybe get it blank on some system
 
 
+ watchdog/about/sound/alsa.c
 
-/*
 
- this round for if not in deamon
 
-*/
 
-  }
 
 
 
 
 
 
-/*
+# check things
+ 
+ 
+ 
+ 
+# now it could run with no root
 
- this round for flag of main
 
-*/
 
-  }
 
 
+# watchdog/check/root.c
 
+ watchdog/check/network.c
 
+ watchdog/check/power.c
 
+ watchdog/check/update.c
 
 
 
 
-/*
 
- The end of this program
 
-*/
+# load things
 
 
+ watchdog/load/hope.c
 
- note_save ( "command", "command close", "now" );
+ watchdog/load/symbol.c
 
+ watchdog/load/listen.c
 
 
-  }
 
+
+
+
+# dog show
+ 
+ 
+# maybe display on display
+
+
+ watchdog/show/about.c
+
+
+
+
+
+
+ watchdog/that/dog.c
+
+
+
+
+
+
+
+
+
+
+# sound snake calculate
+ 
+ 
+# high level way
+ 
+# put it below
+
+
+
+ sound/ft/show.c
+
+ sound/ft/dft.c
+
+ sound/ft/fft.c
+
+ sound/ft/test.c
+
+
+
+
+
+
+
+
+# add the sound code
+
+
+# make it pure
+ 
+# use alsa outsite
+
+
+
+
+
+
+# if  (  strcmp ( that_type, "base" )  ==  0  )
+
+
+#  {
+
+
+
+
+
+ sound/corde/blank.c
+
+
+
+
+#  }
+
+
+
+
+
+
+
+# else if  (  strcmp ( that_type, "alsa" )  ==  0  )
+
+
+#  {
+
+
+# sound/corde/alsa.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ network/that/check.c
+
+ network/that/clean.c
+ 
+ 
+ 
+
+
+# The data code
+#  is for send some data
+#  in the network connection
+
+
+#  like rain, shine ...
+
+
+
+# use other ways to update
+ 
+# client send word next
+ 
+
+
+ network/message/data/update/build.c
+
+ network/message/data/update/backup.c
+
+ network/message/data/update/append.c
+
+ network/message/data/update/next.c
+
+ network/message/data/update/load.c
+
+
+
+
+# appending data to the message
+
+
+# why put it below
+
+
+ network/message/data/that.c
+
+
+
+
+
+
+
+
+
+# Append the action codes
+# it isn't static
+
+
+
+
+
+# use a place of dirent to do it
+
+
+
+ network/message/action
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+# strcpy ( note_dirent, note_path );
+
+# strcat ( note_dirent, "/network/message/action" );
+
+
+
+# pointer_dirent  =  opendir ( note_dirent );
+
+
+
+
+
+
+# do
+
+
+#  {
+
+
+
+
+# ent  =  readdir ( pointer_dirent );
+
+
+
+
+# if  (  ent != NULL  &&  ent -> d_type == 8  )
+
+
+#  {
+
+
+
+# strcpy (
+
+#          note_file_action,
+
+#          strstr ( note_dirent,  gop_configurations . name_the ) + strlen ( gop_configurations . name_the )
+
+#        );
+
+
+# strcat ( note_file_action, "/" );
+
+# strcat ( note_file_action, ent->d_name );
+
+
+
+
+# action_seed_append (
+#                      note_file,
+#                      note_path,
+#                      note_file_action
+
+#                    );
+
+
+
+
+#  }
+
+
+#  } while ( ent != NULL );
+
+
+
+
+# closedir ( pointer_dirent );
+
+
+
+
+
+
+
+
+
+
+
+
+
+# the module of judge
+# means to take the words get on network
+
+# the plan is using the trees system
+
+
+
+
+ network/message/judge/blank.c
+
+ network/message/judge/hello.c
+
+ network/message/judge/who.c
+
+ network/message/judge/information.c
+
+ network/message/judge/command.c
+
+
+
+
+
+
+
+
+
+
+
+
+# build the network message system
+
+
+
+ 
+ network/message/that.c
+
+
+
+
+
+
+
+# the translate system of network
+
+
+# connect things
+ 
+# maybe we could use them in library
+
+
+ network/tcp/connectted.c
+
+ network/tcp/connector.c
+
+
+
+
+
+
+
+
+# build the
+
+
+
+ thing/c/code/that.c
 
 
