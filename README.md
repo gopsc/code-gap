@@ -7,6 +7,22 @@ maybe it's not meaningful
 but it's always just meaningful to me..
 
 
+just use gcc now
+
+ cd TxL
+
+ gcc seed/things/c/code/that.c -o ./?
+
+ ./?
+
+then u can c
+
+
+
+
+
+
+/*
 
  first
 
@@ -33,7 +49,7 @@ but it's always just meaningful to me..
   ok , just like that... :D
   then, you can see
 
-
+*/
 
 
 
