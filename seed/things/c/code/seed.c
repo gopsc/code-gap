@@ -5,14 +5,14 @@
 
 //# include <unistd.h>
 
-//# include <math.h>
-# include <string.h>
+//# include <math.h>       // math.sin / math.cos
+# include <string.h>       // for ways str??? ()
 //# include <time.h>       // for time ( NULL )
 
 
 
 
-//# include <ifaddrs.h>
+//# include <ifaddrs.h>    //for ip address
 //# include <fcntl.h>
 
 //# include <dirent.h>     // for dirent
@@ -22,13 +22,13 @@
 
 
 //# include <signal.h>     // for check_deamon() ->
-                        // for tcp block out.
+                           // for tcp block out.
 
 //# include <sys/time.h>   // for note_save() -> gettimeofday()
 
 //# include <sys/socket.h> // for network -> socket
 
-# include <sys/stat.h>
+# include <sys/stat.h>     // for file status    way lstat ()
 
 //# include <sys/types.h>  // for check_deamon() ->
 //# include <sys/param.h>  // for ...
@@ -63,7 +63,11 @@ int main ()
 
 
 
+/*
 
+ at first it load hopes and run action_seed ()
+
+*/
 
 /*
 
@@ -464,11 +468,44 @@ int main ()
 
 
 
+
+
+
+/*
+
+ they are for read
+
+*/
+
  void * note_place  =  note_flower;
 
  void * note_enter;
 
 
+
+
+/*
+
+ this is for check
+
+*/
+
+/*
+
+ char  note_path_file [ 128 ];
+
+*/
+
+
+
+
+
+
+/*
+
+ use for check
+
+*/
 
  note_status  =  malloc (
                           sizeof ( struct stat )
@@ -526,6 +563,24 @@ int main ()
 
 
 
+/*
+
+ get the path
+
+*/
+
+
+/*
+
+ strcpy (  ( char * ) note_path_file,  ( char * ) note_place  );
+
+*/
+
+
+
+
+
+
 
 
 /*
@@ -537,17 +592,34 @@ int main ()
 */
 
 
-/*
 
- while (  * ( char * ) note_place   ==  ' ' )
+
+
+
+
+
+
+ while (  * ( char * ) note_place  ==  ' ' )
 
   {
 
+
+
  note_place  =  note_place + 1;
+
+
+/*
+
+ strcpy (
+          ( char * ) note_path_file,
+          ( char * ) note_path_file + 1
+        );
+
+*/
 
   }
 
-*/
+
 
 
 
@@ -582,7 +654,7 @@ int main ()
 
   {
 
- printf ( "%s \n", note_place );
+ printf ( "%s \n", ( char * ) note_place );
 
   }
 
@@ -611,7 +683,7 @@ int main ()
 
 
  * ( char * ) note_enter  =  '\n';
- 
+
 
  note_place  =  note_enter + 1;
 
@@ -635,6 +707,7 @@ int main ()
 
 
   } while ( NULL != note_enter );
+
 
 
 
