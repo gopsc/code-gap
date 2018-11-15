@@ -169,9 +169,12 @@
 
 */
 
- gop_about . hope . number_options = argc;
 
- gop_about . hope . buffer_options = argv;
+// gop . hope . number_options = argc;
+
+// gop . hope . buffer_options = argv;
+
+
 
 
 
@@ -184,23 +187,24 @@
 
 */
 
- init_deamon ();
+
+// init_deamon ();
 
 
 
 
 
- output_print ( "string", "\n" );
+// output_print ( "string", "\n" );
 
 
 
 
 
- pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );
+// pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );
 
- pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL  );
+// pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL  );
 
- pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
+// pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
 
 
 
@@ -228,7 +232,7 @@
 
 
 
- char note_command [ 128 ]  =  "";
+// char note_command [ 128 ]  =  "";
 
 
 
@@ -238,13 +242,13 @@
 
 */
 
- while (  ! gop_about . flag . start  )
+// while (  ! gop_about . flag . start  )
 
-  {
+//  {
 
- gop_wait ( 0.1 );
+// gop_wait ( 0.1 );
 
-  }
+//  }
 
 
 
@@ -259,25 +263,23 @@
 
 */
 
- if (
+// if (
 
-         gop_about . flag . main
+//         gop_about . flag . main
 
- &&  ( ! gop_about . flag . deamon )
+// &&  ( ! gop_about . flag . deamon )
 
-    )
+//    )
 
-  {
-
-
-
- output_print ( "string", "\n we met somewhere \n\n" );
+//  {
 
 
 
-  }
+// output_print ( "string", "\n we met somewhere \n\n" );
 
 
+
+//  }
 
 
 
@@ -293,7 +295,9 @@
 
 
 
- note_save ( "command", "command start", "now" );
+
+
+// note_save ( "command", "command start", "now" );
 
 
 
@@ -308,9 +312,9 @@
 
 
 
- while ( gop_about . flag . main )
+// while ( gop_about . flag . main )
 
-  {
+//  {
 
 
 
@@ -323,23 +327,23 @@
 
 */
 
- if ( gop_about . flag . deamon )
+// if ( gop_about . flag . deamon )
 
-  {
-
-
- gop_wait ( 0.1 );
+//  {
 
 
-  }
+// gop_wait ( 0.1 );
 
 
+//  }
 
 
 
- else
 
-  {
+
+// else
+
+//  {
 
 
 
@@ -354,7 +358,7 @@
 */
 
 
- fgets ( note_command, 128,  stdin );
+// fgets ( note_command, 128,  stdin );
 
 
 
@@ -377,19 +381,20 @@
 
 */
 
- if (
 
-      strcmp ( note_command, "" )  == 0
+// if (
 
-    )
+//      strcmp ( note_command, "" )  == 0
 
-  {
+//    )
 
-
- gop_wait ( 0.1 );
+//  {
 
 
-  }
+// gop_wait ( 0.1 );
+
+
+//  }
 
 
 
@@ -408,9 +413,10 @@
 
 */
 
- else
 
-  {
+// else
+
+//  {
 
 
 
@@ -421,7 +427,7 @@
 
 */
 
- note_command [  strlen ( note_command ) - 1  ]   =   '.';
+// note_command [  strlen ( note_command ) - 1  ]   =   '.';
 
 
 
@@ -448,7 +454,7 @@
 
 */
 
- output_print ( "string", "\n" );
+// output_print ( "string", "\n" );
 
 
 
@@ -461,11 +467,12 @@
 
 */
 
- judge_message_command (
-                         -1,
-                         note_command,
-                         note_command
-                       );
+
+// judge_message_command (
+//                         -1,
+//                         note_command,
+//                         note_command
+//                       );
 
 
 
@@ -475,7 +482,8 @@
 
 */
 
- strcpy ( note_command, "" );
+
+// strcpy ( note_command, "" );
 
 
 
@@ -490,7 +498,7 @@
 */
 
 
-  }
+//  }
 
 
 
@@ -501,7 +509,7 @@
 
 */
 
-  }
+//  }
 
 
 
@@ -514,7 +522,7 @@
 
 */
 
-  }
+//  }
 
 
 
@@ -532,7 +540,7 @@
 
 
 
- note_save ( "command", "command close", "now" );
+// note_save ( "command", "command close", "now" );
 
 
 
