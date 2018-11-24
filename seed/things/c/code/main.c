@@ -33,76 +33,6 @@
 
 
 
-/*
-
-
-
-         __
-        /  \
-        \__/
-
-                                                __
-                                               /  \
-                             ____              \__/
-                            /    \
-                           /      \
-                           \      /
-                            \____/
-
-
-                                        __
-                                       /  \
-                 __                    \__/
-                /  \
-                \__/
-
-
-
-
-*/
-
-
-
-
-
-
-/*
-
-
-              _
-             |_|
-
-
-
-              __              ___
-             /  \            /   \
-             \__/            |   |
-                             \___/
-
-
-              ___
-             /   \
-             \___/
-
-
-
-              ___
-             /   \
-            |     |
-             \___/
-
-
-
-              ____
-             /    \
-            /      \
-            \      /
-             \____/
-
-
-*/
-
-
 
 
 
@@ -170,9 +100,9 @@
 */
 
 
-// gop . hope . number_options = argc;
+ that . hope . number_hope = argc;
 
-// gop . hope . buffer_options = argv;
+ that . hope . hope = argv;
 
 
 
@@ -209,6 +139,8 @@
 
 
 
+
+// that . hope . thread  =  malloc (  3  *  sizeof ( pthread_t )  );
 
 
 // pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );

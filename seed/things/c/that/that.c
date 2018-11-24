@@ -3,7 +3,7 @@
 
 
 
- struct gopi
+ struct that
 
   {
 
@@ -39,4 +39,4 @@
  void * thread;
 
 
-  } gop;
+  } that;

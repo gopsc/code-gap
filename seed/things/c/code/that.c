@@ -191,7 +191,7 @@
 */
 
 
-// watchdog/that/hope.c
+//# include "../../../watchdog/that/hope.c"
 
 
 
@@ -217,9 +217,9 @@
 
 
 
-// network/that/that.c
+//# include "../../../network/that/that.c"
 
-// network/that/hope.c
+//# include "../../../network/that/hope.c"
 
 
 
@@ -284,7 +284,7 @@
 
 
 
-// things/c/that/hope.c
+ # include "../../../things/c/that/hope.c"
 
 
 
@@ -305,9 +305,7 @@
 
 
 
-// things/c/that/that.c
-
-
+# include "../../../things/c/that/that.c"
 
 
 

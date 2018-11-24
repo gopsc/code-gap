@@ -69,13 +69,13 @@
 
 /*
 
-          strcmp ( that_about . symbol, "reading" )  ==  0
+          strcmp ( that . about . symbol, "reading" )  ==  0
 
 */
 
-          strcmp ( that_about . symbol, "waitting" )  != 0
+          strcmp ( that . about . symbol, "waitting" )  != 0
 
-     &&   strcmp ( that_about . symbol, "" ) != 0;
+     &&   strcmp ( that . about . symbol, "" ) != 0;
 
         )
 
@@ -114,7 +114,7 @@
 
 */
 
- strcpy ( that_about . symbol, "cleanning" );
+ strcpy ( that . about . symbol, "cleanning" );
 
 
 
@@ -124,17 +124,17 @@
 
 */
 
- strcpy ( that_about . system . symbol, "cleanning" );
+ strcpy ( that . about . system . symbol, "cleanning" );
 
- strcpy ( that_about . cpu . symbol, "cleanning" );
+ strcpy ( that . about . cpu . symbol, "cleanning" );
 
- strcpy ( that_about . memory . symbol, "cleanning" );
+ strcpy ( that . about . memory . symbol, "cleanning" );
 
- strcpy ( that_about . disk . symbol. "cleanning" );
+ strcpy ( that . about . disk . symbol. "cleanning" );
 
- strcpy ( that_about . network . symbol. "cleanning" );
+ strcpy ( that . about . network . symbol. "cleanning" );
 
- strcpy ( that_about . sound . symbol. "cleanning" );
+ strcpy ( that . about . sound . symbol. "cleanning" );
 
 
 
@@ -200,7 +200,7 @@
 
 /*
 
- waitting for read, take savnig after read maybe
+ waitting for reading, take savnig after it maybe
 
 */
 
@@ -214,7 +214,7 @@
 */
 
 
- clean_about_system ( that_about . system );
+ clean_about_system ( that . about . system );
 
 /*
 
@@ -223,7 +223,7 @@
 */
 
 
- clean_about_cpu ( that_about . cpu );
+ clean_about_cpu ( that . about . cpu );
 
 /*
 
@@ -232,7 +232,7 @@
 */
 
 
- clean_about_system ( that_about . memory );
+ clean_about_memory ( that . about . memory );
 
 /*
 
@@ -241,7 +241,7 @@
 */
 
 
- clean_about_system ( that_about . disk );
+ clean_about_disk ( that . about . disk );
 
 /*
 
@@ -250,7 +250,7 @@
 */
 
 
- clean_about_system ( that_about . network );
+ clean_about_network ( that . about . network );
 
 /*
 
@@ -259,7 +259,7 @@
 */
 
 
- clean_about_system ( that_about . sound );
+ clean_about_sound ( that . about . sound );
 
 /*
 
@@ -268,7 +268,7 @@
 */
 
 
- clean_about_mate ( that_about );
+ clean_about_mate ( that . about );
 
 /*
 
@@ -283,19 +283,19 @@
 
 
 
- strcpy ( that_about . system . symbol, "waitting" );
+ strcpy ( that . about . system . symbol, "waitting" );
 
- strcpy ( that_about . cpu . symbol, "waitting" );
+ strcpy ( that . about . cpu . symbol, "waitting" );
 
- strcpy ( that_about . memory . symbol, "waitting" );
+ strcpy ( that . about . memory . symbol, "waitting" );
 
- strcpy ( that_about . disk . symbol, "waitting" );
+ strcpy ( that . about . disk . symbol, "waitting" );
 
- strcpy ( that_about . network . symbol, "waitting" );
+ strcpy ( that . about . network . symbol, "waitting" );
 
- strcpy ( that_about . sound . symbol, "waitting" );
+ strcpy ( that . about . sound . symbol, "waitting" );
 
- strcpy ( that_about . symbol, "waitting" );
+ strcpy ( that . about . symbol, "waitting" );
 
 
 

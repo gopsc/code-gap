@@ -11,6 +11,8 @@
 
 
 
+
+
 /*
 
  sometimes we wanna put it out
@@ -105,17 +107,17 @@
 
 
 
- struct gopi_system  system;
+ void *  system;
 
- struct gopi_cpu  cpu;
+ void *  cpu;
 
- struct gopi_memory  memory;
+ void *  memory;
 
- struct gopi_disk  disk;
+ void *  disk;
 
- struct gopi_network  network;
+ void *  network;
 
- struct gopi_sound  sound;
+ void *  sound;
 
 
 

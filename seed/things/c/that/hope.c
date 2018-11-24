@@ -20,7 +20,7 @@
 
 
 
- struct gopi_hope
+ struct that_hope
 
 
   {
@@ -34,13 +34,13 @@
 
 /*
 
- about the option open the program
+ about the hope open the program
 
 */
 
- int    number_options;
+ int    number_hope;
 
- char * buffer_options [ 32 ];
+ char * hope [ 32 ];
 
 
 
@@ -55,26 +55,26 @@
 
 */
 
- char   path_the    [ 128 ];
+ char  path    [ 128 ];
 
- char   name_the    [ 128 ];
+ char  name    [ 128 ];
 
- char   name_data   [ 128 ];
+ char  name_data   [ 128 ];
 
- char   name_backup [ 128 ];
-
-
+ char  name_backup [ 128 ];
 
 
 
 
- struct  hope_dog dog;
 
 
- struct  hope_net  net;
+void *  dog;
 
 
- struct  hope_sound  sound;
+void *  net;
+
+
+void *  sound;
 
 
 
