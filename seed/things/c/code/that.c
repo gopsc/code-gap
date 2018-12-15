@@ -23,7 +23,7 @@
 
 
 
- # include "../../../libraries/standard/Linux.h"
+ # include "../../../library/standard/Linux.h"
 
 
 
@@ -240,9 +240,9 @@
 
 
 
-// sound/that/that.c
+// voice/that/that.c
 
-// sound/that/hope.c
+// voice/that/hope.c
 
 
 
@@ -272,7 +272,7 @@
  then it can use the structure of configurations to note configurations everywhere
 
 
- but if we don't have anyone in code, we set a head of blank to fill it
+ and if we don't have anyone in code, we set a head of blank to fill it
 
 
 

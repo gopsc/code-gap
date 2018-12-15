@@ -17,7 +17,7 @@
 */
 
 
- void  *****  gop;
+ void  * * * * *  gop;
 
 
 

@@ -38,9 +38,9 @@
 
 */
 
- int    number_hope;
+ int     number_hope;
 
- char * hope [ 32 ];
+ void *  hope;
 
 
 
@@ -53,28 +53,20 @@
 
  about the file-system
 
+ moved to dream
+ 
 */
 
- char  path    [ 128 ];
-
- char  name    [ 128 ];
-
- char  name_data   [ 128 ];
-
- char  name_backup [ 128 ];
+ void *  dream
 
 
+ void *  dog;
 
 
+ void *  spider;
 
 
-void *  dog;
-
-
-void *  net;
-
-
-void *  sound;
+ void *  voice;
 
 
 
