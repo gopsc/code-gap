@@ -19,6 +19,14 @@
 
 
 
+
+/*
+
+ int clean_about   (  void *  that_about  )
+
+*/
+
+
  int clean_about  (  struct  gopi_about  that_about  )
 
   {

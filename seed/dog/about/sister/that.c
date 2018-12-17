@@ -2,7 +2,7 @@
 
 
 
- int about_system ()
+ int about_sister_sister ()
 
 
   {
@@ -26,7 +26,7 @@
 
 
 
- char note_result [ 128 ];
+ char that_result [ 128 ];
 
 
 
@@ -34,7 +34,12 @@
 
 
 
- commandline_get ( "uname -s", note_result );
+ commandline_get  (  "uname -s",  that_result  );
+
+
+
+
+
 
 
 
@@ -44,14 +49,22 @@
 
 */
 
- * strchr ( note_result, '\n' )  =  '\0';
+ * strchr  (  that_result,  '\n'  )   =   '\0';
 
 
 
 
 
 
- strcpy ( gop_about . system . system, note_result );
+
+
+
+
+ strcpy  (  gop_about . sister . sister,  that_result  );
+
+
+
+
 
 
 

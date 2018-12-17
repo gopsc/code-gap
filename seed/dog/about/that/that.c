@@ -31,9 +31,13 @@
 
 
 
+/*
+
  char symbol [ 16 ];
 
+*/
 
+ void * symbol;
 
 
 
@@ -45,7 +49,7 @@
 
 /*
 
- what we should do
+ what should we do
 
 
 
@@ -66,6 +70,7 @@
  struct  gopi_flag  flag;
 
 */
+
 
 /*
 
@@ -90,6 +95,9 @@
 
 
  we touch a file to save configurations
+ 
+ 
+ save in trees
 
 */
 
@@ -107,17 +115,17 @@
 
 
 
- void *  system;
+ void *  sister;
 
- void *  cpu;
+ void *  heart;
 
  void *  memory;
 
- void *  disk;
+ void *  shadow;
 
- void *  network;
+ void *  net;
 
- void *  sound;
+ void *  voice;
 
 
 
@@ -129,14 +137,19 @@
 */
 
 
-    short  number_mate;
+/*
 
-    void * * mate;
+ short  number_mate;
+
+*/
+
+
+ void * * mate;
 
 
 
 
-    };
+  };
 
 
 

@@ -5,7 +5,7 @@
 
 
 
-int about_sound ()
+int about_voice ()
 
 
   {
@@ -25,9 +25,9 @@ int about_sound ()
 
 */
 
- gop_about . sound . number_control  =  0;
- gop_about . sound . number_capture  =  0;
- gop_about . sound . number_playback =  0;
+ that . about . voice . number_control  =  0;
+ that . about . voice . number_capture  =  0;
+ that . about . voice . number_playback =  0;
 
 
 
