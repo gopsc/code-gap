@@ -14,7 +14,7 @@
 
 
 
- struct gopi_connection
+ struct gopi_spider
 
 
   {
