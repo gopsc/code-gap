@@ -11,7 +11,7 @@ just use gcc now
 
  cd TxL
 
- gcc seed/things/c/code/that.c -o ./?
+ gcc  seed/that.c  -o  ./?
 
  ./?
 
