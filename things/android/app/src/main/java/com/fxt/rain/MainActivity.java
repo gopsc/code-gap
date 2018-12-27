@@ -1,11 +1,8 @@
-
-
-
-
-package com.mycompany.myapp;
+package com.fxt.rain;
 
 import android.app.*;
 import android.os.*;
+
 
 public class MainActivity extends Activity 
 {
@@ -16,5 +13,3 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
     }
 }
-
-// hello
