@@ -16,7 +16,7 @@
 
 
 
- struct gopi_net
+ struct that_spider
 
 
   {

@@ -1,6 +1,186 @@
 
 
 
+
+
+ struct that_about
+
+
+  {
+
+
+
+
+
+
+/*
+
+ sometimes we wanna put it out
+
+ and it may be loading
+
+ we set a symbol to sigh
+
+
+
+ and sub-about could have a symbol too
+
+ use for loading about
+
+*/
+
+
+
+/*
+
+ char symbol [ 16 ];
+
+*/
+
+ void * symbol;
+
+
+
+
+
+
+
+
+
+/*
+
+ what should we do
+
+
+
+ moved to hope of dog
+
+ maybe as a about to add
+
+
+ but dog don't have a symbol
+
+
+
+ god what does it mean...
+ 
+*/
+
+
+
+
+/*
+
+ struct  gopi_flag  flag;
+
+*/
+
+
+/*
+
+ struct  hope_dog  dog;
+
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+
+ we use this about to just save about it
+
+ not for the configuration, network or what
+
+
+ we touch a file to save configurations
+ 
+ 
+ save in trees
+ 
+ 
+ 
+ save in river
+
+*/
+
+
+/*
+
+ struct gopi_configurations;
+
+*/
+
+
+
+
+
+
+
+
+ void *  sister;
+
+ void *  heart;
+
+ void *  memory;
+
+ void *  shadow;
+
+ void *  net;
+
+ void *  voice;
+
+
+
+
+/*
+
+ gop could have lots of mates
+
+*/
+
+
+/*
+
+ short  number_mate;
+
+*/
+
+
+ void * number_mate;
+ 
+ 
+ void * * mate;
+
+
+
+
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
  this struct is huge, i must use a function to clean it,,
@@ -20,14 +200,18 @@
 
 
 
-/*
+
 
  int clean_about   (  void *  that_about  )
 
-*/
 
+
+
+/*
 
  int clean_about  (  struct  gopi_about  that_about  )
+
+*/
 
   {
 
@@ -81,6 +265,12 @@
 
 */
 
+/*
+
+          strcmp ( that . about . symbol, "writting" )  ==  0
+
+*/
+
           strcmp ( that . about . symbol, "waitting" )  != 0
 
      &&   strcmp ( that . about . symbol, "" ) != 0;
@@ -105,10 +295,14 @@
 
  actualy them couldn't meet cause we don't clean it after first load
 
+
+
+ maybe clear after dream
+ 
 */
 
 
- gop_wait ( 0.05 );
+ that_wait ( 0.01 );
 
   }
 
@@ -122,7 +316,15 @@
 
 */
 
- strcpy ( that . about . symbol, "cleanning" );
+ strcpy  (  that . about . symbol, "writting"  );
+
+
+
+
+
+
+
+
 
 
 
@@ -132,19 +334,22 @@
 
 */
 
- strcpy ( that . about . system . symbol, "cleanning" );
 
- strcpy ( that . about . cpu . symbol, "cleanning" );
+/*
 
- strcpy ( that . about . memory . symbol, "cleanning" );
+ strcpy  (  that . about . sister . symbol, "cleanning"  );
 
- strcpy ( that . about . disk . symbol. "cleanning" );
+ strcpy  (  that . about . heart . symbol, "cleanning"  );
 
- strcpy ( that . about . network . symbol. "cleanning" );
+ strcpy  (  that . about . memory . symbol, "cleanning"  );
 
- strcpy ( that . about . sound . symbol. "cleanning" );
+ strcpy  (  that . about . shadow . symbol. "cleanning"  );
 
+ strcpy  (  that . about . spider . symbol. "cleanning"  );
 
+ strcpy  (  that . about . voice . symbol. "cleanning"  );
+
+*/
 
 
 
@@ -215,14 +420,30 @@
 
 
 
+
+
+
 /*
 
  strcpy ( that_about . system . symbol, "cleanning" );
 
 */
 
+ strcpy  (  that . about . sister . symbol,  "writting"  );
+
+
+
+
+/*
 
  clean_about_system ( that . about . system );
+ 
+*/
+
+ clean_about_sister ( that . about . sister );
+
+
+
 
 /*
 
@@ -230,8 +451,36 @@
 
 */
 
+ strcpy (  that . about . sister . symbol,  "waitting"  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ strcpy  (  that . about . heart . symbol,  "writting"  );
+
+
+
+
+/*
 
  clean_about_cpu ( that . about . cpu );
+
+*/
+
+ clean_about_heart ( that . about . heart );
+
+
+
 
 /*
 
@@ -239,8 +488,27 @@
 
 */
 
+ strcpy  (  that . about . heart . symbol,  "waitting"  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+ strcpy (  that . about . memory . symbol,  "writting"  );
+
+
 
  clean_about_memory ( that . about . memory );
+
+
 
 /*
 
@@ -248,8 +516,32 @@
 
 */
 
+ strcpy  (  that . about . memory . symbol,  "waitting"  );
+
+
+
+
+
+
+
+
+
+
+ strcpy (  that . about . shadow . symbol,  "writting"  );
+
+
+
+
+/*
 
  clean_about_disk ( that . about . disk );
+
+*/
+
+ clean_about_shadow ( that . about . shadow );
+ 
+ 
+ 
 
 /*
 
@@ -257,8 +549,30 @@
 
 */
 
+ strcpy  (  that . about . shadow . symbol,  "waitting"  );
+
+
+
+
+
+
+
+
+
+
+
+ strcpy  (  that . about . spider . symbol,  "writting"  );
+
+
+/*
 
  clean_about_network ( that . about . network );
+
+*/
+
+ clean_about_spider  (  that . about . spider  );
+
+
 
 /*
 
@@ -266,17 +580,65 @@
 
 */
 
+ strcpy  (  that . about . spider . symbol,  "waitting"  );
+
+
+
+
+
+
+
+
+
+
+
+ strcpy  (  that . about .voice . symbol,  "writting"  );
+
+
+
+/*
 
  clean_about_sound ( that . about . sound );
 
+*/
+
+ clean_about_voice  (  that . about . voice  );
+ 
+ 
+ 
+ 
 /*
 
  strcpy ( that_about . sound . symbol, "waitting" );
 
 */
 
+ strcpy  (  that . about . voice . symbol,  "waitting"  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
  clean_about_mate ( that . about );
+
+*/
+
+ clean_about_mate  (
+                       that . about . number_mate,
+					   that . about . mate
+				   );
+
+
 
 /*
 
@@ -290,6 +652,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/*
 
  strcpy ( that . about . system . symbol, "waitting" );
 
@@ -305,7 +677,7 @@
 
  strcpy ( that . about . symbol, "waitting" );
 
-
+*/
 
 
 
@@ -330,12 +702,21 @@
 
 
 
+
+
+
 /*
 
  then it could clean mates of this
 
 
  doesnt't have it anymore
+ 
+ 
+ 
+ need it when hope reload
+ 
+ maybe doesn't when dream
  
 */
 
@@ -386,7 +767,15 @@
 
 */
 
+/*
+
  that_flag . main  =  1;
+
+*/
+
+
+
+
 
 
 
@@ -398,6 +787,9 @@
  mates usually open it
 
 */
+
+
+/*
 
  that_flag . deamon  =  gop_about . flag . deamon;
 
