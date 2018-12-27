@@ -1,0 +1,9 @@
+2016年5月28日 13:54
+ Linux-raspbian-python 从声卡读取数据 
+从声卡读取数据和写入数据一样简单，下面我们用一个简单的声音监测小程序来展示一下如何用pyAudio读取声音数据。
+59# -*- coding: utf-8 -*-
+from pyaudio import PyAudio, paInt16
+import numpy as np
+from datetime import datetime
+import wave
+...查看全文

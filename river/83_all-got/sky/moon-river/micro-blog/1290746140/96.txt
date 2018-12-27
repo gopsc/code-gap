@@ -1,0 +1,3 @@
+2016年7月27日 17:24
+LFS,它能改变太多  https://linux.cn/lfs/LFS-BOOK-7.7-systemd/index.html#fromapp 
+
