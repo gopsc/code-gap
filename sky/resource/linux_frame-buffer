@@ -1,4 +1,15 @@
 
+
+ the first one :
+ the second one :  http://blog.sina.cn/dpool/blog/s/blog_693301190100w64e.html
+
+
+
+
+
+the first one
+
+
 转  /dev/fb0入门练习(linux FrameBuffer)
 
 
@@ -154,3 +165,114 @@ int main () {
 这些就是我对FrameBuffer的初步研究，匆忙之间写些东西不成文章,以后要写些更高级一点的函数的实现
 
 
+
+
+
+
+
+
+
+the second one
+
+
+/dev/fb0的入门练习【转】
+
+2011-12-08 23:11阅读：3,978
+
+/dev/fb0
+
+是linux系统下帧缓冲设备的设备文件。
+文件/dev/fb0就是控制屏幕上的每一点的顏色的文件。我們可以写程序來改變這個文件的內容，就可以方便的在屏幕上画图了:-)
+这个是LINUX上不带硬件加速的一些图形库的底层基础。
+当我们可以在屏幕上画一个点的时候，画线，画面就是理所当然的了，不过怎么去画那些图形就属于图形算法了，这是一门比较博大精深的技术分支，我在其他文章里再讨论。
+我们可以用常规的POSIX文件函数打开它，
+struct fb_var_screeninfo 和 struct fb_fix_screeninfo 兩个数据结构是在/usr/include/linux/fb.h中定义的，里面有些有趣的值：（都是无符号32位的整数）
+在fb_fix_screeninfo中有
+__u32 smem_len 是這个/dev/fb0的大小，也就是內存大小。
+__u32 line_length 是屏幕上一行的点在內存中占有的空间，不是一行上的点数。
+在fb_var_screeninfo 中有
+__u32 xres ，__u32 yres 是x和y方向的分辨率，就是兩個方向上的点数。
+__u32 bits_per_pixel 是每一点占有的內存空间。
+1）练习一
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <linux/fb.h>
+#include <sys/mman.h>
+int main ()
+{
+int fp=0;
+struct fb_var_screeninfo vinfo;
+struct fb_fix_screeninfo finfo;
+fp = open ('/dev/fb0',O_RDWR);
+if (fp < 0)
+{
+printf('Error : Can not open framebuffer device/n');
+exit(1);
+}
+if (ioctl(fp,FBIOGET_FSCREENINFO,&finfo))
+{
+printf('Error reading fixed information/n');
+exit(2);
+}
+if (ioctl(fp,FBIOGET_VSCREENINFO,&vinfo))
+{
+printf('Error reading variable information/n');
+exit(3);
+}
+printf('The mem is :%d/n',finfo.smem_len);
+printf('The line_length is :%d/n',finfo.line_length);
+printf('The xres is :%d/n',vinfo.xres);
+printf('The yres is :%d/n',vinfo.yres);
+printf('bits_per_pixel is :%d/n',vinfo.bits_per_pixel);
+close (fp);
+}
+2）练习2
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <linux/fb.h>
+#include <sys/mman.h>
+int main ()
+{
+int fp=0;
+struct fb_var_screeninfo vinfo;
+struct fb_fix_screeninfo finfo;
+long screensize=0;
+char *fbp = 0;
+int x = 0, y = 0;
+long location = 0;
+fp = open ('/dev/fb0',O_RDWR);
+if (fp < 0)
+{
+printf('Error : Can not open framebuffer device/n');
+exit(1);
+}
+if (ioctl(fp,FBIOGET_FSCREENINFO,&finfo))
+{
+printf('Error reading fixed information/n');
+exit(2);
+}
+if (ioctl(fp,FBIOGET_VSCREENINFO,&vinfo))
+{
+printf('Error reading variable information/n');
+exit(3);
+}
+screensize = vinfo.xres * vinfo.yres * vinfo.bits_per_pixel / 8;
+fbp =(char *) mmap (0, screensize, PROT_READ | PROT_WRITE, MAP_SHARED, fp,0);
+if ((int) fbp == -1)
+{
+printf ('Error: failed to map framebuffer device to memory./n');
+exit (4);
+}
+x = 100;
+y = 100;
+location = x * (vinfo.bits_per_pixel / 8) + y * finfo.line_length;
+*(fbp + location) = 100;
+*(fbp + location + 1) = 15;
+*(fbp + location + 2) = 200;
+*(fbp + location + 3) = 0;
+munmap (fbp, screensize);
+close (fp);
+return 0;
+}
