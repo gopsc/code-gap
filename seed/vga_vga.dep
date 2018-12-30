@@ -1,9 +1,13 @@
 Dependencies for Project 'vga', Target 'vga': (DO NOT MODIFY !)
 F (.\startup_stm32f10x_hd.s)(0x53463734)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x--list .\startup_stm32f10x_hd.lst --xref -o .\startup_stm32f10x_hd.o --depend .\startup_stm32f10x_hd.d)
-F (.\library_stm32.h)(0x00000000)()
+F (.\things\library_stm32.h)(0x5C26141A)()
 F (.\sister\time.h)(0x5C226447)()
-F (.\sister\system_init.h)(0x5C226447)()
 F (.\sister\gpio.h)(0x5C226447)()
-F (.\things\Kylin_mini_v1.2.h)(0x5C226447)()
-F (.\things\varilables.h)(0x5C226447)()
-F (.\resource\vga.c)(0x00000000)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-o .\vga.o --omf_browse .\vga.crf --depend .\vga.d)
+F (.\sister\sister_init.h)(0x5C261367)()
+F (.\things\Kylin_mini_v1.2.h)(0x5C2614F6)()
+F (.\things\varilables.h)(0x5C26155C)()
+F (.\source\vga.c)(0x5C26154E)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-o .\vga.o --omf_browse .\vga.crf --depend .\vga.d)
+I (source\../things/Kylin_mini_v1.2.h)(0x5C2614F6)
+I (source\../things/library_stm32.h)(0x5C26141A)
+I (source\../things/../sister/sister_init.h)(0x5C261367)
+I (source\../things/../things/varilables.h)(0x5C26155C)

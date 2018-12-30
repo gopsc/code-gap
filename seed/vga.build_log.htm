@@ -7,19 +7,82 @@ C:\cygwin\home\17761_000\documents\fxt\seed\vga.uvproj
 Project File Date:  12/28/2018
 
 <h2>Output:</h2>
-Build target 'vga'
+Rebuild target 'vga'
+assembling startup_stm32f10x_hd.s...
 compiling vga.c...
-vga.c: Error:  #5: cannot open source input file "resource\vga.c": No such file or directory
-resource\vga.c: 0 warnings, 1 error
-".\vga.axf" - 1 Error(s), 0 Warning(s).
-Target not created
+linking...
+Program Size: Code=316 RO-data=320 RW-data=0 ZI-data=1632  
+".\vga.axf" - 0 Error(s), 0 Warning(s).
 </pre>
 </body>
 </html>
-ion of startup symbol __main.
-Not enough information to list image symbols.
-Not enough information to list the image map.
-Finished: 2 information, 1 warning and 1 error messages.
-".\vga.axf" - 1 Error(s), 1 Warning(s).
+s
+linking...
+Program Size: Code=316 RO-data=320 RW-data=0 ZI-data=1632  
+".\vga.axf" - 0 Error(s), 1 Warning(s).
+ode=316 RO-data=320 RW-data=0 ZI-data=1632  
+".\vga.axf" - 0 Error(s), 2 Warning(s).
+_Pin_7;
+source\../things/Kylin_mini_v1.2.h(10): error:  #20: identifier "GPIO_Pin_8" is undefined
+  int pin_led_3 = GPIO_Pin_8;
+source\../things/Kylin_mini_v1.2.h(12): error:  #20: identifier "GPIO_Pin_9" is undefined
+  int pin_led_4 = GPIO_Pin_9;
+source\../things/../things/varilables.h(10): error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+   int  mode_gpio_out  =  GPIO_Mode_Out_PP;
+source\../things/../things/varilables.h(12): warning:  #1-D: last line of file ends without a newline
+   int  speed_gpio     =  GPIO_Speed_50MHz;
+source\../things/../things/varilables.h(12): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+   int  speed_gpio     =  GPIO_Speed_50MHz;
+source\vga.c(71): warning:  #1-D: last line of file ends without a newline
+    }
+source\vga.c: 2 warnings, 7 errors
+".\vga.axf" - 7 Error(s), 2 Warning(s).
 Target not created
-d
+      : 11-March-2011
+source\../startup_stm32f10x_hd.s(5): error:  #65: expected a ";"
+  ;* Date               : 11-March-2011
+source\../startup_stm32f10x_hd.s(6): error:  #77-D: this declaration has no storage class or type specifier
+  ;* Description        : STM32F10x High Density Devices vector table for MDK-ARM 
+source\../startup_stm32f10x_hd.s(6): error:  #65: expected a ";"
+  ;* Description        : STM32F10x High Density Devices vector table for MDK-ARM 
+source\../startup_stm32f10x_hd.s(7): error:  #77-D: this declaration has no storage class or type specifier
+  ;*                      toolchain. 
+source\../startup_stm32f10x_hd.s(7): error:  #65: expected a ";"
+  ;*                      toolchain. 
+source\../startup_stm32f10x_hd.s(8): error:  #77-D: this declaration has no storage class or type specifier
+  ;*                      This module performs:
+source\../startup_stm32f10x_hd.s(8): error:  #65: expected a ";"
+  ;*                      This module performs:
+source\../startup_stm32f10x_hd.s(9): error:  #40: expected an identifier
+  ;*                      - Set the initial SP
+source\../startup_stm32f10x_hd.s(10): error:  #40: expected an identifier
+  ;*                      - Set the initial PC == Reset_Handler
+source\../startup_stm32f10x_hd.s(11): error:  #40: expected an identifier
+  ;*                      - Set the vector table entries with the exceptions ISR address
+source\../startup_stm32f10x_hd.s(12): error:  #40: expected an identifier
+  ;*                      - Configure the clock system and also configure the external 
+source\../startup_stm32f10x_hd.s(13): error:  #77-D: this declaration has no storage class or type specifier
+  ;*                        SRAM mounted on STM3210E-EVAL board to be used as data 
+source\../startup_stm32f10x_hd.s(13): error:  #65: expected a ";"
+  ;*                        SRAM mounted on STM3210E-EVAL board to be used as data 
+source\../startup_stm32f10x_hd.s(14): error:  #18: expected a ")"
+  ;*                        memory (optional, to be enabled by user)
+source\../startup_stm32f10x_hd.s(14): warning:  #77-D: this declaration has no storage class or type specifier
+  ;*                        memory (optional, to be enabled by user)
+source\../startup_stm32f10x_hd.s(14): error:  #92: identifier-list parameters may only be used in a function definition
+  ;*                        memory (optional, to be enabled by user)
+source\../startup_stm32f10x_hd.s(15): error:  #40: expected an identifier
+  ;*                      - Branches to __main in the C library (which eventually
+source\../startup_stm32f10x_hd.s(15): error:  #20: identifier "which" is undefined
+  ;*                      - Branches to __main in the C library (which eventually
+source\../startup_stm32f10x_hd.s(16): error:  #18: expected a ")"
+  ;*                        calls main()).
+source\../startup_stm32f10x_hd.s(16): error:  #77-D: this declaration has no storage class or type specifier
+  ;*                        calls main()).
+source\../startup_stm32f10x_hd.s(16): error:  #65: expected a ";"
+  ;*                        calls main()).
+source\../startup_stm32f10x_hd.s(17): error:  #77-D: this declaration has no storage class or type specifier
+  ;*                      After Reset the CortexM3 processor is in Thread mode,
+source\vga.c: 1 warning, 30 errors
+".\vga.axf" - 30 Error(s), 1 Warning(s).
+Target not created

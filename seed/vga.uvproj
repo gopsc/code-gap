@@ -415,7 +415,7 @@
             <File>
               <FileName>library_stm32.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\library_stm32.h</FilePath>
+              <FilePath>.\things\library_stm32.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -428,14 +428,14 @@
               <FilePath>.\sister\time.h</FilePath>
             </File>
             <File>
-              <FileName>system_init.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\sister\system_init.h</FilePath>
-            </File>
-            <File>
               <FileName>gpio.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\sister\gpio.h</FilePath>
+            </File>
+            <File>
+              <FileName>sister_init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\sister\sister_init.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -460,7 +460,7 @@
             <File>
               <FileName>vga.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\resource\vga.c</FilePath>
+              <FilePath>.\source\vga.c</FilePath>
             </File>
           </Files>
         </Group>
