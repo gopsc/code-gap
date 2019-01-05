@@ -27,15 +27,68 @@
 
 
 
-// #include "./startup_stm32f10x_hd.s"
+/*
+
+ #include "./startup_stm32f10x_hd.s"
+
+*/
 
 
 
 
 
-#include "../sister/sister_init.h"
 
-//#include <stm32f10x.h>
+
+
+
+
+/*
+
+ this is a packge of ways and leaves
+
+ use in many source
+
+*/
+
+
+/*
+
+ #include <stm32f10x.h>
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ it is added for things
+
+ nessensary
+
+
+ and use to add by  "stm32f10x.h"
+
+*/
+
+
+# include "../sister/sister_init.h"
+
+
+
+
+
+
+
+
 
 
 
@@ -43,12 +96,28 @@
 
 // this is head files
 
-#include "../things/varilables.h"
+
+/*
+
+ # include  "../things/varilables.h"
+
+*/
+
+
+ # include  "../varilables.h"
+
+
+
+
+
+
+
 
 
 
 
 // this is files for acrossing stm32 in the future
+
 
 // #include "../sister/time.h"
 

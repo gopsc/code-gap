@@ -1,0 +1,104 @@
+
+
+
+
+ source from :  https://jingyan.baidu.com/article/46650658c51160f548e5f85b.html
+
+
+
+
+
+
+
+
+
+
+ linux下如何运行apk安卓应用程序
+
+
+ 浏览：13912
+
+ 更新：2017-07-24 16:13
+
+
+
+
+
+
+
+ 在linux中可以使用Shashlik来运行apk安卓程序，具体可以参考如下内容。
+
+
+
+所用
+
+
+ deepin linux
+
+ shashlik0.9.3
+
+
+
+
+
+
+
+
+其一
+
+
+
+
+甲
+
+ 首先，需要下载下载shashlik，可以去其官网下载
+
+
+
+乙
+
+ 也可以使用Github进行下载。自行搜索其git地址即可。
+
+
+
+
+
+
+
+
+
+
+其二
+
+
+
+
+甲
+
+ 安装必须的依赖包，shashlik在deepin linux上需要安装如下几个依赖包。
+
+  sudo apt-get install libc6-i386 lib32gcc1 lib32z1
+
+
+
+乙
+
+ 安装完依赖包，就可以安装shashlik
+
+  sudo dpkg -i shashlik_0.9.3.deb
+
+
+
+丙
+
+ 查询一下包的安装信息。
+
+  sudo dpkg -L shashlik
+
+
+
+丁
+
+ 为了操作方便做一个软链接到当前目录，所有可执行文件在/opt/shashlik/bin目录下。
+
+  ln -s /opt/shashlik/bin/shashlik-run 
