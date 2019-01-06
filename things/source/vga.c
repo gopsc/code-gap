@@ -13,18 +13,7 @@
 
 
 
-
-
-
-
-
-/*
-
- here are the head files
-
-*/
-
-
+// here are the head files
 
 
 // # include "../startup_stm32f10x_hd.s"
@@ -38,30 +27,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-
- the control function
-
-*/
+// the control function
 
 
  int main( void )
 
  {
-
-
-
-
-
 
 
 /*
