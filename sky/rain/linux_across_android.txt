@@ -1,0 +1,182 @@
+
+
+
+
+ source from :  https://jingyan.baidu.com/article/46650658c51160f548e5f85b.html
+
+
+
+
+
+
+
+
+
+
+ linux下如何运行apk安卓应用程序
+
+
+ 浏览：13912
+
+ 更新：2017-07-24 16:13
+
+
+
+
+
+
+
+ 在linux中可以使用Shashlik来运行apk安卓程序，具体可以参考如下内容。
+
+
+
+所用
+
+
+ deepin linux
+
+ shashlik0.9.3
+
+
+
+
+
+
+
+
+其一
+
+
+
+
+甲
+
+
+ 首先，需要下载下载shashlik，可以去其官网下载
+
+
+
+乙
+
+
+ 也可以使用Github进行下载。自行搜索其git地址即可。
+
+ hppts://github.com/shashlik
+
+
+
+
+
+
+
+
+
+其二
+
+
+
+
+甲
+
+
+ 安装必须的依赖包，shashlik在deepin linux上需要安装如下几个依赖包。
+
+  sudo apt-get install libc6-i386 lib32gcc1 lib32z1
+
+
+
+乙
+
+
+ 安装完依赖包，就可以安装shashlik
+
+  sudo dpkg -i shashlik_0.9.3.deb
+
+
+
+丙
+
+
+ 查询一下包的安装信息。
+
+  sudo dpkg -L shashlik
+
+
+
+丁
+
+
+ 为了操作方便做一个软链接到当前目录，所有可执行文件在/opt/shashlik/bin目录下。
+
+  ln -s /opt/shashlik/bin/shashlik-run 
+
+
+
+
+
+
+
+
+
+
+
+其三
+
+
+
+
+甲
+
+
+ 安装apk程序，这里以百度贴吧为例
+
+  ./bin/shashlik-install tieba.apk
+
+
+
+
+乙
+
+
+ 这时候会在启动器添加百度贴吧的图标。
+
+
+
+
+丙
+
+
+ 点击运行即可，效果如下图所示 
+
+
+
+
+
+
+
+
+
+
+
+其四
+
+
+
+
+甲
+
+
+ 安装的程序要卸载，可以直接在启动器中，选择程序右键选择卸载。
+
+
+
+
+乙
+
+
+ 要卸载shashlik，可以通过如下命令卸载:
+
+  sudo dpkg -P shashlik
+
+
+

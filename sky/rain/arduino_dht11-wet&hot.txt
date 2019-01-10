@@ -1,0 +1,285 @@
+
+
+source from: https://blog.csdn.net/weixin_37272286/article/details/78016565
+
+
+
+
+
+Arduino使用DHT11温湿度传感器获取环境温湿度
+
+2017年09月18日
+
+
+
+
+
+
+
+Arduino使用DHT11温湿度传感器获取环境温湿度
+
+通过本文，可以了解到以下内容：
+
+DHT11 温湿度传感器接线与使用DHT11 Arduino 测试程序编写DHT11 温湿度转换显示
+
+
+
+
+
+DHT11 温湿度传感器接线与使用
+
+DHT11 是一款温湿度传感器，可以用来测试环境温湿度，该传感器的的温度测量范围为 0 ~ 50°C,误差为 2 °C；湿度测量范围为在 0°C时为30%-90%RH，环境温度为 25°C时，湿度测量范围为20%-90%RH，在50°C时，测量范围是20%-80%。
+
+DHT11 传感器接线方法并不复杂，DHT11封装有4个引脚，各个引脚说明如下：
+
+
+
+
+ id   名称   注释
+  
+  1   VDD   供电 3-5.5 VDC
+  
+  2   DATA  串行数据，单总线
+  
+  3   NC    空脚
+  
+  4   GND   接地，电源负极
+  
+  
+  
+  
+  
+  一般从网上买的 Arduino 传感器套件版本的 DHT11，会有一个带 LED 的焊好的板，上面有三个接线引脚，分别是 VCC, GND, DATA，接线时，只要将 VCC 接到 Arduino 5V上，GND 接到 Arduino GND 上，DATA 引脚接 Arduino Pin8上即可。
+  
+  
+  
+  DHT11 Arduino 测试程序编写
+
+DHT11 Arduino 的测试程序也很简单，主要分几个部分： 
+- 引入 dht11 库 
+- 设置端口 
+- 检查 DHT11 是否正确连接 
+- 获取 DHT11 测量数据
+
+程序详细如下：
+
+
+
+code : 
+
+ // 引入 DHT 库文件 如果没有 先从网上下载好 在 Arduino 中导入
+ 
+ #include <dht11.h>
+ 
+ dht11 DHT11;
+ 
+ // 设置 DHT 引脚 为 Pin 8
+ 
+ #define DHT11PIN 8
+ 
+ void setup () {
+ 
+   Serial . begin ( 9600 );
+   
+   Serial . println ( "dht11 test program");
+   
+   Serial . print ( "library" );
+   
+   // 输出 DHT 库的版本号
+   
+   Serial . println ( DHT11LIB_VERSION );
+   
+   Serial . println ();
+   
+   }
+   
+   
+   void loop () {
+   
+     Serial . println ( "\n" );
+     
+     int check  =  DHT11.read ( DHT11PIN );
+     
+     
+     // 测试 DHT 是否正确连接
+     
+     Serial . print ( "Read sensor: " );
+     
+     
+     switch  ( chk ) {
+     
+     
+       case DHTLIB_OK:
+       
+         Serial . println ( "OK" );
+         
+         break;
+         
+         
+       case DHTLIB_ERROR_CHECKSUM:
+       
+         Serial . println ( "checksum error" );
+         
+         break;
+       
+       
+       case DHTLIB_ERROR_TIMEOUT:
+         
+         Serial . println ( "time out error" );
+         
+         break;
+         
+         
+       default:
+       
+         Serial . println ( "unknown error" );
+         
+         break;
+         
+         }
+         
+         
+         // 获取测量数据
+         
+         Serial . print ( "Humidity (%): ");
+         
+         Serial . println (  ( float ) DHT11 . humidity,  2  );
+         
+         Serial . print ( "Temperature °C): " );
+         
+         Serial . println (  ( float ) DHT11 . temperature,  2  );
+         
+         delay ( 2000 );
+         
+         
+         
+         
+         
+         
+程序编写完成后，上传到 Arduino，重启 Arduino ，再在 Arduino IDE 的串口监视器中可以看到测量数据。
+
+
+
+
+
+
+DHT11 温湿度测量数据单位转换
+
+我们习惯常用的温度单位是摄氏度，湿度单位是百分比。但实际生产中，有可能需要用到其他的单位，以下是参考 arduino.cc 上提供的温度转换函数供参考。
+
+
+
+
+// celsius to Fahrenheit conversion
+
+
+ double Fahrenheit ( double celsius ) {
+ 
+   return 1.8 * celsius + 32;
+   
+ }
+ 
+ 
+ // fast integer version with rounding
+ 
+  /*
+ 
+ int Celcius2Fahrenheit ( int celcius )
+
+ {
+ 
+  return  ( celsius * 18 + 5 )  /  10  +  32;
+  
+ }
+ 
+ */
+ 
+ 
+ 
+ // Celsius to Kelvin conversion
+ 
+  double Kelvin ( double celsius ) {
+  
+    return  celsius + 273.15;
+    
+  }
+  
+  
+  // dewPoint function NOAA
+  
+  // reference (1) : http://wahiduddin.net/calc/density_algorithms.htm
+  // reference (2) : http://www.colorado.edu/geography/weather_station/Geog_site/about.htm
+  
+  
+  double dewPoint (  double celsius,  double humidity  ) {
+  
+  // (1) Saturation Vapor Pressure = ESGG ( T )
+  
+  double RATIO  =  373.15  /  ( 273.15 + celsius );
+  
+  double RHS    =  -7.90298 * ( RATIO - 1 );
+  
+         RHS   +=  5.02808 * log10 ( RATIO );
+         
+         RHS   +=  -1.3816e-7   *   (    pow  (  10,  ( 11.344 * ( 1 - 1 / RATIO )  )  )    -  1  ) ;
+         
+         RHS   +=  8.1328e-3    *   (    pow  (  10,  ( -3.49149 * ( RATIO - 1 )  )  )    - 1  ) ;
+         
+         RHS   +=  log10 ( 1013.246 );
+         
+         // factor -3 is to adjust units - Vapor Pressure SVP * humidity
+        
+        
+   double VP  =  pow (  10,  RHS - 3  )  *  humidity;
+   
+   // (2) DEWPOINT = F(Vapor Pressure)
+   
+   double T  =  log ( VP / 0.61078 );
+   
+   // temp var return (241.88 * T) / (17.558 - T);
+   
+   }
+   
+   
+   
+   
+   
+   // delta max = 0.6544 wrt dewPoint()
+   
+   // 6.9 x faster than dewPoint()
+   
+   // reference: http://en.wikipedia.org/wiki/Dew_point
+   
+   
+   
+   double dewPointFast ( double celsius, double humidity ) {
+   
+     double a = 17.271;
+     
+     double b = 237.7;
+     
+     double temp  =  ( a * celsius ) / ( b + celsius ) + log ( humidity * 0.01 );
+     
+     double Td  =  ( b * temp )  /  ( a - temp );
+     
+     return Td;
+     
+   }
+   
+   
+   
+   
+   上面的代码可以根据实际情况，将 DHT11 的测量数据带入函数进行转换即可。
+
+小结
+
+本文介绍了如果连接、使用 DHT11 温湿度传感器，并且介绍了 DHT11 的测试程序如何编写。另外，有一点自己在实验的时候遇到的一个小问题，就是我所使用的 UNO R3 Arduino 主板的 DIGITAL 引线排从小到大分别是 RX0 TX1 PIN2 ……，我开始没有认真看清楚，以为 RX0 TX1 之后是 Pin0，我最初设置使用的引脚是 Pin 2，因此我错误的把引线接到 Pin 3上，串口监视器一直没有信息，我以为是传感器坏了，后来更换 Pin 口，才发现了这个小失误，所以希望读者在接线的时候要注意，我之前也是因为接线错误导致一个 HC05 蓝牙模块损坏。
+
+参考资料
+
+温湿度传感器DHT11 
+A DHT11 Class for Arduino. 
+KY-015 TEMPERATURE AND HUMIDITY SENSOR MODULE 
+数字温湿度传感器
+
+
