@@ -23,35 +23,35 @@
 
 
 
-TERMS AND CONDITIONS OF USE GENYMOTION
+terms and conditions of use genymotion
 
  
 
-These terms and conditions (the °∞Terms and Conditions°±) apply to the Licensee°Øs use of the Software as of the date on which they are accepted by the Licensee (the °∞Effective Date°±).
+These terms and conditions (the ‚Äúterms and conditions‚Äù) apply to the licensee‚Äôs use of the software as of the date on which they are accepted by the licensee (the ‚Äúeffective date‚Äù).
 
-By ticking the box and clicking °∞Accept°± or exchanging signed copies of these Terms and Conditions, you consent to be being bound by these Terms and Conditions of Use.
+By ticking the box and clicking ‚ÄúAccept‚Äù or exchanging signed copies of these Terms and Conditions, you consent to be being bound by these Terms and Conditions of Use.
 
-The Software is provided by GENYMOBILE SAS, a corporation with an establishment in Paris 75002, 1 rue du Mail (°∞Genymobile°± or °∞Provider°±).
+The Software is provided by GENYMOBILE SAS, a corporation with an establishment in Paris 75002, 1 rue du Mail (‚ÄúGenymobile‚Äù or ‚ÄúProvider‚Äù).
   
 
 
 1. Definitions
 
-°∞Confidential Information°± means confidential or proprietary data or information disclosed by one party to the other under these Terms and Conditions whether in written, graphic, machine recognizable, electronic, sample, any other visually perceptible form, or in oral form, which is clearly designated as °∞confidential°± or °∞proprietary°± at the time of disclosure.
+‚ÄúConfidential Information‚Äù means confidential or proprietary data or information disclosed by one party to the other under these Terms and Conditions whether in written, graphic, machine recognizable, electronic, sample, any other visually perceptible form, or in oral form, which is clearly designated as ‚Äúconfidential‚Äù or ‚Äúproprietary‚Äù at the time of disclosure.
 
-°∞End User°± means a single individual represented by a unique username with the software installed on a single workstation.
+‚ÄúEnd User‚Äù means a single individual represented by a unique username with the software installed on a single workstation.
 
-°∞Intellectual Property Rights°± means all tangible and intangible rights associated with works of authorship throughout the world, including but not limited to, copyrights, authors°Ø rights, moral rights, and mask works; trademarks and trade name rights and similar rights; trade secret rights; patents, designs, algorithms, and other intellectual or industrial property rights (of every kind and nature throughout the world and however designated) whether arising by operation of law, contract, license, or otherwise; and all registrations, initial applications, renewals, extensions, continuations, divisions, or reissues now or hereafter in force (including any rights in the foregoing).
+‚ÄúIntellectual Property Rights‚Äù means all tangible and intangible rights associated with works of authorship throughout the world, including but not limited to, copyrights, authors‚Äô rights, moral rights, and mask works; trademarks and trade name rights and similar rights; trade secret rights; patents, designs, algorithms, and other intellectual or industrial property rights (of every kind and nature throughout the world and however designated) whether arising by operation of law, contract, license, or otherwise; and all registrations, initial applications, renewals, extensions, continuations, divisions, or reissues now or hereafter in force (including any rights in the foregoing).
 
-°∞License°± means the license granted by Genymobile to Licensee pursuant to section 2.
+‚ÄúLicense‚Äù means the license granted by Genymobile to Licensee pursuant to section 2.
 
-°∞Licensee°± means the individual or corporation who subscribes the License under the terms of these Terms and Conditions.
+‚ÄúLicensee‚Äù means the individual or corporation who subscribes the License under the terms of these Terms and Conditions.
 
-°∞Services°± means Genymobile°Øs maintenance and support services described in these Terms and Conditions, and any other services provided or made available by or on behalf of Genymobile under these Terms and Conditions.
+‚ÄúServices‚Äù means Genymobile‚Äôs maintenance and support services described in these Terms and Conditions, and any other services provided or made available by or on behalf of Genymobile under these Terms and Conditions.
 
-°∞Software°± means the Genymobile software and Third-Party Software provided or made available by Genymobile to Licensee under these Terms and Conditions.
+‚ÄúSoftware‚Äù means the Genymobile software and Third-Party Software provided or made available by Genymobile to Licensee under these Terms and Conditions.
 
-°∞Third-Party Software°± means, collectively, all third-party software that is required to access and/or use Licensor software or that is distributed or made available as part of or with the Software or Services. For the avoidance of doubt, Third-Party Software shall include both proprietary software and open source software.
+‚ÄúThird-Party Software‚Äù means, collectively, all third-party software that is required to access and/or use Licensor software or that is distributed or made available as part of or with the Software or Services. For the avoidance of doubt, Third-Party Software shall include both proprietary software and open source software.
   
 
 
@@ -65,17 +65,17 @@ Licensee acknowledges and accepts that the License granted herein is limited to 
 
 2.2 Enterprise Use
 
-GENYMOBILE grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive license for End-Users to access, install, and use the Software developed by GENYMOBILE for Licensee°Øs software development and manual testing purposes, exclusively in the context of Licensee°Øs business (to the exclusion of any use by End-Users for their own business or personal use) (°∞Enterprise Use License°±). For the purpose of these Terms and Conditions, °∞use°± means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
+GENYMOBILE grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive license for End-Users to access, install, and use the Software developed by GENYMOBILE for Licensee‚Äôs software development and manual testing purposes, exclusively in the context of Licensee‚Äôs business (to the exclusion of any use by End-Users for their own business or personal use) (‚ÄúEnterprise Use License‚Äù). For the purpose of these Terms and Conditions, ‚Äúuse‚Äù means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
 
-Licensee must not download or install the Software for more than the number of End Users corresponding to the number of Enterprise Use Licenses purchased. Each End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile°Øs prior written consent.
+Licensee must not download or install the Software for more than the number of End Users corresponding to the number of Enterprise Use Licenses purchased. Each End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile‚Äôs prior written consent.
 
-Licensee may install the Software on a personal desktop or laptop or notebook device used for Licensee°Øs business purposes. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated testing purposes, unless it obtains a °∞Server Enablement License°± through Genymobile°Øs sales department, subject to an additional quotation for such a license.
+Licensee may install the Software on a personal desktop or laptop or notebook device used for Licensee‚Äôs business purposes. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated testing purposes, unless it obtains a ‚ÄúServer Enablement License‚Äù through Genymobile‚Äôs sales department, subject to an additional quotation for such a license.
 
-Licensees benefiting from an Enterprise Use License may, at their option, and subject to the parties°Ø agreement on the applicable terms and conditions, benefit from an °∞Enterprise License Server°± allowing the Licensees to manage the attribution of purchased Licenses to End Users directly.
+Licensees benefiting from an Enterprise Use License may, at their option, and subject to the parties‚Äô agreement on the applicable terms and conditions, benefit from an ‚ÄúEnterprise License Server‚Äù allowing the Licensees to manage the attribution of purchased Licenses to End Users directly.
 
-The Enterprise Use License does not include any rights to access Genymotion Cloud. The Software licensed under an Enterprise Use License may only  be connected to Genymotion Cloud subject to subscription by the Licensee of a °∞Genymotion Cloud License°± for the additional corresponding fee.
+The Enterprise Use License does not include any rights to access Genymotion Cloud. The Software licensed under an Enterprise Use License may only  be connected to Genymotion Cloud subject to subscription by the Licensee of a ‚ÄúGenymotion Cloud License‚Äù for the additional corresponding fee.
 
-If Licensee otherwise qualifies for a Enterprise Use License, Genymobile may offer  a free trial period for a limited duration to be determined between the parties (°∞Free Trial Period°±). During the Free Trial Period, the Licensee shall be authorized to access and use the Software according to the terms of the Enterprise Use License above.
+If Licensee otherwise qualifies for a Enterprise Use License, Genymobile may offer  a free trial period for a limited duration to be determined between the parties (‚ÄúFree Trial Period‚Äù). During the Free Trial Period, the Licensee shall be authorized to access and use the Software according to the terms of the Enterprise Use License above.
 
 Expiry of the Free Trial Period shall result in the automatic termination of these Terms and Conditions unless Licensee subscribes a License under the terms of Section 8.7 below.
 
@@ -83,15 +83,15 @@ Each End User and attached workstation may only benefit from one Free Trial Peri
 
 2.3 Business Use
 
-GENYMOBILE grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive license for End-Users to access, install, and use the Software developed by GENYMOBILE for Licensee°Øs software development and manual testing purposes, exclusively in the context of Licensee°Øs business (to the exclusion of any use by End-Users for their own business or personal use) (°∞Business Use License°±). For the purpose of these Terms and Conditions, °∞use°± means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
+GENYMOBILE grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive license for End-Users to access, install, and use the Software developed by GENYMOBILE for Licensee‚Äôs software development and manual testing purposes, exclusively in the context of Licensee‚Äôs business (to the exclusion of any use by End-Users for their own business or personal use) (‚ÄúBusiness Use License‚Äù). For the purpose of these Terms and Conditions, ‚Äúuse‚Äù means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
 
-Licensee must not download or install the Software for more than the number of End Users corresponding to the number of Business Use Licenses purchased. Each End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile°Øs prior written consent.
+Licensee must not download or install the Software for more than the number of End Users corresponding to the number of Business Use Licenses purchased. Each End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile‚Äôs prior written consent.
 
-Licensee may install the Software on a personal desktop or laptop or notebook device used for Licensee°Øs business purposes. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated or non-manual testing purposes, whether via servers, third party software, or any other means. Use of the Software for any automated or non-manual testing purposes requires that the Licensee obtain an Enterprise Use Licence.
+Licensee may install the Software on a personal desktop or laptop or notebook device used for Licensee‚Äôs business purposes. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated or non-manual testing purposes, whether via servers, third party software, or any other means. Use of the Software for any automated or non-manual testing purposes requires that the Licensee obtain an Enterprise Use Licence.
 
 Purchase of a Business Use License does not entitle the Licensee to connect the Software to trial or fully paid versions of Genymotion Cloud in any way, nor to subscribe to a Genymotion Cloud License.
 
-If Licensee otherwise qualifies for a Business Use License, Licensee may elect to benefit from a free trial period of one (1) month (°∞Free Trial Period°±). During the Free Trial Period, the Licensee shall be authorized to access and use the Software according to the terms of the Business Use License above.
+If Licensee otherwise qualifies for a Business Use License, Licensee may elect to benefit from a free trial period of one (1) month (‚ÄúFree Trial Period‚Äù). During the Free Trial Period, the Licensee shall be authorized to access and use the Software according to the terms of the Business Use License above.
 
 Expiry of the Free Trial Period shall result in the automatic termination of these Terms and Conditions unless Licensee subscribes a License under the terms of Section 8.7 below.
 
@@ -101,11 +101,11 @@ Each End User and attached workstation may only benefit from one Free Trial Peri
 
 Licensee acknowledges that the grant of an Indie Use License is subject to Licensee being an independent professional, freelancer or self-employed individual and warrants that that is the case.
 
-GENYMOBILE grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive license for End-Users to access, install, and use the Software developed by GENYMOBILE for Licensee°Øs software development and manual testing purposes, exclusively in the context of Licensee°Øs business (to the exclusion of any use by End-Users for their own business or personal use) (°∞Indie Use License°±). For the purpose of these Terms and Conditions, °∞use°± means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
+GENYMOBILE grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive license for End-Users to access, install, and use the Software developed by GENYMOBILE for Licensee‚Äôs software development and manual testing purposes, exclusively in the context of Licensee‚Äôs business (to the exclusion of any use by End-Users for their own business or personal use) (‚ÄúIndie Use License‚Äù). For the purpose of these Terms and Conditions, ‚Äúuse‚Äù means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
 
-A Licensee may only subscribe one (1) Indie Use License. Licensee must not download or install the Software for more than one (1) End User. The End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile°Øs prior written consent (not being unreasonably withheld).
+A Licensee may only subscribe one (1) Indie Use License. Licensee must not download or install the Software for more than one (1) End User. The End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile‚Äôs prior written consent (not being unreasonably withheld).
 
-Licensee may install the Software on a personal desktop or laptop or notebook device used for Licensee°Øs business purposes. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated or non-manual testing purposes, whether via servers, third party software, or any other means. Use of the Software for any automated or non-manual testing purposes requires that the Licensee obtain an Enterprise Use Licence.
+Licensee may install the Software on a personal desktop or laptop or notebook device used for Licensee‚Äôs business purposes. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated or non-manual testing purposes, whether via servers, third party software, or any other means. Use of the Software for any automated or non-manual testing purposes requires that the Licensee obtain an Enterprise Use Licence.
 
 Purchase of an Indie Use License does not entitle the Licensee to connect the Software to trial or fully paid versions of Genymotion Cloud in any way, nor to subscribe to a Genymotion Cloud License.
 
@@ -113,9 +113,9 @@ Purchase of an Indie Use License does not entitle the Licensee to connect the So
 
 Licensee acknowledges that the grant of a Personal Use License is subject to the Licensee being a consumer (as defined by applicable law) and warrants that they will make use of the Software in their capacity as a consumer (as defined by applicable law).
 
-Genymobile grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive License for End-Users to access, install, and use the Software developed by Genymobile for Licensee°Øs software development and testing purposes, exclusively in the context of Licensee°Øs own personal use, to the exclusion of any use for Licensee°Øs or any third party°Øs professional purposes, any use that might materially benefit Licensee°Øs or any third party°Øs professional purposes, or any use with a view to make any form of commercial or monetary profit (°∞Personal Use License°±). For the purpose of these Terms and Conditions, °∞use°± means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
+Genymobile grants Licensee a non-transferable, non-sublicensable, non-assignable, worldwide, terminable, limited, and non-exclusive License for End-Users to access, install, and use the Software developed by Genymobile for Licensee‚Äôs software development and testing purposes, exclusively in the context of Licensee‚Äôs own personal use, to the exclusion of any use for Licensee‚Äôs or any third party‚Äôs professional purposes, any use that might materially benefit Licensee‚Äôs or any third party‚Äôs professional purposes, or any use with a view to make any form of commercial or monetary profit (‚ÄúPersonal Use License‚Äù). For the purpose of these Terms and Conditions, ‚Äúuse‚Äù means to execute, run, display and store the Software for the duration of the licensed rights. All rights not expressly granted under these Terms and Conditions are reserved by Genymobile.
 
-Licensee must not download or install the Software for more than one (1)End User. The End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile°Øs prior written consent (not being unreasonably withheld).
+Licensee must not download or install the Software for more than one (1)End User. The End-User shall be ascribed a unique username to access and use the Software on a single workstation. No other person may use the username created by such person without Genymobile‚Äôs prior written consent (not being unreasonably withheld).
 
 Licensee may install the Software on a personal desktop or laptop or notebook device. Licensee may not install the Software on any physical or virtual server or server-grade computing device, or use the Software for automated or non-manual testing purposes, whether via servers, third party software, or any other means. Use of the Software for any automated or non-manual testing purposes requires that the Licensee obtain an Enterprise Use Licence.
 
@@ -126,9 +126,9 @@ Purchase of a Personal Use License does not entitle the Licensee to connect the 
 2.6 General License Terms
 
 Except as otherwise indicated under the terms of these Terms and Conditions, Licensee does not have any right or license to, and will not, directly or indirectly, in any manner whatsoever:
- (a) assign, transfer, sell, encumber or modify the Software without Genymobile°Øs prior written consent,
+ (a) assign, transfer, sell, encumber or modify the Software without Genymobile‚Äôs prior written consent,
  (b) use or utilize the Software for any purpose or in any manner that is illegal or in violation of applicable laws;
- (c) copy, decompile, disassemble, reverse engineer, or attempt to create the source code from the Software, except to the extent expressly permitted by applicable law, without Genymobile°Øs prior written consent;
+ (c) copy, decompile, disassemble, reverse engineer, or attempt to create the source code from the Software, except to the extent expressly permitted by applicable law, without Genymobile‚Äôs prior written consent;
  (d) remove any product identification or proprietary rights notices;
  (e) modify translate, adapt or create derivative works of the Software;
  (f) rent or lease the Software or copy the documentation accompanying the Software other than for internal purposes; or
@@ -142,15 +142,15 @@ Licensee shall procure compliance of any End-Users with the terms of these Terms
   
 
 
-3. Support ®C Downtime
+3. Support ‚Äì Downtime
 
 3.1
 
-Where Licensee has purchased an Enterprise Use License or a Business Use License, GENYMOBILE agrees to provide support Services regarding the Software as set forth in this Section 3.1. GENYMOBILE will make its best endeavours to provide an answer, by email, to any questions about the Services and/or the Software asked by Licensee using the contact form provided on Genymobile°Øs website within a reasonable period of time, it being understood that questions will be received and answered only during working hours in the region concerned.
+Where Licensee has purchased an Enterprise Use License or a Business Use License, GENYMOBILE agrees to provide support Services regarding the Software as set forth in this Section 3.1. GENYMOBILE will make its best endeavours to provide an answer, by email, to any questions about the Services and/or the Software asked by Licensee using the contact form provided on Genymobile‚Äôs website within a reasonable period of time, it being understood that questions will be received and answered only during working hours in the region concerned.
 
 3.2
 
-GENYMOBILE may, at any time, interrupt, suspend, or otherwise disturb access to the Services and/or Software for purposes of maintenance, repair, or for any other legitimate reason whatsoever (°∞Downtime°±).
+GENYMOBILE may, at any time, interrupt, suspend, or otherwise disturb access to the Services and/or Software for purposes of maintenance, repair, or for any other legitimate reason whatsoever (‚ÄúDowntime‚Äù).
 
 3.3
 
@@ -178,7 +178,7 @@ Where the Software is subject to the Personal Use License set out in Section 2.4
 
 4.4
 
-Licensee acknowledges and accepts that Genymobile may make any version of the Software available for use under a Personal Use license, at any time without notice. Where Licensee benefits from another type of license than the Personal Use license, the terms of the license applicable to Licensee shall continue to apply to Licensee°Øs use of the Software.
+Licensee acknowledges and accepts that Genymobile may make any version of the Software available for use under a Personal Use license, at any time without notice. Where Licensee benefits from another type of license than the Personal Use license, the terms of the license applicable to Licensee shall continue to apply to Licensee‚Äôs use of the Software.
   
 
 
@@ -186,7 +186,7 @@ Licensee acknowledges and accepts that Genymobile may make any version of the So
 
 5.1
 
-Each party warrants that the person executing these Terms and Conditions on GENYMOBILE°Øs or Licensee°Øs behalf (as applicable) has express authority to do so and to bind GENYMOBILE or Licensee (as applicable).
+Each party warrants that the person executing these Terms and Conditions on GENYMOBILE‚Äôs or Licensee‚Äôs behalf (as applicable) has express authority to do so and to bind GENYMOBILE or Licensee (as applicable).
 
 5.2
 
@@ -194,7 +194,7 @@ GENYMOBILE warrants that it has obtained and currently holds valid and sufficien
 
 5.3
 
-Except for the warranties specified above, and to the extent permitted by applicable law, GENYMOBILE makes no other warranty with respect to the Software, including warranties regarding the Software°Øs modifications and improvements.
+Except for the warranties specified above, and to the extent permitted by applicable law, GENYMOBILE makes no other warranty with respect to the Software, including warranties regarding the Software‚Äôs modifications and improvements.
 
 5.4
 
@@ -220,7 +220,7 @@ GENYMOBILE owns and retains all rights to:
 
 6.2
 
-Nothing in these Terms and Conditions constitutes, or shall be interpreted or construed to constitute, any assignment, transfer or conveyance of any right, title or interest, or (except for the license rights expressly granted to Licensee under these Terms and Conditions) any license or use right, or any right to grant any license over GENYMOBILE°Øs property.
+Nothing in these Terms and Conditions constitutes, or shall be interpreted or construed to constitute, any assignment, transfer or conveyance of any right, title or interest, or (except for the license rights expressly granted to Licensee under these Terms and Conditions) any license or use right, or any right to grant any license over GENYMOBILE‚Äôs property.
   
 
 
@@ -228,7 +228,7 @@ Nothing in these Terms and Conditions constitutes, or shall be interpreted or co
 
 7.1
 
-In consideration for the license rights over the Software granted under the terms of these Terms and Conditions, Licensee shall pay the annual fees applicable to the type of License selected by Licensee and specified and accepted on Genymobile°Øs website at the time of acceptance, or as otherwise agreed in writing between the parties.
+In consideration for the license rights over the Software granted under the terms of these Terms and Conditions, Licensee shall pay the annual fees applicable to the type of License selected by Licensee and specified and accepted on Genymobile‚Äôs website at the time of acceptance, or as otherwise agreed in writing between the parties.
 
 
  
@@ -237,7 +237,7 @@ In consideration for the license rights over the Software granted under the term
 
 8.1
 
-Payment of the first annual fee shall be accepted via credit card or any other means available on Genymobile°Øs website. Where credit card payment is used, download and access to the Software shall be suspended until the payment is processed.
+Payment of the first annual fee shall be accepted via credit card or any other means available on Genymobile‚Äôs website. Where credit card payment is used, download and access to the Software shall be suspended until the payment is processed.
 
 8.2
 
@@ -245,7 +245,7 @@ Where the initial payment is made via credit card, the Licensee shall authorize 
 
 8.3
 
-Where the initial payment is made via other means offered on the Genymobile website or where Licensee has opted-out of automatic payment via credit card, Licensee shall be responsible for making subsequent payments via a means then-accepted by Genymobile, as indicated on Genymobile°Øs website. Payments shall be due and payable thirty (30) days from Licensee°Øs receipt of an invoice from GENYMOBILE. To the extent that Licensee believes, in good faith, that all or a portion of an invoice is incorrect, Licensee shall have the right to challenge the disputed portion of such invoice. However, under no circumstances shall Licensee withhold payment.
+Where the initial payment is made via other means offered on the Genymobile website or where Licensee has opted-out of automatic payment via credit card, Licensee shall be responsible for making subsequent payments via a means then-accepted by Genymobile, as indicated on Genymobile‚Äôs website. Payments shall be due and payable thirty (30) days from Licensee‚Äôs receipt of an invoice from GENYMOBILE. To the extent that Licensee believes, in good faith, that all or a portion of an invoice is incorrect, Licensee shall have the right to challenge the disputed portion of such invoice. However, under no circumstances shall Licensee withhold payment.
 
 8.4
 
@@ -265,7 +265,7 @@ Licensee may elect to subscribe to a License and make payment or provide billing
 
 8.8
 
-Applicable taxes will be billed as a separate item or line item. Licensee shall pay sales, use, value added, goods and services, and all other similar taxes imposed by any federal, state, or local governmental entity for items and/or services provided under these Terms and Conditions, excluding taxes based solely on GENYMOBILE°Øs income or property. Licensee shall pay such tax(es) in addition to the sums due under these Terms and Conditions provided that GENYMOBILE itemizes them on a proper VAT, GST or other invoice. Any taxes paid on behalf of Licensee by GENYMOBILE shall be uniquely identified on the applicable invoice and GENYMOBILE shall provide Licensee with proof of payment if previously paid by GENYMOBILE. GENYMOBILE shall indemnify and hold Licensee harmless from any interest or penalties imposed on Licensee because of GENYMOBILE°Øs improper payment of any taxes on Licensee°Øs behalf.  If Licensee is required to withhold or deduct any taxes from any payment, Licensee shall not be required to °∞gross up°± the amount of such payment and shall pay the total amount reflected on the invoice less the applicable withholding taxes.  The parties shall cooperate in good faith to minimize taxes to the extent legally permissible.  Each party shall provide and make available to the other party any resale certificates, treaty certification and other exemption information reasonably requested by the other party.  Notwithstanding the foregoing, provided Licensee furnishes GENYMOBILE with a copy of a resale exemption certificate, no sales taxes will be billed to Licensee.
+Applicable taxes will be billed as a separate item or line item. Licensee shall pay sales, use, value added, goods and services, and all other similar taxes imposed by any federal, state, or local governmental entity for items and/or services provided under these Terms and Conditions, excluding taxes based solely on GENYMOBILE‚Äôs income or property. Licensee shall pay such tax(es) in addition to the sums due under these Terms and Conditions provided that GENYMOBILE itemizes them on a proper VAT, GST or other invoice. Any taxes paid on behalf of Licensee by GENYMOBILE shall be uniquely identified on the applicable invoice and GENYMOBILE shall provide Licensee with proof of payment if previously paid by GENYMOBILE. GENYMOBILE shall indemnify and hold Licensee harmless from any interest or penalties imposed on Licensee because of GENYMOBILE‚Äôs improper payment of any taxes on Licensee‚Äôs behalf.  If Licensee is required to withhold or deduct any taxes from any payment, Licensee shall not be required to ‚Äúgross up‚Äù the amount of such payment and shall pay the total amount reflected on the invoice less the applicable withholding taxes.  The parties shall cooperate in good faith to minimize taxes to the extent legally permissible.  Each party shall provide and make available to the other party any resale certificates, treaty certification and other exemption information reasonably requested by the other party.  Notwithstanding the foregoing, provided Licensee furnishes GENYMOBILE with a copy of a resale exemption certificate, no sales taxes will be billed to Licensee.
   
 
 
@@ -273,19 +273,19 @@ Applicable taxes will be billed as a separate item or line item. Licensee shall 
 
 9.1
 
-Where Licensee holds a Personal Use license on the Software and resides in France/the EU, Licensee may exercise Licensee°Øs statutory right of withdrawal within fourteen days of downloading the Software, by filling out the withdrawal form in Schedule A. A refund of any fees paid will be issued, subject to retention by Genymobile of a pro rata amount equivalent to the fees owed for the number of days during which Licensee was given access to the Software.
+Where Licensee holds a Personal Use license on the Software and resides in France/the EU, Licensee may exercise Licensee‚Äôs statutory right of withdrawal within fourteen days of downloading the Software, by filling out the withdrawal form in Schedule A. A refund of any fees paid will be issued, subject to retention by Genymobile of a pro rata amount equivalent to the fees owed for the number of days during which Licensee was given access to the Software.
   
 
 
-10. Indemnification ®C Infringement
+10. Indemnification ‚Äì Infringement
 
 10.1
 
-If Licensee°Øs use of the Software and Services in compliance with the terms of these Terms and Conditions is subject to a claim, action, demand or proceeding of Intellectual Property infringement by a third party (°∞Claim°±) then GENYMOBILE shall indemnify, defend, and hold harmless Licensee and its and their officers, directors, employees and agents (collectively, the °∞Licensee Indemnitees°±) against all losses directly incurred by Licensee in connection with such Claim, provided that Licensee promptly notifies Genymobile of any such claim in writing, gives Genymobile sole control of any such action or proceedings (at Genymobile°Øs reasonable expense) and such assistance as it may reasonably require to settle and/or defend such action or proceedings.
+If Licensee‚Äôs use of the Software and Services in compliance with the terms of these Terms and Conditions is subject to a claim, action, demand or proceeding of Intellectual Property infringement by a third party (‚ÄúClaim‚Äù) then GENYMOBILE shall indemnify, defend, and hold harmless Licensee and its and their officers, directors, employees and agents (collectively, the ‚ÄúLicensee Indemnitees‚Äù) against all losses directly incurred by Licensee in connection with such Claim, provided that Licensee promptly notifies Genymobile of any such claim in writing, gives Genymobile sole control of any such action or proceedings (at Genymobile‚Äôs reasonable expense) and such assistance as it may reasonably require to settle and/or defend such action or proceedings.
 
 10.2
 
-In the event that the Software and Services become, or in GENYMOBILE°Øs reasonable opinion are likely to become, the subject of any such Claim, Genymobile may, at its sole discretion and expense, do one of the following:
+In the event that the Software and Services become, or in GENYMOBILE‚Äôs reasonable opinion are likely to become, the subject of any such Claim, Genymobile may, at its sole discretion and expense, do one of the following:
 
 (a) procure for the Licensee the right to continue to use the e Software or Services are,
  (b) make the Software and Services available so that it becomes non-infringing,
@@ -294,7 +294,7 @@ In the event that the Software and Services become, or in GENYMOBILE°Øs reasonab
 
 10.3
 
-The indemnity in this Section shall not apply to any infringement resulting from: (i) use of the Software which does not comply with the uses permitted under these Terms and Conditions; (ii) any modification or change to the Software carried out by Genymobile at the Licensee°Øs request, or (iii) the combination of the Service with any third party product and/or service or modification undertaken by Licensee without the prior written consent of Genymobile.
+The indemnity in this Section shall not apply to any infringement resulting from: (i) use of the Software which does not comply with the uses permitted under these Terms and Conditions; (ii) any modification or change to the Software carried out by Genymobile at the Licensee‚Äôs request, or (iii) the combination of the Service with any third party product and/or service or modification undertaken by Licensee without the prior written consent of Genymobile.
   
 
 
@@ -306,7 +306,7 @@ Except for breaches to Section 2 and to the extent permitted by applicable law, 
 
 11.2
 
-Except for breaches to Section 2 and to the extent permitted by applicable law, each party°Øs maximum liability to the other party for any and all claims arising under or related to these Terms and Conditions shall be limited to the total fees paid by Licensee to Genymobile hereunder during the twelve (12) month period immediately preceding the most recent event giving rise to the claim.
+Except for breaches to Section 2 and to the extent permitted by applicable law, each party‚Äôs maximum liability to the other party for any and all claims arising under or related to these Terms and Conditions shall be limited to the total fees paid by Licensee to Genymobile hereunder during the twelve (12) month period immediately preceding the most recent event giving rise to the claim.
 
 11.3
 
@@ -322,11 +322,11 @@ This section 11 shall not apply where the Licensee benefits from a Personal Use 
 
 12.1
 
-Confidential Information is, and at all times shall remain, the property of the disclosing Party.  The parties shall: (A) maintain the confidentiality of each other°Øs Confidential Information and not disclose it to any third party, except as authorized by the original disclosing party in writing; (B) restrict disclosure of, and access to, Confidential Information to employees, contractors, agents or consultants who have a °∞need to know°± in order for the party to perform its obligations or exercise its rights under these Terms and Conditions, and who are bound to maintain the confidentiality of the Confidential Information by the terms of nondisclosure no less restrictive than those contained herein; (C) handle Confidential Information with the same degree of care the receiving party applies to its own confidential information, but in no event, less than reasonable care; (D) use Confidential Information only for the purpose of performing, and to the extent necessary, to fulfill their respective obligations under these Terms and Conditions; and (E) promptly notify each other upon discovery of any unauthorized use, access or disclosure of the Confidential Information, take reasonable steps to regain possession and protection of the Confidential Information, and prevent further unauthorized action or breach of these Terms and Conditions.
+Confidential Information is, and at all times shall remain, the property of the disclosing Party.  The parties shall: (A) maintain the confidentiality of each other‚Äôs Confidential Information and not disclose it to any third party, except as authorized by the original disclosing party in writing; (B) restrict disclosure of, and access to, Confidential Information to employees, contractors, agents or consultants who have a ‚Äúneed to know‚Äù in order for the party to perform its obligations or exercise its rights under these Terms and Conditions, and who are bound to maintain the confidentiality of the Confidential Information by the terms of nondisclosure no less restrictive than those contained herein; (C) handle Confidential Information with the same degree of care the receiving party applies to its own confidential information, but in no event, less than reasonable care; (D) use Confidential Information only for the purpose of performing, and to the extent necessary, to fulfill their respective obligations under these Terms and Conditions; and (E) promptly notify each other upon discovery of any unauthorized use, access or disclosure of the Confidential Information, take reasonable steps to regain possession and protection of the Confidential Information, and prevent further unauthorized action or breach of these Terms and Conditions.
 
 12.2
 
-The receiving party has no obligation to preserve the confidentiality of any information that is: (A) previously known, or received rightfully by the receiving party without any obligation to keep it confidential; (B) distributed to third parties by the disclosing party without restriction; (C) explicitly approved for release by written authorization of the disclosing party; (D) publicly available other than by unauthorized disclosure by the receiving party;  (E) independently developed by the receiving party without the unlawful use of any of the disclosing party°Øs Confidential Information or any breach of these Terms and Conditions; (F) for avoidance of doubt, any open source software; or (G) required to be disclosed under applicable law, court order, or other governmental authority lawfully demanding Confidential Information, provided that the receiving party complies with the obligations in this Section.
+The receiving party has no obligation to preserve the confidentiality of any information that is: (A) previously known, or received rightfully by the receiving party without any obligation to keep it confidential; (B) distributed to third parties by the disclosing party without restriction; (C) explicitly approved for release by written authorization of the disclosing party; (D) publicly available other than by unauthorized disclosure by the receiving party;  (E) independently developed by the receiving party without the unlawful use of any of the disclosing party‚Äôs Confidential Information or any breach of these Terms and Conditions; (F) for avoidance of doubt, any open source software; or (G) required to be disclosed under applicable law, court order, or other governmental authority lawfully demanding Confidential Information, provided that the receiving party complies with the obligations in this Section.
 
 12.3
 
@@ -334,7 +334,7 @@ If a receiving party is required to disclose Confidential Information under appl
 
 12.4
 
-Unless otherwise agreed by the parties in writing, the parties°Ø confidentiality obligations shall survive for five (5) years following the date of these Terms and Conditions°Øs termination or expiration.
+Unless otherwise agreed by the parties in writing, the parties‚Äô confidentiality obligations shall survive for five (5) years following the date of these Terms and Conditions‚Äôs termination or expiration.
   
 
 
@@ -342,7 +342,7 @@ Unless otherwise agreed by the parties in writing, the parties°Ø confidentiality
 
 13.1
 
-Neither party may make use of the other party°Øs name, trademarks, or any similar signs in connection with any advertising or promotional materials or activities without the other party°Øs prior written consent. Neither party shall publicize the existence of any business relationship established by these Terms and Conditions, or disclose any of the terms of these Terms and Conditions to any third party without first obtaining the written consent of the other party.
+Neither party may make use of the other party‚Äôs name, trademarks, or any similar signs in connection with any advertising or promotional materials or activities without the other party‚Äôs prior written consent. Neither party shall publicize the existence of any business relationship established by these Terms and Conditions, or disclose any of the terms of these Terms and Conditions to any third party without first obtaining the written consent of the other party.
   
 
 
@@ -366,7 +366,7 @@ Nothing in these Terms and Conditions is intended to confer on any third party, 
   
 
 
-16. Duration ®C Termination
+16. Duration ‚Äì Termination
 
 16.1
 
@@ -374,7 +374,7 @@ The term of these Terms and Conditions shall commence on the Effective Date and 
 
 16.2
 
-The License to the Software provided by Genymobile to Licensee under these Terms and Conditions shall commence on the Effective Date and, unless terminated in accordance with the provisions hereof, is granted for successive one (1) year periods unless either party provides, at least sixty (60) days°Ø prior to the end of the then-current term of the License, written notice to the other party of its intent not to renew (°∞Notice°±). Upon such receipt of such Notice by the non-sending party, the License shall terminate upon the expiration of its then-current term. By exception to the above, any License subscribed during a Free Trial Period shall commence on the day after the end date of the Free Trial Period.
+The License to the Software provided by Genymobile to Licensee under these Terms and Conditions shall commence on the Effective Date and, unless terminated in accordance with the provisions hereof, is granted for successive one (1) year periods unless either party provides, at least sixty (60) days‚Äô prior to the end of the then-current term of the License, written notice to the other party of its intent not to renew (‚ÄúNotice‚Äù). Upon such receipt of such Notice by the non-sending party, the License shall terminate upon the expiration of its then-current term. By exception to the above, any License subscribed during a Free Trial Period shall commence on the day after the end date of the Free Trial Period.
 
 16.3
 
@@ -382,28 +382,28 @@ Where a Personal Use License is granted to Licensee residing in France/the EU, G
 
 16.4
 
-If the Notice is not sent by either party, GENYMOBILE may invoice Licensee up to sixty (60) days prior to the Agreement°Øs renewal date.
+If the Notice is not sent by either party, GENYMOBILE may invoice Licensee up to sixty (60) days prior to the Agreement‚Äôs renewal date.
 
 16.5
 
 Notwithstanding any other remedies available to it under applicable law, Genymobile may terminate these Terms and Conditions, including all license rights granted hereunder, immediately upon written notice, without judicial intervention, if the Licensee materially breaches these Terms and Conditions (without the need to list all such material breaches). For the purposes of this section, the following shall constitute examples of material breach by the Licensee:
 
-(a) breach by Licensee (including by its End-User(s)) of the terms of Section 2, or any other infringement of Genymobile°Øs intellectual property rights over the Software;
- (b) breach of the Licensee°Øs confidentiality obligations;
+(a) breach by Licensee (including by its End-User(s)) of the terms of Section 2, or any other infringement of Genymobile‚Äôs intellectual property rights over the Software;
+ (b) breach of the Licensee‚Äôs confidentiality obligations;
  (c) any delay in payment by the Licensee of more than [sixty (60) days];
  (d) any other breach of the Agreement that may not be cured by the Licensee.
 
 16.6
 
-Notwithstanding any other remedies available to it under applicable law or the paragraph above, either party may terminate these Terms and Conditions, including all license rights granted hereunder, upon thirty (30) days°Ø written notice, without judicial intervention, in the event of breach of these Terms and Conditions (without the need to list all such breaches) where such breach is not cured within the aforementioned notice period.
+Notwithstanding any other remedies available to it under applicable law or the paragraph above, either party may terminate these Terms and Conditions, including all license rights granted hereunder, upon thirty (30) days‚Äô written notice, without judicial intervention, in the event of breach of these Terms and Conditions (without the need to list all such breaches) where such breach is not cured within the aforementioned notice period.
 
 16.7
 
-Upon the termination of these Terms and Conditions or in the event of non-payment of the License fee for any reason whatsoever, Licensee shall immediately cease using the Software. Any use of the Software after termination of these Terms and Conditions shall be deemed to be an infringement of Genymobile°Øs intellectual property rights.
+Upon the termination of these Terms and Conditions or in the event of non-payment of the License fee for any reason whatsoever, Licensee shall immediately cease using the Software. Any use of the Software after termination of these Terms and Conditions shall be deemed to be an infringement of Genymobile‚Äôs intellectual property rights.
   
 
 
-17. Forum for Disputes ®C Applicable Law
+17. Forum for Disputes ‚Äì Applicable Law
 
 17.1
 
@@ -423,11 +423,11 @@ The terms of any Section which, by its nature, would reasonably be expected to s
 
 18.2
 
-Neither party may assign these Terms and Conditions, or sublicense, assign or delegate any of its rights or obligations, in whole or in part under these Terms and Conditions without the advance written consent of the other party. Any attempted or purported assignment thereof by a party without the other party°Øs consent shall open the right for the other party to terminate the Agreement immediately upon written notice. Notwithstanding the foregoing, Genymobile  may assign and shall be fully discharged of the performance of these Terms and Conditions without such prior written consent in the context of a change of control, a merger, acquisition, or sale of all or substantially all of its assets.
+Neither party may assign these Terms and Conditions, or sublicense, assign or delegate any of its rights or obligations, in whole or in part under these Terms and Conditions without the advance written consent of the other party. Any attempted or purported assignment thereof by a party without the other party‚Äôs consent shall open the right for the other party to terminate the Agreement immediately upon written notice. Notwithstanding the foregoing, Genymobile  may assign and shall be fully discharged of the performance of these Terms and Conditions without such prior written consent in the context of a change of control, a merger, acquisition, or sale of all or substantially all of its assets.
 
 18.3
 
-No delay, neglect or forbearance of a party in enforcing against the other any term or condition of these Terms and Conditions shall be deemed to be a waiver of such party°Øs right, nor shall any single or partial exercise of any right preclude any other or further exercise of these rights or any other right. The invalidity or unenforceability of any provision of these Terms and Conditions shall not affect the validity or enforceability of any other provision hereof.
+No delay, neglect or forbearance of a party in enforcing against the other any term or condition of these Terms and Conditions shall be deemed to be a waiver of such party‚Äôs right, nor shall any single or partial exercise of any right preclude any other or further exercise of these rights or any other right. The invalidity or unenforceability of any provision of these Terms and Conditions shall not affect the validity or enforceability of any other provision hereof.
 
 18.4
 
@@ -435,8 +435,8 @@ These Terms and Conditions, along with any Schedules or referenced documents or 
 
 IN WITNESS THEREOF, each of the parties hereto, by its duly authorized representative, has caused these Terms and Conditions to be executed as of the Effective Date.
 
-Schedule A ®C Model Withdrawal Form
- To [here the trader°Øs name, geographical address and, where available, fax number and email address are to be inserted by the trader]:
+Schedule A ‚Äì Model Withdrawal Form
+ To [here the trader‚Äôs name, geographical address and, where available, fax number and email address are to be inserted by the trader]:
  I/We [*] hereby give notice that I/We [*] cancel my/our [*] contract of sale of the following goods [*]:
  Ordered on [*]/received on [*],
  Name of consumer(s),
