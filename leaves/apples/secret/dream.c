@@ -1,6 +1,6 @@
 
 
- int secret (
+ int secret,say (
                     char *  that_message,
               const char *  that_type
             )
