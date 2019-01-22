@@ -1,0 +1,279 @@
+
+
+
+url: https://blog.csdn.net/qq_21792169/article/details/51271833
+
+
+
+Linux中移植3G上网卡
+
+原创 2016年04月28日 09:39:27
+
+
+
+
+
+
+
+
+本文所用到的源码下载地址如下：
+
+libusb-1.0.9.tar.bz2                    url: http://download.csdn.net/detail/qq_21792169/9505395
+
+usb-modeswitch-2.0.1.tar.bz2            url: http://download.csdn.net/detail/qq_21792169/9505867
+
+usb-modeswitch-data-20131113.tar.bz2    url: http://download.csdn.net/detail/qq_21792169/9505871
+
+ppp-2.4.5.tar.gz                        url: http://download.csdn.net/detail/qq_21792169/9505399
+
+
+
+
+
+
+
+
+对于Linux使用过程：
+
+
+
+
+
+a. 接上后切换mode: usb_modeswitch
+b. 安装驱动程序: linux内核自带, 会出现3个ttyUSB0,1,2
+c. 拨号上网：pppd
+
+
+
+
+
+
+
+配置内核
+
+
+-> Device Drivers
+  -> Network device support
+      <*>   PPP (point-to-point protocol) support                                
+     <*>     PPP BSD-Compress compression                                  
+              <*>     PPP Deflate compression                                               
+              [*]     PPP filtering                                                     
+              <*>     PPP MPPE compression (encryption) (EXPERIMENTAL)                  
+              [*]     PPP multilink support (EXPERIMENTAL)                              
+              <*>     PPP over Ethernet (EXPERIMENTAL)                                  
+              <*>     PPP support for async serial ports                                
+
+              <*>     PPP support for sync tty ports   
+
+
+
+
+
+
+-> Device Drivers        /* 3G网卡，编译成模块 */
+  -> USB support
+     <M>   USB Serial Converter support   
+         <M>   USB driver for GSM and CDMA modems
+
+
+
+
+
+
+make uImage && make modules          /* 编译成模块 */
+
+
+
+
+
+
+
+应用程序源码:下面是一些源码官网地址
+
+http://www.draisberghof.de/usb_modeswitch/
+http://www.libusb.org/
+ftp://ftp.samba.org/pub/ppp/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+一、交叉编译:libusb:
+
+./configure --host=arm-linux --prefix=$PWD/tmp
+make 
+make install
+
+
+
+把头文件和库复制进交叉工具链里
+
+sudo  cp libusb.h /usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include
+
+
+
+
+
+把库复制到根文件系统的lib目录下
+
+sudo cp * -rfd /usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/armv4t/lib
+
+
+
+
+
+
+
+二、交叉编译usb-modeswitch-2.0.1.tar.bz2
+
+
+
+修改Makefile
+
+
+CC          = arm-linux-gcc
+LIBS        = -lusb-1.0                            /* 前面编译生成的usb-l.0库 */
+
+
+make DESTDIR=$PWD/tmp
+make DESTDIR=$PWD/tmp  install
+
+
+cd tmp
+sudo cp * -rfd /work/nfs_root/rootfs                         /* 把所有的文件都复制到根文件系统中 */
+
+
+
+
+
+
+
+三、交叉编译usb-modeswitch-data-20131113:
+
+make DESTDIR=$PWD/tmp install
+cd tmp
+sudo cp * -rfd /work/nfs_root/rootfs                         /* 把所有的文件都复制到根文件系统中 */
+
+
+
+
+
+
+
+
+
+四、交叉编译ppp-2.4.5.tar.gz
+
+修改这6个文件, "$(INSTALL) -s"改为"$(INSTALL) "
+
+chat/Makefile.linux
+pppd/plugins/radius/Makefile.linux
+pppd/plugins/rp-pppoe/Makefile.linux
+pppd/Makefile.linux
+pppdump/Makefile.linux
+pppstats/Makefile.linux
+
+
+
+
+./configure --host=arm-linux --prefix=$PWD/tmp
+
+make CC=arm-linux-gcc
+make CC=arm-linux-gcc install
+
+cd tmp
+sudo cp * -rfd /work/nfs_root/rootfs                         /* 把所有的文件都复制到根文件系统中 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+下面就开始使用了中国电信：Benton/本腾 EQ10B
+
+
+
+
+1.用新内核启动开发板
+
+   复制驱动: sudo cp drivers/usb/serial/*.ko    到开发板的任意目录
+   
+   
+   
+   
+2. 接上3G上网卡，用lsusb查看VID/PID
+
+lsusb
+Bus 001 Device 002: ID 19d2:2000
+
+
+
+
+3. 使用usb_modeswitch切换工作模式   
+
+它需要一个配置文件，使用上面得到的VIP/PID在device_reference.txt里找到一段配置值，存为EQ10B.cfg文件
+写入一个文件EQ10B.cfg把它放到开发板的/etc目录
+
+usb_modeswitch -c /etc/ EQ10B.cfg
+
+
+
+
+
+
+
+4. 安装驱动程序
+
+insmod usbserial.ko
+insmod usb_wwan.ko 
+insmod option.ko
+
+
+
+
+
+
+5. 用pppd拨号
+
+对于mf637:
+修改/etc/ppp/peers/wcdma-dailer, 使用/dev/ttyUSB2
+
+pppd call wcdma-dailer &
+cp /etc/ppp/resolv.conf /etc/resolv.conf
+ping news.qq.com
+
+
+
+
+
+
+中国电信：Benton/本腾 EQ10B (35元)
+
+在device_refeence.txt里选取一段存为eq10b.cfg
+
+板上接入EQ10B后执行：usb_modeswitch -c /etc/eq10b.cfg
+
+修改/etc/ppp/peers/evdo-dailer, 使用/dev/ttyUSB0
+
+pppd call evdo-dailer &
+
+cp /etc/ppp/resolv.conf /etc/resolv.conf
+
+ping news.qq.com

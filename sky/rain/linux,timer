@@ -1,0 +1,90 @@
+Linux用户态定时器用法以及犯错总结
+
+2015年09月17日 20:39:02 阅读数：2149
+
+
+
+采样的时候要用到定时器，定时的进行采样。这时候，就会用到setitimer函数了。
+
+
+
+1. 要使用setitimer函数，要包含头文件：#include <sys/time.h>
+
+2. 该函数的原型是：int setitimer(int which, const struct itimerval *new_value, struct itimerval *old_value);
+
+3. 参数：
+
+（1）int which：定时器分以下三种
+
+ITIMER_REAL：decrements in real time, and deliversSIGALRM upon expiration.
+
+以系统真实的时间来计算，它送出SIGALRM信号。
+
+ITIMER_VIRTUAL：decrements only  when  the  process  is  executing,  anddeliversSIGVTALRM upon expiration.
+
+以该进程在用户态下花费的时间来计算，它送出SIGVTALRM信号。
+
+ITIMER_PROF：decrements  both  when the process executes and when the system is executing on behalf 
+
+of the  process. Coupledwith  ITIMER_VIRTUAL, this timer is usually used to profile the time
+
+ spent by the application in user and  kernel space.  SIGPROF is delivered
+
+以该进程在用户态下和内核态下所费的时间来计算，它送出SIGPROF信号。
+
+（2）struct itimerval *new_value，其定义如下：
+
+struct itimerval {  
+               struct timeval it_interval; /* 定时器间隔时间 */  
+               struct timeval it_value; /* 定时器开始运行延时时间 */  
+           };  
+struct timeval {  
+               long tv_sec; /* 秒 */  
+               long tv_usec; /* 微秒 */  
+           };  
+
+
+其中it_value表示设置定时器后间隔多久开始执行定时任务，而it_interval表示两次定时任务之间的时间间隔。
+
+（3）上一次定时器的值，一般置为NULL即可
+
+4. 返回值：成功返回0；失败返回-1，并把错误号写到errno变量中
+
+5. 犯错笔记
+
+5.1
+
+
+[cpp] view plain copy
+...  
+struct itimerval itv;  
+  
+if (signal(SIGALRM, samplingForComtrade) == SIG_ERR) {  
+    DBG("signal samplingForComtrade() bind failed !\n");  
+    exit(EXIT_FAILURE);  
+}  
+itv.it_value.tv_sec = 0;  
+itv.it_value.tv_usec = 0;  
+itv.it_interval.tv_sec = 0;  
+itv.it_interval.tv_usec = 1000;  
+if(setitimer(ITIMER_REAL,&itv,NULL) != 0){  
+    fprintf(stderr,"setitimer failed,errno = %d\n",errno);  
+    exit(EXIT_FAILURE);  
+}  
+...  
+  如上设置好后samplingForComtrade()函数怎么也不跑起来，查问题查到绝望，最后才发现当你把it_value参数里面的秒和微秒全部设置为0时，定时器是跑不起来的。。。 
+settimer工作机制是，先对it_value倒计时，当it_value为零时触发信号，然后重置为it_interval，继续对it_value倒计时，一直这样循环下去。
+
+假如it_value为0是不会触发信号的，所以要能触发信号，it_value得大于0；如果it_interval为零，只会延时，不会定时（也就是说只会触发一次信号)。
+
+5.2
+
+setitimer()函数调用完，定时器就跑一次处理函数，第二次的时候打印出 Alarm clock ，然后程序直接退出。
+
+查到想死才查出原因：原来是由于编译的时候加了编译条件 -std=c99， 会跟定时器冲突，去掉就行了。。。无语！
+
+5.3
+
+使用了定时器后sleep()函数就不好使了，因为sleep函数也是使用的SIGALRM信号。
+
+解决办法是采用其他延时方式，如select等
