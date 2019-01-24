@@ -1,0 +1,121 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ rain from :  https://www.newmobilelife.com/2014/10/02/chrome-run-android-app/
+
+
+ river :  october, second, 2014
+
+
+ gopi :  T客邦
+
+
+
+
+
+
+
+ convent :
+
+
+
+
+免模擬器！直接用 Chrome 在電腦跑 Android App！
+
+By T客邦 - Oct 2, 2014
+
+
+
+基本上如果要在電腦執行Android App的話，大多需要透過BlueStacks模擬器，或是Genymotion虛擬機器等方式解決，不過現在讀者可以不用再額外安裝這些軟體，只要透過 Google Chrome瀏覽器就可以讓Android App在電腦上動起來，讓手續簡便許多。
+
+
+
+
+目前相容性有待加強
+
+
+
+筆者在這邊要介紹的工具叫做ARchon runtime environment，它是Google Chrome瀏覽器的外掛程式，安裝後就可以讓使用者透過Chrome執行Android App，相當方便。
+
+
+整個安裝與啟動App的過程都相當簡易，安裝時只需下載工具並將App從Android打包後，分別在電腦上解壓縮，並將檔案錄至Chrome即可。啟動更是簡單，只要點擊一下Chrome中的App圖示，就可以啟動。
+
+
+筆者在測試時基本上都沒有遇到問題，像是遊玩Candy Crush Saga的過程中，時可以直接用滑鼠拖曳糖果操作，聲音與畫面也都完全正常。不過在App相容性部分，筆者遇到有些App無法啟動，或是啟動後會直接閃退的狀況，由於筆者無法一一測試所有App，所以也無法為讀者說明各App實際的相容性，不過這類相容性相關的問題，應該會在往後的更新中獲得改善與解決。
+
+
+
+
+
+簡易安裝說明
+
+
+
+在使用ARchon runtime environment之前，讀者要先安裝Google Chrome瀏覽器，對於已經安裝過的讀者，筆者也建議更新至最新版本。然後就是到ARchon runtime environment專案網頁，依據自己的電腦下載32位元或64位元版本工具程式。接著下載專用的App打包工具Chrome APK Packager，由於它目前已從Google Play網路商店下架，讀者可以從這邊下載APK安裝檔。接著在Android裝置上安裝並執行Chrome APK Packager，選擇想要拿到電腦上執行的App，並將這些檔案打包成ZIP壓縮檔。
+
+ rain to : https://github.com/vladikoff/chromeos-apk/blob/master/archon.md#instructions
+
+ rain to :  https://forum.xda-developers.com/android/apps-games/app-chrome-apk-packager-generates-t2885958
+
+
+
+把打包好的ZIP壓縮檔與剛才下載的ARchon runtime environment解壓縮，然後到Chrome瀏覽器的選項中找到「設定、擴充功能」，然後在擴充功能中勾選開發人員模式，並選擇「載入未封裝的擴充功能」，然後將檔案路徑指到解壓縮ARchon runtime environment所得到的資料夾（可能是vladikoff-archon-a565a6e563d1或類似的名稱）。
+
+
+接下來繼續選擇「載入未封裝的擴充功能」，但是這次是要輸入解壓縮打包App所得到的的資料夾（該資料夾內含「_locales」與「vendor」等子資料夾）。完成後上述動作後，應該就可以在擴充功能看到安裝好的App，往後要執行時，只需直接在Chrome的網址列輸入chrome://apps，就可以看到App圖示。
+
+
+可以在官方網站下載並安裝Chrome，過程筆者就不再贅述。
+
+
+ rain to :  https://www.google.com/chrome/browser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

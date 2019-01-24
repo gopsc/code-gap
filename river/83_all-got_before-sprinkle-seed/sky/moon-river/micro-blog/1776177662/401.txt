@@ -1,3 +1,0 @@
-2016年7月31日 01:09
-七月的萌雪  发表日志  raspberry pi 搭建网站(nginx+php+mysql+ddclient) 
-1.安装网站系统sudo apt-get install nginx php5-common php5-fpm php-apc php5-mysql php5-gd mysql-server2、修改n......

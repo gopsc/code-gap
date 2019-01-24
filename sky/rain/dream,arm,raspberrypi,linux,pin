@@ -1,0 +1,50 @@
+
+
+ id      name              name                 id
+
+
+ 1       3v3                 5v                  2
+
+
+ 3       gpio2               5v                  4
+         sda1 i2c
+
+ 5       gpio3               ground              6
+         scl1 i2c
+
+ 7       gpio4               gpio14              8
+                             uart_txd
+
+ 9       ground              gpio15              10
+                             uart_rxt
+
+ 11      gpio11              gpio18              12
+                             pcm_clk
+
+ 13      gpio27              ground              14
+
+
+ 15      gpio22              gpio23              16
+
+
+ 17      3v3                 gpio24              18
+
+
+ 19      gpio10              ground              20
+         spio_mosi
+
+ 21      gpio9               gpio25              22
+         spio_miso
+
+ 23      gpio 11             gpio8               24
+         spio_sclk           spio_ce0_n
+
+ 25      ground              gpio7               26
+                             spio_ce1_n
+
+ 27      id_sd               sd_sc               28
+         i2c_ id eeprom      i2c_ id eeprom
+
+ 29      gpio5               ground              30
+
+
