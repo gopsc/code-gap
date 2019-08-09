@@ -181,9 +181,419 @@ void fft(int site) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # python3
 
+
+
+
+
+
+
+
+
 import  sys
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake
+
+
+lake   =   []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake [ ]
+
+
+lake  .  append  (  [ ]  )
+
+lake  .  append  (  [ ]  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 0 ]
+
+# where
+
+
+
+lake [ 0 ]   .  append  (   "where"   )
+
+
+lake [ 1 ]   .  append  (  sys . argv  [ 0 ]  )
+
+
+
+
+
+print  ( )
+
+
+print  (  lake [ 0 ] [ 0 ]  )
+
+
+print  (  lake [ 1 ] [ 0 ]  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 1 ]
+
+# ,
+
+
+
+lake [ 0 ]  .  append   (  ','  )
+
+
+lake [ 1 ]  .  append   (     open  (  lake  [ 1 ] [ 0 ]  )     )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 2 ]
+
+# fst
+
+
+
+lake [ 0 ]  .  append  (  'fst'  )
+
+
+lake [ 1 ]  .  append  (  lake  [ 1 ] [ 1 ]  .  readlines  ( )  )
+
+
+
+
+
+
+lake [ 1 ] [ 1 ]  .  close ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 3 ]
+
+# lines
+
+
+
+lake [ 0 ]  .  append  (  'lines'  )
+
+
+lake [ 1 ]  .  append  (   len (  lake  [ 1 ] [ 2 ]  )  )
+
+
+
+
+
+
+print  (  )
+
+
+print  (  lake  [ 0 ] [ 3 ]  )
+
+
+print  (  lake  [ 1 ] [ 3 ]  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 4 ]
+
+# start
+
+
+
+lake [ 0 ]  .  append  (  "start"  )
+
+
+lake [ 1 ]  .  append  (  0  )
+
+
+
+
+
+
+for     lake  [ 1 ]  [ 4 ]    in    range   (   lake [ 1 ] [ 3 ]   )     :
+
+
+
+
+    if     lake [ 1 ] [ 2 ]  [   lake [ 1 ] [ 4 ]   ]  ==  "'''\n"     :
+
+
+
+        lake [ 1 ] [ 4 ]    =    lake  [ 1 ]  [ 4 ]    +    1
+        
+        
+        break
+
+
+
+
+
+
+print ( )
+
+
+print (  lake [ 0 ] [ 4 ]  )
+
+
+print (  lake [ 1 ] [ 4 ]  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 5 ]
+
+# end
+
+
+
+
+
+
+lake  [ 0 ]  .  append  ( "end" )
+
+
+lake  [ 1 ]  .  append  (  0  )
+
+
+
+
+
+for    lake  [ 1 ]  [ 5 ]    in    range  (   lake  [ 1 ]  [ 3 ]    -    lake  [ 1 ]  [ 4 ]   )    :
+
+
+    if    lake  [ 1 ]  [ 2 ]  [    lake  [ 1 ]  [ 4 ]    +    lake  [ 1 ]  [ 5 ]    ]    ==    "'''\n"    :
+
+
+        lake  [ 1 ]  [ 5 ]    =    lake  [ 1 ]  [ 5 ]    +    lake  [ 1 ]  [ 4 ]
+
+        
+        break
+
+
+
+
+
+
+
+
+
+
+print   (  )
+
+
+print   (   lake  [ 0 ]  [ 5 ]   )
+
+
+print   (   lake  [ 1 ]  [ 5 ]   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lake  [ ]  [ 6 ]
+
+# things ... 
+
+
+
+lake  [ 0 ]  .  append  (  ","  )
+
+
+lake  [ 1 ]  .  append  (  0  )
+
+
+
+
+for    lake  [ 1 ]  [ 6 ]    in    range  (  lake  [ 1 ]  [ 5 ]  -  lake  [ 1 ]  [ 4 ]    )    :
+
+    if    ',\n'    ==    lake  [ 1 ]  [ 2 ]  [      lake  [ 1 ]  [ 6 ]  +  lake  [ 1 ]  [ 4 ]      ]    )
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
