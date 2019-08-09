@@ -1,0 +1,233 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+ oirioim, eight-milliom-bins
+
+
+
+
+
+
+
+,,
+
+ oirioim, eight-million-bins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+
+ w25q80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+
+point at left up corner
+
+& first is cs second is do third is wp forth is ground fifth is volt sixth is hold seventh is clock eighth is apple in
+
+
+,
+
+
+
+
+
+
+
+
+
+,
+
+/**
+* @brief  SPI函数
+* @param  value--发送的数据
+* @param  None
+* @param  None
+* @retval None
+* @example 
+**/
+unsigned char SPIWriteRead(unsigned char value)
+{
+    unsigned char i=0,temp=0;
+    SPI_CLK = 0;//进入之前其实是高电平
+    if(SPI_MISO)temp|=0x80;//接收数据
+    for(i=0;i<8;i++)
+    {
+        SPI_MOSI=value&(0x80>>i);//准备数据
+        SPI_CLK=1;
+        SPI_CLK = 0;
+        if(i<7)if(SPI_MISO)temp|=0x80>>(i+1);//接收数据
+    }
+    return temp;
+}
+
+
+,
+
+
+
+
+
+
+
+,
+
+SPI_CS=0;
+        SPIWriteRead(W25X_PowerON_ID);
+        SPIWriteRead(0xff);
+        SPIWriteRead(0xff);
+        SPIWriteRead(0xff);
+        aa=SPIWriteRead(0xff);
+        SPI_CS=1;
+        
+        printf("%X\r\n",(int)aa);
+        
+        DelayMs(1000);
+        
+        
+        SPI_CS=0;
+        SPIWriteRead(W25X_JEDEC_ID);
+        aa=SPIWriteRead(0xff);
+        bb=SPIWriteRead(0xff);
+        cc=SPIWriteRead(0xff);
+        SPI_CS=1;
+        
+        DelayMs(1000);
+        
+        
+        printf("%X%X%X\r\n",(int)aa,(int)bb,(int)cc);
+        DelayMs(1000);
+        
+        
+,        
+        
+        
+        
+        
+        
+        
+        
+        
+,        
+        
+        #ifndef W25QXX_H_
+#define W25QXX_H_
+
+#ifndef W25QXX_C_
+#define W25QXX_C_ extern
+#else
+#define W25QXX_C_
+#endif
+
+//以自己买的型号为准
+#define  FLASH_ID              0xC84015   //GD25Q16CSIG  DeviceID 0x14
+// #define  FLASH_ID              0xEF3015   //W25X16
+// #define  FLASH_ID              0xEF4015     //W25Q16
+// #define  FLASH_ID              0XEF4018   //W25Q128
+// #define  FLASH_ID              0XEF4017   //W25Q64
+
+#define W25X_ReadStatus       0x05      //读状态寄存器
+#define W25X_WriteStatus      0x01      //写状态寄存器
+#define W25X_ReadDATA8        0x03      //普读_数据
+#define W25X_FastRead         0x0B      //快读_数据
+#define W25X_DualOutput       0x3B      //快读_双输出
+#define W25X_Writepage        0x02      //写_数据_0~255个字节
+#define W25X_S_Erase          0x20      //扇区擦除4KB
+#define W25X_B_Erase          0xD8      //块区擦除64KB
+#define W25X_C_Erase          0xC7      //整片格式化
+#define W25X_PowerDown        0xB9      //待机
+#define W25X_PowerON_ID       0xAB      //开机或是读ID
+#define W25X_JEDEC_ID         0x9F      //十六位的JEDEC_ID
+#define W25X_WriteEnable      0x06      //写允许
+#define W25X_WriteDisable     0x04      //写禁止
+
+
+sbit SPI_CS    = P1^0;    // 片选
+sbit SPI_MISO  = P1^1;    // 数据输入引脚 
+sbit SPI_MOSI  = P1^2;    // 数据输出引脚  
+sbit SPI_CLK   = P1^3;    // 时钟
+
+#endif
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
