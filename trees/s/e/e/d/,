@@ -2,35 +2,16 @@
 
 
 
+# list if files
+
+# we could auto got this from it soon
 
 
 
 
+ box/c/Linux/that/Linux.h
 
-
-
-
-,,
-
- fst, spider, net, shake, seed.c
-
-
-
-
-,,
-
- fst, spider, net, shake, seed
-
-
-
-
-
-
-
-
-,,
-
- fst, trees, s, e, e, d
+ box/c/Linux/that/flags.h
 
 
 
@@ -40,22 +21,16 @@
 
 
 
+# get them form a convent, maybe from network
 
 
-
-,,
-
-
-we use this function to save a piece of code
+ watchdog/about/that/that.h
 
 
-forget it we use seed list now
-
-function of seed do this
+# watchdog/about/that/hopes.h
 
 
-
-,
+ watchdog/about/that/clean.h
 
 
 
@@ -63,307 +38,214 @@ function of seed do this
 
 
 
+# dog will use
 
 
-,,
+ network/that/that.h
+ 
+ network/that/hopes.h
 
-int action_seed_append (
+ network/that/check.h
 
-                          const char * that_result,
+ network/that/clean.h
 
-                          const char * that_path,
 
-                          const char * that_target
 
-                       )
+
+
+
+ action_seed_append ( note_file, note_path, "/sound/build/build.h" );
+
+ action_seed_append ( note_file, note_path, "/sound/build/hopes.h" );
+
+
+
+
+
+
+/*
+
+ put this to the last of list of head and build
+
+ then it can use the struct of configurations to note configurations everywhere
+
+
+ but if we don't have them in code, we set a head of blank to fill it
+
+*/
+
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/build/hopes.h" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ maybe someday we will use it
+
+*/
+
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/data/translate/number_word.h" );
+
+
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/output/print.h" );
+
+
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/dirent/is.h" );
+
+ 
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/is.h" );
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/get.h" );
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/save.h" );
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/file-system/file/append.h" );
+
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/process/deamon.h" );
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/system/commandline/shell.h" );
+
+
+
+ action_seed_append ( note_file, note_path, "/box/c/Linux/data/secret/secret.h" );
+
+
+
+
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/note/save.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/note/clear.h" );
+
+
+
+
+
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/build/put.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/build/load.h" );
+
+
+
+
+
+/*
+
+ get them from system
+
+*/
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/system/name.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/system/build.h" );
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/ip/build.h" );
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/cpu/rate.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/cpu/temperature.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/cpu/frequency.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/cpu/cores.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/cpu/build.h" );
+
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/memory/build.h" );
+
+// action_seed_append ( note_file, note_path, "/watchdog/about/disk/build.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/about/sound/alsa.h" );
+
+
+
+
+// action_seed_append ( note_file, note_path, "/watchdog/check/root.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/check/network.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/check/power.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/check/update.h" );
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/load/hope.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/load/symbol.h" );
+
+ action_seed_append ( note_file, note_path, "/watchdog/load/listen.h" );
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/show/about.h" );
+
+
+
+
+ action_seed_append ( note_file, note_path, "/watchdog/dog.h" );
+
+
+
+
+
+
+
+ action_seed_append ( note_file, note_path, "/sound/ft/show.h" );
+
+ action_seed_append ( note_file, note_path, "/sound/ft/dft.h" );
+
+ action_seed_append ( note_file, note_path, "/sound/ft/fft.h" );
+
+ action_seed_append ( note_file, note_path, "/sound/ft/test.h" );
+
+
+
+
+
+
+/*
+
+ add the sound code
+
+*/
+
+ if  (  strcmp ( that_type, "base" )  ==  0  )
+
 
   {
 
 
+ action_seed_append ( note_file, note_path, "/sound/corde/blank.h" );
 
-,
-
-
-
-
-
-
-
-
-
-
-,
-
-int action_seed (
-
-                )
-
-  {
-
-
-
-
-/*
-
-
- it is so long to make path every file
-
- use this to make path here
-
-
- and maybe use pointer
-
-
-
-
- now we make path by list of seed
-
-
-
-
-
-
- it is to save name of result
-
-*/
-
-
- char * note_result [ 64 ]
-
-
- strcpy ( note_result, gop_hope . path_the );
-
- strcat ( note_result, "/flower.c" );
-
-
-
-
-
-
-
-
-/*
-
- this to save the name of the code
-
-*/
-
-
-
-
- char  note_name [ 128 ];
-
-
-/*
-
- strcpy ( note_name, that_path );
-
-
- strcat ( note_name, that_target );
-
-*/
-
-
-
-
-
-
-
-
-
-/*
-
- this is for dirent read
-
-*/
-
-
- DIR * pointer_dirent;
-
-
- struct  dirent *  ent
-
-
-
-
-
-
-
-
-
-
-
-/*
-
- it is to save words we will save
-
-
-
- this isn't easy, maybe the file is too long
-
- we can't read it
-
-*/
-
-
-/*
-
- char * note_words;
-
- note_words  =  malloc (
-                         (  file_length ( that_target ) + 1  )
-                                                                *   sizeof ( char )
-                       );
-
- free ( note_words );
-
-*/
-
-
- char note_words [ 102400 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
- they are for read lines
-
-
-
- when read, we search from a started place and named next place
-
- and read this file name and let it be a started place
-
-*/
-
-
-
- char note_seed [ 102400 ];
-
-
- char * pointer_line = note_seed;
-
- char * pointer_next;
-
-
-
-
-
-
-
-/*
-
- ready to read seed list
-
-*/
-
-
- strcpy ( note_name, gop_hope . path_the );
-
- strcat ( note_name, gop_hope . name_the );
-
- strcat ( note_name, "/seed" );
-
-
-
-
-
-
-
- file_get ( note_name, note_seed );
-
-
-
-
-
-
-
-/*
-
- drop note and blank
-
-
-*/
-
-
- secret ( note_seed, "drop note" );
-
- secret ( note_seed, "drop blank" );
-
-
-
-
-
-
-
-
-
-/*
-
- start
-
- read it first
-
-
-
- make it isn't null
-
- doesn't need
-
- start read
-
-*/
-
-
- do
-
-  {
-
-
-
-/*
-
- it could be null if it read to the last line
-
-*/
-
-
- pointer_next = strchr ( pointer_line, '\n' );
-
-
-
-
-
-
-
-
-
-/*
-
- get name
-
-*/
-
-
- if ( pointer_next != NULL )
-
-  {
-
- * pointer_next = '\0';
 
   }
 
@@ -371,90 +253,12 @@ int action_seed (
 
 
 
-
-
-
-
-
- strcpy ( note_name, pointer_line );
-
-
-
-
-
-
-
-
-
-
- if ( pointer_next != NULL )
-
-  {
-
-/*
-
- return it
-
-*/
-
- * pointer_next = '\n'
-
-
-
-/*
-
- get a step
-
-
- if it is the last one of file
-
- don't read it again
-
-*/
-
- pointer_line = pointer_next;
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
- sometimes this file isn't here
-
- maybe we should exit this seed
-
-*/
-
-
- if (
-          ! is_file   ( note_name )
-      &&  ! is_dirent ( note_name )
-    )
+ else if  (  strcmp ( that_type, "alsa" )  ==  0  )
 
 
   {
 
-
-
- output_print ( "string", "can't find it:  " );
-
- output_print ( "string", note_name );
-
- output_print ( "string", "\n" );
-
-
-
- return -1;
+ action_seed_append ( note_file, note_path, "/sound/corde/alsa.h" );
 
 
   }
@@ -465,60 +269,26 @@ int action_seed (
 
 
 
-
-
 /*
 
- if this file exist
+ The data code
+  is for send some data
+  in the network connection
 
- prepare to add it
+
+  like rain, shine ...
 
 */
 
+ action_seed_append ( note_file, note_path, "/network/message/data/update/build.h" );
 
+ action_seed_append ( note_file, note_path, "/network/message/data/update/backup.h" );
 
- else if (
-           is_file ( note_name )
-         )
+ action_seed_append ( note_file, note_path, "/network/message/data/update/append.h" );
 
-  {
+ action_seed_append ( note_file, note_path, "/network/message/data/update/next.h" );
 
-
-
-/*
-
- make the title
-
-
- maybe we should make a buffer to note it
-
- append once to finish it
-
-
-
-
- it isn't so beautiful actually
-
-*/
-
-
-
-/*
-
- strcpy ( note_words, "\n//" );
-
-
- strcat ( note_words, "=========" );
-
-
- strcat ( note_words, "=========" );
-
-
- strcat ( note_words,  note_name );
-
-*/
-
-
+ action_seed_append ( note_file, note_path, "/network/message/data/update/load.h" );
 
 
 
@@ -526,151 +296,18 @@ int action_seed (
 
 /*
 
- titles don't have a same length,
-
- and of cause
-
-*/
-
-
-/*
-
- if  (  63  >  ( int ) strlen ( note_name )  )
-
-
-  {
-
-
-
- int i;
-
- for (
-
-       i  =  0;
-
-       i  <  63 - ( int ) strlen ( note_name );
-
-       i  ++
-
-     )
-
-  {
-
-
-
-
-
- strcat ( note_words, "=" );
-
-
-
-  }
-
-
-
-
-  }
-
+ Append the action codes
+ it's instatic
 
 */
 
+ strcpy ( note_dirent, note_path );
 
+ strcat ( note_dirent, "/network/message/action" );
 
 
 
-/*
-
- titile finished
-
-*/
-
-/*
-
- strcat ( note_words, "\n" );
-
-
-
- strcpy ( note_words, "\n\n" );
-
-
- file_append ( note_name, note_words );
-
-*/
-
-
-
-
-
-
-
-
-/*
-
- get the convent
-
-*/
-
-
- file_get ( note_name, note_words );
-
-
-
-
-
-
-
-/*
-
- save it
-
-*/
-
-
- file_append ( note_result, note_words );
-
-
-
-
-
-
-
-
-
-
-/*
-
- it is for judging of file and dirent
-
-*/
-
-  }
-
-
-
-
-
-
-
-
-
-
- else if (
-           is_dirent ( note_name )
-         )
-
-  {
-
-
-
-/*
-
- open and start to read
-
-*/
-
-
- note_dirent = opendir ( note_name );
-
+ pointer_dirent  =  opendir ( note_dirent );
 
 
 
@@ -679,181 +316,61 @@ int action_seed (
 
  do
 
-  {
-
-
-
-
-
-/*
-
- read
-
-*/
-
-
- ent = readdir ( note_dirent );
-
-
-
-
-/*
-
- save
-
-*/
-
- if (
-         ent != NULL
-    )
 
   {
 
 
 
- if (
 
-      ent -> d_type == 8
+ ent  =  readdir ( pointer_dirent );
 
-    )
+
+
+
+ if  (  ent != NULL  &&  ent -> d_type == 8  )
+
 
   {
 
 
 
-/*
+ strcpy (
 
- get file name
+          note_file_action,
 
-*/
+          strstr ( note_dirent,  gop_configurations . name_the ) + strlen ( gop_configurations . name_the )
 
- strcpy ( note_name_sub, note_name );
-
- strcat ( note_name_sub, "/"  );
-
- strcat ( note_name_sub, ent -> d_name );
+        );
 
 
+ strcat ( note_file_action, "/" );
 
-
-/*
-
- get file
-
-*/
-
- file_get ( note_name_sub, note_words );
+ strcat ( note_file_action, ent->d_name );
 
 
 
 
-/*
+ action_seed_append (
+                      note_file,
+                      note_path,
+                      note_file_action
 
- save file
+                    );
 
-*/
-
- file_append ( note_result, "\n\n" );
-
- file_append ( note_result, note_words );
-
-  }
-
-
-  }
-
-
-
-
-
-
-
-
-/*
-
- stop dirent reading
-
-*/
-
-
-  }  while ( ent != NULL )
-
-
-
-
-
-
-/*
-
- close dirent
-
-*/
-
- closedir ( note_dirent );
 
 
 
   }
 
 
+  } while ( ent != NULL );
 
 
 
 
 
 
-
-
-
-/*
-
- this is for range of seed list reading
-
-*/
-
-  }  while ( pointer_next != NULL )
-
-
-
-
-
-
-/*
-
- here
-
-*/
-
-
- return 0;
-
-
-
-  }
-
-
-
-
-
-/*
-
-  }
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ closedir ( pointer_dirent );
 
 
 
@@ -864,52 +381,23 @@ int action_seed (
 
 /*
 
- the old
+ the module of judge
+ means to take the words get on network
+
+ the plan is using the trees system
 
 */
 
 
-/*
+ action_seed_append ( note_file, note_path, "/network/message/judge/blank.h" );
 
- int action_seed  (  const char * that_type  )
+ action_seed_append ( note_file, note_path, "/network/message/judge/hello.h" );
 
+ action_seed_append ( note_file, note_path, "/network/message/judge/who.h" );
 
-  {
+ action_seed_append ( note_file, note_path, "/network/message/judge/information.h" );
 
-*/
-
-
-
-
-
-
-
-
-/*
-
- where the code is
-
- and it could be changed
-
-*/
-
-
-/*
-
- char  note_path [ 128 ];
-
-
-
-
-
- strcpy ( note_path,  gop_hopes . path_the  );
-
- strcat ( note_path, "/" );
-
- strcat ( note_path,  gop_hopes . name_the  );
-
-*/
-
+ action_seed_append ( note_file, note_path, "/network/message/judge/command.h" );
 
 
 
@@ -918,28 +406,11 @@ int action_seed (
 
 /*
 
- the file we will make named flower
+ appending data to the message
 
 */
 
-
-/*
-
- char note_file [ 128 ];
-
-
-
-
-
-
-
- strcpy ( note_file,  gop_hopes . path_the );
-
- strcat ( note_file, "/flower.c" );
-
-*/
-
-
+ action_seed_append ( note_file, note_path, "/network/message/data/build.h" );
 
 
 
@@ -947,36 +418,25 @@ int action_seed (
 
 /*
 
- there is a dirent named action
-
- we auto add file in that
+ build the network message system
 
 */
+
+ action_seed_append ( note_file, note_path, "/network/message/build.h" );
+
+
+
 
 
 /*
 
- char note_dirent [ 128 ];
-
- char note_name_action [ 128 ];
+ the translate system of network
 
 */
 
+ action_seed_append ( note_file, note_path, "/network/tcp/connectted.h" );
 
-/*
-
- DIR * pointer_dirent;
-
- struct  dirent *  ent;
-
-*/
-
-
-
-
-
-
-
+ action_seed_append ( note_file, note_path, "/network/tcp/connector.h" );
 
 
 
@@ -985,37 +445,10 @@ int action_seed (
 
 /*
 
- clean it
+ build the
 
 */
 
-
-/*
-
- file_save ( note_file,  "" );
-
-*/
+ action_seed_append(  note_file, note_path, "/build.c" );
 
 
-
-/*
-
- that's ok !
-
- :)
-
-*/
-
-
-
-
-/*
-
- return 1;}
-
-*/
-
-
-
-
-,
