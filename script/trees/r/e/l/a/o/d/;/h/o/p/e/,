@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+ fst, spider, net, shake, reload_hope.c
+
+
+
+,,
+
+ fst, spider, net, shake, reload_hope
+
+
+
+
+
+
+,,
+
+ fst, trees, r, e, l, o, a, d, ;, h, o, p, e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+
+int action_reload_hope() {
+
+
+
+
+/*
+
+ reload hopes
+
+
+ and dog will check address
+
+ reload them
+
+ and maybe that's too slow
+
+*/
+
+
+
+    load_hope();
+
+
+    return 1;}
+
+
+
+,

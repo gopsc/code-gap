@@ -1,0 +1,40 @@
+
+
+
+http://www.stmcu.org/module/forum/thread-598176-1-1.html
+
+
+[讨论] STM32可以超频吗？
+
+发表于 2014-12-19 20:03:35 
+
+
+
+
+ 在配置STM32的时钟的时候，像F103是72M，F429是180M，F4大部分是168M，改变时钟的配置让他超频行不行呢？是不是会不可靠？有没有人试过啊？
+ 等考完试了，好好地实验一下。看看F429能超到多少 。。。
+
+
+ 主要修改几个分频系数和倍频系数，比如说我把
+
+
+  #if defined (STM32F427_437xx) || defined (STM32F429_439xx)
+
+  #define PLL_N      400
+
+
+ PLL_N改为400，把
+
+
+  #if defined (STM32F427_437xx) || defined (STM32F429_439xx)
+
+    uint32_t SystemCoreClock = 200000000;
+
+  #endif /* STM32F427_437x || STM32F429_439xx */
+
+
+  SystemCoreClock 改为200000000使用RCC_GetClocksFreq（）函数获取系统时钟可以看到  
+
+ 系统时钟变成了200MHz，所以说，超频很简单！
+
+
