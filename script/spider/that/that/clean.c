@@ -12,106 +12,39 @@
 
 
 
-,,
 
- fst, spider, that, that, clean.c
+void  *   clean_spider   (
 
+                             void  *   that_spider
 
+                             void  *   that_site,
 
+                             void  *   that_type
 
-
-
-
-
-
-,,
-
-maybe we should bring the struct to the function
-
-but it is one network there
-
-and maybe not
+                         )
 
 
-,
+{
 
 
 
 
 
 
+if   (
+         strcmp   (     ( char * )  that_type,     "all"     )    ==    0
+     )
+
+{
 
 
-,
+strcpy   (    ( char * ) that_spider . how       [  * ( int * ) that_site  ],      "wait"      );
 
-int clean_connection (
-
-/*
-                        struct gop_network that_network,
-*/
-                               int          that_site,
-
-                         const char *       that_type
-
-                      )
-
-
-  {
+strcpy   (    ( char * ) that_spider . command   [  * ( int * ) that_site  ],      ""          );
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-
- sometimes we forget this connection, we restet it all
-
-*/
-
- if (
-      strcmp ( that_type, "all" ) == 0
-    )
-
-  {
-
-
- strcpy ( gop_connection . how        [ that_site ],  "Wait" );
-
- strcpy ( gop_connection . command    [ that_site ],  ""     );
-
-
- strcpy ( gop_connection . audio      [ that_site ],  ""     );
-
- strcpy ( gop_connection . video      [ that_site ],  ""     );
-
-
-
-/*
-
- we use this function straightly
-
- clean the update message
-
-*/
-
- clean_connection ( that_site, "update" );
-
-/*
-
- strcpy ( gop_connection . update      [ that_site ],  ""    );
-
-          gop_connection . step_update [ that_site ]   = 0;
-
-          gop_connection . flag_update [ that_site ]   = 0;
-
-*/
+clean_spider ( that_site, "update" );
 
 
 
