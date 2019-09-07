@@ -8,7 +8,7 @@
 struct that_lake_spider
 
 
- {
+{
 
 
 
@@ -35,7 +35,7 @@ void  *   number;
 
 
 
- };
+};
 
 
 
