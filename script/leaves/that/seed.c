@@ -14,25 +14,23 @@
 
 
 
+#include  <stdlib.h>
 
-/*
-
- this is what it is
-
-
- moved to thing/c/that/that.c
-
-*/
-
-
-/*
-
- pthread_t  thread  [ 4 ];
-
-*/
+#include  <stdio.h>
 
 
 
+
+
+
+
+
+
+
+int main ( int argc, char * argv [] )
+
+
+{
 
 
 
@@ -49,23 +47,11 @@
 
 
 
- int main ( int argc, char * argv [] )
-
-
-  {
 
 
 
 
 
-
-
-
-/*
-
- make the dream
-
-*/
 
 /*
     if ( here () )
@@ -93,17 +79,40 @@
 
 
 
+
 /*
-
- Sometimes other thread will use the args.
-
-*/
-
 
  that . hope . number_hope = argc;
 
  that . hope . hope = argv;
 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ init_deamon ();
+
+*/
+
+
+
+
+
 
 
 
@@ -115,12 +124,11 @@
 
 /*
 
- If command, turn gopi to a deamon
+ output_print ( "string", "\n" );
 
 */
 
 
-// init_deamon ();
 
 
 
@@ -130,24 +138,6 @@
 
 
 
-
-
-
-
-
-// output_print ( "string", "\n" );
-
-
-
-
-// that . hope . thread  =  malloc (  3  *  sizeof ( pthread_t )  );
-
-
-// pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );
-
-// pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL  );
-
-// pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
 
 
 
@@ -155,12 +145,26 @@
 
 /*
 
- plug in
-
-
- maybe
+ that . hope . thread  =  malloc (  3  *  sizeof ( pthread_t )  );
 
 */
+
+
+
+
+
+
+
+/*
+
+pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );
+
+pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL  );
+
+pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
+
+*/
+
 
 
 /*
@@ -192,23 +196,10 @@
 
 
 
-// char note_command [ 128 ]  =  "";
 
 
 
-/*
 
- wait the dog run a circle
-
-*/
-
-// while (  ! gop_about . flag . start  )
-
-//  {
-
-// gop_wait ( 0.1 );
-
-//  }
 
 
 
@@ -219,27 +210,10 @@
 
 /*
 
- keyboard input got blank always in deamon.
+char  note_command  [ 128 ]   =   "";
 
 */
 
-// if (
-
-//         gop_about . flag . main
-
-// &&  ( ! gop_about . flag . deamon )
-
-//    )
-
-//  {
-
-
-
-// output_print ( "string", "\n we met somewhere \n\n" );
-
-
-
-//  }
 
 
 
@@ -257,8 +231,68 @@
 
 
 
-// note_save ( "command", "command start", "now" );
 
+
+/*
+
+while   (   !  gop_about . flag . start   )
+
+{
+
+gop_wait   (  0.1  );
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+
+if  (
+
+                gop_about . flag . main
+
+        &&  ( ! gop_about . flag . deamon )
+
+    )
+
+{
+
+
+
+output_print   (   "string",   "\n we met somewhere \n\n"   );
+
+
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+note_save   (   "command",   "command start",   "now"   );
+
+*/
 
 
 

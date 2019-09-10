@@ -29,24 +29,7 @@
 
 
 
-
-
-#include <stdlib.h>
-
-#include <stdio.h>
-
-#include <string.h>
-
-
-void  *   main   ()
-
-{
-
-
-
-}
-
-
+#include  "./leaves/that/seed.c"
 
 
 
