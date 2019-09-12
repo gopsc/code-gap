@@ -1,6 +1,24 @@
 
 
 
+
+
+
+
+#include  <stdio.h>
+
+#include  <string.h>
+
+
+
+
+
+
+
+
+
+
+
 int secret_sum
                (
 
