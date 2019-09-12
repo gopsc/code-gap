@@ -253,6 +253,27 @@ gop_wait   (  0.1  );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 if  (
@@ -288,6 +309,25 @@ output_print   (   "string",   "\n we met somewhere \n\n"   );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 note_save   (   "command",   "command start",   "now"   );
@@ -306,9 +346,6 @@ note_save   (   "command",   "command start",   "now"   );
 
 
 
-// while ( gop_about . flag . main )
-
-//  {
 
 
 
@@ -316,43 +353,23 @@ note_save   (   "command",   "command start",   "now"   );
 
 /*
 
- When it is deamon process,
- that goes   wrong.
+while   (   gop_about . flag . main   )
 
-*/
-
-// if ( gop_about . flag . deamon )
-
-//  {
-
-
-// gop_wait ( 0.1 );
-
-
-//  }
-
-
-
-
-
-// else
-
-//  {
-
-
-
-/*
-
- Get the command
-
-
-
- 128 charactors could be enough
+{
 
 */
 
 
-// fgets ( note_command, 128,  stdin );
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -367,28 +384,17 @@ note_save   (   "command",   "command start",   "now"   );
 
 /*
 
- Sometimes its goes wrong,
-     just  return blank chars.
+if   (   gop_about . flag . deamon   )
+
+{
 
 
- if just key in enter it could return \n
+gop_wait  (  0.1  );
+
+
+}
 
 */
-
-
-// if (
-
-//      strcmp ( note_command, "" )  == 0
-
-//    )
-
-//  {
-
-
-// gop_wait ( 0.1 );
-
-
-//  }
 
 
 
@@ -403,120 +409,27 @@ note_save   (   "command",   "command start",   "now"   );
 
 /*
 
- Read the command
+else
 
-*/
-
-
-// else
-
-//  {
-
-
-
-/*
-
- The end of the command
-    will be a '\n'
-
-*/
-
-// note_command [  strlen ( note_command ) - 1  ]   =   '.';
-
-
-
-/*
-
- we don't need to do that with this
-
- :)
+{
 
 */
 
 
 /*
 
- strcat ( buffer_command, "." );
+fgets   (   note_command,   128,   stdin   );
 
 */
 
 
 
-/*
-
- Print a '\n'
-
-*/
-
-// output_print ( "string", "\n" );
 
 
 
 
 
 
-/*
-
- Judge for the command typed
-
-*/
-
-
-// judge_message_command (
-//                         -1,
-//                         note_command,
-//                         note_command
-//                       );
-
-
-
-/*
-
- Clear the buffer
-
-*/
-
-
-// strcpy ( note_command, "" );
-
-
-
-
-
-
-
-/*
-
- this round for if keyboard in
-
-*/
-
-
-//  }
-
-
-
-
-/*
-
- this round for if not in deamon
-
-*/
-
-//  }
-
-
-
-
-
-
-/*
-
- this round for flag of main
-
-*/
-
-//  }
 
 
 
@@ -528,17 +441,209 @@ note_save   (   "command",   "command start",   "now"   );
 
 /*
 
- The end of this program
+if (
+
+     strcmp   (   note_command,   ""   )    ==    0
+
+   )
+
+{
+
+gop_wait  (  0.1  );
+
+}
 
 */
 
 
 
-// note_save ( "command", "command close", "now" );
 
 
 
-  }
+
+
+
+
+
+
+/*
+
+else
+
+{
+
+*/
+
+
+
+
+/*
+
+note_command    [   strlen  (  note_command  )  -  1   ]    =    '.';
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+
+output_print   (   "string",   "\n"   );
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+judge_message_command (
+                        -1,
+                        note_command,
+                        note_command
+                      );
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+strcpy   (   note_command,   ""   );
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+note_save ( "command", "command close", "now" );
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
