@@ -22,7 +22,7 @@
 int secret_sum
                (
 
-                 char * that_message
+                  char  *   that_message
 
                )
 
