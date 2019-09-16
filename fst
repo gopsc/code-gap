@@ -1,4 +1,7 @@
 
+
+/*
+
 void dft(int site) {
 
 
@@ -120,4 +123,4 @@ void fft(int site) {
         ft_show(site);}}
 
 
-
+*/
