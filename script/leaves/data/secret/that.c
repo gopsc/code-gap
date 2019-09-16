@@ -1,6 +1,6 @@
 
 
-int that,secret (
+int that_secret (
                           char  *   that_message,
                     const char  *   that_type
                 )
