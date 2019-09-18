@@ -1,0 +1,1116 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   ,,
+
+#    , seed, python, light.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import   os
+
+
+import   sys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   light  =  []
+
+
+light   =   [  ]
+
+
+
+
+
+
+
+
+#   light.append( ',' )
+
+
+
+light   .   append   (  ','  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   light.append(sys.argv[0])
+
+
+
+light   .   append   (  sys  .  argv  [ 0 ]  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   light.append('')
+
+
+
+light   .   append   (  ''  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   light.append('')
+
+
+
+light   .   append  (   ''   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   light.append('')
+
+
+
+
+light   .   append  (   ''   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   shadow = []
+
+
+
+shadow    =   [  ]
+
+
+
+
+
+
+
+
+
+#   shadow.append(os.listdir('.'))
+
+
+#   shadow   [  0  ]    =    [  ]
+
+
+
+shadow   .    append   (    [  ]   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   shadow.append([])
+
+
+
+shadow   .   append  (   [  ]   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   shadow.append([])
+
+
+shadow    .   append   (    [  ]   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   light[2] = ','
+
+
+
+light   [  2  ]    =     ','
+
+
+
+
+
+#   ,,
+
+#   lake
+
+
+
+
+
+
+
+
+
+
+
+
+#   ,,
+
+#   rain
+
+
+
+
+
+
+
+#   ,,
+
+#   while  light[2]  ==  ',':
+
+
+
+
+while     light  [   2   ]      ==    ','   :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   ,,
+
+#       light[2] = '.'
+
+
+
+
+    light   [  2  ]    =     '.'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    for light[3] in shadow[0]:
+
+
+
+
+
+
+
+
+
+
+
+        if not os.path.isdir('.' + '/' + light[3]):
+
+
+
+
+
+            if   not   light[3]  ==  light[0]:
+
+
+
+
+                shadow[1].append(light[3])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        else:
+
+
+
+
+
+            light[2]  =  ','
+
+
+
+
+
+
+
+            shadow[2] =	 os.listdir('.' + '/' + light[3])
+
+
+
+
+
+            for light[4] in shadow[2]:
+
+
+
+
+
+                shadow[1].append(light[3] + '/' + light[4])
+
+
+                light[4] = ''
+
+
+
+
+            shadow[2] = []
+
+
+
+
+
+
+
+
+    shadow[0] = shadow[1]
+  
+
+    shadow[1] = []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shadow[2] = []
+
+shadow[1] = []
+
+
+
+
+light[4] = ''
+
+
+light[3] = ''
+
+
+light[2] = ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shadow[1] = open('.' + '/' + light[0], 'w')
+
+
+
+
+shadow[1].write('\n')
+
+
+shadow[1].write('\n')
+
+shadow[1].write('\n')
+
+
+
+shadow[1].write('\n')
+
+shadow[1].write('\n')
+
+
+
+
+shadow[1].write("'")
+
+shadow[1].write("'")
+
+
+shadow[1].write("'")
+
+
+
+
+
+shadow[1].write('\n')
+
+shadow[1].write('\n')
+
+
+shadow[1].write('\n')
+
+shadow[1].write('\n')
+
+
+
+
+
+
+shadow[1].close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for light[2] in shadow[0]:
+
+
+
+
+
+    shadow[1] = open('.' + '/' + light[2], 'r')
+
+
+
+
+    light[3] = shadow[1].readlines()
+
+
+ 
+
+    shadow[1].close()
+
+
+
+
+    shadow[1]  =  open('.' + '/' + light[0], 'a')
+
+
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+
+
+    shadow[1].write(',')
+
+
+
+    shadow[1].write('\n')
+
+
+
+
+    shadow[1].write('.' + '/' + light[2])
+
+    light[2] = ''
+
+
+
+    shadow[1].write('\n')
+
+
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+
+
+    shadow[1].writelines(light[3])
+
+
+
+    light[3] = ''
+
+
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+
+    shadow[1].write('\n')
+
+    shadow[1].write(',')
+
+ 
+ 
+    shadow[1].write('\n')
+
+
+    shadow[1].write('\n')
+
+
+   
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+    shadow[1].write('\n')
+
+
+
+
+    shadow[1].close()
+
+    shadow[1] = []
+
+
+
+
+
+
+
+
+
+
+
+
+shadow[1] = []
+
+shadow[0] = []
+
+
+
+light[4] = ''
+
+
+
+light[3] = ''
+
+
+light[2] = ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shadow[0] = open('.' + '/' + light[0], 'a')
+
+
+
+shadow[0].write('\n')
+
+shadow[0].write('\n')
+
+
+shadow[0].write('\n')
+
+shadow[0].write('\n')
+
+
+shadow[0].write('\n')
+
+shadow[0].write('\n')
+
+
+
+shadow[0].write('\n')
+
+shadow[0].write('\n')
+
+
+
+
+shadow[0].write("'")
+
+shadow[0].write("'")
+
+
+shadow[0].write("'")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+
+
+
+if light[1] != '':
+
+
+
+
+
+
+    shadow[0].write("'")
+
+    shadow[0].write("'")
+
+
+    shadow[0].write("'")
+
+
+
+
+
+
+    shadow[0].write('\n')
+
+
+
+
+    shadow[0].write(light[1])
+
+
+
+
+    shadow[0].write('\n')
+
+
+
+
+    shadow[0].write("'")
+
+    shadow[0].write("'")
+
+
+    shadow[0].write(",")
+
+
+
+
+
+    shadow[1] = open(light[1], 'r')
+
+
+
+
+
+
+
+    light[2] = shadow[1].readlines()
+
+
+
+
+
+
+
+
+    shadow[1].close()
+
+
+
+
+    shadow[1] = []
+
+
+
+
+
+
+
+
+    shadow[0].writelines(light[2])
+
+
+    light[2] = ''
+
+
+
+
+
+
+
+
+    shadow[0].write('\n')
+
+
+    shadow[0].write('\n')
+
+
+
+
+    shadow[0].write('\n')
+
+
+'''
+
+
+
+
+
+
+shadow[0].close()
+
+
+shadow[0] = []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+light[4] = ''
+
+
+
+light[3] = ''
+
+
+light[2] = ''
+
+light[1] = ''
+
+
+
+light[0] = ''
+
+
+light = []
+
+
+
+
+
+
+
+
+
+
+
+
+
+shadow[1] = []
+
+
+shadow[0] = []
+
+shadow = []    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
