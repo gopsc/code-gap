@@ -5,103 +5,34 @@
 
 
 
- int secret_drop_note (
-                        char * that_message,
-                      )
+void  *   secret_drop_note  (
+                               char  *   that_message
+                            )
 
-  {
-
-
-
-
-
-
-/*
-
- drop note in message
-
- use to read note
-
-
-
- warnning :
-
- this could just drop note in a string words
-
- so we just drop things just like ~/seed/seed.note
-
- but we have ways to finish this problem
-
-
- first we found a nearest word
-
- then found word before it
-
- then found " to be clearif that is a note
-
- if not we drop it
+{
 
 
 
 
 
- the main things
-
-*/
-
-
-
-
-
-
-/*
-
- this is for big search
-
-*/
 
 
  char * note_message;
 
-/*
-
- int    number_word;
-
-*/
 
 
 
-
-/*
-
- this is for search to find if it is a note
-
-*/
 
 
 
  char * note_pointer;
 
-/*
-
- int    note_number;
-
-*/
 
 
 
 
 
 
-
-
-
-
-/*
-
- this is to save word
-
-*/
 
  char note_flag [ 2 ] [ 1 ] [ 4 ];
 
