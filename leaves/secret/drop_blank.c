@@ -89,7 +89,7 @@ that_message   [  strlen ( that_message )  ]   =   '\0';
 
 
 
- return  NULL;
+ return  dream_yes;
 
 
   }

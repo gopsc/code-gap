@@ -11,13 +11,30 @@
 
 
 
-int   is_dirent   (  const char  *   that_path  )
+void  *   is_dirent   (  const char  *   that_path  )
 
 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 struct   stat   note_status;
+
+
+
+
+
+
 
 
 
@@ -30,8 +47,17 @@ if (
 {
 
 
-return   S_ISDIR ( note_status . st_mode )  !=  0;
 
+
+
+
+
+
+if  (   S_ISDIR ( note_status . st_mode )  !=  0  )
+
+{
+
+return  dream_yes;
 
 }
 
@@ -44,8 +70,34 @@ else
 
 {
 
+return dream_no;
 
-return 1;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+else
+
+{
+
+
+return   dream_no;
 
 
 }

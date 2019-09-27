@@ -39,7 +39,7 @@ if  (
 
 secret_drop_blank ( that_message );
 
-return NULL;
+return dream_yes;
 
 
 }
@@ -59,7 +59,7 @@ else
 {
 
 
-return NULL;
+return dream_no;
 
 
 }
