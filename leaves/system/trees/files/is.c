@@ -2,39 +2,71 @@
 
 
 
+#include  <stdio.h>
+
+#include  <sys/stat.h>
 
 
 
- int is_file ( const char * that_path )
+void  *   is_file ( const char * that_path )
 
 
-  {
-
-
- struct stat note_status;
-
-
- if (
-
- lstat ( that_path, & note_status ) == 0
-
-    )
-
-  {
-
- return 0;
-
-  }
-
-
- else
-
-  {
-
- return -1;
-
-  }
+{
 
 
 
-  }
+
+
+
+
+
+struct stat note_status;
+
+
+
+
+
+
+
+
+
+
+if (
+
+       lstat ( that_path, & note_status ) == 0
+
+   )
+
+{
+
+return dream_yes;
+
+}
+
+
+
+
+
+
+
+
+
+else
+
+{
+
+return dream_no;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
