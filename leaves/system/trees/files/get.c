@@ -1,18 +1,15 @@
 
 
 
-/*
 
- don't know how long it is
 
- use malloc
 
-*/
 
- void file_get (
-                 const char * that_path,
-                       char * that_result
-             )
+
+ void  *   file_get (
+                        const  void  *   that_path,
+                               void  *   that_result
+                    )
 
   {
 
