@@ -11,7 +11,7 @@
 
 
 
-void  *   is_dirent   (  const char  *   that_path  )
+void  *   is_dirent   (  const void  *   that_path  )
 
 {
 

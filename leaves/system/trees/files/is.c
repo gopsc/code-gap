@@ -8,7 +8,7 @@
 
 
 
-void  *   is_file ( const char * that_path )
+void  *   is_file   (  const void  *   that_path  )
 
 
 {
