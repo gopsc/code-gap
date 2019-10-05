@@ -46,7 +46,7 @@ strcpy  (  that_result,  ""  );
 
 if   (
 
-         is_file  (  that_path  )  ==  dream_yes
+         is_file  (  that_path  )  ==  that_leaves_dream_existence_yes
 
      )
 

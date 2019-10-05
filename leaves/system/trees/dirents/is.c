@@ -57,7 +57,7 @@ if  (   S_ISDIR ( note_status . st_mode )  !=  0  )
 
 {
 
-return  dream_yes;
+return  that_leaves_dream_existence_yes;
 
 }
 
@@ -70,7 +70,7 @@ else
 
 {
 
-return dream_no;
+return that_leaves_dream_existence_no;
 
 }
 
@@ -97,7 +97,7 @@ else
 {
 
 
-return   dream_no;
+return   that_leaves_dream_existence_no;
 
 
 }
@@ -109,17 +109,3 @@ return   dream_no;
 
 
 
-
-
-
-/*
-
- maybe we could use it in update
-
-*/
-
- int is_special_dir ( const char * that_path )
-
-  {
-
-    return  strcmp ( that_path, "." ) == 0  ||  strcmp ( that_path, ".." ) == 0;}

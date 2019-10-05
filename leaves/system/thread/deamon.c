@@ -19,17 +19,7 @@
   {
 
 
-/*
-
- not open
-
-
- it isn't deamon mode
-
-*/
-
-
- return 1;
+ return dream_no;
 
 
   }
@@ -61,17 +51,7 @@
   {
 
 
-/*
-
- it isn't deamon mode
-
-
- not open
-
-*/
-
-
- return 1;
+ return dream_no;
 
 
   }

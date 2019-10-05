@@ -25,7 +25,7 @@ FILE  *   buffer_file;
 int   buffer_count  =  1;
 
 
-char  buffer_path  [ 1024 ];
+char  buffer_path  [ 64 ];
 
 
 char  *   pointer_path;
@@ -43,6 +43,14 @@ char  *   pointer_path;
 while  (  buffer_count  !=  0  )
     
 {
+
+
+
+
+
+
+
+
 
 
 strcpy  (  buffer_path,  that_path  );
@@ -69,6 +77,12 @@ if ( pointer_path == NULL )
 
 buffer_count = 0;
 
+/*
+
+count end, to save
+
+*/
+
 }
 
 
@@ -85,13 +99,19 @@ if ( buffer_count != 0 )
 
 {
 
+/*
+
+next dirent
+
+*/
+
 buffer_count ++;
 
 *  pointer_path  =  '\0';
 
 
 
-if (  ! is_dirent ( buffer_path )  )
+if (  is_dirent ( buffer_path )  ==  that_leaves_dream_existence_no  )
 
 {
  
@@ -101,6 +121,8 @@ mkdir   (  buffer_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
 
 }
+
+
 
 
 
@@ -135,7 +157,7 @@ fclose  (  buffer_file  );
 
 
 
-return dream_yes;
+return that_leaves_dream_existence_yes;
 
 }
 

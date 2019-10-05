@@ -1,25 +1,15 @@
 
 
-/*
-
- int commandline_get (
-                         const char * that_commands,
-                               char * that_result
-                     )
 
 
-  {
 
-*/
-
-
- int line_get (
+void  *   line_get (
  
-                void * that_line,
+                      void * that_line,
 				
-                void * that_fruit
+                      void * that_result
 					  
-              )
+                   )
 
 
   {
@@ -38,7 +28,7 @@
 */
 
 
- void * that_file_line;
+ void  *   that_file_line;
 
 
 
@@ -67,7 +57,7 @@
 
 */
 
- void  that_note_line;
+void  *   that_note_line;
 
 
 

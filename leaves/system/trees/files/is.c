@@ -39,7 +39,7 @@ if (
 
 {
 
-return dream_yes;
+return that_leaves_dream_existence_yes;
 
 }
 
@@ -55,7 +55,7 @@ else
 
 {
 
-return dream_no;
+return that_leaves_dream_existence_no;
 
 }
 
