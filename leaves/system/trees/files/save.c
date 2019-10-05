@@ -1,14 +1,34 @@
 
-void file_save(
-                  const char* that_path,
-                  const char* that_words
-              ) {
 
 
-    FILE* buffer_file;
-    int   buffer_count         = 1;
-    char  buffer_path[1024];
-    char* pointer_path;
+#include  <stdio.h>
+
+#include  <string.h>
+
+#include  <unistd.h>
+
+#include  <sys/stat.h>
+
+
+
+void  *   file_save  (
+                        const char  *   that_path,
+                        const char  *   that_words
+                     )
+                     
+{
+
+
+FILE  *   buffer_file;
+
+
+int   buffer_count  =  1;
+
+
+char  buffer_path[1024];
+
+
+char  *   pointer_path;
 
 
 
@@ -37,20 +57,15 @@ void file_save(
 
 
 
-    buffer_file = fopen( that_path, "w" );
+buffer_file = fopen( that_path, "w" );
 
-    fprintf( buffer_file, "%s", that_words );
+fprintf( buffer_file, "%s", that_words );
 
-    fclose( buffer_file );}
-
-
+fclose( buffer_file );
 
 
-/*
-// The way of c++ stream
-    ofstream fout(that_path.c_str());
 
-    fout << words;
+return dream_yes;
 
-    fout.close();}
-*/
+}
+
