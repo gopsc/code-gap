@@ -8,7 +8,9 @@
 
 
 
-void  *   is_file   (  const void  *   that_path  )
+void  *   is_leaves_system_trees_files
+
+(  const void  *   that_path  )
 
 
 {
@@ -39,7 +41,37 @@ if (
 
 {
 
-return that_leaves_dream_existence_yes;
+
+
+
+
+
+
+
+
+
+if  (   S_ISREG ( note_status . st_mode )  !=  0  )
+
+{
+
+return  that_leaves_dream_existence_yes;
+
+}
+
+
+
+
+
+
+else
+
+{
+
+return that_leaves_dream_existence_no;
+
+}
+
+
 
 }
 

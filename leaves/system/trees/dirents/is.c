@@ -11,7 +11,9 @@
 
 
 
-void  *   is_dirent   (  const void  *   that_path  )
+void  *   is_leaves_system_trees_dirents
+
+(  const void  *   that_path  )
 
 {
 
@@ -78,8 +80,6 @@ return that_leaves_dream_existence_no;
 
 
 
-
-
 }
 
 
@@ -101,6 +101,8 @@ return   that_leaves_dream_existence_no;
 
 
 }
+
+
 
 
 }

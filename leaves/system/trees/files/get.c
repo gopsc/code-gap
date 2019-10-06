@@ -12,10 +12,15 @@
 
 
 
-void  *   file_get (
-                       const  void  *   that_path,
-                              void  *   that_result
-                   )
+void  *   get_leaves_system_trees_files
+
+(
+
+const  void  *   that_path,
+
+       void  *   that_result
+
+)
 
 {
 
@@ -35,7 +40,6 @@ char   note_buffer   [ 128 ];
 
 
 
-strcpy  (  that_result,  ""  );
 
 
 
@@ -46,7 +50,7 @@ strcpy  (  that_result,  ""  );
 
 if   (
 
-         is_file  (  that_path  )  ==  that_leaves_dream_existence_yes
+         is_leaves_system_trees_files  (  that_path  )  ==  that_leaves_dream_existence_yes
 
      )
 
@@ -56,6 +60,7 @@ if   (
 
 
 
+strcpy  (  that_result,  ""  );
 
 
 note_file   =   fopen  (  that_path,  "r"  );
