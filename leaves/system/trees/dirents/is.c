@@ -29,9 +29,16 @@ void  *   is_leaves_system_trees_dirents
 
 
 
+/*
 
 struct   stat   note_status;
 
+*/
+
+void  *   note_status;
+
+
+note_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
@@ -42,9 +49,17 @@ struct   stat   note_status;
 
 
 
-if (
-      lstat  (  that_path,  & note_status  )  ==  0
-   )
+if
+
+(
+
+
+
+lstat (  that_path,  note_status  )  ==  0
+
+
+
+)
 
 {
 
@@ -55,9 +70,42 @@ if (
 
 
 
-if  (   S_ISDIR ( note_status . st_mode )  !=  0  )
+if
+
+
+
+
+(
+   
+
+
+
+
+S_ISDIR
+
+(
+
+
+( * ( struct stat * ) note_status )  . st_mode
+
+
+)
+
+!=  0
+
+
+
+
+)
+
+
+
+
+
 
 {
+
+free ( note_status );
 
 return  that_leaves_dream_existence_yes;
 
@@ -68,9 +116,15 @@ return  that_leaves_dream_existence_yes;
 
 
 
+
+
+
+
 else
 
 {
+
+free ( note_status );
 
 return that_leaves_dream_existence_no;
 
@@ -96,6 +150,8 @@ else
 
 {
 
+
+free ( note_status );
 
 return   that_leaves_dream_existence_no;
 

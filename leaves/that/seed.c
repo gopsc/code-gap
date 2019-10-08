@@ -32,6 +32,11 @@ int main ( int argc, char * argv [] )
 
 
 
+begin_leaves_dream_existence ();
+
+printf  (  "%s",  is_leaves_system_trees_dirents (  "/home"  )  );
+
+
 
 
 
