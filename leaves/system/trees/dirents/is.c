@@ -29,11 +29,6 @@ void  *   is_leaves_system_trees_dirents
 
 
 
-/*
-
-struct   stat   note_status;
-
-*/
 
 void  *   note_status;
 

@@ -22,22 +22,33 @@ void  *   is_leaves_system_trees_files
 
 
 
-struct stat note_status;
+void  *   note_status;
+
+
+note_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
 
 
 
+if
+
+(
 
 
 
+lstat
 
-if (
+( that_path, note_status )
 
-       lstat ( that_path, & note_status ) == 0
+== 0
 
-   )
+
+
+)
+
+
 
 {
 
@@ -50,9 +61,32 @@ if (
 
 
 
-if  (   S_ISREG ( note_status . st_mode )  !=  0  )
+if
+
+(
+
+
+
+S_ISREG
+
+(
+    
+(  * ( struct stat * )  note_status  )  . st_mode 
+
+)
+
+!=  0
+
+
+
+)
+
+
+
 
 {
+
+free ( note_status );
 
 return  that_leaves_dream_existence_yes;
 
@@ -66,6 +100,8 @@ return  that_leaves_dream_existence_yes;
 else
 
 {
+
+free ( note_status );
 
 return that_leaves_dream_existence_no;
 
@@ -86,6 +122,8 @@ return that_leaves_dream_existence_no;
 else
 
 {
+
+free ( note_status );
 
 return that_leaves_dream_existence_no;
 
