@@ -34,7 +34,7 @@ int main ( int argc, char * argv [] )
 
 begin_leaves_dream_existence ();
 
-printf  (  "%s",  is_leaves_system_trees_dirents (  "/homes"  )  );
+printf  (  "%s",  save_leaves_system_trees_files (  "/home/qing/hello/hi",  "hello"  )  );
 
 
 

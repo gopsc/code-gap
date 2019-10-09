@@ -25,19 +25,23 @@ void  *   save_leaves_system_trees_files
 
 
 
-FILE  *   note_file;
 
 
-int   note_count  =  1;
+void  *   note_count;
 
+note_count  =  malloc  (  sizeof ( int )  );
 
-char  note_path  [ 64 ];
-
-
-char  *   note_pointer;
+* ( int * ) note_count  =  1;
 
 
 
+void  *   note_path;
+
+note_path  =  malloc  (  strlen ( that_path )  *  sizeof ( char )  );
+
+
+
+void  *   note_pointer;
 
 
 
@@ -46,10 +50,12 @@ char  *   note_pointer;
 
 
 
-while  (  note_count  !=  0  )
+
+
+
+while  (  * ( int * ) note_count  !=  0  )
     
 {
-
 
 
 
@@ -68,7 +74,7 @@ note_pointer  =  note_path;
 
 int i;
     
-for  (  i = 0;  i < note_count;  i++  )
+for  (  i = 0;  i < * ( int * ) note_count;  i++  )
     
 {
 
@@ -81,7 +87,7 @@ if ( note_pointer == NULL )
 
 {
 
-note_count = 0;
+* ( int * ) note_count = 0;
 
 /*
 
@@ -101,7 +107,7 @@ count end, to save
 
 
 
-if ( note_count != 0 )
+if ( * ( int * ) note_count != 0 )
 
 {
 
@@ -111,28 +117,24 @@ next dirent
 
 */
 
-note_count ++;
+( * ( int * ) note_count ) ++;
 
-*  note_pointer  =  '\0';
+* ( char * ) note_pointer  =  '\0';
 
 
 
-if (  is_leaves_system_trees_dirents ( note_path )  ==  that_leaves_dream_existence_no  )
+if
+
+(  is_leaves_system_trees_dirents ( note_path )  ==  that_leaves_dream_existence_no  )
+
+
 
 {
- 
-mkdir   (  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
-
-}
 
 
-}
+mkdir
 
-
-
-
-
-
+(  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
 
 }
@@ -141,12 +143,63 @@ mkdir   (  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
 
 
+}
 
 
 
 
 
 
+
+
+}
+
+
+
+free ( note_path );
+
+free ( note_count );
+
+
+
+
+
+
+
+
+
+
+
+
+if 
+
+(  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_dream_existence_yes  )
+
+
+
+
+{
+
+return  that_leaves_dream_existence_no;
+
+}
+
+
+
+
+
+else if
+
+(  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_dream_existence_no  )
+
+
+
+{
+
+
+
+
+void  *   note_file;
 
 
 note_file  =  fopen  (  that_path,  "w"  );
@@ -160,10 +213,12 @@ fclose  (  note_file  );
 
 
 
-
-
-
 return that_leaves_dream_existence_yes;
+
+
+}
+
+
 
 }
 
