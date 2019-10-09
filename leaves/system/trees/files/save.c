@@ -25,19 +25,16 @@ void  *   save_leaves_system_trees_files
 
 
 
-FILE  *   buffer_file;
+FILE  *   note_file;
 
 
-int   buffer_count  =  1;
+int   note_count  =  1;
 
 
-char  buffer_path  [ 64 ];
+char  note_path  [ 64 ];
 
 
-char  *   pointer_path;
-
-
-
+char  *   note_pointer;
 
 
 
@@ -46,7 +43,10 @@ char  *   pointer_path;
 
 
 
-while  (  buffer_count  !=  0  )
+
+
+
+while  (  note_count  !=  0  )
     
 {
 
@@ -59,29 +59,29 @@ while  (  buffer_count  !=  0  )
 
 
 
-strcpy  (  buffer_path,  that_path  );
+strcpy  (  note_path,  that_path  );
     
-pointer_path  =  buffer_path;
+note_pointer  =  note_path;
 
 
     
 
 int i;
     
-for  (  i = 0;  i < buffer_count;  i++  )
+for  (  i = 0;  i < note_count;  i++  )
     
 {
 
   
 
-pointer_path   =   strstr ( pointer_path + 1,  "/"  );
+note_pointer   =   strstr ( note_pointer + 1,  "/"  );
 
 
-if ( pointer_path == NULL )
+if ( note_pointer == NULL )
 
 {
 
-buffer_count = 0;
+note_count = 0;
 
 /*
 
@@ -101,7 +101,7 @@ count end, to save
 
 
 
-if ( buffer_count != 0 )
+if ( note_count != 0 )
 
 {
 
@@ -111,17 +111,17 @@ next dirent
 
 */
 
-buffer_count ++;
+note_count ++;
 
-*  pointer_path  =  '\0';
+*  note_pointer  =  '\0';
 
 
 
-if (  is_leaves_system_trees_dirents ( buffer_path )  ==  that_leaves_dream_existence_no  )
+if (  is_leaves_system_trees_dirents ( note_path )  ==  that_leaves_dream_existence_no  )
 
 {
  
-mkdir   (  buffer_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
+mkdir   (  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
 }
 
@@ -149,13 +149,13 @@ mkdir   (  buffer_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
 
 
-buffer_file  =  fopen  (  that_path,  "w"  );
+note_file  =  fopen  (  that_path,  "w"  );
 
 
-fprintf  (  buffer_file,  "%s",  that_words  );
+fprintf  (  note_file,  "%s",  that_words  );
 
 
-fclose  (  buffer_file  );
+fclose  (  note_file  );
 
 
 
