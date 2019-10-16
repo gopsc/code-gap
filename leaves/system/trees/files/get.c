@@ -28,13 +28,10 @@ const  void  *   that_path,
 
 
 
-FILE  *   note_file   =   NULL;
+void  *   note_file;
 
 
-char   note_buffer   [ 128 ];
-
-
-
+void  *   note_words;
 
 
 
@@ -48,11 +45,35 @@ char   note_buffer   [ 128 ];
 
 
 
-if   (
+if
 
-         is_leaves_system_trees_files  (  that_path  )  ==  that_leaves_dream_existence_yes
+(
 
-     )
+is_leaves_system_trees_files  (  that_path  )  ==  that_leaves_dream_existence_no
+
+)
+
+
+
+{
+
+return  that_leaves_dream_existence_no;
+
+}
+
+
+
+
+
+
+else if
+
+(
+
+is_leaves_system_trees_files  (  that_path  )  ==  that_leaves_dream_existence_yes
+
+)
+
 
 {
 
@@ -60,7 +81,16 @@ if   (
 
 
 
-strcpy  (  that_result,  ""  );
+that_result  =  malloc  (  1  *  sizeof ( char )  );
+
+* ( char * ) that_result  =  '\0';
+
+
+
+
+note_words  =  malloc  (  2  *  sizeof ( char )  );
+
+
 
 
 note_file   =   fopen  (  that_path,  "r"  );
@@ -72,16 +102,33 @@ note_file   =   fopen  (  that_path,  "r"  );
 
 
 
-while (
+while
 
-        fgets  (   note_buffer,   128,   ( FILE * ) note_file   )   !=   NULL
+(
 
-      )
+fgets  (   note_words,   2,   ( FILE * ) note_file   )   !=   NULL
+
+)
+
+
 
 {
 
 
-strcat ( that_result, note_buffer );
+
+
+that_result
+
+=  realloc
+
+(  that_result,   1  +  1  +  strlen ( that_result )  );
+
+
+
+
+strcat ( that_result, note_words );
+
+
 
 
 }
@@ -91,11 +138,13 @@ strcat ( that_result, note_buffer );
 
 
 
-
-
-
+free ( note_words );
 
 fclose ( note_file);
+
+
+return that_leaves_dream_existence_yes;
+
 
 
 }

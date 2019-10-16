@@ -50,11 +50,27 @@ void  *   note_pointer;
 
 
 
+/*
+
+that_path     /.../.../...
+
+note_count     1   2  ...
+
+note_path     /...
+
+*/
 
 
 
-while  (  * ( int * ) note_count  !=  0  )
-    
+
+
+
+
+while
+
+(   * ( int * ) note_count  !=  0   )
+
+
 {
 
 
@@ -74,8 +90,13 @@ note_pointer  =  note_path;
 
 int i;
     
-for  (  i = 0;  i < * ( int * ) note_count;  i++  )
-    
+for
+
+(  i = 0;  i < * ( int * ) note_count;  i++  )
+
+
+
+
 {
 
   
@@ -83,7 +104,12 @@ for  (  i = 0;  i < * ( int * ) note_count;  i++  )
 note_pointer   =   strstr ( note_pointer + 1,  "/"  );
 
 
-if ( note_pointer == NULL )
+
+
+if
+
+( note_pointer == NULL )
+
 
 {
 
@@ -118,6 +144,12 @@ next dirent
 */
 
 ( * ( int * ) note_count ) ++;
+
+
+
+
+
+
 
 * ( char * ) note_pointer  =  '\0';
 
