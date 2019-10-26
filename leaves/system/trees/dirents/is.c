@@ -44,13 +44,7 @@ note_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
-if
-
-(
-
-lstat (  that_path,  note_status  )  !=  0
-
-)
+if  (    lstat (  that_path,  note_status  )  !=  0    )
 
 {
 
@@ -79,13 +73,7 @@ else
    
    
    
-if
-
-(
-
-S_ISDIR  (        ( * ( struct stat * ) note_status )  . st_mode       )  ==  0
-
-)
+if  (    S_ISDIR  (        ( * ( struct stat * ) note_status )  . st_mode       )  ==  0    )
 
 
 
