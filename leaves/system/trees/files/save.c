@@ -29,7 +29,7 @@ const void  *   that_words
 
 void  *   note_count;
 
-note_count  =  malloc  (  sizeof ( int )  );
+note_count  =  malloc  (    sizeof ( int )    );
 
 * ( int * ) note_count  =  1;
 
@@ -37,7 +37,7 @@ note_count  =  malloc  (  sizeof ( int )  );
 
 void  *   note_path;
 
-note_path  =  malloc  (  strlen ( that_path )  *  sizeof ( char )  );
+note_path  =  malloc  (    strlen ( that_path )  *  sizeof ( char )    );
 
 
 
@@ -66,7 +66,7 @@ note_path     /...
 
 
 
-while  (   * ( int * ) note_count  !=  0   )
+while  (    * ( int * ) note_count  !=  0    )
 
 {
 
@@ -209,6 +209,8 @@ return that_leaves_lake_existence_yes;
 }
 
 
+
+return that_leaves_lake_existence_yes;
 
 }
 
