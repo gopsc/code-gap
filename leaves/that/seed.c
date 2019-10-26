@@ -105,7 +105,7 @@ void  *   note_words;
 
 
 
-printf  (  "%s\n", get_leaves_system_trees_files (  "/home/qing/hello/hi",  note_words  )  );
+printf  (  "%s\n", get_leaves_system_trees_files (  "/data/data/com.termux/files/home/fst/fst.c",  note_words  )  );
 
 printf  (  "%s\n",  note_words  );
 
