@@ -29,7 +29,7 @@ const void * that_words
 
 
 
-if  (  is_leaves_system_trees_files ( that_path )  !=  that_leaves_lake_existence_yes  )
+if  (  is_leaves_system_trees_files ( that_path )  ==  that_leaves_lake_existence_no  )
 
 {
 
@@ -39,7 +39,7 @@ return that_leaves_dream_existence_no;
 
 
 
-else
+else if  (  is_leaves_system_trees_files ( that_path )  ==  that_leaves_lake_existence_yes  )
 
 {
 
