@@ -8,10 +8,7 @@
 
 
 
-void  *   is_leaves_system_trees_files
-
-(  const void  *   that_path  )
-
+void  *   is_leaves_system_trees_files  (  const void  *   that_path  )
 
 {
 
@@ -32,13 +29,7 @@ note_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
-if
-
-(
-
-lstat  ( that_path, note_status )  ！=  0
-
-)
+if  (    lstat  ( that_path, note_status )  ！=  0    )
 
 {
 
@@ -65,9 +56,7 @@ else
 
 
 
-if  (    S_ISREG  (    (  * ( struct stat * )  note_status  )  . st_mode     )  ==  0
-
-)
+if  (    S_ISREG  (    (  * ( struct stat * )  note_status  )  . st_mode     )  ==  0    )
 
 {
 
