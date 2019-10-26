@@ -13,9 +13,9 @@ void  *   save_leaves_system_trees_files
 
 (
 
-   const void  *   that_path,
+const void  *   that_path,
    
-   const void  *   that_words
+const void  *   that_words
 
 )
                      
@@ -68,7 +68,6 @@ note_path     /...
 
 while  (   * ( int * ) note_count  !=  0   )
 
-
 {
 
 
@@ -90,9 +89,6 @@ int i;
     
 for  (  i = 0;  i < * ( int * ) note_count;  i++  )
 
-
-
-
 {
 
   
@@ -103,7 +99,6 @@ note_pointer   =   strstr ( note_pointer + 1,  "/"  );
 
 
 if  ( note_pointer == NULL )
-
 
 {
 
@@ -126,6 +121,7 @@ if ( * ( int * ) note_count != 0 )
 {
 
 
+   
 ( * ( int * ) note_count ) ++;
 
 
@@ -186,7 +182,7 @@ return  that_leaves_lake_existence_no;
 
 
 
-else if  (  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_dream_existence_no  )
+else if  (  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_lake_existence_no  )
 
 {
 
