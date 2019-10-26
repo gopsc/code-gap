@@ -138,109 +138,22 @@ void fft(int site) {
 
 #include  "./leaves/lake/existence/that.c"
 
-
-
-
-
-
-
 #include  "./leaves/lake/existence/begin.c"
-
-
-
-
-
-
 
 #include  "./leaves/lake/existence/end.c"
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #include  "./leaves/system/trees/dirents/is.c"
-
-
-
-
-
-
 
 #include  "./leaves/system/trees/files/is.c"
 
-
-
-
-
-
-
 #include  "./leaves/system/trees/files/save.c"
-
-
-
-
-
-
 
 #include  "./leaves/system/trees/files/append.c"
 
-
-
-
-
-
-
 #include  "./leaves/system/trees/files/get.c"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -252,80 +165,17 @@ void fft(int site) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #include  "./spider/that/hope.h"
 
-
-
-
-
-
-
 #include  "./spider/that/that/that.h"
-
-
-
-
-
-
 
 #include  "./spider/that/lake/that.h"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #include  "./voice/that/hope.h"
 
-
-
-
-
-
-
 #include  "./voice/that/that.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
