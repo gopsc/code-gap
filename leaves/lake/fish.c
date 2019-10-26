@@ -9,7 +9,6 @@ void *  fish_leaves_lake
 {
  
  
-return  that_leaves_lake_existence_no;
 
 }
 
