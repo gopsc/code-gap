@@ -50,7 +50,7 @@ if
 
 
 
-lstat (  that_path,  note_status  )  ==  0
+lstat (  that_path,  note_status  )  !=  0
 
 
 
@@ -59,22 +59,30 @@ lstat (  that_path,  note_status  )  ==  0
 {
 
 
+free ( note_status );
+
+return   that_leaves_lake_existence_no;
+
+
+}
 
 
 
 
 
 
-if
-
-
-
-
-(
+else
+   
+{
+   
    
 
+   
+   
+   
+if
 
-
+(
 
 S_ISDIR
 
@@ -84,9 +92,7 @@ S_ISDIR
 ( * ( struct stat * ) note_status )  . st_mode
 
 
-)
-
-!=  0
+)  !=  0
 
 
 
@@ -95,25 +101,17 @@ S_ISDIR
 
 
 
-
-
-
 {
 
 free ( note_status );
 
-return  that_leaves_dream_existence_yes;
+return that_leaves_lake_existence_no;
 
 }
 
 
-
-
-
-
-
-
-
+   
+   
 
 else
 
@@ -121,7 +119,7 @@ else
 
 free ( note_status );
 
-return that_leaves_dream_existence_no;
+return  that_leaves_lake_existence_yes;
 
 }
 
@@ -129,7 +127,6 @@ return that_leaves_dream_existence_no;
 
 
 
-}
 
 
 
@@ -137,18 +134,6 @@ return that_leaves_dream_existence_no;
 
 
 
-
-
-
-
-else
-
-{
-
-
-free ( note_status );
-
-return   that_leaves_dream_existence_no;
 
 
 }
