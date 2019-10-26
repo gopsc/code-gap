@@ -29,13 +29,19 @@ const void * that_words
 
 
 
-if  (  is_leaves_system_trees_files ( that_path )  ==  that_leaves_dream_existence_yes  )
+if  (  is_leaves_system_trees_files ( that_path )  !=  that_leaves_lake_existence_yes  )
 
 {
 
+return that_leaves_dream_existence_no;
+
+}
 
 
 
+else
+
+{
 
 FILE *  note_file  =  fopen ( that_path, "a" );
 
@@ -46,29 +52,8 @@ fprintf  (  note_file,  "%s",  that_words  );
 fclose ( note_file );
 
 
-
-
-
-return that_leaves_dream_existence_yes;
-
+return that_leaves_lake_existence_yes;
 
 }
-
-
-
-
-
-
-
-else
-
-{
-
-return that_leaves_dream_existence_no;
-
-}
-
-
-
 
 }
