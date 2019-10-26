@@ -104,8 +104,6 @@ begin_leaves_lake_existence ();
 void  *   note_words;
 
 
-printf  (  "%s\n", is_leaves_system_trees_dirents (  "/data/data/com.termux/files/home/fst/fst.c"  )  );
-
 printf  (  "%s\n", get_leaves_system_trees_files (  "/data/data/com.termux/files/home/fst/fst.c",  note_words  )  );
 
 printf  (  "%s\n",  note_words  );
