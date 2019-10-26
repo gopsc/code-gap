@@ -65,17 +65,7 @@ else
 
 
 
-if
-    
-(
-
-S_ISREG
-
-(
-    
-(  * ( struct stat * )  note_status  )  . st_mode 
-
-)  !=  0
+if  (    S_ISREG  (    (  * ( struct stat * )  note_status  )  . st_mode     )  ==  0
 
 )
 
