@@ -100,6 +100,7 @@ begin_leaves_lake_existence ();
 
 
 
+/*
 
 void  *   note_words;
 
@@ -111,7 +112,7 @@ printf  (  "%s\n",  note_words  );
 
 free ( note_words );
 
-
+*/
 
 
 
