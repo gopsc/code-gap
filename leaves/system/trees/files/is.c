@@ -29,7 +29,7 @@ note_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
-if  (    lstat  ( that_path, note_status )  ！=  0    )
+if  (    lstat  ( that_path, note_status )  !=  0    )
 
 {
 
