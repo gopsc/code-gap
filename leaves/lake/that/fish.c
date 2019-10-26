@@ -2,7 +2,7 @@
 
 
 
-void *  fish_that_leaves_lake
+void *  fish_leaves_lake
 
 (  void *  that_name  )
  
