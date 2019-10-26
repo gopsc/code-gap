@@ -66,9 +66,7 @@ note_path     /...
 
 
 
-while
-
-(   * ( int * ) note_count  !=  0   )
+while  (   * ( int * ) note_count  !=  0   )
 
 
 {
@@ -90,9 +88,7 @@ note_pointer  =  note_path;
 
 int i;
     
-for
-
-(  i = 0;  i < * ( int * ) note_count;  i++  )
+for  (  i = 0;  i < * ( int * ) note_count;  i++  )
 
 
 
@@ -106,20 +102,12 @@ note_pointer   =   strstr ( note_pointer + 1,  "/"  );
 
 
 
-if
-
-( note_pointer == NULL )
+if  ( note_pointer == NULL )
 
 
 {
 
 * ( int * ) note_count = 0;
-
-/*
-
-count end, to save
-
-*/
 
 }
 
@@ -137,17 +125,8 @@ if ( * ( int * ) note_count != 0 )
 
 {
 
-/*
-
-next dirent
-
-*/
 
 ( * ( int * ) note_count ) ++;
-
-
-
-
 
 
 
@@ -155,20 +134,12 @@ next dirent
 
 
 
-if
-
-(  is_leaves_system_trees_dirents ( note_path )  ==  that_leaves_dream_existence_no  )
-
-
+if  (  is_leaves_system_trees_dirents ( note_path )  ==  that_leaves_lake_existence_no  )
 
 {
 
-
-mkdir
-
-(  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
-
-
+mkdir  (  note_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
+   
 }
 
 
@@ -203,16 +174,11 @@ free ( note_count );
 
 
 
-if 
-
-(  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_dream_existence_yes  )
-
-
-
+if  (  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_lake_existence_yes  )
 
 {
 
-return  that_leaves_dream_existence_no;
+return  that_leaves_lake_existence_no;
 
 }
 
@@ -220,11 +186,7 @@ return  that_leaves_dream_existence_no;
 
 
 
-else if
-
-(  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_dream_existence_no  )
-
-
+else if  (  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_dream_existence_no  )
 
 {
 
@@ -245,7 +207,7 @@ fclose  (  note_file  );
 
 
 
-return that_leaves_dream_existence_yes;
+return that_leaves_lake_existence_yes;
 
 
 }
