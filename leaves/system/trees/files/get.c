@@ -121,7 +121,6 @@ free ( note_words );
 
 fclose ( note_file);
 
-printf ( "%s\n",  that_result);
 
 return that_leaves_lake_existence_yes;
 
