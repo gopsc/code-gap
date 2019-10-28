@@ -93,6 +93,8 @@ int main ( int argc, char * argv [] )
 
 
 
+  
+begin_leaves_lake ();
 
 begin_leaves_lake_existence ();
 
