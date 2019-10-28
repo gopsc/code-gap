@@ -2,7 +2,7 @@
 
 
 
-#inclue <stdio.h>
+#include <stdio.h>
 
 
 
