@@ -8,7 +8,9 @@
 
 
 
-void  *   is_leaves_system_trees_files  (  const void  *   that_path  )
+void  *   is_leaves_system_trees_files
+
+(  const void  *   that_path  )
 
 {
 
