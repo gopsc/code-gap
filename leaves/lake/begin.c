@@ -25,7 +25,7 @@ that_leaves_lake_that  [ 0 ] [ 1 ]   =   malloc (  1 * sizeof ( int )  );
 
   
 
-printf ( "%d\n", that_leaves_lake_that [ 0 ] [ 1 ] );
+printf ( "%d\n",  * ( int * )  that_leaves_lake_that [ 0 ] [ 1 ] );
   
   
 return NULL;
