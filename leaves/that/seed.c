@@ -99,9 +99,11 @@ begin_leaves_lake ();
 begin_leaves_lake_existence ();
 
 
-  
+/*
+
 printf ( "%d\n",  * ( int * ) that_leaves_lake_that [ 0 ] [ 1 ] );
 
+*/
 
 
 /*
