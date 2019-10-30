@@ -8,7 +8,7 @@
 
 void *  fish_fst_leaves_lake
 
-(  void *  that_name  )
+(  void *  that_words_name  )
 
 {
  
@@ -33,7 +33,7 @@ for
 {
 
 
-if   (   strcmp  (  that_name,  that_fst_leaves_lake  [  * ( int * ) note_number_count  ] [ 0 ]  )   ==  0   )
+if   (   strcmp  (  that_words_name,  that_fst_leaves_lake  [  * ( int * ) note_number_count  ] [ 0 ]  )   ==  0   )
 
 {
 

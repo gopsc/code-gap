@@ -209,6 +209,8 @@ void test_ft(const char* site) {
 
 #include  "./leaves/lake/end.c"    
 
+#include  "./leaves/lake/write.c"
+
 #include  "./leaves/lake/fish.c"
     
 
