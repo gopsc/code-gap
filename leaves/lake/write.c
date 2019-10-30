@@ -16,7 +16,7 @@ void *  write_fst_leaves_lake
 
 void *  that_words_name,
 
-void *  that_words_contact
+void *  that_words_content
 
 )
 
@@ -55,6 +55,20 @@ for
 if   (   strcmp  (   that_words_name,  that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 0 ]   )   ==   0   )
 
 {
+
+
+
+
+
+if   (   strlen  ( that_words_content )   <=   strlen (  that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ]   )   )
+
+{
+
+strcpy  (   that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ],   that_words_content   );
+
+that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ]   =   realloc  (  that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ],  ( 1 + strlen ( that_words_content ) )  *  sizeof ( char )  );
+
+}
 
 
 return  that_fst_leaves_lake;

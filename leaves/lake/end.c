@@ -41,6 +41,9 @@ free   (  that_fst_leaves_lake  [  * ( int * ) note_number_count  ]  );
 
 }
 
+free  (  note_number_count );
+
+
 
 
 
@@ -50,10 +53,15 @@ free  (  that_fst_leaves_lake  [ 0 ] [ 0 ]  );
 
 free  (  that_fst_leaves_lake  [ 0 ]  );
 
+free  (  that_fst_leaves_lake  );
 
 
 
-free  (  note_number_count );
+that_fst_leaves_lake  =  0;
+
+
+
+
 
 
 return  that_fst_leaves_lake;
