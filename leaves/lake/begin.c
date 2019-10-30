@@ -39,7 +39,7 @@ printf ( "%d\n",  * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ] );
 
 */
   
-return  NULL;
+return  that_fst_leaves_lake [ 0 ];
 
 }
 

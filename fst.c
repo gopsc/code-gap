@@ -206,7 +206,9 @@ void test_ft(const char* site) {
 #include  "./leaves/lake/that.c"
 
 #include  "./leaves/lake/begin.c"
-    
+
+#include  "./leaves/lake/end.c"    
+
 #include  "./leaves/lake/fish.c"
     
 

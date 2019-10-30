@@ -2,10 +2,17 @@
 
 
 
-void *  end_leaves_lake ()
+
+#include  <stdlib.h>
+
+
+
+void *  end_fst_leaves_lake ()
 
 {
 
 
+
+return  0;
 
 }

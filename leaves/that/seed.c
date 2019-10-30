@@ -98,7 +98,11 @@ begin_fst_leaves_lake ();
 
 begin_fst_leaves_lake_existence ();
 
+
 end_fst_leaves_lake_existence ();
+
+end_fst_leaves_lake ();
+
 
 
 /*
