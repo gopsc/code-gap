@@ -77,7 +77,9 @@ else if (   strlen  ( that_words_content )   >   strlen (  that_fst_leaves_lake 
 
 {
 
+that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ]   =   realloc  (  that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ],  ( 1 + strlen ( that_words_content ) )  *  sizeof ( char )  );
 
+strcpy  (   that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ],   that_words_content   );
 
 }
 
