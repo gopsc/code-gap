@@ -71,6 +71,21 @@ that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ]   =   realloc  (  
 }
 
 
+
+
+else if (   strlen  ( that_words_content )   >   strlen (  that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ]   )   )
+
+{
+
+
+
+}
+
+
+
+
+free  (  note_number_count  );
+
 return  that_fst_leaves_lake;
 
 }
