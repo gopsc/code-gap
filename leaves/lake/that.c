@@ -64,8 +64,7 @@
 
 
 
-
-void * * *  that_fst_leaves_lake;
+void * * *  that_fst_leaves_lake   =   0;
 
 
 
