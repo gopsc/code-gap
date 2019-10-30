@@ -9,7 +9,7 @@
 
 
 
-void  *   save_leaves_system_trees_files
+void  *   save_fst_leaves_system_trees_files
 
 (
 
@@ -130,7 +130,7 @@ if ( * ( int * ) note_count != 0 )
 
 
 
-if  (  is_leaves_system_trees_dirents ( note_path )  ==  that_leaves_lake_existence_no  )
+if  (  is_fst_leaves_system_trees_dirents ( note_path )  ==  that_fst_leaves_lake_existence_no  )
 
 {
 
@@ -170,11 +170,11 @@ free ( note_count );
 
 
 
-if  (  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_lake_existence_yes  )
+if  (  is_fst_leaves_system_trees_dirents ( that_path )  ==  that_fst_leaves_lake_existence_yes  )
 
 {
 
-return  that_leaves_lake_existence_no;
+return  that_fst_leaves_lake_existence_no;
 
 }
 
@@ -182,7 +182,7 @@ return  that_leaves_lake_existence_no;
 
 
 
-else if  (  is_leaves_system_trees_dirents ( that_path )  ==  that_leaves_lake_existence_no  )
+else if  (  is_fst_leaves_system_trees_dirents ( that_path )  ==  that_fst_leaves_lake_existence_no  )
 
 {
 
@@ -203,14 +203,14 @@ fclose  (  note_file  );
 
 
 
-return that_leaves_lake_existence_yes;
+return that_fst_leaves_lake_existence_yes;
 
 
 }
 
 
 
-return that_leaves_lake_existence_yes;
+return that_fst_leaves_lake_existence_yes;
 
 }
 

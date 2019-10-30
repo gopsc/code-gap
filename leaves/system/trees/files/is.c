@@ -8,7 +8,7 @@
 
 
 
-void  *   is_leaves_system_trees_files
+void  *   is_fst_leaves_system_trees_files
 
 (  const void  *   that_path  )
 
@@ -37,7 +37,7 @@ if  (    lstat  ( that_path, note_status )  !=  0    )
 
 free ( note_status );
 
-return that_leaves_lake_existence_no;
+return that_fst_leaves_lake_existence_no;
 
 }
 
@@ -64,7 +64,7 @@ if  (    S_ISREG  (    (  * ( struct stat * )  note_status  )  . st_mode     )  
 
 free ( note_status );
 
-return that_leaves_lake_existence_no;
+return that_fst_leaves_lake_existence_no;
 
 }
 
@@ -77,7 +77,7 @@ else
 
 free ( note_status );
 
-return  that_leaves_lake_existence_yes;
+return  that_fst_leaves_lake_existence_yes;
 
 }
 
@@ -88,6 +88,11 @@ return  that_leaves_lake_existence_yes;
 
 
 }
+
+
+
+
+
 
 }
 

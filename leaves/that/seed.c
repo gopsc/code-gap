@@ -94,9 +94,11 @@ int main ( int argc, char * argv [] )
 
 
   
-begin_leaves_lake ();
+begin_fst_leaves_lake ();
 
-begin_leaves_lake_existence ();
+begin_fst_leaves_lake_existence ();
+
+end_fst_leaves_lake_existence ();
 
 
 /*
@@ -106,19 +108,6 @@ printf ( "%d\n",  * ( int * ) that_leaves_lake_that [ 0 ] [ 1 ] );
 */
 
 
-/*
-
-void  *   note_words;
-
-
-printf  (  "%s\n", get_leaves_system_trees_files (  "/data/data/com.termux/files/home/fst/fst.c",  note_words  )  );
-
-printf  (  "%s\n",  note_words  );
-
-
-free ( note_words );
-
-*/
 
 
 

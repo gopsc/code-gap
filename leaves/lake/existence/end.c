@@ -8,25 +8,24 @@
 
 
 
-void  *   end_leaves_lake_existence  ()
-
+void  *   end_fst_leaves_lake_existence  ()
 
 {
 
 
-free  (  that_leaves_lake_existence_yes  );
 
-that_leaves_lake_existence_yes  =  NULL;
+free  (  that_fst_leaves_lake_existence_yes  );
 
-
-
-free  (  that_leaves_lake_existence_no  );
-
-that_leaves_lake_existence_no  =  NULL;
+that_fst_leaves_lake_existence_yes  =  NULL;
 
 
 
-return   that_leaves_lake_existence_yes;
+free  (  that_fst_leaves_lake_existence_no  );
 
+that_fst_leaves_lake_existence_no  =  NULL;
+
+
+
+return   that_fst_leaves_lake_existence_yes;
 
 }
