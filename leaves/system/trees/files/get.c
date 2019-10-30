@@ -103,7 +103,7 @@ while  (    fgets  (   note_words,   2,   ( FILE * ) note_file   )   !=   NULL  
 
 {
 
-that_result  =  realloc (  that_result,   1  +  1  +  strlen ( that_result )  );
+that_result  =  realloc (  that_result,   ( 1  +  1  +  strlen ( that_result ) )  *  sizeof ( char )  );
 
 strcat ( that_result, note_words );
 
