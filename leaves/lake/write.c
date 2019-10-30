@@ -104,6 +104,36 @@ return  that_fst_leaves_lake;
 
 
 
+that_fst_leaves_lake   =   realloc  (  that_fst_leaves_lake,  ( 1 + 1 + * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ] )  *  sizeof ( void * )  );
+
+that_fst_leaves_lake  [ * ( int * ) note_number_count ]   =   malloc  (  2  *  sizeof ( void * )  );
+
+
+
+that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 0 ]   =   malloc  (  ( 1 + strlen ( that_words_name ) )  *  sizeof ( char )  );
+
+strcpy  (  that_fst_leaves_lake [ * ( int * ) note_number_count ] [ 0 ],  that_words_name  );
+
+
+
+that_fst_leaves_lake  [ * ( int * ) note_number_count ] [ 1 ]   =   malloc  (  ( 1 + strlen ( that_words_content ) )  *  sizeof ( char )  );
+
+strcpy  (  that_fst_leaves_lake [ * ( int * ) note_number_count ] [ 1 ],  that_words_content  );
+
+
+
+* ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ]   =   * ( int * ) that_fst_leaves_lake [ 0 ] [ 1 ]   +   1;
+
+
+
+
+
+
+
+
+free  (  note_number_count  );
+
+
 return  that_fst_leaves_lake;
 
 }
