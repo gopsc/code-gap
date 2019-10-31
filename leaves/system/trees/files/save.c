@@ -208,20 +208,7 @@ else if  (  is_fst_leaves_system_trees_dirents ( that_words_name )  ==  fish_fst
 {
 
 
-
-
-void  *   note_files_save;
-
-
-note_files_save  =  fopen  (  that_words_name,  "w"  );
-
-
-fprintf  (  note_files_save,  "%s",  that_words_content  );
-
-
-fclose  (  note_files_save  );
-
-
+save_fst_things_trees_files  (  that_words_name,  that_words_convent  );
 
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
