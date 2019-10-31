@@ -3,6 +3,10 @@
 
 
 
+#include  <stdio.h>
+
+#include  <sys/stat.h>
+
 
 void *  append_fst_things_trees_files
 
