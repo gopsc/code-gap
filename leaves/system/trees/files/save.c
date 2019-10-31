@@ -127,6 +127,11 @@ if  ( note_place_path == NULL )
 
 }
 
+free (  note_numbers_count_two  );
+
+
+
+
 
 
 
@@ -152,7 +157,7 @@ if  (  is_fst_leaves_system_trees_dirents ( note_words_path )  ==  that_fst_leav
 {
 
 mkdir  (  note_words_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
-   
+
 }
 
 
