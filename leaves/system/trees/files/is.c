@@ -10,7 +10,7 @@
 
 void  *   is_fst_leaves_system_trees_files
 
-(  const void  *   that_words_name  )
+(  void  *   that_words_name  )
 
 {
 
