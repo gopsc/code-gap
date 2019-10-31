@@ -212,7 +212,9 @@ void test_ft(const char* site) {
 #include  "./leaves/lake/write.c"
 
 #include  "./leaves/lake/fish.c"
-    
+
+#include  "./leaves/lake/drop.c"
+   
 
 #include  "./leaves/lake/existence/that.c"
 

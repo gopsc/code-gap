@@ -33,6 +33,14 @@ note_numbers_count   =   malloc  (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+
+
 for
 
 (
@@ -130,12 +138,11 @@ strcpy  (  that_fst_leaves_lake [ * ( int * ) note_numbers_count ] [ 1 ],  that_
 
 
 
-
 free  (  note_numbers_count  );
 
 
 return  that_fst_leaves_lake;
 
+
+
 }
-
-

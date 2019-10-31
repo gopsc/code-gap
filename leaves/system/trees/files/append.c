@@ -14,9 +14,9 @@ void  *   append_fst_leaves_system_trees_files
 
 (
 
-const void * that_path,
+const void * that_words_path,
 
-const void * that_words
+const void * that_words_content
 
 )
 
@@ -29,7 +29,7 @@ const void * that_words
 
 
 
-if  (  is_fst_leaves_system_trees_files ( that_path )  ==  that_fst_leaves_lake_existence_no  )
+if  (  is_fst_leaves_system_trees_files ( that_words_path )  ==  that_fst_leaves_lake_existence_no  )
 
 {
 
@@ -39,17 +39,17 @@ return that_fst_leaves_lake_existence_no;
 
 
 
-else if  (  is_fst_leaves_system_trees_files ( that_path )  ==  that_fst_leaves_lake_existence_yes  )
+else if  (  is_fst_leaves_system_trees_files ( that_words_path )  ==  that_fst_leaves_lake_existence_yes  )
 
 {
 
-FILE *  note_file  =  fopen ( that_path, "a" );
+FILE *  note_files_append  =  fopen ( that_words_path, "a" );
 
 
-fprintf  (  note_file,  "%s",  that_words  );
+fprintf  (  note_files_append,  "%s",  that_words_content  );
 
 
-fclose ( note_file );
+fclose ( note_files_append );
 
 
 return that_fst_leaves_lake_existence_yes;

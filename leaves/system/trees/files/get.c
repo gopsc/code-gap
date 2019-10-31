@@ -16,9 +16,9 @@ void  *   get_fst_leaves_system_trees_files
 
 (
 
-const  void  *   that_path,
+const  void  *   that_words_path,
 
-       void  *   that_result
+       void  *   that_words_result
 
 )
 
@@ -28,10 +28,10 @@ const  void  *   that_path,
 
 
 
-void  *   note_file;
+void  *   note_files_get;
 
 
-void  *   note_words;
+void  *   note_words_read;
 
 
 
@@ -49,7 +49,7 @@ if
 
 (
 
-is_fst_leaves_system_trees_files  (  that_path  )  ==  that_fst_leaves_lake_existence_no
+is_fst_leaves_system_trees_files  (  that_words_path  )  ==  that_fst_leaves_lake_existence_no
 
 )
 
@@ -68,7 +68,7 @@ else if
 
 (
 
-is_fst_leaves_system_trees_files  (  that_path  )  ==  that_fst_leaves_lake_existence_yes
+is_fst_leaves_system_trees_files  (  that_words_path  )  ==  that_fst_leaves_lake_existence_yes
 
 )
 
@@ -78,34 +78,34 @@ is_fst_leaves_system_trees_files  (  that_path  )  ==  that_fst_leaves_lake_exis
 
 
 
-that_result  =  malloc  (  1  *  sizeof ( char )  );
+that_words_result  =  malloc  (  1  *  sizeof ( char )  );
 
-* ( char * ) that_result  =  '\0';
-
-
-
-
-note_words  =  malloc  (  2  *  sizeof ( char )  );
+* ( char * ) that_words_result  =  '\0';
 
 
 
 
-note_file   =   fopen  (  that_path,  "r"  );
+note_words_read  =  malloc  (  2  *  sizeof ( char )  );
 
 
+
+
+note_files_get   =   fopen  (  that_words_path,  "r"  );
 
 
 
 
 
 
-while  (    fgets  (   note_words,   2,   ( FILE * ) note_file   )   !=   NULL    )
+
+
+while  (    fgets  (   note_words_read,   2,   ( FILE * ) note_files_get   )   !=   NULL    )
 
 {
 
-that_result  =  realloc (  that_result,   ( 1  +  1  +  strlen ( that_result ) )  *  sizeof ( char )  );
+that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( that_words_result ) )  *  sizeof ( char )  );
 
-strcat ( that_result, note_words );
+strcat ( that_words_result, note_words_read );
 
 }
 
@@ -114,9 +114,9 @@ strcat ( that_result, note_words );
 
 
 
-free ( note_words );
+free ( note_words_read );
 
-fclose ( note_file);
+fclose ( note_files_get );
 
 
 return that_fst_leaves_lake_existence_yes;
