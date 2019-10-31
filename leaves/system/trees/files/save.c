@@ -5,7 +5,6 @@
 
 #include  <string.h>
 
-#include  <sys/stat.h>
 
 
 
@@ -13,7 +12,7 @@ void  *   save_fst_leaves_system_trees_files
 
 (
 
-const void  *   that_words_path,
+const void  *   that_words_name,
    
 const void  *   that_words_content
 
@@ -35,13 +34,13 @@ note_numbers_count  =  malloc  (    sizeof ( int )    );
 
 
 
-void  *   note_words_path;
+void  *   note_words_name;
 
-note_words_path  =  malloc  (    strlen ( that_words_path )  *  sizeof ( char )    );
+note_words_name  =  malloc  (    strlen ( that_words_name )  *  sizeof ( char )    );
 
 
 
-void  *   note_place_path;
+void  *   note_place_name;
 
 
 
@@ -52,11 +51,11 @@ void  *   note_place_path;
 
 /*
 
-that_words_path       /.../.../...
+that_words_name       /.../.../...
 
 note_numbers_count     1   2  ...
 
-note_words_path       /...
+note_words_name       /...
 
 */
 
@@ -78,9 +77,9 @@ while  (    * ( int * ) note_numbers_count  !=  0    )
 
 
 
-strcpy  (  note_words_path,  that_words_path  );
+strcpy  (  note_words_name,  that_words_name  );
     
-note_place_path  =  note_words_path;
+note_place_name  =  note_words_name;
 
 
 
@@ -110,12 +109,12 @@ for
 
   
 
-note_place_path   =   strstr ( note_place_path + 1,  "/"  );
+note_place_name  =   strstr ( note_place_name + 1,  "/"  );
 
 
 
 
-if  ( note_place_path == NULL )
+if  ( note_place_name == NULL )
 
 {
 
@@ -148,15 +147,15 @@ if ( * ( int * ) note_numbers_count != 0 )
 
 
 
-* ( char * ) note_place_path  =  '\0';
+* ( char * ) note_place_name  =  '\0';
 
 
 
-if  (  is_fst_leaves_system_trees_dirents ( note_words_path )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
+if  (  is_fst_leaves_system_trees_dirents ( note_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
 
 {
 
-mkdir  (  note_words_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
+create_fst_things_c_system_trees_dirents  (  note_words_name  );
 
 }
 
@@ -177,7 +176,7 @@ mkdir  (  note_words_path,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
 
 
-free ( note_words_path );
+free ( note_words_name );
 
 free ( note_numbers_count );
 
@@ -192,7 +191,7 @@ free ( note_numbers_count );
 
 
 
-if  (  is_fst_leaves_system_trees_dirents ( that_words_path )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
+if  (  is_fst_leaves_system_trees_dirents ( that_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
 
 {
 
@@ -204,7 +203,7 @@ return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 
 
-else if  (  is_fst_leaves_system_trees_dirents ( that_words_path )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
+else if  (  is_fst_leaves_system_trees_dirents ( that_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
 
 {
 
@@ -214,7 +213,7 @@ else if  (  is_fst_leaves_system_trees_dirents ( that_words_path )  ==  fish_fst
 void  *   note_files_save;
 
 
-note_files_save  =  fopen  (  that_words_path,  "w"  );
+note_files_save  =  fopen  (  that_words_name,  "w"  );
 
 
 fprintf  (  note_files_save,  "%s",  that_words_content  );
