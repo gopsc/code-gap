@@ -49,13 +49,13 @@ if
 
 (
 
-is_fst_leaves_system_trees_files  (  that_words_path  )  ==  that_fst_leaves_lake_existence_no
+is_fst_leaves_system_trees_files  (  that_words_path  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )
 
 )
 
 {
 
-return  that_fst_leaves_lake_existence_no;
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 }
 
@@ -68,7 +68,7 @@ else if
 
 (
 
-is_fst_leaves_system_trees_files  (  that_words_path  )  ==  that_fst_leaves_lake_existence_yes
+is_fst_leaves_system_trees_files  (  that_words_path  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )
 
 )
 
@@ -119,7 +119,7 @@ free ( note_words_read );
 fclose ( note_files_get );
 
 
-return that_fst_leaves_lake_existence_yes;
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 
 
@@ -129,6 +129,9 @@ return that_fst_leaves_lake_existence_yes;
 
 
 
-return that_fst_leaves_lake_existence_no;
+
+
+
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 }

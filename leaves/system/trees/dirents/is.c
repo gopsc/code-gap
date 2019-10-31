@@ -48,7 +48,7 @@ if  (    lstat (  that_words_path,  note_struct_status  )  !=  0    )
 
 free ( note_struct_status );
 
-return   that_fst_leaves_lake_existence_no;
+return   fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 }
 
@@ -79,7 +79,7 @@ if  (    S_ISDIR  (        ( * ( struct stat * ) note_struct_status )  . st_mode
 
 free ( note_struct_status );
 
-return that_fst_leaves_lake_existence_no;
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 }
 
@@ -93,7 +93,7 @@ else
 
 free ( note_struct_status );
 
-return  that_fst_leaves_lake_existence_yes;
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 }
 

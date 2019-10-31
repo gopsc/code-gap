@@ -29,17 +29,17 @@ const void * that_words_content
 
 
 
-if  (  is_fst_leaves_system_trees_files ( that_words_path )  ==  that_fst_leaves_lake_existence_no  )
+if  (  is_fst_leaves_system_trees_files ( that_words_path )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
 
 {
 
-return that_fst_leaves_lake_existence_no;
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 }
 
 
 
-else if  (  is_fst_leaves_system_trees_files ( that_words_path )  ==  that_fst_leaves_lake_existence_yes  )
+else if  (  is_fst_leaves_system_trees_files ( that_words_path )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
 
 {
 
@@ -52,7 +52,7 @@ fprintf  (  note_files_append,  "%s",  that_words_content  );
 fclose ( note_files_append );
 
 
-return that_fst_leaves_lake_existence_yes;
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 }
 
@@ -61,6 +61,6 @@ return that_fst_leaves_lake_existence_yes;
 
 
 
-return that_fst_leaves_lake_existence_no;
+return  (  "that_fst_leaves_lake_existence_no"  );
 
 }
