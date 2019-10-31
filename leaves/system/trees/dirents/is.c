@@ -11,7 +11,7 @@
 
 void  *   is_fst_leaves_system_trees_dirents
 
-(  const void  *   that_words_path  )
+(  const void  *   that_words_name  )
 
 {
 
@@ -42,7 +42,7 @@ note_struct_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
-if  (    lstat (  that_words_path,  note_struct_status  )  !=  0    )
+if  (    lstat (  that_words_name,  note_struct_status  )  !=  0    )
 
 {
 

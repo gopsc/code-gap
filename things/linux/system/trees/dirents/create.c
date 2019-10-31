@@ -9,7 +9,7 @@
 
 
 
-void *  create_fst_things_c_system_trees_dirents
+void *  create_fst_things_system_trees_dirents
 
 ( void *  that_words_name )
 

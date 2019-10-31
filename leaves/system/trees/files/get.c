@@ -16,7 +16,7 @@ void  *   get_fst_leaves_system_trees_files
 
 (
 
-const  void  *   that_words_path,
+const  void  *   that_words_name,
 
        void  *   that_words_result
 
@@ -45,13 +45,7 @@ void  *   note_words_read;
 
 
 
-if
-
-(
-
-is_fst_leaves_system_trees_files  (  that_words_path  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )
-
-)
+if  (  is_fst_leaves_system_trees_files  (  that_words_name  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
 
 {
 
@@ -64,13 +58,7 @@ return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 
 
-else if
-
-(
-
-is_fst_leaves_system_trees_files  (  that_words_path  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )
-
-)
+else if  (  is_fst_leaves_system_trees_files  (  that_words_name  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
 
 {
 
@@ -90,7 +78,7 @@ note_words_read  =  malloc  (  2  *  sizeof ( char )  );
 
 
 
-note_files_get   =   fopen  (  that_words_path,  "r"  );
+note_files_get   =   fopen  (  that_words_name,  "r"  );
 
 
 

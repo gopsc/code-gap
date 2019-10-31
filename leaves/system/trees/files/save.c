@@ -155,7 +155,7 @@ if  (  is_fst_leaves_system_trees_dirents ( note_words_name )  ==  fish_fst_leav
 
 {
 
-create_fst_things_c_system_trees_dirents  (  note_words_name  );
+create_fst_things_system_trees_dirents  (  note_words_name  );
 
 }
 
