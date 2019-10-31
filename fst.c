@@ -204,6 +204,8 @@ void test_ft(const char* site) {
 
 #include  "./things/linux/trees/dirents/create.c"
 
+#include  "./things/linux/trees/files/append.c"
+
 
 #include  "./leaves/lake/that.c"
 
