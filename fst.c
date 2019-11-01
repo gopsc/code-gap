@@ -136,9 +136,17 @@ void fft(int site) {
 
 
 
+#include  "./things/linux/data/create.c"
+
+#include  "./things/linux/data/resize.c"
+
+#include  "./things/linux/data/free.c"
+
+
 #include  "./things/linux/trees/dirents/create.c"
 
 #include  "./things/linux/trees/dirents/is.c"
+
 
 #include  "./things/linux/trees/files/is.c"
 
@@ -153,9 +161,11 @@ void fft(int site) {
 
 #include  "./leaves/lake/that.c"
 
+
 #include  "./leaves/lake/begin.c"
 
 #include  "./leaves/lake/end.c"    
+
 
 #include  "./leaves/lake/write.c"
 
@@ -163,6 +173,7 @@ void fft(int site) {
 
 #include  "./leaves/lake/drop.c"
    
+
 
 #include  "./leaves/lake/existence/begin.c"
 
@@ -172,6 +183,7 @@ void fft(int site) {
 
 
 #include  "./leaves/system/trees/dirents/is.c"
+
 
 #include  "./leaves/system/trees/files/is.c"
 
