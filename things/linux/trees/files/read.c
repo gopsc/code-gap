@@ -27,8 +27,6 @@ void *  that_words_result
 
 
 
-printf (  "%s\n", that_words_result  );
-
 
 
 
@@ -111,6 +109,8 @@ that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( tha
 
 
 
+
+printf (  "%s\n", that_words_result  );
 
 
 
