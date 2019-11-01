@@ -4,14 +4,14 @@
 
 
 
-#include  <stdio.h>
+#include  <stdlib.h>
 
 #include  <sys/stat.h>
 
 
 
 
-void *  is_things_trees_files 
+int  is_fst_things_trees_files 
 
 (  void *  that_words_name  )
 

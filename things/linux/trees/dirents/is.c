@@ -1,13 +1,13 @@
 
 
-#include  <stdio.h>
+#include  <stdlib.h>
 
 #include  <sys/stat.h>
 
 
 
 
-void  *   is_fst_things_trees_dirents
+int   is_fst_things_trees_dirents
 
 
 (  void *  that_words_name  )
