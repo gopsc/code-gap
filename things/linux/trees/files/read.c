@@ -23,20 +23,6 @@ void *  that_words_result
 {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-that_words_result  =  malloc  (  1  *  sizeof ( char )  );
-
 * ( char * ) that_words_result  =  '\0';
 
 
