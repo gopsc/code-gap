@@ -27,6 +27,7 @@ void *  that_words_result
 
 
 
+printf (  "%s\n", that_words_result  );
 
 
 
