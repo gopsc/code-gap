@@ -23,7 +23,7 @@ void *  that_words_result
 {
 
 
-
+printf ( "1\n" );
 
 
 void  *   note_files_get;
