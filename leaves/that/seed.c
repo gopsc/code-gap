@@ -101,12 +101,11 @@ begin_fst_leaves_lake_existence ();
 
 
 
+
 write_fst_leaves_lake ( "hello", "hi" );
 
-get_fst_leaves_system_trees_files  (  "/data/data/com.termux/files/home/a.out",  "hello"  );
-
-
-
+get_fst_leaves_system_trees_files  (  "/data/data/com.termux/files/home/hi",  "hello"  );
+  
 
 printf (  "%s\n", fish_fst_leaves_lake ( "hi" )  );
 
