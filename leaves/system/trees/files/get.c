@@ -25,7 +25,7 @@ void  *   that_words_name_result
 
 
 
-if  (  is_fst_leaves_system_trees_files  (  that_words_name  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
+if  (  is_fst_leaves_system_trees_files  (  that_words_name_files  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
 
 {
 
