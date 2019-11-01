@@ -125,7 +125,6 @@ that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( tha
 
 
 
-printf( "%s\n", that_words_result);
 
 
 fclose  (  note_files_get  );
