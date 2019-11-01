@@ -37,6 +37,9 @@ void  *   note_files_get;
 
 
 
+
+
+
 void  *   note_words_read;
 
 
@@ -120,6 +123,6 @@ free  (  note_words_read  );
 free  (  note_numbers_count  );
 
 
-return NULL;
+return 0;
 
 }
