@@ -25,7 +25,14 @@ void *  that_words_result
 
 
 
-void  *   note_files_get;
+
+
+
+
+
+
+
+
 
 
 that_words_result  =  malloc  (  1  *  sizeof ( char )  );
@@ -35,6 +42,13 @@ that_words_result  =  malloc  (  1  *  sizeof ( char )  );
 
 
 
+
+
+
+
+
+
+void  *   note_files_get;
 
 
 
@@ -62,10 +76,6 @@ note_numbers_count  =  malloc  (  1  *  sizeof ( int )  );
 
 
 
-printf( "%s\n", that_words_result);
-
-
-* ( char * )  that_words_result  =  '\0';
 
 
 
@@ -115,6 +125,7 @@ that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( tha
 
 
 
+printf( "%s\n", that_words_result);
 
 
 fclose  (  note_files_get  );
