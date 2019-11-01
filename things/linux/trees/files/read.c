@@ -23,7 +23,6 @@ void *  that_words_result
 {
 
 
-printf ( "1\n" );
 
 
 void  *   note_files_get;
@@ -59,6 +58,13 @@ note_numbers_count  =  malloc  (  1  *  sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+* ( char * )  that_words_result  =  '\0';
 
 
 
