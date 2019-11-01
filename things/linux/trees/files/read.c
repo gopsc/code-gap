@@ -99,7 +99,7 @@ that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( tha
 
 *  ( char * )  (   that_words_result   +   * ( int * ) note_numbers_count   )   =   * ( char * ) note_words_read;
 
-*  ( char * )  (   that_words_result   +   * ( int * ) note_numbers_count   +   1   )   =   '\0'
+*  ( char * )  (   that_words_result   +   * ( int * ) note_numbers_count   +   1   )   =   '\0';
 
 
 
