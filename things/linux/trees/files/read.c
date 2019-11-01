@@ -1,7 +1,7 @@
 
 
 
-#include  <stdio.h>
+#include  <stdlib.h>
 
 #include  <sys/stat.h>
 
@@ -120,6 +120,6 @@ free  (  note_words_read  );
 free  (  note_numbers_count  );
 
 
-return 0;
+return NULL;
 
 }
