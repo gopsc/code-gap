@@ -8,7 +8,7 @@
 #include  <sys/stat.h>
 
 
-void *  save_fst_things_trees_files
+void *  write_fst_things_trees_files
 
 (
 
