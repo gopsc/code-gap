@@ -18,7 +18,7 @@ void  *   get_fst_leaves_system_trees_files
 
 void  *   that_words_name,
 
-void  *   that_words_result
+void  *   that_words_name_result
 
 )
 
@@ -45,20 +45,13 @@ void  *   note_words_read;
 
 
 
-if  (  is_fst_leaves_system_trees_files  (  that_words_name  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
-
-{
-
-return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
-
-}
 
 
 
 
 
 
-else if  (  is_fst_leaves_system_trees_files  (  that_words_name  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
+if  (  is_fst_leaves_system_trees_files  (  that_words_name  )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
 
 {
 
@@ -102,9 +95,6 @@ strcat ( that_words_result, note_words_read );
 
 
 
-free ( note_words_read );
-
-fclose ( note_files_get );
 
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
