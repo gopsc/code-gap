@@ -63,6 +63,7 @@ return  0;
 
 
 
+free ( note_struct_status );
 
 return 1;
 
