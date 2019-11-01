@@ -82,7 +82,7 @@ for
 
 * ( int * ) note_numbers_count   =   0;
 
-*  (  that_words_result  +  * ( int * ) note_numbers_count  )   !=   '\0';
+* ( char * ) (  that_words_result  +  * ( int * ) note_numbers_count  )   !=   '\0';
 
 * ( int * ) note_numbers_count   =   * ( int * ) note_numbers_count   +   1
 
@@ -97,9 +97,9 @@ for
 that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( that_words_result ) )  *  sizeof ( char )  );
 
 
-*   (   that_words_result   +   * ( int * ) note_numbers_count   )   =   * note_words_read；
+*  ( char )  (   that_words_result   +   * ( int * ) note_numbers_count   )   =   * note_words_read；
 
-*   (   that_words_result   +   * ( int * ) note_numbers_count   +   1   )   =   '\0';
+*  ( char )  (   that_words_result   +   * ( int * ) note_numbers_count   +   1   )   =   '\0';
 
 
 
