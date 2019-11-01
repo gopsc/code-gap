@@ -32,21 +32,7 @@ note_struct_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
-if  (    lstat  ( that_words_name, note_struct_status )  !=  0    )
-
-{
-
-free ( note_struct_status );
-
-return 1;
-
-}
-
-
-    
-    
-
-else
+if  (    lstat  ( that_words_name, note_struct_status )  ==  0    )
 
 {
 
@@ -54,27 +40,10 @@ else
 
 
 
-
-
-
-
-
-if  (    S_ISREG  (    (  * ( struct stat * )  note_struct_status  )  . st_mode     )  ==  0    )
+if  (    S_ISREG  (    (  * ( struct stat * )  note_struct_status  )  . st_mode     )  !=  0    )
 
 {
 
-free ( note_struct_status );
-
-return  1;
-
-}
-
-    
-    
-    
-else
-    
-{
 
 free ( note_struct_status );
 
@@ -87,6 +56,11 @@ return  0;
 }
 
 
+    
+    
+
+    
+return 1;
 
 }
 
