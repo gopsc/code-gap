@@ -62,6 +62,7 @@ note_numbers_count  =  malloc  (  1  *  sizeof ( int )  );
 
 
 
+printf( "%s\n", that_words_result);
 
 
 * ( char * )  that_words_result  =  '\0';
