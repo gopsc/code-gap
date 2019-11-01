@@ -107,7 +107,7 @@ write_fst_leaves_lake ( "hello", "hi" );
 get_fst_leaves_system_trees_files  (  "/data/data/com.termux/files/home/hi",  "hello"  );
   
 
-printf (  "%s\n", fish_fst_leaves_lake ( "hi" )  );
+printf (  "%s\n", fish_fst_leaves_lake ( "hello" )  );
 
 
 
