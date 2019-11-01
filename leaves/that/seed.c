@@ -103,9 +103,8 @@ begin_fst_leaves_lake_existence ();
 
 write_fst_leaves_lake ( "hello", "hi" );
 
-write_fst_leaves_lake ( "hi", "hello" );
+get_leaves_system_trees_files  (  "/data/data/com.termux/files/home/a.out",  "hello"  );
 
-drop_fst_leaves_lake ( "hello" );
 
 
 
