@@ -120,8 +120,6 @@ free  (  note_words_read  );
 free  (  note_numbers_count  );
 
 
-printf (  "%s\n", that_words_result  );
-
 return 0;
 
 }
