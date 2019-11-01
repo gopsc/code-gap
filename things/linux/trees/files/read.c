@@ -113,11 +113,11 @@ that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( tha
 
 
 
-fclose  (  note_files_get  );
+//fclose  (  note_files_get  );
 
-free  (  note_words_read  );
+//free  (  note_words_read  );
 
-free  (  note_numbers_count  );
+//free  (  note_numbers_count  );
 
 return 0;
 
