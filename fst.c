@@ -143,6 +143,11 @@ void fft(int site) {
 #include  "./things/linux/data/free.c"
 
 
+#include  "./things/linux/data/words/find.c"
+
+#include  "./things/linux/data/words/copy.c"
+
+
 #include  "./things/linux/trees/dirents/create.c"
 
 #include  "./things/linux/trees/dirents/is.c"
