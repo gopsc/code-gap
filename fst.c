@@ -147,6 +147,8 @@ void fft(int site) {
 
 #include  "./things/linux/data/words/copy.c"
 
+#include  "./things/linux/data/words/measure.c"
+
 
 #include  "./things/linux/trees/dirents/create.c"
 
