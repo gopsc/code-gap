@@ -26,7 +26,7 @@ void  *   that_words_content
 
 void  *   note_numbers_count;
 
-note_numbers_count  =  create_fst_things_data  (    sizeof ( int )    );
+note_numbers_count  =  create_fst_things_data  (  1  *  sizeof ( int )    );
 
 * ( int * ) note_numbers_count  =  1;
 
@@ -34,7 +34,7 @@ note_numbers_count  =  create_fst_things_data  (    sizeof ( int )    );
 
 void *  note_numbers_count_two;
 
-note_numbers_count_two  =  crate_fst_things_data  (  1  *  sizeof ( int )  );   
+note_numbers_count_two  =  create_fst_things_data  (  1  *  sizeof ( int )  );   
    
    
    
