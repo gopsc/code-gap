@@ -26,7 +26,7 @@ void  *   that_words_content
 
 void  *   note_numbers_count;
 
-note_numbers_count  =  malloc  (    sizeof ( int )    );
+note_numbers_count  =  create_fst_things_data  (    sizeof ( int )    );
 
 * ( int * ) note_numbers_count  =  1;
 
@@ -34,7 +34,7 @@ note_numbers_count  =  malloc  (    sizeof ( int )    );
 
 void  *   note_words_name;
 
-note_words_name  =  malloc  (    strlen ( that_words_name )  *  sizeof ( char )    );
+note_words_name  =  create_fst_things_data  (    strlen ( that_words_name )  *  sizeof ( char )    );
 
 
 
@@ -75,7 +75,7 @@ while  (    * ( int * ) note_numbers_count  !=  0    )
 
 
 
-strcpy  (  note_words_name,  that_words_name  );
+copy_fst_things_data_words  (  note_words_name,  that_words_name  );
     
 note_place_name  =  note_words_name;
 
@@ -89,7 +89,7 @@ note_place_name  =  note_words_name;
 
 void *  note_numbers_count_two;
 
-note_numbers_count_two  =  malloc  (  1  *  sizeof ( int )  );    
+note_numbers_count_two  =  crate_fst_things_data  (  1  *  sizeof ( int )  );    
 
 
 
@@ -149,6 +149,10 @@ if ( * ( int * ) note_numbers_count != 0 )
 
 
 
+   
+   
+   
+   
 if  (  is_fst_leaves_system_trees_dirents ( note_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
 
 {
