@@ -51,10 +51,10 @@ if  (    S_ISREG  (    (  * ( struct stat * )  note_struct_status  )  . st_mode 
 {
 
 
+free ( note_struct_status);
+
 * ( * int ) that_numbers_result   =   0;
 
-
-free ( note_struct_status );
 
 return  0;
 
@@ -65,11 +65,12 @@ return  0;
 }
 
 
+
+free  ( note_struct_status );
+
 * ( * int ) that_numbers_result   =   1;
     
 
-free ( note_struct_status );
-  
 return 0;
 
 }
