@@ -7,10 +7,16 @@
 
 
 
-int   is_fst_things_trees_dirents
+void *  is_fst_things_trees_dirents
 
 
-(  void *  that_words_name  )
+(
+
+void *  that_words_name,
+
+void * that_numbers_result
+
+)
 
 
 
@@ -52,6 +58,8 @@ if  (    S_ISDIR  (        ( * ( struct stat * ) note_struct_status )  . st_mode
 
 free ( note_struct_status );
 
+* ( int * ) that_numbers_result  =  0;
+
 return  0;
 
 }
@@ -65,6 +73,8 @@ return  0;
 
 free ( note_struct_status );
 
-return 1;
+* ( int * ) that_numbers_result  =  1;
+
+return 0;
 
 }
