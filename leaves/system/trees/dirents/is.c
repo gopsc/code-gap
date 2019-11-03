@@ -16,7 +16,7 @@ void  *   is_fst_leaves_system_trees_dirents
 
 void *  note_numbers_result;
 
-note_numbers_result   =   malloc  (  sizeof ( int )  );
+note_numbers_result   =   create_fst_things_data  (  1 * sizeof ( int )  );
 
    
    
