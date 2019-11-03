@@ -14,12 +14,19 @@ void  *   is_fst_leaves_system_trees_dirents
 
 
 
+void *  note_numbers_result;
+
+note_numbers_result   =   malloc  (  sizeof ( int )  );
 
    
+   
+   
+   
+   
+is_fst_things_trees_dirents  (  that_words_name,  note_numbers_result  );
 
 
-
-if  (  is_fst_things_trees_dirents  (  that_words_name  )  ==  0  )
+if  (  * ( int * ) note_numbers_result  ==  0  )
    
 {
 
