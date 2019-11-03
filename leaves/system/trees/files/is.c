@@ -10,17 +10,18 @@ void  *   is_fst_leaves_system_trees_files
 {
 
 
+void *  note_numbers_result;
+    
+note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
 
 
+is_fst_things_trees_files  ( that_words_name, note_numbers_result );
 
 
-
-
-
-if  (  is_fst_things_trees_files  ( that_words_name )  ==  0  )
+if  (  * ( int * ) note_numbers_result  ==  0  )
     
 {
 
