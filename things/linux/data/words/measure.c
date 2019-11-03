@@ -3,11 +3,21 @@
 
 
 
-int  measure_fst_things_data_words
+void *  measure_fst_things_data_words
 
-(  void *  that_words_target  )
+(
+
+void *  that_words_target,
+
+void *  that_numbers_result
+
+)
 
 {
+
+
+
+
 
 void *  note_numbers_count;
 
@@ -34,7 +44,10 @@ for
 
 
 
-return  * ( int * ) note_numbers_count;
+* ( int * ) that_numbers_result   =   * ( int * ) note_numbers_count;
+
+
+return  0;
 
 }
 
