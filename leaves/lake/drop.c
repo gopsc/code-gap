@@ -24,14 +24,14 @@ void *  drop_fst_leaves_lake
 void *  note_numbers_count;
 
 
-note_numbers_count   =   malloc  (  1  *  sizeof ( int )  );
+note_numbers_count   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
 
 void *  note_numbers_switch;
 
-note_numbers_switch   =   malloc  (  1  *  sizeof ( int )  );
+note_numbers_switch   =  create_fst_things_data  (  1  *  sizeof ( int )  );
 
 * ( int * ) note_numbers_switch   =   0;
 
@@ -102,6 +102,12 @@ that_fst_leaves_lake [ * ( int * ) note_numbers_count  -  1 ]   =   that_fst_lea
 }
 
 
+  
+  
+  
+  
+  
+  
 
 if  (  * ( int * ) note_numbers_switch   ==   1  )
 
@@ -110,6 +116,8 @@ if  (  * ( int * ) note_numbers_switch   ==   1  )
 * ( int * ) that_fst_leaves_lake [ 0 ] [ 1 ]   =   * ( int * ) that_fst_leaves_lake [ 0 ] [ 1 ]   -   1;
 
 that_fst_leaves_lake   =   realloc  (  that_fst_leaves_lake,  ( 1  +  * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ] )  *  sizeof ( void * )  );
+
+
 }
 
 
