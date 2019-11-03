@@ -107,7 +107,17 @@ for
 
   
 
-note_place_name  =   strstr ( note_place_name + 1,  "/"  );
+find_fst_things_data_words
+   
+(
+
+note_place_name + 1,
+   
+"/",
+   
+note_place_name
+
+);
 
 
 
