@@ -30,6 +30,9 @@ if  (  * ( int * ) note_numbers_result  ==  0  )
    
 {
 
+
+free  ( note_numbers_result  );
+   
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
    
    
@@ -38,6 +41,8 @@ return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 
 
+
+free  ( note_numbers_result  );
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
