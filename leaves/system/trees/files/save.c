@@ -32,6 +32,14 @@ note_numbers_count  =  create_fst_things_data  (    sizeof ( int )    );
 
 
 
+void *  note_numbers_count_two;
+
+note_numbers_count_two  =  crate_fst_things_data  (  1  *  sizeof ( int )  );   
+   
+   
+   
+   
+
 void  *   note_words_name;
 
 note_words_name  =  create_fst_things_data  (    strlen ( that_words_name )  *  sizeof ( char )    );
@@ -85,11 +93,7 @@ note_place_name  =  note_words_name;
 
 
 
-    
-
-void *  note_numbers_count_two;
-
-note_numbers_count_two  =  crate_fst_things_data  (  1  *  sizeof ( int )  );    
+     
 
 
 
@@ -134,9 +138,6 @@ if  ( note_place_name == NULL )
 
 }
 
-free (  note_numbers_count_two  );
-
-
 
 
 
@@ -151,7 +152,7 @@ if ( * ( int * ) note_numbers_count != 0 )
 
 
    
-( * ( int * ) note_numbers_count ) ++;
+* ( int * ) note_numbers_count   =   * ( int * ) note_numbers_count   +   1;
 
 
 
@@ -191,6 +192,9 @@ create_fst_things_trees_dirents  (  note_words_name  );
 free ( note_words_name );
 
 free ( note_numbers_count );
+
+free (  note_numbers_count_two  );
+
 
 
 
