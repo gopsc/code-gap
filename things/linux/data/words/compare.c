@@ -103,9 +103,9 @@ return  0;
 
 
 
-void *  note_numbers_count;
+void *  note_numbers_counts;
 
-note_numbers_count   =   malloc  (  sizeof ( int )  );
+note_numbers_counts   =   malloc  (  sizeof ( int )  );
 
 
 
@@ -113,11 +113,11 @@ for
 
 (
 
-* ( int * ) note_numbers_count   =   0;
+* ( int * ) note_numbers_counts   =   0;
 
-* ( int * ) note_numbers_count   <   * ( int * ) note_numbers_lengths_one;
+* ( int * ) note_numbers_counts   <   * ( int * ) note_numbers_lengths_one;
 
-* ( int * ) note_numbers_count   =   * ( int * ) note_numbers_count   +   1
+* ( int * ) note_numbers_counts   =   * ( int * ) note_numbers_counts   +   1
 
 )
 
@@ -125,7 +125,7 @@ for
 
 
 
-if  (  * ( char * ) (  that_words_one  +  * ( int * ) note_numbers_count  )   !=   * ( char * ) (  that_words_two  +  * ( int * ) note_numbers_count  )  )
+if  (  * ( char * ) (  that_words_one  +  * ( int * ) note_numbers_counts  )   !=   * ( char * ) (  that_words_two  +  * ( int * ) note_numbers_counts  )  )
 
 {
 
@@ -133,7 +133,7 @@ free  (  note_numbers_lengths_one  );
 
 free  (  note_numbers_lengths_two  );
 
-free  (  note_numbers_count  );
+free  (  note_numbers_counts  );
 
 
 * ( int * ) that_numbers_result   =   1;
@@ -161,7 +161,7 @@ free  (  note_numbers_lengths_one  );
 
 free  (  note_numbers_lengths_two  );
 
-free  (  note_numbers_count  );
+free  (  note_numbers_counts  );
 
 
 * ( int * ) that_numbers_result   =   0;
