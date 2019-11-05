@@ -3,6 +3,10 @@
 
 
 
+
+#include  <stdlib.h>
+
+
 void *  copy_fst_things_data_words
 
 
