@@ -44,7 +44,7 @@ read_fst_things_trees_files  (  that_words_name_files,  fish_fst_leaves_lake ( t
 
 
 
-free_things_fst_data  (  note_numbers_results  );
+free_fst_things_data  (  note_numbers_results  );
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
@@ -58,7 +58,7 @@ return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 
 
-free_things_fst_data  (  note_numbers_results  );
+free_fst_things_data  (  note_numbers_results  );
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
