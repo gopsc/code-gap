@@ -22,24 +22,25 @@ void * that_words_content
 
 
 
+void *  note_numbers_results;
+
+note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
-if  (  is_fst_leaves_system_trees_files ( that_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
-
-{
-
-return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
-
-}
+is_fst_things_trees_files  (  that_words_name,  note_numbers_results  );
 
 
 
-else if  (  is_fst_leaves_system_trees_files ( that_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
+
+if  (  * ( int * ) note_numbers_results   ==   0  )
 
 {
 
 append_fst_things_trees_files  (  that_words_name,  that_words_content  );
+
+
+free_fst_things_trees_files  (  note_numbers_results  );
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
@@ -49,7 +50,8 @@ return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 
 
+free_fst_things_trees_files  (  note_numbers_results  );
 
-return  (  "that_fst_leaves_lake_existence_no"  );
+return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
 }
