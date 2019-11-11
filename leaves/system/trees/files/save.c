@@ -50,7 +50,9 @@ void  *   note_place_name;
 
 
 
-
+void  *   note_numbers_results;
+   
+note_numbers_results   =   create_fst_things_data  (  1 * sizeof ( int )  );
 
 
 
@@ -126,11 +128,11 @@ note_place_name
 
 
 
-if  ( note_place_name == NULL )
+if  (  note_place_name   ==   NULL  )
 
 {
 
-* ( int * ) note_numbers_count = 0;
+* ( int * ) note_numbers_count   =   0;
 
 }
 
@@ -146,7 +148,7 @@ if  ( note_place_name == NULL )
 
 
 
-if ( * ( int * ) note_numbers_count != 0 )
+if (  * ( int * ) note_numbers_count   !=   0  )
 
 {
 
@@ -160,11 +162,12 @@ if ( * ( int * ) note_numbers_count != 0 )
 
 
 
+
+   
+is_fst_things_trees_dirents  (  note_words_name,  note_numbers_results  );
    
    
-   
-   
-if  (  is_fst_leaves_system_trees_dirents ( note_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
+if  (  * ( int * ) note_numbers_results   ==   1  )
 
 {
 
@@ -204,22 +207,10 @@ free (  note_numbers_count_two  );
 
 
 
+is_fst_things_trees_dirents  (  that_words_name,  note_numbers_results  );
 
 
-
-if  (  is_fst_leaves_system_trees_dirents ( that_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  )  )
-
-{
-
-return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
-
-}
-
-
-
-
-
-else if  (  is_fst_leaves_system_trees_dirents ( that_words_name )  ==  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  )  )
+if  (  * ( int * ) note_numbers_results   ==   1  )
 
 {
 
@@ -227,12 +218,18 @@ else if  (  is_fst_leaves_system_trees_dirents ( that_words_name )  ==  fish_fst
 write_fst_things_trees_files  (  that_words_name,  that_words_content  );
 
 
+   
+free_fst_things_data  (  note_numbers_results  );
+
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 
 }
 
+   
+   
 
+free_fst_things_data  (  note_numbers_results  );
 
 return  fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no"  );
 
