@@ -192,11 +192,11 @@ create_fst_things_trees_dirents  (  note_words_name  );
 
 
 
-free ( note_words_name );
+free_fst_things_data  (  note_words_name  );
 
-free ( note_numbers_count );
+free_fst_things_data  (  note_numbers_count  );
 
-free (  note_numbers_count_two  );
+free_fst_things_data  (  note_numbers_count_two  );
 
 
 
