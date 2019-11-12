@@ -136,34 +136,34 @@ void fft(int site) {
 
 
 
-#include  "./things/linux/data/create.c"
+#include  "./things/data/create.c"
 
-#include  "./things/linux/data/resize.c"
+#include  "./things/data/resize.c"
 
-#include  "./things/linux/data/free.c"
-
-
-#include  "./things/linux/data/words/find.c"
-
-#include  "./things/linux/data/words/copy.c"
-
-#include  "./things/linux/data/words/measure.c"
-
-#include  "./things/linux/data/words/compare.c"
+#include  "./things/data/free.c"
 
 
-#include  "./things/linux/trees/dirents/create.c"
+#include  "./things/data/words/find.c"
 
-#include  "./things/linux/trees/dirents/is.c"
+#include  "./things/data/words/copy.c"
+
+#include  "./things/data/words/measure.c"
+
+#include  "./things/data/words/compare.c"
 
 
-#include  "./things/linux/trees/files/is.c"
+#include  "./things/trees/dirents/create.c"
 
-#include  "./things/linux/trees/files/append.c"
+#include  "./things/trees/dirents/is.c"
 
-#include  "./things/linux/trees/files/write.c"
 
-#include  "./things/linux/trees/files/read.c"
+#include  "./things/trees/files/is.c"
+
+#include  "./things/trees/files/append.c"
+
+#include  "./things/trees/files/write.c"
+
+#include  "./things/trees/files/read.c"
 
 
 
