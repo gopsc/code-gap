@@ -12,9 +12,9 @@ void *  read_fst_things_trees_files
 
 (  
 
-void *  that_words_name,
+void *  that_words_names,
 
-void *  that_words_result
+void *  that_words_results
 
 )
 
@@ -23,7 +23,7 @@ void *  that_words_result
 {
 
 
-* ( char * ) that_words_result  =  '\0';
+* ( char * ) that_words_results  =  '\0';
 
 
 
@@ -33,7 +33,7 @@ void *  that_words_result
 
 
 
-void  *   note_files_get;
+void  *   note_files_got;
 
 
 
@@ -51,13 +51,10 @@ note_words_read  =  malloc  (  2  *  sizeof ( char )  );
 
 
 
-void *  note_numbers_count;
+void *  note_numbers_counts;
 
 
-note_numbers_count  =  malloc  (  1  *  sizeof ( int )  );
-
-
-
+note_numbers_counts  =  malloc  (  1  *  sizeof ( int )  );
 
 
 
@@ -69,13 +66,16 @@ note_numbers_count  =  malloc  (  1  *  sizeof ( int )  );
 
 
 
-note_files_get   =   fopen  (  that_words_name,  "r"  );
+
+
+
+note_files_got   =   fopen  (  that_words_names,  "r"  );
 
 
 
 
 
-while  (    fgets  (   note_words_read,   2,   ( FILE * ) note_files_get   )   !=   NULL    )
+while  (    fgets  (   note_words_read,   2,   ( FILE * ) note_files_got   )   !=   NULL    )
 
 {
 
@@ -85,11 +85,11 @@ for
 
 (
 
-* ( int * ) note_numbers_count   =   0;
+* ( int * ) note_numbers_counts   =   0;
 
-* ( char * ) (  that_words_result  +  * ( int * ) note_numbers_count  )   !=   '\0';
+* ( char * ) (  that_words_results  +  * ( int * ) note_numbers_counts  )   !=   '\0';
 
-* ( int * ) note_numbers_count   =   * ( int * ) note_numbers_count   +   1
+* ( int * ) note_numbers_counts   =   * ( int * ) note_numbers_counts   +   1
 
 )
 
@@ -99,12 +99,12 @@ for
 
 
 
-that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( that_words_result ) )  *  sizeof ( char )  );
+that_words_results  =  realloc (  that_words_results,   ( 1  +  1  +  strlen ( that_words_results ) )  *  sizeof ( char )  );
 
 
-*  ( char * )  (   that_words_result   +   * ( int * ) note_numbers_count   )   =   * ( char * ) note_words_read;
+*  ( char * )  (   that_words_results   +   * ( int * ) note_numbers_counts   )   =   * ( char * ) note_words_read;
 
-*  ( char * )  (   that_words_result   +   * ( int * ) note_numbers_count   +   1   )   =   '\0';
+*  ( char * )  (   that_words_results   +   * ( int * ) note_numbers_counts   +   1   )   =   '\0';
 
 
 
@@ -116,11 +116,11 @@ that_words_result  =  realloc (  that_words_result,   ( 1  +  1  +  strlen ( tha
 
 
 
-fclose  (  note_files_get  );
+fclose  (  note_files_got  );
 
 free  (  note_words_read  );
 
-free  (  note_numbers_count  );
+free  (  note_numbers_counts  );
 
 
 return 0;
