@@ -15,9 +15,9 @@ void *  is_fst_things_trees_files
 
 (
 
-void *  that_words_name,
+void *  that_words_names,
 
-void *  that_numbers_result
+void *  that_numbers_results
 
 )
 
@@ -28,33 +28,33 @@ void *  that_numbers_result
 
 
 
-void  *   note_struct_status;
+void  *   note_structures_status;
 
 
-note_struct_status  =  malloc  (  sizeof ( struct stat )  );
-
-
-
-
-
-
-if  (    lstat  ( that_words_name, note_struct_status )  ==  0    )
-
-{
+note_structures_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
 
 
-if  (    S_ISREG  (    (  * ( struct stat * )  note_struct_status  )  . st_mode     )  !=  0    )
+
+if  (    lstat  ( that_words_names, note_structures_status )  ==  0    )
 
 {
 
 
-* ( int * ) that_numbers_result   =   0;
 
 
-free ( note_struct_status);
+
+if  (    S_ISREG  (    (  * ( struct stat * )  note_structures_status  )  . st_mode     )  !=  0    )
+
+{
+
+
+* ( int * ) that_numbers_results   =   0;
+
+
+free ( note_structures_status);
 
 return  0;
 
@@ -67,10 +67,10 @@ return  0;
 
 
 
-* ( int * ) that_numbers_result   =   1;
+* ( int * ) that_numbers_results   =   1;
 
 
-free  ( note_struct_status );
+free  ( note_structures_status );
     
 return 0;
 
