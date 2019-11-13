@@ -12,16 +12,16 @@ void *  resize_fst_things_data
 
 (
 
-void *  that_place_data,
+void *  that_places_data,
 
-int     that_numbers_size
+int     that_numbers_sizes
 
 )
 
 
 {
 
-return   realloc  (  that_place_data,  that_numbers_size  );
+return   realloc  (  that_places_data,  that_numbers_sizes  );
 
 }
 
