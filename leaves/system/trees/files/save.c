@@ -85,7 +85,7 @@ while  (    * ( int * ) note_numbers_counts  !=  0    )
 
 copy_fst_things_data_words  (  note_words_names,  that_words_names  );
     
-note_place_names  =  note_words_names;
+note_places_names  =  note_words_names;
 
 
 
