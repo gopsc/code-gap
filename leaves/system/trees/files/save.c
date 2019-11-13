@@ -44,7 +44,7 @@ note_words_names  =  create_fst_things_data  (    strlen ( that_words_names )  *
 
 
 
-void  *   note_place_names;
+void  *   note_places_names;
 
 
 
