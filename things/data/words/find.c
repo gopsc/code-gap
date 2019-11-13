@@ -146,7 +146,7 @@ break;
 }
 
 
-else if  (   * ( char * ) (  that_words_targets  +  * ( int * ) note_numbers_counts_targets  +  * ( int * ) note_numbers_counts_finds  )   ==   * ( char * ) (  that_words_found  +  * ( int * ) note_numbers_counts_found  )   )
+else if  (   * ( char * ) (  that_words_targets  +  * ( int * ) note_numbers_counts_targets  +  * ( int * ) note_numbers_counts_found  )   ==   * ( char * ) (  that_words_found  +  * ( int * ) note_numbers_counts_found  )   )
 
 {
 
@@ -169,7 +169,7 @@ if  (  * ( int * ) note_numbers_switches   ==   0  )
 {
 
 
-that_words_results   =   that_words_targets   +   * ( int * ) note_numbers_counts_target;
+that_words_results   =   that_words_targets   +   * ( int * ) note_numbers_counts_targets;
 
 
 
