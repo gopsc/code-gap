@@ -20,7 +20,7 @@ void *  that_words_contents
 
 {
 
-void  *   note_files_saved  =  fopen  (  that_words_name,  "w"  );
+void  *   note_files_saved  =  fopen  (  that_words_names,  "w"  );
 
 
 fprintf  (  note_files_saved,  "%s",  that_words_contents  );
