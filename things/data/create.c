@@ -8,11 +8,11 @@
 
 void  *   create_fst_things_data
 
-(  int   that_numbers_size  )
+(  int   that_numbers_sizes  )
 
 {
 
-return   malloc  (  that_numbers_size );
+return   malloc  (  that_numbers_sizes );
 
 }
 
