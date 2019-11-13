@@ -12,21 +12,21 @@ void *  write_fst_things_trees_files
 
 (
 
-void *  that_words_name,
+void *  that_words_names,
 
-void *  that_words_content
+void *  that_words_contents
 
 )
 
 {
 
-void  *   note_files_save  =  fopen  (  that_words_name,  "w"  );
+void  *   note_files_saved  =  fopen  (  that_words_name,  "w"  );
 
 
-fprintf  (  note_files_save,  "%s",  that_words_content  );
+fprintf  (  note_files_saved,  "%s",  that_words_contents  );
 
 
-fclose  (  note_files_save  );
+fclose  (  note_files_saved  );
 
 
 
