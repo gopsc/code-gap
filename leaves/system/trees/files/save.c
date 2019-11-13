@@ -115,18 +115,18 @@ find_fst_things_data_words
    
 (
 
-note_places_name + 1,
+note_places_names + 1,
    
 "/",
    
-note_places_name
+note_places_names
 
 );
 
 
 
 
-if  (  note_places_name   ==   NULL  )
+if  (  note_places_names   ==   NULL  )
 
 {
 
