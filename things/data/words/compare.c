@@ -16,7 +16,7 @@ void *  that_words_one,
 
 void *  that_words_two,
 
-void *  that_numbers_result
+void *  that_numbers_results
 
 )
 
@@ -90,7 +90,7 @@ free  (  note_numbers_lengths_one  );
 free  (  note_numbers_lengths_two  );
 
 
-* ( int * ) that_numbers_result   =   1;
+* ( int * ) that_numbers_results   =   1;
 
 
 return  0;
@@ -136,7 +136,7 @@ free  (  note_numbers_lengths_two  );
 free  (  note_numbers_counts  );
 
 
-* ( int * ) that_numbers_result   =   1;
+* ( int * ) that_numbers_results   =   1;
 
 
 return  0;
@@ -164,7 +164,7 @@ free  (  note_numbers_lengths_two  );
 free  (  note_numbers_counts  );
 
 
-* ( int * ) that_numbers_result   =   0;
+* ( int * ) that_numbers_results   =   0;
 
 
 return  0;
