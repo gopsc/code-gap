@@ -10,9 +10,9 @@ void  *   append_fst_leaves_system_trees_files
 
 (
 
-void * that_words_name,
+void * that_words_names,
 
-void * that_words_content
+void * that_words_contents
 
 )
 
@@ -28,7 +28,7 @@ note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
-is_fst_things_trees_files  (  that_words_name,  note_numbers_results  );
+is_fst_things_trees_files  (  that_words_names,  note_numbers_results  );
 
 
 
@@ -37,7 +37,7 @@ if  (  * ( int * ) note_numbers_results   ==   0  )
 
 {
 
-append_fst_things_trees_files  (  that_words_name,  that_words_content  );
+append_fst_things_trees_files  (  that_words_names,  that_words_contents  );
 
 
 free_fst_things_data  (  note_numbers_results  );
