@@ -12,22 +12,22 @@ void *  append_fst_things_trees_files
 
 (
 
-void *  that_words_name,
+void *  that_words_names,
 
-void *  that_words_content
+void *  that_words_contents
 
 )
 
 {
 
 
-FILE *  note_files_append  =  fopen ( that_words_name, "a" );
+FILE *  note_files_appended  =  fopen ( that_words_names, "a" );
 
 
-fprintf  (  note_files_append,  "%s",  that_words_content  );
+fprintf  (  note_files_appended,  "%s",  that_words_contents  );
 
 
-fclose ( note_files_append );
+fclose ( note_files_appended );
 
 
 
