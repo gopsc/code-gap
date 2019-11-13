@@ -12,31 +12,31 @@ void *  find_fst_things_data_words
 
 (
 
-void *  that_words_target,
+void *  that_words_targets,
 
-void *  that_words_find,
+void *  that_words_found,
 
-void *  that_words_result
+void *  that_words_results
 
 )
 
 {
 
 
-void *  note_numbers_lengths_target;
+void *  note_numbers_lengths_targets;
 
-note_numbers_lengths_target   =   malloc  (  1  *  sizeof ( int )  );
+note_numbers_lengths_targets   =   malloc  (  1  *  sizeof ( int )  );
 
 
 for
 
 (
 
-* ( int * ) note_numbers_lengths_target   =   0;
+* ( int * ) note_numbers_lengths_targets   =   0;
 
-* ( char * ) (  that_words_target  +  * ( int * ) note_numbers_lengths_target  )   !=   '\0';
+* ( char * ) (  that_words_targets  +  * ( int * ) note_numbers_lengths_targets  )   !=   '\0';
 
-* ( int * ) note_numbers_lengths_target   =   * ( int * ) note_numbers_lengths_target
+* ( int * ) note_numbers_lengths_targets   =   * ( int * ) note_numbers_lengths_targets   +   1
 
 )
 
@@ -51,20 +51,20 @@ for
 
 
 
-void *  note_numbers_lengths_find;
+void *  note_numbers_lengths_found;
 
-note_numbers_lengths_find   =   malloc  (  1  *  sizeof ( int )  );
+note_numbers_lengths_found   =   malloc  (  1  *  sizeof ( int )  );
 
 
 for
 
 (
 
-* ( int * ) note_numbers_lengths_find   =   0;
+* ( int * ) note_numbers_lengths_found   =   0;
 
-* ( char * ) (  that_words_find  +  * ( int * ) note_numbers_lengths_find  )   !=   '\0';
+* ( char * ) (  that_words_found  +  * ( int * ) note_numbers_lengths_found  )   !=   '\0';
 
-* ( int * ) note_numbers_lengths_find   =   * ( int * ) note_numbers_lengths_find   +   1
+* ( int * ) note_numbers_lengths_found   =   * ( int * ) note_numbers_lengths_found   +   1
 
 )
 
@@ -79,20 +79,20 @@ for
 
 
 
-void *  note_numbers_counts_target;
+void *  note_numbers_counts_targets;
 
-note_numbers_counts_target   =   malloc  (  1  *  sizeof ( int )  );
-
-
-void *  note_numbers_counts_find;
-
-note_numbers_counts_find   =   malloc  (  1  *  sizeof ( int )  );
+note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( int )  );
 
 
+void *  note_numbers_counts_found;
 
-void *  note_numbers_switch;
+note_numbers_counts_found   =   malloc  (  1  *  sizeof ( int )  );
 
-note_numbers_switch   =   malloc  (  1  *  sizeof ( int )  );
+
+
+void *  note_numbers_switches;
+
+note_numbers_switches   =   malloc  (  1  *  sizeof ( int )  );
 
 
 
@@ -103,11 +103,11 @@ for
 
 (
 
-* ( int * ) note_numbers_counts_target   =   0;
+* ( int * ) note_numbers_counts_targets   =   0;
 
-* ( int * ) note_numbers_counts_target   <   * ( int * ) note_numbers_lengths_target;
+* ( int * ) note_numbers_counts_targets   <   * ( int * ) note_numbers_lengths_targets;
 
-* ( int * ) note_numbers_counts_target   =   * ( int * ) note_numbers_counts_target   +   1
+* ( int * ) note_numbers_counts_targets   =   * ( int * ) note_numbers_counts_targets   +   1
 
 )
 
@@ -115,18 +115,18 @@ for
 
 
 
-* ( int * ) note_numbers_switch   =   1;
+* ( int * ) note_numbers_switches   =   1;
 
 
 for
 
 (
 
-* ( int * ) note_numbers_counts_find   =   0;
+* ( int * ) note_numbers_counts_found   =   0;
 
-* ( int * ) note_numbers_counts_find   <   * ( int * ) note_numbers_lengths_find;
+* ( int * ) note_numbers_counts_found   <   * ( int * ) note_numbers_lengths_found;
 
-* ( int * ) note_numbers_counts_find   =   * ( int * ) note_numbers_counts_find   +   1
+* ( int * ) note_numbers_counts_found   =   * ( int * ) note_numbers_counts_found   +   1
 
 )
 
@@ -135,22 +135,22 @@ for
 
 
 
-if  (   * ( char * ) (  that_words_target  +  * ( int * ) note_numbers_counts_target  +  * ( int * ) note_numbers_counts_find  )   !=   * ( char * ) (  that_words_find   +  * ( int * ) note_numbers_counts_find  )   )
+if  (   * ( char * ) (  that_words_targets  +  * ( int * ) note_numbers_counts_targets  +  * ( int * ) note_numbers_counts_found  )   !=   * ( char * ) (  that_words_found   +  * ( int * ) note_numbers_counts_found  )   )
 
 {
 
-* ( int * ) note_numbers_switch   =   1;
+* ( int * ) note_numbers_switches   =   1;
 
 break;
 
 }
 
 
-else if  (   * ( char * ) (  that_words_target  +  * ( int * ) note_numbers_counts_target  +  * ( int * ) note_numbers_counts_find  )   ==   * ( char * ) (  that_words_find  +  * ( int * ) note_numbers_counts_find  )   )
+else if  (   * ( char * ) (  that_words_targets  +  * ( int * ) note_numbers_counts_targets  +  * ( int * ) note_numbers_counts_finds  )   ==   * ( char * ) (  that_words_found  +  * ( int * ) note_numbers_counts_found  )   )
 
 {
 
-* ( int * ) note_numbers_switch   =   0;
+* ( int * ) note_numbers_switches   =   0;
 
 }
 
@@ -164,26 +164,26 @@ else if  (   * ( char * ) (  that_words_target  +  * ( int * ) note_numbers_coun
 
 
 
-if  (  * ( int * ) note_numbers_switch   ==   0  )
+if  (  * ( int * ) note_numbers_switches   ==   0  )
 
 {
 
 
-that_words_result   =   that_words_target   +   * ( int * ) note_numbers_counts_target;
+that_words_results   =   that_words_targets   +   * ( int * ) note_numbers_counts_target;
 
 
 
-free  (  note_numbers_lengths_target  );
+free  (  note_numbers_lengths_targets  );
 
-free  (  note_numbers_lengths_find  );
-
-
-free  (  note_numbers_counts_target  );
-
-free  (  note_numbers_counts_find  );
+free  (  note_numbers_lengths_found  );
 
 
-free  (  note_numbers_switch  );
+free  (  note_numbers_counts_targets  );
+
+free  (  note_numbers_counts_found  );
+
+
+free  (  note_numbers_switches  );
 
 
 
@@ -208,20 +208,20 @@ return   0;
 
 
 
-that_words_result   =   0;
+that_words_results   =   0;
 
 
-free  (  note_numbers_lengths_target  );
+free  (  note_numbers_lengths_targets  );
 
-free  (  note_numbers_lengths_find );
-
-
-free  (  note_numbers_counts_target  );
-
-free  (  note_numbers_counts_find  );
+free  (  note_numbers_lengths_found );
 
 
-free  (  note_numbers_switch  );
+free  (  note_numbers_counts_targets  );
+
+free  (  note_numbers_counts_found  );
+
+
+free  (  note_numbers_switches  );
 
 
 
