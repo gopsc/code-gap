@@ -3,18 +3,14 @@
 
 
 
-#include  <stdlib.h>
-
-
-
 void *  end_fst_leaves_lake ()
 
 {
 
 
-void *  note_numbers_count;
+void *  note_numbers_counts;
 
-note_numbers_count   =   malloc  (  1 * sizeof ( int )  );
+note_numbers_counts   =   create_fst_things_data  (  1 * sizeof ( int )  );
 
 
 
@@ -23,37 +19,37 @@ for
 
 (
 
-* ( int * ) note_numbers_count  =  1;
+* ( int * ) note_numbers_counts  =  1;
 
-* ( int * ) note_numbers_count  <=  * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ];
+* ( int * ) note_numbers_counts  <=  * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ];
 
-* ( int * ) note_numbers_count  =  * ( int * ) note_numbers_count   +   1
+* ( int * ) note_numbers_counts  =  * ( int * ) note_numbers_counts   +   1
 
 )
 
 {
 
-free   (  that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ] [ 1 ]  );
+free_fst_things_data   (  that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ] [ 1 ]  );
 
-free   (  that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ] [ 0 ]  );
+free_fst_things_data   (  that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ] [ 0 ]  );
 
-free   (  that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ]  );
+free_fst_things_data   (  that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ]  );
 
 }
 
-free  (  note_numbers_count );
+free_fst_things_data  (  note_numbers_counts );
 
 
 
 
 
-free  (  that_fst_leaves_lake  [ 0 ] [ 1 ]  );
+free_fst_things_data  (  that_fst_leaves_lake  [ 0 ] [ 1 ]  );
 
-free  (  that_fst_leaves_lake  [ 0 ] [ 0 ]  );
+free_fst_things_data  (  that_fst_leaves_lake  [ 0 ] [ 0 ]  );
 
-free  (  that_fst_leaves_lake  [ 0 ]  );
+free_fst_things_data  (  that_fst_leaves_lake  [ 0 ]  );
 
-free  (  that_fst_leaves_lake  );
+free_fst_things_data  (  that_fst_leaves_lake  );
 
 
 
