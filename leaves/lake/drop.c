@@ -72,7 +72,7 @@ if  (  * ( int * ) note_numbers_switches   ==   0  )
 compare_fst_things_data_words  (  that_words_names,  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ],  note_numbers_results  );
 
   
-if  (   note_numbers_results   ==   0   )
+if  (   * ( int * ) note_numbers_results   ==   0   )
 
 {
 
@@ -135,6 +135,9 @@ free_fst_things_data  (  note_numbers_counts  );
 
 free_fst_things_data  (  note_numbers_switches );
 
+free_fst_things_data  (  note_numbers_results  );
+  
+  
 return  that_fst_leaves_lake;
 
 }
