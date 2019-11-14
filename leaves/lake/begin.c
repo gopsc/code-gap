@@ -3,10 +3,6 @@
 
 
 
-#include  <stdlib.h>
-
-#include  <string.h>
-
 
 
 void  *   begin_fst_leaves_lake   ()
@@ -44,17 +40,6 @@ that_fst_leaves_lake  [ 0 ] [ 1 ]   =   create_fst_things_data (  1 * sizeof ( i
 copy_fst_things_data_words  (  that_fst_leaves_lake  [ 0 ] [ 0 ],  "that_fst_leaves_lake"  );
   
 *  (  int *  )   that_fst_leaves_lake  [ 0 ] [ 1 ]   =   0;
-
-  
-
-  
-
-/*
-
-printf ( "%s\n",  that_fst_leaves_lake  [ 0 ] [ 0 ]  );
-
-*/
-
 
 
 }  
