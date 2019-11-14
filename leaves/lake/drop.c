@@ -21,7 +21,7 @@ void *  drop_fst_leaves_lake
 
 
 
-void *  note_numbers_counts;
+void  *   note_numbers_counts;
 
 
 note_numbers_counts   =   create_fst_things_data  (  1  *  sizeof ( int )  );
@@ -29,17 +29,24 @@ note_numbers_counts   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
-void *  note_numbers_switches;
+void  *   note_numbers_switches;
 
 note_numbers_switches   =  create_fst_things_data  (  1  *  sizeof ( int )  );
 
 * ( int * ) note_numbers_switches   =   0;
 
 
+  
+  
+void  *   note_numbers_results;
+
+note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
-
-
+  
+  
+  
+  
 for
 
 (
@@ -66,8 +73,10 @@ if  (  * ( int * ) note_numbers_switches   ==   0  )
 
 
 
+compare_fst_things_data_words  (  that_words_names,  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ],  note_numbers_results  );
 
-if  (   strcmp  (  that_words_names,  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ]  )   ==   0   )
+  
+if  (   strcmp  ( note_numbers_results   ==   0   )
 
 {
 
