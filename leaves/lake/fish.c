@@ -23,10 +23,10 @@ void  *   note_places_results;
 
 void  *   note_numbers_counts;
 
-note_numbers_count   =   create_fst_things_data  (  1 * sizeof ( int )  );
+note_numbers_counts   =   create_fst_things_data  (  1 * sizeof ( int )  );
 
 
-void  *   note_numbers_results
+void  *   note_numbers_results;
  
 note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
  
@@ -52,14 +52,14 @@ for
 
  
  
-compare_fst_things_data_words  (  that_words_names,  that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ] [ 0 ],  that_numbers_results  );
+compare_fst_things_data_words  (  that_words_names,  that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ] [ 0 ],  note_numbers_results  );
 
-if   (   * ( int * ) that_numbers_results   ==   0   )
+if   (   * ( int * ) note_numbers_results   ==   0   )
 
 {
 
 
-note_places_results   =   that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ] [ 1 ];
+note_places_results   =   that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ] [ 1 ];
 
  
 
@@ -68,7 +68,7 @@ free_fst_things_data  (  note_numbers_counts  );
 free_fst_things_data  (  note_numbers_results  );
 
  
-return  note_places_result;
+return  note_places_results;
 
 
 }
@@ -82,7 +82,7 @@ return  note_places_result;
 
 
 
-free_fst_things_data ( note_numbers_count );
+free_fst_things_data ( note_numbers_counts );
 
 free_fst_things_data  (  note_numbers_results  );
  
