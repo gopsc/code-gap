@@ -82,7 +82,7 @@ if   (   strlen  ( that_words_contents )   <=   strlen (  that_fst_leaves_lake  
 
 strcpy  (   that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],   that_words_contents   );
 
-that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   realloc  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
+that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   resize_fst_things_data  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
 
 }
 
