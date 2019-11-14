@@ -2,62 +2,91 @@
 
 
 
-#include <stdlib.h>
 
 
 
-void *  fish_fst_leaves_lake
+void  *   fish_fst_leaves_lake
 
-(  void *  that_words_name  )
+(  void *  that_words_names  )
 
 {
  
+ 
+ 
+ 
+ 
+ 
+ 
 
-void *  note_places_result;
+void  *   note_places_results;
 
 
-void *  note_numbers_count;
+void  *   note_numbers_counts;
 
-note_numbers_count   =   malloc  (  1 * sizeof ( int )  );
+note_numbers_count   =   create_fst_things_data  (  1 * sizeof ( int )  );
 
 
+void  *   note_numbers_results
+ 
+note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 for
 
 (
 
-* ( int * ) note_numbers_count  =  1;
+* ( int * ) note_numbers_counts  =  1;
 
-* ( int * ) note_numbers_count  <=  * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ];
+* ( int * ) note_numbers_counts  <=  * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ];
 
-* ( int * ) note_numbers_count  =  * ( int * ) note_numbers_count   +   1
+* ( int * ) note_numbers_counts  =  * ( int * ) note_numbers_counts   +   1
 
 )
 
 {
 
+ 
+ 
+compare_fst_things_data_words  (  that_words_names,  that_fst_leaves_lake  [  * ( int * ) note_numbers_counts  ] [ 0 ],  that_numbers_results  );
 
-if   (   strcmp  (  that_words_name,  that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ] [ 0 ]  )   ==  0   )
+if   (   * ( int * ) that_numbers_results   ==   0   )
 
 {
 
 
-note_places_result   =   that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ] [ 1 ];
+note_places_results   =   that_fst_leaves_lake  [  * ( int * ) note_numbers_count  ] [ 1 ];
 
-free  (  note_numbers_count  );
+ 
 
+free_fst_things_data  (  note_numbers_counts  );
 
+free_fst_things_data  (  note_numbers_results  );
+
+ 
 return  note_places_result;
 
 
 }
 
+ 
+ 
+ 
+ 
 }
 
 
 
 
-free ( note_numbers_count );
+free_fst_things_data ( note_numbers_count );
 
+free_fst_things_data  (  note_numbers_results  );
+ 
+ 
 return  that_fst_leaves_lake;
 
 }
