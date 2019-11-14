@@ -115,7 +115,7 @@ return  that_fst_leaves_lake;
 that_fst_leaves_lake   =   realloc  (  that_fst_leaves_lake,  ( 1 + 1 + * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ] )  *  sizeof ( void * )  );
 
 that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ]   =   malloc  (  2  *  sizeof ( void * )  );
-s
+
 
 
 that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ]   =   malloc  (  ( 1 + strlen ( that_words_names ) )  *  sizeof ( char )  );
