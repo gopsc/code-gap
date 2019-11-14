@@ -80,7 +80,7 @@ if   (   strlen  ( that_words_contents )   <=   strlen (  that_fst_leaves_lake  
 
 {
 
-strcpy  (   that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],   that_words_contents   );
+copy_fst_things_data_words  (   that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],   that_words_contents   );
 
 that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   resize_fst_things_data  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
 
@@ -93,9 +93,9 @@ else if (   strlen  ( that_words_contents )   >   strlen (  that_fst_leaves_lake
 
 {
 
-that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   realloc  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
+that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   resize_fst_things_data  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
 
-strcpy  (   that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],   that_words_contents   );
+copy_fst_things_data_words  (   that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],   that_words_contents   );
 
 }
 
@@ -126,21 +126,21 @@ return  that_fst_leaves_lake;
 
 
 
-that_fst_leaves_lake   =   realloc  (  that_fst_leaves_lake,  ( 1 + 1 + * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ] )  *  sizeof ( void * )  );
+that_fst_leaves_lake   =   resize_fst_things_data  (  that_fst_leaves_lake,  ( 1 + 1 + * ( int * ) that_fst_leaves_lake  [ 0 ] [ 1 ] )  *  sizeof ( void * )  );
 
-that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ]   =   malloc  (  2  *  sizeof ( void * )  );
-
-
-
-that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ]   =   malloc  (  ( 1 + strlen ( that_words_names ) )  *  sizeof ( char )  );
-
-strcpy  (  that_fst_leaves_lake [ * ( int * ) note_numbers_counts ] [ 0 ],  that_words_names  );
+that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ]   =   create_fst_things_data  (  2  *  sizeof ( void * )  );
 
 
 
-that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   malloc  (  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
+that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ]   =   create_fst_things_data  (  ( 1 + strlen ( that_words_names ) )  *  sizeof ( char )  );
 
-strcpy  (  that_fst_leaves_lake [ * ( int * ) note_numbers_counts ] [ 1 ],  that_words_contents  );
+copy_fst_things_data_words  (  that_fst_leaves_lake [ * ( int * ) note_numbers_counts ] [ 0 ],  that_words_names  );
+
+
+
+that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   create_fst_things_data  (  ( 1 + strlen ( that_words_contents ) )  *  sizeof ( char )  );
+
+copy_fst_things_data_words  (  that_fst_leaves_lake [ * ( int * ) note_numbers_counts ] [ 1 ],  that_words_contents  );
 
 
 
