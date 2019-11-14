@@ -1,10 +1,6 @@
 
 
 
-#include  <stdlib.h>
-
-#include  <string.h>
-
 
 
 
@@ -81,11 +77,11 @@ if  (   note_numbers_results   ==   0   )
 {
 
 
-free  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ]  );
+free_fst_things_data  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 0 ]  );
 
-free  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]  );
+free_fst_things_data  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]  );
 
-free  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ]  );
+free_fst_things_data  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ]  );
 
 
 * ( int * ) note_numbers_switches  =  1;
@@ -135,9 +131,9 @@ that_fst_leaves_lake   =   realloc  (  that_fst_leaves_lake,  ( 1  +  * ( int * 
 
 
 
-free  (  note_numbers_counts  );
+free_fst_things_data  (  note_numbers_counts  );
 
-free  (  note_numbers_switches );
+free_fst_things_data  (  note_numbers_switches );
 
 return  that_fst_leaves_lake;
 
