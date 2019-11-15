@@ -97,6 +97,8 @@ begin_fst_leaves_lake ();
 
 begin_fst_leaves_lake_existence ();
 
+begin_fst_dog ();
+
 
 
 
@@ -107,15 +109,24 @@ copy_fst_things_data_words  (  note_words, "hi"  );
 
 append_fst_things_data_words  (  note_words, "!"  );
 
-void *  note_places;
 
-find_fst_things_data_words ( note_words, "i!", note_places );
+void *  note_places   =   malloc  (  4  *  sizeof ( char ) );
 
-printf  (  "%s\n",  note_places  );
-
+copy_fst_things_data_words  (  note_places,  "hi"  );
 
 
+void *  note_numbers   =   malloc  (  1  *  sizeof ( int )  );
 
+
+compare_fst_things_data_words ( note_words, note_places, note_numbers );
+
+printf  (  "%d\n",  * ( int * ) note_numbers  );
+
+
+
+
+
+end_fst_dog ();
 
 end_fst_leaves_lake_existence ();
 
