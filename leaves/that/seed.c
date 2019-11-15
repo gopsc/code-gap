@@ -99,7 +99,7 @@ begin_fst_leaves_lake_existence ();
 
 
 
-/*
+
 
 void *  note_words   =   malloc  (  4  *  sizeof ( char )  );
 
@@ -113,7 +113,7 @@ find_fst_things_data_words ( note_words, "i!", note_places );
 
 printf  (  "%s\n",  note_places  );
 
-*/
+
 
 
 
