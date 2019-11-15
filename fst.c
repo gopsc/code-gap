@@ -147,6 +147,8 @@ void fft(int site) {
 
 #include  "./things/data/words/copy.c"
 
+#include  "./things/data/words/append.c"
+
 #include  "./things/data/words/measure.c"
 
 #include  "./things/data/words/compare.c"
