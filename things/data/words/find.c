@@ -172,7 +172,6 @@ if  (  * ( int * ) note_numbers_switches   ==   0  )
 that_words_results   =   that_words_targets   +   * ( int * ) note_numbers_counts_targets;
 
 
-
 free  (  note_numbers_lengths_targets  );
 
 free  (  note_numbers_lengths_found  );

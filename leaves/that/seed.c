@@ -77,7 +77,6 @@
 
 
 
-#include  <stdio.h>
 
 
 
@@ -100,16 +99,19 @@ begin_fst_leaves_lake_existence ();
 
 
 
-
 /*
 
-write_fst_leaves_lake ( "hello", "hi" );
+void *  note_words   =   malloc  (  4  *  sizeof ( char )  );
 
-get_fst_leaves_system_trees_files  (  "/data/data/com.termux/files/home/hi",  "hello"  );
-  
+copy_fst_things_data_words  (  note_words, "hi"  );
 
+append_fst_things_data_words  (  note_words, "!"  );
 
-printf (  "%s\n", fish_fst_leaves_lake ( "hello" )  );
+void *  note_places;
+
+find_fst_things_data_words ( note_words, "i!", note_places );
+
+printf  (  "%s\n",  note_places  );
 
 */
 
