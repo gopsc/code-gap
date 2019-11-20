@@ -88,7 +88,7 @@ measure_fst_things_data_words  (  that_fst_leaves_lake  [ * ( int * ) note_numbe
 
 
 
-if (   * ( int * ) note_numbers_lengths_wrote   <=   * ( int * ) note_numbers_lengths_targets   )   )
+if (   * ( int * ) note_numbers_lengths_wrote   <=   * ( int * ) note_numbers_lengths_targets   )
 
 {
 
@@ -101,7 +101,7 @@ that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   resize_fst
 
 
 
-else if (   * ( int * ) note_numbers_lengths_wrote   >   * ( int * ) note_numbers_lengths_targets   )   )
+else if (   * ( int * ) note_numbers_lengths_wrote   >   * ( int * ) note_numbers_lengths_targets   )
 
 {
 
