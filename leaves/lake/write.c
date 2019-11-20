@@ -38,6 +38,15 @@ note_numbers_results   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
+void  *   note_numbers_lengths_wrote;
+
+note_numbers_lengths_wrote   =   create_fst_things_data  (  1  *  sizeof ( int )  );
+
+
+
+void  *  note_numbers_lengths_targets;
+
+note_numbers_lengths_targets   =   create_fst_things_data  (  1  *  sizeof ( int )  );
 
 
 
@@ -103,7 +112,9 @@ copy_fst_things_data_words  (   that_fst_leaves_lake  [ * ( int * ) note_numbers
 
 
 
+free_fst_things_data  (  note_numbers_lengths_wrote  );
 
+free_fst_things_data  (  note_numbers_lengths_targets  );
 
 free_fst_things_data  (  note_numbers_counts  );
 
@@ -151,6 +162,10 @@ copy_fst_things_data_words  (  that_fst_leaves_lake [ * ( int * ) note_numbers_c
 
 
 
+
+free_fst_things_data  (  note_numbers_lengths_wrote  );
+
+free_fst_things_data  (  note_numbers_lengths_targets  );
 
 free_fst_things_data  (  note_numbers_counts  );
 
