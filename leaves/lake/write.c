@@ -82,10 +82,13 @@ if   (   * ( int * ) note_numbers_results   ==   0   )
 
 
 
+measure_fst_things_data_words  (  that_words_contents,  note_numbers_lengths_wrote  );
+
+measure_fst_things_data_words  (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ],  note_numbers_lengths_wrote  );
 
 
 
-if   (   strlen  ( that_words_contents )   <=   strlen (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   )   )
+if (   * ( int * ) note_numbers_lengths_wrote   <=   * ( int * ) note_numbers_lengths_targets   )   )
 
 {
 
@@ -98,7 +101,7 @@ that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   =   resize_fst
 
 
 
-else if (   strlen  ( that_words_contents )   >   strlen (  that_fst_leaves_lake  [ * ( int * ) note_numbers_counts ] [ 1 ]   )   )
+else if (   * ( int * ) note_numbers_lengths_wrote   >   * ( int * ) note_numbers_lengths_targets   )   )
 
 {
 
