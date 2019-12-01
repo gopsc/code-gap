@@ -3,6 +3,8 @@
 
 #include  <stdlib.h>
 
+#include  <string.h>
+
 #include  <sys/stat.h>
 
 
@@ -68,7 +70,6 @@ note_numbers_counts  =  malloc  (  1  *  sizeof ( int )  );
 
 
 
-
 note_files_got   =   fopen  (  that_words_names,  "r"  );
 
 
@@ -96,7 +97,6 @@ for
 {
 
 }
-
 
 
 that_words_results  =  realloc (  that_words_results,   ( 1  +  1  +  strlen ( that_words_results ) )  *  sizeof ( char )  );
