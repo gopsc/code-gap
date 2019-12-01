@@ -29,7 +29,7 @@ if  (  * ( int * ) note_numbers_results  ==  0  )
     
 free  (  note_numbers_results  );
 
-return   fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
+return   fish_fst_leaves_lake  (  "that,fst,leaves,lake,existence,yes"  );
 
 
 }
@@ -42,7 +42,7 @@ return   fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_yes"  );
 
 free  (  note_numbers_results  );
 
-return   fish_fst_leaves_lake  (  "that_fst_leaves_lake_existence_no" );
+return   fish_fst_leaves_lake  (  "that,fst,leaves,lake,existence,no" );
 
 }
 
