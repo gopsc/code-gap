@@ -1,7 +1,7 @@
 
 
 
-
+#include <stdlib.h>
 
 
 void  *   append_fst_things_data_words
@@ -19,7 +19,7 @@ void  *   that_words_appended
 
 void  *   note_numbers_counts_targets;
 
-note_numbers_counts_targets   =   create_fst_things_data  (  1  *  sizeof ( int )  );
+note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( int )  );
 
 * ( int * ) note_numbers_counts_targets   =   0;
 
@@ -38,7 +38,7 @@ while  (  * ( char * ) (  that_words_targets  +  * ( int * ) note_numbers_counts
 
 void  *   note_numbers_counts_appended;
 
-note_numbers_counts_appended   =   create_fst_things_data  (  1  *  sizeof ( int )  );
+note_numbers_counts_appended   =   malloc  (  1  *  sizeof ( int )  );
 
 
 

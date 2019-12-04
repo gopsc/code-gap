@@ -103,25 +103,6 @@ begin_fst_dog ();
 
 
 
-void *  note_words   =   malloc  (  4  *  sizeof ( char )  );
-
-copy_fst_things_data_words  (  note_words, "hi"  );
-
-append_fst_things_data_words  (  note_words, "!"  );
-
-
-void *  note_places   =   malloc  (  4  *  sizeof ( char ) );
-
-copy_fst_things_data_words  (  note_places,  "hi"  );
-
-
-void *  note_numbers   =   malloc  (  1  *  sizeof ( int )  );
-
-
-compare_fst_things_data_words ( note_words, note_places, note_numbers );
-
-printf  (  "%d\n",  * ( int * ) note_numbers  );
-
 
 
 
