@@ -17,19 +17,20 @@
 
 /*
 
-        -----------------
-        | 。            |
-        |               |
-  CS ---| 1           5 |--- VCC
-        |               |
-  DO ---| 2           6 |--- HOLD
-        |               |
-  WP ---| 3           7 |--- CLK
-        |               |
- GND ---| 4           8 |--- DI
-        |               |
-        -----------------
+        -------------------
+        | 。              |
+        |                 |
+  CS ---| 1             5 |--- VCC
+        |                 |
+  DO ---| 2             6 |--- HOLD
+        |                 |
+  WP ---| 3             7 |--- CLK
+        |                 |
+ GND ---| 4             8 |--- DI
+        |                 |
+        -------------------
 */
+
 
 
 #define READ_JEDEC_ID  0x9F
@@ -48,11 +49,24 @@
 
 
 
-
-
 byte pageBuffer[256];
 
-char str[] = "An apple a day keeps the doctor away."; //short than 256
+
+//short than 256
+
+char str[] = "An apple a day keeps the doctor away.";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -221,6 +235,16 @@ void WritePage(word pageNumber, char pageBuffer[], int length)
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*
 
 void dft(int site) {
@@ -337,6 +361,16 @@ void fft(int site) {
 
 
 */
+
+
+
+
+
+
+
+
+
+
 
 
 void setup()
