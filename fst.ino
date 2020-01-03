@@ -8,6 +8,30 @@
 #include <SPI.h>
 
 
+
+
+
+
+
+
+
+/*
+
+        -----------------
+        | 。            |
+        |               |
+  CS ---| 1           5 |--- VCC
+        |               |
+  DO ---| 2           6 |--- HOLD
+        |               |
+  WP ---| 3           7 |--- CLK
+        |               |
+ GND ---| 4           8 |--- DI
+        |               |
+        -----------------
+*/
+
+
 #define READ_JEDEC_ID  0x9F
 
 #define READ_STATUS_1  0x05
@@ -19,6 +43,11 @@
 #define PAGE_PROGRAM   0x02
 
 #define CHIP_ERASE     0xC7
+
+
+
+
+
 
 
 byte pageBuffer[256];
