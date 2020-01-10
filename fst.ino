@@ -374,10 +374,14 @@ void fft(int site) {
 
 
 
+
 void setup()
 
 {
-	
+    
+    pinMode(PIN_LED0, OUTPUT);
+    
+    
     SPI.begin();
 
     SPI.setDataMode(SPI_MODE0);
@@ -386,15 +390,6 @@ void setup()
     
     
     Serial.begin(9600);
-
-
-    ReadID();
-    
-    
-    EraseChip();
-    
-    
-    WritePage(0x1234, str, sizeof(str));
     
 }
 
@@ -404,8 +399,22 @@ void loop()
 
 {
 	
-    ReadPage(0x1234, pageBuffer, sizeof(str));
+    digitalWrite(PIN_LED0, HIGH);
     
+    
+    
+	
+    ReadID();
+    
+    EraseChip();
+    
+    WritePage(0x0000, str, sizeof(str));
+    
+    ReadPage(0x0000, pageBuffer, sizeof(str));
+    
+    
+    
+    Serial.print("'");
 
     for(int i = 0; i < sizeof(str); i++)
     
@@ -414,253 +423,17 @@ void loop()
     }
     
     
+    Serial.print("'");
+    
     Serial.println();
     
 
+
+
+
+    digitalWrite(PIN_LED0, LOW);
+
     delay(2000);
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-,,
-
-『 ☯ ☰ ☲ ☱ ☴ ☵ ☶ ☳ ☷ 』
-
-,
-
-
-
-
-
-,,
-
- 『 虚化 』
-
-
- 「記」  為  「 // 」
-
-
- 「記」  為  「 /。 」
-
- 「止」  為  「 。/ 」
-
-,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-,,
-
- 『 預示 』
-
-
-
- 「引於」  為  「 # include 」
- 
- 「引自」  為  「 # include <」
-
- 「者」  為  「> 」
-
- 「也」  為  「> 」
-
-
-
- 「若明」  為  「 # ifndef 」
-
- 「預示」  為  「 # define 」
-
- 「預言」  為  「 # define 」
-
- 「也」  為  「 # endif 」
- 
-,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-,,
-
- 『 界化 』
-
-
-
- 「擇」  為  「 ( 」
-
- 「選」  為  「 ( 」
-
- 「者」  為  「 ) 」
-
-
- 「其」  為  「 { 」
-
-
- 「「」  為  「 "」
-
- 「」」  為  「" 」
-
- 「之與」  為  「, 」
-
- 「也」  為  「 ; 」
-
- 「者也」  為  「 ); 」
-
-
- 「终也」  為  「 } 」
-
- 「终焉」  為  「 } 」
-
-
-
- 「行」  為  「 do 」
-
- 「因其」  為  「  } while ( 」
-
-
-
- 「回應」  為  「 return  」
-
- 「回復」  為  「 return  」
-
-,
-
-
-
-
-
-
-
-
-
-
-
-
-
-,,
-
- 『 化形 』
-
-
-
- 「朦朧」  為  「 void  * *  」
-
-
- 「無形」  為  「 void * 」
-
- 「言行」  為  「 char * 」
-
-
- 「主人」  為  「 main 」
-
-
- 「之」  為  「 -> 」
-
-
-
- 「相化」  為  「 * 」
-
- 「形化」  為  「 & 」
-
-
-
-
- 「無端数形化」  為  「 ( unsigned int * ) 」
-
- 「無端短数形化」  為  「 ( unsigned short * ) 」
-
-,
-
-
-
-
-
-
-
-
-
-
-
-
-,,
-
- 『 對化 』
-
-
-
- 「無」  為  「 ! 」
-
- 「與」  為  「 && 」
-
-
-
- 「比」  為  「 & 」
-
- 「不比」  為  「 !& 」
-
-
-
- 「左移」  為  「 << 」
-
-,
-
-
-
-
-
 
 
 
