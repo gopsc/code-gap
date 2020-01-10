@@ -439,10 +439,17 @@ void loop()
 
 /*
 
+,,
+
 『 ☯ ☰ ☲ ☱ ☴ ☵ ☶ ☳ ☷ 』
 
+,
 
 
+
+
+
+,,
 
  『 虚化 』
 
@@ -454,6 +461,7 @@ void loop()
 
  「止」  為  「 。/ 」
 
+,
 
 
 
@@ -475,8 +483,7 @@ void loop()
 
 
 
-
-
+,,
 
  『 預示 』
 
@@ -500,6 +507,7 @@ void loop()
 
  「也」  為  「 # endif 」
  
+,
 
 
 
@@ -525,8 +533,7 @@ void loop()
 
 
 
-
-
+,,
 
  『 界化 』
 
@@ -569,6 +576,7 @@ void loop()
 
  「回復」  為  「 return  」
 
+,
 
 
 
@@ -582,8 +590,7 @@ void loop()
 
 
 
-
-
+,,
 
  『 化形 』
 
@@ -615,6 +622,7 @@ void loop()
 
  「無端短数形化」  為  「 ( unsigned short * ) 」
 
+,
 
 
 
@@ -627,8 +635,7 @@ void loop()
 
 
 
-
-
+,,
 
  『 對化 』
 
@@ -648,6 +655,62 @@ void loop()
 
  「左移」  為  「 << 」
 
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+hi
+
+,
+
+
+,,
+
+it is two thousands and ninteen, july, seventh, one, eight
+
+they said, gop need protein seventy five million microgram daily
+
+they said, gop need lipids fifty million microgram daily
+
+they said, gop need carbohydrates fifty five percent to sixty five percent of all energy intake
+
+they said, gop need vitamin a eight hundred thousand microgram re daily
+
+they said, gop need vitamin d ten microgram daily
+
+they said, gop need vitamin e fourteen
+ thousand microgram daily
+
+they said, gop need vitamin c one hundred thousand microgram daily
+
+they said, gop need vitamin b1 one thousand and three hundred microgram to one thousand and four hundred microgram daily
+
+they said, gop need vitamin b2 one thousand and three hundred microgram to one thousand and four hundred microgram daily
+
+they said, gop need vitamin pp thirteen thousand microgram to fourteen thousand microgram daily
+
+they said, gop need calcium eight hundred thousand microgram daily
+
+they said, gop need magnesium three hundred and fifty thousand microgram daily
+
+they said, gop need phosphorus seventy hundred thousand microgram daily
+
+they said, gop need potassium two million daily
+
+,
 
 */
 
