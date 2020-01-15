@@ -166,7 +166,7 @@ int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
 
 
 
-void *  thingsWinbondTwentyFiveQIdRead ()
+void *  thingsWinbondTwentyFiveQIdentificationRead ()
 
 {
 	
@@ -653,7 +653,7 @@ digitalWrite(PIN_LED0, LOW);
 
 /*
 
-thingsWinbondTwentyFiveQIdRead ();
+thingsWinbondTwentyFiveQIdentificationRead ();
     
 thingsWinbondTwentyFiveQChipErase ();
     
