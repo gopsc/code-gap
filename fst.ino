@@ -1,11 +1,46 @@
-/* GR-CITRUS Sketch Template V2.20 */
 
 
 
+
+/*
+
+,, branches, prepare.arduino
+
+*/
 
 #include <Arduino.h>
 
-#include <SPI.h>
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+/*
+
+,, branches, prepare.c
+
+*/
+
+byte pageBuffer[256];
+
+char str[] = "hi.";
+
+
+void ***  that;
+
+/*
+
+,
+
+*/
+
 
 
 
@@ -16,6 +51,59 @@
 
 
 /*
+
+,, things, renesas, gr-citrus
+
+
+                           serial ( usb )
+          
+                   ------------------------
+                   |         |__|         |
+                   |                      |
+ int0, da1, rx1 ---| 0                 5v |---
+                   |                      |
+ int1, cl1, tx1 ---| 1                gnd |---
+                   |                      |
+     int18, da  ---| 18      ----   reset |---
+                   |         |  |         |
+     int19, cl  ---| 19      ----    3.3v |---
+                   |        reset         |
+          int2  ---| 2                 A3 |---
+                   |                      |
+          int3  ---| 3                 A2 |---
+                   |                      |
+                ---| 4                 A1 |---
+                   |                      |
+      da2, rx2  ---| 5                 A0 |---
+                   |                      |
+      cl2, tx2  ---| 6                 13 |---  ck
+                   |                      |
+int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
+                   |                      |
+      cl3, tx3  ---| 8                 11 |---  mo, tx4, cl4
+                   |                      |
+     dac, int6  ---| 9                 10 |---  ss
+                   |                      |
+                   |                      |
+                   |                      |
+                   ------------------------
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,, things, winbond, twenty-five-q
 
         -------------------
         | 。              |
@@ -30,9 +118,17 @@
         |                 |
         -------------------
         
+,
+        
 */
 
 
+
+/*
+
+,, things, winbond, twenty-five-q.c
+
+*/
 
 #define READ_JEDEC_ID  0x9F
 
@@ -46,195 +142,264 @@
 
 #define CHIP_ERASE     0xC7
 
+/*
 
+,
 
-
-
-byte pageBuffer[256];
-
-
-//short than 256
-
-char str[] = "An apple a day keeps the doctor away.";
+*/
 
 
 
 
 
 
+/*
+
+,, things, winbond, twenty-five-q.arduino
+
+*/
+
+
+#include <SPI.h>
 
 
 
 
 
-
-
-
-
-
-
-
-void CheckBusy()
+void *  thingsWinbondTwentyFiveQIdRead ()
 
 {
 	
-    digitalWrite(SS, HIGH);
+	
+digitalWrite(SS, HIGH);
     
-    digitalWrite(SS, LOW);
-
-    
-    SPI.transfer(READ_STATUS_1);
-    
-    while(SPI.transfer(0) & 0x01);
-
-    
-    digitalWrite(SS, HIGH);
-
-}
-
-
-
-void ReadID()
-
-{
-    digitalWrite(SS, HIGH);
-    
-    digitalWrite(SS, LOW);
+digitalWrite(SS, LOW);
     
     
-    SPI.transfer(READ_JEDEC_ID);
+SPI.transfer(READ_JEDEC_ID);
     
     
-    byte manuID = SPI.transfer(0);
+byte manuID = SPI.transfer(0);
     
-    byte memoType = SPI.transfer(0);
+byte memoType = SPI.transfer(0);
     
-    byte capa = SPI.transfer(0);
+byte capa = SPI.transfer(0);
     
     
-    digitalWrite(SS, HIGH);
+digitalWrite(SS, HIGH);
 
 
-    Serial.print("Manufacturer ID: "); Serial.println(manuID, HEX);
+Serial.print("Manufacturer ID: "); Serial.println(manuID, HEX);
     
-    Serial.print("Memory Type: "); Serial.println(memoType, HEX);
+Serial.print("Memory Type: "); Serial.println(memoType, HEX);
     
-    Serial.print("Capacity : "); Serial.println(capa, HEX);
+Serial.print("Capacity : "); Serial.println(capa, HEX);
 
 
-    CheckBusy();
+
+
+digitalWrite(SS, LOW);
+
+    
+SPI.transfer(READ_STATUS_1);
+    
+while(SPI.transfer(0) & 0x01);
+
+    
+digitalWrite(SS, HIGH);
+
     
 }
 
 
 
-void EraseChip()
+
+
+
+
+
+void *  thingsWinbondTwentyFiveQChipErase ()
 
 {
 	
-    digitalWrite(SS, HIGH);
+
+digitalWrite(SS, HIGH);
     
-    digitalWrite(SS, LOW);  
-    
-    
-    SPI.transfer(WRITE_ENABLE);
+digitalWrite(SS, LOW);  
     
     
-    digitalWrite(SS, HIGH);
-    
-    digitalWrite(SS, LOW);  
+SPI.transfer(WRITE_ENABLE);
     
     
-    SPI.transfer(CHIP_ERASE);
+digitalWrite(SS, HIGH);
+    
+digitalWrite(SS, LOW);  
+    
+   
+SPI.transfer(CHIP_ERASE);
     
     
-    digitalWrite(SS, HIGH);
+digitalWrite(SS, HIGH);
     
     
-    CheckBusy();
+
+
+
+digitalWrite(SS, LOW);
+
     
+SPI.transfer(READ_STATUS_1);
+    
+while(SPI.transfer(0) & 0x01);
+
+    
+digitalWrite(SS, HIGH);
+
+
 }
 
 
 
-void ReadPage(word pageNumber, byte pageBuffer[], int length) 
+
+
+
+
+
+void *  thingsWinbondTwentyFiveQPageRead
+
+( 
+	
+word pageNumber,
+
+byte pageBuffer [],
+
+int length
+
+) 
 
 {
 	
-    // pageNumber: 16-bit data
+
+// 16-bit data
     
-    digitalWrite(SS, HIGH);
+digitalWrite(SS, HIGH);
     
-    digitalWrite(SS, LOW);
+digitalWrite(SS, LOW);
     
+  
+SPI.transfer(READ_DATA);
     
-    SPI.transfer(READ_DATA);
+SPI.transfer((pageNumber >> 8) & 0xFF);
     
-    SPI.transfer((pageNumber >> 8) & 0xFF);
+SPI.transfer(pageNumber & 0xFF);
     
-    SPI.transfer(pageNumber & 0xFF);
-    
-    SPI.transfer(0);
-    
-    
-    for(int i = 0; i < length; i++)
-    
-    {
-        pageBuffer[i] = SPI.transfer(0);
-    }
+SPI.transfer(0);
     
     
-    digitalWrite(SS, HIGH);
+for(int i = 0; i < length; i++)
+    
+{
+
+pageBuffer[i] = SPI.transfer(0);
+
+}
     
     
-    CheckBusy();
+digitalWrite(SS, HIGH);
     
+    
+    
+
+digitalWrite(SS, LOW);
+
+    
+SPI.transfer(READ_STATUS_1);
+    
+while(SPI.transfer(0) & 0x01);
+
+    
+digitalWrite(SS, HIGH);
+
+
 }
 
 
 
-void WritePage(word pageNumber, char pageBuffer[], int length) 
+
+
+
+
+void *  thingsWinbondTwentyFiveQPageWrite
+
+(
+
+word pageNumber,
+
+char pageBuffer [],
+
+int length
+
+) 
 
 {
 	
-    digitalWrite(SS, HIGH);
+
+digitalWrite(SS, HIGH);
     
-    digitalWrite(SS, LOW);  
-    
-    
-    SPI.transfer(WRITE_ENABLE);
+digitalWrite(SS, LOW);  
     
     
-    digitalWrite(SS, HIGH);
-    
-    digitalWrite(SS, LOW);  
+SPI.transfer(WRITE_ENABLE);
     
     
-    SPI.transfer(PAGE_PROGRAM);
+digitalWrite(SS, HIGH);
     
-    SPI.transfer((pageNumber >>  8) & 0xFF);
-    
-    SPI.transfer(pageNumber & 0xFF);
+digitalWrite(SS, LOW);  
     
     
-    SPI.transfer(0);
+SPI.transfer(PAGE_PROGRAM);
+    
+SPI.transfer((pageNumber >>  8) & 0xFF);
+    
+SPI.transfer(pageNumber & 0xFF);
     
     
-    for(int i = 0; i < length; i++)
-    
-    {
-        SPI.transfer(byte(pageBuffer[i]));
-    }
+SPI.transfer(0);
     
     
-    digitalWrite(SS, HIGH);
+for(int i = 0; i < length; i++)
+    
+{
+
+SPI.transfer(byte(pageBuffer[i]));
+
+}
     
     
-    CheckBusy();
+digitalWrite(SS, HIGH);
     
+    
+
+
+
+digitalWrite(SS, LOW);
+
+    
+SPI.transfer(READ_STATUS_1);
+    
+while(SPI.transfer(0) & 0x01);
+
+    
+digitalWrite(SS, HIGH);
+
+
 }
 
+/*
 
+,
+
+*/
 
 
 
@@ -248,42 +413,121 @@ void WritePage(word pageNumber, char pageBuffer[], int length)
 
 /*
 
-void dft(int site) {
+,, branches, snake, dft.c
 
 
-    double mo;
-    double t;
-    double w;
-    double n;
+void *  branchesSnakeDft
 
-    for ( w=1; w<=N/2; w++ ) {
+(
 
-        double num  = 0;
-        double numi = 0;
+void * thatNumbersN,
 
-        for ( n=1; n<=N; n++ ) {
+void * thatNumbersFt,
 
-            t = n/N;
-            num  += (result_sound[site][(int)n]*cos(2*M_PI*w*t));
-            numi -= (result_sound[site][(int)n]*sin(2*M_PI*w*t));}
+void * thatNumbersResultFt
 
-        mo = sqrt(num*num+numi*numi)/(N/2);
+)
 
-        if (mo > 1){
-
-            output_print( "double", (char*)&w    );
-            output_print( "string",        ":"   );
-            output_print( "double", (char*)&mo   );
-            output_print( "string",        "\n"  );}
-
-        result_ft[site][(int)w] = mo;}}
+{
 
 
+void *  mo;
 
+void *  t;
+
+void *  w;
+
+void *  n;
+
+
+void *  num;
+
+void *  numi;
 
 
 
-void fft(int site) {
+
+
+
+
+
+for
+
+(
+
+* ( int * ) w  = 1;
+* ( int * ) w <= * ( int * ) thatNumbersN / 2;
+* ( int * ) w  = * ( int * ) w + 1
+
+)
+
+{
+
+
+* ( int * ) num  = 0;
+
+* ( int * ) numi = 0;
+
+
+
+
+
+
+
+
+for
+
+(
+
+* ( int * ) n  = 1;
+* ( int * ) n <= * ( int * ) thatNumbersN;
+* ( int * ) n  = * ( int * ) n + 1
+
+) 
+        
+{
+
+* ( int * ) t    =   * ( int * ) n  /  ( * ( int * ) thatNumbersN );
+            
+* ( int * ) num  = * ( int * ) num  +  ( that [ * ( int * ) thatNumbersFt ] [ 1 ] [ * ( int * )  n ] * cos ( 2 * M_PI * * ( int * ) w * * ( int * ) t ) );
+
+* ( int * ) numi = * ( int * ) num  -  ( that [ * ( int * ) thatNumbersFt ] [ 1 ] [ * ( int * )  n ] * sin ( 2 * M_PI * * ( int * ) w * * ( int * ) t ) );
+            
+}
+
+
+
+
+
+
+* ( int * ) mo = sqrt ( * ( int * ) num * * ( int * ) num  +  * ( int * ) numi * * ( int * ) numi )  /  ( * ( int * ) thatNumbersN / 2 );
+        
+that [ * ( int * ) thatNumbersResultFt ] [ 1 ] [ * ( int * ) w ]  =  * ( int * ) mo;
+        
+}
+
+
+
+
+
+
+
+
+}
+
+
+,
+
+*/
+
+
+
+
+/*
+
+,, branches, snake, fft.c
+
+void *  branchesSnakeFft ( int site ) {
 
 
 
@@ -354,12 +598,9 @@ void fft(int site) {
         mo = mo/(N/2);
 
 
-        result_ft[site][(int)w] = mo;}
+        result_ft[site][(int)w] = mo;}}
 
-    if ( information_flag.sound_show ) {
-
-        ft_show(site);}}
-
+,
 
 */
 
@@ -373,23 +614,29 @@ void fft(int site) {
 
 
 
+/*
 
+,, branch, seed.arduino
+
+*/
 
 void setup()
 
 {
     
-    pinMode(PIN_LED0, OUTPUT);
-    
-    
-    SPI.begin();
 
-    SPI.setDataMode(SPI_MODE0);
-    
-    SPI.setBitOrder(MSBFIRST);
+pinMode(PIN_LED0, OUTPUT);
     
     
-    Serial.begin(9600);
+SPI.begin();
+
+SPI.setDataMode(SPI_MODE0);
+    
+SPI.setBitOrder(MSBFIRST);
+    
+    
+Serial.begin(9600);
+
     
 }
 
@@ -398,59 +645,72 @@ void setup()
 void loop()
 
 {
+
 	
-    digitalWrite(PIN_LED0, HIGH);
+digitalWrite(PIN_LED0, LOW);
+    
+    
+
+/*
+
+thingsWinbondTwentyFiveQIdRead ();
+    
+thingsWinbondTwentyFiveQChipErase ();
+    
+thingsWinbondTwentyFiveQPageWrite (0x0000, str, sizeof(str));
+    
+thingsWinbondTwentyFiveQPageRead(0x0000, pageBuffer, sizeof(str));
     
     
     
-	
-    ReadID();
-    
-    EraseChip();
-    
-    WritePage(0x0000, str, sizeof(str));
-    
-    ReadPage(0x0000, pageBuffer, sizeof(str));
-    
-    
-    
-    Serial.print("'");
+Serial.print("'");
 
-    for(int i = 0; i < sizeof(str); i++)
+for(int i = 0; i < sizeof(str); i++)
     
-    {
-        Serial.print(char(pageBuffer[i]));
-    }
+{
+
+Serial.print(char(pageBuffer[i]));
+
+}
     
     
-    Serial.print("'");
+Serial.print("'");
     
-    Serial.println();
+Serial.println();
     
+*/
+
+
+
+Serial.println( 0x0001 );
+
+
+digitalWrite(PIN_LED0, HIGH);
+
+delay(2000);
+
+
+}
+
+/*
+
+,
+
+*/
 
 
 
 
-    digitalWrite(PIN_LED0, LOW);
+/*
 
-    delay(2000);
-
-
-
-
-
-
-
-
-
-,,
+,, river, zero
 
 hi
 
 ,
 
 
-,,
+,, river, one
 
 it is two thousands and ninteen, july, seventh, one, eight
 
