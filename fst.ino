@@ -22,6 +22,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 ,, branches, prepare.c
@@ -40,6 +54,19 @@ void ***  that;
 ,
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,6 +128,27 @@ int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 ,, things, winbond, twenty-five-q
@@ -124,23 +172,38 @@ int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
-,, things, winbond, twenty-five-q.c
+,, things, winbond, twenty-five-q, prepare.arduino
 
 */
 
-#define READ_JEDEC_ID  0x9F
 
-#define READ_STATUS_1  0x05
-
-#define READ_DATA      0x03
-
-#define WRITE_ENABLE   0x06
-
-#define PAGE_PROGRAM   0x02
-
-#define CHIP_ERASE     0xC7
+#include <SPI.h>
 
 /*
 
@@ -153,63 +216,78 @@ int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
-,, things, winbond, twenty-five-q.arduino
+,, things, winbond, twenty-five-q, eraseAll.arduino
+
+*/
+
+void *  thingsWinbondTwentyFiveQEraseAll ()
+
+{
+	
+
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x06 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+   
+SPI . transfer ( 0xC7 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+
+
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while  (  SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return 0;
+
+}
+
+/*
+
+,
 
 */
 
 
-#include <SPI.h>
-
-
-
-
-
-void *  thingsWinbondTwentyFiveQIdentificationRead ()
-
-{
-	
-	
-digitalWrite(SS, HIGH);
-    
-digitalWrite(SS, LOW);
-    
-    
-SPI.transfer(READ_JEDEC_ID);
-    
-    
-byte manuID = SPI.transfer(0);
-    
-byte memoType = SPI.transfer(0);
-    
-byte capa = SPI.transfer(0);
-    
-    
-digitalWrite(SS, HIGH);
-
-
-Serial.print("Manufacturer ID: "); Serial.println(manuID, HEX);
-    
-Serial.print("Memory Type: "); Serial.println(memoType, HEX);
-    
-Serial.print("Capacity : "); Serial.println(capa, HEX);
-
-
-
-
-digitalWrite(SS, LOW);
-
-    
-SPI.transfer(READ_STATUS_1);
-    
-while(SPI.transfer(0) & 0x01);
-
-    
-digitalWrite(SS, HIGH);
-
-    
-}
 
 
 
@@ -218,54 +296,18 @@ digitalWrite(SS, HIGH);
 
 
 
-void *  thingsWinbondTwentyFiveQChipErase ()
-
-{
-	
-
-digitalWrite(SS, HIGH);
-    
-digitalWrite(SS, LOW);  
-    
-    
-SPI.transfer(WRITE_ENABLE);
-    
-    
-digitalWrite(SS, HIGH);
-    
-digitalWrite(SS, LOW);  
-    
-   
-SPI.transfer(CHIP_ERASE);
-    
-    
-digitalWrite(SS, HIGH);
-    
-    
-
-
-
-digitalWrite(SS, LOW);
-
-    
-SPI.transfer(READ_STATUS_1);
-    
-while(SPI.transfer(0) & 0x01);
-
-    
-digitalWrite(SS, HIGH);
-
-
-}
 
 
 
 
 
+/*
 
+,, things, winbond, twenty-five-q, read.arduino
 
+*/
 
-void *  thingsWinbondTwentyFiveQPageRead
+void *  thingsWinbondTwentyFiveQRead
 
 ( 
 	
@@ -282,116 +324,48 @@ int length
 
 // 16-bit data
     
-digitalWrite(SS, HIGH);
+digitalWrite ( SS, HIGH );
     
-digitalWrite(SS, LOW);
+digitalWrite ( SS, LOW );
     
   
-SPI.transfer(READ_DATA);
+SPI . transfer ( 0x03 );
     
-SPI.transfer((pageNumber >> 8) & 0xFF);
+SPI . transfer (  ( pageNumber >> 8 )  &  0xFF  );
     
-SPI.transfer(pageNumber & 0xFF);
+SPI . transfer ( pageNumber & 0xFF );
     
-SPI.transfer(0);
+SPI . transfer ( 0 );
     
     
-for(int i = 0; i < length; i++)
+for (  int i = 0;  i < length;  i++  )
     
 {
 
-pageBuffer[i] = SPI.transfer(0);
+pageBuffer [ i ]  =  SPI . transfer ( 0 );
 
 }
     
     
-digitalWrite(SS, HIGH);
+digitalWrite ( SS, HIGH );
     
     
     
 
-digitalWrite(SS, LOW);
+digitalWrite ( SS, LOW );
 
     
-SPI.transfer(READ_STATUS_1);
+SPI . transfer ( 0x05 );
     
-while(SPI.transfer(0) & 0x01);
-
-    
-digitalWrite(SS, HIGH);
-
-
-}
-
-
-
-
-
-
-
-void *  thingsWinbondTwentyFiveQPageWrite
-
-(
-
-word pageNumber,
-
-char pageBuffer [],
-
-int length
-
-) 
-
-{
-	
-
-digitalWrite(SS, HIGH);
-    
-digitalWrite(SS, LOW);  
-    
-    
-SPI.transfer(WRITE_ENABLE);
-    
-    
-digitalWrite(SS, HIGH);
-    
-digitalWrite(SS, LOW);  
-    
-    
-SPI.transfer(PAGE_PROGRAM);
-    
-SPI.transfer((pageNumber >>  8) & 0xFF);
-    
-SPI.transfer(pageNumber & 0xFF);
-    
-    
-SPI.transfer(0);
-    
-    
-for(int i = 0; i < length; i++)
-    
-{
-
-SPI.transfer(byte(pageBuffer[i]));
-
-}
-    
-    
-digitalWrite(SS, HIGH);
-    
-    
-
-
-
-digitalWrite(SS, LOW);
+while ( SPI . transfer ( 0 )  &  0x01  );
 
     
-SPI.transfer(READ_STATUS_1);
-    
-while(SPI.transfer(0) & 0x01);
+digitalWrite ( SS, HIGH );
 
-    
-digitalWrite(SS, HIGH);
 
+
+
+return 0;
 
 }
 
@@ -411,9 +385,117 @@ digitalWrite(SS, HIGH);
 
 
 
+
+
+
+
+
+
+
+
+/*
+
+things, winbond, twenty-five-q, write.arduino
+
+
+*/
+
+void *  thingsWinbondTwentyFiveQWrite
+
+(
+
+word pageNumber,
+
+char pageBuffer [],
+
+int length
+
+) 
+
+{
+	
+
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x06 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x02 );
+    
+SPI . transfer (  ( pageNumber >>  8 )  &  0xFF  );
+    
+SPI . transfer ( pageNumber & 0xFF );
+    
+    
+SPI . transfer ( 0 );
+    
+    
+for (  int i = 0;  i < length;  i++  )
+    
+{
+
+SPI . transfer (  byte ( pageBuffer [ i ] )  );
+
+}
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+
+
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while (  SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return 0;
+
+}
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 ,, branches, snake, dft.c
+
 
 
 void *  branchesSnakeDft
@@ -516,9 +598,30 @@ that [ * ( int * ) thatNumbersResultFt ] [ 1 ] [ * ( int * ) w ]  =  * ( int * )
 }
 
 
+
 ,
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -614,80 +717,84 @@ void *  branchesSnakeFft ( int site ) {
 
 
 
+
+
+
+
+
+
 /*
 
 ,, branch, seed.arduino
 
 */
 
-void setup()
+void setup ()
 
 {
     
 
-pinMode(PIN_LED0, OUTPUT);
+pinMode ( PIN_LED0, OUTPUT );
     
     
-SPI.begin();
+SPI . begin ();
 
-SPI.setDataMode(SPI_MODE0);
+SPI . setDataMode ( SPI_MODE0 );
     
-SPI.setBitOrder(MSBFIRST);
+SPI . setBitOrder ( MSBFIRST );
     
     
-Serial.begin(9600);
+Serial . begin ( 9600 );
 
     
 }
 
 
 
-void loop()
+void loop ()
 
 {
 
 	
-digitalWrite(PIN_LED0, LOW);
+digitalWrite ( PIN_LED0, LOW );
     
     
 
 /*
+    
+thingsWinbondTwentyFiveQEraseAll ();
+    
+thingsWinbondTwentyFiveQWrite ( 0x0000, str, sizeof(str));
+    
+thingsWinbondTwentyFiveQRead ( 0x0000, pageBuffer, sizeof(str));
+    
+    
+    
+Serial . print ( "'" );
 
-thingsWinbondTwentyFiveQIdentificationRead ();
-    
-thingsWinbondTwentyFiveQChipErase ();
-    
-thingsWinbondTwentyFiveQPageWrite (0x0000, str, sizeof(str));
-    
-thingsWinbondTwentyFiveQPageRead(0x0000, pageBuffer, sizeof(str));
-    
-    
-    
-Serial.print("'");
-
-for(int i = 0; i < sizeof(str); i++)
+for (  int i = 0;  i < sizeof ( str );  i++  )
     
 {
 
-Serial.print(char(pageBuffer[i]));
+Serial . print (  char ( pageBuffer [ i ] )  );
 
 }
     
     
-Serial.print("'");
+Serial . print ( "'" );
     
-Serial.println();
+Serial . println ();
     
 */
 
 
 
-Serial.println( 0x0001 );
+Serial . println ( 0x0001 );
 
 
-digitalWrite(PIN_LED0, HIGH);
+digitalWrite ( PIN_LED0, HIGH );
 
-delay(2000);
+delay ( 2000 );
 
 
 }
@@ -697,6 +804,19 @@ delay(2000);
 ,
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
