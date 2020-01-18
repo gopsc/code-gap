@@ -9,7 +9,7 @@
 
 
 #include "./roots/data/words/find.computer"   // something wrong with this
-/*
+
 #include "./things/data/words/copy.c"
 
 #include "./things/data/words/append.c"
@@ -45,7 +45,7 @@
 #include "./leaves/lake/fish.c"
 
 #include "./leaves/lake/drop.c"
-   
+
 
 
 #include "./leaves/lake/existence/begin.c"
