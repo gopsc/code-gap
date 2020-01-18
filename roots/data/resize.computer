@@ -1,0 +1,30 @@
+
+
+
+
+
+
+#include  <stdlib.h>
+
+
+
+void *  fstRootsDataResize
+
+(
+
+void *  that_places_data,
+
+void *  that_numbers_sizes
+
+)
+
+
+{
+
+return   realloc  (  that_places_data,  * ( short * ) that_numbers_sizes  );
+
+}
+
+
+
+
