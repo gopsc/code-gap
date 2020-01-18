@@ -5,7 +5,7 @@
 
 #include "./roots/data/resize.computer"
 
-#include "./roots/data/free.c"
+#include "./roots/data/free.computer"
 
 
 #include "./roots/data/words/find.c"
