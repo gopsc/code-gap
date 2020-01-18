@@ -92,6 +92,7 @@ int main ( int argc, char * argv [] )
 
 
 
+/*
   
 begin_fst_leaves_lake ();
 
@@ -113,6 +114,7 @@ end_fst_leaves_lake_existence ();
 
 end_fst_leaves_lake ();
 
+*/
 
 
 /*

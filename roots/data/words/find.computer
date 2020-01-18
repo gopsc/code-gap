@@ -44,7 +44,7 @@ that_places_results  =  note_places_result;
 
 
 
-return 0
+return 0;
 
 }
 
