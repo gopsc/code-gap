@@ -1,14 +1,14 @@
 
 
 
-#include "./root/data/create.c"
+#include "./roots/data/create.c"
 
-#include "./root/data/resize.c"
+#include "./roots/data/resize.c"
 
-#include "./root/data/free.c"
+#include "./roots/data/free.c"
 
 
-#include "./root/data/words/find.c"
+#include "./roots/data/words/find.c"
 /*
 #include "./things/data/words/copy.c"
 
