@@ -1,0 +1,23 @@
+
+
+
+
+
+#include  <stdlib.h>
+
+
+
+void *  fstRootsDataFree
+
+(  void *  that_places_data  )
+
+{
+
+free  (  that_places_data  );
+
+return 0;
+
+}
+
+
+
