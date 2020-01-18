@@ -3,7 +3,7 @@
 
 #include "./roots/data/create.computer"
 
-#include "./roots/data/resize.c"
+#include "./roots/data/resize.computer"
 
 #include "./roots/data/free.c"
 
