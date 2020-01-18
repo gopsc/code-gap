@@ -9,7 +9,7 @@
 
 
 #include "./roots/data/words/find.computer"   // something wrong with this
-
+/*
 #include "./things/data/words/copy.c"
 
 #include "./things/data/words/append.c"

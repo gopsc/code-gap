@@ -93,9 +93,7 @@ end_fst_leaves_lake ();
 
 
 
-void *  note_numbers_test;
-
-note_numbers_test  =  fstRootsDataCreate ( );
+void *  note_numbers_test  =  fstRootsDataCreate ();
 
 * ( uint8_t * ) note_numbers_test  =  16;
 
