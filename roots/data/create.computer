@@ -2,19 +2,63 @@
 
 
 
+#include <stdlib.h>
 
-#include  <stdlib.h>
-
-
-void  *   fstRootsDataCreate ()
+void *  fstRootsDataCreate ()
 
 {
 
-return   malloc  (  1  *  sizeof ( char )  );
+return   malloc (  1  *  sizeof ( uint8_t )  );
 
 }
 
 
+
+/*
+
+#include  <stdlib.h>
+
+
+void  *   fstRootsDataCreate
+
+(
+
+void * that_places_created
+
+)
+
+{
+
+void * note_places_created;
+
+note_places_created  =  malloc  (  1  *  sizeof ( uint8_t )  );
+
+
+
+if  (  note_places_created  ==  NULL  )
+
+{
+
+that_places_created  =  note_places_created;
+
+}
+
+
+else if  (  note_places_created  !=  NULL  )
+
+{
+
+that_places_created  =  0;
+
+}
+
+
+
+return 0;
+
+}
+
+*/
 
 
 

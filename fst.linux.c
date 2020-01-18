@@ -1,14 +1,14 @@
 
 
 
-#include "./roots/data/create.computer"
+#include "./roots/data/create.computer"       // something wrong with this
 
 #include "./roots/data/resize.computer"
 
 #include "./roots/data/free.computer"
 
 
-#include "./roots/data/words/find.computer"
+#include "./roots/data/words/find.computer"   // something wrong with this
 /*
 #include "./things/data/words/copy.c"
 
