@@ -7,15 +7,10 @@
 
 #include <stdio.h>
 
-
-
-
 #include <stdlib.h>
 
+
 #include <unistd.h>
-
-
-
 
 
 #include <string.h>     // for string ways
@@ -24,35 +19,18 @@
 
 #include <time.h>       // for time ( NULL )
 
-
 #include <dirent.h>     // for dirent
-
-
-
-
 
 
 #include <ifaddrs.h>    // for network socket
 #include <fcntl.h>      // for ...
 
 
-
-
-
 #include <pthread.h>    // for thread
-
-
-
-
 
 
 #include <signal.h>     // for check_deamon() ->
                         // for tcp block out.
-
-
-
-
-
 
 #include <sys/time.h>   // for note_save() -> gettimeofday()
 
@@ -60,12 +38,8 @@
 
 #include <sys/stat.h>   // for file system status
 
-
 #include <sys/types.h>  // for check_deamon() ->
 #include <sys/param.h>  // for ...
-
-
-
 
 
 #include <arpa/inet.h>  // for network
@@ -125,38 +99,6 @@ printf ( "%d\n",  * ( int * ) that_leaves_lake_that [ 0 ] [ 1 ] );
 
 
 
-
-
-
-
-
-/*
-    if ( here () )
-
-    pthread_create (
-                              & thread [ 0 ],
-                                NULL,
-                                dream,
-                     ( void * ) gop [ 0 ] [ 1 ] [ 0 ] [ 0 ]
-                   );
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
  that . hope . number_hope = argc;
@@ -166,37 +108,11 @@ printf ( "%d\n",  * ( int * ) that_leaves_lake_that [ 0 ] [ 1 ] );
  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
  init_deamon ();
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -207,30 +123,11 @@ printf ( "%d\n",  * ( int * ) that_leaves_lake_that [ 0 ] [ 1 ] );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
  that . hope . thread  =  malloc (  3  *  sizeof ( pthread_t )  );
 
 */
-
-
-
-
-
-
 
 /*
 
@@ -242,8 +139,6 @@ pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
 
 */
 
-
-
 /*
 
  pthread_create (  & thread [ 4 ], NULL,  gop_corde,  NULL  );
@@ -252,62 +147,11 @@ pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 char  note_command  [ 128 ]   =   "";
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -321,35 +165,6 @@ gop_wait   (  0.1  );
 }
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -374,57 +189,11 @@ output_print   (   "string",   "\n we met somewhere \n\n"   );
 */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 note_save   (   "command",   "command start",   "now"   );
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -435,29 +204,6 @@ while   (   gop_about . flag . main   )
 {
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -472,16 +218,6 @@ gop_wait  (  0.1  );
 }
 
 */
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -499,23 +235,6 @@ fgets   (   note_command,   128,   stdin   );
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 if (
@@ -531,17 +250,6 @@ gop_wait  (  0.1  );
 }
 
 */
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -560,33 +268,11 @@ note_command    [   strlen  (  note_command  )  -  1   ]    =    '.';
 
 */
 
-
-
-
-
-
-
-
-
 /*
 
 output_print   (   "string",   "\n"   );
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -598,18 +284,6 @@ judge_message_command (
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 strcpy   (   note_command,   ""   );
@@ -618,19 +292,11 @@ strcpy   (   note_command,   ""   );
 
 
 
+/*
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 /*
 
@@ -641,73 +307,17 @@ strcpy   (   note_command,   ""   );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 }
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
 note_save ( "command", "command close", "now" );
 
 */
-
-
-
-
-
-
-
-
-
-
 
 
 
