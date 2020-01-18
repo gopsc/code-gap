@@ -1,0 +1,20 @@
+
+
+
+
+
+#include  <stdlib.h>
+
+
+void  *   fstRootDataCreate ()
+
+{
+
+return   malloc  (  1  *  sizeof ( char )  );
+
+}
+
+
+
+
+
