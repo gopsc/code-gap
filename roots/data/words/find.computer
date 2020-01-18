@@ -1,0 +1,318 @@
+
+#include <stdlib.h>
+
+#include <string.h>
+
+
+void *  fstRootsDataWordsFind
+
+(
+
+void *  that_words_targets,
+
+void *  that_words_found,
+
+void *  that_places_results
+
+)
+
+{
+
+void *  note_places_result  =  strstr ( that_words_targets, that_words_found );
+
+
+
+
+if  (  note_places_result  ==  NULL  )
+
+{
+
+that_places_results  =  0;
+
+}
+
+
+
+else if  (  note_places_result  !=  NULL  )
+
+{
+
+that_places_results  =  note_places_result;
+
+}
+
+
+
+
+return 0
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// something wrong with this
+
+/*
+
+#include  <stdlib.h>
+
+void *  fstRootsDataWordsFind
+
+(
+
+void *  that_words_targets,
+
+void *  that_words_found,
+
+void *  that_words_results
+
+)
+
+{
+
+
+
+
+
+
+
+void *  note_numbers_lengths_targets;
+
+note_numbers_lengths_targets   =   malloc  (  1  *  sizeof ( char )  );
+
+
+
+
+
+void *  note_numbers_lengths_found;
+
+note_numbers_lengths_found   =   malloc  (  1  *  sizeof ( char )  );
+
+
+
+
+
+
+
+
+
+for
+
+(
+
+* ( char * ) note_numbers_lengths_targets   =   0;
+
+* ( char * ) (  that_words_targets  +  * ( char * ) note_numbers_lengths_targets  )   !=   '\0';
+
+* ( char * ) note_numbers_lengths_targets   =   * ( char * ) note_numbers_lengths_targets   +   1
+
+)
+
+{
+
+
+}
+
+
+
+
+
+
+
+
+
+for
+
+(
+
+* ( char * ) note_numbers_lengths_found   =   0;
+
+* ( char * ) (  that_words_found  +  * ( char * ) note_numbers_lengths_found  )   !=   '\0';
+
+* ( char * ) note_numbers_lengths_found   =   * ( char * ) note_numbers_lengths_found   +   1
+
+)
+
+{
+
+
+}
+
+
+
+
+
+
+
+void *  note_numbers_counts_targets;
+
+note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( char )  );
+
+
+void *  note_numbers_counts_found;
+
+note_numbers_counts_found   =   malloc  (  1  *  sizeof ( char )  );
+
+
+
+void *  note_numbers_switches;
+
+note_numbers_switches   =   malloc  (  1  *  sizeof ( char )  );
+
+
+
+
+
+
+for
+
+(
+
+* ( char * ) note_numbers_counts_targets   =   0;
+
+* ( char * ) note_numbers_counts_targets   <   * ( char * ) note_numbers_lengths_targets;
+
+* ( char * ) note_numbers_counts_targets   =   * ( char * ) note_numbers_counts_targets   +   1
+
+)
+
+{
+
+
+
+* ( char * ) note_numbers_switches   =   1;
+
+
+for
+
+(
+
+* ( char * ) note_numbers_counts_found   =   0;
+
+* ( char * ) note_numbers_counts_found   <   * ( char * ) note_numbers_lengths_found;
+
+* ( char * ) note_numbers_counts_found   =   * ( char * ) note_numbers_counts_found   +   1
+
+)
+
+{
+
+
+
+
+if
+
+(
+
+* ( char * ) (  that_words_targets  +  * ( char * ) note_numbers_counts_targets  +  * ( char * ) note_numbers_counts_found  )
+
+!=
+
+* ( char * ) (  that_words_found   +  * ( char * ) note_numbers_counts_found  )
+
+)
+
+{
+
+* ( char * ) note_numbers_switches   =   1;
+
+break;
+
+}
+
+
+else if
+
+(
+
+* ( char * ) (  that_words_targets  +  * ( char * ) note_numbers_counts_targets  +  * ( char * ) note_numbers_counts_found  )
+
+==
+
+* ( char * ) (  that_words_found  +  * ( char * ) note_numbers_counts_found  )   )
+
+{
+
+* ( char * ) note_numbers_switches   =   0;
+
+}
+
+
+}
+
+
+
+
+
+
+if  (  * ( char * ) note_numbers_switches   ==   0  )
+
+{
+
+that_places_results   =   that_words_targets   +   * ( char * ) note_numbers_counts_targets;
+
+break;
+
+}
+
+
+
+else if  (  * ( char * ) note_numbers_switches   ==   1  )
+
+{
+
+that_places_results   =   0;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+free  (  note_numbers_lengths_targets  );
+
+free  (  note_numbers_lengths_found );
+
+
+free  (  note_numbers_counts_targets  );
+
+free  (  note_numbers_counts_found  );
+
+
+free  (  note_numbers_switches  );
+
+
+
+return  0;
+
+}
+
+*/
+
+
+
+
+
+
+
+
