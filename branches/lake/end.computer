@@ -3,14 +3,14 @@
 
 
 
-void *  fstBranchesLake ()
+void *  fstBranchesLakeEnd ()
 
 {
 
 
 void *  note_numbers_counts;
 
-note_numbers_counts   =   create_fst_things_data  ();
+note_numbers_counts   =   fstRootsDataCreate  ();
 
 
 
@@ -51,10 +51,10 @@ fstRootsDataFree  (  fstBranchesLake  [ 0 ]  );
 fstRootsDataFree  (  fstBranchesLake  );
 
 
-fstRootsDataFree  =  NULL;
+fstBranchesLake  =  NULL;
 
 
 
-return  fstRootsDataFree;
+return  fstBranchesLake;
 
 }

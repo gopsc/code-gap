@@ -10,7 +10,7 @@
 //
 #include "./roots/data/words/find.computer"   // something wrong with this
 
-#include "./things/data/words/copy.computer"
+#include "./roots/data/words/copy.computer"
 /*
 #include "./things/data/words/append.c"
 
@@ -33,11 +33,11 @@
 #include "./things/trees/files/read.c"
 */
 
-#include "./leaves/lake/that.c"
+#include "./branches/lake/that.computer"
 
-#include "./leaves/lake/begin.c"
+#include "./branches/lake/begin.computer"
 
-#include "./leaves/lake/end.c"
+#include "./branches/lake/end.computer"
 
 /*
 #include "./leaves/lake/write.c"

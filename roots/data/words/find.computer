@@ -23,7 +23,7 @@ void *  note_places_results  =  strstr ( that_words_targets, that_words_found );
 
 
 
-if  (  note_places_result  ==  NULL  )
+if  (  note_places_results  ==  NULL  )
 
 {
 
@@ -33,11 +33,11 @@ that_places_results  =  NULL;
 
 
 
-else if  (  note_places_result  !=  NULL  )
+else if  (  note_places_results  !=  NULL  )
 
 {
 
-that_places_results  =  note_places_result;
+that_places_results  =  note_places_results;
 
 }
 
