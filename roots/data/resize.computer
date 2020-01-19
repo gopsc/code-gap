@@ -31,7 +31,7 @@ if  (  note_places_resized  ==  NULL  )
 
 {
 
-that_places_resized  =  0;
+that_places_resized  =  NULL;
 
 }
 
