@@ -24,21 +24,18 @@ if  (  fstBranchesLake  ==  NULL )
   
 fstBranchesLake   =   FstRootsDataCreate  (  1 * sizeof ( void * )  );
 
-  
-  
-fstBranchesLake  [ 0 ]   =   FstRootsDataCreate  (  2 * sizeof ( void * )  );
-  
 
-  
+fstBranchesLake  [ 0 ]   =   FstRootsDataCreate  (  2 * sizeof ( void * )  );
+
+
 fstBranchesLake  [ 0 ] [ 0 ]   =   FstRootsDataCreate  (  21 * sizeof ( char )  );
-  
+
 fstBranchesLake  [ 0 ] [ 1 ]   =   FstRootsDataCreate  (  1 * sizeof ( char )  );
 
   
 
-
 fstRootsDataWordsCopy  (  FstRootsDataCreate  [ 0 ] [ 0 ],  "fst,branches,lake"  );
-  
+
 *  (  uint_t *  )   FstRootsDataCreate  [ 0 ] [ 1 ]   =   0;
 
 
