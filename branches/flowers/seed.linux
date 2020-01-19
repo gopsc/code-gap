@@ -80,6 +80,11 @@ begin_fst_dog ();
 
 void *  note_test;
 
+note_test  =  fstRootsDataCreate ();
+
+
+* ( uint8_t * ) note_test  =  6;
+
 
 
 
