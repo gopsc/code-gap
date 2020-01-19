@@ -29,26 +29,26 @@ for
 
 {
 
-fstRootsDataFree   (  fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 0 ] );
+fstRootsDataFree   (  & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 0 ] );
 
-fstRootsDataFree   (  fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 1 ] );
+fstRootsDataFree   (  & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 1 ] );
 
-fstRootsDataFree   (  fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ]  );
+fstRootsDataFree   (  & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ]  );
 
 }
 
 
-fstRootsDataFree  (  note_numbers_counts );
+fstRootsDataFree  (  & note_numbers_counts );
 
 
 
-fstRootsDataFree  (  fstBranchesLake  [ 0 ] [ 1 ]  );
+fstRootsDataFree  (  & fstBranchesLake  [ 0 ] [ 1 ]  );
 
-fstRootsDataFree  (  fstBranchesLake  [ 0 ] [ 0 ]  );
+fstRootsDataFree  (  & fstBranchesLake  [ 0 ] [ 0 ]  );
 
-fstRootsDataFree  (  fstBranchesLake  [ 0 ]  );
+fstRootsDataFree  (  & fstBranchesLake  [ 0 ]  );
 
-fstRootsDataFree  (  fstBranchesLake  );
+fstRootsDataFree  (  & fstBranchesLake  );
 
 
 fstBranchesLake  =  NULL;

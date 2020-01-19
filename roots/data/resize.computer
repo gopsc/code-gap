@@ -12,7 +12,7 @@ void *  fstRootsDataResize
 
 (
 
-void *  that_places_resized,
+void ** that_places_resized,
 
 void *  that_numbers_sizes
 
@@ -23,7 +23,7 @@ void *  that_numbers_sizes
 
 void * note_places_resized;
 
-note_places_resized   =   realloc  (  that_places_resized,  * ( uint64_t * ) that_numbers_sizes  );
+note_places_resized   =   realloc  (  * that_places_resized,  * ( uint64_t * ) that_numbers_sizes  );
 
 
 
@@ -31,7 +31,7 @@ if  (  note_places_resized  ==  NULL  )
 
 {
 
-that_places_resized  =  NULL;
+* that_places_resized  =  NULL;
 
 }
 
@@ -40,7 +40,7 @@ else if  (  note_places_resized  !=  NULL  )
 
 {
 
-that_places_resized  =  note_places_resized;
+* that_places_resized  =  note_places_resized;
 
 }
 

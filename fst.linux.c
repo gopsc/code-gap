@@ -1,17 +1,17 @@
 
 
 
-#include "./roots/data/create.computer"       // something wrong with this
+#include "./roots/data/create.computer"
 
 #include "./roots/data/resize.computer"
 
 #include "./roots/data/free.computer"
 
-//
-#include "./roots/data/words/find.computer"   // something wrong with this
+
+#include "./roots/data/words/find.computer"
 
 #include "./roots/data/words/copy.computer"
-/*
+/* //
 #include "./things/data/words/append.c"
 
 #include "./things/data/words/measure.c"
@@ -31,7 +31,7 @@
 #include "./things/trees/files/write.c"
 
 #include "./things/trees/files/read.c"
-*/
+
 
 #include "./branches/lake/that.computer"
 
@@ -39,7 +39,7 @@
 
 #include "./branches/lake/end.computer"
 
-/*
+
 #include "./leaves/lake/write.c"
 
 #include "./leaves/lake/fish.c"

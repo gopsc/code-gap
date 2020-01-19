@@ -16,6 +16,11 @@ if  (  fstBranchesLake  ==  NULL )
 
 {
 
+/*
+
+'void *'  for eight byte
+
+*/
 
 fstBranchesLake   =   fstRootsDataCreate  ();
 

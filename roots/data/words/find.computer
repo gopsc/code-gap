@@ -1,66 +1,5 @@
 
-#include <stdlib.h>
 
-#include <string.h>
-
-
-void *  fstRootsDataWordsFind
-
-(
-
-void *  that_words_targets,
-
-void *  that_words_found,
-
-void *  that_places_results
-
-)
-
-{
-
-void *  note_places_results  =  strstr ( that_words_targets, that_words_found );
-
-
-
-
-if  (  note_places_results  ==  NULL  )
-
-{
-
-that_places_results  =  NULL;
-
-}
-
-
-
-else if  (  note_places_results  !=  NULL  )
-
-{
-
-that_places_results  =  note_places_results;
-
-}
-
-
-
-
-return NULL;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-// something wrong with this
-
-/*
 
 #include  <stdlib.h>
 
@@ -72,7 +11,7 @@ void *  that_words_targets,
 
 void *  that_words_found,
 
-void *  that_words_results
+void ** that_places_results
 
 )
 
@@ -110,7 +49,7 @@ for
 
 * ( uint64_t * ) note_numbers_lengths_targets   =   0;
 
-* ( uint64_t * ) (  that_words_targets  +  * ( uint64_t * ) note_numbers_lengths_targets  )   !=   '\0';
+* ( char * ) (  that_words_targets  +  * ( uint64_t * ) note_numbers_lengths_targets  )   !=   '\0';
 
 * ( uint64_t * ) note_numbers_lengths_targets   =   * ( uint64_t * ) note_numbers_lengths_targets   +   1
 
@@ -135,7 +74,7 @@ for
 
 * ( uint64_t * ) note_numbers_lengths_found   =   0;
 
-* ( uint64_t * ) (  that_words_found  +  * ( uint64_t * ) note_numbers_lengths_found  )   !=   '\0';
+* ( char * ) (  that_words_found  +  * ( uint64_t * ) note_numbers_lengths_found  )   !=   '\0';
 
 * ( uint64_t * ) note_numbers_lengths_found   =   * ( uint64_t * ) note_numbers_lengths_found   +   1
 
@@ -231,9 +170,9 @@ else if
 
 (
 
-* ( uint64_t * ) (  that_words_targets  +  * ( uint64_t * ) note_numbers_counts_targets  +  * ( uint64_t * ) note_numbers_counts_found  )
+* ( char * ) (  that_words_targets  +  * ( uint64_t * ) note_numbers_counts_targets  +  * ( uint64_t * ) note_numbers_counts_found  )
 ==
-* ( uint64_t * ) (  that_words_found  +  * ( uint64_t * ) note_numbers_counts_found  )
+* ( char * ) (  that_words_found  +  * ( uint64_t * ) note_numbers_counts_found  )
 
 )
 
@@ -255,7 +194,7 @@ if  (  * ( uint8_t * ) note_numbers_switches   ==   0  )
 
 {
 
-that_places_results   =   that_words_targets   +   * ( uint64_t * ) note_numbers_counts_targets;
+* that_places_results   =   that_words_targets   +   * ( uint64_t * ) note_numbers_counts_targets;
 
 break;
 
@@ -266,7 +205,7 @@ else if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
 
 {
 
-that_places_results   =   NULL;
+* that_places_results   =   NULL;
 
 }
 
@@ -305,7 +244,7 @@ return  NULL;
 
 }
 
-*/
+
 
 
 

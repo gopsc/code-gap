@@ -9,13 +9,18 @@
 
 void *  fstRootsDataFree
 
-(  void *  that_places_data  )
+(  void ** that_places_data  )
 
 {
 
-free  (  that_places_data  );
+
+free  (  * that_places_data  );
+
+* that_places_data  =  NULL;
+
 
 return NULL;
+
 
 }
 

@@ -1,28 +1,4 @@
 
-
-
-
-#include <stdlib.h>
-
-void *  fstRootsDataCreate ()
-
-{
-
-return   malloc (  1  *  sizeof ( uint8_t )  );
-
-}
-
-
-
-/*
-
-something wrong with this
-
-*/
-
-
-/*
-
 #include  <stdlib.h>
 
 
@@ -30,7 +6,7 @@ void  *   fstRootsDataCreate
 
 (
 
-void * that_places_created
+void ** that_places_created
 
 )
 
@@ -46,7 +22,7 @@ if  (  note_places_created  ==  NULL  )
 
 {
 
-that_places_created  =  note_places_created;
+* that_places_created  =  NULL;
 
 }
 
@@ -55,7 +31,7 @@ else if  (  note_places_created  !=  NULL  )
 
 {
 
-that_places_created  =  NULL;
+* that_places_created  =  note_places_created;
 
 }
 
@@ -65,7 +41,7 @@ return NULL;
 
 }
 
-*/
+
 
 
 

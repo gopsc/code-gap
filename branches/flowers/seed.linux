@@ -68,41 +68,55 @@ int main ( int argc, char * argv [] )
 
 /*
   
-begin_fst_leaves_lake ();
+fstBranchesLakeBegin ();
 
-begin_fst_leaves_lake_existence ();
+fstBranchesLakeExistenceBegin ();
 
-begin_fst_dog ();
+fstDogBegin ();
 
 */
 
 
 
-void *  note_test;
+void *  note_numbers_sizes;
 
-note_test  =  fstRootsDataCreate ();
+void *  note_words_test;
 
-
-* ( uint8_t * ) note_test  =  6;
-
-fstRootsDataResize (  note_test,  note_test  );
+void *  note_places_test;
 
 
-* ( char * ) ( note_test + 0 )  =  'h';
+fstRootsDataCreate ( & note_numbers_sizes );
 
-* ( char * ) ( note_test + 1 )  =  'e';
+fstRootsDataCreate ( & note_words_test );
 
-* ( char * ) ( note_test + 2 )  =  'l';
+
+* ( uint8_t * ) note_numbers_sizes  =  6;
+
+
+fstRootsDataResize (  & note_words_test,  note_numbers_sizes  );
+
+fstRootsDataFree (  & note_numbers_sizes  );
+
+
+fstRootsDataWordsCopy  (  note_words_test,  "hello"  );
+
+fstRootsDataWordsFind  (  note_words_test, "ll", & note_places_test  );
+
+
+printf ( "%s\n", note_places_test );
+
+
+fstRootsDataFree ( & note_words_test );
 
 
 
 /*
 
-end_fst_dog ();
+fstDogEnd ();
 
-end_fst_leaves_lake_existence ();
+fstBranchesLakeExistenceEnd ();
 
-end_fst_leaves_lake ();
+fstBranchesLakeEnd ();
 
 */
 
