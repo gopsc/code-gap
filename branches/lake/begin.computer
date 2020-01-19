@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+void  *   begin_fst_leaves_lake   ()
+
+
+{
+
+
+
+
+
+
+
+
+if  (  that_fst_leaves_lake  ==  NULL )
+
+{
+
+  
+that_fst_leaves_lake   =   FstRootsDataCreate  (  1 * sizeof ( void * )  );
+
+  
+  
+that_fst_leaves_lake  [ 0 ]   =   FstRootsDataCreate  (  2 * sizeof ( void * )  );
+  
+
+  
+that_fst_leaves_lake  [ 0 ] [ 0 ]   =   FstRootsDataCreate  (  21 * sizeof ( char )  );
+  
+that_fst_leaves_lake  [ 0 ] [ 1 ]   =   FstRootsDataCreate  (  1 * sizeof ( char )  );
+
+  
+
+
+copy_fst_things_data_words  (  FstRootsDataCreate  [ 0 ] [ 0 ],  "that_fst_leaves_lake"  );
+  
+*  (  int *  )   FstRootsDataCreate  [ 0 ] [ 1 ]   =   0;
+
+
+}  
+
+
+
+
+
+
+
+return  that_fst_leaves_lake;
+
+}
+
+
+
+
+
+
+
