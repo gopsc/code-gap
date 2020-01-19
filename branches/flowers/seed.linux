@@ -85,6 +85,14 @@ note_test  =  fstRootsDataCreate ();
 
 * ( uint8_t * ) note_test  =  6;
 
+fstRootsDataResize (  note_test,  note_test  );
+
+
+* ( char * ) ( note_test + 0 )  =  'h';
+
+* ( char * ) ( note_test + 1 )  =  'e';
+
+* ( char * ) ( note_test + 2 )  =  'l';
 
 
 
