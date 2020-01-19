@@ -74,13 +74,16 @@ begin_fst_leaves_lake_existence ();
 
 begin_fst_dog ();
 
+*/
+
+
+
+void *  note_test;
 
 
 
 
-
-
-
+/*
 
 end_fst_dog ();
 
@@ -93,19 +96,6 @@ end_fst_leaves_lake ();
 
 
 
-void *  note_numbers_test  =  fstRootsDataCreate ();
-
-* ( uint8_t * ) note_numbers_test  =  16;
-
-fstRootsDataResize (  note_numbers_test,  note_numbers_test  );
-
-* ( uint8_t * ) note_numbers_test  =  6;
-
-
-printf ( "%u\n", * ( uint8_t * ) note_numbers_test );
-
-
-fstRootsDataFree ( note_numbers_test );
 
 
 

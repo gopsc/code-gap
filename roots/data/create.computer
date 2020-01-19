@@ -61,7 +61,7 @@ that_places_created  =  0;
 
 
 
-return 0;
+return NULL;
 
 }
 
