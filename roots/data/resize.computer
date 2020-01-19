@@ -46,7 +46,7 @@ that_places_resized  =  note_places_resized;
 
 
 
-return 0;
+return NULL;
 
 }
 
