@@ -55,7 +55,7 @@ else if  (  note_places_created  !=  NULL  )
 
 {
 
-that_places_created  =  0;
+that_places_created  =  NULL;
 
 }
 
