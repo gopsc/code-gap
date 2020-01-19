@@ -8,10 +8,10 @@ void *  fstBranchesLakeEnd ()
 {
 
 
+
 void *  note_numbers_counts;
 
-note_numbers_counts   =   fstRootsDataCreate  ();
-
+fstRootsDataCreate  (  & note_numbers_counts  );
 
 
 
@@ -29,11 +29,11 @@ for
 
 {
 
-fstRootsDataFree   (  & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 0 ] );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 0 ] );
 
-fstRootsDataFree   (  & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 1 ] );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 1 ] );
 
-fstRootsDataFree   (  & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ]  );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ]  );
 
 }
 
@@ -42,16 +42,19 @@ fstRootsDataFree  (  & note_numbers_counts );
 
 
 
+
 fstRootsDataFree  (  & fstBranchesLake  [ 0 ] [ 1 ]  );
 
 fstRootsDataFree  (  & fstBranchesLake  [ 0 ] [ 0 ]  );
 
-fstRootsDataFree  (  & fstBranchesLake  [ 0 ]  );
+fstRootsDataFree  (  ( void ** ) & fstBranchesLake  [ 0 ]  );
 
-fstRootsDataFree  (  & fstBranchesLake  );
+fstRootsDataFree  (  ( void ** ) & fstBranchesLake  );
+
 
 
 fstBranchesLake  =  NULL;
+
 
 
 

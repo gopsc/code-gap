@@ -7,7 +7,6 @@
 
 void  *   fstBranchesLakeBegin   ()
 
-
 {
 
 
@@ -16,19 +15,58 @@ if  (  fstBranchesLake  ==  NULL )
 
 {
 
+
+
+void * note_numbers_sizes;
+
+fstRootsDataCreate  (  & note_numbers_sizes  );
+
+
+
 /*
 
 'void *'  for eight byte
 
 */
 
-fstBranchesLake   =   fstRootsDataCreate  ();
 
-fstBranchesLake  [ 0 ]   =   fstRootsDataCreate  ();
 
-fstBranchesLake  [ 0 ] [ 0 ]   =   fstRootsDataCreate  ();
+* ( uint8_t * ) note_numbers_sizes  =  8;
 
-fstBranchesLake  [ 0 ] [ 1 ]   =   fstRootsDataCreate  ();
+fstRootsDataCreate  (  ( void ** ) & fstBranchesLake  );
+
+fstRootsDataResize  (  ( void ** ) & fstBranchesLake,  note_numbers_sizes  );
+
+
+
+* ( uint8_t * ) note_numbers_sizes  =  2 * 8;
+
+fstRootsDataCreate  (  ( void ** ) & fstBranchesLake [ 0 ]  );
+
+fstRootsDataResize  (  ( void ** ) & fstBranchesLake [ 0 ],  note_numbers_sizes  );
+
+
+
+* ( uint8_t * ) note_numbers_sizes  =  18 * 1;
+
+fstRootsDataCreate  (  & fstBranchesLake [ 0 ] [ 0 ]  );
+
+fstRootsDataResize  (  & fstBranchesLake [ 0 ] [ 0 ],  note_numbers_sizes  );
+
+
+
+* ( uint8_t * ) note_numbers_sizes  =  1;
+
+fstRootsDataCreate  (  & fstBranchesLake [ 0 ] [ 1 ]  );
+
+fstRootsDataResize  (  & fstBranchesLake [ 0 ] [ 1 ],  note_numbers_sizes  );
+
+
+
+
+fstRootsDataFree  (  & note_numbers_sizes  );
+
+
 
 
 fstRootsDataWordsCopy  (  fstBranchesLake  [ 0 ] [ 0 ],  "fst,branches,lake"  );
@@ -37,6 +75,7 @@ fstRootsDataWordsCopy  (  fstBranchesLake  [ 0 ] [ 0 ],  "fst,branches,lake"  );
 
 
 }  
+
 
 
 

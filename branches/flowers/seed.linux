@@ -66,9 +66,11 @@ int main ( int argc, char * argv [] )
 
 
 
-/*
   
 fstBranchesLakeBegin ();
+
+
+/*
 
 fstBranchesLakeExistenceBegin ();
 
@@ -103,7 +105,7 @@ fstRootsDataWordsCopy  (  note_words_test,  "hello"  );
 fstRootsDataWordsFind  (  note_words_test, "ll", & note_places_test  );
 
 
-printf ( "%s\n", note_places_test );
+printf ( "%s\n", note_words_test );
 
 
 fstRootsDataFree ( & note_words_test );
@@ -116,9 +118,10 @@ fstDogEnd ();
 
 fstBranchesLakeExistenceEnd ();
 
+*/
+
 fstBranchesLakeEnd ();
 
-*/
 
 
 
