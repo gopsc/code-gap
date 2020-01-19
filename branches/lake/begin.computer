@@ -39,7 +39,7 @@ fstBranchesLake  [ 0 ] [ 1 ]   =   FstRootsDataCreate  (  1 * sizeof ( char )  )
 
 fstRootsDataWordsCopy  (  FstRootsDataCreate  [ 0 ] [ 0 ],  "fst,branches,lake"  );
   
-*  (  int *  )   FstRootsDataCreate  [ 0 ] [ 1 ]   =   0;
+*  (  uint_t *  )   FstRootsDataCreate  [ 0 ] [ 1 ]   =   0;
 
 
 }  
