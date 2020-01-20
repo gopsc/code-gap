@@ -36,6 +36,7 @@ if  (  note_places_resized  ==  NULL  )
 }
 
 
+
 else if  (  note_places_resized  !=  NULL  )
 
 {
