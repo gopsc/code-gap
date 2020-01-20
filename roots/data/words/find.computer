@@ -206,7 +206,7 @@ break;
 
 
 
-else if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
+if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
 
 {
 
