@@ -200,17 +200,17 @@ break;
 
 
 
-else if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
-
-{
-
-* that_places_results   =   NULL;
-
 }
 
 
 
 
+
+else if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
+
+{
+
+* that_places_results   =   NULL;
 
 }
 
