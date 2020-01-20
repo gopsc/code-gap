@@ -104,11 +104,32 @@ fstRootsDataWordsCopy  (  note_words_test,  "hello"  );
 
 fstRootsDataWordsFind  (  note_words_test, "ll", & note_places_test  );
 
+/*
 
 printf ( "%s\n", note_places_test );
 
+*/
+
+
+void * note_numbers_test;
+
+
+fstRootsDataCreate ( & note_numbers_test );
+
+
+fstRootsDataWordsMeasure ( note_words_test, & note_numbers_test );
+
+/*
+
+printf ( "%u\n", * ( uint8_t * ) note_numbers_test );
+
+*/
+
+fstRootsDataFree ( & note_numbers_test );
+
 
 fstRootsDataFree ( & note_words_test );
+
 
 
 

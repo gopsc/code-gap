@@ -11,9 +11,9 @@
 #include "./roots/data/words/find.computer"    // something wrong with it
 
 #include "./roots/data/words/copy.computer"
-//
+
 #include "./roots/data/words/measure.computer"
-/*
+/* //
 #include "./things/data/words/append.c"
 
 #include "./things/data/words/compare.c"
