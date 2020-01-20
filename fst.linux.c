@@ -11,10 +11,10 @@
 #include "./roots/data/words/find.computer"
 
 #include "./roots/data/words/copy.computer"
-/* //
-#include "./things/data/words/append.c"
-
+//
 #include "./things/data/words/measure.c"
+/*
+#include "./things/data/words/append.c"
 
 #include "./things/data/words/compare.c"
 
