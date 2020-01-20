@@ -8,7 +8,7 @@
 #include "./roots/data/free.computer"
 
 
-#include "./roots/data/words/find.computer"
+#include "./roots/data/words/find.computer"    // something wrong with it
 
 #include "./roots/data/words/copy.computer"
 //
