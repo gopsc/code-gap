@@ -115,7 +115,7 @@ for
 
 * ( uint64_t * ) note_numbers_counts_targets   =   0;
 
-* ( uint64_t * ) note_numbers_counts_targets   <   * ( uint64_t * ) note_numbers_lengths_targets;
+* ( uint64_t * ) note_numbers_counts_targets  <=   * ( uint64_t * ) note_numbers_lengths_targets;
 
 * ( uint64_t * ) note_numbers_counts_targets   =   * ( uint64_t * ) note_numbers_counts_targets   +   1
 
@@ -134,7 +134,7 @@ for
 
 * ( uint64_t * ) note_numbers_counts_found   =   0;
 
-* ( uint64_t * ) note_numbers_counts_found   <   * ( uint64_t * ) note_numbers_lengths_found;
+* ( uint64_t * ) note_numbers_counts_found  <=   * ( uint64_t * ) note_numbers_lengths_found;
 
 * ( uint64_t * ) note_numbers_counts_found   =   * ( uint64_t * ) note_numbers_counts_found   +   1
 
@@ -182,7 +182,6 @@ else if
 
 
 
-
 }
 
 
@@ -200,27 +199,27 @@ break;
 }
 
 
-else if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
+
+
+}
+
+
+
+
+/*
+
+prepare to return
+
+*/
+
+
+if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
 
 {
 
 * that_places_results   =   NULL;
 
 }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
 
 
 
