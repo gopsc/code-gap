@@ -12,7 +12,7 @@
 
 #include "./roots/data/words/copy.computer"
 //
-#include "./things/data/words/measure.c"
+#include "./roots/data/words/measure.computer"
 /*
 #include "./things/data/words/append.c"
 

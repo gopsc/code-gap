@@ -104,11 +104,9 @@ fstRootsDataWordsCopy  (  note_words_test,  "hello"  );
 
 fstRootsDataWordsFind  (  note_words_test, "ll", & note_places_test  );
 
-/*
 
 printf ( "%s\n", note_places_test );
 
-*/
 
 fstRootsDataFree ( & note_words_test );
 

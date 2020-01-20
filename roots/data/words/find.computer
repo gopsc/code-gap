@@ -212,7 +212,7 @@ prepare to return
 
 */
 
-
+printf ( "%u\n", * ( uint8_t * ) note_numbers_switches );
 if  (  * ( uint8_t * ) note_numbers_switches   ==   1  )
 
 {
