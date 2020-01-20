@@ -9,7 +9,7 @@ void *  measure_fst_things_data_words
 
 void *  that_words_targets,
 
-void *  that_numbers_results
+void ** that_numbers_results
 
 )
 
@@ -18,10 +18,9 @@ void *  that_numbers_results
 
 
 
-
 void *  note_numbers_counts;
 
-note_numbers_counts   =   malloc  (  1  *  sizeof ( int )  );
+note_numbers_counts   =   malloc  (  1  *  sizeof ( uint64_t )  );
 
 
 
@@ -29,11 +28,11 @@ for
 
 (
 
-* ( int * ) note_numbers_counts   =   0;
+* ( uint64_t * ) note_numbers_counts   =   0;
 
-* ( char * ) ( that_words_targets  +  * ( int * ) note_numbers_counts )   !=   '\0';
+* ( char * ) ( that_words_targets  +  * ( uint64_t * ) note_numbers_counts )   !=   '\0';
 
-* ( int * ) note_numbers_counts   =   * ( int * ) note_numbers_counts   +   1
+* ( uint64_t * ) note_numbers_counts   =   * ( uint64_t * ) note_numbers_counts   +   1
 
 )
 
@@ -44,13 +43,15 @@ for
 
 
 
-* ( int * ) that_numbers_results   =   * ( int * ) note_numbers_counts;
+* ( uint64_t * ) * that_numbers_results   =   * ( uint64_t * ) note_numbers_counts;
 
 
 free  (  note_numbers_counts  );
 
 
-return  0;
+
+return  NULL;
+
 
 }
 
