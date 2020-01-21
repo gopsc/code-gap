@@ -102,7 +102,7 @@ fstRootsDataCreate ( & note_words_test_compare );
 fstRootsDataCreate ( & note_numbers_results_test );
 
 
-* ( __uint8_t * ) note_numbers_sizes_test = 6;
+* ( __uint64_t * ) note_numbers_sizes_test = 6;
 
 fstRootsDataResize ( & note_words_test_compared, note_numbers_sizes_test );
 
