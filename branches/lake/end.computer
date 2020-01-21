@@ -33,7 +33,7 @@ fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_num
 
 fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 1 ] );
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ]  );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint8_t * ) note_numbers_counts  ]  );
 
 }
 
