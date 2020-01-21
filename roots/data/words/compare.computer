@@ -5,9 +5,6 @@
 
 #include <stdlib.h>
 
-#include <stdio.h>
-
-
 
 void *  fstRootsDataWordsCompare
 
@@ -30,7 +27,6 @@ void *  note_numbers_lengths_compared;
 
 note_numbers_lengths_compared   =   malloc  (  sizeof ( __uint64_t )  );
 
-
 for
 
 (
@@ -46,7 +42,6 @@ for
 {
 
 }
-
 
 
 
@@ -81,14 +76,13 @@ for
 
 
 
-
 if
 
 (
 
-* ( int * ) note_numbers_lengths_compared
+* ( __uint64_t * ) note_numbers_lengths_compared
 !=
-* ( int * ) note_numbers_lengths_compare
+* ( __uint64_t * ) note_numbers_lengths_compare
 
 )
 
