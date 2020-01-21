@@ -1,0 +1,197 @@
+
+
+
+
+
+#include <stdlib.h>
+
+#include <stdio.h>
+
+
+
+void *  fstRootsDataWordsCompare
+
+
+(
+
+void *  that_words_compared,
+
+void *  that_words_compare,
+
+void ** that_numbers_results
+
+)
+
+{
+
+
+
+void *  note_numbers_lengths_compared;
+
+note_numbers_lengths_compared   =   malloc  (  sizeof ( __uint64_t )  );
+
+
+for
+
+(
+
+* ( __uint64_t * ) note_numbers_lengths_compared   =   0;
+
+* ( char * )  (  that_words_compared  +  * ( __uint64_t * ) note_numbers_lengths_compared  )   !=   '\0';
+
+* ( __uint64_t * ) note_numbers_lengths_compared   =   * ( __uint64_t * ) note_numbers_lengths_compared   +   1
+
+)
+
+{
+
+}
+
+
+
+
+
+void *  note_numbers_lengths_compare;
+
+note_numbers_lengths_compare   =   malloc  (  sizeof ( __uint64_t )  );
+
+
+
+for
+
+(
+
+* ( __uint64_t * ) note_numbers_lengths_compare   =   0;
+
+* ( char * ) (  that_words_compare  +  * ( __uint64_t * ) note_numbers_lengths_compare  )   !=   '\0';
+
+* ( __uint64_t * ) note_numbers_lengths_compare   =   * ( __uint64_t * ) note_numbers_lengths_compare   +   1
+
+)
+
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+* ( int * ) note_numbers_lengths_compared
+!=
+* ( int * ) note_numbers_lengths_compare
+
+)
+
+{
+
+
+free  (  note_numbers_lengths_compared  );
+
+free  (  note_numbers_lengths_compare  );
+
+
+* ( __uint8_t * ) * that_numbers_results   =   0;
+
+
+return  NULL;
+
+}
+
+
+
+
+
+
+
+void *  note_numbers_counts;
+
+note_numbers_counts   =   malloc  (  sizeof ( __uint64_t )  );
+
+
+
+for
+
+(
+
+* ( __uint64_t * ) note_numbers_counts   =   0;
+
+* ( __uint64_t * ) note_numbers_counts   <   * ( __uint64_t * ) note_numbers_lengths_compared;
+
+* ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1
+
+)
+
+{
+
+
+
+if
+
+(
+
+* ( char * ) (  that_words_compared  +  * ( __uint64_t * ) note_numbers_counts  ) 
+!=
+* ( char * ) (  that_words_compare  +  * ( __uint64_t * ) note_numbers_counts  )
+
+)
+
+{
+
+free  (  note_numbers_lengths_compared  );
+
+free  (  note_numbers_lengths_compare  );
+
+free  (  note_numbers_counts  );
+
+
+* ( __uint8_t * ) * that_numbers_results   =   0;
+
+
+return  NULL;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+free  (  note_numbers_lengths_compared  );
+
+free  (  note_numbers_lengths_compare  );
+
+free  (  note_numbers_counts  );
+
+
+* ( __uint8_t * ) * that_numbers_results   =   1;
+
+
+return  NULL;
+
+}
+
+
+
+
+
+
+
+
