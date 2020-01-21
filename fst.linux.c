@@ -14,9 +14,9 @@
 
 #include "./roots/data/words/measure.computer"
 /* //
-#include "./things/data/words/append.c"
-
 #include "./things/data/words/compare.c"
+
+#include "./things/data/words/append.c"
 
 
 #include "./things/trees/dirents/create.c"
