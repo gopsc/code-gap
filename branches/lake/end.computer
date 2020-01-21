@@ -19,21 +19,21 @@ for
 
 (
 
-* ( uint8_t * ) note_numbers_counts   =  1;
+* ( __uint64_t * ) note_numbers_counts   =  1;
 
-* ( uint8_t * ) note_numbers_counts  <=  * ( uint8_t * ) fstBranchesLake  [ 0 ] [ 1 ];
+* ( __uint64_t * ) note_numbers_counts  <=  * ( __uint64_t * ) fstBranchesLake  [ 0 ] [ 1 ];
 
-* ( uint8_t * ) note_numbers_counts   =  * ( uint8_t * ) fstBranchesLake   +   1
+* ( __uint64_t * ) note_numbers_counts   =  * ( __uint64_t * ) fstBranchesLake   +   1
 
 )
 
 {
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 0 ] );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 0 ] );
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( uint8_t * ) note_numbers_counts  ] [ 1 ] );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ] );
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint8_t * ) note_numbers_counts  ]  );
+fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint64_t * ) note_numbers_counts  ]  );
 
 }
 

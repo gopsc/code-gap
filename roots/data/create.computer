@@ -14,7 +14,7 @@ void ** that_places_created
 
 void * note_places_created;
 
-note_places_created  =  malloc  (  1  *  sizeof ( uint8_t )  );
+note_places_created  =  malloc  (  1  *  sizeof ( __uint8_t )  );
 
 
 
