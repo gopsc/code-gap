@@ -1,5 +1,6 @@
 
 
+//
 
 #include "./roots/data/create.computer"
 
@@ -8,15 +9,15 @@
 #include "./roots/data/free.computer"
 
 
-#include "./roots/data/words/find.computer"
-
 #include "./roots/data/words/copy.computer"
+
+#include "./roots/data/words/append.computer"
 
 #include "./roots/data/words/measure.computer"
 
 #include "./roots/data/words/compare.computer"
-//
-#include "./roots/data/words/append.computer"
+
+#include "./roots/data/words/find.computer"
 /*
 
 #include "./things/trees/dirents/create.c"
