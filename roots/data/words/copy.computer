@@ -24,23 +24,29 @@ note_numbers_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-for
-
-(
 
 * ( __uint64_t * ) note_numbers_counts   =   0;
 
-* ( char * ) ( that_words_copied + * ( __uint64_t * ) note_numbers_counts )  !=  '\0';
+while
 
-* ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1
+(
+
+* ( char * ) ( that_words_copied + * ( __uint64_t * ) note_numbers_counts )  !=  '\0'
 
 )
 
 {
 
+
 * ( char * ) ( that_words_targets   +   * ( __uint64_t * ) note_numbers_counts )
 =
 * ( char * ) (  that_words_copied  +  * ( __uint64_t * ) note_numbers_counts  );
+
+
+
+
+* ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1;
+
 
 }
 

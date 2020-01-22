@@ -11,7 +11,7 @@ void  *   fstRootsDataWordsAppend
 
 void  *   that_words_targets,
 
-void  *   that_words_appended
+void  *   that_words_append
 
 )
 
@@ -39,34 +39,38 @@ while  (  * ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers
 
 
 
-void  *   note_numbers_counts_appended;
+void  *   note_numbers_counts_append;
 
-note_numbers_counts_appended   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+note_numbers_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-* ( __uint64_t * ) note_numbers_counts_appended   =   0;
+* ( __uint64_t * ) note_numbers_counts_append   =   0;
 
-while  (   * ( char * ) (  that_words_appended  +  * ( __uint64_t * ) note_numbers_counts_appended  )   !=   '\0'   )
+while  (   * ( char * ) (  that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  )   !=   '\0'   )
 
 {
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_appended  )
+* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )
 =
-* ( char * ) (  that_words_appended  +  * ( __uint64_t * ) note_numbers_counts_appended  );
+* ( char * ) (  that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  );
 
 
 
-* ( __uint64_t * ) note_numbers_counts_appended   =   * ( __uint64_t * ) note_numbers_counts_appended   +   1;
+* ( __uint64_t * ) note_numbers_counts_append   =   * ( __uint64_t * ) note_numbers_counts_append   +   1;
 
 }
 
 
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_appended  )   =   '\0';
+* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )   =   '\0';
 
 
 
+
+free ( note_numbers_counts_targets );
+
+free ( note_numbers_counts_append );
 
 return  NULL;
 

@@ -42,20 +42,19 @@ note_numbers_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
+* ( __uint64_t * ) note_numbers_lengths_targets   =   0;
 
-for
+while
 
 (
 
-* ( __uint64_t * ) note_numbers_lengths_targets   =   0;
-
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_lengths_targets  )   !=   '\0';
-
-* ( __uint64_t * ) note_numbers_lengths_targets   =   * ( __uint64_t * ) note_numbers_lengths_targets   +   1
+* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_lengths_targets  )   !=   '\0'
 
 )
 
 {
+
+* ( __uint64_t * ) note_numbers_lengths_targets   =   * ( __uint64_t * ) note_numbers_lengths_targets   +   1;
 
 }
 
@@ -64,25 +63,48 @@ for
 
 
 
-
-
-
-for
-
-(
 
 * ( __uint64_t * ) note_numbers_lengths_found   =   0;
 
-* ( char * ) (  that_words_found  +  * ( __uint64_t * ) note_numbers_lengths_found  )   !=   '\0';
+while
 
-* ( __uint64_t * ) note_numbers_lengths_found   =   * ( __uint64_t * ) note_numbers_lengths_found   +   1
+(
+
+* ( char * ) (  that_words_found  +  * ( __uint64_t * ) note_numbers_lengths_found  )   !=   '\0'
 
 )
 
 {
 
+* ( __uint64_t * ) note_numbers_lengths_found   =   * ( __uint64_t * ) note_numbers_lengths_found   +   1;
+
 }
 
+
+
+if
+
+(
+
+* ( __uint64_t * ) note_numbers_lengths_targets
+<
+* ( __uint64_t * ) note_numbers_lengths_found
+
+)
+
+{
+
+free ( note_numbers_lengths_targets );
+
+free ( note_numbers_lengths_found );
+
+
+* that_places_results   =   NULL;
+
+
+return NULL;
+
+}
 
 
 
@@ -102,22 +124,20 @@ note_numbers_counts_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 void *  note_numbers_switches;
 
-note_numbers_switches   =   malloc  (  1  *  sizeof ( __uint8_t )  );
+note_numbers_switches   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
-* ( __uint8_t * ) note_numbers_switches   =   1;
-
-
+* ( __uint64_t * ) note_numbers_switches   =   1;
 
 
-for
 
-(
 
 * ( __uint64_t * ) note_numbers_counts_targets   =   0;
 
-* ( __uint64_t * ) note_numbers_counts_targets   <   * ( __uint64_t * ) note_numbers_lengths_targets;
+while
 
-* ( __uint64_t * ) note_numbers_counts_targets   =   * ( __uint64_t * ) note_numbers_counts_targets   +   1
+(
+
+* ( __uint64_t * ) note_numbers_counts_targets   <   * ( __uint64_t * ) note_numbers_lengths_targets
 
 )
 
@@ -125,18 +145,16 @@ for
 
 
 
-* ( __uint8_t * ) note_numbers_switches   =   1;
+* ( __uint64_t * ) note_numbers_switches   =   1;
 
-
-for
-
-(
 
 * ( __uint64_t * ) note_numbers_counts_found   =   0;
 
-* ( __uint64_t * ) note_numbers_counts_found   <   * ( __uint64_t * ) note_numbers_lengths_found;
+while
 
-* ( __uint64_t * ) note_numbers_counts_found   =   * ( __uint64_t * ) note_numbers_counts_found   +   1
+(
+
+* ( __uint64_t * ) note_numbers_counts_found   <   * ( __uint64_t * ) note_numbers_lengths_found
 
 )
 
@@ -157,7 +175,7 @@ if
 
 {
 
-* ( __uint8_t * ) note_numbers_switches   =   1;
+* ( __uint64_t * ) note_numbers_switches   =   1;
 
 break;
 
@@ -176,19 +194,21 @@ else if
 
 {
 
-* ( __uint8_t * ) note_numbers_switches   =   0;
+* ( __uint64_t * ) note_numbers_switches   =   0;
 
 }
 
 
 
+* ( __uint64_t * ) note_numbers_counts_found   =   * ( __uint64_t * ) note_numbers_counts_found   +   1;
+
 }
 
 
 
 
 
-if  (  * ( __uint8_t * ) note_numbers_switches   ==   0  )
+if  (  * ( __uint64_t * ) note_numbers_switches   ==   0  )
 
 {
 
@@ -200,13 +220,16 @@ break;
 
 
 
+
+* ( __uint64_t * ) note_numbers_counts_targets   =   * ( __uint64_t * ) note_numbers_counts_targets   +   1;
+
 }
 
 
 
 
 
-if  (  * ( __uint8_t * ) note_numbers_switches   ==   1  )
+if  (  * ( __uint64_t * ) note_numbers_switches   ==   1  )
 
 {
 
