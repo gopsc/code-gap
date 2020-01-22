@@ -3,10 +3,10 @@
 
 
 
-
+/*
 
 #include <stdio.h>
-/*
+
 #include <stdlib.h>
 
 
@@ -84,49 +84,6 @@ fstDogBegin ();
 
 
 
-void * note_numbers_sizes_test;
-
-void * note_words_test_compared;
-
-void * note_words_test_compare;
-
-void * note_numbers_results_test;
-
-
-fstRootsDataCreate ( & note_numbers_sizes_test );
-
-fstRootsDataCreate ( & note_words_test_compared );
-
-fstRootsDataCreate ( & note_words_test_compare );
-
-fstRootsDataCreate ( & note_numbers_results_test );
-
-
-* ( __uint64_t * ) note_numbers_sizes_test = 6;
-
-fstRootsDataResize ( & note_words_test_compared, note_numbers_sizes_test );
-
-fstRootsDataResize ( & note_words_test_compare, note_numbers_sizes_test );
-
-
-fstRootsDataWordsCopy ( note_words_test_compared, "hello" );
-
-fstRootsDataWordsCopy ( note_words_test_compare, "hello" );
-
-
-fstRootsDataWordsCompare ( note_words_test_compared, note_words_test_compare, & note_numbers_results_test );
-
-
-printf ( "%u\n", * ( __uint8_t * ) note_numbers_results_test );
-
-
-fstRootsDataFree ( & note_numbers_sizes_test );
-
-fstRootsDataFree ( & note_words_test_compared );
-
-fstRootsDataFree ( & note_words_test_compare );
-
-fstRootsDataFree ( &note_numbers_results_test );
 
 
 
