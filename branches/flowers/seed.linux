@@ -3,10 +3,10 @@
 
 
 
-
+/*
 
 #include <stdio.h>
-/*
+
 #include <stdlib.h>
 
 
@@ -70,14 +70,14 @@ int main ( int argc, char * argv [] )
 
 
   
-fstBranchesLakeBegin ();
+fst_branches_lake_begin ();
 
 
 /*
 
-fstBranchesLakeExistenceBegin ();
+fst_branches_lake_existence_begin ();
 
-fstDogBegin ();
+fst_dog_begin ();
 
 */
 
@@ -91,13 +91,13 @@ fstDogBegin ();
 
 /*
 
-fstDogEnd ();
+fst_dog_end ();
 
-fstBranchesLakeExistenceEnd ();
+fst_branches_lake_existence_end ();
 
 */
 
-fstBranchesLakeEnd ();
+fst_branches_lake_end ();
 
 
 

@@ -5,13 +5,13 @@
 
 
 
-void  *   fstBranchesLakeBegin   ()
+void  *   fst_branches_lake_begin   ()
 
 {
 
 
 
-if  (  fstBranchesLake  ==  NULL )
+if  (  fst_branches_lake  ==  NULL )
 
 {
 
@@ -19,7 +19,7 @@ if  (  fstBranchesLake  ==  NULL )
 
 void * note_numbers_sizes;
 
-fstRootsDataCreate  (  & note_numbers_sizes  );
+fst_roots_data_create  (  & note_numbers_sizes  );
 
 
 
@@ -33,45 +33,45 @@ fstRootsDataCreate  (  & note_numbers_sizes  );
 
 * ( __uint64_t * ) note_numbers_sizes  =  8;
 
-fstRootsDataCreate  (  ( void ** ) & fstBranchesLake  );
+fst_roots_data_create  (  ( void ** ) & fst_branches_lake  );
 
-fstRootsDataResize  (  ( void ** ) & fstBranchesLake,  note_numbers_sizes  );
+fst_roots_data_resize  (  ( void ** ) & fst_branches_lake,  note_numbers_sizes  );
 
 
 
 * ( __uint64_t * ) note_numbers_sizes  =  2 * 8;
 
-fstRootsDataCreate  (  ( void ** ) & fstBranchesLake [ 0 ]  );
+fst_roots_data_create  (  ( void ** ) & fst_branches_lake [ 0 ]  );
 
-fstRootsDataResize  (  ( void ** ) & fstBranchesLake [ 0 ],  note_numbers_sizes  );
+fst_roots_data_resize  (  ( void ** ) & fst_branches_lake [ 0 ],  note_numbers_sizes  );
 
 
 
 * ( __uint64_t * ) note_numbers_sizes  =  18 * 1;
 
-fstRootsDataCreate  (  & fstBranchesLake [ 0 ] [ 0 ]  );
+fst_roots_data_create  (  & fst_branches_lake [ 0 ] [ 0 ]  );
 
-fstRootsDataResize  (  & fstBranchesLake [ 0 ] [ 0 ],  note_numbers_sizes  );
-
-
-
-* ( __uint64_t * ) note_numbers_sizes  =  1;
-
-fstRootsDataCreate  (  & fstBranchesLake [ 0 ] [ 1 ]  );
-
-fstRootsDataResize  (  & fstBranchesLake [ 0 ] [ 1 ],  note_numbers_sizes  );
+fst_roots_data_resize  (  & fst_branches_lake [ 0 ] [ 0 ],  note_numbers_sizes  );
 
 
 
+* ( __uint64_t * ) note_numbers_sizes  =  8;
 
-fstRootsDataFree  (  & note_numbers_sizes  );
+fst_roots_data_create  (  & fst_branches_lake [ 0 ] [ 1 ]  );
+
+fst_roots_data_resize  (  & fst_branches_lake [ 0 ] [ 1 ],  note_numbers_sizes  );
 
 
 
 
-fstRootsDataWordsCopy  (  fstBranchesLake  [ 0 ] [ 0 ],  "fst,branches,lake"  );
+fst_roots_data_free  (  & note_numbers_sizes  );
 
-*  (  __uint64_t *  )   fstBranchesLake  [ 0 ] [ 1 ]   =   0;
+
+
+
+fst_roots_data_words_copy  (  fst_branches_lake  [ 0 ] [ 0 ],  "fst,branches,lake"  );
+
+*  (  __uint64_t *  )   fst_branches_lake  [ 0 ] [ 1 ]   =   0;
 
 
 }  
@@ -79,7 +79,7 @@ fstRootsDataWordsCopy  (  fstBranchesLake  [ 0 ] [ 0 ],  "fst,branches,lake"  );
 
 
 
-return  fstBranchesLake;
+return  fst_branches_lake;
 
 }
 

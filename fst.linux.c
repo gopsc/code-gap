@@ -18,7 +18,7 @@
 #include "./roots/data/words/compare.computer"
 
 #include "./roots/data/words/find.computer"
-/*//
+/* //
 
 #include "./things/trees/dirents/create.c"
 

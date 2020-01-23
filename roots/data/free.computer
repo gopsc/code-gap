@@ -7,7 +7,7 @@
 
 
 
-void *  fstRootsDataFree
+void *  fst_roots_data_free
 
 (  void ** that_places_data  )
 

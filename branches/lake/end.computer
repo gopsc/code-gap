@@ -3,7 +3,7 @@
 
 
 
-void *  fstBranchesLakeEnd ()
+void *  fst_branches_lake_end ()
 
 {
 
@@ -11,7 +11,7 @@ void *  fstBranchesLakeEnd ()
 
 void *  note_numbers_counts;
 
-fstRootsDataCreate  (  & note_numbers_counts  );
+fst_roots_data_create  (  & note_numbers_counts  );
 
 
 
@@ -21,43 +21,43 @@ for
 
 * ( __uint64_t * ) note_numbers_counts   =  1;
 
-* ( __uint64_t * ) note_numbers_counts  <=  * ( __uint64_t * ) fstBranchesLake  [ 0 ] [ 1 ];
+* ( __uint64_t * ) note_numbers_counts  <=  * ( __uint64_t * ) fst_branches_lake  [ 0 ] [ 1 ];
 
-* ( __uint64_t * ) note_numbers_counts   =  * ( __uint64_t * ) fstBranchesLake   +   1
+* ( __uint64_t * ) note_numbers_counts   =  * ( __uint64_t * ) fst_branches_lake   +   1
 
 )
 
 {
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 0 ] );
+fst_roots_data_free   (  ( void ** ) & fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 0 ] );
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ] );
+fst_roots_data_free   (  ( void ** ) & fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ] );
 
-fstRootsDataFree   (  ( void ** ) & fstBranchesLake  [  * ( __uint64_t * ) note_numbers_counts  ]  );
+fst_roots_data_free   (  ( void ** ) & fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ]  );
 
 }
 
 
-fstRootsDataFree  (  & note_numbers_counts );
+fst_roots_data_free  (  & note_numbers_counts );
 
 
 
 
-fstRootsDataFree  (  & fstBranchesLake  [ 0 ] [ 1 ]  );
+fst_roots_data_free  (  & fst_branches_lake  [ 0 ] [ 1 ]  );
 
-fstRootsDataFree  (  & fstBranchesLake  [ 0 ] [ 0 ]  );
+fst_roots_data_free  (  & fst_branches_lake  [ 0 ] [ 0 ]  );
 
-fstRootsDataFree  (  ( void ** ) & fstBranchesLake  [ 0 ]  );
+fst_roots_data_free  (  ( void ** ) & fst_branches_lake  [ 0 ]  );
 
-fstRootsDataFree  (  ( void ** ) & fstBranchesLake  );
-
-
-
-fstBranchesLake  =  NULL;
+fst_roots_data_free  (  ( void ** ) & fst_branches_lake  );
 
 
 
+fst_branches_lake  =  NULL;
 
-return  fstBranchesLake;
+
+
+
+return  fst_branches_lake;
 
 }
