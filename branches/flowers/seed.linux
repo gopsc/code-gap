@@ -70,14 +70,14 @@ int main ( int argc, char * argv [] )
 
 
   
-fst_branches_lake_begin ();
+begin_fst_branches_lake ();
 
 
 /*
 
-fst_branches_lake_existence_begin ();
+begin_fst_branches_lake_existence ();
 
-fst_dog_begin ();
+begin_fst_dog ();
 
 */
 
@@ -91,13 +91,13 @@ fst_dog_begin ();
 
 /*
 
-fst_dog_end ();
+end_fst_dog ();
 
-fst_branches_lake_existence_end ();
+end_fst_branches_lake_existence ();
 
 */
 
-fst_branches_lake_end ();
+end_fst_branches_lake ();
 
 
 

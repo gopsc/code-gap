@@ -5,7 +5,7 @@
 
 
 
-void *  fst_roots_data_resize
+void *  resize_fst_roots_data
 
 (
 

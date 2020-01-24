@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-void *  fst_roots_data_words_measure
+void *  measure_fst_roots_data_words
 
 (
 
