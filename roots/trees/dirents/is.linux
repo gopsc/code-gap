@@ -48,8 +48,10 @@ if  (    lstat (  that_words_names,  note_structures_status  )  ==  0    )
 
 {
    
+
+
    
-if  (    S_ISDIR  (        ( * ( struct stat * ) note_structures_status )  . st_mode       )  !=  0    )
+if  (    S_ISDIR  (  ( * ( struct stat * ) note_structures_status )  . st_mode       )  !=  0    )
 
 {
 
@@ -77,6 +79,8 @@ return  NULL;
 
 
 
+
+
 }
 
 
@@ -97,6 +101,6 @@ return NULL;
 
 
 
-return NULL;
+//return NULL;
 
 }
