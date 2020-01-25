@@ -55,7 +55,7 @@ if  (    S_ISDIR  (  ( * ( struct stat * ) note_structures_status )  . st_mode  
 
 {
 
-* ( int * ) * that_numbers_results  =  1;
+* ( __int64_t * ) * that_numbers_results  =  1;
 
 
 free ( note_structures_status );
@@ -68,7 +68,7 @@ else
 
 {
 
-* ( int * ) * that_numbers_results  =  0;
+* ( __int64_t * ) * that_numbers_results  =  0;
 
 
 free ( note_structures_status );
@@ -89,18 +89,17 @@ else
 {
 
 
-* ( int * ) * that_numbers_results  =  0;
+* ( __int64_t * ) * that_numbers_results  =  0;
 
 
 free ( note_structures_status );
 
 return NULL;
 
+
 }
 
 
 
-
-//return NULL;
 
 }
