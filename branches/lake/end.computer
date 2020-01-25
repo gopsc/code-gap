@@ -15,15 +15,13 @@ create_fst_roots_data  (  & note_numbers_counts  );
 
 
 
-for
+* ( __uint64_t * ) note_numbers_counts   =  1;
+
+while
 
 (
 
-* ( __uint64_t * ) note_numbers_counts   =  1;
-
-* ( __uint64_t * ) note_numbers_counts  <=  * ( __uint64_t * ) that_fst_branches_lake  [ 0 ] [ 1 ];
-
-* ( __uint64_t * ) note_numbers_counts   =  * ( __uint64_t * ) that_fst_branches_lake   +   1
+* ( __uint64_t * ) note_numbers_counts  <=  * ( __uint64_t * ) that_fst_branches_lake  [ 0 ] [ 1 ]
 
 )
 
@@ -34,6 +32,9 @@ free_fst_roots_data   (  ( void ** ) & that_fst_branches_lake  [  * ( __uint64_t
 free_fst_roots_data   (  ( void ** ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ] );
 
 free_fst_roots_data   (  ( void ** ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ]  );
+
+
+* ( __uint64_t * ) note_numbers_counts   =  * ( __uint64_t * ) that_fst_branches_lake   +   1;
 
 }
 

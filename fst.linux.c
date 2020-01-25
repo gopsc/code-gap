@@ -18,11 +18,11 @@
 #include "./roots/data/words/compare.computer"
 
 #include "./roots/data/words/find.computer"
+
+
+#include "./roots/trees/dirents/is.linux"
 /* //
-
 #include "./things/trees/dirents/create.c"
-
-#include "./things/trees/dirents/is.c"
 
 
 #include "./things/trees/files/is.c"
