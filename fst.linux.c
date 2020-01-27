@@ -26,13 +26,13 @@
 #include "./roots/trees/dirents/create.linux"
 
 #include "./roots/trees/dirents/remove.computer"
-/* //
 
-#include "./things/trees/files/is.c"
+
+#include "./roots/trees/files/is.linux"
+/*//
+#include "./things/trees/files/write.c"
 
 #include "./things/trees/files/append.c"
-
-#include "./things/trees/files/write.c"
 
 #include "./things/trees/files/read.c"
 */
