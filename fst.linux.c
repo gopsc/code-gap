@@ -2,6 +2,7 @@
 
 
 
+
 #include "./roots/data/create.computer"
 
 #include "./roots/data/resize.computer"
@@ -23,6 +24,8 @@
 #include "./roots/trees/dirents/is.linux"
 
 #include "./roots/trees/dirents/create.linux"
+
+#include "./roots/trees/dirents/remove.computer"
 /* //
 
 #include "./things/trees/files/is.c"

@@ -2,14 +2,14 @@
 
 
 
-#include <stdlib.h>
+#include  <stdlib.h>
 
-#include  <sys/stat.h>
-
-
+#include  <stdio.h>
 
 
-void *  create_fst_roots_trees_dirents
+
+
+void *  remove_fst_roots_trees_dirents
 
 (
 
@@ -26,9 +26,7 @@ void * note_numbers_results;
 note_numbers_results  =  malloc ( sizeof ( __int64_t ) );
 
 
-
-* ( __int64_t * ) note_numbers_results  =  mkdir  (  that_words_names,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
-
+* ( __int64_t * ) note_numbers_results  =  remove  (  that_words_names  );
 
 
 
@@ -39,7 +37,6 @@ if ( * ( __int64_t * ) note_numbers_results == -1 )
 * ( __uint64_t * ) * that_numbers_results = 0;
 
 }
-
 
 else if ( * ( __int64_t * ) note_numbers_results == 0 )
 
