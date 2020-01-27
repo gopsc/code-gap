@@ -1,0 +1,60 @@
+
+
+
+
+#include  <stdlib.h>
+
+#include  <stdio.h>
+
+
+
+
+void *  remove_fst_roots_trees_files
+
+(
+
+void *  that_words_names,
+
+void ** that_numbers_results
+
+)
+
+{
+
+void * note_numbers_results;
+
+note_numbers_results  =  malloc ( sizeof ( __int64_t ) );
+
+
+* ( __int64_t * ) note_numbers_results  =  remove  (  that_words_names  );
+
+
+
+if ( * ( __int64_t * ) note_numbers_results == -1 )
+
+{
+
+* ( __uint64_t * ) * that_numbers_results = 0;
+
+}
+
+else if ( * ( __int64_t * ) note_numbers_results == 0 )
+
+{
+
+* ( __uint64_t * ) * that_numbers_results = 1;
+
+}
+
+
+
+
+return NULL;
+
+}
+
+
+
+
+
+

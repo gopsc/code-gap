@@ -29,14 +29,15 @@
 
 
 #include "./roots/trees/files/is.linux"
-/*//
-#include "./things/trees/files/write.c"
 
-#include "./things/trees/files/append.c"
+#include "./roots/trees/files/write.computer"
 
-#include "./things/trees/files/read.c"
-*/
+#include "./roots/trees/files/read.computer"
 
+#include "./roots/trees/files/remove.computer"
+
+
+//
 #include "./branches/lake/prepare.computer"
 
 #include "./branches/lake/begin.computer"
