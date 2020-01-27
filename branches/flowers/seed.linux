@@ -3,10 +3,12 @@
 
 
 
-
-
-#include <stdio.h>
 /*
+
+#include <stdio.h>  // for printf()
+                               // for malloc(), realloc(), free()
+                               // for remove()
+
 #include <stdlib.h>
 
 
