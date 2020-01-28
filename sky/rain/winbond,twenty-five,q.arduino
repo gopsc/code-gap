@@ -8,7 +8,7 @@
 
 */
 
-#include <Arduino.h>
+#include <arduino.h>
 
 /*
 
@@ -58,7 +58,7 @@ void ***  that;
 
 /*
 
-,, things, winbond, twenty-five-q, prepare.arduino
+,, roots, winbond, twenty-five-q, prepare.arduino
 
 */
 
@@ -100,7 +100,7 @@ void ***  that;
 
 /*
 
-,, things, winbond, twenty-five-q, eraseAll.arduino
+,, roots, winbond, twenty-five-q, eraseAll.arduino
 
 */
 
@@ -170,7 +170,7 @@ return 0;
 
 /*
 
-,, things, winbond, twenty-five-q, read.arduino
+,, roots, winbond, twenty-five-q, read.arduino
 
 */
 
@@ -262,7 +262,7 @@ return 0;
 
 /*
 
-things, winbond, twenty-five-q, write.arduino
+,, roots, winbond, twenty-five-q, write.arduino
 
 
 */
@@ -452,45 +452,5 @@ delay ( 2000 );
 ,
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
