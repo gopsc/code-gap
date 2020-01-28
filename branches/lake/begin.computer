@@ -25,7 +25,7 @@ create_fst_roots_data  (  & note_numbers_sizes  );
 
 /*
 
-'void *'  for eight byte
+void *'  for eight byte
 
 */
 
