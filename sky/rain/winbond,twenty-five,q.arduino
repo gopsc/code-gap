@@ -38,14 +38,9 @@
 
 /*
 
-,, branches, prepare.c
+,, branches, lake, prepare.c
 
 */
-
-byte pageBuffer[256];
-
-char str[] = "hi.";
-
 
 void ***  that;
 
@@ -69,6 +64,13 @@ void ***  that;
 
 
 #include <SPI.h>
+
+
+
+//byte pageBuffer[256];
+
+//char str[] = "hi.";
+
 
 /*
 
@@ -102,7 +104,7 @@ void ***  that;
 
 */
 
-void *  thingsWinbondTwentyFiveQEraseAll ()
+void *  erase_roots_winbond_twenty_five_q ()
 
 {
 	
@@ -172,7 +174,7 @@ return 0;
 
 */
 
-void *  thingsWinbondTwentyFiveQRead
+void *  read_roots_winbond_twenty_five_q
 
 ( 
 	
@@ -265,7 +267,7 @@ things, winbond, twenty-five-q, write.arduino
 
 */
 
-void *  thingsWinbondTwentyFiveQWrite
+void *  write_roots_winbond_twenty_five_q
 
 (
 
@@ -408,11 +410,11 @@ digitalWrite ( PIN_LED0, LOW );
 
 /*
     
-thingsWinbondTwentyFiveQEraseAll ();
+erase_roots_winbond_twenty_five_q ();
     
-thingsWinbondTwentyFiveQWrite ( 0x0000, str, sizeof(str));
+write_roots_winbond_twenty_five_q ( 0x0000, str, sizeof(str));
     
-thingsWinbondTwentyFiveQRead ( 0x0000, pageBuffer, sizeof(str));
+read_roots_winbond_twenty_five_q ( 0x0000, pageBuffer, sizeof(str));
     
     
     
@@ -450,69 +452,6 @@ delay ( 2000 );
 ,
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-,, river, zero
-
-hi
-
-,
-
-
-,, river, one
-
-it is two thousands and ninteen, july, seventh, one, eight
-
-they said, gop need protein seventy five million microgram daily
-
-they said, gop need lipids fifty million microgram daily
-
-they said, gop need carbohydrates fifty five percent to sixty five percent of all energy intake
-
-they said, gop need vitamin a eight hundred thousand microgram re daily
-
-they said, gop need vitamin d ten microgram daily
-
-they said, gop need vitamin e fourteen
- thousand microgram daily
-
-they said, gop need vitamin c one hundred thousand microgram daily
-
-they said, gop need vitamin b1 one thousand and three hundred microgram to one thousand and four hundred microgram daily
-
-they said, gop need vitamin b2 one thousand and three hundred microgram to one thousand and four hundred microgram daily
-
-they said, gop need vitamin pp thirteen thousand microgram to fourteen thousand microgram daily
-
-they said, gop need calcium eight hundred thousand microgram daily
-
-they said, gop need magnesium three hundred and fifty thousand microgram daily
-
-they said, gop need phosphorus seventy hundred thousand microgram daily
-
-they said, gop need potassium two million daily
-
-,
-
-*/
-
 
 
 
