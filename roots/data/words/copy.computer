@@ -31,16 +31,16 @@ while
 
 (
 
-* ( char * ) (  ( char * ) that_words_copied + * ( __uint64_t * ) note_numbers_counts  )  !=  '\0'
+* (  ( char * ) that_words_copied + * ( __uint64_t * ) note_numbers_counts  )  !=  '\0'
 
 )
 
 {
 
 
-* ( char * ) (  ( char * )    +   * ( __uint64_t * ) note_numbers_counts  )
+* (  ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts  )
 =
-* ( char * ) (  ( char * ) that_words_copied  +  * ( __uint64_t * ) note_numbers_counts  );
+* (  ( char * ) that_words_copied  +  * ( __uint64_t * ) note_numbers_counts  );
 
 
 
@@ -52,7 +52,7 @@ while
 
 
 
-* ( char * ) ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts  )   =   '\0';
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts  )   =   '\0';
 
 
 free  (  note_numbers_counts  );

@@ -68,7 +68,7 @@ free_fst_roots_data  (  & note_numbers_sizes  );
 
 
 
-copy_fst_roots_data_words  (  that_fst_branches_lake  [ 0 ] [ 0 ],  （ void * ) "fst,branches,lake"  );
+copy_fst_roots_data_words  (  that_fst_branches_lake  [ 0 ] [ 0 ],  ( void * ) "fst,branches,lake"  );
 
 *  (  __uint64_t *  )   that_fst_branches_lake  [ 0 ] [ 1 ]   =   0;
 
