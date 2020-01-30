@@ -31,6 +31,7 @@ void ** that_words_results
 * that_words_results  =  realloc (  * that_words_results,  1 * sizeof ( char )  );
 
 
+
 void  *   note_files_got;
 
 note_files_got   =   fopen  (  that_words_names,  "rb"  );
@@ -77,7 +78,7 @@ while
 
 (
 
-* ( char * ) (  * that_words_results  +  * ( __uint64_t * ) note_numbers_counts  )   !=   '\0'
+* ( ( char * ) * that_words_results  +  * ( __uint64_t * ) note_numbers_counts  )   !=   '\0'
 
 )
 
@@ -93,9 +94,9 @@ while
 * that_words_results  =  realloc (  * that_words_results,   ( 1  +  1  +  * ( __uint64_t * ) note_numbers_counts )  *  sizeof ( char )  );
 
 
-*  ( char * )  (   * that_words_results   +   * ( int * ) note_numbers_counts   )   =   * ( char * ) note_words_read;
+* ( ( char * ) * that_words_results   +   * ( int * ) note_numbers_counts   )   =   * ( char * ) note_words_read;
 
-*  ( char * )  (   * that_words_results   +   * ( int * ) note_numbers_counts   +   1   )   =   '\0';
+* ( ( char * ) * that_words_results   +   * ( int * ) note_numbers_counts   +   1   )   =   '\0';
 
 
 

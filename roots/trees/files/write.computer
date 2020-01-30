@@ -23,9 +23,11 @@ void ** that_numbers_results
 {
 
 
+
 void * note_numbers_lengths_contents;
 
 note_numbers_lengths_contents  =  malloc ( 1 * sizeof ( __uint64_t ) );
+
 
 
 * ( __uint64_t * ) note_numbers_lengths_contents  =  0;
@@ -34,7 +36,7 @@ while
 
 (
 
-* ( char * ) ( that_words_contents + * ( __uint64_t * ) note_numbers_lengths_contents )  !=  '\0'
+* ( ( char * ) that_words_contents + * ( __uint64_t * ) note_numbers_lengths_contents )  !=  '\0'
 
 )
 
