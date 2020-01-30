@@ -43,10 +43,10 @@
 #include "./branches/lake/begin.computer"
 
 #include "./branches/lake/end.computer"
-/*//
+//
 
-#include "./leaves/lake/write.c"
-
+#include "./branches/lake/write.computer"
+/*
 #include "./leaves/lake/fish.c"
 
 #include "./leaves/lake/drop.c"
