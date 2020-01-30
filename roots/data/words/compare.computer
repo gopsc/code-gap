@@ -35,7 +35,7 @@ while
 
 (
 
-* ( char * )  (  that_words_compared  +  * ( __uint64_t * ) note_numbers_lengths_compared  )   !=   '\0'
+* ( ( char * ) that_words_compared  +  * ( __uint64_t * ) note_numbers_lengths_compared  )   !=   '\0'
 
 )
 
@@ -61,7 +61,7 @@ while
 
 (
 
-* ( char * ) (  that_words_compare  +  * ( __uint64_t * ) note_numbers_lengths_compare  )   !=   '\0'
+* ( ( char * ) that_words_compare  +  * ( __uint64_t * ) note_numbers_lengths_compare  )   !=   '\0'
 
 )
 
@@ -134,9 +134,9 @@ if
 
 (
 
-* ( char * ) (  that_words_compared  +  * ( __uint64_t * ) note_numbers_counts  ) 
+* ( ( char * ) that_words_compared  +  * ( __uint64_t * ) note_numbers_counts  ) 
 !=
-* ( char * ) (  that_words_compare  +  * ( __uint64_t * ) note_numbers_counts  )
+* ( ( char * ) that_words_compare  +  * ( __uint64_t * ) note_numbers_counts  )
 
 )
 

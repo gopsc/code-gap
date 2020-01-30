@@ -47,13 +47,13 @@ note_numbers_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 * ( __uint64_t * ) note_numbers_counts_append   =   0;
 
-while  (   * ( char * ) (  that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  )   !=   '\0'   )
+while  (   * ( ( char * ) that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  )   !=   '\0'   )
 
 {
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )
 =
-* ( char * ) (  that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  );
+* ( ( char * ) that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  );
 
 
 
@@ -63,7 +63,7 @@ while  (   * ( char * ) (  that_words_append  +  * ( __uint64_t * ) note_numbers
 
 
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )   =   '\0';
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )   =   '\0';
 
 
 

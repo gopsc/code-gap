@@ -21,25 +21,9 @@ void ** that_places_results
 
 
 
-
-
-
 void *  note_numbers_lengths_targets;
 
 note_numbers_lengths_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-
-
-void *  note_numbers_lengths_found;
-
-note_numbers_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-
-
 
 
 
@@ -49,7 +33,7 @@ while
 
 (
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_lengths_targets  )   !=   '\0'
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_lengths_targets  )   !=   '\0'
 
 )
 
@@ -63,6 +47,10 @@ while
 
 
 
+void *  note_numbers_lengths_found;
+
+note_numbers_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
 
 
 * ( __uint64_t * ) note_numbers_lengths_found   =   0;
@@ -71,7 +59,7 @@ while
 
 (
 
-* ( char * ) (  that_words_found  +  * ( __uint64_t * ) note_numbers_lengths_found  )   !=   '\0'
+* ( ( char * ) that_words_found  +  * ( __uint64_t * ) note_numbers_lengths_found  )   !=   '\0'
 
 )
 
@@ -132,6 +120,7 @@ note_numbers_switches   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
+
 * ( __uint64_t * ) note_numbers_counts_targets   =   0;
 
 while
@@ -168,9 +157,9 @@ if
 
 (
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_found  )
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_found  )
 !=
-* ( char * ) (  that_words_found   +  * ( __uint64_t * ) note_numbers_counts_found  )
+* ( ( char * ) that_words_found   +  * ( __uint64_t * ) note_numbers_counts_found  )
 
 )
 
@@ -187,9 +176,9 @@ else if
 
 (
 
-* ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_found  )
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_found  )
 ==
-* ( char * ) (  that_words_found  +  * ( __uint64_t * ) note_numbers_counts_found  )
+* ( ( char * ) that_words_found  +  * ( __uint64_t * ) note_numbers_counts_found  )
 
 )
 
@@ -258,6 +247,7 @@ free  (  note_numbers_switches  );
 return  NULL;
 
 }
+
 
 
 

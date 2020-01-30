@@ -30,7 +30,7 @@ while
 
 (
 
-* ( char * ) ( that_words_targets  +  * ( __uint64_t * ) note_numbers_counts )   !=   '\0'
+* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts )   !=   '\0'
 
 )
 
