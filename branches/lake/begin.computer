@@ -16,7 +16,7 @@ if  (  that_fst_branches_lake  ==  NULL )
 {
 
 
-void * note_numbers_sizes;
+void * note_numbers_sizes = NULL;
 
 create_fst_roots_data  (  & note_numbers_sizes  );
 
