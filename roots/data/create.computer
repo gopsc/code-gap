@@ -12,7 +12,7 @@ void ** that_places_created
 
 {
 
-void * note_places_created;
+void * note_places_created = NULL;
 
 note_places_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
 

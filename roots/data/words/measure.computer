@@ -18,7 +18,7 @@ void ** that_numbers_results
 
 
 
-void *  note_numbers_counts;
+void *  note_numbers_counts = NULL;
 
 note_numbers_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 

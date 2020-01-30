@@ -24,7 +24,7 @@ void ** that_numbers_results
 
 
 
-void * note_numbers_lengths_contents;
+void * note_numbers_lengths_contents = NULL;
 
 note_numbers_lengths_contents  =  malloc ( 1 * sizeof ( __uint64_t ) );
 
@@ -49,13 +49,13 @@ while
 
 
 
-void * note_numbers_results;
+void * note_numbers_results = NULL;
 
 note_numbers_results  =  malloc ( 1 * sizeof ( __int64_t ) );
 
 
 
-void  *   note_files_saved;
+void  *   note_files_saved = NULL;
 
 note_files_saved  =  fopen  (  that_words_names,  "w"  );
 
@@ -113,6 +113,7 @@ if
 
 
 
+fclose ( note_files_saved );
 
 free ( note_numbers_lengths_contents );
 

@@ -21,7 +21,7 @@ void ** that_numbers_results
 
 {
 
-void * note_numbers_results;
+void * note_numbers_results = NULL;
 
 note_numbers_results  =  malloc ( sizeof ( __int64_t ) );
 
@@ -48,6 +48,7 @@ else if ( * ( __int64_t * ) note_numbers_results == 0 )
 
 
 
+free ( note_numbers_results );
 
 return NULL;
 

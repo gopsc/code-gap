@@ -18,7 +18,7 @@ void *  that_numbers_sizes
 
 {
 
-void * note_places_resized;
+void * note_places_resized = NULL;
 
 note_places_resized   =   realloc  (  * that_places_resized,  * ( __uint64_t * ) that_numbers_sizes  );
 

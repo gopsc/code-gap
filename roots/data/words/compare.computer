@@ -23,7 +23,7 @@ void ** that_numbers_results
 
 
 
-void *  note_numbers_lengths_compared;
+void *  note_numbers_lengths_compared = NULL;
 
 note_numbers_lengths_compared   =   malloc  (  sizeof ( __uint64_t )  );
 
@@ -49,7 +49,7 @@ while
 
 
 
-void *  note_numbers_lengths_compare;
+void *  note_numbers_lengths_compare = NULL;
 
 note_numbers_lengths_compare   =   malloc  (  sizeof ( __uint64_t )  );
 
@@ -110,7 +110,7 @@ return  NULL;
 
 
 
-void *  note_numbers_counts;
+void *  note_numbers_counts = NULL;
 
 note_numbers_counts   =   malloc  (  sizeof ( __uint64_t )  );
 

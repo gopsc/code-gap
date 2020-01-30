@@ -30,7 +30,7 @@ void ** that_numbers_results
 
 
 
-void  *   note_structures_status;
+void  *   note_structures_status = NULL;
 
 
 note_structures_status  =  malloc  (  sizeof ( struct stat )  );

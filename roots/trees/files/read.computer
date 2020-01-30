@@ -32,7 +32,7 @@ void ** that_words_results
 
 
 
-void  *   note_files_got;
+void  *   note_files_got = NULL;
 
 note_files_got   =   fopen  (  that_words_names,  "rb"  );
 
@@ -48,7 +48,7 @@ return NULL;
 
 
 
-void  *   note_words_read;
+void  *   note_words_read = NULL;
 
 note_words_read  =  malloc  (  2  *  sizeof ( __uint8_t )  );
 

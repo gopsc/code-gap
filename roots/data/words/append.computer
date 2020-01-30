@@ -18,7 +18,7 @@ void  *   that_words_append
 {
 
 
-void  *   note_numbers_counts_targets;
+void  *   note_numbers_counts_targets = NULL;
 
 note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
@@ -39,7 +39,7 @@ while  (  * ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers
 
 
 
-void  *   note_numbers_counts_append;
+void  *   note_numbers_counts_append = NULL;
 
 note_numbers_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 

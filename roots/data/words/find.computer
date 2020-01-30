@@ -21,7 +21,7 @@ void ** that_places_results
 
 
 
-void *  note_numbers_lengths_targets;
+void *  note_numbers_lengths_targets = NULL;
 
 note_numbers_lengths_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
@@ -47,7 +47,7 @@ while
 
 
 
-void *  note_numbers_lengths_found;
+void *  note_numbers_lengths_found = NULL;
 
 note_numbers_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
@@ -100,18 +100,18 @@ return NULL;
 
 
 
-void *  note_numbers_counts_targets;
+void *  note_numbers_counts_targets = NULL;
 
 note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
-void *  note_numbers_counts_found;
+void *  note_numbers_counts_found = NULL;
 
 note_numbers_counts_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-void *  note_numbers_switches;
+void *  note_numbers_switches = NULL;
 
 note_numbers_switches   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
