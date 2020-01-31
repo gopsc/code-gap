@@ -9,7 +9,7 @@
 
 
 
-void *  remove_fst_roots_trees_files
+void *  remove_fst_roots_trees
 
 (
 
