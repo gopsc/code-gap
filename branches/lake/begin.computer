@@ -18,7 +18,7 @@ if  (  that_fst_branches_lake  ==  NULL )
 
 void * note_numbers_sizes = NULL;
 
-create_fst_roots_data  (  & note_numbers_sizes  );
+create_fst_roots_lake  (  & note_numbers_sizes  );
 
 
 
@@ -32,43 +32,43 @@ void *  for eight byte
 
 * ( __uint64_t * ) note_numbers_sizes  =  8;
 
-create_fst_roots_data  (  ( void * * ) & that_fst_branches_lake  );
+create_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake  );
 
-resize_fst_roots_data  (  ( void * * ) & that_fst_branches_lake,  note_numbers_sizes  );
+resize_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake,  note_numbers_sizes  );
 
 
 
 * ( __uint64_t * ) note_numbers_sizes  =  2 * 8;
 
-create_fst_roots_data  (  ( void * * ) & that_fst_branches_lake [ 0 ]  );
+create_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake [ 0 ]  );
 
-resize_fst_roots_data  (  ( void * * ) & that_fst_branches_lake [ 0 ],  note_numbers_sizes  );
+resize_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake [ 0 ],  note_numbers_sizes  );
 
 
 
 * ( __uint64_t * ) note_numbers_sizes  =  18 * 1;
 
-create_fst_roots_data  (  & that_fst_branches_lake [ 0 ] [ 0 ]  );
+create_fst_roots_lake  (  & that_fst_branches_lake [ 0 ] [ 0 ]  );
 
-resize_fst_roots_data  (  & that_fst_branches_lake [ 0 ] [ 0 ],  note_numbers_sizes  );
+resize_fst_roots_lake  (  & that_fst_branches_lake [ 0 ] [ 0 ],  note_numbers_sizes  );
 
 
 
 * ( __uint64_t * ) note_numbers_sizes  =  8;
 
-create_fst_roots_data  (  & that_fst_branches_lake [ 0 ] [ 1 ]  );
+create_fst_roots_lake  (  & that_fst_branches_lake [ 0 ] [ 1 ]  );
 
-resize_fst_roots_data  (  & that_fst_branches_lake [ 0 ] [ 1 ],  note_numbers_sizes  );
-
-
-
-
-free_fst_roots_data  (  & note_numbers_sizes  );
+resize_fst_roots_lake  (  & that_fst_branches_lake [ 0 ] [ 1 ],  note_numbers_sizes  );
 
 
 
 
-copy_fst_roots_data_words  (  that_fst_branches_lake  [ 0 ] [ 0 ],  ( void * ) "fst,branches,lake"  );
+free_fst_roots_lake  (  & note_numbers_sizes  );
+
+
+
+
+copy_fst_roots_lake_words  (  that_fst_branches_lake  [ 0 ] [ 0 ],  ( void * ) "fst,branches,lake"  );
 
 *  (  __uint64_t *  )   that_fst_branches_lake  [ 0 ] [ 1 ]   =   0;
 

@@ -15,25 +15,25 @@ void *  drop_fst_branches_lake
 
 void * note_numbers_counts = NULL;
 
-create_fst_roots_data  ( & note_numbers_counts );
+create_fst_roots_lake  ( & note_numbers_counts );
 
 
 
 void * note_numbers_results = NULL;
 
-create_fst_roots_data  ( & note_numbers_results );
+create_fst_roots_lake  ( & note_numbers_results );
 
 
 
 void * note_numbers_sizes = NULL;
 
-create_fst_roots_data ( & note_numbers_sizes );
+create_fst_roots_lake ( & note_numbers_sizes );
 
 
 
 void * note_numbers_switches = NULL;
 
-create_fst_roots_data  (  & note_numbers_switches  );
+create_fst_roots_lake  (  & note_numbers_switches  );
 
 * ( __uint64_t * ) note_numbers_switches   =   0;
 
@@ -62,7 +62,7 @@ if  (  * ( __uint64_t * ) note_numbers_switches   ==   0  )
 
 
 
-compare_fst_roots_data_words
+compare_fst_roots_lake_words
 
 (
 
@@ -82,11 +82,11 @@ if  (   * ( __uint64_t * ) note_numbers_results   ==   1   )
 {
 
 
-free_fst_roots_data  (  & that_fst_branches_lake  [ * ( __uint64_t * ) note_numbers_counts ] [ 0 ]  );
+free_fst_roots_lake  (  & that_fst_branches_lake  [ * ( __uint64_t * ) note_numbers_counts ] [ 0 ]  );
 
-free_fst_roots_data  (  & that_fst_branches_lake  [ * ( __uint64_t * ) note_numbers_counts ] [ 1 ]  );
+free_fst_roots_lake  (  & that_fst_branches_lake  [ * ( __uint64_t * ) note_numbers_counts ] [ 1 ]  );
 
-free_fst_roots_data  (  ( void * * ) & that_fst_branches_lake  [ * ( __uint64_t * ) note_numbers_counts ]  );
+free_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake  [ * ( __uint64_t * ) note_numbers_counts ]  );
 
 
 * ( __uint64_t * ) note_numbers_switches  =  1;
@@ -135,7 +135,7 @@ if  (  * ( __uint64_t * ) note_numbers_switches   ==   1  )
 
 * ( __uint64_t * ) note_numbers_sizes  =  8  *  ( 1  +  * ( __uint64_t * ) that_fst_branches_lake  [ 0 ] [ 1 ] );
 
-resize_fst_roots_data
+resize_fst_roots_lake
 
 (
 
@@ -154,13 +154,13 @@ note_numbers_sizes
 
 
 
-free_fst_roots_data  ( & note_numbers_counts );
+free_fst_roots_lake  ( & note_numbers_counts );
 
-free_fst_roots_data  ( & note_numbers_results  );
+free_fst_roots_lake  ( & note_numbers_results  );
 
-free_fst_roots_data  ( & note_numbers_sizes );
+free_fst_roots_lake  ( & note_numbers_sizes );
 
-free_fst_roots_data  ( & note_numbers_switches );
+free_fst_roots_lake  ( & note_numbers_switches );
   
   
 return  NULL;

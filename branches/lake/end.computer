@@ -11,7 +11,7 @@ void *  end_fst_branches_lake ()
 
 void *  note_numbers_counts = NULL;
 
-create_fst_roots_data  (  & note_numbers_counts  );
+create_fst_roots_lake  (  & note_numbers_counts  );
 
 
 
@@ -27,11 +27,11 @@ while
 
 {
 
-free_fst_roots_data   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 0 ] );
+free_fst_roots_lake   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 0 ] );
 
-free_fst_roots_data   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ] );
+free_fst_roots_lake   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ] );
 
-free_fst_roots_data   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ]  );
+free_fst_roots_lake   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ]  );
 
 
 * ( __uint64_t * ) note_numbers_counts   =  * ( __uint64_t * ) that_fst_branches_lake   +   1;
@@ -39,18 +39,18 @@ free_fst_roots_data   (  ( void * * ) & that_fst_branches_lake  [  * ( __uint64_
 }
 
 
-free_fst_roots_data  (  & note_numbers_counts );
+free_fst_roots_lake  (  & note_numbers_counts );
 
 
 
 
-free_fst_roots_data  (  & that_fst_branches_lake  [ 0 ] [ 1 ]  );
+free_fst_roots_lake  (  & that_fst_branches_lake  [ 0 ] [ 1 ]  );
 
-free_fst_roots_data  (  & that_fst_branches_lake  [ 0 ] [ 0 ]  );
+free_fst_roots_lake  (  & that_fst_branches_lake  [ 0 ] [ 0 ]  );
 
-free_fst_roots_data  (  ( void * * ) & that_fst_branches_lake  [ 0 ]  );
+free_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake  [ 0 ]  );
 
-free_fst_roots_data  (  ( void * * ) & that_fst_branches_lake  );
+free_fst_roots_lake  (  ( void * * ) & that_fst_branches_lake  );
 
 
 

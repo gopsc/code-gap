@@ -23,12 +23,12 @@ void ** that_places_results
 
 void * note_numbers_counts = NULL;
 
-create_fst_roots_data ( & note_numbers_counts );
+create_fst_roots_lake ( & note_numbers_counts );
 
 
 void * note_numbers_results;
  
-create_fst_roots_data ( & note_numbers_results );
+create_fst_roots_lake ( & note_numbers_results );
 
 
 
@@ -47,7 +47,7 @@ while
 {
 
 
-compare_fst_roots_data_words
+compare_fst_roots_lake_words
 
 (
 
@@ -69,9 +69,9 @@ if   (   * ( __uint64_t * ) note_numbers_results   ==   1   )
 * that_places_results   =   that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ];
 
 
-free_fst_roots_data  (  & note_numbers_counts  );
+free_fst_roots_lake  (  & note_numbers_counts  );
 
-free_fst_roots_data  (  & note_numbers_results  );
+free_fst_roots_lake  (  & note_numbers_results  );
 
  
 return  NULL;
@@ -92,9 +92,9 @@ return  NULL;
 * that_places_results   =  NULL; 
 
 
-free_fst_roots_data ( & note_numbers_counts );
+free_fst_roots_lake ( & note_numbers_counts );
 
-free_fst_roots_data ( & note_numbers_results );
+free_fst_roots_lake ( & note_numbers_results );
  
  
 return  NULL;

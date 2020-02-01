@@ -19,41 +19,41 @@ void *  that_words_contents
 
 void  *   note_numbers_counts  =  NULL;
 
-create_fst_roots_data  ( & note_numbers_counts );
+create_fst_roots_lake  ( & note_numbers_counts );
 
 
 
 
 void * note_numbers_sizes = NULL;
 
-create_fst_roots_data ( & note_numbers_sizes );
+create_fst_roots_lake ( & note_numbers_sizes );
 
 
 
 
 void  *   note_numbers_results  =  NULL;
 
-create_fst_roots_data  (  & note_numbers_results  );
+create_fst_roots_lake  (  & note_numbers_results  );
 
 
 
 void * note_numbers_lengths_names = NULL;
 
-create_fst_roots_data ( & note_numbers_lengths_names );
+create_fst_roots_lake ( & note_numbers_lengths_names );
 
 
 
 
 void  *   note_numbers_lengths_wrote  =  NULL;
 
-create_fst_roots_data  (  & note_numbers_lengths_wrote  );
+create_fst_roots_lake  (  & note_numbers_lengths_wrote  );
 
 
 
 
 void  *  note_numbers_lengths_targets  =  NULL;
 
-create_fst_roots_data  (  & note_numbers_lengths_targets  );
+create_fst_roots_lake  (  & note_numbers_lengths_targets  );
 
 
 
@@ -78,7 +78,7 @@ while
 
 
 
-compare_fst_roots_data_words
+compare_fst_roots_lake_words
 
 (
 
@@ -98,7 +98,7 @@ if   (   * ( __uint64_t * ) note_numbers_results   ==   1   )
 {
 
 
-measure_fst_roots_data_words
+measure_fst_roots_lake_words
 
 (
 
@@ -109,7 +109,7 @@ that_words_contents,
 );
 
 
-measure_fst_roots_data_words
+measure_fst_roots_lake_words
 
 (
 
@@ -135,7 +135,7 @@ if
 {
 
 
-copy_fst_roots_data_words
+copy_fst_roots_lake_words
 
 (
 
@@ -149,7 +149,7 @@ that_words_contents
 
 * ( __uint64_t * ) note_numbers_sizes   =   1  *  ( 1 + * ( __uint64_t * ) note_numbers_lengths_wrote );
 
-resize_fst_roots_data
+resize_fst_roots_lake
 
 (
 
@@ -180,7 +180,7 @@ else if
 
 * ( __uint64_t * ) note_numbers_sizes   =   1  *  ( 1 + * ( __uint64_t * ) note_numbers_lengths_wrote );
 
-resize_fst_roots_data
+resize_fst_roots_lake
 
 (
 
@@ -191,7 +191,7 @@ note_numbers_sizes
 );
 
 
-copy_fst_roots_data_words
+copy_fst_roots_lake_words
 
 (
 
@@ -207,20 +207,20 @@ that_words_contents
 
 
 
-free_fst_roots_data  (  & note_numbers_sizes  );
+free_fst_roots_lake  (  & note_numbers_sizes  );
 
-free_fst_roots_data  (  & note_numbers_lengths_names  );
+free_fst_roots_lake  (  & note_numbers_lengths_names  );
 
-free_fst_roots_data  (  & note_numbers_lengths_wrote  );
+free_fst_roots_lake  (  & note_numbers_lengths_wrote  );
 
-free_fst_roots_data  (  & note_numbers_lengths_targets  );
+free_fst_roots_lake  (  & note_numbers_lengths_targets  );
 
-free_fst_roots_data  (  & note_numbers_counts  );
+free_fst_roots_lake  (  & note_numbers_counts  );
 
-free_fst_roots_data  (  & note_numbers_results  );
+free_fst_roots_lake  (  & note_numbers_results  );
 
 
-return  that_fst_branches_lake;
+return  NULL;
 
 }
 
@@ -245,9 +245,9 @@ read over, create new fish
 */
 
 
-measure_fst_roots_data_words ( that_words_names, & note_numbers_lengths_names );
+measure_fst_roots_lake_words ( that_words_names, & note_numbers_lengths_names );
 
-measure_fst_roots_data_words ( that_words_contents, & note_numbers_lengths_wrote );
+measure_fst_roots_lake_words ( that_words_contents, & note_numbers_lengths_wrote );
 
 
 
@@ -256,7 +256,7 @@ measure_fst_roots_data_words ( that_words_contents, & note_numbers_lengths_wrote
 * ( __uint64_t * ) note_numbers_sizes   =   8   *   (   1   +   1   +   * ( __uint64_t * ) that_fst_branches_lake [ 0 ] [ 1 ]   );
 
 
-resize_fst_roots_data  (
+resize_fst_roots_lake  (
 
 ( void * * ) & that_fst_branches_lake,
 
@@ -272,7 +272,7 @@ note_numbers_sizes
 * ( __uint64_t * ) note_numbers_sizes   =   8 * 2;
 
 
-create_fst_roots_data
+create_fst_roots_lake
 
 (
 
@@ -281,7 +281,7 @@ create_fst_roots_data
 );
 
 
-resize_fst_roots_data
+resize_fst_roots_lake
 
 (
 
@@ -298,7 +298,7 @@ note_numbers_sizes
 * ( __uint64_t * ) note_numbers_sizes   =   1   *   (  1  +  * ( __uint64_t * ) note_numbers_lengths_names  );
 
 
-create_fst_roots_data
+create_fst_roots_lake
 
 (
 
@@ -307,7 +307,7 @@ create_fst_roots_data
 );
 
 
-resize_fst_roots_data
+resize_fst_roots_lake
 
 (
 
@@ -318,7 +318,7 @@ note_numbers_sizes
 );
 
 
-copy_fst_roots_data_words
+copy_fst_roots_lake_words
 
 (
 
@@ -335,7 +335,7 @@ that_words_names
 * ( __uint64_t * ) note_numbers_sizes   =   1   *   (  1  +  * ( __uint64_t * ) note_numbers_lengths_wrote  );
 
 
-create_fst_roots_data
+create_fst_roots_lake
 
 (
 
@@ -345,7 +345,7 @@ create_fst_roots_data
 
 
 
-resize_fst_roots_data
+resize_fst_roots_lake
 
 (
 
@@ -358,7 +358,7 @@ note_numbers_sizes
 
 
 
-copy_fst_roots_data_words
+copy_fst_roots_lake_words
 
 (
 
@@ -377,17 +377,17 @@ that_words_contents
 
 
 
-free_fst_roots_data  (  & note_numbers_sizes  );
+free_fst_roots_lake  (  & note_numbers_sizes  );
 
-free_fst_roots_data  (  & note_numbers_lengths_names  );
+free_fst_roots_lake  (  & note_numbers_lengths_names  );
 
-free_fst_roots_data  (  & note_numbers_lengths_wrote  );
+free_fst_roots_lake  (  & note_numbers_lengths_wrote  );
 
-free_fst_roots_data  (  & note_numbers_lengths_targets  );
+free_fst_roots_lake  (  & note_numbers_lengths_targets  );
 
-free_fst_roots_data  (  & note_numbers_counts  );
+free_fst_roots_lake  (  & note_numbers_counts  );
 
-free_fst_roots_data  (  & note_numbers_results  );
+free_fst_roots_lake  (  & note_numbers_results  );
 
 
 return  NULL;
