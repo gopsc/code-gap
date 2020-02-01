@@ -59,7 +59,7 @@
 
 
 
-#include "./branches/trees/dirents/is.computer"
+#include "./branches/trees/dirents/is.linux"
 //
 /*
 #include "./leaves/system/trees/files/is.c"
