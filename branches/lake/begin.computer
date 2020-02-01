@@ -78,7 +78,7 @@ copy_fst_roots_data_words  (  that_fst_branches_lake  [ 0 ] [ 0 ],  ( void * ) "
 
 
 
-return  that_fst_branches_lake;
+return  NULL;
 
 }
 

@@ -163,7 +163,7 @@ free_fst_roots_data  ( & note_numbers_sizes );
 free_fst_roots_data  ( & note_numbers_switches );
   
   
-return  that_fst_branches_lake;
+return  NULL;
 
 }
 

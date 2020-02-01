@@ -390,7 +390,7 @@ free_fst_roots_data  (  & note_numbers_counts  );
 free_fst_roots_data  (  & note_numbers_results  );
 
 
-return  that_fst_branches_lake;
+return  NULL;
 
 
 
