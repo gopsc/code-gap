@@ -1,0 +1,43 @@
+
+
+
+
+
+
+void  *   begin_fst_branches_lake_existence  ()
+
+{
+
+
+
+
+write_fst_branches_lake
+
+(
+
+( void * ) "fst,branches,lake,existence,yes",
+
+( void * ) "yes"
+
+);
+
+
+write_fst_branches_lake
+
+(
+
+( void * ) "fst,branches,lake,existence,no",
+
+( void * ) "no"
+
+);
+
+
+
+
+return   NULL;
+
+}
+
+
+

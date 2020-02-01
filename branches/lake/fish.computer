@@ -60,7 +60,6 @@ that_fst_branches_lake  [  * ( __uint64_t * ) note_numbers_counts  ] [ 0 ],
 );
 
 
-
 if   (   * ( __uint64_t * ) note_numbers_results   ==   1   )
 
 {
@@ -73,7 +72,7 @@ free_fst_roots_lake  (  & note_numbers_counts  );
 
 free_fst_roots_lake  (  & note_numbers_results  );
 
- 
+
 return  NULL;
 
 

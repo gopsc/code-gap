@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+
+void  *   is_fst_branches_trees_dirents
+
+(
+
+void * that_words_names,
+
+void ** that_places_results
+
+)
+
+{
+
+
+
+void * note_places_was;
+
+fish_fst_branches_lake ( that_words_names, & note_places_was );
+
+
+void * note_numbers_results = NULL;
+
+create_fst_roots_lake ( & note_numbers_results );
+
+
+
+
+
+is_fst_roots_trees_dirents  (  note_places_was,  & note_numbers_results  );
+
+
+
+
+
+if  (  * ( __uint64_t * ) note_numbers_results  ==  1  )
+   
+{
+
+
+free_fst_roots_lake  ( & note_numbers_results  );
+
+fish_fst_branches_lake
+
+(
+
+( void * ) "fst,branches,lake,existence,yes",
+
+that_places_results
+
+);
+
+
+return NULL;
+
+}
+
+
+
+
+
+free_fst_roots_lake  ( & note_numbers_results  );
+
+
+fish_fst_branches_lake
+
+(
+
+( void * ) "fst,branches,lake,existence,no",
+
+that_places_results
+
+);
+
+
+return NULL;
+
+}
+
+
+
+
+
