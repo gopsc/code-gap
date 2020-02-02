@@ -1,0 +1,456 @@
+
+
+
+
+/*
+
+,, roots, prepare.arduino
+
+*/
+
+#include <arduino.h>
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,, branches, lake, prepare.c
+
+*/
+
+void ***  that;
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+/*
+
+,, roots, winbond, twenty-five-q, prepare.arduino
+
+*/
+
+
+#include <SPI.h>
+
+
+
+//byte pageBuffer[256];
+
+//char str[] = "hi.";
+
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,, roots, winbond, twenty-five-q, eraseAll.arduino
+
+*/
+
+void *  erase_roots_winbond_twenty_five_q ()
+
+{
+	
+
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x06 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+   
+SPI . transfer ( 0xC7 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+
+
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while  (  SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return 0;
+
+}
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,, roots, winbond, twenty-five-q, read.arduino
+
+*/
+
+void *  read_roots_winbond_twenty_five_q
+
+( 
+	
+word pageNumber,
+
+byte pageBuffer [],
+
+int length
+
+) 
+
+{
+	
+
+// 16-bit data
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );
+    
+  
+SPI . transfer ( 0x03 );
+    
+SPI . transfer (  ( pageNumber >> 8 )  &  0xFF  );
+    
+SPI . transfer ( pageNumber & 0xFF );
+    
+SPI . transfer ( 0 );
+    
+    
+for (  int i = 0;  i < length;  i++  )
+    
+{
+
+pageBuffer [ i ]  =  SPI . transfer ( 0 );
+
+}
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+    
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while ( SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return 0;
+
+}
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,, roots, winbond, twenty-five-q, write.arduino
+
+
+*/
+
+void *  write_roots_winbond_twenty_five_q
+
+(
+
+word pageNumber,
+
+char pageBuffer [],
+
+int length
+
+) 
+
+{
+	
+
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x06 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x02 );
+    
+SPI . transfer (  ( pageNumber >>  8 )  &  0xFF  );
+    
+SPI . transfer ( pageNumber & 0xFF );
+    
+    
+SPI . transfer ( 0 );
+    
+    
+for (  int i = 0;  i < length;  i++  )
+    
+{
+
+SPI . transfer (  byte ( pageBuffer [ i ] )  );
+
+}
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+
+
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while (  SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return 0;
+
+}
+
+/*
+
+,
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,, branch, flowers, seed.arduino
+
+*/
+
+void setup ()
+
+{
+    
+
+pinMode ( PIN_LED0, OUTPUT );
+    
+    
+SPI . begin ();
+
+SPI . setDataMode ( SPI_MODE0 );
+    
+SPI . setBitOrder ( MSBFIRST );
+    
+    
+Serial . begin ( 9600 );
+
+    
+}
+
+
+
+void loop ()
+
+{
+
+	
+digitalWrite ( PIN_LED0, LOW );
+    
+    
+
+/*
+    
+erase_roots_winbond_twenty_five_q ();
+    
+write_roots_winbond_twenty_five_q ( 0x0000, str, sizeof(str));
+    
+read_roots_winbond_twenty_five_q ( 0x0000, pageBuffer, sizeof(str));
+    
+    
+    
+Serial . print ( "'" );
+
+for (  int i = 0;  i < sizeof ( str );  i++  )
+    
+{
+
+Serial . print (  char ( pageBuffer [ i ] )  );
+
+}
+    
+    
+Serial . print ( "'" );
+    
+Serial . println ();
+    
+*/
+
+
+
+Serial . println ( 0x0001 );
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 2000 );
+
+
+}
+
+/*
+
+,
+
+*/
+
+
