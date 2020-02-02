@@ -72,9 +72,9 @@ int main ( int argc, char * argv [] )
 
 
   
-begin_fst_branches_lake ();
+begin_fst_branches_lakes ();
 
-begin_fst_branches_lake_existence ();
+begin_fst_branches_lakes_existence ();
 
 
 /*
@@ -96,9 +96,9 @@ end_fst_dog ();
 
 */
 
-end_fst_branches_lake_existence ();
+end_fst_branches_lakes_existence ();
 
-end_fst_branches_lake ();
+end_fst_branches_lakes ();
 
 
 

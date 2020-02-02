@@ -4,7 +4,7 @@
 #include  <stdlib.h>
 
 
-void *  find_fst_roots_lake_words
+void *  find_fst_roots_lakes_words
 
 (
 

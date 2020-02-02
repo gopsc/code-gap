@@ -3,22 +3,22 @@
 
 
 
-#include "./roots/lake/create.computer"
+#include "./roots/lakes/create.computer"
 
-#include "./roots/lake/resize.computer"
+#include "./roots/lakes/resize.computer"
 
-#include "./roots/lake/free.computer"
+#include "./roots/lakes/free.computer"
 
 
-#include "./roots/lake/words/copy.computer"
+#include "./roots/lakes/words/copy.computer"
 
-#include "./roots/lake/words/append.computer"
+#include "./roots/lakes/words/append.computer"
 
-#include "./roots/lake/words/measure.computer"
+#include "./roots/lakes/words/measure.computer"
 
-#include "./roots/lake/words/compare.computer"
+#include "./roots/lakes/words/compare.computer"
 
-#include "./roots/lake/words/find.computer"
+#include "./roots/lakes/words/find.computer"
 
 
 
@@ -38,24 +38,24 @@
 
 
 
-#include "./branches/lake/prepare.computer"
+#include "./branches/lakes/prepare.computer"
 
-#include "./branches/lake/begin.computer"
+#include "./branches/lakes/begin.computer"
 
-#include "./branches/lake/end.computer"
-
-
-#include "./branches/lake/write.computer"
-
-#include "./branches/lake/drop.computer"
-
-#include "./branches/lake/fish.computer"
+#include "./branches/lakes/end.computer"
 
 
+#include "./branches/lakes/write.computer"
 
-#include "./branches/lake/existence/begin.computer"
+#include "./branches/lakes/drop.computer"
 
-#include "./branches/lake/existence/end.computer"
+#include "./branches/lakes/fish.computer"
+
+
+
+#include "./branches/lakes/existence/begin.computer"
+
+#include "./branches/lakes/existence/end.computer"
 
 
 

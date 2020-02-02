@@ -2,7 +2,7 @@
 #include  <stdlib.h>
 
 
-void  *   create_fst_roots_lake
+void  *   create_fst_roots_lakes
 
 (
 

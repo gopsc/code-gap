@@ -7,7 +7,7 @@
 
 
 
-void *  free_fst_roots_lake
+void *  free_fst_roots_lakes
 
 (  void ** that_places_data  )
 
