@@ -50,7 +50,7 @@ fish_fst_branches_lakes
 
 (
 
-( void * ) "fst,branches,lakes,existence,yes",
+( void * ) "fst,branches,lakes,bubbles,yes",
 
 that_places_results
 
@@ -72,7 +72,7 @@ fish_fst_branches_lakes
 
 (
 
-( void * ) "fst,branches,lakes,existence,no",
+( void * ) "fst,branches,lakes,bubbles,no",
 
 that_places_results
 

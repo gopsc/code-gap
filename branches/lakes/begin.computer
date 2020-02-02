@@ -43,7 +43,7 @@ resize_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes [ 0 ],  note_n
 
 
 
-* ( __uint64_t * ) note_numbers_sizes  =  18 * 1;
+* ( __uint64_t * ) note_numbers_sizes  =  19 * 1;
 
 create_fst_roots_lakes  (  & that_fst_branches_lakes [ 0 ] [ 0 ]  );
 

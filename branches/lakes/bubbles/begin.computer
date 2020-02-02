@@ -4,7 +4,7 @@
 
 
 
-void  *   begin_fst_branches_lakes_existence  ()
+void  *   begin_fst_branches_lakes_bubbles  ()
 
 {
 
@@ -15,7 +15,7 @@ write_fst_branches_lakes
 
 (
 
-( void * ) "fst,branches,lakes,existence,yes",
+( void * ) "fst,branches,lakes,bubbles,yes",
 
 ( void * ) "yes"
 
@@ -26,7 +26,7 @@ write_fst_branches_lakes
 
 (
 
-( void * ) "fst,branches,lakes,existence,no",
+( void * ) "fst,branches,lakes,bubbles,no",
 
 ( void * ) "no"
 

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+void  *   end_fst_branches_lakes_bubbles  ()
+
+{
+
+
+
+drop_fst_branches_lakes  (  ( void * ) "that,fst,leaves,lakes,bubbles,yes"  );
+
+drop_fst_branches_lakes  (  ( void * ) "that,fst,leaves,lakes,bubbles,no"  );
+
+
+
+return   that_fst_branches_lakes;
+
+}
