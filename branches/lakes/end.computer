@@ -9,7 +9,7 @@ void *  end_fst_branches_lakes ()
 
 
 
-void *  note_numbers_counts;
+void *  note_numbers_counts = that_fst_branches_lakes;
 
 create_fst_roots_lakes  (  & note_numbers_counts  );
 

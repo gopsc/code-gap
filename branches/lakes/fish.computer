@@ -21,12 +21,12 @@ void ** that_places_results
 
 
 
-void * note_numbers_counts;
+void * note_numbers_counts = that_fst_branches_lakes;
 
 create_fst_roots_lakes ( & note_numbers_counts );
 
 
-void * note_numbers_results;
+void * note_numbers_results = that_fst_branches_lakes;
  
 create_fst_roots_lakes ( & note_numbers_results );
 

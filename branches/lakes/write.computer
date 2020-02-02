@@ -17,41 +17,41 @@ void *  that_words_contents
 
 
 
-void  *   note_numbers_counts;
+void  *   note_numbers_counts = that_fst_branches_lakes;
 
 create_fst_roots_lakes  ( & note_numbers_counts );
 
 
 
 
-void * note_numbers_sizes;
+void * note_numbers_sizes = that_fst_branches_lakes;
 
 create_fst_roots_lakes ( & note_numbers_sizes );
 
 
 
 
-void  *   note_numbers_results;
+void  *   note_numbers_results = that_fst_branches_lakes;
 
 create_fst_roots_lakes  (  & note_numbers_results  );
 
 
 
-void * note_numbers_lengths_names;
+void * note_numbers_lengths_names = that_fst_branches_lakes;
 
 create_fst_roots_lakes ( & note_numbers_lengths_names );
 
 
 
 
-void  *   note_numbers_lengths_wrote;
+void  *   note_numbers_lengths_wrote = that_fst_branches_lakes;
 
 create_fst_roots_lakes  (  & note_numbers_lengths_wrote  );
 
 
 
 
-void  *  note_numbers_lengths_targets;
+void  *  note_numbers_lengths_targets = that_fst_branches_lakes;
 
 create_fst_roots_lakes  (  & note_numbers_lengths_targets  );
 
