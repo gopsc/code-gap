@@ -25,7 +25,7 @@ void * note_places_was;
 fish_fst_branches_lakes ( that_words_names, & note_places_was );
 
 
-void * note_numbers_results = NULL;
+void * note_numbers_results;
 
 create_fst_roots_lakes ( & note_numbers_results );
 
