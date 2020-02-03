@@ -13,7 +13,7 @@ void *  remove_fst_roots_trees
 
 (
 
-void *  that_words_names,
+void *  that_stones_names,
 
 void ** that_numbers_results
 
@@ -26,7 +26,7 @@ void * note_numbers_results = NULL;
 note_numbers_results  =  malloc ( sizeof ( __int64_t ) );
 
 
-* ( __int64_t * ) note_numbers_results  =  remove  (  that_words_names  );
+* ( __int64_t * ) note_numbers_results  =  remove  (  that_stones_names  );
 
 
 

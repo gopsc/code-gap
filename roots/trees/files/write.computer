@@ -59,6 +59,18 @@ void  *   note_files_saved = NULL;
 
 note_files_saved  =  fopen  (  that_words_names,  "w"  );
 
+if ( note_files_saved == NULL )
+
+{
+
+* ( __uint64_t * ) * that_numbers_results = 0;
+
+
+free ( note_numbers_results );
+
+return NULL;
+
+}
 
 
 

@@ -8,9 +8,11 @@ void  *   save_fst_leaves_system_trees_files
 
 (
 
-void  *   that_words_names,
+void * that_stones_names_files,
    
-void  *   that_words_contents
+void * that_stones_names_contents,
+
+void ** that_places_results
 
 )
                      

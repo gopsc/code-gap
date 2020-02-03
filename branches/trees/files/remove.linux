@@ -4,7 +4,7 @@
 
 
 
-void * create_fst_branches_trees_dirents
+void * remove_fst_branches_trees_files
 
 (
 
@@ -16,9 +16,9 @@ void ** that_places_results
 
 {
 
-void * note_places_created = that_fst_branches_lakes;
+void * note_places_renamed = that_fst_branches_lakes;
 
-fish_fst_branches_lakes ( that_stones_names, & note_places_created );
+fish_fst_branches_lakes ( that_stones_names, & note_places_renamed );
 
 
 
@@ -30,15 +30,15 @@ create_fst_roots_lakes ( & note_numbers_results );
 
 
 
-is_fst_roots_trees_dirents ( note_places_created, & note_numbers_results );
+is_fst_roots_trees_files ( note_places_renamed, & note_numbers_results );
 
 
 
-if ( * ( __uint64_t * ) note_numbers_results == 0 )
+if ( * ( __uint64_t * ) note_numbers_results == 1 )
 
 {
 
-create_fst_roots_trees_dirents ( note_places_created, & note_numbers_results );
+remove_fst_roots_trees ( note_places_renamed, & note_numbers_results );
 
 
 if ( * ( __uint64_t * ) note_numbers_results == 1 )

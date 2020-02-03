@@ -61,13 +61,17 @@
 
 
 #include "./branches/trees/dirents/is.linux"
-//
+
 #include "./branches/trees/dirents/create.linux"
 
-/*
-#include "./leaves/system/trees/files/is.c"
+#include "./branches/trees/dirents/remove.linux"
 
-#include "./leaves/system/trees/files/save.c"
+
+#include "./branches/trees/files/is.linux"
+
+#include "./branches/trees/files/remove.linux"
+/*//
+#include "./branches/trees/files/save.computer"
 
 #include "./leaves/system/trees/files/append.c"
 
