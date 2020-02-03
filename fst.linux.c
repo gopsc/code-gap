@@ -72,12 +72,10 @@
 #include "./branches/trees/files/remove.linux"
 
 #include "./branches/trees/files/save.linux"  // * NULL & char
+
+#include "./branches/trees/files/get.linux"
+
 /*//
-#include "./leaves/system/trees/files/append.c"
-
-#include "./leaves/system/trees/files/get.c"
-
-
 
 #include "./dog/begin.c"
 

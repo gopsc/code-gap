@@ -68,6 +68,7 @@ if   (   * ( __uint64_t * ) note_numbers_results   ==   1   )
 * that_places_results   =   that_fst_branches_lakes  [  * ( __uint64_t * ) note_numbers_counts  ] [ 1 ];
 
 
+
 free_fst_roots_lakes  (  & note_numbers_counts  );
 
 free_fst_roots_lakes  (  & note_numbers_results  );

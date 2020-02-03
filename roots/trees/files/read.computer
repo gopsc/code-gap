@@ -14,7 +14,9 @@ void *  read_fst_roots_trees_files
 
 void *  that_words_names,
 
-void ** that_words_results
+void ** that_words_results,
+
+void ** that_numbers_results
 
 )
 
@@ -28,7 +30,7 @@ void ** that_words_results
 
 * ( char * ) * that_words_results  =  '\0';
 
-* that_words_results  =  realloc (  * that_words_results,  1 * sizeof ( char )  );
+* that_words_results  =  realloc ( * that_words_results, 1 * sizeof ( char ) );
 
 
 
@@ -41,6 +43,8 @@ if
 ( note_files_got  == NULL )
 
 {
+
+* ( __uint64_t * ) * that_numbers_results  = 0;
 
 return NULL;
 
@@ -116,6 +120,8 @@ free  (  note_words_read  );
 free  (  note_numbers_counts  );
 
 
-return 0;
+* ( __uint64_t * ) * that_numbers_results  = 1;
+
+return NULL;
 
 }
