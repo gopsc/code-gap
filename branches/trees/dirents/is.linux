@@ -6,11 +6,11 @@
 
 
 
-void  *   is_fst_branches_trees_dirents
+void * is_fst_branches_trees_dirents
 
 (
 
-void * that_words_names,
+void * that_stones_names,
 
 void ** that_places_results
 
@@ -22,7 +22,8 @@ void ** that_places_results
 
 void * note_places_was = that_fst_branches_lakes;
 
-fish_fst_branches_lakes ( that_words_names, & note_places_was );
+fish_fst_branches_lakes ( that_stones_names, & note_places_was );
+
 
 
 void * note_numbers_results = that_fst_branches_lakes;
@@ -43,9 +44,6 @@ if  (  * ( __uint64_t * ) note_numbers_results  ==  1  )
    
 {
 
-
-free_fst_roots_lakes  ( & note_numbers_results  );
-
 fish_fst_branches_lakes
 
 (
@@ -57,6 +55,9 @@ that_places_results
 );
 
 
+
+free_fst_roots_lakes  ( & note_numbers_results  );
+
 return that_fst_branches_lakes;
 
 }
@@ -64,8 +65,6 @@ return that_fst_branches_lakes;
 
 
 
-
-free_fst_roots_lakes  ( & note_numbers_results  );
 
 
 fish_fst_branches_lakes
@@ -78,6 +77,9 @@ that_places_results
 
 );
 
+
+
+free_fst_roots_lakes  ( & note_numbers_results  );
 
 return that_fst_branches_lakes;
 
