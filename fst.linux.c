@@ -75,25 +75,7 @@
 
 #include "./branches/trees/files/get.linux"
 
-/*//
 
-#include "./dog/begin.c"
-
-#include "./dog/end.c"
-
-
-#include "./spider/that/hope.h"
-
-#include "./spider/that/that/that.h"
-
-#include "./spider/that/lake/that.h"
-
-
-#include "./voice/that/hope.h"
-
-#include "./voice/that/that.h"
-
-*/
 
 #include "./branches/flowers/seed.linux"
 
