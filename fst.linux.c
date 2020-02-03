@@ -10,15 +10,15 @@
 #include "./roots/lakes/free.computer"
 
 
-#include "./roots/lakes/words/copy.computer"
+#include "./roots/lakes/stones/copy.computer"
 
-#include "./roots/lakes/words/append.computer"
+#include "./roots/lakes/stones/append.computer"
 
-#include "./roots/lakes/words/measure.computer"
+#include "./roots/lakes/stones/measure.computer"
 
-#include "./roots/lakes/words/compare.computer"
+#include "./roots/lakes/stones/compare.computer"
 
-#include "./roots/lakes/words/find.computer"
+#include "./roots/lakes/stones/find.computer"
 
 
 

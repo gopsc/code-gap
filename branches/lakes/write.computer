@@ -78,7 +78,7 @@ while
 
 
 
-compare_fst_roots_lakes_words
+compare_fst_roots_lakes_stones
 
 (
 
@@ -98,7 +98,7 @@ if   (   * ( __uint64_t * ) note_numbers_results   ==   1   )
 {
 
 
-measure_fst_roots_lakes_words
+measure_fst_roots_lakes_stones
 
 (
 
@@ -109,7 +109,7 @@ that_words_contents,
 );
 
 
-measure_fst_roots_lakes_words
+measure_fst_roots_lakes_stones
 
 (
 
@@ -135,7 +135,7 @@ if
 {
 
 
-copy_fst_roots_lakes_words
+copy_fst_roots_lakes_stones
 
 (
 
@@ -191,7 +191,7 @@ note_numbers_sizes
 );
 
 
-copy_fst_roots_lakes_words
+copy_fst_roots_lakes_stones
 
 (
 
@@ -245,9 +245,9 @@ read over, create new fish
 */
 
 
-measure_fst_roots_lakes_words ( that_words_names, & note_numbers_lengths_names );
+measure_fst_roots_lakes_stones ( that_words_names, & note_numbers_lengths_names );
 
-measure_fst_roots_lakes_words ( that_words_contents, & note_numbers_lengths_wrote );
+measure_fst_roots_lakes_stones ( that_words_contents, & note_numbers_lengths_wrote );
 
 
 
@@ -318,7 +318,7 @@ note_numbers_sizes
 );
 
 
-copy_fst_roots_lakes_words
+copy_fst_roots_lakes_stones
 
 (
 
@@ -358,7 +358,7 @@ note_numbers_sizes
 
 
 
-copy_fst_roots_lakes_words
+copy_fst_roots_lakes_stones
 
 (
 
