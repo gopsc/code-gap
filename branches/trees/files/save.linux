@@ -20,7 +20,7 @@ void ** that_places_results
 
 
 
-void * note_numbers_sizes = that_fst_branches_lakes;
+void * note_numbers_sizes = that_fst_roots_lakes;
 
 create_fst_roots_lakes ( & note_numbers_sizes );
 
@@ -29,46 +29,16 @@ create_fst_roots_lakes ( & note_numbers_sizes );
 
 
 
-void * note_places_names_files = that_fst_branches_lakes;
+void * note_places_names_files = that_fst_roots_lakes;
 
 fish_fst_branches_lakes ( that_stones_names_files, & note_places_names_files );
 
-measure_fst_roots_lakes_stones ( note_places_names_files, & note_numbers_sizes );
-
-if
-
-(
-
-* (  ( char * ) note_places_names_files  +  (  * ( __uint64_t * ) note_numbers_sizes  -  1  ) )
-
-== '/'
-
- )
-
-{
-
-fish_fst_branches_lakes
-
-(
-
-( void * ) "fst,branches,lakes,bubbles,no",
-
-that_places_results
-
-);
-
-
-
-free_fst_roots_lakes ( & note_numbers_sizes );
-
-return that_fst_branches_lakes;
-
-}
 
 
 
 
-void * note_places_names_contents = that_fst_branches_lakes;
+
+void * note_places_names_contents = that_fst_roots_lakes;
 
 fish_fst_branches_lakes ( that_stones_names_contents, & note_places_names_contents );
 
@@ -76,7 +46,7 @@ fish_fst_branches_lakes ( that_stones_names_contents, & note_places_names_conten
 
 
 
-void * note_numbers_counts = that_fst_branches_lakes;
+void * note_numbers_counts = that_fst_roots_lakes;
 
 create_fst_roots_lakes ( & note_numbers_counts );
 
@@ -85,7 +55,7 @@ create_fst_roots_lakes ( & note_numbers_counts );
 
 
 
-void * note_numbers_counts_two = that_fst_branches_lakes;
+void * note_numbers_counts_two = that_fst_roots_lakes;
 
 create_fst_roots_lakes ( & note_numbers_counts_two );   
 
@@ -96,7 +66,7 @@ measure_fst_roots_lakes_stones ( note_places_names_files, & note_numbers_sizes )
 
 * ( __uint64_t * ) note_numbers_sizes = 1  *  ( 1 + * ( __uint64_t * ) note_numbers_sizes );
 
-void * note_stones_names;
+void * note_stones_names = that_fst_roots_lakes;
 
 create_fst_roots_lakes ( & note_stones_names );
 
@@ -105,12 +75,12 @@ resize_fst_roots_lakes ( & note_stones_names, note_numbers_sizes );
 
 
 
-void * note_places_names = that_fst_branches_lakes;
+void * note_places_names = that_fst_roots_lakes;
 
 
 
 
-void * note_numbers_results = that_fst_branches_lakes;
+void * note_numbers_results = that_fst_roots_lakes;
    
 create_fst_roots_lakes ( & note_numbers_results );
 
@@ -181,7 +151,7 @@ note_places_names + 1,
 
 
 
-if  (  note_places_names   ==   NULL  )
+if  (  note_places_names   ==   that_fst_roots_lakes  )
 
 {
 
