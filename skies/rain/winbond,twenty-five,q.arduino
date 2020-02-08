@@ -10,6 +10,11 @@
 
 #include <arduino.h>
 
+
+#define __uint64_t unsighed long
+
+#define __int64_t long
+
 /*
 
 ,
