@@ -23,12 +23,6 @@ begin_fst_branches_lakes ();
 begin_fst_branches_lakes_bubbles ();
 
 
-/*
-
-begin_fst_dog ();
-
-*/
-
 
 
 
@@ -37,11 +31,6 @@ begin_fst_dog ();
 
 
 
-/*
-
-end_fst_dog ();
-
-*/
 
 end_fst_branches_lakes_bubbles ();
 
