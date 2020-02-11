@@ -20,7 +20,7 @@ void ** that_places_results
 
 
 
-void * note_numbers_sizes = that_fst_roots_lakes;
+void * note_numbers_sizes = that_fst_roots_lakes_bubbles_prepare;
 
 create_fst_roots_lakes ( & note_numbers_sizes );
 
@@ -29,7 +29,7 @@ create_fst_roots_lakes ( & note_numbers_sizes );
 
 
 
-void * note_places_names_files = that_fst_roots_lakes;
+void * note_places_names_files = that_fst_roots_lakes_bubbles_prepare;
 
 fish_fst_branches_lakes ( that_stones_names_files, & note_places_names_files );
 
@@ -38,7 +38,7 @@ fish_fst_branches_lakes ( that_stones_names_files, & note_places_names_files );
 
 
 
-void * note_places_names_contents = that_fst_roots_lakes;
+void * note_places_names_contents = that_fst_roots_lakes_bubbles_prepare;
 
 fish_fst_branches_lakes ( that_stones_names_contents, & note_places_names_contents );
 
@@ -46,7 +46,7 @@ fish_fst_branches_lakes ( that_stones_names_contents, & note_places_names_conten
 
 
 
-void * note_numbers_counts = that_fst_roots_lakes;
+void * note_numbers_counts = that_fst_roots_lakes_bubbles_prepare;
 
 create_fst_roots_lakes ( & note_numbers_counts );
 
@@ -55,7 +55,7 @@ create_fst_roots_lakes ( & note_numbers_counts );
 
 
 
-void * note_numbers_counts_two = that_fst_roots_lakes;
+void * note_numbers_counts_two = that_fst_roots_lakes_bubbles_prepare;
 
 create_fst_roots_lakes ( & note_numbers_counts_two );   
 
@@ -66,7 +66,7 @@ measure_fst_roots_lakes_stones ( note_places_names_files, & note_numbers_sizes )
 
 * ( __uint64_t * ) note_numbers_sizes = 1  *  ( 1 + * ( __uint64_t * ) note_numbers_sizes );
 
-void * note_stones_names = that_fst_roots_lakes;
+void * note_stones_names = that_fst_roots_lakes_bubbles_prepare;
 
 create_fst_roots_lakes ( & note_stones_names );
 
@@ -75,12 +75,12 @@ resize_fst_roots_lakes ( & note_stones_names, note_numbers_sizes );
 
 
 
-void * note_places_names = that_fst_roots_lakes;
+void * note_places_names = that_fst_roots_lakes_bubbles_prepare;
 
 
 
 
-void * note_numbers_results = that_fst_roots_lakes;
+void * note_numbers_results = that_fst_roots_lakes_bubbles_prepare;
    
 create_fst_roots_lakes ( & note_numbers_results );
 
@@ -151,7 +151,7 @@ note_places_names + 1,
 
 
 
-if  (  note_places_names   ==   that_fst_roots_lakes  )
+if  (  note_places_names   ==   that_fst_roots_lakes_bubbles_prepare  )
 
 {
 
@@ -226,7 +226,7 @@ free_fst_roots_lakes ( & note_numbers_counts_two );
 free_fst_roots_lakes ( & note_numbers_results );
 
 
-return that_fst_branches_lakes;
+return that_fst_roots_lakes_bubbles_prepare;
 
 }
 
@@ -348,7 +348,7 @@ that_places_results
 
 free_fst_roots_lakes ( & note_numbers_results );
 
-return  fish_fst_branches_lakes;
+return  that_fst_roots_lakes_bubbles_prepare;
 
 }
 

@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-void * that_fst_roots_lakes = NULL;
+void * that_fst_roots_lakes_bubbles_prepare = NULL;
 
 
 
