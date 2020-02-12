@@ -12,22 +12,22 @@ void ** that_places_created
 
 {
 
-void * note_places_created = that_fst_roots_lakes_bubbles_prepare;
+void * note_places_created = NULL;
 
 note_places_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-if  (  note_places_created  ==  that_fst_roots_lakes_bubbles_prepare  )
+if  (  note_places_created  ==  NULL  )
 
 {
 
-* that_places_created  =  that_fst_roots_lakes_bubbles_prepare;
+* that_places_created  =  NULL;
 
 }
 
 
-else if  (  note_places_created  !=  that_fst_roots_lakes_bubbles_prepare  )
+else if  (  note_places_created  !=  NULL  )
 
 {
 
@@ -37,7 +37,7 @@ else if  (  note_places_created  !=  that_fst_roots_lakes_bubbles_prepare  )
 
 
 
-return that_fst_roots_lakes_bubbles_prepare;
+return NULL;
 
 }
 

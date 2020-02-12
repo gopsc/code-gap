@@ -20,7 +20,7 @@ void *  that_numbers_sizes
 
 
 
-void * note_places_resized = that_fst_roots_lakes_bubbles_prepare;
+void * note_places_resized = NULL;
 
 note_places_resized   =   realloc  (  * that_places_resized,  * ( __uint64_t * ) that_numbers_sizes  );
 
@@ -29,17 +29,17 @@ note_places_resized   =   realloc  (  * that_places_resized,  * ( __uint64_t * )
 
 
 
-if  (  note_places_resized  ==  that_fst_roots_lakes_bubbles_prepare  )
+if  (  note_places_resized  ==  NULL  )
 
 {
 
-* that_places_resized  =  that_fst_roots_lakes_bubbles_prepare;
+* that_places_resized  = NULL;
 
 }
 
 
 
-else if  (  note_places_resized  !=  that_fst_roots_lakes_bubbles_prepare  )
+else if  (  note_places_resized  !=  NULL  )
 
 {
 
@@ -51,7 +51,7 @@ else if  (  note_places_resized  !=  that_fst_roots_lakes_bubbles_prepare  )
 
 
 
-return that_fst_roots_lakes_bubbles_prepare;
+return NULL;
 
 }
 
