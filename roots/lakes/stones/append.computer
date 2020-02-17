@@ -9,9 +9,9 @@ void  *   append_fst_roots_lakes_stones
 
 (
 
-void  *   that_words_targets,
+void  *   that_stones_targets,
 
-void  *   that_words_append
+void  *   that_stones_append
 
 )
 
@@ -23,11 +23,24 @@ void  *   note_numbers_counts_targets = NULL;
 note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
+void  *   note_numbers_counts_append = NULL;
+
+note_numbers_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
+
+
 
 * ( __uint64_t * ) note_numbers_counts_targets   =   0;
 
 
-while  (  * ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  )   !=   '\0'  )
+while
+
+(
+
+* ( ( char * )  that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  )  !=  '\0'
+
+)
 
 {
 
@@ -39,21 +52,21 @@ while  (  * ( char * ) (  that_words_targets  +  * ( __uint64_t * ) note_numbers
 
 
 
-void  *   note_numbers_counts_append = NULL;
-
-note_numbers_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
 
 
 * ( __uint64_t * ) note_numbers_counts_append   =   0;
 
-while  (   * ( ( char * ) that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  )   !=   '\0'   )
+while
+
+(
+
+* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_numbers_counts_append  )   !=   '\0'   )
 
 {
 
-* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )
 =
-* ( ( char * ) that_words_append  +  * ( __uint64_t * ) note_numbers_counts_append  );
+* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_numbers_counts_append  );
 
 
 
@@ -63,7 +76,7 @@ while  (   * ( ( char * ) that_words_append  +  * ( __uint64_t * ) note_numbers_
 
 
 
-* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )   =   '\0';
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )   =   '\0';
 
 
 
@@ -71,6 +84,7 @@ while  (   * ( ( char * ) that_words_append  +  * ( __uint64_t * ) note_numbers_
 free ( note_numbers_counts_targets );
 
 free ( note_numbers_counts_append );
+
 
 return  NULL;
 
