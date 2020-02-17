@@ -4,14 +4,14 @@
 #include  <stdlib.h>
 
 
-void *  copy_fst_roots_lakes_stones
+void * copy_fst_roots_lakes_stones
 
 
 (
 
-void *  that_words_targets,
+void *  that_stones_targets,
 
-void *  that_words_copied
+void *  that_stones_copied
 
 )
 
@@ -31,16 +31,16 @@ while
 
 (
 
-* (  ( char * ) that_words_copied + * ( __uint64_t * ) note_numbers_counts  )  !=  '\0'
+* (  ( char * ) that_stones_copied + * ( __uint64_t * ) note_numbers_counts  )  !=  '\0'
 
 )
 
 {
 
 
-* (  ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts  )
+* (  ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts  )
 =
-* (  ( char * ) that_words_copied  +  * ( __uint64_t * ) note_numbers_counts  );
+* (  ( char * ) that_stones_copied  +  * ( __uint64_t * ) note_numbers_counts  );
 
 
 
@@ -52,7 +52,7 @@ while
 
 
 
-* ( ( char * ) that_words_targets  +  * ( __uint64_t * ) note_numbers_counts  )   =   '\0';
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts  )   =   '\0';
 
 
 free  (  note_numbers_counts  );
