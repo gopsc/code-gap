@@ -6,32 +6,35 @@ void  *   create_fst_roots_lakes
 
 (
 
-void ** that_places_created
+void ** that_silts_created
 
 )
 
 {
 
-void * note_places_created = NULL;
-
-note_places_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
+void * note_silts_created = NULL;
 
-if  (  note_places_created  ==  NULL  )
+note_silts_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
+
+
+if  (  note_silts_created  ==  NULL  )
 
 {
 
-* that_places_created  =  NULL;
+* that_silts_created  =  NULL;
 
 }
 
 
-else if  (  note_places_created  !=  NULL  )
+else if  (  note_silts_created  !=  NULL  )
 
 {
 
-* that_places_created  =  note_places_created;
+* that_silts_created  =  note_silts_created;
 
 }
 
