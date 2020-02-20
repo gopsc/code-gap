@@ -9,9 +9,9 @@ void *  resize_fst_roots_lakes
 
 (
 
-void ** that_places_resized,
+void ** that_silts_resized,
 
-void *  that_numbers_sizes
+void *  that_waters_sizes
 
 )
 
@@ -20,30 +20,30 @@ void *  that_numbers_sizes
 
 
 
-void * note_places_resized = NULL;
+void * note_silts_resized = NULL;
 
-note_places_resized   =   realloc  (  * that_places_resized,  * ( __uint64_t * ) that_numbers_sizes  );
-
-
+note_silts_resized   =   realloc  (  * that_silts_resized,  * ( __uint64_t * ) that_waters_sizes  );
 
 
 
 
-if  (  note_places_resized  ==  NULL  )
+
+
+if  (  note_silts_resized  ==  NULL  )
 
 {
 
-* that_places_resized  = NULL;
+* that_silts_resized  = NULL;
 
 }
 
 
 
-else if  (  note_places_resized  !=  NULL  )
+else if  (  note_silts_resized  !=  NULL  )
 
 {
 
-* that_places_resized  =  note_places_resized;
+* that_silts_resized  =  note_silts_resized;
 
 }
 
