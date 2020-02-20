@@ -9,18 +9,18 @@
 
 void *  free_fst_roots_lakes
 
-(  void ** that_places_data  )
+(  void ** that_silts_data  )
 
 {
 
 
-free  (  * that_places_data  );
+free  (  * that_silts_data  );
 
-* that_places_data  =  NULL;
+* that_silts_data  =  NULL;
+
 
 
 return NULL;
-
 
 }
 
