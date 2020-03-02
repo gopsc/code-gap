@@ -132,5 +132,9 @@
 
 
 
+#include "./birds/prepare.computer"
+
+
+
 #include "./branches/flowers/seed.linux"
 
