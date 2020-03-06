@@ -132,6 +132,8 @@
 
 
 
+#include "./skies/prepare.computer"
+
 #include "./birds/prepare.computer"
 
 
