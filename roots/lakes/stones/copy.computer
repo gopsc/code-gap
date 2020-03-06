@@ -18,44 +18,44 @@ void *  that_stones_copied
 {
 
 
-void *  note_numbers_counts = NULL;
+void *  note_waters_counts = NULL;
 
-note_numbers_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
+note_waters_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
-* ( __uint64_t * ) note_numbers_counts   =   0;
+
+
+* ( __uint64_t * ) note_waters_counts   =   0;
 
 while
 
 (
 
-* (  ( char * ) that_stones_copied + * ( __uint64_t * ) note_numbers_counts  )  !=  '\0'
+* (  ( char * ) that_stones_copied + * ( __uint64_t * ) note_waters_counts  )  !=  '\0'
 
 )
 
 {
 
 
-* (  ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts  )
+* (  ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts  )
 =
-* (  ( char * ) that_stones_copied  +  * ( __uint64_t * ) note_numbers_counts  );
+* (  ( char * ) that_stones_copied  +  * ( __uint64_t * ) note_waters_counts  );
 
 
 
 
-* ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1;
+* ( __uint64_t * ) note_waters_counts   =   * ( __uint64_t * ) note_waters_counts   +   1;
 
 
 }
 
 
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts  )   =   '\0';
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts  )   =   '\0';
 
 
-free  (  note_numbers_counts  );
+free  (  note_waters_counts  );
 
 
 
