@@ -18,33 +18,33 @@ void  *   that_stones_append
 {
 
 
-void  *   note_numbers_counts_targets = NULL;
+void  *   note_waters_counts_targets = NULL;
 
-note_numbers_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-void  *   note_numbers_counts_append = NULL;
-
-note_numbers_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+note_waters_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
+void  *   note_waters_counts_append = NULL;
+
+note_waters_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-* ( __uint64_t * ) note_numbers_counts_targets   =   0;
+
+
+* ( __uint64_t * ) note_waters_counts_targets   =   0;
 
 
 while
 
 (
 
-* ( ( char * )  that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  )  !=  '\0'
+* ( ( char * )  that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  )  !=  '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_numbers_counts_targets   =   * ( __uint64_t * ) note_numbers_counts_targets   +   1;
+* ( __uint64_t * ) note_waters_counts_targets   =   * ( __uint64_t * ) note_waters_counts_targets   +   1;
 
 }
 
@@ -54,36 +54,36 @@ while
 
 
 
-* ( __uint64_t * ) note_numbers_counts_append   =   0;
+* ( __uint64_t * ) note_waters_counts_append   =   0;
 
 while
 
 (
 
-* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_numbers_counts_append  )   !=   '\0'   )
+* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_waters_counts_append  )   !=   '\0'   )
 
 {
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  +  * ( __uint64_t * ) note_waters_counts_append  )
 =
-* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_numbers_counts_append  );
+* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_waters_counts_append  );
 
 
 
-* ( __uint64_t * ) note_numbers_counts_append   =   * ( __uint64_t * ) note_numbers_counts_append   +   1;
+* ( __uint64_t * ) note_waters_counts_append   =   * ( __uint64_t * ) note_waters_counts_append   +   1;
 
 }
 
 
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_numbers_counts_targets  +  * ( __uint64_t * ) note_numbers_counts_append  )   =   '\0';
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  +  * ( __uint64_t * ) note_waters_counts_append  )   =   '\0';
 
 
 
 
-free ( note_numbers_counts_targets );
+free ( note_waters_counts_targets );
 
-free ( note_numbers_counts_append );
+free ( note_waters_counts_append );
 
 
 return  NULL;
