@@ -132,9 +132,9 @@
 
 
 
-#include "./skies/prepare.computer"
+#include "./skies/intro.computer"
 
-#include "./birds/prepare.computer"
+#include "./birds/intro.computer"
 
 
 
