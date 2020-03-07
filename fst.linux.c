@@ -136,6 +136,8 @@
 
 #include "./birds/intro.computer"
 
+#include "./rivers/intro.computer"
+
 
 
 #include "./branches/flowers/seed.linux"
