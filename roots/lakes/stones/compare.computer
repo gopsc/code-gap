@@ -11,11 +11,11 @@ void *  compare_fst_roots_lakes_stones
 
 (
 
-void *  that_words_compared,
+void *  that_stones_compared,
 
-void *  that_words_compare,
+void *  that_stones_compare,
 
-void ** that_numbers_results
+void ** that_waters_results
 
 )
 
@@ -23,25 +23,25 @@ void ** that_numbers_results
 
 
 
-void *  note_numbers_lengths_compared = NULL;
+void *  note_waters_lengths_compared = NULL;
 
-note_numbers_lengths_compared   =   malloc  (  sizeof ( __uint64_t )  );
+note_waters_lengths_compared   =   malloc  (  sizeof ( __uint64_t )  );
 
 
 
-* ( __uint64_t * ) note_numbers_lengths_compared   =   0;
+* ( __uint64_t * ) note_waters_lengths_compared   =   0;
 
 while
 
 (
 
-* ( ( char * ) that_words_compared  +  * ( __uint64_t * ) note_numbers_lengths_compared  )   !=   '\0'
+* ( ( char * ) that_stones_compared  +  * ( __uint64_t * ) note_waters_lengths_compared  )   !=   '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_numbers_lengths_compared   =   * ( __uint64_t * ) note_numbers_lengths_compared   +   1;
+* ( __uint64_t * ) note_waters_lengths_compared   =   * ( __uint64_t * ) note_waters_lengths_compared   +   1;
 
 }
 
@@ -49,25 +49,25 @@ while
 
 
 
-void *  note_numbers_lengths_compare = NULL;
+void *  note_waters_lengths_compare = NULL;
 
-note_numbers_lengths_compare   =   malloc  (  sizeof ( __uint64_t )  );
+note_waters_lengths_compare   =   malloc  (  sizeof ( __uint64_t )  );
 
 
 
-* ( __uint64_t * ) note_numbers_lengths_compare   =   0;
+* ( __uint64_t * ) note_waters_lengths_compare   =   0;
 
 while
 
 (
 
-* ( ( char * ) that_words_compare  +  * ( __uint64_t * ) note_numbers_lengths_compare  )   !=   '\0'
+* ( ( char * ) that_stones_compare  +  * ( __uint64_t * ) note_waters_lengths_compare  )   !=   '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_numbers_lengths_compare   =   * ( __uint64_t * ) note_numbers_lengths_compare   +   1;
+* ( __uint64_t * ) note_waters_lengths_compare   =   * ( __uint64_t * ) note_waters_lengths_compare   +   1;
 
 }
 
@@ -83,21 +83,21 @@ if
 
 (
 
-* ( __uint64_t * ) note_numbers_lengths_compared
+* ( __uint64_t * ) note_waters_lengths_compared
 !=
-* ( __uint64_t * ) note_numbers_lengths_compare
+* ( __uint64_t * ) note_waters_lengths_compare
 
 )
 
 {
 
 
-free  (  note_numbers_lengths_compared  );
+free  (  note_waters_lengths_compared  );
 
-free  (  note_numbers_lengths_compare  );
+free  (  note_waters_lengths_compare  );
 
 
-* ( __uint64_t * ) * that_numbers_results   =   0;
+* ( __uint64_t * ) * that_waters_results   =   0;
 
 
 return  NULL;
@@ -110,19 +110,19 @@ return  NULL;
 
 
 
-void *  note_numbers_counts = NULL;
+void *  note_waters_counts = NULL;
 
-note_numbers_counts   =   malloc  (  sizeof ( __uint64_t )  );
+note_waters_counts   =   malloc  (  sizeof ( __uint64_t )  );
 
 
 
-* ( __uint64_t * ) note_numbers_counts   =   0;
+* ( __uint64_t * ) note_waters_counts   =   0;
 
 while
 
 (
 
-* ( __uint64_t * ) note_numbers_counts   <   * ( __uint64_t * ) note_numbers_lengths_compared
+* ( __uint64_t * ) note_waters_counts   <   * ( __uint64_t * ) note_waters_lengths_compared
 
 )
 
@@ -134,22 +134,22 @@ if
 
 (
 
-* ( ( char * ) that_words_compared  +  * ( __uint64_t * ) note_numbers_counts  ) 
+* ( ( char * ) that_stones_compared  +  * ( __uint64_t * ) note_waters_counts  ) 
 !=
-* ( ( char * ) that_words_compare  +  * ( __uint64_t * ) note_numbers_counts  )
+* ( ( char * ) that_stones_compare  +  * ( __uint64_t * ) note_waters_counts  )
 
 )
 
 {
 
-free  (  note_numbers_lengths_compared  );
+free  (  note_waters_lengths_compared  );
 
-free  (  note_numbers_lengths_compare  );
+free  (  note_waters_lengths_compare  );
 
-free  (  note_numbers_counts  );
+free  (  note_waters_counts  );
 
 
-* ( __uint64_t * ) * that_numbers_results   =   0;
+* ( __uint64_t * ) * that_waters_results   =   0;
 
 
 return  NULL;
@@ -159,7 +159,7 @@ return  NULL;
 
 
 
-* ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1;
+* ( __uint64_t * ) note_waters_counts   =   * ( __uint64_t * ) note_waters_counts   +   1;
 
 }
 
@@ -171,14 +171,14 @@ return  NULL;
 
 
 
-free  (  note_numbers_lengths_compared  );
+free  (  note_waters_lengths_compared  );
 
-free  (  note_numbers_lengths_compare  );
+free  (  note_waters_lengths_compare  );
 
-free  (  note_numbers_counts  );
+free  (  note_waters_counts  );
 
 
-* ( __uint64_t * ) * that_numbers_results   =   1;
+* ( __uint64_t * ) * that_waters_results   =   1;
 
 
 return  NULL;

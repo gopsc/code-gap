@@ -71,9 +71,9 @@
 #include "./roots/lakes/stones/append.computer"
 
 #include "./roots/lakes/stones/measure.computer"
-//
-#include "./roots/lakes/stones/compare.computer"
 
+#include "./roots/lakes/stones/compare.computer"
+//
 #include "./roots/lakes/stones/find.computer"
 
 
