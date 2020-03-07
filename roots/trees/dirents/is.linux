@@ -13,9 +13,9 @@ void *  is_fst_roots_trees_dirents
 
 (
 
-void *  that_words_names,
+void *  that_stones_names,
 
-void ** that_numbers_results
+void ** that_waters_results
 
 )
 
@@ -44,10 +44,12 @@ note_structures_status  =  malloc  (  sizeof ( struct stat )  );
 
 
 
-if  (    lstat (  that_words_names,  note_structures_status  )  ==  0    )
+if  (    lstat (  that_stones_names,  note_structures_status  )  ==  0    )
 
 {
    
+
+
 
 
    
@@ -55,20 +57,9 @@ if  (    S_ISDIR  (  ( * ( struct stat * ) note_structures_status )  . st_mode  
 
 {
 
-* ( __uint64_t * ) * that_numbers_results  =  1;
 
 
-free ( note_structures_status );
-
-return  NULL;
-
-}
-
-else
-
-{
-
-* ( __uint64_t * ) * that_numbers_results  =  0;
+* ( __uint64_t * ) * that_waters_results  =  1;
 
 
 free ( note_structures_status );
@@ -79,9 +70,29 @@ return  NULL;
 
 
 
+else
+
+{
+
+* ( __uint64_t * ) * that_waters_results  =  0;
+
+
+free ( note_structures_status );
+
+return  NULL;
+
 
 
 }
+
+
+
+
+}
+
+
+
+
 
 
 else
@@ -89,7 +100,7 @@ else
 {
 
 
-* ( __uint64_t * ) * that_numbers_results  =  0;
+* ( __uint64_t * ) * that_waters_results  =  0;
 
 
 free ( note_structures_status );

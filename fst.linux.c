@@ -8,7 +8,6 @@ wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
 
 tar   -xjf   alsa-lib-1.1.5.tar.bz2
 
-
 gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   /opt/?
 
 */
@@ -91,10 +90,10 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 
 
 #include "./roots/trees/remove.computer"
-//
+
 
 #include "./roots/trees/dirents/is.linux"
-
+//
 #include "./roots/trees/dirents/create.linux"
 
 
