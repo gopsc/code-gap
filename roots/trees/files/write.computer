@@ -8,15 +8,16 @@
 #include  <stdio.h>
 
 
+
 void *  write_fst_roots_trees_files
 
 (
 
-void *  that_words_names,
+void *  that_stones_names,
 
-void *  that_words_contents,
+void *  that_stones_contents,
 
-void ** that_numbers_results
+void ** that_waters_results
 
 )
 
@@ -24,49 +25,67 @@ void ** that_numbers_results
 
 
 
-void * note_numbers_lengths_contents = NULL;
-
-note_numbers_lengths_contents  =  malloc ( 1 * sizeof ( __uint64_t ) );
 
 
 
-* ( __uint64_t * ) note_numbers_lengths_contents  =  0;
+
+
+void * note_waters_lengths_contents = NULL;
+
+note_waters_lengths_contents  =  malloc ( 1 * sizeof ( __uint64_t ) );
+
+
+
+* ( __uint64_t * ) note_waters_lengths_contents  =  0;
 
 while
 
 (
 
-* ( ( char * ) that_words_contents + * ( __uint64_t * ) note_numbers_lengths_contents )  !=  '\0'
+* ( ( char * ) that_stones_contents + * ( __uint64_t * ) note_waters_lengths_contents )  !=  '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_numbers_lengths_contents = * ( __uint64_t * ) note_numbers_lengths_contents + 1;
+* ( __uint64_t * ) note_waters_lengths_contents = * ( __uint64_t * ) note_waters_lengths_contents + 1;
 
 }
 
 
 
 
-void * note_numbers_results = NULL;
 
-note_numbers_results  =  malloc ( 1 * sizeof ( __int64_t ) );
+
+
+
+
+void * note_waters_results = NULL;
+
+note_waters_results  =  malloc ( 1 * sizeof ( __int64_t ) );
 
 
 
 void  *   note_files_saved = NULL;
 
-note_files_saved  =  fopen  (  that_words_names,  "w"  );
+note_files_saved  =  fopen  (  that_stones_names,  "w"  );
+
+
+
+
+
+
 
 if ( note_files_saved == NULL )
 
 {
 
-* ( __uint64_t * ) * that_numbers_results = 0;
+* ( __uint64_t * ) * that_waters_results = 0;
 
 
-free ( note_numbers_results );
+free ( note_waters_lengths_contents );
+
+free ( note_waters_results );
 
 return NULL;
 
@@ -74,62 +93,83 @@ return NULL;
 
 
 
-* ( __uint64_t * ) note_numbers_results  =  fprintf  (  note_files_saved,  "%s",  that_words_contents  );
+
+
+
+
+* ( __uint64_t * ) note_waters_results  =  fprintf  (  note_files_saved,  "%s",  that_stones_contents  );
+
+
+
+
 
 if
 
 (
 
-* ( __uint64_t * ) note_numbers_results  == * ( __uint64_t * ) note_numbers_lengths_contents
+* ( __uint64_t * ) note_waters_results  == * ( __uint64_t * ) note_waters_lengths_contents
 
 )
 
 {
 
-* ( __uint64_t * ) * that_numbers_results = 1;
+* ( __uint64_t * ) * that_waters_results = 1;
 
 }
+
+
 
 else if
 
 (
 
-* ( __uint64_t * ) note_numbers_results  != * ( __uint64_t * ) note_numbers_lengths_contents
+* ( __uint64_t * ) note_waters_results  != * ( __uint64_t * ) note_waters_lengths_contents
 
 )
 
 {
 
-* ( __uint64_t * ) * that_numbers_results = 0;
+* ( __uint64_t * ) * that_waters_results = 0;
 
 }
 
 
 
 
-* ( __int64_t * ) note_numbers_results  = fclose  (  note_files_saved  );
+
+
+
+
+
+
+* ( __int64_t * ) note_waters_results  = fclose  (  note_files_saved  );
 
 if
 
 (
 
-* ( __int64_t * ) note_numbers_results  == -1
+* ( __int64_t * ) note_waters_results  == -1
 
 )
 
 {
 
-* ( __uint64_t * ) * that_numbers_results = 0;
+* ( __uint64_t * ) * that_waters_results = 0;
 
 }
 
 
 
-fclose ( note_files_saved );
 
-free ( note_numbers_lengths_contents );
 
-free ( note_numbers_results );
+
+
+
+
+
+free ( note_waters_lengths_contents );
+
+free ( note_waters_results );
 
 return  NULL;
 
