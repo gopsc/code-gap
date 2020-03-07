@@ -95,10 +95,10 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 #include "./roots/trees/dirents/is.linux"
 
 #include "./roots/trees/dirents/create.linux"
-//
+
 
 #include "./roots/trees/files/is.linux"
-
+//
 #include "./roots/trees/files/write.computer"
 
 #include "./roots/trees/files/read.computer"
@@ -122,9 +122,13 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 
 
 
+
+
 #include "./branches/lakes/bubbles/begin.computer"
 
 #include "./branches/lakes/bubbles/end.computer"
+
+
 
 
 
