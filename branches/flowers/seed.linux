@@ -111,27 +111,6 @@ gop_wait   (  0.1  );
 
 */
 
-/*
-
-if  (
-
-                gop_about . flag . main
-
-        &&  ( ! gop_about . flag . deamon )
-
-    )
-
-{
-
-
-
-output_print   (   "string",   "\n we met somewhere \n\n"   );
-
-
-
-}
-
-*/
 
 
 /*
