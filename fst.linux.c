@@ -138,6 +138,8 @@
 
 #include "./rivers/intro.computer"
 
+#include "./snows/intro.computer"
+
 
 
 #include "./branches/flowers/seed.linux"
