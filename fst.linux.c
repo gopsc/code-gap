@@ -160,9 +160,6 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 #include "./rivers/intro.computer"
 
 
-#include "./snows/intro.computer"
-
-
 
 #include "./branches/flowers/seed.linux"
 
