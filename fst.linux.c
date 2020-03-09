@@ -67,13 +67,13 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 
 
 
-#include "./skies/intro.computer"
+#include "./skies/intros.computer"
 
-#include "./birds/intro.computer"
+#include "./birds/intros.computer"
 
-#include "./roots/intro.computer"
+#include "./roots/intros.computer"
 
-#include "./branches/intro.computer"
+#include "./branches/intros.computer"
 
 
 
