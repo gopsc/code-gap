@@ -13,21 +13,25 @@ void  *   begin_fst_branches_lakes   ()
 
 
 
-void * note_numbers_sizes = that_fst_branches_lakes;
+void * note_numbers_sizes = that_fst_roots_lakes_bubbles_prepare;
 
 create_fst_roots_lakes  (  & note_numbers_sizes  );
 
 
 
+
+
+
+
 /*
 
-void *  for eight byte
+void *  for four byte
 
 */
 
 
 
-* ( __uint64_t * ) note_numbers_sizes  =  8;
+* ( __uint64_t * ) note_numbers_sizes  =  4;
 
 create_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes  );
 
@@ -35,12 +39,24 @@ resize_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes,  note_numbers
 
 
 
-* ( __uint64_t * ) note_numbers_sizes  =  2 * 8;
+* ( __uint64_t * ) note_numbers_sizes  =  2 * 4;
 
 create_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes [ 0 ]  );
 
 resize_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes [ 0 ],  note_numbers_sizes  );
 
+
+
+
+
+
+
+
+/*
+
+char  for one byte
+
+*/
 
 
 * ( __uint64_t * ) note_numbers_sizes  =  19 * 1;
@@ -50,6 +66,11 @@ create_fst_roots_lakes  (  & that_fst_branches_lakes [ 0 ] [ 0 ]  );
 resize_fst_roots_lakes  (  & that_fst_branches_lakes [ 0 ] [ 0 ],  note_numbers_sizes  );
 
 
+/*
+
+__uint64_t  for eight byte
+
+*/
 
 * ( __uint64_t * ) note_numbers_sizes  =  8;
 
@@ -60,12 +81,24 @@ resize_fst_roots_lakes  (  & that_fst_branches_lakes [ 0 ] [ 1 ],  note_numbers_
 
 
 
+
+
+
+
+
 free_fst_roots_lakes  (  & note_numbers_sizes  );
 
 
 
 
+
+
+
+
+
 copy_fst_roots_lakes_stones  (  that_fst_branches_lakes  [ 0 ] [ 0 ],  ( void * ) "fst,branches,lakes"  );
+
+
 
 *  (  __uint64_t *  )   that_fst_branches_lakes  [ 0 ] [ 1 ]   =   0;
 
@@ -73,7 +106,11 @@ copy_fst_roots_lakes_stones  (  that_fst_branches_lakes  [ 0 ] [ 0 ],  ( void * 
 
 
 
-return  that_fst_branches_lakes;
+
+
+
+
+return  that_fst_roots_lakes_bubbles_prepare;
 
 }
 
