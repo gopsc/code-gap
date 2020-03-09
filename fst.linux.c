@@ -124,9 +124,9 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 #include "./branches/lakes/prepare.computer"
 
 #include "./branches/lakes/begin.computer"
-//
-#include "./branches/lakes/end.computer"
 
+#include "./branches/lakes/end.computer"
+//
 
 #include "./branches/lakes/write.computer"
 
