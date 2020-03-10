@@ -41,6 +41,15 @@ create_fst_roots_lakes  (  & note_numbers_switches  );
 
 
 
+
+
+
+
+
+
+
+
+
 * ( __uint64_t * ) note_numbers_counts   =   1;
   
 while
@@ -69,6 +78,7 @@ compare_fst_roots_lakes_stones
 that_words_names,
 
 that_fst_branches_lakes  [ * ( __uint64_t * ) note_numbers_counts ] [ 0 ],
+
 
 & note_numbers_results
 
@@ -114,26 +124,39 @@ that_fst_branches_lakes [ * ( __uint64_t * ) note_numbers_counts ];
 
 
 
+
+
+
+
+
 * ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1;
 
 }
 
 
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
 
 if  (  * ( __uint64_t * ) note_numbers_switches   ==   1  )
 
 {
 
+
+
 * ( __uint64_t * ) that_fst_branches_lakes [ 0 ] [ 1 ]  =  * ( __uint64_t * ) that_fst_branches_lakes [ 0 ] [ 1 ]   -   1;
 
 
+
+
 * ( __uint64_t * ) note_numbers_sizes  =  8  *  ( 1  +  * ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ] );
+
 
 resize_fst_roots_lakes
 
@@ -162,6 +185,10 @@ free_fst_roots_lakes  ( & note_numbers_sizes );
 
 free_fst_roots_lakes  ( & note_numbers_switches );
   
+
+
+
+
   
 return  that_fst_branches_lakes;
 
