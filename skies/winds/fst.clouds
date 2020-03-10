@@ -3,3 +3,5 @@ __uint64_t  to  __uint32_t
 use numbers instead char
 because a word might be greater than 1-byte
 and i don't know how big memory i can create
+
+use chinese words before precompile
