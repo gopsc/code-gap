@@ -65,6 +65,8 @@ while
 
 
 
+
+
 if  (  * ( __uint64_t * ) note_waters_switches   ==   0  )
 
 {
@@ -113,13 +115,30 @@ free_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes  [ * ( __uint64_
 
 
 
+
+
+
+
 else if  (  * ( __uint64_t * ) note_waters_switches  ==  1  )
 
 {
 
+
+
+
 that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts  -  1 ]
 =
 that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts ];
+
+
+
+
+that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts ]
+=
+that_fst_roots_lakes_bubbles_prepare;
+
+
+
 
 }
 
