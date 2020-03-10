@@ -24,6 +24,13 @@ create_fst_roots_lakes  ( & note_numbers_counts );
 
 
 
+void  *   note_numbers_results = that_fst_branches_lakes;
+
+create_fst_roots_lakes  (  & note_numbers_results  );
+
+
+
+
 void * note_numbers_sizes = that_fst_branches_lakes;
 
 create_fst_roots_lakes ( & note_numbers_sizes );
@@ -31,9 +38,8 @@ create_fst_roots_lakes ( & note_numbers_sizes );
 
 
 
-void  *   note_numbers_results = that_fst_branches_lakes;
 
-create_fst_roots_lakes  (  & note_numbers_results  );
+
 
 
 
@@ -207,17 +213,20 @@ that_words_contents
 
 
 
+
+free_fst_roots_lakes  (  & note_numbers_counts  );
+
+free_fst_roots_lakes  (  & note_numbers_results  );
+
 free_fst_roots_lakes  (  & note_numbers_sizes  );
 
-free_fst_roots_lakes  (  & note_numbers_lengths_names  );
 
 free_fst_roots_lakes  (  & note_numbers_lengths_wrote  );
 
 free_fst_roots_lakes  (  & note_numbers_lengths_targets  );
 
-free_fst_roots_lakes  (  & note_numbers_counts  );
 
-free_fst_roots_lakes  (  & note_numbers_results  );
+free_fst_roots_lakes  (  & note_numbers_lengths_names  );
 
 
 return  that_fst_branches_lakes;
@@ -231,6 +240,16 @@ return  that_fst_branches_lakes;
 * ( __uint64_t * ) note_numbers_counts   =   * ( __uint64_t * ) note_numbers_counts   +   1;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -253,7 +272,15 @@ measure_fst_roots_lakes_stones ( that_words_contents, & note_numbers_lengths_wro
 
 
 
-* ( __uint64_t * ) note_numbers_sizes   =   8   *   (   1   +   1   +   * ( __uint64_t * ) that_fst_branches_lakes [ 0 ] [ 1 ]   );
+
+/*
+
+void *  for   four
+
+*/
+
+
+* ( __uint64_t * ) note_numbers_sizes   =   4   *   (   1   +   1   +   * ( __uint64_t * ) that_fst_branches_lakes [ 0 ] [ 1 ]   );
 
 
 resize_fst_roots_lakes  (
@@ -269,7 +296,7 @@ note_numbers_sizes
 
 
 
-* ( __uint64_t * ) note_numbers_sizes   =   8 * 2;
+* ( __uint64_t * ) note_numbers_sizes   =   4 * 2;
 
 
 create_fst_roots_lakes
@@ -290,6 +317,9 @@ resize_fst_roots_lakes
 note_numbers_sizes
 
 );
+
+
+
 
 
 
@@ -327,6 +357,9 @@ that_fst_branches_lakes [ * ( __uint64_t * ) note_numbers_counts ] [ 0 ],
 that_words_names
 
 );
+
+
+
 
 
 
@@ -371,13 +404,26 @@ that_words_contents
 
 
 
+
+
+
+
 * ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ]   =   * ( __uint64_t * ) note_numbers_counts;
 
 
 
 
 
+
+
+
+
+free_fst_roots_lakes  (  & note_numbers_counts  );
+
+free_fst_roots_lakes  (  & note_numbers_results  );
+
 free_fst_roots_lakes  (  & note_numbers_sizes  );
+
 
 free_fst_roots_lakes  (  & note_numbers_lengths_names  );
 
@@ -385,13 +431,14 @@ free_fst_roots_lakes  (  & note_numbers_lengths_wrote  );
 
 free_fst_roots_lakes  (  & note_numbers_lengths_targets  );
 
-free_fst_roots_lakes  (  & note_numbers_counts  );
 
-free_fst_roots_lakes  (  & note_numbers_results  );
+
+
+
+
+
 
 
 return  that_fst_branches_lakes;
-
-
 
 }
