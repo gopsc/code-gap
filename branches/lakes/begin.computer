@@ -26,7 +26,7 @@ create_fst_roots_lakes  (  & note_waters_sizes  );
 
 /*
 
-void *  for four byte
+void *  for eight bytes on sixtie-four device
 
 */
 
@@ -55,7 +55,7 @@ resize_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes [ 0 ],  note_w
 
 /*
 
-char  for one byte
+char  for one bytes
 
 */
 
