@@ -72,6 +72,9 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 #include "./skies/moons/intros.computer"
 
 
+#include "./rivers/intros.computer"
+
+
 #include "./roots/intros.computer"
 
 
