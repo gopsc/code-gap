@@ -10,40 +10,66 @@ void * remove_fst_branches_trees_files
 
 void * that_stones_names,
 
-void ** that_places_results
+void ** that_silts_results
 
 )
 
 {
 
-void * note_places_removed = that_fst_branches_lakes;
-
-fish_fst_branches_lakes ( that_stones_names, & note_places_removed );
-
-
-
-void * note_numbers_results = that_fst_branches_lakes;
-
-create_fst_roots_lakes ( & note_numbers_results );
 
 
 
 
 
-is_fst_roots_trees_files ( note_places_removed, & note_numbers_results );
 
 
 
-if ( * ( __uint64_t * ) note_numbers_results == 1 )
+void * note_silts_removed = that_fst_roots_lakes_bubbles_prepare;
+
+fish_fst_branches_lakes ( that_stones_names, & note_silts_removed );
+
+
+
+void * note_waters_results = that_fst_roots_lakes_bubbles_prepare;
+
+create_fst_roots_lakes ( & note_waters_results );
+
+
+
+
+
+
+
+
+is_fst_roots_trees_files ( note_silts_removed, & note_waters_results );
+
+
+
+
+
+
+
+
+
+
+if ( * ( __uint64_t * ) note_waters_results == 1 )
 
 {
 
-remove_fst_roots_trees ( note_places_removed, & note_numbers_results );
 
 
-if ( * ( __uint64_t * ) note_numbers_results == 1 )
+
+remove_fst_roots_trees ( note_silts_removed, & note_waters_results );
+
+
+
+
+
+if ( * ( __uint64_t * ) note_waters_results == 1 )
 
 {
+
+
 
 fish_fst_branches_lakes
 
@@ -51,22 +77,26 @@ fish_fst_branches_lakes
 
 ( void * ) "fst,branches,lakes,bubbles,yes",
 
-that_places_results
+that_silts_results
 
 );
 
 
 
 
-free_fst_roots_lakes  ( & note_numbers_results  );
+free_fst_roots_lakes  ( & note_waters_results  );
 
-return that_fst_branches_lakes;
+return that_fst_roots_lakes_bubbles_prepare;
+
+}
+
+
 
 }
 
 
 
-}
+
 
 
 
@@ -79,14 +109,16 @@ fish_fst_branches_lakes
 
 ( void * ) "fst,branches,lakes,bubbles,no",
 
-that_places_results
+that_silts_results
 
 );
 
 
 
-free_fst_roots_lakes  ( & note_numbers_results  );
 
-return that_fst_branches_lakes;
+
+free_fst_roots_lakes  ( & note_waters_results  );
+
+return that_fst_roots_lakes_bubbles_prepare;
 
 }
