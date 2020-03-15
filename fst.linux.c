@@ -2,6 +2,13 @@
 
 
 
+
+
+
+
+
+
+
 /*
 
 wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
@@ -162,9 +169,9 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 
 
 #include "./branches/trees/files/is.linux"
-//
-#include "./branches/trees/files/save.linux"  // * NULL & char
-//
+
+#include "./branches/trees/files/save.linux"  //  __uint8_t
+
 #include "./branches/trees/files/get.linux"
 
 #include "./branches/trees/files/remove.linux"
@@ -176,4 +183,13 @@ gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiring
 
 
 #include "./branches/flowers/seed.linux"
+
+
+
+
+
+
+
+
+
 
