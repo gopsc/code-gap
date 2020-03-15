@@ -76,6 +76,7 @@ create_fst_roots_lakes  (  & note_waters_lengths_targets  );
 
 * ( __uint64_t * ) note_waters_counts   =   1;
 
+
 while
 
 (
