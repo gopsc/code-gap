@@ -141,9 +141,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./branches/lakes/prepare.computer"  // unassigned variable
 
 #include "./branches/lakes/begin.computer" // numbers may changed
-//
-#include "./branches/lakes/end.computer"
 
+#include "./branches/lakes/end.computer"
+//
 
 #include "./branches/lakes/write.computer"
 
