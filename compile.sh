@@ -1,0 +1,1 @@
+cc ./fst/fst.linux.c -o ?

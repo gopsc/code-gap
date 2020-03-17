@@ -15,7 +15,7 @@ wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
 
 tar   -xjf   alsa-lib-1.1.5.tar.bz2
 
-gcc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   /opt/?
+cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   -o ?
 
 */
 
