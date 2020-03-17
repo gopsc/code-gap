@@ -1,0 +1,6 @@
+move
+"fst/branches/lakes/write.computer" ...
+to
+"fst/branches/lakes/waves/write.computer" ...
+
+add "changed" box in lakes

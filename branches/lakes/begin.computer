@@ -4,6 +4,25 @@
 
 
 
+/*
+
+#include "./../../roots/lakes/bubbles/prepare.computer"
+
+
+#include "./../../roots/lakes/create.computer"
+
+#include "./../../roots/lakes/resize.computer"
+
+#include "./../../roots/lakes/free.computer"
+
+
+#include "./../../roots/lakes/stones/copy.computer"
+
+
+#include "./../../branches/lakes/prepare.computer"
+
+*/
+
 
 void  *   begin_fst_branches_lakes   ()
 
@@ -88,6 +107,14 @@ resize_fst_roots_lakes  (  & that_fst_branches_lakes [ 0 ] [ 1 ],  note_waters_s
 
 
 free_fst_roots_lakes  (  & note_waters_sizes  );
+
+
+
+
+
+
+
+
 
 
 
