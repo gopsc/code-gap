@@ -13,7 +13,7 @@ void  *   begin_fst_branches_lakes_bubbles  ()
 
 
 
-write_fst_branches_lakes
+write_fst_branches_lakes_waves
 
 (
 
@@ -28,7 +28,7 @@ write_fst_branches_lakes
 
 
 
-write_fst_branches_lakes
+write_fst_branches_lakes_waves
 
 (
 

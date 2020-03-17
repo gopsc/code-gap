@@ -12,25 +12,25 @@
 
 /*
 
-#include "./../../roots/lakes/bubbles/prepare.computer"
+#include "./../../../roots/lakes/bubbles/prepare.computer"
 
 
-#include "./../../roots/lakes/create.computer"
+#include "./../../../roots/lakes/create.computer"
 
-#include "./../../roots/lakes/resize.computer"
+#include "./../../../roots/lakes/resize.computer"
 
-#include "./../../roots/lakes/free.computer"
-
-
-#include "./../../roots/lakes/stones/compare.computer"
+#include "./../../../roots/lakes/free.computer"
 
 
-#include "./../../branches/lakes/prepare.computer"
+#include "./../../../roots/lakes/stones/compare.computer"
+
+
+#include "./../../../branches/lakes/prepare.computer"
 
 */
 
 
-void *  drop_fst_branches_lakes
+void *  drop_fst_branches_lakes_waves
 
 (  void *  that_stones_names  )
 

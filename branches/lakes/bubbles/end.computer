@@ -13,9 +13,9 @@ void  *   end_fst_branches_lakes_bubbles  ()
 
 
 
-drop_fst_branches_lakes  (  ( void * ) "fst,branches,lakes,bubbles,yes"  );
+drop_fst_branches_lakes_waves  (  ( void * ) "fst,branches,lakes,bubbles,yes"  );
 
-drop_fst_branches_lakes  (  ( void * ) "fst,branches,lakes,bubbles,no"  );
+drop_fst_branches_lakes_waves  (  ( void * ) "fst,branches,lakes,bubbles,no"  );
 
 
 
