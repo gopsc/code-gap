@@ -2,6 +2,35 @@
 
 
 
+
+
+
+
+
+/*
+
+#include "./../../roots/lakes/bubbles/prepare.computer"
+
+
+#include "./../../roots/lakes/create.computer"
+
+#include "./../../roots/lakes/resize.computer"
+
+#include "./../../roots/lakes/free.computer"
+
+
+#include "./../../roots/lakes/stones/compare.computer"
+
+#include "./../../roots/lakes/stones/measure.computer"
+
+#include "./../../roots/lakes/stones/copy.computer"
+
+
+#include "./../../branches/lakes/prepare.computer"
+
+*/
+
+
 void *  write_fst_branches_lakes
 
 (
@@ -24,16 +53,16 @@ create_fst_roots_lakes  ( & note_waters_counts );
 
 
 
-void  *   note_waters_results = that_fst_roots_lakes_bubbles_prepare;
-
-create_fst_roots_lakes  (  & note_waters_results  );
-
-
-
-
 void * note_waters_sizes = that_fst_roots_lakes_bubbles_prepare;
 
 create_fst_roots_lakes ( & note_waters_sizes );
+
+
+
+
+void  *   note_waters_results = that_fst_roots_lakes_bubbles_prepare;
+
+create_fst_roots_lakes  (  & note_waters_results  );
 
 
 
@@ -187,6 +216,8 @@ that_stones_contents
 
 
 
+// char for one bytes
+
 * ( __uint64_t * ) note_waters_sizes   =   1  *  ( 1 + * ( __uint64_t * ) note_waters_lengths_wrote );
 
 
@@ -223,6 +254,8 @@ else if
 
 
 
+
+// char for one bytes
 
 * ( __uint64_t * ) note_waters_sizes   =   1  *  ( 1 + * ( __uint64_t * ) note_waters_lengths_wrote );
 
@@ -287,9 +320,13 @@ return  that_fst_roots_lakes_bubbles_prepare;
 
 
 
+
+
+
 * ( __uint64_t * ) note_waters_counts   =   * ( __uint64_t * ) note_waters_counts   +   1;
 
 }
+
 
 
 
@@ -323,6 +360,7 @@ measure_fst_roots_lakes_stones ( that_stones_contents, & note_waters_lengths_wro
 
 
 
+
 /*
 
 void *  for   eight bytes   on   sixtie-four   device
@@ -341,6 +379,8 @@ resize_fst_roots_lakes  (
 note_waters_sizes
 
 );
+
+
 
 
 
@@ -377,6 +417,10 @@ note_waters_sizes
 
 
 
+
+
+
+// char for one bytes
 
 * ( __uint64_t * ) note_waters_sizes   =   1   *   (  1  +  * ( __uint64_t * ) note_waters_lengths_names  );
 
@@ -420,6 +464,8 @@ that_stones_names
 
 
 
+
+// char for one bytes
 
 * ( __uint64_t * ) note_waters_sizes   =   1   *   (  1  +  * ( __uint64_t * ) note_waters_lengths_wrote  );
 
