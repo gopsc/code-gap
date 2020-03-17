@@ -4,6 +4,32 @@
 
 
 
+
+
+
+
+
+
+/*
+
+#include "./../../roots/lakes/bubbles/prepare.computer"
+
+
+#include "./../../roots/lakes/create.computer"
+
+#include "./../../roots/lakes/resize.computer"
+
+#include "./../../roots/lakes/free.computer"
+
+
+#include "./../../roots/lakes/stones/compare.computer"
+
+
+#include "./../../branches/lakes/prepare.computer"
+
+*/
+
+
 void *  drop_fst_branches_lakes
 
 (  void *  that_stones_names  )
@@ -50,6 +76,12 @@ create_fst_roots_lakes  (  & note_waters_switches  );
 
 
 
+
+
+
+
+
+
 * ( __uint64_t * ) note_waters_counts   =   1;
   
 while
@@ -67,9 +99,15 @@ while
 
 
 
+
+
+
 if  (  * ( __uint64_t * ) note_waters_switches   ==   0  )
 
 {
+
+
+
 
 
 
@@ -88,7 +126,9 @@ that_fst_branches_lakes  [ * ( __uint64_t * ) note_waters_counts ] [ 0 ],
 
 
 
-  
+
+
+
 if  (   * ( __uint64_t * ) note_waters_results   ==   1   )
 
 {
@@ -98,7 +138,14 @@ free_fst_roots_lakes  (  & that_fst_branches_lakes  [ * ( __uint64_t * ) note_wa
 
 free_fst_roots_lakes  (  & that_fst_branches_lakes  [ * ( __uint64_t * ) note_waters_counts ] [ 1 ]  );
 
+
 free_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes  [ * ( __uint64_t * ) note_waters_counts ]  );
+
+
+that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts ] = that_fst_roots_lakes_bubbles_prepare;
+
+
+
 
 
 * ( __uint64_t * ) note_waters_switches  =  1;
@@ -110,6 +157,7 @@ free_fst_roots_lakes  (  ( void * * ) & that_fst_branches_lakes  [ * ( __uint64_
 
 
 }
+
 
 
 
@@ -164,9 +212,20 @@ that_fst_roots_lakes_bubbles_prepare;
 
 
 
+
+
+
+
+
+
+
 if  (  * ( __uint64_t * ) note_waters_switches   ==   1  )
 
 {
+
+
+
+
 
 
 
@@ -175,7 +234,13 @@ if  (  * ( __uint64_t * ) note_waters_switches   ==   1  )
 
 
 
+
+
+
+// void *  for  eight bytes  for  sixtie-four bits  device
+
 * ( __uint64_t * ) note_waters_sizes  =  8  *  ( 1  +  * ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ] );
+
 
 
 resize_fst_roots_lakes
@@ -189,7 +254,18 @@ note_waters_sizes
 );
 
 
+
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
