@@ -24,13 +24,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 /*
 
 #include <stdio.h>  // for printf()
-                               // for malloc(), realloc(), free()
+#include <stdlib.h>  // for malloc(), realloc(), free()
                                // for remove()
-
-#include <stdlib.h>
-
-
-
 
 #include <string.h>     // for string ways
 
@@ -92,10 +87,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-// #include "./birds/intros.computer"
-
-
-
 
 
 #include "./roots/lakes/bubbles/prepare.computer"
@@ -137,14 +128,13 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-
 #include "./branches/lakes/prepare.computer"  // unassigned variable
 
 #include "./branches/lakes/begin.computer" // numbers may changed
 
 #include "./branches/lakes/end.computer"
 
-//
+
 
 #include "./branches/lakes/waves/write.computer" // numbers may changed
 
@@ -152,7 +142,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/waves/fish.computer"
 
-
+//
 
 #include "./branches/lakes/bubbles/begin.computer"
 
