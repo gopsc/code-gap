@@ -76,11 +76,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./intros.computer"
 
 
-#include "./skies/winds/intros.computer"
-
-#include "./skies/moons/intros.computer"
-
-#include "./skies/stars/intros.computer"
+#include "./skies/intros.computer"
 
 
 #include "./rivers/intros.computer"
@@ -93,6 +89,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include "./branches/intros.computer"
+
+
+
+// #include "./birds/intros.computer"
 
 
 
