@@ -86,7 +86,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./rivers/intros.computer"
 
 
-// #include "./trees/intros.computer"
+#include "./trees/intros.computer"
 
 
 #include "./roots/intros.computer"
@@ -183,7 +183,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./branches/flowers/seed.linux" // int straightly
+#include "./branches/flowers/seed.linux"
 
 
 
