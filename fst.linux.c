@@ -142,15 +142,13 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/waves/fish.computer"
 
-//
+
 
 #include "./branches/lakes/bubbles/begin.computer"
 
 #include "./branches/lakes/bubbles/end.computer"
 
-
-
-
+//
 
 #include "./branches/trees/dirents/is.linux"
 
