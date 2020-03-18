@@ -27,7 +27,7 @@ void ** that_silts_results
 
 void * note_silts_names_files = that_fst_roots_lakes_bubbles_prepare;
 
-fish_fst_branches_lakes ( that_stones_names_files, & note_silts_names_files );
+fish_fst_branches_lakes_waves ( that_stones_names_files, & note_silts_names_files );
 
 
 
@@ -36,7 +36,7 @@ fish_fst_branches_lakes ( that_stones_names_files, & note_silts_names_files );
 
 void * note_silts_names_contents = that_fst_roots_lakes_bubbles_prepare;
 
-fish_fst_branches_lakes ( that_stones_names_contents, & note_silts_names_contents );
+fish_fst_branches_lakes_waves ( that_stones_names_contents, & note_silts_names_contents );
 
 
 
@@ -75,6 +75,8 @@ create_fst_roots_lakes ( & note_waters_sizes );
 measure_fst_roots_lakes_stones ( note_silts_names_files, & note_waters_sizes );
 
 
+// char for one bytes
+
 * ( __uint64_t * ) note_waters_sizes = 1  *  ( 1 + * ( __uint64_t * ) note_waters_sizes );
 
 
@@ -84,6 +86,7 @@ void * note_stones_names = that_fst_roots_lakes_bubbles_prepare;
 create_fst_roots_lakes ( & note_stones_names );
 
 resize_fst_roots_lakes ( & note_stones_names, note_waters_sizes );
+
 
 
 
@@ -106,6 +109,17 @@ void * note_silts_names = that_fst_roots_lakes_bubbles_prepare;
 void * note_waters_results = that_fst_roots_lakes_bubbles_prepare;
    
 create_fst_roots_lakes ( & note_waters_results );
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -224,6 +238,8 @@ if  (  note_silts_names   ==   that_fst_roots_lakes_bubbles_prepare  )
 
 
 
+
+
 if (  * ( __uint64_t * ) note_waters_counts   !=   0  )
 
 {
@@ -293,7 +309,7 @@ if  (  * ( __uint64_t * ) note_waters_results   ==   0  )
 
 
 
-fish_fst_branches_lakes
+fish_fst_branches_lakes_waves
 
 (
 
@@ -388,7 +404,7 @@ if  (  * ( __uint64_t * ) note_waters_results   ==   1  )
 
 
 
-fish_fst_branches_lakes
+fish_fst_branches_lakes_waves
 
 (
 
@@ -433,7 +449,6 @@ note_silts_names_contents,
 
 
 
-
 if (  * ( __uint64_t * ) note_waters_results   ==   0  )
 
 {
@@ -441,7 +456,7 @@ if (  * ( __uint64_t * ) note_waters_results   ==   0  )
 
 
 
-fish_fst_branches_lakes
+fish_fst_branches_lakes_waves
 
 (
 
@@ -467,7 +482,7 @@ else if (  * ( __uint64_t * ) note_waters_results   ==   1  )
 
 
 
-fish_fst_branches_lakes
+fish_fst_branches_lakes_waves
 
 (
 
