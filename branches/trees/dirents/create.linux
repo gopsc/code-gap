@@ -4,6 +4,43 @@
 
 
 
+
+
+
+
+
+
+
+/*
+
+#include "./../../../roots/lakes/bubbles/prepare.computer"
+
+
+#include "./../../../roots/lakes/create.computer"
+
+#include "./../../../roots/lakes/resize.computer"
+
+#include "./../../../roots/lakes/free.computer"
+
+
+#include "./../../../roots/lakes/stones/measure.computer"
+
+#include "./../../../roots/lakes/stones/copy.computer"
+
+#include "./../../../roots/lakes/stones/find.computer"
+
+
+#include "./../../../roots/trees/dirents/is.linux"
+
+#include "./../../../roots/trees/dirents/create.linux"
+
+
+
+#include "./../../../branches/lakes/fish.computer"
+
+*/
+
+
 void * create_fst_branches_trees_dirents
 
 (
@@ -99,6 +136,17 @@ void * note_silts_names = that_fst_roots_lakes_bubbles_prepare;
 void * note_waters_results = that_fst_roots_lakes_bubbles_prepare;
    
 create_fst_roots_lakes ( & note_waters_results );
+
+
+
+
+
+
+
+
+
+
+
 
 
 
