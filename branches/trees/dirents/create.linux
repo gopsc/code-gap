@@ -23,9 +23,9 @@
 #include "./../../../roots/lakes/free.computer"
 
 
-#include "./../../../roots/lakes/stones/measure.computer"
-
 #include "./../../../roots/lakes/stones/copy.computer"
+
+#include "./../../../roots/lakes/stones/measure.computer"
 
 #include "./../../../roots/lakes/stones/find.computer"
 
@@ -52,6 +52,16 @@ void ** that_silts_results
 )
 
 {
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,6 +146,12 @@ void * note_silts_names = that_fst_roots_lakes_bubbles_prepare;
 void * note_waters_results = that_fst_roots_lakes_bubbles_prepare;
    
 create_fst_roots_lakes ( & note_waters_results );
+
+
+
+
+
+
 
 
 
@@ -380,6 +396,20 @@ return that_fst_roots_lakes_bubbles_prepare;
 
 
 
+free_fst_roots_lakes ( & note_stones_names );
+
+free_fst_roots_lakes ( & note_waters_counts );
+
+free_fst_roots_lakes ( & note_waters_counts_two );
+
+
+
+
+
+
+
+
+
 
 
 
@@ -443,12 +473,6 @@ that_silts_results
 
 
 
-free_fst_roots_lakes ( & note_stones_names );
-
-free_fst_roots_lakes ( & note_waters_counts );
-
-free_fst_roots_lakes ( & note_waters_counts_two );
-
 free_fst_roots_lakes ( & note_waters_results );
 
 
@@ -489,12 +513,6 @@ that_silts_results
 
 
 
-
-free_fst_roots_lakes ( & note_stones_names );
-
-free_fst_roots_lakes ( & note_waters_counts );
-
-free_fst_roots_lakes ( & note_waters_counts_two );
 
 free_fst_roots_lakes ( & note_waters_results );
 

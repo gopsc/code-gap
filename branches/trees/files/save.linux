@@ -4,6 +4,44 @@
 
 
 
+
+
+
+
+
+
+/*
+
+#include "./../../../roots/lakes/bubbles/prepare.computer"
+
+
+#include "./../../../roots/lakes/create.computer"
+
+#include "./../../../roots/lakes/resize.computer"
+
+#include "./../../../roots/lakes/free.computer"
+
+
+#include "./../../../roots/lakes/stones/copy.computer"
+
+#include "./../../../roots/lakes/stones/measure.computer"
+
+#include "./../../../roots/lakes/stones/find.computer"
+
+
+#include "./../../../roots/trees/dirents/is.linux"
+
+#include "./../../../roots/trees/dirents/create.linux"
+
+
+
+#include "./../../../branches/lakes/waves/write.computer"
+
+#include "./../../../branches/lakes/waves/fish.computer"
+
+*/
+
+
 void  *   save_fst_branches_trees_files
 
 (
@@ -109,6 +147,9 @@ void * note_silts_names = that_fst_roots_lakes_bubbles_prepare;
 void * note_waters_results = that_fst_roots_lakes_bubbles_prepare;
    
 create_fst_roots_lakes ( & note_waters_results );
+
+
+
 
 
 
@@ -379,6 +420,15 @@ free_fst_roots_lakes ( & note_waters_counts_two );
 
 
 
+
+
+
+
+
+
+
+
+
 is_fst_roots_trees_dirents
 
 (
@@ -396,34 +446,7 @@ note_silts_names_files,
 
 
 
-if  (  * ( __uint64_t * ) note_waters_results   ==   1  )
-
-{
-
-
-
-
-
-fish_fst_branches_lakes_waves
-
-(
-
-( void * ) "fst,branches,lakes,bubbles,no",
-
-that_silts_results
-
-);
-
-}
-
-
-
-
-
-
-
-
-else if  (  * ( __uint64_t * ) note_waters_results   ==   0  )
+if  (  * ( __uint64_t * ) note_waters_results   ==   0  )
 
 {
 
@@ -449,32 +472,7 @@ note_silts_names_contents,
 
 
 
-if (  * ( __uint64_t * ) note_waters_results   ==   0  )
-
-{
-
-
-
-
-fish_fst_branches_lakes_waves
-
-(
-
-( void * ) "fst,branches,lakes,bubbles,no",
-
-that_silts_results
-
-);
-
-}
-
-
-
-
-
-
-
-else if (  * ( __uint64_t * ) note_waters_results   ==   1  )
+if (  * ( __uint64_t * ) note_waters_results   ==   1  )
 
 {
 
@@ -492,6 +490,20 @@ that_silts_results
 
 );
 
+
+
+
+
+
+free_fst_roots_lakes ( & note_waters_results );
+
+
+return  that_fst_roots_lakes_bubbles_prepare;
+
+
+}
+
+
 }
 
 
@@ -499,9 +511,35 @@ that_silts_results
 
 
 
-}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fish_fst_branches_lakes_waves
+
+(
+
+( void * ) "fst,branches,lakes,bubbles,no",
+
+that_silts_results
+
+);
 
 
 
