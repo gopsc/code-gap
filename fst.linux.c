@@ -23,11 +23,13 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 /*
 
-#include <stdio.h>  // for printf()
-#include <stdlib.h>  // for malloc(), realloc(), free()
+#include <stdlib.h>  // for printf()
+                               // for malloc(), realloc(), free()
                                // for remove()
 
-#include <string.h>     // for string ways
+#include <stdio.h>
+
+
 
 #include <math.h>       // for snake
 
@@ -44,11 +46,11 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include <signal.h>     // for check_deamon() ->
-                        // for tcp block out.
+                                   // for tcp block out.
+
 
 
 #include <unistd.h>
-
 
 #include <sys/time.h>   // for note_save() -> gettimeofday()
 
@@ -57,7 +59,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include <sys/stat.h>   // for file system status
 
 #include <sys/types.h>  // for check_deamon() ->
+
 #include <sys/param.h>  // for ...
+
 
 
 #include <arpa/inet.h>  // for network
