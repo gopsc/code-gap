@@ -24,24 +24,29 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-/*
 
-#include <stdlib.h>  // for printf()
+
+#include <stdlib.h> // for null
+                               // for printf()
                                // for malloc(), realloc(), free()
                                // for remove()
+/*
 
-#include <stdio.h>
+#include <stdio.h> // for null
 
 
+#include <math.h>       // for pi
+                                    //  for trigonometric function
 
-#include <math.h>       // for snake
 
 #include <time.h>       // for time ( NULL )
+
 
 #include <dirent.h>     // for dirent
 
 
 #include <ifaddrs.h>    // for network socket
+
 #include <fcntl.h>      // for ...
 
 
@@ -52,14 +57,17 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
                                    // for tcp block out.
 
 
-
 #include <unistd.h>
+
 
 #include <sys/time.h>   // for note_save() -> gettimeofday()
 
+
 #include <sys/socket.h> // for network -> socket
 
+
 #include <sys/stat.h>   // for file system status
+
 
 #include <sys/types.h>  // for check_deamon() ->
 
@@ -88,10 +96,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./branches/intros.computer"
 
 
-//
+
 
 #include "./roots/lakes/prepare.computer"
-
+//
 
 #include "./roots/lakes/waves/create.computer"
 
