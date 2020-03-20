@@ -141,14 +141,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include "./branches/lakes/waves/write.computer" // numbers may changed
-//
+
 #include "./branches/lakes/waves/drop.computer" // numbers may changed
 
 #include "./branches/lakes/waves/fish.computer"
 
+//
 
-
-#include "./branches/lakes/bubbles/begin.computer" //use but no including
+#include "./branches/lakes/bubbles/begin.computer" //use but don't need to include
 
 #include "./branches/lakes/bubbles/end.computer"
 
