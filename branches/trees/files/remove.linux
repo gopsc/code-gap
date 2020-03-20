@@ -4,6 +4,34 @@
 
 
 
+
+
+
+
+
+
+/*
+
+#include "./../../../roots/lakes/bubbles/prepare.computer"
+
+
+#include "./../../../roots/lakes/create.computer"
+
+#include "./../../../roots/lakes/free.computer"
+
+
+#include "./../../../roots/trees/remove.computer"
+
+
+#include "./../../../roots/trees/files/is.linux"
+
+
+
+#include "./../../../branches/lakes/waves/fish.computer"
+
+*/
+
+
 void * remove_fst_branches_trees_files
 
 (
@@ -15,6 +43,14 @@ void ** that_silts_results
 )
 
 {
+
+
+
+
+
+
+
+
 
 
 
@@ -56,7 +92,20 @@ create_fst_roots_lakes ( & note_waters_results );
 
 
 
+
+
+
+
+
+
+
 is_fst_roots_trees_files ( note_silts_names, & note_waters_results );
+
+
+
+
+
+
 
 
 
@@ -85,6 +134,9 @@ remove_fst_roots_trees ( note_silts_names, & note_waters_results );
 if ( * ( __uint64_t * ) note_waters_results == 1 )
 
 {
+
+
+
 
 
 
