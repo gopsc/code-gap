@@ -74,21 +74,15 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./intros.computer"
 
-
 #include "./skies/intros.computer"
-
 
 #include "./rivers/intros.computer"
 
-
 #include "./trees/intros.computer"
-
 
 #include "./roots/intros.computer"
 
-
 #include "./branches/intros.computer"
-
 
 
 
