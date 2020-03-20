@@ -10,14 +10,15 @@
 
 
 
+
 /*
 
-#include "./../../../roots/lakes/bubbles/prepare.computer"
+#include "./../../../roots/lakes/prepare.computer"
 
 
-#include "./../../../roots/lakes/create.computer"
+#include "./../../../roots/lakes/waves/create.computer"
 
-#include "./../../../roots/lakes/free.computer"
+#include "./../../../roots/lakes/waves/free.computer"
 
 
 #include "./../../../roots/trees/files/is.linux"
@@ -33,7 +34,7 @@
 */
 
 
-void  *   get_fst_branches_trees_files
+void * get_fst_branches_trees_files
 
 (
 
@@ -62,23 +63,23 @@ void ** that_silts_results
 
 
 
-void * note_silts_names = that_fst_roots_lakes_bubbles_prepare;
+void * note_silts_names = that_fst_roots_lakes_prepare;
 
 fish_fst_branches_lakes_waves ( that_stones_names_files, & note_silts_names );
 
 
 
 
-void * note_stones_results = that_fst_roots_lakes_bubbles_prepare;
+void * note_stones_results = that_fst_roots_lakes_prepare;
 
-create_fst_roots_lakes ( & note_stones_results );
-
-
+create_fst_roots_lakes_waves ( & note_stones_results );
 
 
-void *  note_waters_results = that_fst_roots_lakes_bubbles_prepare;
 
-create_fst_roots_lakes ( & note_waters_results );
+
+void *  note_waters_results = that_fst_roots_lakes_prepare;
+
+create_fst_roots_lakes_waves ( & note_waters_results );
 
 
 
@@ -159,12 +160,12 @@ that_silts_results
 
 
 
-free_fst_roots_lakes  (  & note_stones_results );
+free_fst_roots_lakes_waves  (  & note_stones_results );
 
-free_fst_roots_lakes  (  & note_waters_results  );
+free_fst_roots_lakes_waves  (  & note_waters_results  );
 
 
-return that_fst_roots_lakes_bubbles_prepare;
+return that_fst_roots_lakes_prepare;
 
 
 }
@@ -222,12 +223,12 @@ that_silts_results
 
 
 
-free_fst_roots_lakes  (  & note_stones_results );
+free_fst_roots_lakes_waves  (  & note_stones_results );
 
-free_fst_roots_lakes  (  & note_waters_results  );
+free_fst_roots_lakes_waves  (  & note_waters_results  );
 
 
-return that_fst_roots_lakes_bubbles_prepare;
+return that_fst_roots_lakes_prepare;
 
 
 }
