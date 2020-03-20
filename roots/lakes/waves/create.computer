@@ -11,9 +11,11 @@
 
 
 
-
+/*
 
 #include  <stdlib.h>
+
+*/
 
 
 void  *   create_fst_roots_lakes_waves
@@ -25,12 +27,6 @@ void ** that_silts_created
 )
 
 {
-
-
-
-
-
-
 
 
 
@@ -71,14 +67,6 @@ else if  (  note_silts_created  !=  NULL  )
 * that_silts_created  =  note_silts_created;
 
 }
-
-
-
-
-
-
-
-
 
 
 
