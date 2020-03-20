@@ -7,16 +7,22 @@
 
 
 
+
+
+
+
+
+
 /*
 
-#include "./../../../roots/lakes/bubbles/prepare.computer"
+#include "./../../../roots/lakes/prepare.computer"
 
 
-#include "./../../../roots/lakes/create.computer"
+#include "./../../../roots/lakes/waves/create.computer"
 
-#include "./../../../roots/lakes/resize.computer"
+#include "./../../../roots/lakes/waves/resize.computer"
 
-#include "./../../../roots/lakes/free.computer"
+#include "./../../../roots/lakes/waves/free.computer"
 
 
 #include "./../../../roots/lakes/stones/compare.computer"
@@ -24,6 +30,7 @@
 #include "./../../../roots/lakes/stones/measure.computer"
 
 #include "./../../../roots/lakes/stones/copy.computer"
+
 
 
 #include "./../../../branches/lakes/prepare.computer"
@@ -46,25 +53,23 @@ void *  that_stones_contents
 
 
 
-void  *   note_waters_counts = that_fst_roots_lakes_bubbles_prepare;
+void  *   note_waters_counts = that_fst_roots_lakes_prepare;
 
-create_fst_roots_lakes  ( & note_waters_counts );
-
-
-
-
-void * note_waters_sizes = that_fst_roots_lakes_bubbles_prepare;
-
-create_fst_roots_lakes ( & note_waters_sizes );
+create_fst_roots_lakes_waves  ( & note_waters_counts );
 
 
 
 
-void  *   note_waters_results = that_fst_roots_lakes_bubbles_prepare;
+void * note_waters_sizes = that_fst_roots_lakes_prepare;
 
-create_fst_roots_lakes  (  & note_waters_results  );
+create_fst_roots_lakes_waves ( & note_waters_sizes );
 
 
+
+
+void  *   note_waters_results = that_fst_roots_lakes_prepare;
+
+create_fst_roots_lakes_waves  (  & note_waters_results  );
 
 
 
@@ -72,23 +77,25 @@ create_fst_roots_lakes  (  & note_waters_results  );
 
 
 
-void * note_waters_lengths_names = that_fst_roots_lakes_bubbles_prepare;
-
-create_fst_roots_lakes ( & note_waters_lengths_names );
 
 
+void * note_waters_lengths_names = that_fst_roots_lakes_prepare;
 
-
-void  *   note_waters_lengths_wrote = that_fst_roots_lakes_bubbles_prepare;
-
-create_fst_roots_lakes  (  & note_waters_lengths_wrote  );
+create_fst_roots_lakes_waves ( & note_waters_lengths_names );
 
 
 
 
-void  *  note_waters_lengths_targets = that_fst_roots_lakes_bubbles_prepare;
+void  *   note_waters_lengths_wrote = that_fst_roots_lakes_prepare;
 
-create_fst_roots_lakes  (  & note_waters_lengths_targets  );
+create_fst_roots_lakes_waves  (  & note_waters_lengths_wrote  );
+
+
+
+
+void  *  note_waters_lengths_targets = that_fst_roots_lakes_prepare;
+
+create_fst_roots_lakes_waves  (  & note_waters_lengths_targets  );
 
 
 
@@ -221,7 +228,7 @@ that_stones_contents
 * ( __uint64_t * ) note_waters_sizes   =   1  *  ( 1 + * ( __uint64_t * ) note_waters_lengths_wrote );
 
 
-resize_fst_roots_lakes
+resize_fst_roots_lakes_waves
 
 (
 
@@ -260,7 +267,7 @@ else if
 * ( __uint64_t * ) note_waters_sizes   =   1  *  ( 1 + * ( __uint64_t * ) note_waters_lengths_wrote );
 
 
-resize_fst_roots_lakes
+resize_fst_roots_lakes_waves
 
 (
 
@@ -294,25 +301,25 @@ that_stones_contents
 
 
 
-free_fst_roots_lakes  (  & note_waters_counts  );
+free_fst_roots_lakes_waves  (  & note_waters_counts  );
 
-free_fst_roots_lakes  (  & note_waters_results  );
+free_fst_roots_lakes_waves  (  & note_waters_results  );
 
-free_fst_roots_lakes  (  & note_waters_sizes  );
-
-
-free_fst_roots_lakes  (  & note_waters_lengths_wrote  );
-
-free_fst_roots_lakes  (  & note_waters_lengths_targets  );
+free_fst_roots_lakes_waves  (  & note_waters_sizes  );
 
 
-free_fst_roots_lakes  (  & note_waters_lengths_names  );
+free_fst_roots_lakes_waves  (  & note_waters_lengths_wrote  );
+
+free_fst_roots_lakes_waves  (  & note_waters_lengths_targets  );
 
 
+free_fst_roots_lakes_waves  (  & note_waters_lengths_names  );
 
 
 
-return  that_fst_roots_lakes_bubbles_prepare;
+
+
+return  that_fst_roots_lakes_prepare;
 
 }
 
@@ -372,7 +379,9 @@ void *  for   eight bytes   on   sixtie-four   device
 
 
 
-resize_fst_roots_lakes  (
+resize_fst_roots_lakes_waves
+
+(
 
 ( void * * ) & that_fst_branches_lakes,
 
@@ -391,7 +400,7 @@ note_waters_sizes
 
 
 
-create_fst_roots_lakes
+create_fst_roots_lakes_waves
 
 (
 
@@ -401,7 +410,7 @@ create_fst_roots_lakes
 
 
 
-resize_fst_roots_lakes
+resize_fst_roots_lakes_waves
 
 (
 
@@ -426,7 +435,7 @@ note_waters_sizes
 
 
 
-create_fst_roots_lakes
+create_fst_roots_lakes_waves
 
 (
 
@@ -436,7 +445,7 @@ create_fst_roots_lakes
 
 
 
-resize_fst_roots_lakes
+resize_fst_roots_lakes_waves
 
 (
 
@@ -471,7 +480,7 @@ that_stones_names
 
 
 
-create_fst_roots_lakes
+create_fst_roots_lakes_waves
 
 (
 
@@ -481,7 +490,7 @@ create_fst_roots_lakes
 
 
 
-resize_fst_roots_lakes
+resize_fst_roots_lakes_waves
 
 (
 
@@ -521,20 +530,18 @@ that_stones_contents
 
 
 
-free_fst_roots_lakes  (  & note_waters_counts  );
+free_fst_roots_lakes_waves  (  & note_waters_counts  );
 
-free_fst_roots_lakes  (  & note_waters_results  );
+free_fst_roots_lakes_waves  (  & note_waters_results  );
 
-free_fst_roots_lakes  (  & note_waters_sizes  );
-
-
-free_fst_roots_lakes  (  & note_waters_lengths_names  );
-
-free_fst_roots_lakes  (  & note_waters_lengths_wrote  );
-
-free_fst_roots_lakes  (  & note_waters_lengths_targets  );
+free_fst_roots_lakes_waves  (  & note_waters_sizes  );
 
 
+free_fst_roots_lakes_waves  (  & note_waters_lengths_names  );
+
+free_fst_roots_lakes_waves  (  & note_waters_lengths_wrote  );
+
+free_fst_roots_lakes_waves  (  & note_waters_lengths_targets  );
 
 
 
@@ -542,6 +549,8 @@ free_fst_roots_lakes  (  & note_waters_lengths_targets  );
 
 
 
-return  that_fst_roots_lakes_bubbles_prepare;
+
+
+return  that_fst_roots_lakes_prepare;
 
 }
