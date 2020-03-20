@@ -93,14 +93,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./roots/lakes/bubbles/prepare.computer"
+#include "./roots/lakes/prepare.computer"
 
 
-#include "./roots/lakes/create.computer"
+#include "./roots/lakes/waves/create.computer"
 
-#include "./roots/lakes/resize.computer"
+#include "./roots/lakes/waves/resize.computer"
 
-#include "./roots/lakes/free.computer"
+#include "./roots/lakes/waves/free.computer"
 
 
 #include "./roots/lakes/stones/copy.computer"
@@ -130,7 +130,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/trees/files/read.computer"
 
 
-
+//
 
 #include "./branches/lakes/prepare.computer"  // unassigned variable
 

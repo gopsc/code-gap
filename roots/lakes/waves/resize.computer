@@ -1,11 +1,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 #include  <stdlib.h>
 
 
 
-void *  resize_fst_roots_lakes
+void *  resize_fst_roots_lakes_waves
 
 (
 
@@ -17,6 +28,12 @@ void *  that_waters_sizes
 
 
 {
+
+
+
+
+
+
 
 
 
@@ -39,6 +56,8 @@ if  (  note_silts_resized  ==  NULL  )
 
 
 
+
+
 else if  (  note_silts_resized  !=  NULL  )
 
 {
@@ -46,6 +65,10 @@ else if  (  note_silts_resized  !=  NULL  )
 * that_silts_resized  =  note_silts_resized;
 
 }
+
+
+
+
 
 
 
