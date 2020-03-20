@@ -3,7 +3,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/*
+
 #include <stdlib.h>
+
+*/
 
 
 void *  compare_fst_roots_lakes_stones
@@ -23,9 +36,21 @@ void ** that_waters_results
 
 
 
+
+
+
+
+
+
+
+
+
+
 void *  note_waters_lengths_compared = NULL;
 
 note_waters_lengths_compared   =   malloc  (  sizeof ( __uint64_t )  );
+
+
 
 
 
@@ -49,9 +74,25 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void *  note_waters_lengths_compare = NULL;
 
 note_waters_lengths_compare   =   malloc  (  sizeof ( __uint64_t )  );
+
+
 
 
 
@@ -79,6 +120,16 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
 if
 
 (
@@ -92,6 +143,9 @@ if
 {
 
 
+
+
+
 free  (  note_waters_lengths_compared  );
 
 free  (  note_waters_lengths_compare  );
@@ -100,9 +154,21 @@ free  (  note_waters_lengths_compare  );
 * ( __uint64_t * ) * that_waters_results   =   0;
 
 
+
+
+
 return  NULL;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -116,13 +182,32 @@ note_waters_counts   =   malloc  (  sizeof ( __uint64_t )  );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( __uint64_t * ) note_waters_counts   =   0;
 
 while
 
 (
 
-* ( __uint64_t * ) note_waters_counts   <   * ( __uint64_t * ) note_waters_lengths_compared
+* ( __uint64_t * ) note_waters_counts
+<
+* ( __uint64_t * ) note_waters_lengths_compared
 
 )
 
@@ -142,6 +227,9 @@ if
 
 {
 
+
+
+
 free  (  note_waters_lengths_compared  );
 
 free  (  note_waters_lengths_compare  );
@@ -152,9 +240,13 @@ free  (  note_waters_counts  );
 * ( __uint64_t * ) * that_waters_results   =   0;
 
 
+
+
 return  NULL;
 
 }
+
+
 
 
 
@@ -179,6 +271,11 @@ free  (  note_waters_counts  );
 
 
 * ( __uint64_t * ) * that_waters_results   =   1;
+
+
+
+
+
 
 
 return  NULL;

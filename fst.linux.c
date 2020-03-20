@@ -26,56 +26,85 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include <stdlib.h> // for null
-                               // for printf()
+#include <stdlib.h>
+                               // for null
                                // for malloc(), realloc(), free()
+                               // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
                                // for remove()
 /*
 
-#include <stdio.h> // for null
+
+#include <stdio.h>
+                              // for null
+                              // for printf()
+                              // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
 
 
-#include <math.h>       // for pi
-                                    //  for trigonometric function
 
 
-#include <time.h>       // for time ( NULL )
 
 
-#include <dirent.h>     // for dirent
+#include <math.h>
+                               // for pi
+                               //  for trigonometric function
 
 
-#include <ifaddrs.h>    // for network socket
 
-#include <fcntl.h>      // for ...
-
-
-#include <pthread.h>    // for thread
+#include <time.h> // for time(NULL)
 
 
-#include <signal.h>     // for check_deamon() ->
-                                   // for tcp block out.
+
+#include <dirent.h> // for dirent
+
+
+
+#include <ifaddrs.h> // for network socket
+
+#include <fcntl.h> // for ...
+
+
+
+#include <pthread.h> // for thread
+
+
+
+#include <signal.h> // for check_deamon() ->
+                               // for tcp block out.
+
+
+
+
 
 
 #include <unistd.h>
 
 
-#include <sys/time.h>   // for note_save() -> gettimeofday()
 
-
-#include <sys/socket.h> // for network -> socket
-
-
-#include <sys/stat.h>   // for file system status
-
-
-#include <sys/types.h>  // for check_deamon() ->
-
-#include <sys/param.h>  // for ...
+#include <sys/time.h>
+                                   // for note_save() -> gettimeofday()
 
 
 
-#include <arpa/inet.h>  // for network
+#include <sys/socket.h>
+                                      // for network -> socket
+
+
+
+#include <sys/stat.h>
+                                  // for file system status
+
+
+
+#include <sys/types.h>
+                                    // for check_deamon() ->
+
+#include <sys/param.h>
+                                      // for ...
+
+
+
+#include <arpa/inet.h>
+                                    // for network
 
 */
 
@@ -107,7 +136,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/waves/free.computer"
 
-//
+
 #include "./roots/lakes/stones/copy.computer"
 
 #include "./roots/lakes/stones/append.computer"
@@ -118,7 +147,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/stones/find.computer"
 
-
+//
 
 #include "./roots/trees/remove.computer"
 

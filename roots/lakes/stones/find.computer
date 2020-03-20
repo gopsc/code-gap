@@ -1,7 +1,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/*
+
 #include  <stdlib.h>
+
+*/
 
 
 void *  find_fst_roots_lakes_stones
@@ -21,9 +34,20 @@ void ** that_lights_results
 
 
 
+
+
+
+
+
+
+
+
 void *  note_waters_lengths_targets = NULL;
 
 note_waters_lengths_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
+
 
 
 
@@ -47,9 +71,23 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 void *  note_waters_lengths_found = NULL;
 
 note_waters_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
+
 
 
 
@@ -71,6 +109,14 @@ while
 
 
 
+
+
+
+
+
+
+
+
 if
 
 (
@@ -83,12 +129,17 @@ if
 
 {
 
+
+
+
 free ( note_waters_lengths_targets );
 
 free ( note_waters_lengths_found );
 
 
 * that_lights_results   =   NULL;
+
+
 
 
 return NULL;
@@ -100,9 +151,23 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 void *  note_waters_counts_targets = NULL;
 
 note_waters_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
 
 
 void *  note_waters_counts_found = NULL;
@@ -111,11 +176,27 @@ note_waters_counts_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
+
 void *  note_waters_switches = NULL;
 
 note_waters_switches   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 * ( __uint64_t * ) note_waters_switches   =   1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -135,7 +216,17 @@ while
 
 
 
+
+
+
+
+
 * ( __uint64_t * ) note_waters_switches   =   1;
+
+
+
+
+
 
 
 * ( __uint64_t * ) note_waters_counts_found   =   0;
@@ -153,6 +244,8 @@ while
 
 
 
+
+
 if
 
 (
@@ -165,9 +258,16 @@ if
 
 {
 
+
+
 * ( __uint64_t * ) note_waters_switches   =   1;
 
 break;
+
+
+
+
+
 
 }
 
@@ -190,9 +290,23 @@ else if
 
 
 
+
+
+
+
+
 * ( __uint64_t * ) note_waters_counts_found   =   * ( __uint64_t * ) note_waters_counts_found   +   1;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -202,11 +316,22 @@ if  (  * ( __uint64_t * ) note_waters_switches   ==   0  )
 
 {
 
+
+
 * that_lights_results   =   ( char * ) that_stones_targets   +   * ( __uint64_t * ) note_waters_counts_targets;
 
 break;
 
+
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -221,6 +346,19 @@ break;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 if  (  * ( __uint64_t * ) note_waters_switches   ==   1  )
 
 {
@@ -228,6 +366,23 @@ if  (  * ( __uint64_t * ) note_waters_switches   ==   1  )
 * that_lights_results   =   NULL;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

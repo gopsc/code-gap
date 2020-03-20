@@ -1,7 +1,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/*
+
 #include  <stdlib.h>
+
+*/
 
 
 void * copy_fst_roots_lakes_stones
@@ -18,9 +31,22 @@ void *  that_stones_copied
 {
 
 
+
+
+
+
+
+
+
 void *  note_waters_counts = NULL;
 
 note_waters_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
+
+
+
+
 
 
 
@@ -52,7 +78,17 @@ while
 
 
 
+
+
 * ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts  )   =   '\0';
+
+
+
+
+
+
+
+
 
 
 free  (  note_waters_counts  );

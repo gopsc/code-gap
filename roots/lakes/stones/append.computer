@@ -1,7 +1,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*
+
 #include <stdlib.h>
+
+*/
 
 
 void  *   append_fst_roots_lakes_stones
@@ -18,14 +32,34 @@ void  *   that_stones_append
 {
 
 
+
+
+
+
+
+
+
+
+
+
+
 void  *   note_waters_counts_targets = NULL;
 
 note_waters_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
+
 void  *   note_waters_counts_append = NULL;
 
 note_waters_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+
+
+
+
+
+
+
 
 
 
@@ -54,6 +88,10 @@ while
 
 
 
+
+
+
+
 * ( __uint64_t * ) note_waters_counts_append   =   0;
 
 while
@@ -64,9 +102,13 @@ while
 
 {
 
+
+
+
 * ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  +  * ( __uint64_t * ) note_waters_counts_append  )
 =
 * ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_waters_counts_append  );
+
 
 
 
@@ -77,6 +119,15 @@ while
 
 
 * ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  +  * ( __uint64_t * ) note_waters_counts_append  )   =   '\0';
+
+
+
+
+
+
+
+
+
 
 
 
