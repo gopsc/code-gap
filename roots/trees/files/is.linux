@@ -1,11 +1,10 @@
-
-
+/*
 
 #include  <stdlib.h>
 
 #include  <sys/stat.h>
 
-
+*/
 
 
 void *  is_fst_roots_trees_files
@@ -26,20 +25,9 @@ void ** that_waters_results
 
 
 
-
-
-
-
 void  *   note_structures_status = NULL;
 
-
 note_structures_status  =  malloc  (  sizeof ( struct stat )  );
-
-
-
-
-
-
 
 
 
@@ -50,9 +38,6 @@ if  (    lstat (  that_stones_names,  note_structures_status  )  ==  0    )
    
 
 
-
-
-   
 if  (    S_ISREG  (  ( * ( struct stat * ) note_structures_status )  . st_mode       )  !=  0    )
 
 {
@@ -67,10 +52,10 @@ return  NULL;
 }
 
 
+}
 
-else
 
-{
+
 
 * ( __uint64_t * ) * that_waters_results  =  0;
 
@@ -78,32 +63,5 @@ else
 free ( note_structures_status );
 
 return  NULL;
-
-}
-
-
-
-
-
-}
-
-
-else
-
-{
-
-
-* ( __uint64_t * ) * that_waters_results  =  0;
-
-
-free ( note_structures_status );
-
-return NULL;
-
-
-}
-
-
-
 
 }

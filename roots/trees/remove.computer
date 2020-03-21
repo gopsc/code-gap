@@ -1,5 +1,3 @@
-
-
 /*
 
 #include  <stdlib.h>
@@ -24,8 +22,6 @@ void ** that_waters_results
 
 
 
-
-
 void * note_waters_results = NULL;
 
 note_waters_results  =  malloc ( sizeof ( __int64_t ) );
@@ -33,11 +29,7 @@ note_waters_results  =  malloc ( sizeof ( __int64_t ) );
 
 
 
-
-
 * ( __int64_t * ) note_waters_results  =  remove  (  that_stones_names  );
-
-
 
 
 
@@ -63,16 +55,8 @@ else if ( * ( __int64_t * ) note_waters_results == 0 )
 
 
 
-
-
 free ( note_waters_results );
 
 return NULL;
 
 }
-
-
-
-
-
-

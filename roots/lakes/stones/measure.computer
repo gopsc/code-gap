@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 #include <stdlib.h>
@@ -33,23 +20,9 @@ void ** that_waters_results
 
 
 
-
-
-
-
-
-
-
 void *  note_waters_counts = NULL;
 
 note_waters_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-
-
-
-
 
 
 
@@ -73,27 +46,7 @@ while
 
 
 
-
-
-
-
-
-
-
-
-
-
 * ( __uint64_t * ) * that_waters_results   =   * ( __uint64_t * ) note_waters_counts;
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -101,19 +54,6 @@ while
 
 free  (  note_waters_counts  );
 
-
-
 return  NULL;
 
-
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,46 +1,27 @@
+int main
 
+(
 
+int argc,
 
+char * argv []
 
-
-
-
-
-
-
-
-
-int main ( int argc, char * argv [] )
-
+)
 
 {
 
 
-
-  
 begin_fst_branches_lakes ();
 
 begin_fst_branches_lakes_bubbles ();
 
 
-
-
-
 // lines
-
-
-
 
 
 end_fst_branches_lakes_bubbles ();
 
 end_fst_branches_lakes ();
-
-
-
-
-
-
 
 
 
@@ -52,14 +33,11 @@ end_fst_branches_lakes ();
 
  */
 
-
 /*
 
  init_deamon ();
 
 */
-
-
 
 /*
 
@@ -83,14 +61,11 @@ pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
 
 */
 
-
-
 /*
 
 char  note_command  [ 128 ]   =   "";
 
 */
-
 
 /*
 
@@ -104,15 +79,11 @@ gop_wait   (  0.1  );
 
 */
 
-
-
 /*
 
 note_save   (   "command",   "command start",   "now"   );
 
 */
-
-
 
 /*
 
@@ -128,14 +99,11 @@ if   (   gop_about . flag . deamon   )
 
 {
 
-
 gop_wait  (  0.1  );
-
 
 }
 
 */
-
 
 /*
 
@@ -144,7 +112,6 @@ else
 {
 
 */
-
 
 /*
 
@@ -176,9 +143,6 @@ else
 
 */
 
-
-
-
 /*
 
 note_command    [   strlen  (  note_command  )  -  1   ]    =    '.';
@@ -207,8 +171,6 @@ strcpy   (   note_command,   ""   );
 
 */
 
-
-
 /*
 
 }
@@ -220,9 +182,6 @@ strcpy   (   note_command,   ""   );
 }
 
 */
-
-
-
 
 /*
 
@@ -236,18 +195,4 @@ note_save ( "command", "command close", "now" );
 
 */
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

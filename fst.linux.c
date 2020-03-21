@@ -28,16 +28,24 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include <stdlib.h>
                                // for null
-                               // for malloc(), realloc(), free()
                                // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
+                               //
+                               // for malloc(), realloc(), free()
 
 
 
 #include <stdio.h>
                               // for null
-                              // for printf()
                               // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
+                              //
+                              // for printf()
+                              //
                               // for remove()
+                              //
+                              // for fopen()
+                              // for fclose()
+                              // for fgets()
+                              // for fprintf()
 
 /*
 
@@ -80,18 +88,25 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
+
 #include <sys/time.h>
                                    // for note_save() -> gettimeofday()
 
+*/
 
+#include <sys/stat.h>
+                                  // for struct stat
+                                  // for lstat()
+                                  // for S_ISDIR()
+                                  // for S_ISREG()
+                                  //
+                                  // for mkdir()
+                                  // for S_IRWXU, S_IRWXG, S_IROTH, S_IXOTH
+
+/*
 
 #include <sys/socket.h>
                                       // for network -> socket
-
-
-
-#include <sys/stat.h>
-                                  // for file system status
 
 
 
@@ -150,7 +165,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include "./roots/trees/remove.computer"
-//
+
 
 #include "./roots/trees/dirents/is.linux"
 
@@ -190,7 +205,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/trees/dirents/is.linux"
 
-#include "./branches/trees/dirents/create.linux" // _uint8_t and numbers may changed
+#include "./branches/trees/dirents/create.linux" // __uint8_t and numbers may changed
 
 #include "./branches/trees/dirents/remove.linux"
 

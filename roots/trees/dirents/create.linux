@@ -1,12 +1,10 @@
+/*
 
-
-
-
-#include <stdlib.h>
+#include <stdio.h>
 
 #include  <sys/stat.h>
 
-
+*/
 
 
 void *  create_fst_roots_trees_dirents
@@ -68,9 +66,3 @@ free ( note_waters_results );
 return NULL;
 
 }
-
-
-
-
-
-

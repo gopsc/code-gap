@@ -1,11 +1,10 @@
-
-
+/*
 
 #include  <stdlib.h>
 
 #include  <stdio.h>
 
-
+*/
 
 
 void *  read_fst_roots_trees_files
@@ -27,25 +26,29 @@ void ** that_waters_results
 
 
 
+if ( * that_stones_results == NULL )
+
+{
+
+* ( __uint64_t * ) * that_waters_results = 0;
+
+return NULL;
+
+}
 
 
 
-* ( char * ) * that_stones_results  =  '\0';
 
-* that_stones_results  =  realloc ( * that_stones_results, 1 * sizeof ( char ) );
+* ( __uint8_t * ) * that_stones_results  =  '\0';
 
-
-
-
-
+* that_stones_results  =  realloc ( * that_stones_results, 1 * sizeof ( __uint8_t ) );
 
 
 
 
 void  *   note_files_got = NULL;
 
-note_files_got   =   fopen  (  that_stones_names,  "rb"  );
-
+note_files_got   =   ( void * ) fopen  (  that_stones_names,  "rb"  );
 
 
 if
@@ -63,23 +66,16 @@ return NULL;
 
 
 
-
-
-
 void  *   note_stones_read = NULL;
 
 note_stones_read  =  malloc  (  2  *  sizeof ( __uint8_t )  );
 
 
 
+
 void *  note_waters_counts;
 
 note_waters_counts  =  malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-
-
 
 
 
@@ -114,9 +110,9 @@ while
 * that_stones_results  =  realloc (  * that_stones_results,   ( 1  +  1  +  * ( __uint64_t * ) note_waters_counts )  *  sizeof ( __uint8_t )  );
 
 
-* ( ( char * ) * that_stones_results   +   * ( __uint64_t * ) note_waters_counts   )   =   * ( char * ) note_stones_read;
+* ( ( __uint8_t * ) * that_stones_results   +   * ( __uint64_t * ) note_waters_counts   )   =   * ( __uint8_t * ) note_stones_read;
 
-* ( ( char * ) * that_stones_results   +   * ( __uint64_t * ) note_waters_counts   +   1   )   =   '\0';
+* ( ( __uint8_t * ) * that_stones_results   +   * ( __uint64_t * ) note_waters_counts   +   1   )   =   '\0';
 
 
 
@@ -127,14 +123,9 @@ while
 
 
 
-
-
-
-
 void * note_waters_results = NULL;
 
 note_waters_results = malloc ( sizeof ( __uint64_t ) );
-
 
 
 
@@ -160,15 +151,15 @@ if
 
 
 
-free  (  note_waters_results  );
+
+* ( __uint64_t * ) * that_waters_results  = 1;
 
 
 free  (  note_stones_read  );
 
 free  (  note_waters_counts  );
 
-
-* ( __uint64_t * ) * that_waters_results  = 1;
+free  (  note_waters_results  );
 
 return NULL;
 

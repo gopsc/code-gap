@@ -1,4 +1,1 @@
-add
-fst,branches,lakes,stones
-include
-copy, append, measure, find and cut
+add "fst/branches/lakes/stones" include "copy, append, measure, find and cut"
