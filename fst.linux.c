@@ -30,16 +30,16 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
                                // for null
                                // for malloc(), realloc(), free()
                                // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
-                               // for remove()
-/*
+
 
 
 #include <stdio.h>
                               // for null
                               // for printf()
                               // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
+                              // for remove()
 
-
+/*
 
 
 
@@ -147,10 +147,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/stones/find.computer"
 
-//
+
 
 #include "./roots/trees/remove.computer"
-
+//
 
 #include "./roots/trees/dirents/is.linux"
 
