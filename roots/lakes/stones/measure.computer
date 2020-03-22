@@ -11,7 +11,7 @@ void *  measure_fst_roots_lakes_stones
 
 void *  that_stones_targets,
 
-void ** that_waters_results
+void ** that_silts_results
 
 )
 
@@ -20,39 +20,39 @@ void ** that_waters_results
 
 
 
-void *  note_waters_counts = NULL;
+void *  note_silts_counts = NULL;
 
-note_waters_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
+note_silts_counts   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
-* ( __uint64_t * ) note_waters_counts   =   0;
+
+
+* ( __uint64_t * ) note_silts_counts   =   0;
 
 while
 
 (
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts )   !=   '\0'
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_silts_counts )   !=   '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_waters_counts   =   * ( __uint64_t * ) note_waters_counts   +   1;
+* ( __uint64_t * ) note_silts_counts   =   * ( __uint64_t * ) note_silts_counts   +   1;
 
 }
 
 
 
 
-* ( __uint64_t * ) * that_waters_results   =   * ( __uint64_t * ) note_waters_counts;
+* ( __uint64_t * ) * that_silts_results   =   * ( __uint64_t * ) note_silts_counts;
 
 
 
 
 
-free  (  note_waters_counts  );
+free  (  note_silts_counts  );
 
 return  NULL;
 

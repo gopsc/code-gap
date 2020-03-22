@@ -13,7 +13,7 @@ void *  that_stones_targets,
 
 void *  that_stones_found,
 
-void ** that_lights_results
+void ** that_waters_results
 
 )
 
@@ -22,50 +22,50 @@ void ** that_lights_results
 
 
 
-void *  note_waters_lengths_targets = NULL;
+void *  note_silts_lengths_targets = NULL;
 
-note_waters_lengths_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+note_silts_lengths_targets   =   malloc ( 1 * sizeof ( __uint64_t ) );
 
 
 
-* ( __uint64_t * ) note_waters_lengths_targets   =   0;
+* ( __uint64_t * ) note_silts_lengths_targets   =   0;
 
 while
 
 (
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_lengths_targets  )   !=   '\0'
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_silts_lengths_targets  )   !=   '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_waters_lengths_targets   =   * ( __uint64_t * ) note_waters_lengths_targets   +   1;
+* ( __uint64_t * ) note_silts_lengths_targets   =   * ( __uint64_t * ) note_silts_lengths_targets   +   1;
 
 }
 
 
 
 
-void *  note_waters_lengths_found = NULL;
+void *  note_silts_lengths_found = NULL;
 
-note_waters_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+note_silts_lengths_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-* ( __uint64_t * ) note_waters_lengths_found   =   0;
+* ( __uint64_t * ) note_silts_lengths_found   =   0;
 
 while
 
 (
 
-* ( ( char * ) that_stones_found  +  * ( __uint64_t * ) note_waters_lengths_found  )   !=   '\0'
+* ( ( char * ) that_stones_found  +  * ( __uint64_t * ) note_silts_lengths_found  )   !=   '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_waters_lengths_found   =   * ( __uint64_t * ) note_waters_lengths_found   +   1;
+* ( __uint64_t * ) note_silts_lengths_found   =   * ( __uint64_t * ) note_silts_lengths_found   +   1;
 
 }
 
@@ -76,21 +76,23 @@ if
 
 (
 
-* ( __uint64_t * ) note_waters_lengths_targets
+* ( __uint64_t * ) note_silts_lengths_targets
+
 <
-* ( __uint64_t * ) note_waters_lengths_found
+
+* ( __uint64_t * ) note_silts_lengths_found
 
 )
 
 {
 
 
-free ( note_waters_lengths_targets );
+free ( note_silts_lengths_targets );
 
-free ( note_waters_lengths_found );
+free ( note_silts_lengths_found );
 
 
-* that_lights_results   =   NULL;
+* that_waters_results   =   NULL;
 
 return NULL;
 
@@ -99,35 +101,37 @@ return NULL;
 
 
 
-void *  note_waters_counts_targets = NULL;
+void *  note_silts_counts_targets = NULL;
 
-note_waters_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-void *  note_waters_counts_found = NULL;
-
-note_waters_counts_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+note_silts_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
-void *  note_waters_switches = NULL;
+void *  note_silts_counts_found = NULL;
 
-note_waters_switches   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-* ( __uint64_t * ) note_waters_switches   =   1;
+note_silts_counts_found   =   malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
+void *  note_silts_switches = NULL;
+
+note_silts_switches   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+
+* ( __uint64_t * ) note_silts_switches   =   1;
 
 
-* ( __uint64_t * ) note_waters_counts_targets   =   0;
+
+
+
+* ( __uint64_t * ) note_silts_switches   =   0;
+
+* ( __uint64_t * ) note_silts_counts_targets   =   0;
 
 while
 
 (
 
-* ( __uint64_t * ) note_waters_counts_targets   <   * ( __uint64_t * ) note_waters_lengths_targets
+* ( __uint64_t * ) note_silts_counts_targets   <   * ( __uint64_t * ) note_silts_lengths_targets
 
 )
 
@@ -135,19 +139,13 @@ while
 
 
 
-
-* ( __uint64_t * ) note_waters_switches   =   0;
-
-
-
-
-* ( __uint64_t * ) note_waters_counts_found   =   0;
+* ( __uint64_t * ) note_silts_counts_found   =   0;
 
 while
 
 (
 
-* ( __uint64_t * ) note_waters_counts_found   <   * ( __uint64_t * ) note_waters_lengths_found
+* ( __uint64_t * ) note_silts_counts_found   <   * ( __uint64_t * ) note_silts_lengths_found
 
 )
 
@@ -159,16 +157,18 @@ if
 
 (
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  +  * ( __uint64_t * ) note_waters_counts_found  )
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_silts_counts_targets  +  * ( __uint64_t * ) note_silts_counts_found  )
+
 !=
-* ( ( char * ) that_stones_found   +  * ( __uint64_t * ) note_waters_counts_found  )
+
+* ( ( char * ) that_stones_found   +  * ( __uint64_t * ) note_silts_counts_found  )
 
 )
 
 {
 
 
-* ( __uint64_t * ) note_waters_switches   =   0;
+* ( __uint64_t * ) note_silts_switches   =   0;
 
 break;
 
@@ -180,22 +180,24 @@ else if
 
 (
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_waters_counts_targets  +  * ( __uint64_t * ) note_waters_counts_found  )
+* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_silts_counts_targets  +  * ( __uint64_t * ) note_silts_counts_found  )
+
 ==
-* ( ( char * ) that_stones_found  +  * ( __uint64_t * ) note_waters_counts_found  )
+
+* ( ( char * ) that_stones_found  +  * ( __uint64_t * ) note_silts_counts_found  )
 
 )
 
 {
 
-* ( __uint64_t * ) note_waters_switches   =   1;
+* ( __uint64_t * ) note_silts_switches   =   1;
 
 }
 
 
 
 
-* ( __uint64_t * ) note_waters_counts_found   =   * ( __uint64_t * ) note_waters_counts_found   +   1;
+* ( __uint64_t * ) note_silts_counts_found   =   * ( __uint64_t * ) note_silts_counts_found   +   1;
 
 }
 
@@ -203,12 +205,12 @@ else if
 
 
 
-if  (  * ( __uint64_t * ) note_waters_switches   ==   1  )
+if  (  * ( __uint64_t * ) note_silts_switches   ==   1  )
 
 {
 
 
-* that_lights_results   =   ( char * ) that_stones_targets   +   * ( __uint64_t * ) note_waters_counts_targets;
+* that_waters_results   =   ( char * ) that_stones_targets   +   * ( __uint64_t * ) note_silts_counts_targets;
 
 break;
 
@@ -218,35 +220,35 @@ break;
 
 
 
-* ( __uint64_t * ) note_waters_counts_targets   =   * ( __uint64_t * ) note_waters_counts_targets   +   1;
+* ( __uint64_t * ) note_silts_counts_targets   =   * ( __uint64_t * ) note_silts_counts_targets   +   1;
 
 }
 
 
 
 
-if  (  * ( __uint64_t * ) note_waters_switches   ==   0  )
+if  (  * ( __uint64_t * ) note_silts_switches   ==   0  )
 
 {
 
-* that_lights_results   =   NULL;
+* that_waters_results   =   NULL;
 
 }
 
 
 
 
-free  (  note_waters_lengths_targets  );
+free ( note_silts_lengths_targets );
 
-free  (  note_waters_lengths_found );
-
-
-free  (  note_waters_counts_targets  );
-
-free  (  note_waters_counts_found  );
+free ( note_silts_lengths_found );
 
 
-free  (  note_waters_switches  );
+free ( note_silts_counts_targets );
+
+free  (  note_silts_counts_found  );
+
+
+free  (  note_silts_switches  );
 
 
 return  NULL;
