@@ -189,6 +189,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 //
 
 
+#include "./branches/threads/prepare.computer"
+
 #include "./branches/threads/begin.computer"
 
 #include "./branches/threads/end.computer"
