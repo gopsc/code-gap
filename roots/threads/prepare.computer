@@ -1,20 +1,14 @@
-typedef
-
-void *
+typedef void *
 
 that_fst_roots_threads_prepare_waters;
 
 
-typedef
-
-int
+typedef int
 
 that_fst_roots_threads_prepare_silts;
 
 
-typedef
-
-char
+typedef char
 
 that_fst_roots_threads_prepare_stones;
 
