@@ -142,7 +142,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./roots/threads/prepare.computer"
+#include "./roots/threads/prepare.computer"  // unassigned variable
 
 #include "./roots/threads/begin.computer"
 
@@ -189,13 +189,13 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./branches/threads/prepare.computer"
+#include "./branches/threads/prepare.computer"  // unassigned variable
 
 #include "./branches/threads/begin.computer"
 
 #include "./branches/threads/end.computer"
 
-//
+
 
 #include "./branches/lakes/prepare.computer"  // unassigned variable
 
@@ -203,7 +203,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/end.computer"
 
-
+//
 
 #include "./branches/lakes/waves/write.computer" // numbers may changed
 

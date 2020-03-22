@@ -41,10 +41,10 @@ void  *   begin_fst_branches_lakes   ()
 
 
 
-void * note_waters_sizes = that_fst_roots_lakes_prepare;
+void * note_silts_sizes = that_fst_roots_lakes_prepare;
 
 
-create_fst_roots_lakes_waves  (  & note_waters_sizes  );
+create_fst_roots_lakes_waves  (  & note_silts_sizes  );
 
 
 
@@ -60,19 +60,19 @@ void *  for eight bytes on sixtie-four device
 
 
 
-* ( __uint64_t * ) note_waters_sizes  =  8;
+* ( __uint64_t * ) note_silts_sizes  =  8;
 
 create_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes  );
 
-resize_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes,  note_waters_sizes  );
+resize_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes,  note_silts_sizes  );
 
 
 
-* ( __uint64_t * ) note_waters_sizes  =  2 * 8;
+* ( __uint64_t * ) note_silts_sizes  =  2 * 8;
 
 create_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes [ 0 ]  );
 
-resize_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes [ 0 ],  note_waters_sizes  );
+resize_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes [ 0 ],  note_silts_sizes  );
 
 
 
@@ -88,11 +88,11 @@ char  for one bytes
 */
 
 
-* ( __uint64_t * ) note_waters_sizes  =  19 * 1;
+* ( __uint64_t * ) note_silts_sizes  =  19 * 1;
 
 create_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 0 ]  );
 
-resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 0 ],  note_waters_sizes  );
+resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 0 ],  note_silts_sizes  );
 
 
 /*
@@ -101,11 +101,11 @@ __uint64_t  for eight byte
 
 */
 
-* ( __uint64_t * ) note_waters_sizes  =  8;
+* ( __uint64_t * ) note_silts_sizes  =  8;
 
 create_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 1 ]  );
 
-resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 1 ],  note_waters_sizes  );
+resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 1 ],  note_silts_sizes  );
 
 
 
@@ -115,7 +115,7 @@ resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 1 ],  note_wa
 
 
 
-free_fst_roots_lakes_waves  (  & note_waters_sizes  );
+free_fst_roots_lakes_waves  (  & note_silts_sizes  );
 
 
 
