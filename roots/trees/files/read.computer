@@ -15,7 +15,7 @@ void *  that_stones_names,
 
 void ** that_stones_results,
 
-void ** that_waters_results
+void ** that_silts_results
 
 )
 
@@ -30,7 +30,7 @@ if ( * that_stones_results == NULL )
 
 {
 
-* ( __uint64_t * ) * that_waters_results = 0;
+* ( __uint64_t * ) * that_silts_results = 0;
 
 return NULL;
 
@@ -57,7 +57,7 @@ if
 
 {
 
-* ( __uint64_t * ) * that_waters_results  = 0;
+* ( __uint64_t * ) * that_silts_results  = 0;
 
 return NULL;
 
@@ -73,9 +73,9 @@ note_stones_read  =  malloc  (  2  *  sizeof ( __uint8_t )  );
 
 
 
-void *  note_waters_counts;
+void *  note_silts_counts;
 
-note_waters_counts  =  malloc  (  1  *  sizeof ( __uint64_t )  );
+note_silts_counts  =  malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
@@ -88,31 +88,31 @@ while  (    fgets  (   note_stones_read,   2,   ( FILE * ) note_files_got   )   
 
 
 
-* ( __uint64_t * ) note_waters_counts   =   0;
+* ( __uint64_t * ) note_silts_counts   =   0;
 
 while
 
 (
 
-* ( ( char * ) * that_stones_results  +  * ( __uint64_t * ) note_waters_counts  )   !=   '\0'
+* ( ( char * ) * that_stones_results  +  * ( __uint64_t * ) note_silts_counts  )   !=   '\0'
 
 )
 
 {
 
-* ( __uint64_t * ) note_waters_counts   =   * ( __uint64_t * ) note_waters_counts   +   1;
+* ( __uint64_t * ) note_silts_counts   =   * ( __uint64_t * ) note_silts_counts   +   1;
 
 }
 
 
 
 
-* that_stones_results  =  realloc (  * that_stones_results,   ( 1  +  1  +  * ( __uint64_t * ) note_waters_counts )  *  sizeof ( __uint8_t )  );
+* that_stones_results  =  realloc (  * that_stones_results,   ( 1  +  1  +  * ( __uint64_t * ) note_silts_counts )  *  sizeof ( __uint8_t )  );
 
 
-* ( ( __uint8_t * ) * that_stones_results   +   * ( __uint64_t * ) note_waters_counts   )   =   * ( __uint8_t * ) note_stones_read;
+* ( ( __uint8_t * ) * that_stones_results   +   * ( __uint64_t * ) note_silts_counts   )   =   * ( __uint8_t * ) note_stones_read;
 
-* ( ( __uint8_t * ) * that_stones_results   +   * ( __uint64_t * ) note_waters_counts   +   1   )   =   '\0';
+* ( ( __uint8_t * ) * that_stones_results   +   * ( __uint64_t * ) note_silts_counts   +   1   )   =   '\0';
 
 
 
@@ -123,27 +123,27 @@ while
 
 
 
-void * note_waters_results = NULL;
+void * note_silts_results = NULL;
 
-note_waters_results = malloc ( sizeof ( __uint64_t ) );
-
-
+note_silts_results = malloc ( sizeof ( __uint64_t ) );
 
 
-* ( __uint64_t * ) note_waters_results  =  fclose  (  note_files_got  );
+
+
+* ( __uint64_t * ) note_silts_results  =  fclose  (  note_files_got  );
 
 
 if
 
 (
 
-* ( __int64_t * ) note_waters_results  == -1
+* ( __int64_t * ) note_silts_results  == -1
 
 )
 
 {
 
-* ( __uint64_t * ) * that_waters_results = 0;
+* ( __uint64_t * ) * that_silts_results = 0;
 
 }
 
@@ -152,14 +152,14 @@ if
 
 
 
-* ( __uint64_t * ) * that_waters_results  = 1;
+* ( __uint64_t * ) * that_silts_results  = 1;
 
 
 free  (  note_stones_read  );
 
-free  (  note_waters_counts  );
+free  (  note_silts_counts  );
 
-free  (  note_waters_results  );
+free  (  note_silts_results  );
 
 return NULL;
 

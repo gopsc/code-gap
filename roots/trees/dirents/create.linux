@@ -13,7 +13,7 @@ void *  create_fst_roots_trees_dirents
 
 void *  that_stones_names,
 
-void ** that_waters_results
+void ** that_silts_results
 
 )
 
@@ -23,37 +23,37 @@ void ** that_waters_results
 
 
 
-void * note_waters_results = NULL;
+void * note_silts_results = NULL;
 
-note_waters_results  =  malloc ( sizeof ( __int64_t ) );
-
-
-
-
-
-* ( __int64_t * ) note_waters_results  =  mkdir  (  that_stones_names,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
+note_silts_results  =  malloc ( sizeof ( __int64_t ) );
 
 
 
 
 
+* ( __int64_t * ) note_silts_results  =  mkdir  (  that_stones_names,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
 
-if ( * ( __int64_t * ) note_waters_results == -1 )
+
+
+
+
+
+if ( * ( __int64_t * ) note_silts_results == -1 )
 
 {
 
-* ( __uint64_t * ) * that_waters_results = 0;
+* ( __uint64_t * ) * that_silts_results = 0;
 
 }
 
 
 
 
-else if ( * ( __int64_t * ) note_waters_results == 0 )
+else if ( * ( __int64_t * ) note_silts_results == 0 )
 
 {
 
-* ( __uint64_t * ) * that_waters_results = 1;
+* ( __uint64_t * ) * that_silts_results = 1;
 
 }
 
@@ -61,7 +61,7 @@ else if ( * ( __int64_t * ) note_waters_results == 0 )
 
 
 
-free ( note_waters_results );
+free ( note_silts_results );
 
 return NULL;
 

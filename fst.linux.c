@@ -170,23 +170,23 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/stones/find.computer"
 
-//
+
 
 #include "./roots/trees/remove.computer"
 
 
-#include "./roots/trees/dirents/is.linux"
+#include "./roots/trees/dirents/is.linux" // note_structure
 
 #include "./roots/trees/dirents/create.linux"
 
 
-#include "./roots/trees/files/is.linux"
+#include "./roots/trees/files/is.linux" // note_structure
 
 #include "./roots/trees/files/write.computer"
 
 #include "./roots/trees/files/read.computer"
 
-
+//
 
 
 #include "./branches/threads/begin.computer"

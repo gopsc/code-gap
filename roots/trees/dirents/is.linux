@@ -14,7 +14,7 @@ void *  is_fst_roots_trees_dirents
 
 void *  that_stones_names,
 
-void ** that_waters_results
+void ** that_silts_results
 
 )
 
@@ -44,7 +44,7 @@ if  (    S_ISDIR ( ( * ( struct stat * ) note_structures_status )  . st_mode )  
 {
 
 
-* ( __uint64_t * ) * that_waters_results  =  1;
+* ( __uint64_t * ) * that_silts_results  =  1;
 
 
 free ( note_structures_status );
@@ -58,7 +58,8 @@ return  NULL;
 
 
 
-* ( __uint64_t * ) * that_waters_results  =  0;
+
+* ( __uint64_t * ) * that_silts_results  =  0;
 
 
 free ( note_structures_status );

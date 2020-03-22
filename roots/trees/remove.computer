@@ -13,7 +13,7 @@ void *  remove_fst_roots_trees
 
 void *  that_stones_names,
 
-void ** that_waters_results
+void ** that_silts_results
 
 )
 
@@ -22,40 +22,40 @@ void ** that_waters_results
 
 
 
-void * note_waters_results = NULL;
+void * note_silts_results = NULL;
 
-note_waters_results  =  malloc ( sizeof ( __int64_t ) );
-
-
-
-
-* ( __int64_t * ) note_waters_results  =  remove  (  that_stones_names  );
+note_silts_results  =  malloc ( sizeof ( __int64_t ) );
 
 
 
 
-if ( * ( __int64_t * ) note_waters_results == -1 )
+* ( __int64_t * ) note_silts_results  =  remove  (  that_stones_names  );
+
+
+
+
+if ( * ( __int64_t * ) note_silts_results == -1 )
 
 {
 
-* ( __uint64_t * ) * that_waters_results = 0;
+* ( __uint64_t * ) * that_silts_results = 0;
 
 }
 
 
 
-else if ( * ( __int64_t * ) note_waters_results == 0 )
+else if ( * ( __int64_t * ) note_silts_results == 0 )
 
 {
 
-* ( __uint64_t * ) * that_waters_results = 1;
+* ( __uint64_t * ) * that_silts_results = 1;
 
 }
 
 
 
 
-free ( note_waters_results );
+free ( note_silts_results );
 
 return NULL;
 
