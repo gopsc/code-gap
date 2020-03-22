@@ -47,12 +47,12 @@ while
 {
 
 
-free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts ] [ 0 ] );
+free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ * ( __uint64_t * ) note_silts_counts ] [ 0 ] );
 
-free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts  ] [ 1 ] );
+free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ * ( __uint64_t * ) note_silts_counts  ] [ 1 ] );
 
 
-free_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes [ * ( __uint64_t * ) note_waters_counts ] );
+free_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes [ * ( __uint64_t * ) note_silts_counts ] );
 
 
 
@@ -63,7 +63,7 @@ free_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes [ * ( __uint
 * ( __uint64_t * ) note_silts_sizes = 8 * ( 1 + * ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ] );
 
 
-resize_fst_roots_lakes_waves ( & that_fst_branches_lakes, note_silts_sizes );
+resize_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes, note_silts_sizes );
 
 
 
