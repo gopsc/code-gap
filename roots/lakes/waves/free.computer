@@ -7,7 +7,7 @@
 
 void *  free_fst_roots_lakes_waves
 
-(  void ** that_silts_data  )
+(  void ** that_waters_data  )
 
 {
 
@@ -15,10 +15,10 @@ void *  free_fst_roots_lakes_waves
 
 
 
-free  (  * that_silts_data  );
+free  (  * that_waters_data  );
 
 
-* that_silts_data  =  NULL;
+* that_waters_data  =  NULL;
 
 
 

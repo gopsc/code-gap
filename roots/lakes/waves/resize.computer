@@ -9,9 +9,9 @@ void *  resize_fst_roots_lakes_waves
 
 (
 
-void ** that_silts_resized,
+void ** that_waters_resized,
 
-void *  that_waters_sizes
+void *  that_silts_sizes
 
 )
 
@@ -23,30 +23,30 @@ void *  that_waters_sizes
 
 
 
-void * note_silts_resized = NULL;
+void * note_waters_resized = NULL;
 
-note_silts_resized   =   realloc  (  * that_silts_resized,  * ( __uint64_t * ) that_waters_sizes  );
-
-
+note_waters_resized   =   realloc  (  * that_waters_resized,  * ( __uint64_t * ) that_silts_sizes  );
 
 
 
 
-if  (  note_silts_resized  ==  NULL  )
+
+
+if  (  note_waters_resized  ==  NULL  )
 
 {
 
-* that_silts_resized  = NULL;
+* that_waters_resized  = NULL;
 
 }
 
 
 
-else if  (  note_silts_resized  !=  NULL  )
+else if  (  note_waters_resized  !=  NULL  )
 
 {
 
-* that_silts_resized  =  note_silts_resized;
+* that_waters_resized  =  note_waters_resized;
 
 }
 

@@ -5,11 +5,13 @@
 */
 
 
-void  *   create_fst_roots_lakes_waves
+that_fst_roots_threads_prepare_waters
+
+create_fst_roots_lakes_waves
 
 (
 
-void ** that_silts_created
+void ** that_waters_created
 
 )
 
@@ -21,21 +23,21 @@ void ** that_silts_created
 
 
 
-void * note_silts_created = NULL;
+void * note_waters_created = NULL;
 
-note_silts_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
+note_waters_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
 
 
 
 
 
-if  (  note_silts_created  ==  NULL  )
+
+
+if  (  note_waters_created  ==  NULL  )
 
 {
 
-* that_silts_created  =  NULL;
+* that_waters_created  =  NULL;
 
 }
 
@@ -43,11 +45,11 @@ if  (  note_silts_created  ==  NULL  )
 
 
 
-else if  (  note_silts_created  !=  NULL  )
+else if  (  note_waters_created  !=  NULL  )
 
 {
 
-* that_silts_created  =  note_silts_created;
+* that_waters_created  =  note_waters_created;
 
 }
 
