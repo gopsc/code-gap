@@ -1,0 +1,22 @@
+/*
+
+#include "./../../roots/threads/prepare.computer"
+
+#include "./../../roots/threads/begin.computer"
+
+
+#include "./../../roots/lakes/prepare.computer"
+
+*/
+
+
+that_fst_roots_threads_prepare_silts begin_fst_branches_threads ()
+
+{
+
+begin_fst_roots_threads ();
+
+
+return that_fst_roots_lakes_prepare;
+
+}

@@ -142,6 +142,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
+#include "./roots/threads/prepare.computer"
+
+#include "./roots/threads/begin.computer"
+
+#include "./roots/threads/end.computer"
+
+
+
 #include "./roots/lakes/prepare.computer"
 
 
@@ -178,6 +186,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/trees/files/read.computer"
 
+
+
+
+#include "./branches/threads/begin.computer"
+
+#include "./branches/threads/end.computer"
 
 
 

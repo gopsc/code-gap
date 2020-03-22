@@ -1,0 +1,33 @@
+/*
+
+#include <stdlib.h>
+
+
+
+#include "./../../roots/threads/prepare.computer"
+
+*/
+
+
+that_fst_roots_threads_prepare_silts begin_fst_roots_threads ()
+
+{
+
+
+that_fst_roots_threads_prepare_silts_sizes = malloc ( sizeof ( that_fst_roots_threads_prepare_waters ) );
+
+that_fst_roots_threads_prepare_stones_sizes = malloc ( sizeof ( that_fst_roots_threads_prepare_waters ) );
+
+that_fst_roots_threads_prepare_waters_sizes = malloc ( sizeof ( that_fst_roots_threads_prepare_waters ) );
+
+
+* ( that_fst_roots_threads_prepare_waters * ) that_fst_roots_threads_prepare_silts_sizes = sizeof ( that_fst_roots_threads_prepare_silts );
+
+* ( that_fst_roots_threads_prepare_waters * ) that_fst_roots_threads_prepare_stones_sizes = sizeof ( that_fst_roots_threads_prepare_stones );
+
+* ( that_fst_roots_threads_prepare_waters * ) that_fst_roots_threads_prepare_waters_sizes = sizeof ( that_fst_roots_threads_prepare_waters );
+
+
+return NULL;
+
+}

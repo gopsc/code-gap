@@ -1,0 +1,33 @@
+/*
+
+#include <stdlib.h>
+
+
+
+#include "./../../roots/threads/prepare.computer"
+
+*/
+
+
+that_fst_roots_threads_prepare_silts end_fst_roots_threads ()
+
+{
+
+
+free ( that_fst_roots_threads_prepare_silts_sizes );
+
+free ( that_fst_roots_threads_prepare_stones_sizes );
+
+free ( that_fst_roots_threads_prepare_waters_sizes );
+
+
+that_fst_roots_threads_prepare_silts_sizes = NULL;
+
+that_fst_roots_threads_prepare_stones_sizes = NULL;
+
+that_fst_roots_threads_prepare_waters_sizes = NULL;
+
+
+return NULL;
+
+}
