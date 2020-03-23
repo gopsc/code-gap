@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computer
+#include "./../../../roots/threads/prepare.computer"
 
 */
 
@@ -24,41 +24,41 @@ void ** that_waters_created
 
 
 
+that_fst_roots_threads_prepare_waters
+
+note_waters_created = NULL;
+
+
+note_waters_created = malloc
+
+(
+
+sizeof ( __uint64_t ) *
+
+( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
+
+);
 
 
 
-void * note_waters_created = NULL;
 
-note_waters_created  =  malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-
-
-
-
-if  (  note_waters_created  ==  NULL  )
+if ( note_waters_created == NULL )
 
 {
 
-* that_waters_created  =  NULL;
+* that_waters_created = NULL;
 
 }
 
 
 
-
-
-else if  (  note_waters_created  !=  NULL  )
+else if ( note_waters_created != NULL )
 
 {
 
-* that_waters_created  =  note_waters_created;
+* that_waters_created = note_waters_created;
 
 }
-
-
-
 
 
 

@@ -2,16 +2,27 @@
 
 #include  <stdlib.h>
 
+
+
+#include "./../../../roots/threads/prepare.computer"
+
 */
 
 
-void *  resize_fst_roots_lakes_waves
+that_fst_roots_threads_prepare_waters
+
+resize_fst_roots_lakes_waves
 
 (
 
-void ** that_waters_resized,
+that_fst_roots_threads_prepare_waters
 
-void *  that_silts_sizes
+* that_waters_resized,
+
+
+that_fst_roots_threads_prepare_waters
+
+that_silts_sizes
 
 )
 
@@ -21,11 +32,20 @@ void *  that_silts_sizes
 
 
 
+that_fst_roots_threads_prepare_waters
+
+note_waters_resized = NULL;
 
 
-void * note_waters_resized = NULL;
+note_waters_resized   =   realloc
 
-note_waters_resized   =   realloc  (  * that_waters_resized,  * ( __uint64_t * ) that_silts_sizes  );
+(
+
+* that_waters_resized,
+
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_sizes
+
+);
 
 
 
