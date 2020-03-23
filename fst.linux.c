@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
@@ -213,14 +202,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./branches/lakes/bubbles/begin.computer" //use but don't need to include
+#include "./branches/lakes/bubbles/begin.computer" // ( down here ) use but don't need to include
 
 #include "./branches/lakes/bubbles/end.computer"
 
-//
+
 
 #include "./branches/trees/dirents/is.linux"
-
+//
 #include "./branches/trees/dirents/create.linux" // __uint8_t and numbers may changed
 
 #include "./branches/trees/dirents/remove.linux"

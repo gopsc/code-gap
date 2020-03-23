@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 #include "./../../../roots/lakes/prepare.computer"
@@ -34,7 +23,7 @@ void * is_fst_branches_trees_dirents
 
 void * that_stones_names,
 
-void ** that_silts_results
+void ** that_waters_results
 
 )
 
@@ -42,18 +31,7 @@ void ** that_silts_results
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-void * note_silts_was = that_fst_roots_lakes_prepare;
+void * note_waters_was = that_fst_roots_lakes_prepare;
 
 
 fish_fst_branches_lakes_waves
@@ -62,26 +40,16 @@ fish_fst_branches_lakes_waves
 
 that_stones_names,
 
-& note_silts_was
+& note_waters_was
 
 );
 
 
 
+void * note_silts_results = that_fst_roots_lakes_prepare;
 
 
-
-void * note_waters_results = that_fst_roots_lakes_prepare;
-
-
-create_fst_roots_lakes_waves ( & note_waters_results );
-
-
-
-
-
-
-
+create_fst_roots_lakes_waves ( & note_silts_results );
 
 
 
@@ -92,9 +60,9 @@ is_fst_roots_trees_dirents
 
 (
 
-note_silts_was,
+note_waters_was,
 
-& note_waters_results
+& note_silts_results
 
 );
 
@@ -103,16 +71,9 @@ note_silts_was,
 
 
 
-
-
-
-
-
-if  (  * ( __uint64_t * ) note_waters_results  ==  1  )
+if  (  * ( __uint64_t * ) note_silts_results  ==  1  )
    
 {
-
-
 
 
 
@@ -122,32 +83,18 @@ fish_fst_branches_lakes_waves
 
 ( void * ) "fst,branches,lakes,bubbles,yes",
 
-that_silts_results
+that_waters_results
 
 );
 
 
 
-
-
-free_fst_roots_lakes_waves  ( & note_waters_results  );
+free_fst_roots_lakes_waves  ( & note_silts_results  );
 
 
 return that_fst_roots_lakes_prepare;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -159,19 +106,14 @@ fish_fst_branches_lakes_waves
 
 ( void * ) "fst,branches,lakes,bubbles,no",
 
-that_silts_results
+that_waters_results
 
 );
 
 
 
-free_fst_roots_lakes_waves  ( & note_waters_results  );
+free_fst_roots_lakes_waves  ( & note_silts_results  );
 
 return that_fst_roots_lakes_prepare;
 
 }
-
-
-
-
-

@@ -23,7 +23,7 @@ void  *   fish_fst_branches_lakes_waves
 
 void *  that_stones_names,
 
-void ** that_silts_results
+void ** that_waters_results
 
 )
 
@@ -79,7 +79,7 @@ if   (   * ( __uint64_t * ) note_silts_results   ==   1   )
 {
 
 
-* that_silts_results   =   that_fst_branches_lakes  [  * ( __uint64_t * ) note_silts_counts  ] [ 1 ];
+* that_waters_results   =   that_fst_branches_lakes  [  * ( __uint64_t * ) note_silts_counts  ] [ 1 ];
 
 
 free_fst_roots_lakes_waves  (  & note_silts_counts  );
@@ -101,7 +101,7 @@ return  that_fst_roots_lakes_prepare;
 
 
 
-* that_silts_results   =  that_fst_roots_lakes_prepare;
+* that_waters_results   =  that_fst_roots_lakes_prepare;
 
 
 free_fst_roots_lakes_waves ( & note_silts_counts );
