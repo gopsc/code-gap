@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 #include "./../../../roots/lakes/prepare.computer"
@@ -27,10 +14,6 @@ void  *   begin_fst_branches_lakes_bubbles  ()
 {
 
 
-
-
-
-
 write_fst_branches_lakes_waves
 
 (
@@ -40,10 +23,6 @@ write_fst_branches_lakes_waves
 ( void * ) "yes"
 
 );
-
-
-
-
 
 
 write_fst_branches_lakes_waves
@@ -58,13 +37,6 @@ write_fst_branches_lakes_waves
 
 
 
-
-
-
-
 return   that_fst_roots_lakes_prepare;
 
 }
-
-
-
