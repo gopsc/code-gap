@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 #include "./../../../roots/lakes/prepare.computer"
@@ -42,31 +29,16 @@ void * that_stones_names_files,
 
 void * that_stones_names_results,
 
-void ** that_silts_results
+void ** that_waters_results
 
 )
 
 {
 
 
+void * note_waters_names = that_fst_roots_lakes_prepare;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-void * note_silts_names = that_fst_roots_lakes_prepare;
-
-fish_fst_branches_lakes_waves ( that_stones_names_files, & note_silts_names );
-
+fish_fst_branches_lakes_waves ( that_stones_names_files, & note_waters_names );
 
 
 
@@ -75,35 +47,19 @@ void * note_stones_results = that_fst_roots_lakes_prepare;
 create_fst_roots_lakes_waves ( & note_stones_results );
 
 
+void *  note_silts_results = that_fst_roots_lakes_prepare;
 
-
-void *  note_waters_results = that_fst_roots_lakes_prepare;
-
-create_fst_roots_lakes_waves ( & note_waters_results );
-
+create_fst_roots_lakes_waves ( & note_silts_results );
 
 
 
+is_fst_roots_trees_files ( note_waters_names, & note_silts_results );
 
 
 
-
-
-
-is_fst_roots_trees_files ( note_silts_names, & note_waters_results );
-
-
-
-
-
-
-
-
-if  (  * ( __uint64_t * ) note_waters_results   ==   1  )
+if  (  * ( __uint64_t * ) note_silts_results   ==   1  )
 
 {
-
-
 
 
 
@@ -111,23 +67,20 @@ read_fst_roots_trees_files
 
 (
 
-note_silts_names,
+note_waters_names,
 
 & note_stones_results,
 
-& note_waters_results
+& note_silts_results
 
 );
 
 
 
 
-
-if  (  * ( __uint64_t * ) note_waters_results   ==   1  )
+if  (  * ( __uint64_t * ) note_silts_results   ==   1  )
 
 {
-
-
 
 
 
@@ -143,50 +96,29 @@ note_stones_results
 
 
 
-
-
 fish_fst_branches_lakes_waves
 
 (
 
 ( void * ) "fst,branches,lakes,bubbles,yes",
 
-that_silts_results
+that_waters_results
 
 );
 
 
 
-
-
-
 free_fst_roots_lakes_waves  (  & note_stones_results );
 
-free_fst_roots_lakes_waves  (  & note_waters_results  );
+free_fst_roots_lakes_waves  (  & note_silts_results  );
 
 
 return that_fst_roots_lakes_prepare;
 
-
 }
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -204,31 +136,23 @@ that_stones_names_results,
 
 
 
-
-
 fish_fst_branches_lakes_waves
 
 (
 
 ( void * ) "fst,branches,lakes,bubbles,no",
 
-that_silts_results
+that_waters_results
 
 );
 
 
 
-
-
-
-
-
 free_fst_roots_lakes_waves  (  & note_stones_results );
 
-free_fst_roots_lakes_waves  (  & note_waters_results  );
+free_fst_roots_lakes_waves  (  & note_silts_results  );
 
 
 return that_fst_roots_lakes_prepare;
-
 
 }
