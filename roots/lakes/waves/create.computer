@@ -29,15 +29,7 @@ that_fst_roots_threads_prepare_waters
 note_waters_created = NULL;
 
 
-note_waters_created = malloc
-
-(
-
-sizeof ( __uint64_t ) *
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
+note_waters_created = malloc ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes );
 
 
 
