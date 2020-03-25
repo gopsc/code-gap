@@ -4,36 +4,46 @@
 
 
 
+#include "./../../../branches/threads/prepare.computer"
+
+
 #include "./../../../branches/lakes/waves/write.computer"
 
 */
 
 
-void  *   begin_fst_branches_lakes_bubbles  ()
+that_fst_branches_threads_prepare_waters
+
+begin_fst_branches_lakes_bubbles ()
 
 {
 
 
-write_fst_branches_lakes_waves
-
-(
-
-( void * ) "fst,branches,lakes,bubbles,yes",
-
-( void * ) "yes"
-
-);
 
 
 write_fst_branches_lakes_waves
 
 (
 
-( void * ) "fst,branches,lakes,bubbles,no",
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,yes",
 
-( void * ) "no"
+( that_fst_branches_threads_prepare_waters ) "yes"
 
 );
+
+
+
+
+write_fst_branches_lakes_waves
+
+(
+
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
+
+( that_fst_branches_threads_prepare_waters ) "no"
+
+);
+
 
 
 

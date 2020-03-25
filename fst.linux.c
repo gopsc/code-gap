@@ -196,17 +196,17 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/waves/write.computer"
 
-#include "./branches/lakes/waves/drop.computer" // numbers may changed
+#include "./branches/lakes/waves/drop.computer"
 
 #include "./branches/lakes/waves/fish.computer"
 
-//
 
-#include "./branches/lakes/bubbles/begin.computer" // ( down here ) use but don't need to include
+
+#include "./branches/lakes/bubbles/begin.computer" // ( below here ) use but don't need to include
 
 #include "./branches/lakes/bubbles/end.computer"
 
-
+//
 
 #include "./branches/trees/dirents/is.linux"
 
