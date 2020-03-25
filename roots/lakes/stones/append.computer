@@ -2,17 +2,28 @@
 
 #include <stdlib.h>
 
+
+
+#include "./../../../roots/threads/prepare.computer"
+
 */
 
 
-void  *   append_fst_roots_lakes_stones
+that_fst_roots_threads_prepare_waters
+
+append_fst_roots_lakes_stones
 
 
 (
 
-void  *   that_stones_targets,
+that_fst_roots_threads_prepare_waters
 
-void  *   that_stones_append
+that_stones_targets,
+
+
+that_fst_roots_threads_prepare_waters
+
+that_stones_append
 
 )
 
@@ -22,64 +33,158 @@ void  *   that_stones_append
 
 
 
-void  *   note_silts_counts_targets = NULL;
+that_fst_roots_threads_prepare_waters
 
-note_silts_counts_targets   =   malloc  (  1  *  sizeof ( __uint64_t )  );
-
-
-
-void  *   note_silts_counts_append = NULL;
-
-note_silts_counts_append   =   malloc  (  1  *  sizeof ( __uint64_t )  );
+note_silts_counts_targets = NULL;
 
 
+note_silts_counts_targets = malloc
+
+(
+
+1  *
+
+( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
+
+);
 
 
 
-* ( __uint64_t * ) note_silts_counts_targets   =   0;
+
+that_fst_roots_threads_prepare_waters
+
+note_silts_counts_append = NULL;
+
+
+note_silts_counts_append = malloc
+
+(
+
+1  *
+
+( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
+
+);
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
 
 
 while
 
 (
 
-* ( ( char * )  that_stones_targets  +  * ( __uint64_t * ) note_silts_counts_targets  )  !=  '\0'
+
+* (
+
+( that_fst_roots_threads_prepare_stones * )  that_stones_targets
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
+
+) != '\0'
+
 
 )
 
 {
 
-* ( __uint64_t * ) note_silts_counts_targets   =   * ( __uint64_t * ) note_silts_counts_targets   +   1;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
 
-}
-
-
-
-
-
-* ( __uint64_t * ) note_silts_counts_append   =   0;
-
-while
-
-(
-
-* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_silts_counts_append  )   !=   '\0'   )
-
-{
-
-
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_silts_counts_targets  +  * ( __uint64_t * ) note_silts_counts_append  )
 =
-* ( ( char * ) that_stones_append  +  * ( __uint64_t * ) note_silts_counts_append  );
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
 
-* ( __uint64_t * ) note_silts_counts_append   =   * ( __uint64_t * ) note_silts_counts_append   +   1;
++ 1;
 
 }
 
 
 
-* ( ( char * ) that_stones_targets  +  * ( __uint64_t * ) note_silts_counts_targets  +  * ( __uint64_t * ) note_silts_counts_append  )   =   '\0';
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append   =   0;
+
+while
+
+(
+
+
+* (
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_append
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append
+
+) != '\0'
+
+
+)
+
+{
+
+
+* (
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_targets
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append
+
+)
+
+=
+
+* (
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_append
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append
+
+);
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append = * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append + 1;
+
+}
+
+
+
+
+
+* (
+
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_targets
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append
+
+
+) = '\0';
 
 
 
