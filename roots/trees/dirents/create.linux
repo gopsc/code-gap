@@ -4,16 +4,27 @@
 
 #include  <sys/stat.h>
 
+
+
+#include "./../../../roots/threads/prepare.computer"
+
 */
 
 
-void *  create_fst_roots_trees_dirents
+that_fst_roots_threads_prepare_waters
+
+create_fst_roots_trees_dirents
 
 (
 
-void *  that_stones_names,
+that_fst_roots_threads_prepare_waters
 
-void ** that_silts_results
+that_stones_names,
+
+
+that_fst_roots_threads_prepare_waters
+
+* that_silts_results
 
 )
 
@@ -23,37 +34,50 @@ void ** that_silts_results
 
 
 
-void * note_silts_results = NULL;
+that_fst_roots_threads_prepare_waters
 
-note_silts_results  =  malloc ( sizeof ( __int64_t ) );
-
-
+note_silts_results = NULL;
 
 
+note_silts_results  =  malloc
 
-* ( __int64_t * ) note_silts_results  =  mkdir  (  that_stones_names,  S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH   );
+( 1 *
+
+* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes
+
+);
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results
+
+=
+
+mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
 
 
 
 
 
 
-if ( * ( __int64_t * ) note_silts_results == -1 )
+if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 {
 
-* ( __uint64_t * ) * that_silts_results = 0;
+* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results = 0;
 
 }
 
 
 
 
-else if ( * ( __int64_t * ) note_silts_results == 0 )
+else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
 
-* ( __uint64_t * ) * that_silts_results = 1;
+* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results = 1;
 
 }
 

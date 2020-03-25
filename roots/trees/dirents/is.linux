@@ -4,47 +4,64 @@
 
 #include  <sys/stat.h>
 
+
+
+#include "./../../../roots/threads/prepare.computer"
+
 */
 
 
-void *  is_fst_roots_trees_dirents
+that_fst_roots_threads_prepare_waters
+
+is_fst_roots_trees_dirents
 
 
 (
 
-void *  that_stones_names,
+that_fst_roots_threads_prepare_waters
 
-void ** that_silts_results
+that_stones_names,
+
+
+that_fst_roots_threads_prepare_waters
+
+* that_silts_results
 
 )
 
-
-
 {
 
 
 
 
-void  *   note_structures_status = NULL;
+that_fst_roots_threads_prepare_waters
+
+note_structures_status = NULL;
 
 
-note_structures_status  =  malloc  (  sizeof ( struct stat )  );
+note_structures_status = malloc ( 1 * sizeof ( struct stat ) );
 
 
 
 
-if  (    lstat (  that_stones_names,  note_structures_status  )  ==  0    )
+if ( lstat ( that_stones_names, note_structures_status ) == 0 )
 
 {
    
 
    
-if  (    S_ISDIR ( ( * ( struct stat * ) note_structures_status )  . st_mode )     !=  0    )
+if
+
+(
+
+S_ISDIR ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
+
+)
 
 {
 
 
-* ( __uint64_t * ) * that_silts_results  =  1;
+* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results  =  1;
 
 
 free ( note_structures_status );
@@ -59,7 +76,7 @@ return  NULL;
 
 
 
-* ( __uint64_t * ) * that_silts_results  =  0;
+* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results  =  0;
 
 
 free ( note_structures_status );
