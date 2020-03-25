@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 #include "./../../roots/lakes/prepare.computer"
@@ -28,12 +14,17 @@
 
 
 
+#include "./../../branches/threads/prepare.computer"
+
+
 #include "./../../branches/lakes/prepare.computer"
 
 */
 
 
-void  *   begin_fst_branches_lakes   ()
+that_fst_branches_threads_prepare_waters
+
+begin_fst_branches_lakes   ()
 
 {
 
@@ -41,107 +32,101 @@ void  *   begin_fst_branches_lakes   ()
 
 
 
-void * note_silts_sizes = that_fst_roots_lakes_prepare;
+that_fst_branches_threads_prepare_waters
 
+note_silts_sizes = that_fst_roots_lakes_prepare;
 
-create_fst_roots_lakes_waves  (  & note_silts_sizes  );
 
+create_fst_roots_lakes_waves ( & note_silts_sizes );
 
 
 
 
 
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 
-/*
+= 1 * (
 
-void *  for eight bytes on sixtie-four device
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_waters_sizes
 
-*/
+) ;
 
 
+create_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes );
 
-* ( __uint64_t * ) note_silts_sizes  =  8;
+resize_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes, note_silts_sizes );
 
-create_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes  );
 
-resize_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes,  note_silts_sizes  );
 
 
 
-* ( __uint64_t * ) note_silts_sizes  =  2 * 8;
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 
-create_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes [ 0 ]  );
+= 2 * (
 
-resize_fst_roots_lakes_waves  (  ( void * * ) & that_fst_branches_lakes [ 0 ],  note_silts_sizes  );
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_waters_sizes
 
+) ;
 
+create_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] );
 
+resize_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ],  note_silts_sizes );
 
 
 
 
 
-/*
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 
-char  for one bytes
+=  19 * (
 
-*/
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_stones_sizes
 
+);
 
-* ( __uint64_t * ) note_silts_sizes  =  19 * 1;
+create_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] [ 0 ] );
 
-create_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 0 ]  );
+resize_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] [ 0 ], note_silts_sizes );
 
-resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 0 ],  note_silts_sizes  );
 
 
-/*
 
-__uint64_t  for eight byte
 
-*/
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 
-* ( __uint64_t * ) note_silts_sizes  =  8;
+= 1 * (
 
-create_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 1 ]  );
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_silts_sizes
 
-resize_fst_roots_lakes_waves  (  & that_fst_branches_lakes [ 0 ] [ 1 ],  note_silts_sizes  );
+);
 
+create_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] [ 1 ] );
 
+resize_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] [ 1 ], note_silts_sizes );
 
 
 
 
 
+free_fst_roots_lakes_waves ( & note_silts_sizes );
 
 
-free_fst_roots_lakes_waves  (  & note_silts_sizes  );
 
 
 
+copy_fst_roots_lakes_stones
 
+(
 
+( that_fst_branches_threads_prepare_waters ) that_fst_branches_lakes  [ 0 ] [ 0 ],
 
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes"
 
+);
 
 
 
-
-
-
-
-
-
-
-copy_fst_roots_lakes_stones  (  that_fst_branches_lakes  [ 0 ] [ 0 ],  ( void * ) "fst,branches,lakes"  );
-
-
-
-*  (  __uint64_t *  )   that_fst_branches_lakes  [ 0 ] [ 1 ]   =   0;
-
-
-
-
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes [ 0 ] [ 1 ] = 0;
 
 
 
@@ -150,10 +135,3 @@ copy_fst_roots_lakes_stones  (  that_fst_branches_lakes  [ 0 ] [ 0 ],  ( void * 
 return  that_fst_roots_lakes_prepare;
 
 }
-
-
-
-
-
-
-

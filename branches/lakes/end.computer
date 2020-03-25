@@ -5,8 +5,13 @@
 
 #include "./../../roots/lakes/waves/create.computer"
 
+#include "./../../roots/lakes/waves/resize.computer"
+
 #include "./../../roots/lakes/waves/free.computer"
 
+
+
+#include "./../../branches/threads/prepare.computer"
 
 
 #include "./../../branches/lakes/prepare.computer"
@@ -14,60 +19,122 @@
 */
 
 
-void * end_fst_branches_lakes ()
+that_fst_branches_threads_prepare_waters
+
+end_fst_branches_lakes ()
 
 {
 
 
 
-void * note_silts_counts = that_fst_roots_lakes_prepare;
+
+
+that_fst_branches_threads_prepare_waters
+
+note_silts_counts = that_fst_roots_lakes_prepare;
 
 
 create_fst_roots_lakes_waves ( & note_silts_counts );
 
 
 
-void * note_silts_sizes = that_fst_roots_lakes_prepare;
+
+
+that_fst_branches_threads_prepare_waters
+
+note_silts_sizes = that_fst_roots_lakes_prepare;
+
 
 create_fst_roots_lakes_waves ( & note_silts_sizes );
 
 
 
 
-* ( __uint64_t * ) note_silts_counts = * ( __uint64_t * ) that_fst_branches_lakes [ 0 ] [ 1 ];
+
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_counts
+
+=
+
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes [ 0 ] [ 1 ];
+
+
 
 while
 
 (
 
-* ( __uint64_t * ) note_silts_counts > 0
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_counts > 0
 
 )
 
 {
 
 
-free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ * ( __uint64_t * ) note_silts_counts ] [ 0 ] );
-
-free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ * ( __uint64_t * ) note_silts_counts  ] [ 1 ] );
-
-
-free_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes [ * ( __uint64_t * ) note_silts_counts ] );
 
 
 
-* ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ] = * ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ] -1;
+
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes [ 0 ] [ 1 ]
+
+=
+
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes  [ 0 ] [ 1 ] -1;
 
 
 
-* ( __uint64_t * ) note_silts_sizes = 8 * ( 1 + * ( __uint64_t * ) that_fst_branches_lakes  [ 0 ] [ 1 ] );
-
-
-resize_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes, note_silts_sizes );
 
 
 
-* ( __uint64_t * ) note_silts_counts = * ( __uint64_t * ) note_silts_counts  -  1;
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 0 ] );
+
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts  ] [ 1 ] );
+
+
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] );
+
+
+
+
+
+
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
+
+=
+
+( 1 + * ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes  [ 0 ] [ 1 ] )
+
+*
+
+( * ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_waters_sizes );
+
+
+
+
+
+resize_fst_roots_lakes_waves
+
+(
+
+( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes,
+
+note_silts_sizes
+
+);
+
+
+
+
+
+
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_counts
+
+=
+
+* ( that_fst_branches_threads_prepare_silts * ) note_silts_counts - 1;
+
+
+
+
 
 }
 
@@ -79,15 +146,19 @@ free_fst_roots_lakes_waves ( & note_silts_sizes );
 
 
 
-free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ 0 ] [ 1 ] );
-
-free_fst_roots_lakes_waves ( & that_fst_branches_lakes [ 0 ] [ 0 ] );
 
 
-free_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes [ 0 ] );
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] [ 1 ] );
+
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] [ 0 ] );
 
 
-free_fst_roots_lakes_waves ( ( void * * ) & that_fst_branches_lakes );
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes [ 0 ] );
+
+
+free_fst_roots_lakes_waves ( ( that_fst_branches_threads_prepare_waters * ) & that_fst_branches_lakes );
+
+
 
 
 
