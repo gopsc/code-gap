@@ -229,7 +229,7 @@ while
 
 
 
-* ( __uint64_t * ) * that_silts_results  = 1;
+* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results  = 1;
 
 
 
