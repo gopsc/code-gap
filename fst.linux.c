@@ -206,18 +206,18 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/bubbles/end.computer"
 
-//
+
 
 #include "./branches/trees/dirents/is.linux"
 
-#include "./branches/trees/dirents/create.linux" // __uint8_t and numbers may changed
+#include "./branches/trees/dirents/create.linux"
 
 #include "./branches/trees/dirents/remove.linux"
 
 
 #include "./branches/trees/files/is.linux"
 
-#include "./branches/trees/files/save.linux"  //  __uint8_t and numbers may changed
+#include "./branches/trees/files/save.linux"
 
 #include "./branches/trees/files/get.linux"
 
