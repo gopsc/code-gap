@@ -33,16 +33,26 @@ that_silts_results
 
 
 
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts = NULL;
 
 
+
+
+while ( note_silts_counts == NULL )
+
+{
+
+
+
 note_silts_counts = malloc
 
-(
-
-1 *
+( 1 *
 
 ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
 
@@ -50,10 +60,23 @@ note_silts_counts = malloc
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
+
 
 while
 
@@ -75,13 +98,27 @@ while
 
 {
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1;
 
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -91,6 +128,14 @@ while
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts;
+
+
+
+
+
+
+
+
 
 
 

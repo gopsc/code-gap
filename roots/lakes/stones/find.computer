@@ -37,12 +37,28 @@ that_fst_roots_threads_prepare_waters
 
 
 
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_lengths_targets = NULL;
 
 
-note_silts_lengths_targets   =   malloc
+
+
+while ( note_silts_lengths_targets == NULL )
+
+{
+
+
+
+note_silts_lengths_targets = malloc
 
 ( 1 *
 
@@ -52,9 +68,14 @@ note_silts_lengths_targets   =   malloc
 
 
 
+}
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets   =   0;
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
 
 while
 
@@ -89,18 +110,38 @@ while
 
 
 
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_lengths_found = NULL;
 
 
-note_silts_lengths_found   =   malloc
+
+
+while ( note_silts_lengths_found == NULL )
+
+{
+
+
+
+note_silts_lengths_found = malloc
 
 ( 1 * 
 
 * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes
 
 );
+
+
+
+}
 
 
 
@@ -142,6 +183,17 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 if
 
 (
@@ -157,12 +209,17 @@ if
 {
 
 
-* that_waters_results   =   NULL;
+
+
+* that_waters_results = NULL;
+
+
 
 
 free ( note_silts_lengths_targets );
 
 free ( note_silts_lengths_found );
+
 
 return NULL;
 
@@ -173,9 +230,27 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts_targets = NULL;
+
+
+
+
+while ( note_silts_counts_targets == NULL )
+
+{
+
 
 
 note_silts_counts_targets = malloc
@@ -188,10 +263,35 @@ note_silts_counts_targets = malloc
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts_found = NULL;
+
+
+
+
+while ( note_silts_counts_found == NULL )
+
+{
+
 
 
 note_silts_counts_found = malloc
@@ -204,6 +304,22 @@ note_silts_counts_found = malloc
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -211,7 +327,15 @@ that_fst_roots_threads_prepare_waters
 note_silts_switches = NULL;
 
 
-note_silts_switches   =   malloc
+
+
+while ( note_silts_switches == NULL )
+
+{
+
+
+
+note_silts_switches = malloc
 
 ( 1 * 
 
@@ -220,7 +344,18 @@ note_silts_switches   =   malloc
 );
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,7 +384,16 @@ while
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found   =   0;
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found = 0;
 
 
 while
@@ -265,6 +409,10 @@ while
 )
 
 {
+
+
+
+
 
 
 
@@ -302,17 +450,21 @@ if
 
 )
 
+
 )
 
 {
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches   =   0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
 
 break;
 
 
 }
+
+
+
 
 
 
@@ -339,7 +491,7 @@ else if
 )
 
 
-!=
+==
 
 
 * (
@@ -366,6 +518,9 @@ else if
 
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
 
 =
@@ -378,9 +533,29 @@ else if
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 1 )
 
 {
+
+
+
+
+
+
+
+
 
 
 * that_waters_results
@@ -395,10 +570,23 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 1 )
 
 
 
+
+
+
+
+
+
+
 break;
 
-
 }
+
+
+
+
+
+
+
 
 
 
@@ -416,6 +604,19 @@ break;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
 
 {
@@ -423,6 +624,16 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
 * that_waters_results   =   NULL;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

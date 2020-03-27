@@ -26,6 +26,66 @@ that_fst_roots_threads_prepare_waters
 
 
 
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_created = NULL;
+
+
+
+
+
+
+
+
+
+
+
+while ( note_waters_created == NULL )
+
+{
+
+
+
+
+
+note_waters_created = malloc
+
+( 1 *
+
+( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
+
+);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+* that_waters_created = note_waters_created;
+
+
+
+
+
+
+
+
+/*
+
 that_fst_roots_threads_prepare_waters
 
 note_waters_created = NULL;
@@ -53,6 +113,11 @@ else if ( note_waters_created != NULL )
 * that_waters_created = note_waters_created;
 
 }
+
+*/
+
+
+
 
 
 

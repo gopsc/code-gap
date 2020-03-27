@@ -13,7 +13,6 @@ that_fst_roots_threads_prepare_waters
 
 append_fst_roots_lakes_stones
 
-
 (
 
 that_fst_roots_threads_prepare_waters
@@ -33,20 +32,38 @@ that_stones_append
 
 
 
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts_targets = NULL;
 
 
+
+
+while ( note_silts_counts_targets == NULL )
+
+{
+
+
 note_silts_counts_targets = malloc
 
-(
-
-1 *
+( 1 *
 
 ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
 
 );
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -56,15 +73,31 @@ that_fst_roots_threads_prepare_waters
 note_silts_counts_append = NULL;
 
 
+
+
+while ( note_silts_counts_append == NULL )
+
+{
+
+
+
 note_silts_counts_append = malloc
 
-(
-
-1 *
+( 1 *
 
 ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
 
 );
+
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -94,11 +127,17 @@ while
 
 {
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets + 1;
+
+
+
 
 }
 
@@ -106,7 +145,12 @@ while
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append   =   0;
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append = 0;
 
 while
 
@@ -129,6 +173,8 @@ while
 {
 
 
+
+
 * (
 
 ( that_fst_roots_threads_prepare_stones * ) that_stones_targets
@@ -143,7 +189,9 @@ while
 
 )
 
+
 =
+
 
 * (
 
@@ -160,13 +208,24 @@ while
 
 
 
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append + 1;
 
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -187,6 +246,11 @@ while
 
 
 ) = '\0';
+
+
+
+
+
 
 
 

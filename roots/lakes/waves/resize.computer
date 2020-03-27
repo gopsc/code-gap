@@ -34,9 +34,26 @@ that_silts_sizes
 
 
 
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_waters_resized = NULL;
+
+
+
+
+
+
+
+
+while ( note_waters_resized == NULL )
+
+{
+
 
 
 note_waters_resized = realloc
@@ -50,27 +67,20 @@ note_waters_resized = realloc
 );
 
 
-
-
-
-
-if ( note_waters_resized ==  NULL )
-
-{
-
-* that_waters_resized = NULL;
-
 }
 
 
 
-else if ( note_waters_resized != NULL )
 
-{
+
+
+
+
 
 * that_waters_resized = note_waters_resized;
 
-}
+
+
 
 
 

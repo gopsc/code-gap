@@ -37,9 +37,21 @@ that_silts_results
 
 
 
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_lengths_compared = NULL;
+
+
+
+
+while ( note_silts_lengths_compared == NULL )
+
+{
+
 
 
 note_silts_lengths_compared = malloc
@@ -49,6 +61,11 @@ note_silts_lengths_compared = malloc
 ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
 
 );
+
+
+
+}
+
 
 
 
@@ -90,9 +107,25 @@ while
 
 
 
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_lengths_compare = NULL;
+
+
+
+
+while ( note_silts_lengths_compare == NULL )
+
+{
+
 
 
 note_silts_lengths_compare   =   malloc
@@ -103,6 +136,9 @@ note_silts_lengths_compare   =   malloc
 
 );
 
+
+
+}
 
 
 
@@ -144,6 +180,10 @@ while
 
 
 
+
+
+
+
 if
 
 (
@@ -178,18 +218,51 @@ return  NULL;
 
 
 
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts = NULL;
 
 
-note_silts_counts   =   malloc
+
+
+while ( note_silts_counts == NULL )
+
+{
+
+
+
+
+note_silts_counts = malloc
 
 ( 1 *
 
 ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
 
 );
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -215,16 +288,36 @@ while
 
 
 
+
+
 if
 
 (
 
 
-* ( ( that_fst_roots_threads_prepare_stones * ) that_stones_compared  +  * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts  )
+* (
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_compared
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
+
+)
+
 
 !=
 
-* ( ( that_fst_roots_threads_prepare_stones * ) that_stones_compare  +  * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts  )
+
+* (
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_compare
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
+
+)
 
 
 )
@@ -232,7 +325,13 @@ if
 {
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
+
+
+
 
 
 free ( note_silts_lengths_compared );
@@ -241,9 +340,11 @@ free ( note_silts_lengths_compare );
 
 free ( note_silts_counts  );
 
+
 return  NULL;
 
 }
+
 
 
 
@@ -263,7 +364,14 @@ return  NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results   =   1;
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 1;
 
 
 

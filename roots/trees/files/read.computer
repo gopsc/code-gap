@@ -45,7 +45,7 @@ if ( * that_stones_results == NULL )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results = 0;
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
 
 return NULL;
 
@@ -87,7 +87,7 @@ if
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results  = 0;
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results  = 0;
 
 return NULL;
 
