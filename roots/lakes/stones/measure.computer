@@ -23,7 +23,7 @@ that_stones_targets,
 
 that_fst_roots_threads_prepare_waters
 
-* that_silts_results
+that_silts_results
 
 )
 
@@ -86,7 +86,7 @@ while
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results
 
 =
 

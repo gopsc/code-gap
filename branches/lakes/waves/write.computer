@@ -145,7 +145,7 @@ that_stones_names,
 that_fst_branches_lakes  [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 0 ],
 
 
-& note_silts_results
+note_silts_results
 
 );
 
@@ -164,7 +164,7 @@ measure_fst_roots_lakes_stones
 
 that_stones_contents,
 
-& note_silts_lengths_wrote
+note_silts_lengths_wrote
 
 );
 
@@ -175,7 +175,7 @@ measure_fst_roots_lakes_stones
 
 that_fst_branches_lakes  [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 1 ],
 
-& note_silts_lengths_targets
+note_silts_lengths_targets
 
 );
 
@@ -342,9 +342,9 @@ return  that_fst_roots_lakes_prepare;
 
 
 
-measure_fst_roots_lakes_stones ( that_stones_names, & note_silts_lengths_names );
+measure_fst_roots_lakes_stones ( that_stones_names, note_silts_lengths_names );
 
-measure_fst_roots_lakes_stones ( that_stones_contents, & note_silts_lengths_wrote );
+measure_fst_roots_lakes_stones ( that_stones_contents, note_silts_lengths_wrote );
 
 
 

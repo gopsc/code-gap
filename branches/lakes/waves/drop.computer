@@ -125,7 +125,7 @@ that_stones_names,
 that_fst_branches_lakes  [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 0 ],
 
 
-& note_silts_results
+note_silts_results
 
 );
 
@@ -228,7 +228,6 @@ if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_switches == 1 )
 
 
 
-// void *  for  eight bytes  for  sixtie-four bits  device
 
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 

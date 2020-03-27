@@ -94,7 +94,7 @@ that_stones_names,
 that_fst_branches_lakes [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 0 ],
 
 
-& note_silts_results
+note_silts_results
 
 );
 
