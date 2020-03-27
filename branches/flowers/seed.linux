@@ -17,7 +17,6 @@
 */
 
 
-
 that_fst_roots_threads_prepare_silts
 
 main
@@ -42,11 +41,37 @@ that_fst_roots_threads_prepare_stones
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 begin_fst_branches_threads ();
 
 begin_fst_branches_lakes ();
 
 begin_fst_branches_lakes_bubbles ();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,11 +83,38 @@ begin_fst_branches_lakes_bubbles ();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 end_fst_branches_lakes_bubbles ();
 
 end_fst_branches_lakes ();
 
 end_fst_branches_threads ();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

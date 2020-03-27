@@ -34,9 +34,28 @@ that_silts_results
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_results = NULL;
+
+
+
+
+while ( note_silts_results == NULL )
+
+{
+
 
 
 note_silts_results  =  malloc
@@ -49,6 +68,22 @@ note_silts_results  =  malloc
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_results
@@ -56,6 +91,19 @@ note_silts_results  =  malloc
 =
 
 mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,6 +121,8 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 
 
+
+
 else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -85,7 +135,21 @@ else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 free ( note_silts_results );
+
 
 return NULL;
 
