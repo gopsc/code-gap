@@ -250,7 +250,7 @@ copy_fst_roots_lakes_stones ( note_waters_names, "\0" );
 
 
    
-is_fst_roots_trees_dirents ( note_stones_names, & note_silts_results );
+is_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
 
 
 
@@ -261,7 +261,7 @@ if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 
-create_fst_roots_trees_dirents ( note_stones_names, & note_silts_results );
+create_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
 
 
 
@@ -319,7 +319,7 @@ free_fst_roots_lakes_waves ( & note_silts_counts_two );
 
 
 
-is_fst_roots_trees_dirents ( note_waters_names_dirents, & note_silts_results );
+is_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
 
 
 
@@ -328,7 +328,7 @@ if  (  * ( that_fst_branches_threads_prepare_silts * ) note_silts_results   ==  
 {
 
 
-create_fst_roots_trees_dirents ( note_waters_names_dirents, & note_silts_results );
+create_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
 
 
 

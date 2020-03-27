@@ -64,7 +64,7 @@ create_fst_roots_lakes_waves ( & note_silts_results );
 
 
 
-is_fst_roots_trees_files  (  note_waters_names,  & note_silts_results  );
+is_fst_roots_trees_files ( note_waters_names, note_silts_results );
 
 
 

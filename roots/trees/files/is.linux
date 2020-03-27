@@ -25,7 +25,7 @@ that_stones_names,
 
 that_fst_roots_threads_prepare_waters
 
-* that_silts_results
+that_silts_results
 
 )
 
@@ -63,7 +63,7 @@ S_ISREG ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
 {
 
 
-* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results  =  1;
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results  =  1;
 
 
 free ( note_structures_status );
@@ -79,7 +79,7 @@ return  NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) * that_silts_results  =  0;
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results  =  0;
 
 
 free ( note_structures_status );
