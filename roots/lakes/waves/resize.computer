@@ -17,9 +17,9 @@ resize_fst_roots_lakes_waves
 
 
 
-that_fst_roots_threads_prepare_waters *
+that_fst_roots_threads_prepare_waters
 
-that_waters_resized,
+* that_waters_resized,
 
 
 that_fst_roots_threads_prepare_waters
@@ -42,6 +42,7 @@ that_silts_sizes
 that_fst_roots_threads_prepare_waters
 
 note_waters_resized = NULL;
+
 
 
 
@@ -78,6 +79,8 @@ note_waters_resized = realloc
 
 
 * that_waters_resized = note_waters_resized;
+
+
 
 
 

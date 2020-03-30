@@ -44,6 +44,7 @@ note_silts_counts = NULL;
 
 
 
+
 while ( note_silts_counts == NULL )
 
 {
@@ -98,17 +99,11 @@ while
 
 {
 
-
-
-
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1;
-
-
-
 
 }
 

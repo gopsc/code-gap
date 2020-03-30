@@ -127,19 +127,15 @@ while
 
 {
 
-
-
-
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets + 1;
 
-
-
-
 }
+
+
 
 
 
@@ -215,10 +211,6 @@ while
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append + 1;
 
-
-
-
-
 }
 
 
@@ -246,6 +238,7 @@ while
 
 
 ) = '\0';
+
 
 
 

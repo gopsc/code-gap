@@ -35,9 +35,12 @@ that_stones_copied
 
 
 
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts = NULL;
+
 
 
 
@@ -57,6 +60,7 @@ note_silts_counts = malloc
 
 
 }
+
 
 
 
@@ -96,6 +100,7 @@ while
 
 
 
+
 * (
 
 ( that_fst_roots_threads_prepare_stones * ) that_stones_targets
@@ -127,12 +132,12 @@ while
 
 
 
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1;
-
 
 }
 
@@ -154,6 +159,7 @@ while
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
 
 ) = '\0';
+
 
 
 

@@ -84,43 +84,6 @@ note_waters_created = malloc
 
 
 
-/*
-
-that_fst_roots_threads_prepare_waters
-
-note_waters_created = NULL;
-
-
-note_waters_created = malloc ( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes );
-
-
-
-
-if ( note_waters_created == NULL )
-
-{
-
-* that_waters_created = NULL;
-
-}
-
-
-
-else if ( note_waters_created != NULL )
-
-{
-
-* that_waters_created = note_waters_created;
-
-}
-
-*/
-
-
-
-
-
-
 
 return NULL;
 
