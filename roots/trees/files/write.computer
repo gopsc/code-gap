@@ -58,7 +58,7 @@ note_files_saved = NULL;
 
 
 
-note_files_saved = ( that_fst_roots_threads_prepare_waters ) fopen  (  that_stones_names,  "w"  );
+note_files_saved = ( that_fst_roots_threads_prepare_waters ) fopen  (  that_stones_names,  "wb"  );
 
 
 
@@ -133,57 +133,6 @@ note_silts_lengths_contents = malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents  =  0;
-
-
-while
-
-(
-
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_contents
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents
-
-) != '\0'
-
-
-)
-
-{
-
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents
-
-=
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents + 1;
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 that_fst_roots_threads_prepare_waters
 
@@ -207,6 +156,55 @@ note_silts_results  =  malloc
 );
 
 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents  =  0;
+
+
+while
+
+(
+
+
+* (
+
+( that_fst_roots_threads_prepare_stones * ) that_stones_contents
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents
+
+) != '\0'
+
+
+)
+
+{
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents
+
+=
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents + 1;
 
 }
 

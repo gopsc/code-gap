@@ -58,6 +58,21 @@ note_waters_resized = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if ( * that_stones_results == NULL )
 
 {
@@ -157,6 +172,25 @@ note_waters_resized = realloc
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_stones * ) * that_stones_results = '\0';
 
 
@@ -191,7 +225,6 @@ note_waters_resized = realloc
 that_fst_roots_threads_prepare_waters
 
 note_files_got = NULL;
-
 
 
 
@@ -428,11 +461,6 @@ note_waters_resized = realloc
 
 
 
-
-
-
-
-
 * that_stones_results = note_waters_resized;
 
 
@@ -443,7 +471,15 @@ note_waters_resized = realloc
 
 
 
-* ( ( that_fst_roots_threads_prepare_stones * ) * that_stones_results + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )
+* (
+
+( that_fst_roots_threads_prepare_stones * ) * that_stones_results
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
+
+)
 
 =
 
@@ -453,7 +489,17 @@ note_waters_resized = realloc
 
 
 
-* ( ( that_fst_roots_threads_prepare_stones * ) * that_stones_results + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1 )
+
+
+* (
+
+( that_fst_roots_threads_prepare_stones * ) * that_stones_results
+
++
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1
+
+)
 
 = '\0';
 
