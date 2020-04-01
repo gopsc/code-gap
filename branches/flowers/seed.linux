@@ -17,18 +17,18 @@
 */
 
 
-that_fst_roots_threads_prepare_silts
+that_fst_branches_threads_prepare_silts
 
 main
 
 (
 
-that_fst_roots_threads_prepare_silts
+that_fst_branches_threads_prepare_silts
 
 argc,
 
 
-that_fst_roots_threads_prepare_stones
+that_fst_branches_threads_prepare_stones
 
 * argv []
 
