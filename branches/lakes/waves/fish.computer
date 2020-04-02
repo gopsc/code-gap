@@ -122,7 +122,7 @@ while
 
 <=
 
-* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes  [ 0 ] [ 1 ]
+* ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_lakes_prepare [ 0 ] [ 1 ]
 
 )
 
@@ -146,7 +146,7 @@ compare_fst_roots_lakes_stones
 
 that_stones_names,
 
-that_fst_branches_lakes [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 0 ],
+that_fst_branches_lakes_prepare [ * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts ] [ 0 ],
 
 
 note_silts_results
@@ -178,7 +178,7 @@ if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
 
 
 
-* that_waters_results = that_fst_branches_lakes  [  * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts  ] [ 1 ];
+* that_waters_results = that_fst_branches_lakes_prepare  [  * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts  ] [ 1 ];
 
 
 
