@@ -1,4 +1,4 @@
-add "may changing" box in lakes, don't do anything in "fst/branches/lakes/waves" when box is full
+add " busy " box in lakes, wait when box is full
 
 change lake to "that_fst_branches_threads_prepare_waters"
 
