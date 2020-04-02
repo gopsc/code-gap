@@ -1,5 +1,0 @@
-void * variable;
-variable = (&variable) [0]
-
-void * variable;
-*(variable+1) = variable[1] 
