@@ -210,14 +210,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/trees/dirents/is.linux"
 
-#include "./branches/trees/dirents/create.linux"
-//
+#include "./branches/trees/dirents/create.linux" // success when it pass files with a  name samed
+
 #include "./branches/trees/dirents/remove.linux"
 
 
 #include "./branches/trees/files/is.linux"
 
-#include "./branches/trees/files/save.linux"
+#include "./branches/trees/files/save.linux" // failed if it is a dirents, but success when it pass files with a names samed
 
 #include "./branches/trees/files/get.linux"
 
