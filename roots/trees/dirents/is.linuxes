@@ -6,7 +6,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computer"
+#include "./../../../roots/threads/prepare.computers"
 
 */
 
@@ -45,6 +45,9 @@ that_silts_results
 
 
 
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_structures_status = NULL;
@@ -57,12 +60,16 @@ while ( note_structures_status == NULL )
 {
 
 
-
 note_structures_status = malloc ( 1 * sizeof ( struct stat ) );
 
 
-
 }
+
+
+
+
+
+
 
 
 
@@ -90,6 +97,14 @@ if ( lstat ( that_stones_names, note_structures_status ) == 0 )
 
 
 
+
+
+
+
+
+
+
+
 if
 
 (
@@ -99,6 +114,9 @@ S_ISDIR ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
 )
 
 {
+
+
+
 
 
 
@@ -117,6 +135,9 @@ S_ISDIR ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
 
 
 
+
+
+
 free ( note_structures_status );
 
 return  NULL;
@@ -125,6 +146,12 @@ return  NULL;
 
 
 }
+
+
+
+
+
+
 
 
 

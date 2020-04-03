@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computer"
+#include "./../../../roots/threads/prepare.computers"
 
 */
 
@@ -28,6 +28,18 @@ that_silts_results
 )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,6 +74,13 @@ note_silts_counts = malloc
 
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -118,11 +137,30 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) that_silts_results
 
 =
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts;
+
+
+
+
+
+
+
+
+
 
 
 

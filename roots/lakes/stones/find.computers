@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computer"
+#include "./../../../roots/threads/prepare.computers"
 
 */
 
@@ -32,6 +32,14 @@ that_fst_roots_threads_prepare_waters
 )
 
 {
+
+
+
+
+
+
+
+
 
 
 
@@ -75,7 +83,15 @@ note_silts_lengths_targets = malloc
 
 
 
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+
 
 while
 
@@ -104,6 +120,15 @@ while
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets + 1;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,7 +174,11 @@ note_silts_lengths_found = malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found   =   0;
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
 
 
 while
@@ -179,6 +208,14 @@ while
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found + 1;
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -240,6 +277,13 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts_targets = NULL;
@@ -264,6 +308,12 @@ note_silts_counts_targets = malloc
 
 
 }
+
+
+
+
+
+
 
 
 
@@ -322,6 +372,11 @@ note_silts_counts_found = malloc
 
 
 
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_switches = NULL;
@@ -362,7 +417,15 @@ note_silts_switches = malloc
 
 
 
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
+
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
 
@@ -371,15 +434,21 @@ while
 
 (
 
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
+
 
 <
 
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets
+
 
 )
 
 {
+
+
 
 
 
@@ -409,6 +478,9 @@ while
 )
 
 {
+
+
+
 
 
 
@@ -471,6 +543,12 @@ break;
 
 
 
+
+
+
+
+
+
 else if
 
 (
@@ -521,6 +599,11 @@ else if
 
 
 
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
 
 =
@@ -528,8 +611,6 @@ else if
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found + 1;
 
 }
-
-
 
 
 
@@ -617,6 +698,11 @@ break;
 
 
 
+
+
+
+
+
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
 
 {
@@ -624,6 +710,14 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
 * that_waters_results   =   NULL;
 
 }
+
+
+
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computer"
+#include "./../../../roots/threads/prepare.computers"
 
 */
 
@@ -33,6 +33,19 @@ that_silts_results
 )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,7 +84,15 @@ note_silts_lengths_compared = malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared   =   0;
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared = 0;
+
 
 while
 
@@ -100,6 +121,15 @@ while
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared + 1;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -144,7 +174,16 @@ note_silts_lengths_compare   =   malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare   =   0;
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare = 0;
 
 while
 
@@ -173,6 +212,17 @@ while
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare + 1;
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -226,6 +276,14 @@ return  NULL;
 
 
 
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts = NULL;
@@ -236,7 +294,6 @@ note_silts_counts = NULL;
 while ( note_silts_counts == NULL )
 
 {
-
 
 
 
@@ -268,7 +325,14 @@ note_silts_counts = malloc
 
 
 
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
+
 
 while
 
@@ -283,6 +347,14 @@ while
 )
 
 {
+
+
+
+
+
+
+
+
 
 
 
@@ -328,7 +400,13 @@ if
 
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
+
+
+
 
 
 
@@ -350,6 +428,16 @@ return  NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
 
 =
@@ -357,6 +445,16 @@ return  NULL;
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

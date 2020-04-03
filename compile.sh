@@ -1,1 +1,1 @@
-cc ./fst/fst.linux.c -o ?
+cc ./fst/fst.linuxes.c -o ?

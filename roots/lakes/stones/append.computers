@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computer"
+#include "./../../../roots/threads/prepare.computers"
 
 */
 
@@ -27,6 +27,17 @@ that_stones_append
 )
 
 {
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,6 +79,18 @@ note_silts_counts_targets = malloc
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts_append = NULL;
@@ -92,6 +115,16 @@ note_silts_counts_append = malloc
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,6 +179,17 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append = 0;
 
 while
@@ -167,6 +211,16 @@ while
 )
 
 {
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -205,6 +259,14 @@ while
 
 
 
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append
 
 =
@@ -212,6 +274,17 @@ while
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append + 1;
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -238,6 +311,15 @@ while
 
 
 ) = '\0';
+
+
+
+
+
+
+
+
+
 
 
 

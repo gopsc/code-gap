@@ -1,19 +1,19 @@
 /*
 
-#include <stdio.h>
+#include  <stdlib.h>
 
-#include  <sys/stat.h>
+#include  <stdio.h>
 
 
 
-#include "./../../../roots/threads/prepare.computer"
+#include "./../../roots/threads/prepare.computers"
 
 */
 
 
 that_fst_roots_threads_prepare_waters
 
-create_fst_roots_trees_dirents
+remove_fst_roots_trees
 
 (
 
@@ -29,6 +29,12 @@ that_silts_results
 )
 
 {
+
+
+
+
+
+
 
 
 
@@ -86,11 +92,17 @@ note_silts_results  =  malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_results
 
-=
 
-mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = remove  (  that_stones_names  );
+
+
+
+
 
 
 
@@ -123,6 +135,10 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 
 
+
+
+
+
 else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -130,6 +146,9 @@ else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 * ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 1;
 
 }
+
+
+
 
 
 

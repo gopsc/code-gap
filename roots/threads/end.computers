@@ -4,7 +4,7 @@
 
 
 
-#include "./../../roots/threads/prepare.computer"
+#include "./../../roots/threads/prepare.computers"
 
 */
 
@@ -19,25 +19,32 @@ end_fst_roots_threads ()
 
 
 
+
+
 free ( that_fst_roots_threads_prepare_waters_sizes );
-
-
-free ( that_fst_roots_threads_prepare_silts_sizes );
-
-
-free ( that_fst_roots_threads_prepare_stones_sizes );
-
-
-
 
 
 that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
+
+
+
+free ( that_fst_roots_threads_prepare_silts_sizes );
+
+
 that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 
+
+
+
+free ( that_fst_roots_threads_prepare_stones_sizes );
+
+
 that_fst_roots_threads_prepare_stones_sizes = NULL;
+
+
 
 
 

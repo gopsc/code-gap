@@ -62,12 +62,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include <pthread.h> // for thread
-
-
-
 #include <signal.h> // for check_deamon() ->
                                // for tcp block out.
+
+
+
+#include <pthread.h> // for thread
 
 
 
@@ -95,8 +95,13 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 /*
 
+
+
+#include <arpa/inet.h>
+                                    // for network
+
 #include <sys/socket.h>
-                                      // for network -> socket
+                                    // for network -> socket
 
 
 
@@ -104,12 +109,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
                                     // for check_deamon() ->
 
 #include <sys/param.h>
-                                      // for ...
-
-
-
-#include <arpa/inet.h>
-                                    // for network
+                                    // for ...
 
 */
 
@@ -129,55 +129,55 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/intros.computers"
 
+
+
+
+#include "./roots/threads/prepare.computers"
+
+#include "./roots/threads/begin.computers"
+
+#include "./roots/threads/end.computers"
+
+
+
+#include "./roots/lakes/prepare.computers"
+
+
+#include "./roots/lakes/waves/create.computers"
+
+#include "./roots/lakes/waves/resize.computers" // may last when it fail
+
+#include "./roots/lakes/waves/free.computers"
+
+
+#include "./roots/lakes/stones/copy.computers"
+
+#include "./roots/lakes/stones/append.computers"
+
+#include "./roots/lakes/stones/measure.computers"
+
+#include "./roots/lakes/stones/compare.computers"
+
+#include "./roots/lakes/stones/find.computers"
+
+
+
+#include "./roots/trees/remove.computers"
+
+
+#include "./roots/trees/dirents/is.linuxes" // note_structure
+
+#include "./roots/trees/dirents/create.linuxes"
+
+
+#include "./roots/trees/files/is.linuxes" // note_structure
+
+#include "./roots/trees/files/write.computers" // note_files
+
+#include "./roots/trees/files/read.computers" // note_files, can't return failed
+
+
 //
-
-
-#include "./roots/threads/prepare.computer"
-
-#include "./roots/threads/begin.computer"
-
-#include "./roots/threads/end.computer"
-
-
-
-#include "./roots/lakes/prepare.computer"
-
-
-#include "./roots/lakes/waves/create.computer"
-
-#include "./roots/lakes/waves/resize.computer"
-
-#include "./roots/lakes/waves/free.computer"
-
-
-#include "./roots/lakes/stones/copy.computer"
-
-#include "./roots/lakes/stones/append.computer"
-
-#include "./roots/lakes/stones/measure.computer"
-
-#include "./roots/lakes/stones/compare.computer"
-
-#include "./roots/lakes/stones/find.computer"
-
-
-
-#include "./roots/trees/remove.computer"
-
-
-#include "./roots/trees/dirents/is.linux" // note_structure
-
-#include "./roots/trees/dirents/create.linux"
-
-
-#include "./roots/trees/files/is.linux" // note_structure
-
-#include "./roots/trees/files/write.computer" // note_files
-
-#include "./roots/trees/files/read.computer" // note_files, can't return failed
-
-
-
 
 #include "./branches/threads/prepare.computer"
 
