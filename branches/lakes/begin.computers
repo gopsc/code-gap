@@ -1,23 +1,23 @@
 /*
 
-#include "./../../roots/lakes/prepare.computer"
+#include "./../../roots/lakes/prepare.computers"
 
 
-#include "./../../roots/lakes/waves/create.computer"
+#include "./../../roots/lakes/waves/create.computers"
 
-#include "./../../roots/lakes/waves/resize.computer"
+#include "./../../roots/lakes/waves/resize.computers"
 
-#include "./../../roots/lakes/waves/free.computer"
-
-
-#include "./../../roots/lakes/stones/copy.computer"
+#include "./../../roots/lakes/waves/free.computers"
 
 
+#include "./../../roots/lakes/stones/copy.computers"
 
-#include "./../../branches/threads/prepare.computer"
 
 
-#include "./../../branches/lakes/prepare.computer"
+#include "./../../branches/threads/prepare.computers"
+
+
+#include "./../../branches/lakes/prepare.computers"
 
 */
 
@@ -27,6 +27,8 @@ that_fst_branches_threads_prepare_waters
 begin_fst_branches_lakes ()
 
 {
+
+
 
 
 
@@ -138,7 +140,7 @@ create_fst_roots_lakes_waves
 
 ( that_fst_branches_threads_prepare_waters * )
 
-( & (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  ) )
+( & (  * (  ( ( that_fst_branches_threads_prepare_waters * ) that_fst_branches_lakes_prepare )  + 0 )  ) )
 
 );
 
@@ -153,7 +155,7 @@ resize_fst_roots_lakes_waves
 
 ( that_fst_branches_threads_prepare_waters * )
 
-( & (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  ) ),
+( & (  * (  ( ( that_fst_branches_threads_prepare_waters * ) that_fst_branches_lakes_prepare )  + 0 )  ) ),
 
 
 note_silts_sizes
@@ -182,7 +184,7 @@ note_silts_sizes
 
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 
-=  19 * (
+=  27 * (
 
 * ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_stones_sizes
 
@@ -335,7 +337,7 @@ copy_fst_roots_lakes_stones
 (  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 0 )   ),
 
 
-( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes"
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,prepare"
 
 
 );

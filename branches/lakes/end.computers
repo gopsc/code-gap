@@ -1,20 +1,20 @@
 /*
 
-#include "./../../roots/lakes/prepare.computer"
+#include "./../../roots/lakes/prepare.computers"
 
 
-#include "./../../roots/lakes/waves/create.computer"
+#include "./../../roots/lakes/waves/create.computers"
 
-#include "./../../roots/lakes/waves/resize.computer"
+#include "./../../roots/lakes/waves/resize.computers"
 
-#include "./../../roots/lakes/waves/free.computer"
-
-
-
-#include "./../../branches/threads/prepare.computer"
+#include "./../../roots/lakes/waves/free.computers"
 
 
-#include "./../../branches/lakes/prepare.computer"
+
+#include "./../../branches/threads/prepare.computers"
+
+
+#include "./../../branches/lakes/prepare.computers"
 
 */
 
@@ -131,15 +131,28 @@ while
 
 
 
+
+
+
+
 * ( that_fst_branches_threads_prepare_silts * )
 
 (  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 1 )  )
 
+
 =
+
 
 * ( that_fst_branches_threads_prepare_silts * )
 
-(  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 1 )  ) -1;
+(  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 1 )  )
+
+
+-1;
+
+
+
+
 
 
 
@@ -163,6 +176,14 @@ free_fst_roots_lakes_waves
 
 
 
+
+
+
+
+
+
+
+
 free_fst_roots_lakes_waves
 
 (
@@ -177,15 +198,29 @@ free_fst_roots_lakes_waves
 
 
 
+
+
+
+
+
+
+
+
 free_fst_roots_lakes_waves
 
 (
 
 ( that_fst_branches_threads_prepare_waters * )
 
-( & (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  ) )
+( & (  * (  ( ( that_fst_branches_threads_prepare_waters * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  ) )
 
 );
+
+
+
+
+
+
 
 
 
@@ -217,6 +252,11 @@ free_fst_roots_lakes_waves
 
 
 
+
+
+
+
+
 resize_fst_roots_lakes_waves
 
 (
@@ -226,6 +266,12 @@ resize_fst_roots_lakes_waves
 note_silts_sizes
 
 );
+
+
+
+
+
+
 
 
 
@@ -264,6 +310,10 @@ free_fst_roots_lakes_waves ( & note_silts_sizes );
 
 
 
+
+
+
+
 free_fst_roots_lakes_waves
 
 (
@@ -273,6 +323,18 @@ free_fst_roots_lakes_waves
 ( & (  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 1 )  ) )
 
 );
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -294,15 +356,40 @@ free_fst_roots_lakes_waves
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 free_fst_roots_lakes_waves
 
 (
 
 ( that_fst_branches_threads_prepare_waters * )
 
-( & (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  ) )
+( & (  * (  ( ( that_fst_branches_threads_prepare_waters * ) that_fst_branches_lakes_prepare )  + 0 )  ) )
 
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
