@@ -1,7 +1,0 @@
-void * variable;
-& (variable + 1) 会提示&的操作数不是左值
-& ( int * ) variable 会提示&的操作数不是左值
-& (( int * ) variable + 1) 会提示&的操作数不是左值
-& ( * (variable + 1) ) 正常
-& ( * (( int * ) variable + 1) ) 正常
-& & ( * (( int * ) variable + 1)) 会提示&的操作数不是左值
