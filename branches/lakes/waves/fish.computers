@@ -1,21 +1,21 @@
 /*
 
-#include "./../../../roots/lakes/prepare.computer"
+#include "./../../../roots/lakes/prepare.computers"
 
 
-#include "./../../../roots/lakes/waves/create.computer"
+#include "./../../../roots/lakes/waves/create.computers"
 
-#include "./../../../roots/lakes/waves/free.computer"
-
-
-#include "./../../../roots/lakes/stones/compare.computer"
+#include "./../../../roots/lakes/waves/free.computers"
 
 
+#include "./../../../roots/lakes/stones/compare.computers"
 
-#include "./../../../branches/threads/prepare.computer"
 
 
-#include "./../../../branches/lakes/prepare.computer"
+#include "./../../../branches/threads/prepare.computers"
+
+
+#include "./../../../branches/lakes/prepare.computers"
 
 */
 
@@ -84,12 +84,14 @@ create_fst_roots_lakes_waves ( & note_silts_counts );
 
 
 
+
 that_fst_branches_threads_prepare_waters
 
 note_silts_results = that_fst_roots_lakes_prepare;
  
 
 create_fst_roots_lakes_waves ( & note_silts_results );
+
 
 
 
@@ -184,11 +186,13 @@ if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
 
 
 
+
 * that_waters_results
 
 =
 
 (  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  + 1 )  );
+
 
 
 

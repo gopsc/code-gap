@@ -1,27 +1,27 @@
 /*
 
-#include "./../../../roots/lakes/prepare.computer"
+#include "./../../../roots/lakes/prepare.computers"
 
 
-#include "./../../../roots/lakes/waves/create.computer"
+#include "./../../../roots/lakes/waves/create.computers"
 
-#include "./../../../roots/lakes/waves/resize.computer"
+#include "./../../../roots/lakes/waves/resize.computers"
 
-#include "./../../../roots/lakes/waves/free.computer"
-
-
-#include "./../../../roots/lakes/stones/compare.computer"
-
-#include "./../../../roots/lakes/stones/measure.computer"
-
-#include "./../../../roots/lakes/stones/copy.computer"
+#include "./../../../roots/lakes/waves/free.computers"
 
 
+#include "./../../../roots/lakes/stones/compare.computers"
 
-#include "./../../../branches/threads/prepare.computer"
+#include "./../../../roots/lakes/stones/measure.computers"
+
+#include "./../../../roots/lakes/stones/copy.computers"
 
 
-#include "./../../../branches/lakes/prepare.computer"
+
+#include "./../../../branches/threads/prepare.computers"
+
+
+#include "./../../../branches/lakes/prepare.computers"
 
 */
 
@@ -302,6 +302,9 @@ if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
 
 
 
+
+
+
 measure_fst_roots_lakes_stones
 
 (
@@ -319,6 +322,8 @@ note_silts_lengths_wrote
 
 
 
+
+
 measure_fst_roots_lakes_stones
 
 (
@@ -328,6 +333,8 @@ measure_fst_roots_lakes_stones
 note_silts_lengths_targets
 
 );
+
+
 
 
 
@@ -358,6 +365,7 @@ if
 
 
 
+
 copy_fst_roots_lakes_stones
 
 (
@@ -367,6 +375,7 @@ copy_fst_roots_lakes_stones
 that_stones_contents
 
 );
+
 
 
 
@@ -389,6 +398,10 @@ that_stones_contents
 
 
 
+
+
+
+
 resize_fst_roots_lakes_waves
 
 (
@@ -400,7 +413,14 @@ note_silts_sizes
 );
 
 
+
+
+
+
+
+
 }
+
 
 
 
@@ -427,6 +447,10 @@ else if
 
 
 
+
+
+
+
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes
 
 =
@@ -436,6 +460,10 @@ else if
 * 
 
 ( * ( that_fst_branches_threads_prepare_silts * ) that_fst_branches_threads_prepare_stones_sizes );
+
+
+
+
 
 
 
@@ -458,6 +486,9 @@ note_silts_sizes
 
 
 
+
+
+
 copy_fst_roots_lakes_stones
 
 (
@@ -473,12 +504,10 @@ that_stones_contents
 
 
 
+
+
+
 }
-
-
-
-
-
 
 
 
@@ -512,6 +541,8 @@ return  that_fst_roots_lakes_prepare;
 
 
 
+
+
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts
 
 =
@@ -519,6 +550,7 @@ return  that_fst_roots_lakes_prepare;
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts + 1;
 
 }
+
 
 
 
@@ -591,6 +623,9 @@ measure_fst_roots_lakes_stones ( that_stones_contents, note_silts_lengths_wrote 
 
 
 
+
+
+
 resize_fst_roots_lakes_waves
 
 (
@@ -628,15 +663,21 @@ note_silts_sizes
 
 
 
+
+
+
 create_fst_roots_lakes_waves
 
 (
 
 ( that_fst_branches_threads_prepare_waters * )
 
-( & (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )   + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  ) )
+( & (  * (  ( ( that_fst_branches_threads_prepare_waters * ) that_fst_branches_lakes_prepare )   + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  ) )
 
 );
+
+
+
 
 
 
@@ -650,7 +691,7 @@ resize_fst_roots_lakes_waves
 
 ( that_fst_branches_threads_prepare_waters * )
 
-( & (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  ) ),
+( & (  * (  ( ( that_fst_branches_threads_prepare_waters * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  ) ),
 
 
 note_silts_sizes
@@ -693,6 +734,9 @@ note_silts_sizes
 
 
 
+
+
+
 create_fst_roots_lakes_waves
 
 (
@@ -702,6 +746,8 @@ create_fst_roots_lakes_waves
 ( & (  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( __uint64_t * ) note_silts_counts )  + 0 )  ) )
 
 );
+
+
 
 
 
@@ -790,6 +836,9 @@ that_stones_names
 
 
 
+
+
+
 create_fst_roots_lakes_waves
 
 (
@@ -799,6 +848,9 @@ create_fst_roots_lakes_waves
 ( & (  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  + 1 )  ) )
 
 );
+
+
+
 
 
 
@@ -819,6 +871,8 @@ note_silts_sizes
 
 
 );
+
+
 
 
 
@@ -877,7 +931,11 @@ that_stones_contents
 
 * ( that_fst_branches_threads_prepare_silts * )
 
-(  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 1 )  ) + 1;
+(  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + 0 )  + 1 )  )
+
+
++ 1;
+
 
 
 
