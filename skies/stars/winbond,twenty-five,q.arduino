@@ -1,70 +1,28 @@
-
-
-
-
-/*
-
-,, roots, prepare.arduino
-
-*/
-
 #include <arduino.h>
 
-
-#define __uint64_t unsighed long
-
-#define __int64_t long
-
-/*
-
-,
-
-*/
-
-
-
-
-
-
-
-/*
-
-,, roots, winbond, twenty-five-q, prepare.arduino
-
-*/
-
-
 #include <SPI.h>
-
-
-
 
 
 /*
 
 #define READ_JEDEC_ID 0x9F
+
 #define READ_STATUS_1 0x05
+
 #define READ_DATA 0x03
+
 #define WRITE_ENABLE 0x06
+
 #define PAGE_PROGRAM 0x02
+
 #define CHIP_ERASE 0xC7
 
 */
 
 
+byte pageBuffer[256];
 
-
-
-//byte pageBuffer[256];
-
-//char str[] = "hi.";
-
-
-/*
-
-,
-
-*/
+char str[] = "hi.";
 
 
 
@@ -85,12 +43,6 @@
 
 
 
-
-/*
-
-,, roots, winbond, twenty-five-q, eraseAll.arduino
-
-*/
 
 void *  erase_roots_winbond_twenty_five_q ()
 
@@ -132,15 +84,10 @@ digitalWrite ( SS, HIGH );
 
 
 
-return 0;
+return NULL;
 
 }
 
-/*
-
-,
-
-*/
 
 
 
@@ -156,11 +103,6 @@ return 0;
 
 
 
-/*
-
-,, roots, winbond, twenty-five-q, read.arduino
-
-*/
 
 void *  read_roots_winbond_twenty_five_q
 
@@ -220,15 +162,10 @@ digitalWrite ( SS, HIGH );
 
 
 
-return 0;
+return NULL;
 
 }
 
-/*
-
-,
-
-*/
 
 
 
@@ -247,13 +184,6 @@ return 0;
 
 
 
-
-/*
-
-,, roots, winbond, twenty-five-q, write.arduino
-
-
-*/
 
 void *  write_roots_winbond_twenty_five_q
 
@@ -321,15 +251,10 @@ digitalWrite ( SS, HIGH );
 
 
 
-return 0;
+return NULL;
 
 }
 
-/*
-
-,
-
-*/
 
 
 
@@ -358,12 +283,6 @@ return 0;
 
 
 
-
-/*
-
-,, branch, flowers, seed.arduino
-
-*/
 
 void setup ()
 
@@ -425,7 +344,7 @@ Serial . println ();
 
 
 
-Serial . println ( 0x0001 );
+
 
 
 digitalWrite ( PIN_LED0, HIGH );
@@ -434,11 +353,3 @@ delay ( 2000 );
 
 
 }
-
-/*
-
-,
-
-*/
-
-
