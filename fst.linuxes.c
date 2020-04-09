@@ -206,10 +206,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/bubbles/end.computers"
 
+
+
+#include "./branches/trees/dirents/is.linuxes"
 //
-
-#include "./branches/trees/dirents/is.linux"
-
 #include "./branches/trees/dirents/create.linux" // char; success when it pass files with a  name samed
 
 #include "./branches/trees/dirents/remove.linux"
