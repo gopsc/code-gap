@@ -10,3 +10,5 @@ void * variable;
 & ( * (( int * ) variable + 1) ) 正常
 
 & & ( * (( int * ) variable + 1)) 会提示&的操作数不是左值
+
+猜测：一个非左值指针指向一个左值

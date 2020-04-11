@@ -174,7 +174,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/trees/files/write.computers" // note_files
 
-#include "./roots/trees/files/read.computers" // note_files, can't return failed
+#include "./roots/trees/files/read.computers" // note_files; can't return failed; may pre-memory small
 
 
 
@@ -209,19 +209,19 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include "./branches/trees/dirents/is.linuxes"
-//
-#include "./branches/trees/dirents/create.linux" // char; success when it pass files with a  name samed
 
-#include "./branches/trees/dirents/remove.linux"
+#include "./branches/trees/dirents/create.linuxes" // char; success when it pass files with a same name
+
+#include "./branches/trees/dirents/remove.linuxes"
 
 
-#include "./branches/trees/files/is.linux"
+#include "./branches/trees/files/is.linuxes"
 
-#include "./branches/trees/files/save.linux" // char; failed if it is a dirents, but success when it pass files with a names samed
+#include "./branches/trees/files/save.linuxes" // char; failed if it is a dirents, but success when it pass files with a names samed
 
-#include "./branches/trees/files/get.linux"
+#include "./branches/trees/files/get.linuxes"
 
-#include "./branches/trees/files/remove.linux"
+#include "./branches/trees/files/remove.linuxes"
 
 
 

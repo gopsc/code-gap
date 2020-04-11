@@ -68,6 +68,7 @@ that_fst_branches_threads_prepare_waters
 
 
 
+
 that_fst_branches_threads_prepare_waters
 
 note_waters_names_dirents = that_fst_roots_lakes_prepare;
@@ -129,6 +130,7 @@ note_silts_counts_two = that_fst_roots_lakes_prepare;
 
 
 create_fst_roots_lakes_waves ( & note_silts_counts_two );   
+
 
 
 
@@ -241,6 +243,7 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 create_fst_roots_lakes_waves ( & note_silts_results );
+
 
 
 
@@ -606,7 +609,7 @@ is_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
 
 
 
-if  (  * ( that_fst_branches_threads_prepare_silts * ) note_silts_results   ==   0  )
+if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
 

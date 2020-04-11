@@ -1,34 +1,37 @@
 /*
 
-#include "./../../../roots/lakes/prepare.computer"
+#include "./../../../roots/lakes/prepare.computers"
 
 
-#include "./../../../roots/lakes/waves/create.computer"
+#include "./../../../roots/lakes/waves/create.computers"
 
-#include "./../../../roots/lakes/waves/resize.computer"
+#include "./../../../roots/lakes/waves/resize.computers"
 
-#include "./../../../roots/lakes/waves/free.computer"
-
-
-#include "./../../../roots/lakes/stones/copy.computer"
-
-#include "./../../../roots/lakes/stones/measure.computer"
-
-#include "./../../../roots/lakes/stones/find.computer"
+#include "./../../../roots/lakes/waves/free.computers"
 
 
-#include "./../../../roots/trees/dirents/is.linux"
+#include "./../../../roots/lakes/stones/copy.computers"
 
-#include "./../../../roots/trees/dirents/create.linux"
+#include "./../../../roots/lakes/stones/measure.computers"
+
+#include "./../../../roots/lakes/stones/compare.computers"
+
+#include "./../../../roots/lakes/stones/find.computers"
+
+
+#include "./../../../roots/trees/dirents/is.linuxes"
+
+#include "./../../../roots/trees/dirents/create.linuxes"
+
+
+#include "./../../../roots/trees/files/write.computers"
 
 
 
-#include "./../../../branches/threads/prepare.computer"
+#include "./../../../branches/threads/prepare.computers"
 
 
-#include "./../../../branches/lakes/waves/write.computer"
-
-#include "./../../../branches/lakes/waves/fish.computer"
+#include "./../../../branches/lakes/waves/fish.computers"
 
 */
 
@@ -369,6 +372,7 @@ note_waters_names = note_stones_names;
 
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts_two = 0;
 
+
 while
 
 (
@@ -591,7 +595,6 @@ that_waters_results
 
 
 
-
 free_fst_roots_lakes_waves ( & note_stones_names );
 
 free_fst_roots_lakes_waves ( & note_silts_counts );
@@ -731,7 +734,7 @@ note_silts_results
 
 
 
-if (  * ( that_fst_branches_threads_prepare_silts * ) note_silts_results   ==   1  )
+if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
 
 {
 
