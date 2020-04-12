@@ -45,6 +45,16 @@ note_waters_created = NULL;
 
 
 
+if ( * that_waters_created == NULL )
+
+{
+
+
+
+
+
+
+
 while ( note_waters_created == NULL )
 
 {
@@ -72,10 +82,13 @@ note_waters_created = malloc
 
 
 
-
-
-
 * that_waters_created = note_waters_created;
+
+
+
+
+
+}
 
 
 

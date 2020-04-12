@@ -143,9 +143,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/lakes/prepare.computers"
 
 
-#include "./roots/lakes/waves/create.computers"
-
-#include "./roots/lakes/waves/resize.computers" // may last when it fail
+#include "./roots/lakes/waves/create.computers" // variable in mast be null
+//
+#include "./roots/lakes/waves/resize.computers" // may lost when it fail
 
 #include "./roots/lakes/waves/free.computers"
 
