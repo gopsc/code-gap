@@ -145,9 +145,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/waves/create.computers" // variable in mast be null
 
-#include "./roots/lakes/waves/resize.computers" // may lost when it fail
+#include "./roots/lakes/waves/resize.computers" // may lost when it fail; variable in mast be not null
 
-#include "./roots/lakes/waves/free.computers" // may lost when it fail
+#include "./roots/lakes/waves/free.computers" // may lost when it fail; variable in mast be not null
 
 
 #include "./roots/lakes/stones/copy.computers"
@@ -160,7 +160,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/stones/find.computers"
 
-//
+
 
 #include "./roots/trees/remove.computers"
 
@@ -177,7 +177,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/trees/files/read.computers" // note_files; can't return failed; may pre-memory small
 
 
-
+//
 
 #include "./branches/threads/prepare.computers"
 
