@@ -117,20 +117,20 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./intros.glasses"
+#include "./intros.notes"
+
+#include "./skies/intros.notes"
+
+#include "./rivers/intros.notes"
+
+#include "./trees/intros.notes"
+
+#include "./roots/intros.notes"
+
+#include "./branches/intros.notes"
+
+
 //
-#include "./skies/intros.computers"
-
-#include "./rivers/intros.computers"
-
-#include "./trees/intros.computers"
-
-#include "./roots/intros.computers"
-
-#include "./branches/intros.computers"
-
-
-
 
 #include "./roots/threads/prepare.computers"
 
