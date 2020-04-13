@@ -177,7 +177,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/trees/files/read.computers" // note_files; can't return failed; may pre-memory small
 
 
-//
+
 
 #include "./branches/threads/prepare.computers"
 
@@ -187,7 +187,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./branches/lakes/prepare.computers" // complication transform
+#include "./branches/lakes/prepare.computers"
 
 #include "./branches/lakes/begin.computers" // complication transform
 
