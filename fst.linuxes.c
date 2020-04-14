@@ -130,26 +130,26 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./branches/intros.notes"
 
 
+
+
+#include "./roots/threads/prepare.bases"
+
+#include "./roots/threads/begin.bases"
+
+#include "./roots/threads/end.bases"
+
+
+
+#include "./roots/lakes/prepare.bases"
+
+
+#include "./roots/lakes/waves/create.bases" // variable in mast be null
+
+#include "./roots/lakes/waves/resize.bases" // variable in mast be not null; may lost when it fail 
+
+#include "./roots/lakes/waves/free.bases" // variable in mast be not null; may lost when it fail
+
 //
-
-#include "./roots/threads/prepare.computers"
-
-#include "./roots/threads/begin.computers"
-
-#include "./roots/threads/end.computers"
-
-
-
-#include "./roots/lakes/prepare.computers"
-
-
-#include "./roots/lakes/waves/create.computers" // variable in mast be null
-
-#include "./roots/lakes/waves/resize.computers" // may lost when it fail; variable in mast be not null
-
-#include "./roots/lakes/waves/free.computers" // may lost when it fail; variable in mast be not null
-
-
 #include "./roots/lakes/stones/copy.computers"
 
 #include "./roots/lakes/stones/append.computers"
