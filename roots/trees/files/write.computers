@@ -6,7 +6,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computers"
+#include "./../../../roots/threads/prepare.bases"
 
 */
 
@@ -64,19 +64,7 @@ note_files_saved = NULL;
 
 
 
-
-
-
-
-
-
 note_files_saved = ( that_fst_roots_threads_prepare_waters ) fopen  (  that_stones_names,  "wb"  );
-
-
-
-
-
-
 
 
 
@@ -86,7 +74,9 @@ if ( note_files_saved == NULL )
 
 {
 
+
 * ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
+
 
 return NULL;
 
@@ -125,7 +115,6 @@ while ( note_silts_lengths_contents == NULL )
 {
 
 
-
 note_silts_lengths_contents = malloc
 
 ( 1 *
@@ -135,7 +124,6 @@ note_silts_lengths_contents = malloc
 );
 
 
-
 }
 
 
@@ -145,68 +133,7 @@ note_silts_lengths_contents = malloc
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
-note_silts_results = NULL;
-
-
-
-
-while ( note_silts_results == NULL )
-
-{
-
-
-
-note_silts_results  =  malloc
-
-( 1 *
-
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes
-
-);
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents  =  0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents = 0;
 
 
 while
@@ -259,11 +186,80 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_silts_results = NULL;
+
+
+
+
+while ( note_silts_results == NULL )
+
+{
+
+
+note_silts_results  =  malloc
+
+( 1 *
+
+* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes
+
+);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_results
 
 =
 
 fprintf ( note_files_saved, "%s", that_stones_contents );
+
 
 
 
@@ -366,12 +362,6 @@ fclose ( note_files_saved );
 
 
 
-
-
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 {
@@ -398,10 +388,50 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 
 
+if ( note_silts_lengths_contents != NULL )
+
+{
+
 
 free ( note_silts_lengths_contents );
 
+
+}
+
+
+
+
+
+
+if ( note_silts_results != NULL )
+
+{
+
+
 free ( note_silts_results );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 return  NULL;

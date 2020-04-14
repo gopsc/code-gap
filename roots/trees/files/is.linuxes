@@ -6,7 +6,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computers"
+#include "./../../../roots/threads/prepare.bases"
 
 */
 
@@ -146,7 +146,24 @@ S_ISREG ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
 
 
 
+if ( note_structures_status != NULL )
+
+{
+
+
 free ( note_structures_status );
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 return  NULL;
@@ -187,7 +204,50 @@ return  NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if ( note_structures_status != NULL )
+
+{
+
+
 free ( note_structures_status );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 return  NULL;

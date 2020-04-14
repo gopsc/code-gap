@@ -6,7 +6,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computers"
+#include "./../../../roots/threads/prepare.bases"
 
 */
 
@@ -80,6 +80,9 @@ note_waters_resized = NULL;
 
 
 
+
+
+
 if ( * that_stones_results == NULL )
 
 {
@@ -87,7 +90,15 @@ if ( * that_stones_results == NULL )
 
 
 
+
+
+
 note_waters_resized = NULL;
+
+
+
+
+
 
 
 while ( note_waters_resized == NULL )
@@ -113,7 +124,18 @@ note_waters_resized = malloc
 
 
 
+
+
+
 * that_stones_results = note_waters_resized;
+
+
+
+
+
+note_waters_resized = NULL;
+
+
 
 
 
@@ -150,6 +172,7 @@ note_waters_resized = NULL;
 while ( note_waters_resized == NULL )
 
 {
+
 
 
 
@@ -178,6 +201,7 @@ note_waters_resized = realloc
 
 
 
+
 }
 
 
@@ -190,16 +214,7 @@ note_waters_resized = realloc
 
 
 
-
-
-
-
-
-
-
-
-
-
+note_waters_resized = NULL;
 
 
 
@@ -251,9 +266,6 @@ note_files_got = ( that_fst_roots_threads_prepare_waters ) fopen ( that_stones_n
 
 
 
-
-
-
 if
 
 ( note_files_got  == NULL )
@@ -262,7 +274,7 @@ if
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results  = 0;
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
 
 
 
@@ -316,8 +328,6 @@ note_stones_read = malloc
 
 
 }
-
-
 
 
 
@@ -494,7 +504,14 @@ note_waters_resized = realloc
 
 
 
+
 * that_stones_results = note_waters_resized;
+
+
+
+
+
+note_waters_resized = NULL;
 
 
 
@@ -571,7 +588,7 @@ note_waters_resized = realloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results  = 1;
+* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 1;
 
 
 
@@ -646,9 +663,7 @@ note_silts_results = malloc
 
 
 
-
-
-if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results  == -1 )
+if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 {
 
@@ -676,11 +691,66 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results  == -1 )
 
 
 
-free  (  note_stones_read  );
 
-free  (  note_silts_counts  );
+if ( note_stones_read != NULL )
 
-free  (  note_silts_results  );
+{
+
+
+free ( note_stones_read );
+
+
+}
+
+
+
+
+
+
+if ( note_silts_counts != NULL )
+
+{
+
+
+free ( note_silts_counts );
+
+
+}
+
+
+
+
+
+
+if ( note_silts_results != NULL )
+
+{
+
+
+free ( note_silts_results );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 return NULL;

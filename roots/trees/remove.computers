@@ -6,7 +6,7 @@
 
 
 
-#include "./../../roots/threads/prepare.computers"
+#include "./../../roots/threads/prepare.bases"
 
 */
 
@@ -165,9 +165,38 @@ else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 
+if ( note_silts_results != NULL )
+
+{
 
 
 free ( note_silts_results );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 return NULL;
