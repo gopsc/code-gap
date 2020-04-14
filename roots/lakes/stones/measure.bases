@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computers"
+#include "./../../../roots/threads/prepare.bases"
 
 */
 
@@ -24,6 +24,7 @@ that_stones_targets,
 that_fst_roots_threads_prepare_waters
 
 that_silts_results
+
 
 )
 
@@ -56,7 +57,6 @@ note_silts_counts = NULL;
 
 
 
-
 while ( note_silts_counts == NULL )
 
 {
@@ -74,6 +74,7 @@ note_silts_counts = malloc
 
 
 }
+
 
 
 
@@ -172,9 +173,36 @@ while
 
 
 
+if ( note_silts_counts != NULL )
+
+{
 
 
 free  (  note_silts_counts  );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 return  NULL;
 

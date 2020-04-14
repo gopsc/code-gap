@@ -149,18 +149,18 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/waves/free.bases" // variable in mast be not null; may lost when it fail
 
+
+#include "./roots/lakes/stones/copy.bases"
+
+#include "./roots/lakes/stones/append.bases"
+
+#include "./roots/lakes/stones/measure.bases"
+
+#include "./roots/lakes/stones/compare.bases"
+
+#include "./roots/lakes/stones/find.bases"
+
 //
-#include "./roots/lakes/stones/copy.computers"
-
-#include "./roots/lakes/stones/append.computers"
-
-#include "./roots/lakes/stones/measure.computers"
-
-#include "./roots/lakes/stones/compare.computers"
-
-#include "./roots/lakes/stones/find.computers"
-
-
 
 #include "./roots/trees/remove.computers"
 

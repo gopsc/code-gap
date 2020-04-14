@@ -4,7 +4,7 @@
 
 
 
-#include "./../../../roots/threads/prepare.computers"
+#include "./../../../roots/threads/prepare.bases"
 
 */
 
@@ -15,6 +15,7 @@ append_fst_roots_lakes_stones
 
 (
 
+
 that_fst_roots_threads_prepare_waters
 
 that_stones_targets,
@@ -23,6 +24,7 @@ that_stones_targets,
 that_fst_roots_threads_prepare_waters
 
 that_stones_append
+
 
 )
 
@@ -192,6 +194,7 @@ while
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append = 0;
 
+
 while
 
 (
@@ -330,11 +333,52 @@ while
 
 
 
+if ( note_silts_counts_targets != NULL )
+
+{
 
 
 free ( note_silts_counts_targets );
 
+
+}
+
+
+
+
+
+
+
+if ( note_silts_counts_append != NULL )
+
+{
+
+
 free ( note_silts_counts_append );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 return  NULL;
