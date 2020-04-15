@@ -226,4 +226,4 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./branches/flowers/seed.linux"
+#include "./branches/flowers/seed.c"
