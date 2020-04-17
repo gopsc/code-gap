@@ -1,16 +1,36 @@
-,, things, winbond, twenty-five-q
+,, things, winbond, twenty-five-q.gems
 
         -------------------
-        | 。             |
+        | o               |
         |                 |
-  CS ---| 1             5 |--- VCC
+  cs ---| 1             5 |--- vcc
         |                 |
-  DO ---| 2             6 |--- HOLD
+  do ---| 2             6 |--- hold
         |                 |
-  WP ---| 3             7 |--- CLK
+  wp ---| 3             7 |--- clk
         |                 |
- GND ---| 4             8 |--- DI
+ gnd ---| 4             8 |--- di
         |                 |
         -------------------
-        
+
+,,
+
+vcc :  power source, zero point one micro farad capacitor in parallel
+
+gnd :  ground
+
+
+wp :  write protection, connect to power source
+
+hold :  enable, connect to power source
+
+
+cs :  spi instructions
+
+clk : spi clock
+
+do :  spi output
+
+di : spi input
+
 ,

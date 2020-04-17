@@ -1,5 +1,5 @@
 
-,, things, renesas, gr-citrus
+,, renesas,gadget,citrus.gems
 
 
                            serial ( usb )
@@ -23,7 +23,7 @@
                    |                      |
       da2, rx2  ---| 5                 A0 |---
                    |                      |
-      cl2, tx2  ---| 6                 13 |---  ck
+      cl2, tx2  ---| 6                 13 |---  clk
                    |                      |
 int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
                    |                      |
@@ -35,4 +35,4 @@ int6, da3, rx3  ---| 7                 12 |---  mi, rx4, da4
                    |                      |
                    ------------------------
 
-，
+,
