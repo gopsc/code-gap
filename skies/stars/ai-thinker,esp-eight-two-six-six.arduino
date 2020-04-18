@@ -1,0 +1,74 @@
+/* GR-CITRUS Sketch Template V2.23 */
+
+
+
+
+
+
+
+
+#include <arduino.h>
+
+
+
+
+
+
+
+
+
+void setup()
+
+{
+
+
+
+
+
+Serial . begin ( 9600 );
+
+
+Serial1 . begin ( 115200 );
+
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+void loop()
+
+{
+
+
+
+
+
+if ( Serial1.available() > 0 )
+
+{
+
+Serial . println ( Serial1.readString() );
+
+}
+
+
+
+
+
+delay ( 10 );
+
+
+
+
+
+}
