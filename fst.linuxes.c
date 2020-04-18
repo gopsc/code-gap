@@ -74,13 +74,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
+
 #include <unistd.h>
 
 
-
-
-#include <sys/time.h>
-                                   // for note_save() -> gettimeofday()
 
 */
 
@@ -97,11 +94,11 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include <arpa/inet.h>
-                                    // for network
 
-#include <sys/socket.h>
-                                    // for network -> socket
+
+
+#include <sys/time.h>
+                                   // for note_save() -> gettimeofday()
 
 
 
@@ -110,6 +107,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include <sys/param.h>
                                     // for ...
+
+
+
+#include <arpa/inet.h>
+                                    // for network
+
+#include <sys/socket.h>
+                                    // for network -> socket
 
 */
 
