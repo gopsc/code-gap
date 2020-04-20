@@ -1,0 +1,114 @@
+,,
+
+AT
+
+( test )
+
+( return Ok )
+
+
+,,
+
+AT+CWMODE?
+
+( ask mode )
+
+( return  +CWMODE:<mode>\nOK )
+
+
+AT+CWMODE = <mode>
+
+( set mode )
+
+( <mode> = 1 for station )
+
+( <mode> = 2 for ap )
+
+( <mode> = 3 for station and ap )
+
+
+( return OK )
+
+( take effect after reboot )
+
+
+,,
+
+AT+CWLAP
+
+( list wifi found )
+
+( return +CWLAP: <ecn>,<ssid>,<rssi>[,<mode>]\nOK )
+
+
+( <ecn> for encryption method )
+
+( <ecn> = 0 for open )
+
+( <ecn> = 1 for wep )
+
+( <ecn> = 2 for wpa_psk )
+
+( <ecn> = 3 for wpa2_psk )
+
+( <ecn> = 4 for wpa_wpa2_psk )
+
+
+( <ssid> for access point name )
+
+
+( <rssi> for signal intensity )
+
+
+( <mode> for connection mode )
+
+( <mode> = 0 for manual connection )
+
+( <mode> = 1 for auto connection )
+
+
+,,
+
+AT+CWJAP?
+
+( return +CWJAP:<ssid>\nOK )
+
+
+AT+CWJAP=<ssid>,<password>
+
+( join wifi )
+
+( if success return OK )
+
+( if fail return ERROR )
+
+
+,,
+
+AT+CWQAP=?
+
+( return OK )
+
+
+AT+CWQAP
+
+( quit wifi )
+
+( return OK )
+
+
+,,
+
+AT+CWSP?
+
+( ask access point )
+
+
+AT+CWSAP=<ssid>,<password>,<chl>,<ecn>
+
+( set access point )
+
+( if success return OK )
+
+
+( <chl> for channel number )
