@@ -7,13 +7,15 @@ AT
 ( return Ok )
 
 
+
+
 ,,
 
 AT+CWMODE?
 
 ( ask mode )
 
-( return  +CWMODE:<mode>\nOK )
+( return  +CWMODE:<mode>\n\nOK )
 
 
 AT+CWMODE = <mode>
@@ -32,13 +34,15 @@ AT+CWMODE = <mode>
 ( take effect after reboot )
 
 
+
+
 ,,
 
 AT+CWLAP
 
 ( list wifi found )
 
-( return +CWLAP: <ecn>,<ssid>,<rssi>[,<mode>]\nOK )
+( return +CWLAP: <ecn>,<ssid>,<rssi>[,<mode>]\n\nOK )
 
 
 ( <ecn> for encryption method )
@@ -67,11 +71,13 @@ AT+CWLAP
 ( <mode> = 1 for auto connection )
 
 
+
+
 ,,
 
 AT+CWJAP?
 
-( return +CWJAP:<ssid>\nOK )
+( return +CWJAP:<ssid>\n\nOK )
 
 
 AT+CWJAP=<ssid>,<password>
@@ -81,6 +87,8 @@ AT+CWJAP=<ssid>,<password>
 ( if success return OK )
 
 ( if fail return ERROR )
+
+
 
 
 ,,
@@ -97,9 +105,11 @@ AT+CWQAP
 ( return OK )
 
 
+
+
 ,,
 
-AT+CWSP?
+AT+CWSAP?
 
 ( ask access point )
 
@@ -112,3 +122,107 @@ AT+CWSAP=<ssid>,<password>,<chl>,<ecn>
 
 
 ( <chl> for channel number )
+
+
+
+
+,,
+
+( create tcp/udp connection )
+
+
+AT+CIPSTART=<type>,<address>,<port>
+
+( if +CIPMUX=0 )
+
+( single way connection )
+
+
+AT+CIPSTART=<id>,<type>,<address>,<port>
+
+( if +CIPMUX=1 )
+
+( multiplex connection )
+
+
+( if correct format return OK )
+
+( if wrong format return +CME ERROR:invalid input value )
+
+( if connection success return CONNECT OK/<id>,CONNECT OK )
+
+( if connection already exist return ALREADY CONNECT )
+
+( if connection fail return CONNECTION FAIL/<id>,CONNECT FAIL )
+
+
+( <id> value zero to four, number zero cound crest client or server connection )
+
+( <type> for connection type, value "TCP"/"UDP" )
+
+
+
+
+,,
+
+AT+CIPSTATUS?
+
+( return OK )
+
+
+AT+CIPSTATUS
+
+( get connection status )
+
+
+( if AT+CIPMUX=0 return OK\n\nSTATE:<sl_state> )
+
+( if AT+CIPMUX=1 return OK \n\nSTATE:<ml_state> )
+
+( if configured as server return STATE:IP STATUS\nS:<sid>,<port>,<server state>\nC:<cid>,<TCP/UDP>,<ip address>,<port>,<client state> )
+
+
+( <sl_state> for status of single connection )
+
+( <sl_state>=IP INITIAL for initialization )
+
+( <sl_state>=IP STATUS for getting local ip status )
+
+( <sl_state>=TCP/CONNECTING/(CONNECTION/UDP) for tcp connecting / udp port registration in progress )
+
+( <sl_state>=CONNECT OK for connection established successfully )
+
+( <sl_state>=TCP CLOSING/UDP CLOSING for tcp closing or udp cancellation )
+
+
+( <ml_state> for multiple connection )
+
+( <ml_state>=IP INITIAL for initialization )
+
+( <ml_state>=IP STATUS for getting local ip status )
+
+
+( <sid> for server id )
+
+( <sid> value 0 or 1 )
+
+
+( <server state> for server status )
+
+( <server state>=OPENING for opening )
+
+( <server state>=LISTENING for listening )
+
+( <server state>=CLOSING for closing )
+
+
+( <cid> for client id )
+
+( <cid> value 0 to 4 )
+
+
+( <client state> for cient status )
+
+( <client state>=CONNECTED for connected )
+
+( <client state>=CLOSED for closed )
