@@ -1,26 +1,28 @@
-,,
+,, test
+
 
 AT
-
-( test )
 
 ( return Ok )
 
 
 
 
-,,
+,, wifi mode
+
 
 AT+CWMODE?
-
-( ask mode )
 
 ( return  +CWMODE:<mode>\n\nOK )
 
 
-AT+CWMODE = <mode>
+AT+CWMODE=<mode>
 
-( set mode )
+( return OK )
+
+( take effect after reboot )
+
+
 
 ( <mode> = 1 for station )
 
@@ -29,20 +31,15 @@ AT+CWMODE = <mode>
 ( <mode> = 3 for station and ap )
 
 
-( return OK )
-
-( take effect after reboot )
 
 
+,, list wifi found
 
-
-,,
 
 AT+CWLAP
 
-( list wifi found )
-
 ( return +CWLAP: <ecn>,<ssid>,<rssi>[,<mode>]\n\nOK )
+
 
 
 ( <ecn> for encryption method )
@@ -73,7 +70,8 @@ AT+CWLAP
 
 
 
-,,
+,, join wifi
+
 
 AT+CWJAP?
 
@@ -82,8 +80,6 @@ AT+CWJAP?
 
 AT+CWJAP=<ssid>,<password>
 
-( join wifi )
-
 ( if success return OK )
 
 ( if fail return ERROR )
@@ -91,7 +87,8 @@ AT+CWJAP=<ssid>,<password>
 
 
 
-,,
+,, quit wifi
+
 
 AT+CWQAP=?
 
@@ -100,35 +97,34 @@ AT+CWQAP=?
 
 AT+CWQAP
 
-( quit wifi )
-
 ( return OK )
 
 
 
 
-,,
+,, set wifi point
+
 
 AT+CWSAP?
 
-( ask access point )
+( return OK )
 
 
 AT+CWSAP=<ssid>,<password>,<chl>,<ecn>
 
-( set access point )
+( set wifi point )
 
 ( if success return OK )
 
+
+( <ecn> )
 
 ( <chl> for channel number )
 
 
 
 
-,,
-
-( create tcp/udp connection )
+,, create tcp/udp connection 
 
 
 AT+CIPSTART=<type>,<address>,<port>
@@ -149,6 +145,7 @@ AT+CIPSTART=<id>,<type>,<address>,<port>
 
 ( if wrong format return +CME ERROR:invalid input value )
 
+
 ( if connection success return CONNECT OK/<id>,CONNECT OK )
 
 ( if connection already exist return ALREADY CONNECT )
@@ -156,14 +153,15 @@ AT+CIPSTART=<id>,<type>,<address>,<port>
 ( if connection fail return CONNECTION FAIL/<id>,CONNECT FAIL )
 
 
-( <id> value zero to four, number zero cound crest client or server connection )
+( <id> value zero to four, number zero cound create client or server connection )
 
 ( <type> for connection type, value "TCP"/"UDP" )
 
 
 
 
-,,
+,, get connection status
+
 
 AT+CIPSTATUS?
 
@@ -171,9 +169,6 @@ AT+CIPSTATUS?
 
 
 AT+CIPSTATUS
-
-( get connection status )
-
 
 ( if AT+CIPMUX=0 return OK\n\nSTATE:<sl_state> )
 
@@ -226,3 +221,220 @@ AT+CIPSTATUS
 ( <client state>=CONNECTED for connected )
 
 ( <client state>=CLOSED for closed )
+
+
+
+
+,, multiple connection
+
+
+AT+CIPMUX?
+
+( return +CIPMUX:<mode>\n\nOK )
+
+
+AT+CIPMUX=<mode>
+
+( return OK )
+
+( if already multiple connection return Link is builded )
+
+
+( <mode>=0 for single connection mode )
+
+( <mode>=1 for multiple connection mode )
+
+
+
+
+,, send data
+
+
+AT+CIPSEND?
+
+( if AT+CIPMUX=0 return +CIPSEND:<length>\n\nOK )
+
+( if AT+CIPMUX=1 return +CIPSEND:<0-7>,<length>\n\nOK )
+
+
+AT+CIPSEND=<length>
+
+( when +CIPMUX=0 )
+
+
+AT+CIPSEND=<id>,<length>
+
+( when +CIPMUX=1 )
+
+
+( after it recive instruction return ">" then recive data, send data when length full )
+
+( if connection not create or broken return ERROR )
+
+( if send successfully return SEND OK )
+
+
+AT+CIPSEND
+
+( AT+CIPMODE=1 and as client mode, enter passthrough mode )
+
+( need hardware flow control support, or lost data when large amount of data )
+
+( when it recive instraction return ">", then send data serial recived )
+
+
+
+
+,, close tcp/udp connection
+
+
+AT+CIPCLOSE?
+
+( return OK )
+
+
+AT+CIPCLOSE=<id>
+
+( set instraction )
+
+( when single connection )
+
+( return CLOSE OK )
+
+
+AT+CIPCLOSE=<number>[,<id>]
+
+( set instraction )
+
+( when multiple connection )
+
+( return <n>,CLOSE OK )
+
+
+AT+CIPCLOSE
+
+( execute instraction )
+
+( if close success return CLOSE OK )
+
+( if close fail return ERROR )
+
+
+( execute instraction only effective for single connection, in multiple connection it will return ERROR )
+
+( execute instraction will close connection only for tcp/udp CONNECTING or CONNECT OK status, or it return ERROR )
+
+
+( in single connection mode, the status is IP CLOSE after close )
+
+
+( <id> for close mode )
+
+( <id>=0 for slowly close, default )
+
+( <id>=1 for quickly close )
+
+
+( <number> is for 0-7 )
+
+
+
+
+,, get local ip address
+
+
+AT+CIFSR=?
+
+( return OK )
+
+
+AT+CIFSR
+
+( if success return +CIFSR:<IP address>\n\nOK )
+
+( if fail return ERROR )
+
+
+
+
+,, set tcpip application mode
+
+
+AT+CIPMODE?
+
+( return +CIPMODE:<mode>\n\nOK )
+
+
+AT+CIPMODE=<mode>
+
+( return OK )
+
+
+( <mode> for tcpip application mode )
+
+( <mode>=0 for non transparent transmission, default )
+
+( <mode>=1 for transparent transmission )
+
+
+
+
+,, set the time of server active disconnection
+
+
+AT+CIPSTO?
+
+( return +CIPSTO:<server timeout>\n\nOK )
+
+
+AT+CIPSTO=<server timeout>
+
+( return OK )
+
+
+( <server timeout> could value 0~28800(s) )
+
+
+
+
+,, set baud rate
+
+
+AT+CIOBAUD=<rate>
+
+( return OK )
+
+
+( <rate> for baud rate, unit os bps )
+
+( <rate> could be 0, adaptive )
+
+( <rate> could be 110 )
+
+( <rate> could be 300 )
+
+( <rate> could be 1200 )
+
+( <rate> could be 2400 )
+
+( <rate> could be 4800 )
+
+( <rate> could be 9600, default )
+
+( <rate> could be 14400 )
+
+( <rate> could be 19200 )
+
+( <rate> could be 28800 )
+
+( <rate> could be 38400 )
+
+( <rate> could be 57600 )
+
+( <rate> could be 115200 )
+
+( <rate> could be 230400 )
+
+( <rate> could be 460800 )
+
+( <rate> could be 921600 )
