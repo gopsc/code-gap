@@ -1,10 +1,5 @@
 /*
 
-wget   ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.5.tar.bz2
-
-tar   -xjf   alsa-lib-1.1.5.tar.bz2
-
-
 cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   -o ?
 
 */
@@ -47,7 +42,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
                                // for trigonometric function
 
 
-
 #include <time.h> // for time(NULL)
 
 
@@ -64,7 +58,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include <signal.h> // for check_deamon() ->
                                // for tcp block out.
-
 
 
 #include <pthread.h> // for thread
