@@ -8,6 +8,27 @@ AT
 
 
 
+,, reboot
+
+AT+RST
+
+( return OK )
+
+
+
+
+,, ask version
+
+AT+GMR
+
+( return <number>\nOK )
+
+
+( <number> is version number, a eight-digit number )
+
+
+
+
 ,, wifi mode
 
 
@@ -85,6 +106,9 @@ AT+CWJAP=<ssid>,<password>
 ( if fail return ERROR )
 
 
+( <password> is short than sixty-four bytes )
+
+
 
 
 ,, quit wifi
@@ -117,15 +141,26 @@ AT+CWSAP=<ssid>,<password>,<chl>,<ecn>
 ( if success return OK )
 
 
-( <ecn> )
+( need reboot after <chl> changing )
+
+
+( <ecn> is for encryption method )
 
 ( <chl> for channel number )
 
 
 
 
-,, create tcp/udp connection 
+,, ask ip address connectted
 
+AT+CWLIF
+
+( return <address>\n\nOK )
+
+
+
+
+,, create tcp/udp connection 
 
 AT+CIPSTART=<type>,<address>,<port>
 
@@ -156,6 +191,26 @@ AT+CIPSTART=<id>,<type>,<address>,<port>
 ( <id> value zero to four, number zero cound create client or server connection )
 
 ( <type> for connection type, value "TCP"/"UDP" )
+
+
+
+
+,, create server
+
+AT+CIPSERVER=<mode>[,<port>]
+
+
+( <mode>=0 for close server mode )
+
+( <mode>=1 for open server mode )
+
+( <port> default 333 )
+
+
+( return OK )
+
+
+( only for AT+CIPMUX=1 )
 
 
 
@@ -281,6 +336,27 @@ AT+CIPSEND
 ( need hardware flow control support, or lost data when large amount of data )
 
 ( when it recive instraction return ">", then send data serial recived )
+
+( send data when it recive "+++" )
+
+
+
+
+,, recive data
+
+( it send )
+
++IPD,<length>:<data>
+
+( when +CIPMUX=0 )
+
+
++IPD,<id>,<length>:<data>
+
+( when +CIPMUX=1 )
+
+
+( take effective when commands mode )
 
 
 
@@ -438,3 +514,21 @@ AT+CIOBAUD=<rate>
 ( <rate> could be 460800 )
 
 ( <rate> could be 921600 )
+
+
+
+
+,, network firmware update
+
+AT+CIUPDATE
+
+( return +CIPSTO:<n>\n\nOK )
+
+
+( <n>=1 for found server )
+
+( <n>=2 for connect server )
+
+( <n>=3 for got edition )
+
+( <n>=4 for start update )
