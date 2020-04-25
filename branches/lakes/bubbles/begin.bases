@@ -1,0 +1,96 @@
+/*
+
+#include "./../../../roots/lakes/prepare.computers"
+
+
+
+#include "./../../../branches/threads/prepare.computers"
+
+
+#include "./../../../branches/lakes/waves/write.computers"
+
+*/
+
+
+that_fst_branches_threads_prepare_waters
+
+begin_fst_branches_lakes_bubbles ()
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+write_fst_branches_lakes_waves
+
+(
+
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,yes",
+
+( that_fst_branches_threads_prepare_waters ) "yes"
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+write_fst_branches_lakes_waves
+
+(
+
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
+
+( that_fst_branches_threads_prepare_waters ) "no"
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return   that_fst_roots_lakes_prepare;
+
+}
