@@ -36,31 +36,34 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
+#include <dirent.h>
+                              // for dirent
+
+
+#include <signal.h>
+                               // for check_deamon() ->
+                               // for tcp block out.
+
 
 #include <math.h>
                                // for pi
                                // for trigonometric function
 
 
-#include <time.h> // for time(NULL)
+#include <time.h>
+                            // for time(NULL)
 
 
 
-#include <dirent.h> // for dirent
+#include <ifaddrs.h>
+                               // for network socket
+
+#include <fcntl.h>
+                              // for ...
 
 
-
-#include <ifaddrs.h> // for network socket
-
-#include <fcntl.h> // for ...
-
-
-
-#include <signal.h> // for check_deamon() ->
-                               // for tcp block out.
-
-
-#include <pthread.h> // for thread
+#include <pthread.h>
+                                // for thread
 
 
 
@@ -69,7 +72,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include <unistd.h>
-
 
 
 */
@@ -85,14 +87,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 /*
 
-
-
-
-
-
 #include <sys/time.h>
                                    // for note_save() -> gettimeofday()
-
 
 
 #include <sys/types.h>
@@ -204,15 +200,15 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./branches/lakes/bubbles/end.bases"
 
-//
+
 
 #include "./branches/trees/dirents/is.linuxes"
 
-#include "./branches/trees/dirents/create.linuxes" // char; success when it pass files with a same name
+#include "./branches/trees/dirents/create.linuxes" // char
 
 #include "./branches/trees/dirents/remove.linuxes"
 
-
+//
 #include "./branches/trees/files/is.linuxes"
 
 #include "./branches/trees/files/save.linuxes" // char; failed if it is a dirents, but success when it pass files with a names samed

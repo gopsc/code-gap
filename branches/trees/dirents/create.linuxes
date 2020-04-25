@@ -1,20 +1,20 @@
 /*
 
-#include "./../../../roots/lakes/prepare.computers"
+#include "./../../../roots/lakes/prepare.bases"
 
 
-#include "./../../../roots/lakes/waves/create.computers"
+#include "./../../../roots/lakes/waves/create.bases"
 
-#include "./../../../roots/lakes/waves/resize.computers"
+#include "./../../../roots/lakes/waves/resize.bases"
 
-#include "./../../../roots/lakes/waves/free.computers"
+#include "./../../../roots/lakes/waves/free.bases"
 
 
-#include "./../../../roots/lakes/stones/copy.computers"
+#include "./../../../roots/lakes/stones/copy.bases"
 
-#include "./../../../roots/lakes/stones/measure.computers"
+#include "./../../../roots/lakes/stones/measure.bases"
 
-#include "./../../../roots/lakes/stones/find.computers"
+#include "./../../../roots/lakes/stones/find.bases"
 
 
 #include "./../../../roots/trees/dirents/is.linuxes"
@@ -22,11 +22,14 @@
 #include "./../../../roots/trees/dirents/create.linuxes"
 
 
+#include "./../../../roots/trees/files/is.linuxes"
 
-#include "./../../../branches/threads/prepare.computers"
 
 
-#include "./../../../branches/lakes/waves/fish.computers"
+#include "./../../../branches/threads/prepare.bases"
+
+
+#include "./../../../branches/lakes/waves/fish.bases"
 
 */
 
@@ -378,7 +381,7 @@ find_fst_roots_lakes_stones
 
 
 
-if  (  note_waters_names  ==  that_fst_roots_lakes_prepare  )
+if ( note_waters_names == that_fst_roots_lakes_prepare )
 
 {
 
@@ -466,6 +469,73 @@ copy_fst_roots_lakes_stones ( note_waters_names, "\0" );
 
 
 
+
+is_fst_roots_trees_files ( note_stones_names, note_silts_results );
+
+
+
+
+
+
+
+
+
+
+
+
+
+if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
+
+{
+
+
+
+
+
+
+
+
+fish_fst_branches_lakes_waves
+
+(
+
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
+
+that_waters_results
+
+);
+
+
+
+
+
+
+
+free_fst_roots_lakes_waves ( & note_stones_names );
+
+free_fst_roots_lakes_waves ( & note_silts_counts );
+
+free_fst_roots_lakes_waves ( & note_silts_counts_two );
+
+free_fst_roots_lakes_waves ( & note_silts_results );
+
+
+return that_fst_roots_lakes_prepare;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
    
 is_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
 
@@ -540,21 +610,18 @@ return that_fst_roots_lakes_prepare;
 
 }
 
-}
-
-
-
-
-
-
-
-
 
 }
 
 
 
 
+
+
+
+
+
+}
 
 
 }
@@ -587,17 +654,32 @@ free_fst_roots_lakes_waves ( & note_silts_counts_two );
 
 
 
+
+
+is_fst_roots_trees_files ( note_waters_names_dirents, note_silts_results );
+
+
+
+
+
+
+
+
+
+if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 0 )
+
+{
+
+
+
+
+
+
+
+
+
+
 is_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -623,8 +705,6 @@ if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 create_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
-
-
 
 
 
@@ -668,6 +748,8 @@ free_fst_roots_lakes_waves ( & note_silts_results );
 
 
 return that_fst_roots_lakes_prepare;
+
+}
 
 }
 
