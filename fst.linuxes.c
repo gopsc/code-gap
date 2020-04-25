@@ -231,4 +231,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include "./branches/flowers/seed.c"
+#include "./branches/flowers/seed.bases" // after roots
+
+#include "./roots/flowers/seed.computers" // int main(); at last

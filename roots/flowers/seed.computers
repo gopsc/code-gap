@@ -1,0 +1,45 @@
+/*
+
+#include "./../../branches/threads/prepare.bases"
+
+
+
+#include "./../../branches/flowers/seed.bases"
+
+*/
+
+
+that_fst_branches_threads_prepare_silts
+
+main
+
+(
+
+that_fst_branches_threads_prepare_silts
+
+argc,
+
+
+that_fst_branches_threads_prepare_stones
+
+* argv []
+
+)
+
+{
+
+
+
+
+
+
+
+seed_fst_branches_flowers ();
+
+
+
+
+
+
+}
+
