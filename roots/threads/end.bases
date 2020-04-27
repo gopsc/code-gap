@@ -1,4 +1,4 @@
-/*
+
 
 #include <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_threads_end
+
+#define added_fst_roots_threads_end
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -60,3 +67,9 @@ that_fst_roots_threads_prepare_stones_sizes = NULL;
 return NULL;
 
 }
+
+
+
+
+#endif
+

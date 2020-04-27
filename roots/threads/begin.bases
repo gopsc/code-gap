@@ -1,4 +1,4 @@
-/*
+
 
 #include <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_threads_begin
+
+#define added_fst_roots_threads_begin
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -85,3 +92,9 @@ that_fst_roots_threads_prepare_stones_sizes = malloc ( sizeof ( that_fst_roots_t
 return NULL;
 
 }
+
+
+
+
+#endif
+

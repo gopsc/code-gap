@@ -114,6 +114,11 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 /*
 
+.notes
+
+( notes of c )
+
+
 .bases
 
 ( base c grammars )
@@ -168,7 +173,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./branches/intros.notes"
 
 
-//
+
 
 #include "./roots/threads/prepare.bases"
 
@@ -176,7 +181,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/threads/end.bases"
 
-
+//
 
 #include "./roots/lakes/prepare.bases"
 
