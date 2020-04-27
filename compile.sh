@@ -1,1 +1,1 @@
-cc ./fst/fst.linuxes.c -o ?
+cc ./fst/island.linuxes.c -o ?
