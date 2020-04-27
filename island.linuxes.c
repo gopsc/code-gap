@@ -181,17 +181,17 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/threads/end.bases"
 
-//
+
 
 #include "./roots/lakes/prepare.bases"
 
 
-#include "./roots/lakes/waves/create.bases"
+#include "./roots/lakes/waves/create.bases" // may stuck when it fail
 
-#include "./roots/lakes/waves/resize.bases" // may stuck when it fail 
+#include "./roots/lakes/waves/resize.bases" // may stuck when it fail
 
-#include "./roots/lakes/waves/free.bases" // may stuck when it fail
-
+#include "./roots/lakes/waves/free.bases" // may error when it fail
+//
 
 #include "./roots/lakes/stones/copy.bases"
 

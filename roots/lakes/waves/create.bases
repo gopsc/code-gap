@@ -1,4 +1,4 @@
-/*
+
 
 #include  <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_lakes_waves_create
+
+#define added_fst_roots_lakes_waves_create
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -101,3 +108,9 @@ note_waters_created = malloc
 return NULL;
 
 }
+
+
+
+
+#endif
+

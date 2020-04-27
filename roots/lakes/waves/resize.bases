@@ -1,4 +1,4 @@
-/*
+
 
 #include  <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_lakes_waves_resize
+
+#define added_fst_roots_lakes_waves_resize
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -30,6 +37,13 @@ that_silts_sizes
 
 
 {
+
+
+
+
+
+
+
 
 
 
@@ -120,3 +134,9 @@ note_waters_resized = realloc
 return NULL;
 
 }
+
+
+
+
+#endif
+
