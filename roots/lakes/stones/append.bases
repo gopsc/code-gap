@@ -1,4 +1,4 @@
-/*
+
 
 #include <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_lakes_stones_append
+
+#define added_fst_roots_lakes_stones_append
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -384,3 +391,9 @@ free ( note_silts_counts_append );
 return  NULL;
 
 }
+
+
+
+
+#endif
+

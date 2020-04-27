@@ -1,4 +1,4 @@
-/*
+
 
 #include <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_lakes_stones_compare
+
+#define added_fst_roots_lakes_stones_compare
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -152,7 +159,7 @@ while ( note_silts_lengths_compare == NULL )
 
 
 
-note_silts_lengths_compare   =   malloc
+note_silts_lengths_compare = malloc
 
 ( 1 *
 
@@ -647,3 +654,9 @@ free ( note_silts_counts  );
 return  NULL;
 
 }
+
+
+
+
+#endif
+

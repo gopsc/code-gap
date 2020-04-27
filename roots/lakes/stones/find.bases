@@ -1,4 +1,4 @@
-/*
+
 
 #include <stdlib.h>
 
@@ -6,7 +6,14 @@
 
 #include "./../../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_lakes_stones_find
+
+#define added_fst_roots_lakes_stones_find
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -844,3 +851,9 @@ free  (  note_silts_switches  );
 return  NULL;
 
 }
+
+
+
+
+#endif
+

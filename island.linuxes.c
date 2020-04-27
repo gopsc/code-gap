@@ -191,7 +191,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/lakes/waves/resize.bases" // may stuck when it fail
 
 #include "./roots/lakes/waves/free.bases" // may error when it fail
-//
+
 
 #include "./roots/lakes/stones/copy.bases"
 
@@ -200,7 +200,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/lakes/stones/measure.bases"
 
 #include "./roots/lakes/stones/compare.bases"
-
+//
 #include "./roots/lakes/stones/find.bases"
 
 
