@@ -32,23 +32,11 @@ seed_fst_branches_flowers ()
 
 
 
-
-
-
-
-
-
-
-
-
-
 begin_fst_branches_threads ();
 
 begin_fst_branches_lakes ();
 
 begin_fst_branches_lakes_bubbles ();
-
-
 
 
 
@@ -64,22 +52,11 @@ begin_fst_branches_lakes_bubbles ();
 
 
 
-
-
 end_fst_branches_lakes_bubbles ();
 
 end_fst_branches_lakes ();
 
 end_fst_branches_threads ();
-
-
-
-
-
-
-
-
-
 
 
 

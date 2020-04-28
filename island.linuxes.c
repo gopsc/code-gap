@@ -224,7 +224,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/lakes/stones/find.bases"
 
-//
+
 
 #include "./roots/trees/remove.computers"
 
@@ -238,10 +238,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/trees/files/write.computers" // note_files
 
-#include "./roots/trees/files/read.computers" // note_files; can't return failed; may pre-memory small
+#include "./roots/trees/files/read.computers" // note_files; may not return failed; may memory too small
 
 
-
+//
 
 #include "./branches/threads/prepare.bases"
 
@@ -293,3 +293,4 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./branches/flowers/seed.bases" // at last; after roots
 
 #include "./roots/flowers/seed.standards" // int main(); at last
+

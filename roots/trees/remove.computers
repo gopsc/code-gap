@@ -1,4 +1,4 @@
-/*
+
 
 #include  <stdlib.h>
 
@@ -8,7 +8,14 @@
 
 #include "./../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_trees_remove
+
+#define added_fst_roots_trees_remove
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -79,26 +86,7 @@ note_silts_results  =  malloc
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = remove  (  that_stones_names  );
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 
 
@@ -122,7 +110,33 @@ note_silts_results  =  malloc
 
 
 
-if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = remove ( that_stones_names );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 {
 
@@ -139,7 +153,9 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 
 
-else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
+else if
+
+( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
 
@@ -162,6 +178,10 @@ else if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 
 
@@ -202,3 +222,9 @@ free ( note_silts_results );
 return NULL;
 
 }
+
+
+
+
+#endif
+

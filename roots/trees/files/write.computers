@@ -1,4 +1,4 @@
-/*
+
 
 #include  <stdlib.h>
 
@@ -8,7 +8,14 @@
 
 #include "./../../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_roots_trees_files_write
+
+#define added_fst_roots_trees_files_write
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -64,7 +71,11 @@ note_files_saved = NULL;
 
 
 
-note_files_saved = ( that_fst_roots_threads_prepare_waters ) fopen  (  that_stones_names,  "wb"  );
+note_files_saved =
+
+( that_fst_roots_threads_prepare_waters )
+
+fopen ( that_stones_names, "wb" );
 
 
 
@@ -125,6 +136,11 @@ note_silts_lengths_contents = malloc
 
 
 }
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents = 0;
 
 
 
@@ -231,6 +247,11 @@ note_silts_results  =  malloc
 
 
 }
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 
 
@@ -388,6 +409,11 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
 
 
 
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_contents = 0;
+
+
+
 if ( note_silts_lengths_contents != NULL )
 
 {
@@ -399,6 +425,16 @@ free ( note_silts_lengths_contents );
 }
 
 
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 
 
@@ -437,3 +473,9 @@ free ( note_silts_results );
 return  NULL;
 
 }
+
+
+
+
+#endif
+

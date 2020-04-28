@@ -86,6 +86,10 @@ note_waters_created = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_waters_created = 0;
+
+
+
 
 
 
