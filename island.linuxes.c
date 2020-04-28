@@ -1,3 +1,5 @@
+
+
 /*
 
 cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   -o ?
@@ -181,7 +183,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/threads/end.bases"
 
-
+//
 
 #include "./roots/lakes/prepare.bases"
 
@@ -200,10 +202,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include "./roots/lakes/stones/measure.bases"
 
 #include "./roots/lakes/stones/compare.bases"
-//
+
 #include "./roots/lakes/stones/find.bases"
 
-
+//
 
 #include "./roots/trees/remove.computers"
 
