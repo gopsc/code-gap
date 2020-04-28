@@ -82,6 +82,10 @@ note_silts_counts_targets = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
+
+
+
 
 
 
@@ -124,6 +128,11 @@ note_silts_counts_append = malloc
 
 
 }
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append = 0;
 
 
 
@@ -340,6 +349,12 @@ while
 
 
 
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
+
+
+
+
 if ( note_silts_counts_targets != NULL )
 
 {
@@ -352,6 +367,16 @@ free ( note_silts_counts_targets );
 
 
 
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_append = 0;
 
 
 

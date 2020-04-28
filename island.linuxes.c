@@ -37,16 +37,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 /*
 
 
-
-#include <dirent.h>
-                              // for dirent
-
-
-#include <signal.h>
-                               // for check_deamon() ->
-                               // for tcp block out.
-
-
 #include <math.h>
                                // for pi
                                // for trigonometric function
@@ -57,11 +47,29 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
-#include <ifaddrs.h>
-                               // for network socket
+#include <signal.h>
+                               // for check_deamon() ->
+                               // for tcp block out.
+
 
 #include <fcntl.h>
-                              // for ...
+                              // for network socket
+
+
+
+
+
+
+
+
+
+#include <dirent.h>
+                              // for dirent
+
+
+
+#include <ifaddrs.h>
+                               // for network socket
 
 
 #include <pthread.h>
@@ -73,7 +81,19 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
+
+#include <arpa/inet.h>
+                                    // for network
+
+
+
+
+
+
+
+
 #include <unistd.h>
+
 
 
 */
@@ -96,13 +116,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 #include <sys/types.h>
                                     // for check_deamon() ->
 
+
 #include <sys/param.h>
                                     // for ...
 
-
-
-#include <arpa/inet.h>
-                                    // for network
 
 #include <sys/socket.h>
                                     // for network -> socket
@@ -130,6 +147,15 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 ( base c libraries )
 
 
+.arduino
+
+( not standard )
+
+( arduino functions )
+
+( arduino libraries )
+
+
 .standards
 
 ( standard c functions )
@@ -148,13 +174,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 .windows
 
 ( libraries only on windows system computers )
-
-
-.arduino
-
-( arduino functions )
-
-( arduino libraries )
 
 */
 
@@ -183,7 +202,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 #include "./roots/threads/end.bases"
 
-//
+
 
 #include "./roots/lakes/prepare.bases"
 

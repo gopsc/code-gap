@@ -90,6 +90,11 @@ note_silts_lengths_compared = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared = 0;
+
+
+
+
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared = 0;
@@ -170,6 +175,11 @@ note_silts_lengths_compare = malloc
 
 
 }
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare = 0;
 
 
 
@@ -257,6 +267,11 @@ note_silts_counts = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
+
+
+
+
 
 
 
@@ -307,6 +322,11 @@ if
 
 
 
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared = 0;
+
+
+
 if ( note_silts_lengths_compared != NULL )
 
 {
@@ -323,6 +343,11 @@ free ( note_silts_lengths_compared );
 
 
 
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare = 0;
+
+
+
 if ( note_silts_lengths_compare != NULL )
 
 {
@@ -336,6 +361,12 @@ free ( note_silts_lengths_compare );
 
 
 
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
 
 
 
@@ -468,6 +499,10 @@ if
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared = 0;
+
+
+
 if ( note_silts_lengths_compared != NULL )
 
 {
@@ -482,6 +517,13 @@ free ( note_silts_lengths_compared );
 
 
 
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare = 0;
+
+
+
 if ( note_silts_lengths_compare != NULL )
 
 {
@@ -493,6 +535,14 @@ free ( note_silts_lengths_compare );
 }
 
 
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
 
 
 
@@ -588,6 +638,8 @@ return  NULL;
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compared = 0;
+
 
 
 if ( note_silts_lengths_compared != NULL )
@@ -604,6 +656,14 @@ free ( note_silts_lengths_compared );
 
 
 
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_compare = 0;
+
+
+
 if ( note_silts_lengths_compare != NULL )
 
 {
@@ -615,6 +675,14 @@ free ( note_silts_lengths_compare );
 }
 
 
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
 
 
 

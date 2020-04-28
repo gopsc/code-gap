@@ -87,6 +87,11 @@ note_silts_lengths_targets = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+
+
+
+
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
@@ -166,6 +171,13 @@ note_silts_lengths_found = malloc
 
 
 }
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
+
+
 
 
 
@@ -254,6 +266,11 @@ if
 
 
 
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+
+
+
 if ( note_silts_lengths_targets != NULL )
 
 {
@@ -268,6 +285,16 @@ free ( note_silts_lengths_targets );
 
 
 
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
+
+
+
+
 if ( note_silts_lengths_found != NULL )
 
 {
@@ -277,6 +304,7 @@ free ( note_silts_lengths_found );
 
 
 }
+
 
 
 
@@ -341,6 +369,11 @@ note_silts_counts_targets = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
+
+
+
+
 
 
 
@@ -388,6 +421,11 @@ note_silts_counts_found = malloc
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found = 0;
+
+
+
+
 
 
 
@@ -429,6 +467,11 @@ note_silts_switches = malloc
 
 
 }
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
 
 
 
@@ -760,6 +803,11 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
 
 
 
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+
+
+
+
 if ( note_silts_lengths_targets != NULL )
 
 {
@@ -770,6 +818,17 @@ free ( note_silts_lengths_targets );
 
 }
 
+
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
 
 
 
@@ -788,6 +847,18 @@ free ( note_silts_lengths_found );
 
 
 
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
+
+
+
+
 if ( note_silts_counts_targets != NULL )
 
 {
@@ -802,6 +873,17 @@ free ( note_silts_counts_targets );
 
 
 
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found = 0;
+
+
+
+
 if ( note_silts_counts_found != NULL )
 
 {
@@ -812,6 +894,17 @@ free ( note_silts_counts_found );
 
 }
 
+
+
+
+
+
+
+
+
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
 
 
 
