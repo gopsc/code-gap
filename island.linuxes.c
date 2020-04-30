@@ -2,7 +2,7 @@
 
 /*
 
-cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringpi)   -o ?
+cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwiringpi)   -o ?
 
 */
 
@@ -34,6 +34,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
                               // for fgets()
                               // for fprintf()
 
+
+
 /*
 
 
@@ -43,7 +45,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 #include <time.h>
-                            // for time(NULL)
+                             // for time(NULL)
 
 
 
@@ -82,12 +84,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   -lm   -lpthead   (-lasound)   (-lwiringp
 
 
 
+
 #include <arpa/inet.h>
                                     // for network
-
-
-
-
 
 
 
