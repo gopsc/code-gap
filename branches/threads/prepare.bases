@@ -1,8 +1,15 @@
-/*
+
 
 #include "./../../roots/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef add_fst_branches_threads_prepare
+
+#define add_fst_branches_threads_prepare
+
+
 
 
 typedef
@@ -18,8 +25,6 @@ that_fst_branches_threads_prepare_waters;
 that_fst_branches_threads_prepare_waters
 
 that_fst_branches_threads_prepare_waters_sizes;
-
-
 
 
 
@@ -63,3 +68,9 @@ that_fst_branches_threads_prepare_stones;
 that_fst_branches_threads_prepare_waters
 
 that_fst_branches_threads_prepare_stones_sizes;
+
+
+
+
+#endif
+
