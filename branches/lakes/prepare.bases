@@ -1,10 +1,23 @@
-/*
+
 
 #include "./../../branches/threads/prepare.bases"
 
-*/
+
+
+
+#ifndef added_fst_branches_lakes_prepare
+
+#define added_fst_branches_lakes_prepare
+
+
 
 
 that_fst_branches_threads_prepare_waters
 
 that_fst_branches_lakes_prepare;
+
+
+
+
+#endif
+

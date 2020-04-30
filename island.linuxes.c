@@ -248,14 +248,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/threads/end.bases"
 
-//
+
 
 #include "./branches/lakes/prepare.bases"
 
-#include "./branches/lakes/begin.bases" // complication transform
+#include "./branches/lakes/begin.bases" // complication transform; blank pointer for locks
 
-#include "./branches/lakes/end.bases" // complication transform
-
+#include "./branches/lakes/end.bases" // complication transform; ignore pointer for locks
+//
 
 #include "./branches/lakes/waves/write.bases" // complication transform
 
