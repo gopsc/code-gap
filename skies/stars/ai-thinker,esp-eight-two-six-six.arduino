@@ -1,10 +1,6 @@
+
+
 /* GR-CITRUS Sketch Template V2.23 */
-
-
-
-
-
-
 
 
 #include <arduino.h>
@@ -53,6 +49,8 @@ void loop()
 
 
 
+
+
 if ( Serial1.available() > 0 )
 
 {
@@ -65,10 +63,21 @@ Serial . println ( Serial1.readString() );
 
 
 
+if ( Serial.available() > 0 )
+
+{
+
+Serial1 . println ( Serial.readString() );
+
+}
+
+
+
+
+
+
+
 delay ( 10 );
-
-
-
 
 
 }
