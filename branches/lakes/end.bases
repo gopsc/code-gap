@@ -63,7 +63,6 @@ note_silts_counts = that_fst_roots_lakes_prepare;
 
 create_fst_roots_lakes_waves ( & note_silts_counts );
 
-
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts = 0;
 
 
@@ -95,7 +94,6 @@ note_silts_sizes = that_fst_roots_lakes_prepare;
 
 
 create_fst_roots_lakes_waves ( & note_silts_sizes );
-
 
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes = 0;
 
@@ -187,25 +185,6 @@ while
 
 
 
-
-/*
-
-copy_fst_roots_lakes_stones
-
-(
-
-
-( that_fst_branches_threads_prepare_waters )
-
-(  * (  * (  ( ( that_fst_branches_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( that_fst_branches_threads_prepare_silts * ) note_silts_counts )  + 1 )  ),
-
-
-""
-
-
-);
-
-*/
 
 
 

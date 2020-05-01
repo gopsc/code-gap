@@ -1,15 +1,22 @@
-/*
-
-#include "./../../../roots/lakes/prepare.computers"
 
 
+#include "./../../../roots/lakes/prepare.bases"
 
-#include "./../../../branches/threads/prepare.computers"
 
 
-#include "./../../../branches/lakes/waves/write.computers"
+#include "./../../../branches/threads/prepare.bases"
 
-*/
+
+#include "./../../../branches/lakes/waves/write.bases"
+
+
+
+
+#ifndef added_fst_branches_lakes_bubbles_begin
+
+#define added_fst_branches_lakes_bubbles_begin
+
+
 
 
 that_fst_branches_threads_prepare_waters
@@ -94,3 +101,9 @@ write_fst_branches_lakes_waves
 return   that_fst_roots_lakes_prepare;
 
 }
+
+
+
+
+#endif
+

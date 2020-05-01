@@ -60,7 +60,6 @@ note_silts_sizes = that_fst_roots_lakes_prepare;
 
 create_fst_roots_lakes_waves ( & note_silts_sizes );
 
-
 * ( that_fst_branches_threads_prepare_silts * ) note_silts_sizes = 0;
 
 
