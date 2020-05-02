@@ -8,7 +8,7 @@ rom/ram :  2 mega bytes (*) / 256 kilo bytes
 
 data flash :  32 kilo bytes
 
-main clock :  96 mega herts ( 12 mega hertz * 8 )
+main clock :  96 mega hertz ( 12 mega hertz * 8 )
 
 sub clock :  32.768 kilo hertz
 

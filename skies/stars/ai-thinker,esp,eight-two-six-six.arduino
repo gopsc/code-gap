@@ -24,9 +24,9 @@ Serial . begin ( 9600 );
 Serial1 . begin ( 115200 );
 
 
-pinMode ( 9, OUTPUT );
+pinMode ( 4, OUTPUT );
 
-digitalWrite ( 9, HIGH );
+digitalWrite ( 4, HIGH );
 
 
 
