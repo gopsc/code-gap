@@ -286,10 +286,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/trees/files/remove.linuxes"
 
-//
 
 
-#include "./branches/flowers/seed.bases" // at last; after roots
 
-#include "./roots/flowers/seed.standards" // int main(); at last
+#include "./branches/flowers/seed.bases" // at last; before roots
+
+#include "./roots/flowers/seed.standards" // at last; int main()
 

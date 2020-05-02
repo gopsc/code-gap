@@ -1,26 +1,33 @@
-/*
 
-#include "./../../branches/threads/prepare.bases"
+
+#include "./../../roots/threads/prepare.bases"
 
 
 
 #include "./../../branches/flowers/seed.bases"
 
-*/
 
 
-that_fst_branches_threads_prepare_silts
+
+#ifndef added_fst_roots_flowers_seed
+
+#define added_fst_roots_flowers_seed
+
+
+
+
+that_fst_roots_threads_prepare_silts
 
 main
 
 (
 
-that_fst_branches_threads_prepare_silts
+that_fst_roots_threads_prepare_silts
 
 argc,
 
 
-that_fst_branches_threads_prepare_stones
+that_fst_roots_threads_prepare_stones
 
 * argv []
 
@@ -41,4 +48,9 @@ seed_fst_branches_flowers ();
 
 
 }
+
+
+
+
+#endif
 

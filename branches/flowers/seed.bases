@@ -1,4 +1,8 @@
-/*
+
+
+#include "./../../roots/lakes/prepare.bases"
+
+
 
 #include "./../../branches/threads/prepare.bases"
 
@@ -16,7 +20,14 @@
 
 #include "./../../branches/lakes/bubbles/end.bases"
 
-*/
+
+
+
+#ifndef added_fst_branches_flowers_seed
+
+#define added_fst_branches_flowers_seed
+
+
 
 
 that_fst_branches_threads_prepare_waters
@@ -57,6 +68,29 @@ end_fst_branches_lakes_bubbles ();
 end_fst_branches_lakes ();
 
 end_fst_branches_threads ();
+
+
+
+
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+#endif
+
+
+
+
+
+
+
 
 
 
@@ -238,4 +272,3 @@ note_save ( "command", "command close", "now" );
 
 */
 
-}
