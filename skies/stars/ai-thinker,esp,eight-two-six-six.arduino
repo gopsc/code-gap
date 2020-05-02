@@ -8,37 +8,7 @@
 
 
 
-
-
-
-
-
-void setup()
-
-{
-
-
-
-
-
-Serial . begin ( 9600 );
-
-
-Serial1 . begin ( 115200 );
-
-
-
-
-	
-}
-
-
-
-
-
-
-
-
+void setup() {}
 
 
 void loop()
@@ -48,6 +18,23 @@ void loop()
 
 
 
+
+Serial . begin ( 9600 );
+
+Serial1 . begin ( 115200 );
+
+
+pinMode ( 9, OUTPUT );
+
+digitalWrite ( 9, HIGH );
+
+
+
+
+
+while ( 1 )
+
+{
 
 
 
@@ -78,6 +65,11 @@ Serial1 . println ( Serial.readString() );
 
 
 delay ( 10 );
+
+}
+
+
+
 
 
 }
