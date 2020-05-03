@@ -65,6 +65,16 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+#include <arduino.h>
+
+
+
+
+
+
+
+
+
 #include <dirent.h>
                               // for dirent
 
