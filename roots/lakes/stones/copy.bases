@@ -269,6 +269,11 @@ free ( note_silts_counts );
 
 
 
+note_silts_counts = NULL;
+
+
+
+
 
 
 

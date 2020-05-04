@@ -109,11 +109,14 @@ note_waters_resized = realloc
 
 
 
-
-
-
 * that_waters_resized = note_waters_resized;
 
+
+
+
+
+
+note_waters_resized = NULL;
 
 
 

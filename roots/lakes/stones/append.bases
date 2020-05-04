@@ -368,6 +368,12 @@ free ( note_silts_counts_targets );
 
 
 
+note_silts_counts_targets = NULL;
+
+
+
+
+
 
 
 
@@ -390,6 +396,11 @@ free ( note_silts_counts_append );
 
 
 }
+
+
+
+
+note_silts_counts_append = NULL;
 
 
 
