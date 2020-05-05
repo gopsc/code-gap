@@ -4,10 +4,6 @@
 
 
 
-#include "./../../../roots/threads/prepare.bases"
-
-
-
 
 #ifndef added_fst_roots_lakes_stones_find
 
@@ -16,25 +12,15 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-find_fst_roots_lakes_stones
+void * find_fst_roots_lakes_stones
 
 (
 
-that_fst_roots_threads_prepare_waters
+void * that_stones_targets,
 
-that_stones_targets,
+void * that_stones_found,
 
-
-that_fst_roots_threads_prepare_waters
-
-that_stones_found,
-
-
-that_fst_roots_threads_prepare_waters
-
-* that_waters_results
+void * * that_waters_results
 
 )
 
@@ -60,10 +46,7 @@ that_fst_roots_threads_prepare_waters
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_silts_lengths_targets = NULL;
-
+void * note_silts_lengths_targets = NULL;
 
 
 
@@ -71,57 +54,37 @@ while ( note_silts_lengths_targets == NULL )
 
 {
 
-
-
-note_silts_lengths_targets = malloc
-
-( 1 *
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
-
-
+note_silts_lengths_targets = malloc ( 1 * sizeof ( int ) );
 
 }
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+* ( int * ) note_silts_lengths_targets = 0;
 
 
 
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+* ( int * ) note_silts_lengths_targets = 0;
 
 
 while
 
 (
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets
-
-) != '\0'
-
+* ( ( char * ) that_stones_targets + * ( int * ) note_silts_lengths_targets ) != '\0'
 
 )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets
+* ( int * ) note_silts_lengths_targets
 
 =
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets + 1;
+* ( int * ) note_silts_lengths_targets + 1;
 
 }
 
@@ -147,10 +110,7 @@ while
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_silts_lengths_found = NULL;
-
+void * note_silts_lengths_found = NULL;
 
 
 
@@ -158,59 +118,38 @@ while ( note_silts_lengths_found == NULL )
 
 {
 
-
-
-note_silts_lengths_found = malloc
-
-( 1 * 
-
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes
-
-);
-
-
+note_silts_lengths_found = malloc ( 1 *  sizeof ( int ) );
 
 }
 
 
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
-
+* ( int * ) note_silts_lengths_found = 0;
 
 
 
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
+
+* ( int * ) note_silts_lengths_found = 0;
 
 
 while
 
 (
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_found
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found
-
-) != '\0'
-
+* ( ( char * ) that_stones_found + * ( int * ) note_silts_lengths_found ) != '\0'
 
 )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found
+* ( int * ) note_silts_lengths_found
 
 =
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found + 1;
+* ( int * ) note_silts_lengths_found + 1;
 
 }
 
@@ -240,11 +179,11 @@ if
 
 (
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets
+* ( int * ) note_silts_lengths_targets
 
 <
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found
+* ( int * ) note_silts_lengths_found
 
 )
 
@@ -267,7 +206,7 @@ if
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+* ( int * ) note_silts_lengths_targets = 0;
 
 
 
@@ -275,9 +214,7 @@ if ( note_silts_lengths_targets != NULL )
 
 {
 
-
 free ( note_silts_lengths_targets );
-
 
 }
 
@@ -294,7 +231,7 @@ note_silts_lengths_targets = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
+* ( int * ) note_silts_lengths_found = 0;
 
 
 
@@ -302,9 +239,7 @@ if ( note_silts_lengths_found != NULL )
 
 {
 
-
 free ( note_silts_lengths_found );
-
 
 }
 
@@ -348,10 +283,7 @@ return NULL;
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_silts_counts_targets = NULL;
-
+void * note_silts_counts_targets = NULL;
 
 
 
@@ -359,25 +291,13 @@ while ( note_silts_counts_targets == NULL )
 
 {
 
-
-
-note_silts_counts_targets = malloc
-
-( 1 * 
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
-
-
+note_silts_counts_targets = malloc ( 1 *  sizeof ( int ) );
 
 }
 
 
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
-
+* ( int * ) note_silts_counts_targets = 0;
 
 
 
@@ -400,10 +320,8 @@ note_silts_counts_targets = malloc
 
 
 
-that_fst_roots_threads_prepare_waters
 
-note_silts_counts_found = NULL;
-
+void * note_silts_counts_found = NULL;
 
 
 
@@ -411,25 +329,13 @@ while ( note_silts_counts_found == NULL )
 
 {
 
-
-
-note_silts_counts_found = malloc
-
-( 1 * 
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
-
-
+note_silts_counts_found = malloc ( 1 * sizeof ( int ) );
 
 }
 
 
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found = 0;
-
+* ( int * ) note_silts_counts_found = 0;
 
 
 
@@ -451,10 +357,8 @@ note_silts_counts_found = malloc
 
 
 
-that_fst_roots_threads_prepare_waters
 
-note_silts_switches = NULL;
-
+void * note_silts_switches = NULL;
 
 
 
@@ -462,24 +366,13 @@ while ( note_silts_switches == NULL )
 
 {
 
-
-
-note_silts_switches = malloc
-
-( 1 * 
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
-
+note_silts_switches = malloc ( 1 *  sizeof ( int ) );
 
 }
 
 
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
-
+* ( int * ) note_silts_switches = 0;
 
 
 
@@ -503,23 +396,22 @@ note_silts_switches = malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
+
+* ( int * ) note_silts_counts_targets = 0;
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
+* ( int * ) note_silts_switches = 0;
 
 
 while
 
 (
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
+* ( int * ) note_silts_counts_targets
 
 <
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets
-
+* ( int * ) note_silts_lengths_targets
 
 )
 
@@ -539,18 +431,18 @@ while
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found = 0;
+* ( int * ) note_silts_counts_found = 0;
 
 
 while
 
 (
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
+* ( int * ) note_silts_counts_found
 
 <
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found
+* ( int * ) note_silts_lengths_found
 
 )
 
@@ -570,42 +462,18 @@ if
 
 (
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
-
-)
-
+* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts_targets + * ( int * ) note_silts_counts_found )
 
 !=
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_found
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
-
-)
-
+* ( ( char * ) that_stones_found + * ( int * ) note_silts_counts_found )
 
 )
 
 {
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
+* ( int * ) note_silts_switches = 0;
 
 
 break;
@@ -630,41 +498,17 @@ else if
 
 (
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
-
-)
-
+* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts_targets + * ( int * ) note_silts_counts_found )
 
 ==
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_found
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
-
-)
-
+* ( ( char * ) that_stones_found + * ( int * ) note_silts_counts_found )
 
 )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 1;
+* ( int * ) note_silts_switches = 1;
 
 }
 
@@ -681,11 +525,11 @@ else if
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found
+* ( int * ) note_silts_counts_found
 
 =
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found + 1;
+* ( int * ) note_silts_counts_found + 1;
 
 }
 
@@ -703,7 +547,7 @@ else if
 
 
 
-if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 1 )
+if ( * ( int * ) note_silts_switches == 1 )
 
 {
 
@@ -716,15 +560,7 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 1 )
 
 
 
-* that_waters_results
-
-=
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets;
+* that_waters_results = ( char * ) that_stones_targets + * ( int * ) note_silts_counts_targets;
 
 
 
@@ -750,11 +586,11 @@ break;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets
+* ( int * ) note_silts_counts_targets
 
 =
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets + 1;
+* ( int * ) note_silts_counts_targets + 1;
 
 }
 
@@ -781,7 +617,7 @@ break;
 
 
 
-if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
+if ( * ( int * ) note_silts_switches == 0 )
 
 {
 
@@ -810,7 +646,7 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_switches == 0 )
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_targets = 0;
+* ( int * ) note_silts_lengths_targets = 0;
 
 
 
@@ -818,9 +654,7 @@ if ( note_silts_lengths_targets != NULL )
 
 {
 
-
 free ( note_silts_lengths_targets );
-
 
 }
 
@@ -838,7 +672,7 @@ note_silts_lengths_targets = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_found = 0;
+* ( int * ) note_silts_lengths_found = 0;
 
 
 
@@ -846,9 +680,7 @@ if ( note_silts_lengths_found != NULL )
 
 {
 
-
 free ( note_silts_lengths_found );
-
 
 }
 
@@ -867,7 +699,7 @@ note_silts_lengths_found = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_targets = 0;
+* ( int * ) note_silts_counts_targets = 0;
 
 
 
@@ -875,9 +707,7 @@ if ( note_silts_counts_targets != NULL )
 
 {
 
-
 free ( note_silts_counts_targets );
-
 
 }
 
@@ -895,7 +725,7 @@ note_silts_counts_targets = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_found = 0;
+* ( int * ) note_silts_counts_found = 0;
 
 
 
@@ -903,9 +733,7 @@ if ( note_silts_counts_found != NULL )
 
 {
 
-
 free ( note_silts_counts_found );
-
 
 }
 
@@ -923,7 +751,7 @@ note_silts_counts_found = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_switches = 0;
+* ( int * ) note_silts_switches = 0;
 
 
 
@@ -931,9 +759,7 @@ if ( note_silts_switches != NULL )
 
 {
 
-
 free  (  note_silts_switches  );
-
 
 }
 

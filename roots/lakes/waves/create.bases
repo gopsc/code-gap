@@ -60,15 +60,15 @@ while ( note_waters_created == NULL )
 
 
 
-note_waters_created = malloc
-
-( 1 * sizeof ( int ) );
+note_waters_created = malloc ( 1 * sizeof ( int ) );
 
 
 
 
 
 }
+
+
 
 
 

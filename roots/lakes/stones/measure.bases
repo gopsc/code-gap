@@ -4,10 +4,6 @@
 
 
 
-#include "./../../../roots/threads/prepare.bases"
-
-
-
 
 #ifndef added_fst_roots_lakes_stones_measure
 
@@ -16,22 +12,13 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-measure_fst_roots_lakes_stones
+void * measure_fst_roots_lakes_stones
 
 (
 
+void * that_stones_targets,
 
-that_fst_roots_threads_prepare_waters
-
-that_stones_targets,
-
-
-that_fst_roots_threads_prepare_waters
-
-that_silts_results
-
+void * that_silts_results
 
 )
 
@@ -57,10 +44,7 @@ that_silts_results
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_silts_counts = NULL;
-
+void * note_silts_counts = NULL;
 
 
 
@@ -68,25 +52,13 @@ while ( note_silts_counts == NULL )
 
 {
 
-
-
-note_silts_counts = malloc
-
-( 1 *
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
-
-
+note_silts_counts = malloc ( 1 * sizeof ( int ) );
 
 }
 
 
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
-
+* ( int * ) note_silts_counts = 0;
 
 
 
@@ -108,34 +80,25 @@ note_silts_counts = malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
+
+* ( int * ) note_silts_counts = 0;
 
 
 while
 
 (
 
-
-* (
-
-( that_fst_roots_threads_prepare_stones * ) that_stones_targets
-
-+
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
-
-) != '\0'
-
+* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts ) != '\0'
 
 )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
+* ( int * ) note_silts_counts
 
 =
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1;
+* ( int * ) note_silts_counts + 1;
 
 }
 
@@ -160,11 +123,11 @@ while
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results
+* ( int * ) that_silts_results
 
 =
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts;
+* ( int * ) note_silts_counts;
 
 
 
@@ -184,8 +147,8 @@ while
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
 
+* ( int * ) note_silts_counts = 0;
 
 
 
@@ -193,12 +156,9 @@ if ( note_silts_counts != NULL )
 
 {
 
-
 free  (  note_silts_counts  );
 
-
 }
-
 
 
 

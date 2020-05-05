@@ -16,10 +16,7 @@ void * resize_fst_roots_lakes_waves
 
 (
 
-
-
 void * * that_waters_resized,
-
 
 void * that_silts_sizes
 
