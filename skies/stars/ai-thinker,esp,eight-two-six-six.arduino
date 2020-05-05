@@ -8,10 +8,7 @@
 
 
 
-void setup() {}
-
-
-void loop()
+void setup()
 
 {
 
@@ -70,6 +67,19 @@ delay ( 10 );
 
 
 
+digitalWrite ( 4, LOW );
+
+Serial . end ();
+
+Serial1 . end ();
+
 
 
 }
+
+
+
+
+
+void loop() {}
+

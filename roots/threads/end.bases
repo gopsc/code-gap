@@ -16,9 +16,7 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-end_fst_roots_threads ()
+void * end_fst_roots_threads ()
 
 {
 
@@ -28,9 +26,7 @@ end_fst_roots_threads ()
 
 
 
-* ( that_fst_roots_threads_prepare_silts * )
-
-that_fst_roots_threads_prepare_waters_sizes = 0;
+* ( int * ) that_fst_roots_threads_prepare_waters_sizes = 0;
 
 
 
@@ -52,9 +48,7 @@ that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * )
-
-that_fst_roots_threads_prepare_silts_sizes = 0;
+* ( int * ) that_fst_roots_threads_prepare_silts_sizes = 0;
 
 
 
@@ -76,9 +70,7 @@ that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * )
-
-that_fst_roots_threads_prepare_stones_sizes = 0;
+* ( int * ) that_fst_roots_threads_prepare_stones_sizes = 0;
 
 
 

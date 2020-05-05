@@ -4,10 +4,6 @@
 
 
 
-#include "./../../../roots/threads/prepare.bases"
-
-
-
 
 #ifndef added_fst_roots_lakes_waves_create
 
@@ -16,15 +12,11 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-create_fst_roots_lakes_waves
+void * create_fst_roots_lakes_waves
 
 (
 
-that_fst_roots_threads_prepare_waters
-
-* that_waters_created
+void * * that_waters_created
 
 )
 
@@ -38,9 +30,7 @@ that_fst_roots_threads_prepare_waters
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_waters_created = NULL;
+void * note_waters_created = NULL;
 
 
 
@@ -72,11 +62,7 @@ while ( note_waters_created == NULL )
 
 note_waters_created = malloc
 
-( 1 *
-
-( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes )
-
-);
+( 1 * sizeof ( int ) );
 
 
 
@@ -86,7 +72,7 @@ note_waters_created = malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_waters_created = 0;
+* ( int * ) note_waters_created = 0;
 
 
 

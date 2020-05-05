@@ -16,9 +16,7 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-begin_fst_roots_threads ()
+void * begin_fst_roots_threads ()
 
 {
 
@@ -39,16 +37,16 @@ while ( that_fst_roots_threads_prepare_waters_sizes == NULL )
 
 {
 
-that_fst_roots_threads_prepare_waters_sizes = malloc ( sizeof ( that_fst_roots_threads_prepare_silts ) );
+that_fst_roots_threads_prepare_waters_sizes = malloc ( sizeof ( int ) );
 
 }
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_waters_sizes = 0;
+* ( int * ) that_fst_roots_threads_prepare_waters_sizes = 0;
 
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_waters_sizes = sizeof ( that_fst_roots_threads_prepare_waters );
+* ( int * ) that_fst_roots_threads_prepare_waters_sizes = sizeof ( void * );
 
 
 
@@ -68,16 +66,16 @@ while ( that_fst_roots_threads_prepare_silts_sizes == NULL )
 
 {
 
-that_fst_roots_threads_prepare_silts_sizes = malloc ( sizeof ( that_fst_roots_threads_prepare_silts ) );
+that_fst_roots_threads_prepare_silts_sizes = malloc ( sizeof ( int ) );
 
 }
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes = 0;
+* ( int * ) that_fst_roots_threads_prepare_silts_sizes = 0;
 
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes = sizeof ( that_fst_roots_threads_prepare_silts );
+* ( int * ) that_fst_roots_threads_prepare_silts_sizes = sizeof ( int );
 
 
 
@@ -96,16 +94,16 @@ while ( that_fst_roots_threads_prepare_stones_sizes == NULL )
 
 {
 
-that_fst_roots_threads_prepare_stones_sizes = malloc ( sizeof ( that_fst_roots_threads_prepare_silts ) );
+that_fst_roots_threads_prepare_stones_sizes = malloc ( sizeof ( int ) );
 
 }
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_stones_sizes = 0;
+* ( int * ) that_fst_roots_threads_prepare_stones_sizes = 0;
 
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_stones_sizes = sizeof ( that_fst_roots_threads_prepare_stones );
+* ( int * ) that_fst_roots_threads_prepare_stones_sizes = sizeof ( char );
 
 
 
