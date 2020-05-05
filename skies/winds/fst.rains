@@ -1,3 +1,5 @@
 value blank pointer after free
 
-use that_fst_roots_lakes_prepare instead of null
+in roots use int... instead of fst_roots_threads_prepare...
+
+in branches use fst_roots_threads_prepare... instead of fst_branches_threads...
