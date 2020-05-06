@@ -215,9 +215,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/threads/prepare.bases"
 
-#include "./roots/threads/begin.bases"
+#include "./roots/threads/begin.bases" // include roots...
 
-#include "./roots/threads/end.bases"
+#include "./roots/threads/end.bases" // include roots...
 
 
 
@@ -255,31 +255,31 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/trees/files/write.computers" // note_files
 
-#include "./roots/trees/files/read.computers" // note_files; may not return failed; may memory sel too small
+#include "./roots/trees/files/read.computers" // note_files; may not return failed; may buffer too small
 
 
-//
+
 
 #include "./branches/threads/prepare.bases"
 
-#include "./branches/threads/begin.bases"
+#include "./branches/threads/begin.bases" // include branches...
 
-#include "./branches/threads/end.bases"
+#include "./branches/threads/end.bases" // include branches...
 
-
+//
 
 #include "./branches/lakes/prepare.bases"
 
-#include "./branches/lakes/begin.bases" // complication transform; blank pointer for locks
+#include "./branches/lakes/begin.bases" // include branches...; complication transform; blank pointer for locks
 
-#include "./branches/lakes/end.bases" // complication transform; ignore pointer for locks
+#include "./branches/lakes/end.bases" // include branches...; complication transform; ignore pointer for locks
 
 
-#include "./branches/lakes/waves/write.bases" // complication transform
+#include "./branches/lakes/waves/write.bases" // include branches...; complication transform
 
-#include "./branches/lakes/waves/drop.bases" // complication transform
+#include "./branches/lakes/waves/drop.bases" // include branches...; complication transform
 
-#include "./branches/lakes/waves/fish.bases" // complication transform
+#include "./branches/lakes/waves/fish.bases" // include branches...; complication transform
 
 
 
