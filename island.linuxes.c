@@ -156,6 +156,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 ( base c libraries )
 
 
+
+
 .arduino
 
 ( not standard )
@@ -165,14 +167,20 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 ( arduino libraries )
 
 
+
+
 .standards
 
 ( standard c functions )
 
 
+
+
 .computers
 
 ( libraries only on computers )
+
+
 
 
 .linuxes
@@ -233,7 +241,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/lakes/stones/find.bases"
 
-//
+
 
 #include "./roots/trees/remove.computers"
 
@@ -247,10 +255,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/trees/files/write.computers" // note_files
 
-#include "./roots/trees/files/read.computers" // note_files; may not return failed; may memory too small
+#include "./roots/trees/files/read.computers" // note_files; may not return failed; may memory sel too small
 
 
-
+//
 
 #include "./branches/threads/prepare.bases"
 

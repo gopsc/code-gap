@@ -6,10 +6,6 @@
 
 
 
-#include "./../../../roots/threads/prepare.bases"
-
-
-
 
 #ifndef added_fst_roots_trees_dirents_is
 
@@ -18,20 +14,13 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-is_fst_roots_trees_dirents
+void * is_fst_roots_trees_dirents
 
 (
 
-that_fst_roots_threads_prepare_waters
+void * that_stones_names,
 
-that_stones_names,
-
-
-that_fst_roots_threads_prepare_waters
-
-that_silts_results
+void * that_silts_results
 
 )
 
@@ -55,10 +44,7 @@ that_silts_results
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_structures_status = NULL;
-
+void * note_structures_status = NULL;
 
 
 
@@ -66,12 +52,9 @@ while ( note_structures_status == NULL )
 
 {
 
-
 note_structures_status = malloc ( 1 * sizeof ( struct stat ) );
 
-
 }
-
 
 
 
@@ -132,7 +115,7 @@ S_ISDIR ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 1;
+* ( int * ) that_silts_results = 1;
 
 
 
@@ -149,11 +132,13 @@ if ( note_structures_status != NULL )
 
 {
 
-
 free ( note_structures_status );
 
-
 }
+
+
+
+note_structures_status = NULL;
 
 
 
@@ -193,7 +178,7 @@ return  NULL;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
+* ( int * ) that_silts_results = 0;
 
 
 
@@ -221,11 +206,13 @@ if ( note_structures_status != NULL )
 
 {
 
-
 free ( note_structures_status );
 
-
 }
+
+
+
+note_structures_status = NULL;
 
 
 

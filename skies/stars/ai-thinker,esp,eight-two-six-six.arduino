@@ -8,9 +8,24 @@
 
 
 
-void setup()
+void setup() {}
+
+
+
+
+
+void loop()
 
 {
+
+
+
+
+
+pinMode ( PIN_LED0, OUTPUT );
+
+digitalWrite ( PIN_LED0, HIGH );
+
 
 
 
@@ -21,6 +36,7 @@ Serial . begin ( 9600 );
 Serial1 . begin ( 115200 );
 
 
+
 pinMode ( 4, OUTPUT );
 
 digitalWrite ( 4, HIGH );
@@ -29,9 +45,27 @@ digitalWrite ( 4, HIGH );
 
 
 
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
 while ( 1 )
 
 {
+
+
+
+
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+
+
 
 
 
@@ -60,10 +94,20 @@ Serial1 . println ( Serial.readString() );
 
 
 
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
 
 delay ( 10 );
 
 }
+
+
+
+
 
 
 
@@ -75,11 +119,12 @@ Serial1 . end ();
 
 
 
+
+
+
+whlie ( 1 ) {}
+
+
+
 }
-
-
-
-
-
-void loop() {}
 

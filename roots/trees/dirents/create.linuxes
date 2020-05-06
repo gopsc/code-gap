@@ -2,14 +2,8 @@
 
 #include <stdlib.h>
 
-#include <stdio.h>
-
 
 #include  <sys/stat.h>
-
-
-
-#include "./../../../roots/threads/prepare.bases"
 
 
 
@@ -21,20 +15,13 @@
 
 
 
-that_fst_roots_threads_prepare_waters
-
-create_fst_roots_trees_dirents
+void * create_fst_roots_trees_dirents
 
 (
 
-that_fst_roots_threads_prepare_waters
+void * that_stones_names,
 
-that_stones_names,
-
-
-that_fst_roots_threads_prepare_waters
-
-that_silts_results
+void * that_silts_results
 
 )
 
@@ -61,10 +48,7 @@ that_silts_results
 
 
 
-that_fst_roots_threads_prepare_waters
-
-note_silts_results = NULL;
-
+void * note_silts_results = NULL;
 
 
 
@@ -72,25 +56,13 @@ while ( note_silts_results == NULL )
 
 {
 
-
-
-note_silts_results  =  malloc
-
-( 1 *
-
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_silts_sizes
-
-);
-
-
+note_silts_results  =  malloc ( 1 * sizeof ( int ) );
 
 }
 
 
 
-
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
-
+* ( int * ) note_silts_results = 0;
 
 
 
@@ -112,11 +84,8 @@ note_silts_results  =  malloc
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_results
 
-=
-
-mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
+* ( int * ) note_silts_results = mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
 
 
 
@@ -143,11 +112,11 @@ mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
 
 if
 
-( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == -1 )
+( * ( int * ) note_silts_results == -1 )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 0;
+* ( int * ) that_silts_results = 0;
 
 }
 
@@ -164,11 +133,11 @@ if
 
 else if
 
-( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
+( * ( int * ) note_silts_results == 0 )
 
 {
 
-* ( that_fst_roots_threads_prepare_silts * ) that_silts_results = 1;
+* ( int * ) that_silts_results = 1;
 
 }
 
@@ -190,7 +159,7 @@ else if
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
+* ( int * ) note_silts_results = 0;
 
 
 
@@ -198,11 +167,13 @@ if ( note_silts_results != NULL )
 
 {
 
-
 free ( note_silts_results );
 
-
 }
+
+
+
+note_silts_results = NULL;
 
 
 

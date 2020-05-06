@@ -1,13 +1,24 @@
+
+
 ,, arduino,serial.stones
+
+
+
+
+,, begin
 
 Serial . begin ( speed );
 
 Serial . begin ( speed, config );
 
 
-,,
+,, end
 
 Serial . end ();
+
+
+
+
 
 
 ,, clean buffer
@@ -19,8 +30,28 @@ Serial . flush ();
 
 
 
+,, buffer scan
 
-,,
+Serial . available ()
+
+( return a number )
+
+
+
+
+
+
+,, serial event
+
+Serial . serialEvent { //statements }
+
+
+
+
+
+
+,, write
+
 
 Serial . print ( variable );
 
@@ -34,14 +65,15 @@ Serial . println ( variable );
 Serial . println ( variable, format );
 
 
-
-
-
-
-
 ,,
 
-Serial . serialEvent { //statements }
+Serial . write ( variable );
+
+Serial . write ( string );
+
+Serial . write ( array, length );
+
+( return byte length )
 
 
 
@@ -49,19 +81,7 @@ Serial . serialEvent { //statements }
 
 
 
-,,
-
-Serial . available ()
-
-( return a number )
-
-
-
-
-
-
-
-,,
+,, read
 
 Serial . read ();
 
@@ -114,27 +134,7 @@ Serial . readString();
 
 Serial . readStringUntil ( character );
 
-( return a string )
-
-
-,,
-
-Serial . parseFloat ();
-
-( return a available float )
-
-
-,,
-
-Serial . parseInt ();
-
-( return a available integer )
-
-
-Serial . parseInt ( charskipChar );
-
-( ? )
-
+( return a string ),,
 
 
 
@@ -159,16 +159,21 @@ Serial . findUntil ( variable, character );
 
 
 
+,,
+
+Serial . parseFloat ();
+
+( return a available float )
+
 
 ,,
 
-Serial . write ( variable );
+Serial . parseInt ();
 
-Serial . write ( string );
-
-Serial . write ( array, length );
+( return a available integer )
 
 
-( return byte length )
+Serial . parseInt ( charskipChar );
 
-,
+( ? )
+
