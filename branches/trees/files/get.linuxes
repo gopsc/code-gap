@@ -1,5 +1,8 @@
 
 
+#include "./../../../roots/threads/prepare.bases"
+
+
 #include "./../../../roots/lakes/prepare.bases"
 
 
@@ -12,9 +15,6 @@
 
 #include "./../../../roots/trees/files/read.computers"
 
-
-
-#include "./../../../branches/threads/prepare.bases"
 
 
 #include "./../../../branches/lakes/waves/write.bases"
@@ -31,25 +31,27 @@
 
 
 
-that_fst_branches_threads_prepare_waters
+that_fst_roots_threads_prepare_waters
 
 get_fst_branches_trees_files
 
 (
 
-that_fst_branches_threads_prepare_waters
+
+that_fst_roots_threads_prepare_waters
 
 that_stones_names_files,
 
 
-that_fst_branches_threads_prepare_waters
+that_fst_roots_threads_prepare_waters
 
 that_stones_names_results,
 
 
-that_fst_branches_threads_prepare_waters
+that_fst_roots_threads_prepare_waters
 
 * that_waters_results
+
 
 )
 
@@ -75,7 +77,7 @@ that_fst_branches_threads_prepare_waters
 
 
 
-that_fst_branches_threads_prepare_waters
+that_fst_roots_threads_prepare_waters
 
 note_waters_names = that_fst_roots_lakes_prepare;
 
@@ -101,14 +103,14 @@ fish_fst_branches_lakes_waves ( that_stones_names_files, & note_waters_names );
 
 
 
-that_fst_branches_threads_prepare_waters
+that_fst_roots_threads_prepare_waters
 
 note_stones_results = that_fst_roots_lakes_prepare;
 
 
 create_fst_roots_lakes_waves ( & note_stones_results );
 
-* ( that_fst_branches_threads_prepare_silts * ) note_stones_results = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_stones_results = 0;
 
 
 
@@ -130,14 +132,14 @@ create_fst_roots_lakes_waves ( & note_stones_results );
 
 
 
-that_fst_branches_threads_prepare_waters
+that_fst_roots_threads_prepare_waters
 
 note_silts_results = that_fst_roots_lakes_prepare;
 
 
 create_fst_roots_lakes_waves ( & note_silts_results );
 
-* ( that_fst_branches_threads_prepare_silts * ) note_silts_results = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 
 
@@ -178,7 +180,7 @@ is_fst_roots_trees_files ( note_waters_names, note_silts_results );
 
 
 
-if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
+if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 {
 
@@ -224,7 +226,7 @@ note_silts_results
 
 
 
-if ( * ( that_fst_branches_threads_prepare_silts * ) note_silts_results == 1 )
+if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 {
 
@@ -259,7 +261,7 @@ fish_fst_branches_lakes_waves
 
 (
 
-( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,yes",
+( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,yes",
 
 that_waters_results
 
@@ -274,16 +276,23 @@ that_waters_results
 
 
 
+note_waters_names = that_fst_roots_lakes_prepare;
 
-copy_fst_roots_lakes_stones ( note_stones_results, ( that_fst_branches_threads_prepare_waters ) "" );
+
+
+copy_fst_roots_lakes_stones ( note_stones_results, ( that_fst_roots_threads_prepare_waters ) "" );
 
 free_fst_roots_lakes_waves ( & note_stones_results );
 
+note_stones_results = that_fst_roots_lakes_prepare;
 
-* ( that_fst_branches_threads_prepare_silts * ) note_silts_results = 0;
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 free_fst_roots_lakes_waves ( & note_silts_results );
 
+note_silts_results = that_fst_roots_lakes_prepare;
 
 
 
@@ -316,7 +325,7 @@ write_fst_branches_lakes_waves
 
 that_stones_names_results,
 
-( that_fst_branches_threads_prepare_waters ) ""
+( that_fst_roots_threads_prepare_waters ) ""
 
 );
 
@@ -333,7 +342,7 @@ fish_fst_branches_lakes_waves
 
 (
 
-( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
+( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
 
 that_waters_results
 
@@ -347,15 +356,23 @@ that_waters_results
 
 
 
-copy_fst_roots_lakes_stones ( note_stones_results, ( that_fst_branches_threads_prepare_waters ) "" );
+note_waters_names = that_fst_roots_lakes_prepare;
+
+
+
+copy_fst_roots_lakes_stones ( note_stones_results, ( that_fst_roots_threads_prepare_waters ) "" );
 
 free_fst_roots_lakes_waves ( & note_stones_results );
 
+note_stones_results = that_fst_roots_lakes_prepare;
 
-* ( that_fst_branches_threads_prepare_silts * ) note_silts_results = 0;
+
+
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 free_fst_roots_lakes_waves ( & note_silts_results );
 
+note_silts_results = that_fst_roots_lakes_prepare;
 
 
 

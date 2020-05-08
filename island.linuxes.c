@@ -287,7 +287,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/bubbles/end.bases"
 
-//
+
 
 #include "./branches/trees/dirents/is.linuxes"
 
@@ -298,7 +298,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/trees/files/is.linuxes"
 
-#include "./branches/trees/files/save.linuxes" // char; some failling can't report
+#include "./branches/trees/files/save.linuxes" // char
 
 #include "./branches/trees/files/get.linuxes"
 
@@ -309,5 +309,5 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/flowers/seed.bases" // at last; before roots
 
-#include "./roots/flowers/seed.standards" // at last; int main()
+#include "./roots/flowers/seed.standards" // at last; int main(); return 0
 
