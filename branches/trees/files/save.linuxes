@@ -652,7 +652,6 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 
-
 return that_fst_roots_lakes_prepare;
 
 }
@@ -791,7 +790,6 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 
-
 return that_fst_roots_lakes_prepare;
 
 
@@ -812,9 +810,6 @@ return that_fst_roots_lakes_prepare;
 
 }
 
-
-
-copy_fst_roots_lakes_stones ( note_stones_names, ( that_fst_roots_threads_prepare_waters ) "" );
 
 }
 
@@ -896,10 +891,6 @@ note_silts_results
 
 
 
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -932,15 +923,6 @@ note_silts_results
 
 
 
-
-
-
-
-
-note_waters_names_files = that_fst_roots_lakes_prepare;
-
-
-note_waters_contents_files = that_fst_roots_lakes_prepare;
 
 
 
