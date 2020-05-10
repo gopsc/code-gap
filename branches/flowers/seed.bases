@@ -12,12 +12,19 @@
 #include "./../../branches/threads/end.bases"
 
 
+#include "./../../branches/lakes/prepare.bases"
+
 #include "./../../branches/lakes/begin.bases"
 
 #include "./../../branches/lakes/end.bases"
 
 
 #include "./../../branches/lakes/waves/fish.bases"
+
+
+#include "./../../branches/lakes/threads/begin.bases"
+
+#include "./../../branches/lakes/threads/end.bases"
 
 
 #include "./../../branches/lakes/bubbles/begin.bases"
@@ -36,7 +43,22 @@
 
 that_fst_roots_threads_prepare_waters
 
-seed_fst_branches_flowers ()
+seed_fst_branches_flowers
+
+(
+
+
+that_fst_roots_threads_prepare_waters
+
+that_silts_threads,
+
+
+that_fst_roots_threads_prepare_waters
+
+* that_waters_threads
+
+
+)
 
 {
 
@@ -49,7 +71,9 @@ seed_fst_branches_flowers ()
 
 begin_fst_branches_threads ();
 
-begin_fst_branches_lakes ();
+begin_fst_branches_lakes ( & that_fst_branches_lakes_prepare );
+
+begin_fst_branches_lakes_threads ( that_silts_threads, that_waters_threads );
 
 begin_fst_branches_lakes_bubbles ();
 
@@ -79,12 +103,11 @@ while ( note_waters_dream != that_fst_roots_lakes_prepare )
 
 
 
-return 0;
-
-
 end_fst_branches_lakes_bubbles ();
 
-end_fst_branches_lakes ();
+end_fst_branches_lakes_threads ();
+
+end_fst_branches_lakes ( & that_fst_branches_lakes_prepare );
 
 end_fst_branches_threads ();
 
