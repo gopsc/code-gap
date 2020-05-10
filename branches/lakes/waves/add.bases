@@ -723,21 +723,6 @@ that_stones_names
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) that_fst_branches_lakes_prepare )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 1 )
 
 = that_waters_added;
