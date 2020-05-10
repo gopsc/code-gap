@@ -69,7 +69,9 @@ fish_fst_branches_lakes_waves ( ",dream", & note_waters_dream );
 
 
 
-while ( note_waters_dream != that_fst_roots_lakes_prepare ) {}
+while ( note_waters_dream != that_fst_roots_lakes_prepare )
+
+{}
 
 
 
