@@ -99,6 +99,15 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+#include <wiringpi.h>
+
+
+
+
+
+
+
+
 
 #include <arpa/inet.h>
                                     // for network

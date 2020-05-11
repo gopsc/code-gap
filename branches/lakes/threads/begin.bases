@@ -14,8 +14,6 @@
 
 #include "./../../../branches/lakes/waves/add.bases"
 
-#include "./../../../branches/lakes/waves/count.bases"
-
 
 
 
@@ -62,9 +60,29 @@ that_fst_roots_threads_prepare_waters
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
 
 
 
@@ -81,6 +99,13 @@ begin_fst_branches_lakes ( & note_waters_lakes );
 
 
 
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_counts = that_fst_roots_lakes_prepare;
@@ -89,6 +114,19 @@ note_silts_counts = that_fst_roots_lakes_prepare;
 create_fst_roots_lakes_waves ( & note_silts_counts );
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,6 +157,18 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 write_fst_branches_lakes_waves
 
 (
@@ -139,6 +189,17 @@ write_fst_branches_lakes_waves
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts
 
 =
@@ -147,7 +208,22 @@ write_fst_branches_lakes_waves
 
 + 1;
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,6 +254,22 @@ note_waters_lakes
 
 
 note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
