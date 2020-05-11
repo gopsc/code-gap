@@ -34,14 +34,27 @@ is_fst_branches_trees_dirents
 (
 
 
+
+that_fst_roots_threads_prepare_waters
+
+that_waters_lakes_stones,
+
+
 that_fst_roots_threads_prepare_waters
 
 that_stones_names,
 
 
+
+that_fst_roots_threads_prepare_waters
+
+that_waters_lakes_bubbles,
+
+
 that_fst_roots_threads_prepare_waters
 
 * that_waters_results
+
 
 
 )
@@ -75,9 +88,14 @@ fish_fst_branches_lakes_waves
 
 (
 
+
+that_waters_lakes_stones,
+
+
 that_stones_names,
 
 & note_waters_was
+
 
 );
 
@@ -170,9 +188,14 @@ fish_fst_branches_lakes_waves
 
 (
 
+
+that_waters_lakes_bubbles,
+
+
 ( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,yes",
 
 that_waters_results
+
 
 );
 
@@ -225,9 +248,14 @@ fish_fst_branches_lakes_waves
 
 (
 
+
+that_waters_lakes_bubbles,
+
+
 ( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
 
 that_waters_results
+
 
 );
 

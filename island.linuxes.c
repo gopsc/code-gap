@@ -68,6 +68,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include <arduino.h>
 
 
+#include <Wire.h>
+
+
+#include <SPI.h>
+
+
 
 
 
@@ -268,7 +274,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/end.bases" // include branches...; complication transform; ignore pointer for locks
 
-//
+
 #include "./branches/lakes/waves/write.bases" // include branches...; complication transform
 
 #include "./branches/lakes/waves/add.bases" // include branches...; complication transform
@@ -280,20 +286,24 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./branches/lakes/waves/fish.bases" // include branches...; complication transform
 
 
+#include "./branches/lakes/threads/prepare.bases"
+
 #include "./branches/lakes/threads/begin.bases"
 
 #include "./branches/lakes/threads/end.bases"
 
+
+#include "./branches/lakes/bubbles/prepare.bases"
 
 #include "./branches/lakes/bubbles/begin.bases" // ( below here ) used but don't need to include
 
 #include "./branches/lakes/bubbles/end.bases"
 
 
-#include "./branches/lakes/waters/blank.bases"
+#include "./branches/lakes/waters/abyss.bases"
 
 
-
+//
 #include "./branches/trees/dirents/is.linuxes"
 
 #include "./branches/trees/dirents/create.linuxes" // char
