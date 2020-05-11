@@ -192,6 +192,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 ( libraries only on windows system computers )
 
+
+
+
+.raspberrypi
+
+( libraries only on linux system computers raspberrypi )
+
+
 */
 
 
