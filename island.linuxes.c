@@ -286,16 +286,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./branches/lakes/waves/fish.bases" // include branches...; complication transform
 
 
-#include "./branches/lakes/threads/prepare.bases"
-
-#include "./branches/lakes/threads/begin.bases"
+#include "./branches/lakes/threads/begin.bases" // used but don't need to include
 
 #include "./branches/lakes/threads/end.bases"
 
 
-#include "./branches/lakes/bubbles/prepare.bases"
-
-#include "./branches/lakes/bubbles/begin.bases" // ( below here ) used but don't need to include
+#include "./branches/lakes/bubbles/begin.bases" // used but don't need to include
 
 #include "./branches/lakes/bubbles/end.bases"
 
