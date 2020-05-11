@@ -135,7 +135,7 @@ create_fst_roots_lakes_waves ( & note_silts_counts );
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 1;
 
 
 
