@@ -120,6 +120,28 @@ that_stones_names,
 
 
 
+that_fst_roots_threads_prepare_waters
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -216,6 +238,11 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 
 
+note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
 fish_fst_branches_lakes_waves
 
 (
@@ -224,9 +251,9 @@ fish_fst_branches_lakes_waves
 that_waters_lakes_bubbles,
 
 
-( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,yes",
+( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,begin",
 
-that_waters_results
+& note_waters_lakes
 
 
 );
@@ -238,7 +265,48 @@ that_waters_results
 
 
 
+
+
+note_waters_lakes = * ( that_fst_roots_threads_prepare_waters * ) note_waters_lakes;
+
+
+
+
+fish_fst_branches_lakes_waves
+
+(
+
+
+note_waters_lakes,
+
+
+( that_fst_roots_threads_prepare_waters ) "yes",
+
+that_waters_results
+
+
+);
+
+
+
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
 note_waters_names = that_fst_roots_lakes_prepare;
+
+
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
 
 
 
@@ -277,6 +345,12 @@ return that_fst_roots_lakes_prepare;
 
 
 
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
 fish_fst_branches_lakes_waves
 
 (
@@ -285,9 +359,9 @@ fish_fst_branches_lakes_waves
 that_waters_lakes_bubbles,
 
 
-( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,no",
+( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,begin",
 
-that_waters_results
+& note_waters_lakes
 
 
 );
@@ -299,7 +373,48 @@ that_waters_results
 
 
 
+
+
+note_waters_lakes = * ( that_fst_roots_threads_prepare_waters * ) note_waters_lakes;
+
+
+
+
+fish_fst_branches_lakes_waves
+
+(
+
+
+note_waters_lakes,
+
+
+( that_fst_roots_threads_prepare_waters ) "no",
+
+that_waters_results
+
+
+);
+
+
+
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
 note_waters_names = that_fst_roots_lakes_prepare;
+
+
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
 
 
 

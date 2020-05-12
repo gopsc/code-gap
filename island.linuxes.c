@@ -99,15 +99,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
-#include <wiringpi.h>
-
-
-
-
-
-
-
-
 
 #include <arpa/inet.h>
                                     // for network
@@ -141,6 +132,15 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include <sys/socket.h>
                                     // for network -> socket
+
+
+
+
+
+
+
+
+#include <wiringpi.h>
 
 */
 
@@ -319,17 +319,17 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/trees/dirents/is.linuxes"
 
-#include "./branches/trees/dirents/create.linuxes" // char
+#include "./branches/trees/dirents/create.linuxes"
 
 #include "./branches/trees/dirents/remove.linuxes"
 
 
 #include "./branches/trees/files/is.linuxes"
 
-#include "./branches/trees/files/save.linuxes" // char
+#include "./branches/trees/files/save.linuxes"
 
 #include "./branches/trees/files/get.linuxes"
-
+//
 #include "./branches/trees/files/remove.linuxes"
 
 
