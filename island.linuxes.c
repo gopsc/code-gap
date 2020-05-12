@@ -303,9 +303,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./branches/lakes/waves/fish.bases" // include branches...; complication transform
 
 
-#include "./branches/lakes/threads/begin.bases" // used but don't need to include
+#include "./branches/lakes/moons/begin.bases" // used but don't need to include
 
-#include "./branches/lakes/threads/end.bases"
+#include "./branches/lakes/moons/end.bases"
 
 
 #include "./branches/lakes/bubbles/begin.bases" // used but don't need to include
@@ -337,5 +337,5 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/flowers/seed.bases" // at last; before roots
 
-#include "./roots/flowers/seed.standards" // at last; int main(); return 0
+#include "./roots/flowers/seed.standards" // at last; int main(); int; return 0
 

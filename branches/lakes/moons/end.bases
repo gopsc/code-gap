@@ -17,16 +17,16 @@
 
 
 
-#ifndef added_fst_branches_lakes_threads_end
+#ifndef added_fst_branches_lakes_moons_end
 
-#define added_fst_branches_lakes_threads_end
+#define added_fst_branches_lakes_moons_end
 
 
 
 
 that_fst_roots_threads_prepare_waters
 
-end_fst_branches_lakes_threads
+end_fst_branches_lakes_moons
 
 (
 
@@ -69,7 +69,7 @@ fish_fst_branches_lakes_waves
 * that_waters_lakes,
 
 
-( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,threads,begin",
+( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,moons,begin",
 
 & note_waters_lakes
 
@@ -104,7 +104,7 @@ that_waters_lakes,
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,branches,lakes,threads,begin"
+"fst,branches,lakes,moons,begin"
 
 
 );
