@@ -109,7 +109,7 @@ digitalWrite ( PIN_LED0, LOW );
 
 
 
-whlie ( 1 ) {}
+while ( 1 ) {}
 
 
 
