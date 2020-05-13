@@ -36,9 +36,11 @@ write_fst_branches_lakes_waves
 (
 
 
+
 that_fst_roots_threads_prepare_waters
 
 * that_waters_lakes,
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -49,6 +51,7 @@ that_stones_names,
 that_fst_roots_threads_prepare_waters
 
 that_stones_contents
+
 
 
 )
@@ -278,17 +281,9 @@ note_silts_results
 
 
 
-
-
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 {
-
-
 
 
 
@@ -555,7 +550,16 @@ return that_fst_roots_lakes_prepare;
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts + 1;
 
+
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -579,11 +583,7 @@ return that_fst_roots_lakes_prepare;
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_names = 0;
 
 
-
 measure_fst_roots_lakes_stones ( that_stones_names, note_silts_lengths_names );
-
-
-
 
 
 
@@ -591,8 +591,13 @@ measure_fst_roots_lakes_stones ( that_stones_names, note_silts_lengths_names );
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_wrote = 0;
 
 
-
 measure_fst_roots_lakes_stones ( that_stones_contents, note_silts_lengths_wrote );
+
+
+
+
+
+
 
 
 
@@ -645,8 +650,6 @@ measure_fst_roots_lakes_stones ( that_stones_contents, note_silts_lengths_wrote 
 
 
 
-
-
 resize_fst_roots_lakes_waves
 
 (
@@ -670,6 +673,11 @@ note_silts_sizes
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
+
+
+
+
+
 
 
 
@@ -736,8 +744,6 @@ create_fst_roots_lakes_waves
 
 
 
-
-
 resize_fst_roots_lakes_waves
 
 (
@@ -772,6 +778,11 @@ note_silts_sizes
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
+
+
+
+
+
 
 
 
@@ -878,6 +889,12 @@ copy_fst_roots_lakes_stones
 
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
+
+
+
+
+
+
 
 
 
@@ -1007,6 +1024,12 @@ copy_fst_roots_lakes_stones
 
 
 
+
+
+
+
+
+
 copy_fst_roots_lakes_stones
 
 (
@@ -1030,6 +1053,11 @@ copy_fst_roots_lakes_stones
 that_stones_contents
 
 );
+
+
+
+
+
 
 
 
@@ -1130,8 +1158,8 @@ note_silts_lengths_wrote = that_fst_roots_lakes_prepare;
 
 
 
-
 return that_fst_roots_lakes_prepare;
+
 
 }
 

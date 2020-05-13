@@ -197,22 +197,6 @@ is_fst_roots_trees_dirents ( note_waters_names, note_silts_results );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 {
@@ -230,15 +214,6 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 
 remove_fst_roots_trees ( note_waters_names, note_silts_results );
-
-
-
-
-
-
-
-
-
 
 
 
@@ -296,6 +271,7 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 return that_fst_roots_lakes_prepare;
+
 
 }
 
@@ -362,6 +338,7 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 return that_fst_roots_lakes_prepare;
+
 
 }
 

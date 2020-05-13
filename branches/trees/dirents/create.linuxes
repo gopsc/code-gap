@@ -575,17 +575,13 @@ is_fst_roots_trees_files ( note_stones_names, note_silts_results );
 
 
 
-
-
-
-
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 {
+
+
+
+
 
 
 
@@ -687,13 +683,6 @@ is_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
 
 
 
-
-
-
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -706,9 +695,6 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 create_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
-
-
-
 
 
 
@@ -878,10 +864,6 @@ is_fst_roots_trees_files ( note_waters_names_dirents, note_silts_results );
 
 
 
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -895,10 +877,6 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 is_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
-
-
-
-
 
 
 
@@ -918,13 +896,6 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 create_fst_roots_trees_dirents ( note_waters_names_dirents, note_silts_results );
-
-
-
-
-
-
-
 
 
 
@@ -984,6 +955,7 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 return that_fst_roots_lakes_prepare;
+
 
 }
 
@@ -1054,6 +1026,7 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 return that_fst_roots_lakes_prepare;
+
 
 }
 

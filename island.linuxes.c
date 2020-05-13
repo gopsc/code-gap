@@ -36,6 +36,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+
+
+
+
 /*
 
 
@@ -56,22 +60,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include <fcntl.h>
                               // for network socket
-
-
-
-
-
-
-
-
-
-#include <arduino.h>
-
-
-#include <Wire.h>
-
-
-#include <SPI.h>
 
 
 
@@ -132,6 +120,22 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include <sys/socket.h>
                                     // for network -> socket
+
+
+
+
+
+
+
+
+
+#include <arduino.h>
+
+
+#include <Wire.h>
+
+
+#include <SPI.h>
 
 
 
@@ -232,9 +236,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/threads/prepare.bases"
 
-#include "./roots/threads/begin.bases" // include roots...
+#include "./roots/threads/begin.bases"
 
-#include "./roots/threads/end.bases" // include roots...
+#include "./roots/threads/end.bases"
 
 
 
@@ -272,43 +276,43 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/trees/files/write.computers" // note_files
 
-#include "./roots/trees/files/read.computers" // note_files; may not return failed; may buffer too small
+#include "./roots/trees/files/read.computers" // note_files; not return failed; may buffer too small
 
 
 
 
 #include "./branches/threads/prepare.bases"
 
-#include "./branches/threads/begin.bases" // include branches...
+#include "./branches/threads/begin.bases"
 
-#include "./branches/threads/end.bases" // include branches...
-
-
-
-#include "./branches/lakes/prepare.bases"
-
-#include "./branches/lakes/begin.bases" // include branches...; complication transform; blank pointer for locks
-
-#include "./branches/lakes/end.bases" // include branches...; complication transform; ignore pointer for locks
+#include "./branches/threads/end.bases"
 
 
-#include "./branches/lakes/waves/write.bases" // include branches...; complication transform
 
-#include "./branches/lakes/waves/add.bases" // include branches...; complication transform
+#include "./branches/lakes/prepare.bases" // not null
 
-#include "./branches/lakes/waves/count.bases" // include branches...; complication transform
+#include "./branches/lakes/begin.bases" // pointer for locks
 
-#include "./branches/lakes/waves/drop.bases" // include branches...; complication transform
-
-#include "./branches/lakes/waves/fish.bases" // include branches...; complication transform
+#include "./branches/lakes/end.bases" // ignore pointer for locks
 
 
-#include "./branches/lakes/moons/begin.bases" // used but don't need to include
+#include "./branches/lakes/waves/write.bases"
+
+#include "./branches/lakes/waves/add.bases"
+
+#include "./branches/lakes/waves/count.bases"
+
+#include "./branches/lakes/waves/drop.bases"
+
+#include "./branches/lakes/waves/fish.bases"
+
+
+#include "./branches/lakes/moons/begin.bases"
 
 #include "./branches/lakes/moons/end.bases"
 
 
-#include "./branches/lakes/bubbles/begin.bases" // used but don't need to include
+#include "./branches/lakes/bubbles/begin.bases"
 
 #include "./branches/lakes/bubbles/end.bases"
 
@@ -335,7 +339,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
-#include "./branches/flowers/seed.bases" // at last; before roots
+#include "./branches/flowers/seed.bases"
 
-#include "./roots/flowers/seed.standards" // at last; int main(); int; return 0
+#include "./roots/flowers/seed.standards" // int main(), return 0
 

@@ -17,8 +17,6 @@
 
 #include "./../../../roots/lakes/stones/measure.bases"
 
-#include "./../../../roots/lakes/stones/compare.bases"
-
 #include "./../../../roots/lakes/stones/find.bases"
 
 
@@ -569,6 +567,7 @@ if ( note_waters_names == that_fst_roots_lakes_prepare )
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts_two + 1;
 
+
 }
 
 
@@ -641,11 +640,6 @@ note_waters_names,
 
 
 is_fst_roots_trees_files ( note_stones_names, note_silts_results );
-
-
-
-
-
 
 
 
@@ -762,10 +756,6 @@ is_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
 
 
 
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -781,13 +771,6 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 
 create_fst_roots_trees_dirents ( note_stones_names, note_silts_results );
-
-
-
-
-
-
-
 
 
 
@@ -968,17 +951,6 @@ note_silts_results
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 0 )
 
 {
@@ -1004,20 +976,6 @@ note_waters_contents_files,
 note_silts_results
 
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1155,6 +1113,7 @@ note_silts_results = that_fst_roots_lakes_prepare;
 
 
 return that_fst_roots_lakes_prepare;
+
 
 }
 

@@ -36,9 +36,11 @@ count_fst_branches_lakes_waves
 (
 
 
+
 that_fst_roots_threads_prepare_waters
 
 * that_waters_lakes,
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -49,6 +51,7 @@ that_stones_names,
 that_fst_roots_threads_prepare_waters
 
 that_silts_counts
+
 
 
 )
@@ -231,6 +234,7 @@ compare_fst_roots_lakes_stones
 
 (
 
+
 that_stones_names,
 
 (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 0 )  ),
@@ -238,18 +242,8 @@ that_stones_names,
 
 note_silts_results
 
+
 );
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -443,11 +437,26 @@ return that_fst_roots_lakes_prepare;
 
 
 
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_names = 0;
 
 
-
 measure_fst_roots_lakes_stones ( that_stones_names, note_silts_lengths_names );
+
+
+
+
+
+
+
+
+
 
 
 
@@ -513,6 +522,10 @@ note_silts_sizes
 
 
 
+
+
+
+
 * (  ( ( that_fst_roots_threads_prepare_waters * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )
 
 = that_fst_roots_lakes_prepare;
@@ -521,7 +534,15 @@ note_silts_sizes
 
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
+
+
+
+
+
 
 
 
@@ -608,6 +629,11 @@ note_silts_sizes
 
 
 
+
+
+
+
+
 * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 0 )
 
 = that_fst_roots_lakes_prepare;
@@ -623,7 +649,16 @@ note_silts_sizes
 
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
+
+
+
+
+
+
 
 
 
@@ -714,6 +749,8 @@ note_silts_sizes
 
 
 
+
+
 copy_fst_roots_lakes_stones
 
 (
@@ -729,7 +766,17 @@ copy_fst_roots_lakes_stones
 
 
 
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
+
+
+
+
+
+
+
+
 
 
 
@@ -768,6 +815,13 @@ create_fst_roots_lakes_waves
 (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 1 )  )
 
 = 0;
+
+
+
+
+
+
+
 
 
 
@@ -831,6 +885,14 @@ that_stones_names
 
 
 
+
+
+
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * )
 
 (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + 0 )  + 1 )  )
@@ -845,6 +907,12 @@ that_stones_names
 
 
 + 1;
+
+
+
+
+
+
 
 
 
