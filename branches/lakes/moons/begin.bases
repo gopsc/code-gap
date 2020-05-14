@@ -78,18 +78,6 @@ note_waters_lakes = that_fst_roots_lakes_prepare;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 begin_fst_branches_lakes ( & note_waters_lakes );
 
 
@@ -121,20 +109,6 @@ create_fst_roots_lakes_waves ( & note_silts_counts );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 1;
 
 
@@ -159,16 +133,6 @@ while
 
 
 
-
-
-
-
-
-
-
-
-
-
 write_fst_branches_lakes_waves
 
 (
@@ -183,15 +147,6 @@ write_fst_branches_lakes_waves
 
 
 );
-
-
-
-
-
-
-
-
-
 
 
 
@@ -245,11 +200,6 @@ note_waters_lakes
 
 
 );
-
-
-
-
-
 
 
 

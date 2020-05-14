@@ -1,0 +1,32 @@
+
+
+#include "./../../roots/threads/prepare.bases"
+
+
+#include "./../../roots/lakes/prepare.bases"
+
+
+
+
+#ifndef added_fst_branches_threads_instantaneous
+
+#define added_fst_branches_threads_instantaneous
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+instantaneous_fst_branches_threads ()
+
+{
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+#endif
+

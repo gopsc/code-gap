@@ -60,20 +60,6 @@ note_waters_lakes = that_fst_roots_lakes_prepare;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 begin_fst_branches_lakes ( & note_waters_lakes );
 
 
@@ -158,12 +144,6 @@ note_waters_lakes
 
 
 );
-
-
-
-
-
-
 
 
 

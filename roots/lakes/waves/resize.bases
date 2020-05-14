@@ -40,33 +40,28 @@ void * that_silts_sizes
 
 
 
-void * note_waters_resized = NULL;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if ( * that_waters_resized != NULL )
+if ( * that_waters_resized == NULL )
 
 {
 
+return NULL;
+
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+void * note_waters_resized = NULL;
 
 
 
@@ -91,9 +86,6 @@ note_waters_resized = realloc
 
 
 
-
-
-
 * that_waters_resized = note_waters_resized;
 
 
@@ -101,21 +93,14 @@ note_waters_resized = realloc
 
 
 
+
+
+
+
+
+
+
 note_waters_resized = NULL;
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
 
 
 

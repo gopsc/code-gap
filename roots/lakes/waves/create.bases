@@ -30,25 +30,26 @@ void * * that_waters_created
 
 
 
-void * note_waters_created = NULL;
 
 
-
-
-
-
-
-
-
-
-
-if ( * that_waters_created == NULL )
+if ( * that_waters_created != NULL )
 
 {
 
+return NULL;
+
+}
 
 
 
+
+
+
+
+
+
+
+void * note_waters_created = NULL;
 
 
 
@@ -57,26 +58,14 @@ while ( note_waters_created == NULL )
 {
 
 
-
-
-
 note_waters_created = malloc ( 1 * sizeof ( int ) );
-
-
-
 
 
 }
 
 
 
-
-
 * ( int * ) note_waters_created = 0;
-
-
-
-
 
 
 * that_waters_created = note_waters_created;
@@ -85,19 +74,12 @@ note_waters_created = malloc ( 1 * sizeof ( int ) );
 
 
 
+
+
+
+
+
 note_waters_created = NULL;
-
-
-
-
-
-}
-
-
-
-
-
-
 
 
 

@@ -60,6 +60,35 @@ that_fst_roots_threads_prepare_waters
 
 
 
+if ( * that_waters_lakes != that_fst_roots_lakes_prepare )
+
+{
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_silts_sizes = that_fst_roots_lakes_prepare;

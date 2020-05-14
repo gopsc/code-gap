@@ -27,9 +27,13 @@ void * * that_waters_data
 
 
 
-if ( * that_waters_data != NULL )
+if ( * that_waters_data == NULL )
 
 {
+
+return NULL;
+
+}
 
 
 
@@ -40,13 +44,6 @@ free ( * that_waters_data );
 
 
 * that_waters_data = NULL;
-
-
-
-
-
-
-}
 
 
 
