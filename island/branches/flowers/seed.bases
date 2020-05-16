@@ -34,6 +34,11 @@
 #include "./../../branches/lakes/bubbles/lights/end.bases"
 
 
+#include "./../../branches/lakes/bubbles/threads/begin.bases"
+
+#include "./../../branches/lakes/bubbles/threads/end.bases"
+
+
 
 
 #include "./../../dreams/begin.bases"
@@ -91,9 +96,11 @@ begin_fst_branches_lakes ( & that_fst_branches_lakes_prepare );
 
 begin_fst_branches_lakes_bubbles ( & that_fst_branches_lakes_prepare );
 
-begin_fst_branches_lakes_bubbles_moons ( & that_fst_branches_lakes_prepare, that_silts_moons, that_waters_moons );
+begin_fst_branches_lakes_bubbles_moons ( that_fst_branches_lakes_prepare, that_silts_moons, that_waters_moons );
 
-begin_fst_branches_lakes_bubbles_lights ( & that_fst_branches_lakes_prepare );
+begin_fst_branches_lakes_bubbles_lights ( that_fst_branches_lakes_prepare );
+
+begin_fst_branches_lakes_bubbles_threads ( that_fst_branches_lakes_prepare );
 
 
 
@@ -103,15 +110,17 @@ begin_fst_branches_lakes_bubbles_lights ( & that_fst_branches_lakes_prepare );
 
 begin_fst_dreams ( that_fst_branches_lakes_prepare );
 
+printf ( "1\n" );
 
 
 
 
 
+end_fst_branches_lakes_bubbles_threads ( that_fst_branches_lakes_prepare );
 
-end_fst_branches_lakes_bubbles_lights ( & that_fst_branches_lakes_prepare );
+end_fst_branches_lakes_bubbles_lights ( that_fst_branches_lakes_prepare );
 
-end_fst_branches_lakes_bubbles_moons ( & that_fst_branches_lakes_prepare );
+end_fst_branches_lakes_bubbles_moons ( that_fst_branches_lakes_prepare );
 
 end_fst_branches_lakes_bubbles ( & that_fst_branches_lakes_prepare );
 

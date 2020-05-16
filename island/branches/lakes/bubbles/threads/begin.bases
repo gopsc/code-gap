@@ -7,28 +7,21 @@
 
 
 
-#include "./../../../../branches/lakes/begin.bases"
-
-
-#include "./../../../../branches/lakes/waves/write.bases"
-
-#include "./../../../../branches/lakes/waves/add.bases"
-
 #include "./../../../../branches/lakes/waves/fish.bases"
 
 
 
 
-#ifndef added_fst_branches_lakes_bubbles_lights_begin
+#ifndef added_fst_branches_lakes_bubbles_threads_begin
 
-#define added_fst_branches_lakes_bubbles_lights_begin
+#define added_fst_branches_lakes_bubbles_threads_begin
 
 
 
 
 that_fst_roots_threads_prepare_waters
 
-begin_fst_branches_lakes_bubbles_lights
+begin_fst_branches_lakes_bubbles_threads
 
 (
 
@@ -102,15 +95,11 @@ note_waters_lakes_bubbles = * ( that_fst_roots_threads_prepare_waters * ) note_w
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes_lights = that_fst_roots_lakes_prepare;
+note_waters_lakes_threads = that_fst_roots_lakes_prepare;
 
 
 
-begin_fst_branches_lakes ( & note_waters_lakes_lights );
-
-
-
-
+begin_fst_branches_lakes ( & note_waters_lakes_threads );
 
 
 
@@ -124,17 +113,21 @@ begin_fst_branches_lakes ( & note_waters_lakes_lights );
 
 
 
-write_fst_branches_lakes_waves
+
+
+
+
+count_fst_branches_lakes_waves
 
 (
 
 
-& note_waters_lakes_lights,
+& note_waters_lakes_threads,
 
 
-( that_fst_roots_threads_prepare_waters ) "yes",
+( that_fst_roots_threads_prepare_waters ) "waters",
 
-( that_fst_roots_threads_prepare_waters ) ""
+that_fst_roots_threads_prepare_waters_sizes
 
 
 );
@@ -145,17 +138,38 @@ write_fst_branches_lakes_waves
 
 
 
-write_fst_branches_lakes_waves
+count_fst_branches_lakes_waves
 
 (
 
 
-& note_waters_lakes_lights,
+& note_waters_lakes_threads,
 
 
-( that_fst_roots_threads_prepare_waters ) "no",
+( that_fst_roots_threads_prepare_waters ) "silts",
 
-( that_fst_roots_threads_prepare_waters ) ""
+that_fst_roots_threads_prepare_silts_sizes
+
+
+);
+
+
+
+
+
+
+
+count_fst_branches_lakes_waves
+
+(
+
+
+& note_waters_lakes_threads,
+
+
+( that_fst_roots_threads_prepare_waters ) "stones",
+
+that_fst_roots_threads_prepare_stones_sizes
 
 
 );
@@ -174,7 +188,7 @@ write_fst_branches_lakes_waves
 
 
 
-
+/*
 
 add_fst_branches_lakes_waves
 
@@ -184,15 +198,14 @@ add_fst_branches_lakes_waves
 & note_waters_lakes_bubbles,
 
 
-( that_fst_roots_threads_prepare_waters ) "lights,begin",
+( that_fst_roots_threads_prepare_waters ) "threads,begin",
 
-note_waters_lakes_lights
+note_waters_lakes_threads
 
 
 );
 
-
-
+*/
 
 
 
@@ -214,7 +227,7 @@ note_waters_lakes_bubbles = that_fst_roots_lakes_prepare;
 
 
 
-note_waters_lakes_lights = that_fst_roots_lakes_prepare;
+note_waters_lakes_threads = that_fst_roots_lakes_prepare;
 
 
 

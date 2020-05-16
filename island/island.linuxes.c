@@ -324,6 +324,11 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./branches/lakes/bubbles/lights/end.bases"
 
 
+#include "./branches/lakes/bubbles/threads/begin.bases"
+
+#include "./branches/lakes/bubbles/threads/end.bases"
+
+
 #include "./branches/lakes/forms/waters/deeper.bases"
 
 
