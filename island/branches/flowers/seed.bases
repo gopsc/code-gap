@@ -1,0 +1,327 @@
+
+
+#include "./../../roots/threads/prepare.bases"
+
+
+#include "./../../roots/lakes/prepare.bases"
+
+
+
+#include "./../../branches/threads/begin.bases"
+
+#include "./../../branches/threads/end.bases"
+
+
+#include "./../../branches/lakes/prepare.bases"
+
+#include "./../../branches/lakes/begin.bases"
+
+#include "./../../branches/lakes/end.bases"
+
+
+#include "./../../branches/lakes/bubbles/begin.bases"
+
+#include "./../../branches/lakes/bubbles/end.bases"
+
+
+#include "./../../branches/lakes/bubbles/moons/begin.bases"
+
+#include "./../../branches/lakes/bubbles/moons/end.bases"
+
+
+#include "./../../branches/lakes/bubbles/lights/begin.bases"
+
+#include "./../../branches/lakes/bubbles/lights/end.bases"
+
+
+
+
+#include "./../../dreams/begin.bases"
+
+
+
+
+#ifndef added_fst_branches_flowers_seed
+
+#define added_fst_branches_flowers_seed
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+seed_fst_branches_flowers
+
+(
+
+
+that_fst_roots_threads_prepare_waters
+
+that_silts_moons,
+
+
+that_fst_roots_threads_prepare_waters
+
+* that_waters_moons
+
+
+)
+
+{
+
+
+that_fst_branches_lakes_prepare = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+begin_fst_branches_threads ();
+
+
+begin_fst_branches_lakes ( & that_fst_branches_lakes_prepare );
+
+
+begin_fst_branches_lakes_bubbles ( & that_fst_branches_lakes_prepare );
+
+begin_fst_branches_lakes_bubbles_moons ( & that_fst_branches_lakes_prepare, that_silts_moons, that_waters_moons );
+
+begin_fst_branches_lakes_bubbles_lights ( & that_fst_branches_lakes_prepare );
+
+
+
+
+
+
+
+begin_fst_dreams ( that_fst_branches_lakes_prepare );
+
+
+
+
+
+
+
+end_fst_branches_lakes_bubbles_lights ( & that_fst_branches_lakes_prepare );
+
+end_fst_branches_lakes_bubbles_moons ( & that_fst_branches_lakes_prepare );
+
+end_fst_branches_lakes_bubbles ( & that_fst_branches_lakes_prepare );
+
+
+end_fst_branches_lakes ( & that_fst_branches_lakes_prepare );
+
+
+end_fst_branches_threads ();
+
+
+
+
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+}
+
+
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ that . hope . number_hope = argc;
+
+ that . hope . hope = argv;
+
+ */
+
+/*
+
+ init_deamon ();
+
+*/
+
+/*
+
+ that . hope . thread  =  malloc (  3  *  sizeof ( pthread_t )  );
+
+*/
+
+/*
+
+pthread_create (  & thread [ 1 ], NULL,  gop_dog,  NULL  );
+
+pthread_create (  & thread [ 2 ], NULL,  gop_connectted,  NULL  );
+
+pthread_create (  & thread [ 3 ], NULL,  gop_connector,  NULL  );
+
+*/
+
+/*
+
+ pthread_create (  & thread [ 4 ], NULL,  gop_corde,  NULL  );
+
+*/
+
+/*
+
+char  note_command  [ 128 ]   =   "";
+
+*/
+
+/*
+
+while   (   !  gop_about . flag . start   )
+
+{
+
+gop_wait   (  0.1  );
+
+}
+
+*/
+
+/*
+
+note_save   (   "command",   "command start",   "now"   );
+
+*/
+
+/*
+
+while   (   gop_about . flag . main   )
+
+{
+
+*/
+
+/*
+
+if   (   gop_about . flag . deamon   )
+
+{
+
+gop_wait  (  0.1  );
+
+}
+
+*/
+
+/*
+
+else
+
+{
+
+*/
+
+/*
+
+fgets   (   note_command,   128,   stdin   );
+
+*/
+
+/*
+
+if (
+
+     strcmp   (   note_command,   ""   )    ==    0
+
+   )
+
+{
+
+gop_wait  (  0.1  );
+
+}
+
+*/
+
+/*
+
+else
+
+{
+
+*/
+
+/*
+
+note_command    [   strlen  (  note_command  )  -  1   ]    =    '.';
+
+*/
+
+/*
+
+output_print   (   "string",   "\n"   );
+
+*/
+
+/*
+
+judge_message_command (
+                        -1,
+                        note_command,
+                        note_command
+                      );
+
+*/
+
+/*
+
+strcpy   (   note_command,   ""   );
+
+*/
+
+/*
+
+}
+
+*/
+
+/*
+
+}
+
+*/
+
+/*
+
+}
+
+*/
+
+/*
+
+note_save ( "command", "command close", "now" );
+
+*/
+

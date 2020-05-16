@@ -1,0 +1,433 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+ fst, spider, net, shake, else.c
+
+
+
+
+,,
+
+ fst, spider, net, shake, else
+
+
+
+
+
+,,
+
+ fst, trees, e, l, s, e
+
+
+
+
+
+
+
+
+
+,,
+
+ fst, spider, net, shake
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+,
+
+int  action_else  (
+
+                      int        that_site,
+                      char  *    that_command,
+                      char  *  buffer_send
+
+                   )
+
+{
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+it's male
+
+
+,
+
+
+
+
+
+
+
+
+
+
+,
+
+if (
+
+
+         strcmp   (  gop_connection  .  how   [ that_site ],    "Connectting"  )   ==   0
+    ||   strcmp   (  gop_connection  .  how   [ that_site ],    "Sop"          )   ==   0
+
+
+   ) {
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+could be message left
+
+
+,
+
+
+
+
+
+
+
+,
+
+if  (  strstr ( that_command, "Information of " )  ==  that_command  ) {
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+sometims when the connection close
+after gopi send
+
+when they connect back
+got a mess
+
+because they
+still think they are jut like before
+
+So we should let Connectted device
+get back their control again
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+,
+
+if (
+
+          strcmp   (   gop_connection  .  command  [ that_site ],   ""      )   ==   0
+     &&   strcmp   (   gop_connection  .  how      [ that_site ],   "Sop"   )   ==   0
+
+   )
+
+
+{
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+This is the Connectted device,
+and it still saved as Sop
+
+
+,
+
+
+
+
+
+
+
+
+
+
+,
+
+output_print  (  "string",  "Get sopi back.\n"  );
+
+clean_connection  (  that_site,  "sopi" );
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+
+}
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+
+return 0;
+
+
+,
+
+
+
+
+
+
+
+
+
+
+,
+
+}
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+mess of usually
+
+
+,
+
+
+
+
+
+
+,
+
+else if   (   strcmp  (  that_command,  "Here."  )  ==  0  )
+
+
+{
+
+return 0;
+
+
+}
+
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+,,
+
+else
+
+{
+
+
+output_print( "string",               "Network "                );
+
+output_print( "int"   ,   ( char * ) & that_site                );
+
+output_print( "string",               " dose not understand : " );
+
+output_print( "string",               "\n"                      );
+
+output_print( "string",               "*\n"                     );
+
+output_print( "string",               that_command              );
+
+output_print( "string",               "\n"                      );
+
+output_print( "string",               "*\n"                     );}
+
+
+return 0;
+
+
+}
+
+
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+,
+
+return 1;
+
+
+}
+
+
+,

@@ -1,0 +1,208 @@
+
+
+#include <stdlib.h>
+
+
+#include  <sys/stat.h>
+
+
+
+
+#ifndef added_fst_roots_trees_dirents_create
+
+#define added_fst_roots_trees_dirents_create
+
+
+
+
+void * create_fst_roots_trees_dirents
+
+(
+
+void * that_stones_names,
+
+void * that_silts_results
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_results = NULL;
+
+
+
+while ( note_silts_results == NULL )
+
+{
+
+note_silts_results  =  malloc ( 1 * sizeof ( int ) );
+
+}
+
+
+
+* ( int * ) note_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_results = mkdir ( that_stones_names, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+( * ( int * ) note_silts_results == -1 )
+
+{
+
+* ( int * ) that_silts_results = 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+else if
+
+( * ( int * ) note_silts_results == 0 )
+
+{
+
+* ( int * ) that_silts_results = 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_results = 0;
+
+
+
+if ( note_silts_results != NULL )
+
+{
+
+free ( note_silts_results );
+
+}
+
+
+
+note_silts_results = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return NULL;
+
+}
+
+
+
+
+#endif
+

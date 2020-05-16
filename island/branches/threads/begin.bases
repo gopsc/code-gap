@@ -1,0 +1,48 @@
+
+
+#include "./../../roots/threads/prepare.bases"
+
+#include "./../../roots/threads/begin.bases"
+
+
+#include "./../../roots/lakes/prepare.bases"
+
+
+
+#include "./../../branches/threads/prepare.bases"
+
+
+
+
+#ifndef added_fst_branches_threads_begin
+
+#define added_fst_branches_threads_begin
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+begin_fst_branches_threads ()
+
+{
+
+
+
+
+
+begin_fst_roots_threads ();
+
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+#endif
+

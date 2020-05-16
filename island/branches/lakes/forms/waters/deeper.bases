@@ -1,0 +1,76 @@
+
+
+#include "./../../../../roots/threads/prepare.bases"
+
+
+#include "./../../../../roots/lakes/prepare.bases"
+
+
+
+
+#ifndef added_fst_branches_lakes_forms_waters_deeper
+
+#define added_fst_branches_lakes_forms_waters_deeper
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+deeper_fst_branches_lakes_forms_waters
+
+(
+
+that_fst_roots_threads_prepare_waters
+
+* that_waters_deeper
+
+)
+
+{
+
+
+
+
+if ( * that_waters_deeper == that_fst_roots_lakes_prepare )
+
+{
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_deeper = that_fst_roots_lakes_prepare;
+
+
+
+
+
+note_waters_deeper = * ( that_fst_roots_threads_prepare_waters * ) * that_waters_deeper;
+
+
+* that_waters_deeper = note_waters_deeper;
+
+
+
+
+
+
+note_waters_deeper = that_fst_roots_lakes_prepare;
+
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+#endif
+

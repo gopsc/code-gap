@@ -1,0 +1,21 @@
+
+
+#include <stdlib.h>
+
+
+
+
+#ifndef added_fst_roots_lakes_prepare
+
+#define added_fst_roots_lakes_prepare
+
+
+
+
+void * that_fst_roots_lakes_prepare = NULL;
+
+
+
+
+#endif
+

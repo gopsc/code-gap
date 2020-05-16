@@ -1,0 +1,666 @@
+
+
+#include <stdlib.h>
+
+#include <stdio.h>
+
+
+
+
+#ifndef added_fst_roots_trees_files_read
+
+#define added_fst_roots_trees_files_read
+
+
+
+
+void * read_fst_roots_trees_files
+
+(  
+
+void * that_stones_names,
+
+void * * that_stones_results,
+
+
+void * that_silts_results
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_files_got = NULL;
+
+
+
+note_files_got = ( void * ) fopen ( that_stones_names, "rb" );
+
+
+
+
+if
+
+( note_files_got == NULL )
+
+{
+
+
+* ( int * ) that_silts_results = 0;
+
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_waters_resized = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if ( * that_stones_results == NULL )
+
+{
+
+
+
+
+
+
+
+note_waters_resized = NULL;
+
+
+
+while ( note_waters_resized == NULL )
+
+{
+
+note_waters_resized = malloc ( 1 * sizeof ( char ) );
+
+}
+
+
+
+* ( char * ) note_waters_resized = '\0';
+
+
+
+
+* that_stones_results = note_waters_resized;
+
+
+
+note_waters_resized = NULL;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+note_waters_resized = NULL;
+
+
+
+while ( note_waters_resized == NULL )
+
+{
+
+note_waters_resized = realloc
+
+(
+
+* that_stones_results,
+
+1 * ( sizeof ( char ) )
+
+);
+
+}
+
+
+
+* ( char * ) note_waters_resized = '\0';
+
+
+
+
+* that_stones_results = note_waters_resized;
+
+
+
+note_waters_resized = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( char * ) * that_stones_results = '\0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_stones_read = NULL;
+
+
+
+while ( note_stones_read == NULL )
+
+{
+
+note_stones_read = malloc ( 2 * sizeof ( char ) );
+
+}
+
+
+
+* ( char * ) note_stones_read = '\0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_counts = NULL;
+
+
+
+while ( note_silts_counts == NULL )
+
+{
+
+note_silts_counts = malloc ( 1 * sizeof ( int ) );
+
+}
+
+
+
+* ( int * ) note_silts_counts = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while
+
+( fgets ( note_stones_read, 2, ( FILE * ) note_files_got ) != NULL )
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_counts = 0;
+
+
+while
+
+(
+
+* ( ( char * ) * that_stones_results + * ( int * ) note_silts_counts ) != '\0'
+
+)
+
+{
+
+* ( int * ) note_silts_counts
+
+=
+
+* ( int * ) note_silts_counts + 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+note_waters_resized = NULL;
+
+
+
+while ( note_waters_resized == NULL )
+
+{
+
+
+note_waters_resized = realloc
+
+(
+
+* that_stones_results,
+
+( 1 + 1 + * ( int * ) note_silts_counts ) * sizeof ( char )
+
+);
+
+
+}
+
+
+
+* that_stones_results = note_waters_resized;
+
+
+
+
+note_waters_resized = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( ( char * ) * that_stones_results + * ( int * ) note_silts_counts ) = * ( char * ) note_stones_read;
+
+
+
+
+
+
+
+
+
+* ( ( char * ) * that_stones_results + * ( int * ) note_silts_counts + 1 ) = '\0';
+
+
+
+
+
+
+
+
+
+
+
+* ( char * ) note_stones_read = '\0';
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+* ( int * ) that_silts_results = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_results = NULL;
+
+
+
+while ( note_silts_results == NULL )
+
+{
+
+note_silts_results = malloc ( 1 * sizeof ( int ) );
+
+}
+
+
+
+* ( int * ) note_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_results = fclose ( note_files_got );
+
+
+
+
+if ( * ( int * ) note_silts_results == -1 )
+
+{
+
+* ( int * ) that_silts_results = 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( char * ) note_stones_read = '\0';
+
+
+
+if ( note_stones_read != NULL )
+
+{
+
+free ( note_stones_read );
+
+}
+
+
+
+note_stones_read = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_counts = 0;
+
+
+
+if ( note_silts_counts != NULL )
+
+{
+
+free ( note_silts_counts );
+
+}
+
+
+
+note_silts_counts = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_results = 0;
+
+
+
+if ( note_silts_results != NULL )
+
+{
+
+free ( note_silts_results );
+
+}
+
+
+
+note_silts_results = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return NULL;
+
+}
+
+
+
+
+#endif
+

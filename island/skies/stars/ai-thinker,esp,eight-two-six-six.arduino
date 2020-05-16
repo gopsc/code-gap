@@ -1,0 +1,118 @@
+
+
+/* GR-CITRUS Sketch Template V2.23 */
+
+
+#include <arduino.h>
+
+
+
+
+void setup() {}
+
+
+
+
+
+void loop()
+
+{
+
+
+
+
+pinMode ( PIN_LED0, OUTPUT );
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+Serial . begin ( 9600 );
+
+Serial1 . begin ( 115200 );
+
+
+
+pinMode ( 4, OUTPUT );
+
+digitalWrite ( 4, HIGH );
+
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+
+
+
+
+
+while ( 1 )
+
+{
+
+
+
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+if ( Serial1.available() > 0 )
+
+{
+
+Serial . println ( Serial1.readString() );
+
+}
+
+
+
+
+if ( Serial.available() > 0 )
+
+{
+
+Serial1 . println ( Serial.readString() );
+
+}
+
+
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+
+
+
+delay ( 10 );
+
+
+
+
+}
+
+
+
+
+digitalWrite ( 4, LOW );
+
+Serial . end ();
+
+Serial1 . end ();
+
+
+
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+while ( 1 ) {}
+
+
+
+
+}
+
