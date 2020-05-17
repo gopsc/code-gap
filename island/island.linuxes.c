@@ -293,9 +293,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/prepare.bases"
 
-#include "./branches/lakes/begin.bases" // pointer for locks
+#include "./branches/lakes/begin.bases"
 
-#include "./branches/lakes/end.bases" // ignore pointer for locks"
+#include "./branches/lakes/end.bases"
 
 
 #include "./branches/lakes/waves/write.bases"

@@ -15,6 +15,8 @@
 
 #include "./../../roots/lakes/stones/copy.bases"
 
+#include "./../../roots/lakes/stones/measure.bases"
+
 
 
 
@@ -31,9 +33,16 @@ begin_fst_branches_lakes
 
 (
 
+
 that_fst_roots_threads_prepare_waters
 
-* that_waters_lakes
+* that_waters_lakes,
+
+
+that_fst_roots_threads_prepare_waters
+
+that_stones_names
+
 
 )
 
@@ -191,7 +200,7 @@ note_silts_sizes
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes
 
-= 3 * (
+= 2 * (
 
 * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_waters_sizes
 
@@ -248,13 +257,6 @@ note_silts_sizes
 
 
 
-* (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + 0 )  + 2 )
-
-= that_fst_roots_lakes_prepare;
-
-
-
-
 
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
 
@@ -282,13 +284,21 @@ note_silts_sizes
 
 
 
+measure_fst_roots_lakes_stones ( that_stones_names, note_silts_sizes );
+
+
+
+
+
 * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes
 
-=  27 * (
+=
 
-* ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_stones_sizes
+( 1 + * ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes )
 
-);
+*
+
+( * ( that_fst_roots_threads_prepare_silts * ) that_fst_roots_threads_prepare_stones_sizes );
 
 
 
@@ -432,7 +442,7 @@ copy_fst_roots_lakes_stones
 (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + 0 )  + 0 )   ),
 
 
-( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,begin"
+that_stones_names
 
 
 );

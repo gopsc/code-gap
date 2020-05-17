@@ -98,7 +98,7 @@ that_waters_lakes,
 
 
 
-note_waters_lakes_bubbles = * ( that_fst_roots_threads_prepare_waters * ) note_waters_lakes_bubbles;
+
 
 
 
@@ -123,7 +123,7 @@ note_waters_lakes_added = that_fst_roots_lakes_prepare;
 
 
 
-begin_fst_branches_lakes ( & note_waters_lakes_added );
+begin_fst_branches_lakes ( & note_waters_lakes_added, "moons,begin" );
 
 
 
@@ -236,7 +236,9 @@ add_fst_branches_lakes_waves
 (
 
 
-& note_waters_lakes_bubbles,
+( that_fst_roots_threads_prepare_waters * )
+
+note_waters_lakes_bubbles,
 
 
 ( that_fst_roots_threads_prepare_waters ) "moons,begin",
