@@ -2,11 +2,11 @@
 
 #include "./../branches/threads/prepare.bases"
 
-#include "./../branches/threads/instantaneous.bases"
-
 
 #include "./../branches/lakes/waves/fish.bases"
 
+
+#include "./../branches/lakes/forms/waters/abyss.bases"
 
 #include "./../branches/lakes/forms/waters/deeper.bases"
 
@@ -60,13 +60,13 @@ that_waters_lakes
 
 that_fst_branches_threads_prepare_waters
 
-note_waters_fish = instantaneous_fst_branches_threads ();
+note_waters_fish = abyss_fst_branches_lakes_forms_waters ();
 
 
 
 that_fst_branches_threads_prepare_waters
 
-note_waters_lakes = instantaneous_fst_branches_threads ();
+note_waters_lakes = abyss_fst_branches_lakes_forms_waters ();
 
 
 
@@ -80,7 +80,7 @@ note_waters_lakes = instantaneous_fst_branches_threads ();
 
 
 
-note_waters_fish = instantaneous_fst_branches_threads ();
+note_waters_fish = abyss_fst_branches_lakes_forms_waters ();
 
 
 
@@ -98,15 +98,10 @@ that_waters_lakes,
 
 
 
-deeper_fst_branches_lakes_forms_waters ( & note_waters_fish );
-
-
-
-note_waters_lakes = instantaneous_fst_branches_threads ();
+note_waters_lakes = abyss_fst_branches_lakes_forms_waters ();
 
 note_waters_lakes = note_waters_fish;
 
-note_waters_fish = instantaneous_fst_branches_threads ();
 
 
 
@@ -120,7 +115,8 @@ note_waters_fish = instantaneous_fst_branches_threads ();
 
 
 
-note_waters_fish = instantaneous_fst_branches_threads ();
+
+note_waters_fish = abyss_fst_branches_lakes_forms_waters ();
 
 
 
@@ -128,25 +124,28 @@ fish_fst_branches_lakes_waves
 
 (
 
+
+* ( that_fst_branches_threads_prepare_waters * )
+
 note_waters_lakes,
 
-( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,moons,begin",
+
+( that_fst_branches_threads_prepare_waters )
+
+"fst,branches,lakes,bubbles,moons,begin",
+
 
 & note_waters_fish
+
 
 );
 
 
 
-deeper_fst_branches_lakes_forms_waters ( & note_waters_fish );
-
-
-
-note_waters_lakes = instantaneous_fst_branches_threads ();
+note_waters_lakes = abyss_fst_branches_lakes_forms_waters ();
 
 note_waters_lakes = note_waters_fish;
 
-note_waters_fish = instantaneous_fst_branches_threads ();
 
 
 
@@ -161,7 +160,8 @@ note_waters_fish = instantaneous_fst_branches_threads ();
 
 
 
-note_waters_fish = instantaneous_fst_branches_threads ();
+
+note_waters_fish = abyss_fst_branches_lakes_forms_waters ();
 
 
 
@@ -169,11 +169,19 @@ fish_fst_branches_lakes_waves
 
 (
 
+
+* ( that_fst_branches_threads_prepare_waters * )
+
 note_waters_lakes,
 
-( that_fst_branches_threads_prepare_waters ) "dream",
+
+( that_fst_branches_threads_prepare_waters )
+
+"dream",
+
 
 & note_waters_fish
+
 
 );
 
@@ -190,7 +198,7 @@ note_waters_lakes,
 
 
 
-while ( note_waters_fish != instantaneous_fst_branches_threads () )
+while ( note_waters_fish != abyss_fst_branches_lakes_forms_waters () )
 
 {}
 
@@ -210,16 +218,16 @@ while ( note_waters_fish != instantaneous_fst_branches_threads () )
 
 
 
-note_waters_lakes = instantaneous_fst_branches_threads ();
+note_waters_lakes = abyss_fst_branches_lakes_forms_waters ();
 
 
 
-note_waters_fish = instantaneous_fst_branches_threads ();
+note_waters_fish = abyss_fst_branches_lakes_forms_waters ();
 
 
 
 
-return instantaneous_fst_branches_threads ();
+return abyss_fst_branches_lakes_forms_waters ();
 
 
 }
