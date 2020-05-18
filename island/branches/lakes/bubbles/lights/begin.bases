@@ -109,7 +109,7 @@ note_waters_lakes_lights = that_fst_roots_lakes_prepare;
 
 
 
-begin_fst_branches_lakes ( & note_waters_lakes_lights, "lights,begin" );
+begin_fst_branches_lakes ( & note_waters_lakes_lights, "fst,branches,lakes,bubbles,lights,begin" );
 
 
 
@@ -191,7 +191,7 @@ note_waters_lakes_bubbles,
 
 ( that_fst_roots_threads_prepare_waters )
 
-"lights,begin",
+"fst,branches,lakes,bubbles,lights,begin",
 
 
 note_waters_lakes_lights

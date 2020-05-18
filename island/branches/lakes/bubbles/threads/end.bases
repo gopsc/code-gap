@@ -101,7 +101,7 @@ note_waters_lakes_bubbles,
 
 ( that_fst_roots_threads_prepare_waters )
 
-"threads,begin",
+"fst,branches,lakes,bubbles,threads,begin",
 
 
 & note_waters_lakes_threads
@@ -144,7 +144,7 @@ note_waters_lakes_bubbles,
 
 ( that_fst_roots_threads_prepare_waters )
 
-"threads,begin"
+"fst,branches,lakes,bubbles,threads,begin"
 
 
 );

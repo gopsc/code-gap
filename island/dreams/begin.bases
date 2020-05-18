@@ -130,7 +130,7 @@ fish_fst_branches_lakes_waves
 
 note_waters_lakes,
 
-( that_fst_branches_threads_prepare_waters ) "moons,begin",
+( that_fst_branches_threads_prepare_waters ) "fst,branches,lakes,bubbles,moons,begin",
 
 & note_waters_fish
 
@@ -190,7 +190,7 @@ note_waters_lakes,
 
 
 
-while ( note_waters_fish != that_fst_roots_lakes_prepare )
+while ( note_waters_fish != instantaneous_fst_branches_threads () )
 
 {}
 

@@ -126,7 +126,20 @@ note_waters_lakes_added = that_fst_roots_lakes_prepare;
 
 
 
-begin_fst_branches_lakes ( & note_waters_lakes_added, "moons,begin" );
+begin_fst_branches_lakes
+
+(
+
+
+& note_waters_lakes_added,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"fst,branches,lakes,bubbles,moons,begin"
+
+
+);
 
 
 
@@ -191,7 +204,10 @@ write_fst_branches_lakes_waves
 
 * (  ( that_waters_moons + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  ),
 
-( that_fst_roots_threads_prepare_waters ) ""
+
+( that_fst_roots_threads_prepare_waters )
+
+""
 
 
 );
@@ -244,7 +260,7 @@ add_fst_branches_lakes_waves
 note_waters_lakes_bubbles,
 
 
-( that_fst_roots_threads_prepare_waters ) "moons,begin",
+( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,moons,begin",
 
 note_waters_lakes_added
 
