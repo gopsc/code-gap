@@ -224,10 +224,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./intros,second.notes"
 
 
-#include "./skies/intros.notes"
+#include "./skies/intros,first.notes"
+
+#include "./skies/intros,second.notes"
 
 
-#include "./rivers/intros.notes"
+#include "./rivers/intros,first.notes"
+
+#include "./rivers/intros,second.notes"
 
 
 #include "./trees/intros.notes"
