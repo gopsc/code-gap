@@ -208,9 +208,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
-.raspberrypi
+.wiringpi
 
-( libraries only on linux system computers raspberrypi )
+( libraries only on linux system computers with wiringpi )
 
 
 */
