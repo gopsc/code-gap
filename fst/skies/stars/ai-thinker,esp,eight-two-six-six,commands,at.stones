@@ -1,9 +1,12 @@
-,, test
 
+
+,, test
 
 AT
 
 ( return Ok )
+
+
 
 
 
@@ -17,6 +20,8 @@ AT+RST
 
 
 
+
+
 ,, ask version
 
 AT+GMR
@@ -25,6 +30,8 @@ AT+GMR
 
 
 ( <number> is version number, a eight-digit number )
+
+
 
 
 
@@ -50,6 +57,8 @@ AT+CWMODE=<mode>
 ( <mode> = 2 for ap )
 
 ( <mode> = 3 for station and ap )
+
+
 
 
 
@@ -91,6 +100,8 @@ AT+CWLAP
 
 
 
+
+
 ,, join wifi
 
 
@@ -111,6 +122,8 @@ AT+CWJAP=<ssid>,<password>
 
 
 
+
+
 ,, quit wifi
 
 
@@ -122,6 +135,8 @@ AT+CWQAP=?
 AT+CWQAP
 
 ( return OK )
+
+
 
 
 
@@ -147,6 +162,8 @@ AT+CWSAP=<ssid>,<password>,<chl>,<ecn>
 ( <ecn> is for encryption method )
 
 ( <chl> for channel number )
+
+
 
 
 
@@ -195,6 +212,8 @@ AT+CIPSTART=<id>,<type>,<address>,<port>
 
 
 
+
+
 ,, create server
 
 AT+CIPSERVER=<mode>[,<port>]
@@ -211,6 +230,8 @@ AT+CIPSERVER=<mode>[,<port>]
 
 
 ( only for AT+CIPMUX=1 )
+
+
 
 
 
@@ -280,6 +301,8 @@ AT+CIPSTATUS
 
 
 
+
+
 ,, multiple connection
 
 
@@ -298,6 +321,8 @@ AT+CIPMUX=<mode>
 ( <mode>=0 for single connection mode )
 
 ( <mode>=1 for multiple connection mode )
+
+
 
 
 
@@ -342,6 +367,8 @@ AT+CIPSEND
 
 
 
+
+
 ,, recive data
 
 ( it send )
@@ -357,6 +384,8 @@ AT+CIPSEND
 
 
 ( take effective when commands mode )
+
+
 
 
 
@@ -416,6 +445,8 @@ AT+CIPCLOSE
 
 
 
+
+
 ,, get local ip address
 
 
@@ -429,6 +460,8 @@ AT+CIFSR
 ( if success return +CIFSR:<IP address>\n\nOK )
 
 ( if fail return ERROR )
+
+
 
 
 
@@ -455,6 +488,8 @@ AT+CIPMODE=<mode>
 
 
 
+
+
 ,, set the time of server active disconnection
 
 
@@ -469,6 +504,8 @@ AT+CIPSTO=<server timeout>
 
 
 ( <server timeout> could value 0~28800(s) )
+
+
 
 
 
@@ -532,3 +569,11 @@ AT+CIUPDATE
 ( <n>=3 for got edition )
 
 ( <n>=4 for start update )
+
+
+
+
+
+
+,
+

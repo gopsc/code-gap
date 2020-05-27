@@ -11,6 +11,77 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+/*
+
+.notes
+
+( notes of c )
+
+
+.bases
+
+( base c grammars )
+
+( base c functions )
+
+( base c libraries )
+
+
+
+
+.arduino
+
+( not standard )
+
+( arduino functions )
+
+( arduino libraries )
+
+
+
+
+.standards
+
+( standard c functions )
+
+
+
+
+.computers
+
+( with libraries only on computers )
+
+
+
+
+.linuxes
+
+( with libraries only on linux system computers )
+
+
+.windows
+
+( with libraries only on windows system computers )
+
+
+
+
+.wiringpi
+
+( with libraries only on linux system computers and wiringpi )
+
+
+*/
+
+
+
+
+
+
+
+
+
+
 
 #include <stdlib.h>
                                // for null
@@ -153,72 +224,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
-/*
-
-.notes
-
-( notes of c )
-
-
-.bases
-
-( base c grammars )
-
-( base c functions )
-
-( base c libraries )
-
-
-
-
-.arduino
-
-( not standard )
-
-( arduino functions )
-
-( arduino libraries )
-
-
-
-
-.standards
-
-( standard c functions )
-
-
-
-
-.computers
-
-( libraries only on computers )
-
-
-
-
-.linuxes
-
-( libraries only on linux system computers )
-
-
-.windows
-
-( libraries only on windows system computers )
-
-
-
-
-.wiringpi
-
-( libraries only on linux system computers with wiringpi )
-
-
-*/
-
-
-
-
-
 #include "./intros,first.notes"
 
 #include "./intros,second.notes"
@@ -234,7 +239,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./rivers/intros,second.notes"
 
 
-#include "./trees/intros.notes"
+#include "./trees/intros,first.notes"
+
+#include "./trees/intros,second.notes"
 
 
 #include "./roots/intros.notes"

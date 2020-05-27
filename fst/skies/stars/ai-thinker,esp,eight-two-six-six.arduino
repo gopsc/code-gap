@@ -27,6 +27,35 @@ digitalWrite ( PIN_LED0, LOW );
 
 
 
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, LOW );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, LOW );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
 Serial . begin ( 9600 );
 
 Serial1 . begin ( 115200 );
@@ -36,6 +65,7 @@ Serial1 . begin ( 115200 );
 pinMode ( 4, OUTPUT );
 
 digitalWrite ( 4, HIGH );
+
 
 
 
