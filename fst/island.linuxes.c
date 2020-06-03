@@ -68,7 +68,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 .wiringpi
 
-( with libraries only on linux system computers and wiringpi )
+( with libraries only on computers with library wiringpi )
 
 
 */
