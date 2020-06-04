@@ -36,9 +36,9 @@ servo . attach ( int pin );
 servo . attach ( int pin, int min, int max );
 
 
-min :  the pulse width, in microseconds, corresponding to the minimum ( zero degree ) angle on the servo ( default to five hundred and forty-four )
+min :  ( the pulse width, in microseconds, corresponding to the minimum, zero degree, angle on the servo, default to five hundred and forty-four )
 
-max :  the pulse width, in microseconds, corresponding to the maximun ( one hundred and eighty degrees ) angle on the servo ( defaults two thousands and four hundred )
+max :  ( the pulse width, in microseconds, corresponding to the maximun, one hundred and eighty degrees, angle on the servo, defaults two thousands and four hundred )
 
 
 none returns
@@ -80,7 +80,7 @@ none returns
 servo . writeMicroseconds ( int us );
 
 
-us :  the value of the pulse width in microseconds
+us :  ( the value of the pulse width in microseconds )
 
 
 none returns
