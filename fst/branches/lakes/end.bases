@@ -12,6 +12,12 @@
 
 #include "./../../roots/lakes/waves/free.bases"
 
+/*
+#include "./../../roots/lakes/locks/drop.bases"
+
+#include "./../../roots/lakes/locks/end.bases"
+*/
+
 
 #include "./../../roots/lakes/stones/copy.bases"
 
@@ -571,7 +577,7 @@ drop_fst_roots_lakes_locks
 
 ( that_fst_roots_threads_prepare_waters )
 
-(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) ( * that_waters_lakes ) )  + 0 )  + 2 )  )
+( & (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) ( * that_waters_lakes ) )  + 0 )  + 2 )  ) )
 
 );
 
