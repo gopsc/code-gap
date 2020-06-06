@@ -19,7 +19,7 @@
 
 
 
-#include "./../../../branches/lakes/waves/write.bases"
+#include "./../../../branches/lakes/waves/add.bases"
 
 #include "./../../../branches/lakes/waves/fish.bases"
 
@@ -412,17 +412,26 @@ if ( * ( that_fst_roots_threads_prepare_silts * ) note_silts_results == 1 )
 
 
 
-write_fst_branches_lakes_waves
+add_fst_branches_lakes_waves
 
 (
+
 
 
 that_waters_lakes_stones_results,
 
 
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
+
+
+
 that_stones_names_results,
 
+
 note_stones_results
+
 
 
 );
@@ -511,17 +520,28 @@ return that_fst_roots_lakes_prepare;
 
 
 
-write_fst_branches_lakes_waves
+add_fst_branches_lakes_waves
 
 (
+
 
 
 that_waters_lakes_stones_results,
 
 
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
+
+
+
 that_stones_names_results,
 
-( that_fst_roots_threads_prepare_waters ) ""
+
+( that_fst_roots_threads_prepare_waters )
+
+""
+
 
 
 );

@@ -10,8 +10,6 @@
 #include "./../../../../branches/lakes/begin.bases"
 
 
-#include "./../../../../branches/lakes/waves/write.bases"
-
 #include "./../../../../branches/lakes/waves/add.bases"
 
 #include "./../../../../branches/lakes/waves/fish.bases"
@@ -197,13 +195,18 @@ while
 
 
 
-write_fst_branches_lakes_waves
+add_fst_branches_lakes_waves
 
 (
 
 
 
 & note_waters_lakes_added,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
 
 
 
@@ -269,14 +272,25 @@ add_fst_branches_lakes_waves
 (
 
 
+
 ( that_fst_roots_threads_prepare_waters * )
 
 note_waters_lakes_bubbles,
 
 
-( that_fst_roots_threads_prepare_waters ) "fst,branches,lakes,bubbles,moons,begin",
+( that_fst_roots_threads_prepare_waters )
+
+"waters",
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"fst,branches,lakes,bubbles,moons,begin",
+
 
 note_waters_lakes_added
+
 
 
 );

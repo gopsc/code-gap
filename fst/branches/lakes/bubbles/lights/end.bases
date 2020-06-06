@@ -94,6 +94,19 @@ that_waters_lakes,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_waters_lakes_lights = that_fst_roots_lakes_prepare;
@@ -124,13 +137,7 @@ note_waters_lakes_bubbles,
 );
 
 
-
-
-
-
-
-
-
+note_waters_lakes_lights = * ( that_fst_roots_threads_prepare_waters * ) note_waters_lakes_lights;
 
 
 
@@ -183,13 +190,7 @@ note_waters_lakes_bubbles,
 
 end_fst_branches_lakes
 
-(
-
-( that_fst_roots_threads_prepare_waters * )
-
-note_waters_lakes_lights
-
-);
+( & note_waters_lakes_lights );
 
 
 

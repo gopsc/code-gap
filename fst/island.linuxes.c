@@ -244,7 +244,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./trees/intros,second.notes"
 
 
-#include "./roots/intros.notes"
+#include "./roots/intros,first.notes"
+
+#include "./roots/intros,second.notes"
 
 
 #include "./branches/intros.notes"
@@ -321,12 +323,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/end.bases"
 
-//
-#include "./branches/lakes/waves/write.bases"
 
 #include "./branches/lakes/waves/add.bases"
-
-#include "./branches/lakes/waves/count.bases"
 
 #include "./branches/lakes/waves/drop.bases"
 
@@ -352,7 +350,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/bubbles/threads/end.bases"
 
-
+//
 
 #include "./branches/trees/dirents/is.linuxes"
 

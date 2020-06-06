@@ -7,6 +7,8 @@
 
 
 
+#include "./../../../../branches/lakes/waves/add.bases"
+
 #include "./../../../../branches/lakes/waves/fish.bases"
 
 
@@ -136,19 +138,30 @@ begin_fst_branches_lakes
 
 
 
-count_fst_branches_lakes_waves
+add_fst_branches_lakes_waves
 
 (
+
 
 
 & note_waters_lakes_threads,
 
 
-( that_fst_roots_threads_prepare_waters ) "waters",
+( that_fst_roots_threads_prepare_waters )
+
+"silts",
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"waters",
+
 
 that_fst_roots_threads_prepare_waters_sizes
 
 
+
 );
 
 
@@ -157,19 +170,30 @@ that_fst_roots_threads_prepare_waters_sizes
 
 
 
-count_fst_branches_lakes_waves
+add_fst_branches_lakes_waves
 
 (
+
 
 
 & note_waters_lakes_threads,
 
 
-( that_fst_roots_threads_prepare_waters ) "silts",
+( that_fst_roots_threads_prepare_waters )
+
+"silts",
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"silts",
+
 
 that_fst_roots_threads_prepare_silts_sizes
 
 
+
 );
 
 
@@ -178,17 +202,28 @@ that_fst_roots_threads_prepare_silts_sizes
 
 
 
-count_fst_branches_lakes_waves
+add_fst_branches_lakes_waves
 
 (
+
 
 
 & note_waters_lakes_threads,
 
 
-( that_fst_roots_threads_prepare_waters ) "stones",
+( that_fst_roots_threads_prepare_waters )
+
+"silts",
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
+
 
 that_fst_roots_threads_prepare_stones_sizes
+
 
 
 );
@@ -218,6 +253,11 @@ add_fst_branches_lakes_waves
 ( that_fst_roots_threads_prepare_waters * )
 
 note_waters_lakes_bubbles,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"waters",
 
 
 
