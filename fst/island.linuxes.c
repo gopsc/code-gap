@@ -249,7 +249,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./roots/intros,second.notes"
 
 
-#include "./branches/intros.notes"
+#include "./branches/intros,first.notes"
+
+#include "./branches/intros,second.notes"
 
 
 #include "./dreams/intros.notes"

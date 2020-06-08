@@ -463,7 +463,7 @@ while
 
 * ( that_fst_roots_threads_prepare_silts * )
 
-(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + 0 )  + 1 )  )
+(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) ( * that_waters_lakes ) )  + 0 )  + 1 )  )
 
 
 )
@@ -493,7 +493,7 @@ compare_fst_roots_lakes_stones
 
 that_stones_names,
 
-(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 0 )  ),
+(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) ( * that_waters_lakes ) )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 0 )  ),
 
 
 note_silts_results
@@ -527,13 +527,13 @@ free_fst_roots_lakes_waves
 
 (
 
-& (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 1 )  )
+& (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) ( * that_waters_lakes ) )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 1 )  )
 
 );
 
 
 
-* (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 1 )
+* (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) ( * that_waters_lakes ) )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 1 )
 
 = that_fst_roots_lakes_prepare;
 
@@ -1077,7 +1077,7 @@ copy_fst_roots_lakes_stones
 (
 
 
-& (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 2 )  ),
+(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 2 )  ),
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -1101,7 +1101,7 @@ copy_fst_roots_lakes_stones
 
 (
 
-& (  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 2 )  ),
+(  * (  * (  ( ( that_fst_roots_threads_prepare_waters * * ) * that_waters_lakes )  + * ( that_fst_roots_threads_prepare_silts * ) note_silts_counts )  + 2 )  ),
 
 that_stones_types
 
