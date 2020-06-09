@@ -11,70 +11,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
-/*
-
-.notes
-
-( notes of c )
-
-
-.bases
-
-( base c grammars )
-
-( base c functions )
-
-( base c libraries )
-
-
-
-
-.arduino
-
-( not standard )
-
-( arduino functions )
-
-( arduino libraries )
-
-
-
-
-.standards
-
-( standard c functions )
-
-
-
-
-.computers
-
-( with libraries only on computers )
-
-
-
-
-.linuxes
-
-( with libraries only on linux system computers )
-
-
-.windows
-
-( with libraries only on windows system computers )
-
-
-
-
-.wiringpi
-
-( with libraries only on computers with library wiringpi )
-
-
-*/
-
-
-
 
 
 
@@ -137,8 +73,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+*/
 
 
+#include <memory.h>
+                            // for null
+/*
 
 #include <dirent.h>
                               // for dirent
@@ -224,6 +164,10 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+
+
+
+
 #include "./intros,first.notes"
 
 #include "./intros,second.notes"
@@ -272,9 +216,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./roots/lakes/waves/create.bases" // may stuck when it fail
 
+#include "./roots/lakes/waves/free.bases" // may error when it fail
+
 #include "./roots/lakes/waves/resize.bases" // may stuck when it fail
 
-#include "./roots/lakes/waves/free.bases" // may error when it fail
+
+#include "./roots/lakes/waters/clean.computers"
 
 
 #include "./roots/lakes/stones/copy.bases"
@@ -325,7 +272,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/end.bases"
 
-
+//
 #include "./branches/lakes/waves/add.bases"
 
 #include "./branches/lakes/waves/drop.bases"
