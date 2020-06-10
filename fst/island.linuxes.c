@@ -78,6 +78,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include <memory.h>
                             // for null
+                            // for memset()
 /*
 
 #include <dirent.h>
