@@ -256,6 +256,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 #include "./branches/lakes/waves/fish.bases"
 
+#include "./branches/lakes/waves/graze.bases"
+
 
 #include "./branches/lakes/bubbles/begin.bases"
 
