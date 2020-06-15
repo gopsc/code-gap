@@ -2,6 +2,13 @@
 
 #include "./../../roots/threads/prepare.bases"
 
+/*
+#include "./../../roots/threads/locks/measure.computers"
+
+#include "./../../roots/threads/locks/prepare.computers"
+
+#include "./../../roots/threads/locks/begin.computers"
+*/
 
 #include "./../../roots/lakes/prepare.bases"
 
@@ -13,11 +20,7 @@
 #include "./../../roots/lakes/waves/free.bases"
 
 /*
-#include "./../../roots/threads/locks/measure.computers"
-
-#include "./../../roots/threads/locks/prepare.computers"
-
-#include "./../../roots/threads/locks/begin.computers"
+#include "./../../roots/lakes/waters/clean.bases"
 */
 
 #include "./../../roots/lakes/stones/copy.bases"
