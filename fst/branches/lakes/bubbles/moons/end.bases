@@ -88,6 +88,17 @@ that_waters_lakes,
 
 
 
+if ( note_waters_lakes_bubbles == that_fst_roots_lakes_prepare )
+
+{
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
 
 
 
@@ -125,6 +136,23 @@ note_waters_lakes_bubbles,
 
 
 );
+
+
+
+
+if ( note_waters_lakes_moons == that_fst_roots_lakes_prepare )
+
+{
+
+
+note_waters_lakes_bubbles = that_fst_roots_lakes_prepare;
+
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
 
 
 note_waters_lakes_moons = * ( that_fst_roots_threads_prepare_waters * ) note_waters_lakes_moons;

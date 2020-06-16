@@ -119,11 +119,11 @@ while
 
 
 
-* ( ( char * ) that_waters_clean + * ( int * ) note_silts_counts )
+* ( ( ( char * ) that_waters_clean ) + ( * ( int * ) note_silts_counts ) )
 
 =
 
-( char ) * ( ( int * ) that_silts_values );
+( ( char ) * ( ( int * ) that_silts_values ) );
 
 
 
