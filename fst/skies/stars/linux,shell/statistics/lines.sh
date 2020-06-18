@@ -1,1 +1,0 @@
-find . type f | xargs cat | grep -v ^$ | wc -l
