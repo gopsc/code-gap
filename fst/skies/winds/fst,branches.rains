@@ -1,3 +1,7 @@
-to "fst/branches/bubbles", "fst/branches/forms" to "fst/branches/trees", change blank return and transforms in functions
+add transforms in functions
+
+change lines rule when variables declare
+
+for fish, change blank return
 
 add lakes type check
