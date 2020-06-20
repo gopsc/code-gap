@@ -95,6 +95,22 @@ return that_fst_roots_lakes_prepare;
 
 
 
+if ( that_stones_names == that_fst_roots_lakes_prepare )
+
+{
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
