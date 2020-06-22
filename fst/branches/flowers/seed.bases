@@ -64,9 +64,9 @@ that_fst_roots_threads_prepare_waters
 that_silts_moons,
 
 
-that_fst_roots_threads_prepare_waters
+that_fst_roots_threads_prepare_waters *
 
-* that_waters_moons
+that_waters_moons
 
 
 )
@@ -91,6 +91,8 @@ begin_fst_branches_threads ();
 
 
 
+
+
 begin_fst_branches_lakes
 
 (
@@ -108,9 +110,25 @@ begin_fst_branches_lakes
 
 
 
+
+
 begin_fst_branches_lakes_bubbles ( & that_fst_branches_lakes_prepare );
 
-begin_fst_branches_lakes_bubbles_moons ( that_fst_branches_lakes_prepare, that_silts_moons, that_waters_moons );
+
+
+begin_fst_branches_lakes_bubbles_moons
+
+(
+
+that_fst_branches_lakes_prepare,
+
+that_silts_moons,
+
+that_waters_moons
+
+);
+
+
 
 begin_fst_branches_lakes_bubbles_lights ( that_fst_branches_lakes_prepare );
 

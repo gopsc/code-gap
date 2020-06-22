@@ -67,7 +67,18 @@ note_waters_deeper = that_fst_roots_lakes_prepare;
 
 
 
-note_waters_deeper = * ( that_fst_roots_threads_prepare_waters * ) * that_waters_deeper;
+note_waters_deeper
+
+
+=
+
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+( * that_waters_deeper );
+
+
+
 
 
 * that_waters_deeper = note_waters_deeper;
@@ -83,6 +94,8 @@ note_waters_deeper = * ( that_fst_roots_threads_prepare_waters * ) * that_waters
 
 
 note_waters_deeper = that_fst_roots_lakes_prepare;
+
+
 
 
 
