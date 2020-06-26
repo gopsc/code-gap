@@ -21,6 +21,11 @@ void loop()
 
 
 
+
+
+
+
+
 pinMode ( PIN_LED0, OUTPUT );
 
 digitalWrite ( PIN_LED0, LOW );
@@ -28,7 +33,14 @@ digitalWrite ( PIN_LED0, LOW );
 
 
 
+
+
+
+
+
 digitalWrite ( PIN_LED0, LOW );
+
+
 
 
 digitalWrite ( PIN_LED0, HIGH );
@@ -52,6 +64,11 @@ digitalWrite ( PIN_LED0, HIGH );
 delay ( 100 );
 
 digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
 
 
 
@@ -62,6 +79,7 @@ Serial1 . begin ( 115200 );
 
 
 
+
 pinMode ( 9, OUTPUT );
 
 digitalWrite ( 9, HIGH );
@@ -69,7 +87,19 @@ digitalWrite ( 9, HIGH );
 
 
 
+
+
+
+
+
 digitalWrite ( PIN_LED0, HIGH );
+
+
+
+
+
+
+
 
 
 
@@ -83,7 +113,17 @@ while ( 1 )
 
 
 
+
+
+
+
+
 digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
 
 
 
@@ -99,6 +139,11 @@ Serial . println ( Serial1.readString() );
 
 
 
+
+
+
+
+
 if ( Serial.available() > 0 )
 
 {
@@ -110,7 +155,17 @@ Serial1 . println ( Serial.readString() );
 
 
 
+
+
+
+
+
 digitalWrite ( PIN_LED0, HIGH );
+
+
+
+
+
 
 
 
@@ -125,6 +180,11 @@ delay ( 10 );
 
 
 
+
+
+
+
+
 digitalWrite ( 9, LOW );
 
 Serial . end ();
@@ -134,7 +194,20 @@ Serial1 . end ();
 
 
 
+
+
+
+
+
 digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
+
+
 
 
 
