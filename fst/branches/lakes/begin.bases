@@ -74,6 +74,9 @@ that_stones_names
 
 
 
+
+
+
 if ( * that_waters_lakes != that_fst_roots_lakes_prepare )
 
 {
@@ -97,6 +100,9 @@ if ( that_stones_names == that_fst_roots_lakes_prepare )
 return that_fst_roots_lakes_prepare;
 
 }
+
+
+
 
 
 
@@ -177,6 +183,8 @@ note_silts_sizes = 0;
 
 
 
+
+
 * ( that_fst_roots_threads_prepare_silts * )
 
 note_silts_sizes
@@ -210,14 +218,26 @@ that_fst_roots_threads_prepare_waters_sizes
 
 
 
+
+
+
 create_fst_roots_lakes_waves
 
 (
 
 
+
+
 ( that_fst_roots_threads_prepare_waters * )
 
-& ( * that_waters_lakes )
+
+( &
+
+( * that_waters_lakes )
+
+)
+
+
 
 
 );
@@ -255,19 +275,37 @@ create_fst_roots_lakes_waves
 
 
 
+
+
+
+
+
+
+
 resize_fst_roots_lakes_waves
 
 (
 
 
+
+
 ( that_fst_roots_threads_prepare_waters * )
 
-& ( * that_waters_lakes ),
+
+( &
+
+( * that_waters_lakes )
+
+),
+
+
 
 
 ( that_fst_roots_threads_prepare_waters )
 
 note_silts_sizes
+
+
 
 
 );
@@ -292,6 +330,9 @@ note_silts_sizes
 
 
 = that_fst_roots_lakes_prepare;
+
+
+
 
 
 
@@ -333,7 +374,9 @@ note_silts_sizes = 0;
 
 
 
-* ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes
+* ( that_fst_roots_threads_prepare_silts * )
+
+note_silts_sizes
 
 
 =
@@ -348,6 +391,9 @@ that_fst_roots_threads_prepare_waters_sizes
 
 
 ) ;
+
+
+
 
 
 
@@ -410,6 +456,9 @@ create_fst_roots_lakes_waves
 
 
 = 0;
+
+
+
 
 
 
@@ -533,6 +582,9 @@ note_silts_sizes
 
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * )
 
 note_silts_sizes = 0;
@@ -642,6 +694,9 @@ that_fst_roots_threads_prepare_stones_sizes
 
 
 
+
+
+
 create_fst_roots_lakes_waves
 
 (
@@ -690,6 +745,9 @@ create_fst_roots_lakes_waves
 
 
 = 0;
+
+
+
 
 
 
@@ -774,6 +832,9 @@ copy_fst_roots_lakes_stones
 
 
 );
+
+
+
 
 
 
@@ -979,6 +1040,9 @@ that_stones_names
 
 
 
+
+
+
 * ( that_fst_roots_threads_prepare_silts * )
 
 
@@ -1004,6 +1068,9 @@ that_stones_names
 
 
 
+
+
+
 /*
 
 
@@ -1016,7 +1083,7 @@ begin_fst_roots_threads_locks
 ( that_fst_roots_threads_prepare_waters )
 
 
-( (  * (  * (  (
+(  * (  * (  (
 
 
 ( that_fst_roots_threads_prepare_waters * * )
@@ -1024,7 +1091,7 @@ begin_fst_roots_threads_locks
 ( * that_waters_lakes )
 
 
-)  + 0 )  + 2 )  ) )
+)  + 0 )  + 2 )  )
 
 
 
@@ -1100,7 +1167,17 @@ note_silts_sizes = that_fst_roots_lakes_prepare;
 
 
 
+
+
+
 return that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
 
 
 }
