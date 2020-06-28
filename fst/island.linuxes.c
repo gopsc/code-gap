@@ -19,6 +19,8 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+
+
 #include <stdlib.h>
                                // for null
                                // for __uint8_t, __uint16_t, __uint32_t, __uint64_t
@@ -49,7 +51,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 /*
 
-
 #include <math.h>
                                // for pi
                                // for trigonometric function
@@ -59,10 +60,9 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
                              // for time(NULL)
 
 
-
 #include <signal.h>
                                // for check_deamon() ->
-                               // for tcp block out.
+                               // for tcp block out
 
 
 #include <fcntl.h>
@@ -107,6 +107,12 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include <unistd.h>
 
 */
+
+
+
+
+
+
 
 #include <sys/stat.h>
                                   // for struct stat
@@ -156,9 +162,14 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
+
 #include <wiringpi.h>
 
 */
+
+
+
+
 
 
 
