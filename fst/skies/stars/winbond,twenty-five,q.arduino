@@ -1,6 +1,29 @@
 /* GR-CITRUS Sketch Template V2.23 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <arduino.h>
 
 #include <SPI.h>
@@ -9,9 +32,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 byte pageBuffer[256];
 
 char str[] = "hi.";
+
+
+
+
 
 
 
@@ -93,6 +140,14 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
 void *  read_roots_winbond_twenty_five_q
 
 ( 
@@ -154,6 +209,11 @@ digitalWrite ( SS, HIGH );
 return NULL;
 
 }
+
+
+
+
+
 
 
 
@@ -268,19 +328,101 @@ return NULL;
 
 
 
+void setup () {}
 
 
 
 
 
-void setup ()
+
+
+
+
+
+
+
+
+
+
+
+void loop ()
 
 {
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 pinMode ( PIN_LED0, OUTPUT );
-    
-    
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
+
+
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
+
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, LOW );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, LOW );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, HIGH );
+
+delay ( 100 );
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SPI . begin ();
 
 SPI . setDataMode ( SPI_MODE0 );
@@ -290,30 +432,82 @@ SPI . setBitOrder ( MSBFIRST );
     
 Serial . begin ( 9600 );
 
-    
-}
 
 
 
-void loop ()
+
+
+
+
+erase_roots_winbond_twenty_five_q ();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+digitalWrite ( PIN_LED0, HIGH );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while ( 1 )
 
 {
 
-	
-digitalWrite ( PIN_LED0, LOW );
-    
-    
 
-/*
-    
-erase_roots_winbond_twenty_five_q ();
-    
+
+
+
+
+
+
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 write_roots_winbond_twenty_five_q ( 0x0000, str, sizeof(str));
-    
+
 read_roots_winbond_twenty_five_q ( 0x0000, pageBuffer, sizeof(str));
-    
-    
-    
+
+
+
 Serial . print ( "'" );
 
 for (  int i = 0;  i < sizeof ( str );  i++  )
@@ -328,8 +522,16 @@ Serial . print (  char ( pageBuffer [ i ] )  );
 Serial . print ( "'" );
     
 Serial . println ();
-    
-*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -338,7 +540,76 @@ Serial . println ();
 
 digitalWrite ( PIN_LED0, HIGH );
 
-delay ( 2000 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+delay ( 100 );
+
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SPI . end ();
+
+Serial . end ();
+
+
+
+
+
+
+
+
+
+digitalWrite ( PIN_LED0, LOW );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while ( 1 ) {}
+
+
+
+
+}
+
