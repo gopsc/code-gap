@@ -394,7 +394,7 @@ uint32_t ina219_powerDivider_mW = 0;
 
 
 
-// begin
+
 
 pinMode ( PIN_LED0, OUTPUT );
 
@@ -440,7 +440,7 @@ digitalWrite ( PIN_LED0, LOW );
 
 
 
-
+// begin
 
 Serial . begin ( 9600 );
 
@@ -465,13 +465,43 @@ Wire . begin ();
 
 
 
-// set
+// set 32v 2a
 
 ina219_calValue = 4096;
 
 ina219_currentDivider_mA = 10;
 
 ina219_powerDivider_mW = 2;
+
+
+
+
+// set 32v 1a
+
+/*
+
+ina219_calValue = 10240;
+
+ina219_currentDivider_mA = 25;
+
+ina219_powerDivider_mW = 1
+
+*/
+
+
+
+
+// set 16v 400ma
+
+/*
+
+ina219_calValue = 8192;
+
+ina219_currentDivider_mA = 20;
+
+ina219_powerDivider_mW = 1
+
+*/
 
 
 
@@ -500,6 +530,8 @@ ina219_calValue
 
 // set 32v 2a
 
+// set 32v 1a
+
 uint16_t config = ( 0x2000 ) |
 
                   ( 0x1800 ) |
@@ -511,6 +543,19 @@ uint16_t config = ( 0x2000 ) |
                   ( 0x0007 );
 
 
+
+
+// set 16v 400ma
+
+/*
+
+uint16_t config = ( 0x0000 ) |
+                    ( 0x0000 ) |
+                    ( 0x400 ) |
+                    ( 0x0018 ) |
+                    ( 0x0007 );
+
+*/
 
 
 
