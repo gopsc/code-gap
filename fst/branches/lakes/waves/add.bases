@@ -156,16 +156,9 @@ that_fst_roots_threads_prepare_waters
 note_silts_counts = that_fst_roots_lakes_prepare;
 
 
-
-
 create_fst_roots_lakes_waves ( & note_silts_counts );
 
-
-
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-note_silts_counts = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_counts = 0;
 
 
 
@@ -180,16 +173,9 @@ that_fst_roots_threads_prepare_waters
 note_silts_results = that_fst_roots_lakes_prepare;
 
 
-
-
 create_fst_roots_lakes_waves ( & note_silts_results );
 
-
-
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-note_silts_results = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_results = 0;
 
 
 
@@ -204,16 +190,9 @@ that_fst_roots_threads_prepare_waters
 note_silts_sizes = that_fst_roots_lakes_prepare;
 
 
-
-
 create_fst_roots_lakes_waves ( & note_silts_sizes );
 
-
-
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-note_silts_sizes = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_sizes = 0;
 
 
 
@@ -228,16 +207,9 @@ that_fst_roots_threads_prepare_waters
 note_silts_lengths_types = that_fst_roots_lakes_prepare;
 
 
-
-
 create_fst_roots_lakes_waves ( & note_silts_lengths_types );
 
-
-
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-note_silts_lengths_types = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_types = 0;
 
 
 
@@ -252,16 +224,9 @@ that_fst_roots_threads_prepare_waters
 note_silts_lengths_names = that_fst_roots_lakes_prepare;
 
 
-
-
 create_fst_roots_lakes_waves ( & note_silts_lengths_names );
 
-
-
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-note_silts_lengths_names = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_names = 0;
 
 
 
@@ -276,16 +241,9 @@ that_fst_roots_threads_prepare_waters
 note_silts_lengths_wrote = that_fst_roots_lakes_prepare;
 
 
-
-
 create_fst_roots_lakes_waves ( & note_silts_lengths_wrote );
 
-
-
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-note_silts_lengths_wrote = 0;
+* ( that_fst_roots_threads_prepare_silts * ) note_silts_lengths_wrote = 0;
 
 
 
