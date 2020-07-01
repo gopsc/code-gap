@@ -264,7 +264,7 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 #include "./branches/lakes/end.bases"
 
 
-#include "./branches/lakes/waves/add.bases"
+#include "./branches/lakes/waves/add.bases"  // support types waters, silts and stones
 //
 #include "./branches/lakes/waves/drop.bases"
 
