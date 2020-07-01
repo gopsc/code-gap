@@ -121,11 +121,7 @@ while
 
 * (
 
-( ( char * ) that_waters_clean )
-
-+
-
-( * ( int * ) note_silts_counts )
+( int8_t * ) that_waters_clean + * ( int * ) note_silts_counts
 
 )
 
@@ -133,11 +129,7 @@ while
 =
 
 
-( ( char )
-
-* ( ( int * ) that_silts_values )
-
-);
+( int8_t ) * ( int * ) that_silts_values;
 
 
 
