@@ -1,1 +1,1 @@
-add locks create, drop, begin and end to fst/branches/lakes/locks, after fst/branches/lakes/waves, where from fst/roots/threads/locks
+add locks begin, end, lock, unlock to fst/branches/lakes/locks, after fst/branches/lakes/waves
