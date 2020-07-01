@@ -1,3 +1,3 @@
-add locks function to fst/branches/lakes, where from fst/roots/threads/locks, before lakes/waves
+add locks function to fst/branches/lakes/locks, before lakes/waves, where from fst/roots/threads/locks
 
 add locks create, drop, begin and end in branches
