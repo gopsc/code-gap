@@ -50,9 +50,61 @@ that_waters_lakes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if ( * that_waters_lakes == that_fst_roots_lakes_prepare )
+
+{
+
+return that_fst_roots_lakes_prepare;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 that_fst_roots_threads_prepare_waters
 
 note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+
+
+
 
 
 
@@ -84,22 +136,58 @@ fish_fst_branches_lakes_waves
 
 
 
+
+
+
+
+
 if ( note_waters_lakes == that_fst_roots_lakes_prepare )
 
 {
 
 
+
+
 note_waters_lakes = that_fst_roots_lakes_prepare;
 
 
+
+
 return that_fst_roots_lakes_prepare;
+
 
 }
 
 
 
 
-note_waters_lakes = * ( that_fst_roots_threads_prepare_waters * ) note_waters_lakes;
+
+
+
+
+
+note_waters_lakes
+
+
+=
+
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+note_waters_lakes;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,6 +227,11 @@ that_waters_lakes,
 
 
 
+
+
+
+
+
 end_fst_branches_lakes
 
 (
@@ -161,11 +254,45 @@ end_fst_branches_lakes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 note_waters_lakes = that_fst_roots_lakes_prepare;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 return that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
 
 
 }
