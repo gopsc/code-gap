@@ -155,6 +155,111 @@ return that_fst_roots_lakes_prepare;
 
 
 
+if ( that_waters_lakes_stones_files == that_fst_roots_lakes_prepare )
+
+{
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if ( that_stones_names_files == that_fst_roots_lakes_prepare )
+
+{
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if ( that_waters_lakes_stones_contents == that_fst_roots_lakes_prepare )
+
+{
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if ( that_stones_names_contents == that_fst_roots_lakes_prepare )
+
+{
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if ( that_waters_lakes_lights == that_fst_roots_lakes_prepare )
+
+{
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
 if ( * that_waters_results != that_fst_roots_lakes_prepare )
 
 {
@@ -167,6 +272,12 @@ return that_fst_roots_lakes_prepare;
 
 
 }
+
+
+
+
+
+
 
 
 
