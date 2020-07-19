@@ -105,11 +105,66 @@ that_fst_roots_threads_prepare_waters
 
 
 
+
+
+
+
+
+
+if
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_waters_results
+
+
+==
+
+
+that_fst_roots_lakes_prepare
+
+
+)
+
+{
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if ( * that_waters_results != that_fst_roots_lakes_prepare )
 
 {
 
+
+
+
 return that_fst_roots_lakes_prepare;
+
+
 
 }
 
