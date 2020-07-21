@@ -409,6 +409,40 @@ that_stones_names_files,
 
 
 
+if ( note_waters_names == that_fst_roots_lakes_prepare )
+
+{
+
+
+
+
+note_waters_names = that_fst_roots_lakes_prepare;
+
+
+
+note_waters_lakes = that_fst_roots_lakes_prepare;
+
+
+
+note_waters_fish = that_fst_roots_lakes_prepare;
+
+
+
+
+return that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
