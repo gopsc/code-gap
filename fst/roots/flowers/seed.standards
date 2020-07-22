@@ -29,7 +29,18 @@ char * argv []
 
 
 
-seed_fst_branches_flowers ( ( void * ) & argc, ( void * * ) argv );
+seed_fst_branches_flowers
+
+(
+
+
+( void * ) & argc,
+
+
+( void * * ) argv
+
+
+);
 
 
 
