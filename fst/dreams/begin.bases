@@ -60,6 +60,43 @@ that_waters_lakes
 
 
 
+if ( that_waters_lakes == abyss_fst_branches_threads_forms_waters () )
+
+{
+
+
+
+
+return abyss_fst_branches_threads_forms_waters ();
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 that_fst_branches_threads_prepare_waters
 
 note_waters_lakes = abyss_fst_branches_threads_forms_waters ();
