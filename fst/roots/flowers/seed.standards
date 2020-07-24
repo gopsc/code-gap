@@ -104,11 +104,7 @@ return 0;
 
 
 
-void * note_silts_counts
-
-=
-
-NULL;
+void * note_silts_counts = NULL;
 
 
 
@@ -118,11 +114,7 @@ NULL;
 
 
 
-note_silts_counts
-
-=
-
-malloc ( sizeof ( int ) );
+note_silts_counts = malloc (  sizeof ( int )  );
 
 
 
@@ -132,9 +124,7 @@ malloc ( sizeof ( int ) );
 
 
 
-* ( int * ) note_silts_counts
-
-= 0;
+* ( int * ) note_silts_counts = 0;
 
 
 
@@ -151,9 +141,7 @@ malloc ( sizeof ( int ) );
 
 
 
-* ( int * ) note_silts_counts
-
-= 0;
+* ( int * ) note_silts_counts = 0;
 
 
 
