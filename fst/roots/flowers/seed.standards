@@ -122,11 +122,6 @@ note_silts_counts = malloc (  sizeof ( int )  );
 
 
 
-
-
-
-
-
 while (  * ( int * ) note_silts_counts  <  * ( int * ) ( void * ) & argc  )
 
 {
@@ -170,11 +165,6 @@ return 0;
 
 
 * ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
-
-
-
-
-
 
 
 
