@@ -114,7 +114,13 @@ void * note_silts_counts = NULL;
 
 
 
+while ( note_silts_counts == NULL )
+
+{
+
 note_silts_counts = malloc (  sizeof ( int )  );
+
+}
 
 
 
@@ -208,12 +214,7 @@ if (
 
 {
 
-
-
-
 return 0;
-
-
 
 }
 
