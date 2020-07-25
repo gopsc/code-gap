@@ -32,7 +32,7 @@ that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
 
-while ( that_fst_roots_threads_prepare_waters_sizes == NULL )
+while (  ( void * ) that_fst_roots_threads_prepare_waters_sizes == NULL  )
 
 {
 
@@ -57,7 +57,7 @@ that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 
 
-while ( that_fst_roots_threads_prepare_silts_sizes == NULL )
+while (  ( void * ) that_fst_roots_threads_prepare_silts_sizes == NULL  )
 
 
 
@@ -83,7 +83,7 @@ that_fst_roots_threads_prepare_stones_sizes = NULL;
 
 
 
-while ( that_fst_roots_threads_prepare_stones_sizes == NULL )
+while (  ( void * ) that_fst_roots_threads_prepare_stones_sizes == NULL  )
 
 {
 
