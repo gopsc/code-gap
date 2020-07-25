@@ -12,19 +12,13 @@
 
 
 
-typedef void *
-
-that_fst_roots_threads_prepare_waters;
+typedef void * that_fst_roots_threads_prepare_waters;
 
 
-typedef int
-
-that_fst_roots_threads_prepare_silts;
+typedef int that_fst_roots_threads_prepare_silts;
 
 
-typedef char
-
-that_fst_roots_threads_prepare_stones;
+typedef char that_fst_roots_threads_prepare_stones;
 
 
 
