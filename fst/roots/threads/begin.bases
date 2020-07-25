@@ -32,30 +32,17 @@ that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
 
-
 while ( that_fst_roots_threads_prepare_waters_sizes == NULL )
 
 {
 
-that_fst_roots_threads_prepare_waters_sizes = malloc ( sizeof ( int ) );
+that_fst_roots_threads_prepare_waters_sizes = malloc (  sizeof ( int )  );
 
 }
 
 
 
-
 * ( int * ) that_fst_roots_threads_prepare_waters_sizes = 0;
-
-
-
-
-
-
-
-
-
-* ( int * ) that_fst_roots_threads_prepare_waters_sizes = sizeof ( void * );
-
 
 
 
@@ -72,18 +59,17 @@ that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 while ( that_fst_roots_threads_prepare_silts_sizes == NULL )
 
+
+
 {
 
-that_fst_roots_threads_prepare_silts_sizes = malloc ( sizeof ( int ) );
+that_fst_roots_threads_prepare_silts_sizes = malloc (  sizeof ( int )  );
 
 }
 
+
+
 * ( int * ) that_fst_roots_threads_prepare_silts_sizes = 0;
-
-
-
-
-* ( int * ) that_fst_roots_threads_prepare_silts_sizes = sizeof ( int );
 
 
 
@@ -97,16 +83,32 @@ that_fst_roots_threads_prepare_stones_sizes = NULL;
 
 
 
-
 while ( that_fst_roots_threads_prepare_stones_sizes == NULL )
 
 {
 
-that_fst_roots_threads_prepare_stones_sizes = malloc ( sizeof ( int ) );
+that_fst_roots_threads_prepare_stones_sizes = malloc (  sizeof ( int )  );
 
 }
 
+
+
 * ( int * ) that_fst_roots_threads_prepare_stones_sizes = 0;
+
+
+
+
+
+
+
+
+
+* ( int * ) that_fst_roots_threads_prepare_waters_sizes = sizeof ( void * );
+
+
+
+
+* ( int * ) that_fst_roots_threads_prepare_silts_sizes = sizeof ( int );
 
 
 
@@ -120,7 +122,10 @@ that_fst_roots_threads_prepare_stones_sizes = malloc ( sizeof ( int ) );
 
 
 
+
 return NULL;
+
+
 
 }
 
