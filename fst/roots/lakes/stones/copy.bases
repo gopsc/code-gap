@@ -33,6 +33,38 @@ void * that_stones_copied
 
 
 
+if (  ( void * ) that_stones_targets == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_stones_copied == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
