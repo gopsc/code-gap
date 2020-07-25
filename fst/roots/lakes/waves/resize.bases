@@ -85,9 +85,15 @@ void * note_waters_resized = NULL;
 
 
 
-while ( note_waters_resized == NULL )
+while (  ( void * ) note_waters_resized == NULL  )
 
 {
+
+
+
+
+
+
 
 
 
@@ -95,14 +101,27 @@ note_waters_resized = realloc
 
 (
 
-* that_waters_resized,
+( void * ) * that_waters_resized,
 
 * ( int * ) that_silts_sizes
 
 );
 
 
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -116,15 +135,14 @@ note_waters_resized = realloc
 
 
 
-
-
-
-
 note_waters_resized = NULL;
 
 
 
+
 return NULL;
+
+
 
 }
 
