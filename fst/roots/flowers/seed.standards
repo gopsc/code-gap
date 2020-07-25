@@ -36,22 +36,6 @@ char * argv []
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if (  * ( int * ) ( void * ) & argc  ==  0  )
 
 {
@@ -59,22 +43,6 @@ if (  * ( int * ) ( void * ) & argc  ==  0  )
 return 0;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,13 +76,6 @@ note_silts_counts = malloc (  sizeof ( int )  );
 
 
 
-
-
-
-
-
-
-
 * ( int * ) note_silts_counts = 0;
 
 
@@ -122,22 +83,6 @@ note_silts_counts = malloc (  sizeof ( int )  );
 while (  * ( int * ) note_silts_counts  <  * ( int * ) ( void * ) & argc  )
 
 {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -163,43 +108,11 @@ return 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -227,22 +140,6 @@ note_silts_counts = NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 seed_fst_branches_flowers
 
 (
@@ -255,22 +152,6 @@ seed_fst_branches_flowers
 
 
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
