@@ -33,15 +33,7 @@ void * that_silts_sizes
 
 
 
-
-
-
-
-
-
-
-
-if ( * that_waters_resized == NULL )
+if (  ( void * ) ( void * * ) that_waters_resized == NULL  )
 
 {
 
@@ -52,6 +44,34 @@ return NULL;
 
 
 
+
+
+
+
+
+if (  ( void * ) * that_waters_resized == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_silts_sizes == NULL  )
+
+{
+
+return NULL;
+
+}
 
 
 
