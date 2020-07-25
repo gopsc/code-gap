@@ -126,7 +126,13 @@ return 0;
 
 
 
-free ( note_silts_counts );
+if (  ( void * ) note_silts_counts != NULL  )
+
+{
+
+free (  ( void * ) note_silts_counts  );
+
+}
 
 
 
