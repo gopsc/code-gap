@@ -32,11 +32,11 @@ void * end_fst_roots_threads ()
 
 
 
-if ( that_fst_roots_threads_prepare_waters_sizes != NULL )
+if (  ( void * ) that_fst_roots_threads_prepare_waters_sizes != NULL  )
 
 {
 
-free ( that_fst_roots_threads_prepare_waters_sizes );
+free (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  );
 
 }
 
@@ -56,11 +56,11 @@ that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
 
-if ( that_fst_roots_threads_prepare_silts_sizes != NULL )
+if (  ( void * ) that_fst_roots_threads_prepare_silts_sizes != NULL  )
 
 {
 
-free ( that_fst_roots_threads_prepare_silts_sizes );
+free (  ( void * ) that_fst_roots_threads_prepare_silts_sizes  );
 
 }
 
@@ -80,11 +80,11 @@ that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 
 
-if ( that_fst_roots_threads_prepare_stones_sizes != NULL )
+if (  ( void * ) that_fst_roots_threads_prepare_stones_sizes != NULL  )
 
 {
 
-free ( that_fst_roots_threads_prepare_stones_sizes );
+free (  ( void * ) that_fst_roots_threads_prepare_stones_sizes  );
 
 }
 
