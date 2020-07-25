@@ -55,6 +55,7 @@ return 0;
 void * note_silts_counts = NULL;
 
 
+
 while (  note_silts_counts == NULL  )
 
 {
@@ -64,17 +65,19 @@ note_silts_counts = malloc (  sizeof ( int )  );
 }
 
 
-* ( int * ) note_silts_counts = 0;
-
-
-
-
-
-
-
-
 
 * ( int * ) note_silts_counts = 0;
+
+
+
+
+
+
+
+
+
+* ( int * ) note_silts_counts = 0;
+
 
 
 while (  * ( int * ) note_silts_counts  <  * ( int * ) ( void * ) & argc  )
@@ -108,6 +111,7 @@ return 0;
 * ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
 
 
+
 }
 
 
@@ -121,7 +125,9 @@ return 0;
 * ( int * ) note_silts_counts = 0;
 
 
+
 free ( note_silts_counts );
+
 
 
 note_silts_counts = NULL;
@@ -156,6 +162,7 @@ seed_fst_branches_flowers
 
 
 return 0;
+
 
 
 }
