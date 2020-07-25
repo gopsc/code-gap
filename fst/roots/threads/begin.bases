@@ -41,7 +41,15 @@ that_fst_roots_threads_prepare_waters_sizes = malloc ( sizeof ( int ) );
 
 }
 
+
+
+
 * ( int * ) that_fst_roots_threads_prepare_waters_sizes = 0;
+
+
+
+
+
 
 
 
