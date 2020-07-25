@@ -56,7 +56,7 @@ void * note_silts_counts = NULL;
 
 
 
-while (  note_silts_counts == NULL  )
+while (  ( void * ) note_silts_counts == NULL  )
 
 {
 
@@ -92,7 +92,7 @@ while (  * ( int * ) note_silts_counts  <  * ( int * ) ( void * ) & argc  )
 
 
 
-if (  * (  ( void * * ) argv  +  * ( int * ) note_silts_counts  ) == NULL  )
+if (  ( void * ) * (  ( void * * ) argv  +  * ( int * ) note_silts_counts  ) == NULL  )
 
 {
 
