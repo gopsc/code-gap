@@ -60,7 +60,7 @@ while (  note_silts_counts == NULL  )
 
 {
 
-note_silts_counts = malloc (  sizeof ( int )  );
+note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 }
 
