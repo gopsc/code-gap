@@ -30,7 +30,7 @@ void * * that_waters_created
 
 
 
-if (  ( void * ) that_waters_created == NULL  )
+if (  ( void * ) ( void * * ) that_waters_created == NULL  )
 
 {
 
@@ -46,7 +46,7 @@ return NULL;
 
 
 
-if ( * that_waters_created != NULL )
+if (  ( void * ) * that_waters_created != NULL  )
 
 {
 
@@ -66,7 +66,7 @@ void * note_waters_created = NULL;
 
 
 
-while ( note_waters_created == NULL )
+while (  ( void * ) note_waters_created == NULL )
 
 {
 
