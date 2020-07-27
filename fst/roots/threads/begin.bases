@@ -107,9 +107,7 @@ that_fst_roots_threads_prepare_stones_sizes = malloc (  1 * sizeof ( int )  );
 
 
 
-
 * ( int * ) that_fst_roots_threads_prepare_silts_sizes  =  1 * sizeof ( int );
-
 
 
 
