@@ -195,18 +195,6 @@ cc   /opt/TxL/flower.c   (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwir
 
 
 
-#include "./intros.notes"
-
-
-#include "./skies/intros.notes"
-
-
-#include "./roots/intros.notes"
-
-
-#include "./branches/intros.notes"
-
-
 
 
 #include "./roots/threads/prepare.bases"
