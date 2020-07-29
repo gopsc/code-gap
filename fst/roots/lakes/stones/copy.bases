@@ -89,39 +89,12 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * ( int * ) note_silts_counts = 0;
 
 
-while
-
-(
-
-* ( ( char * ) that_stones_copied + * ( int * ) note_silts_counts ) != '\0'
-
-)
+while (  * ( ( char * ) that_stones_copied + * ( int * ) note_silts_counts )  !=  '\0'  )
 
 {
-
-
-
-
-
-
-
-
 
 
 
@@ -145,19 +118,9 @@ while
 
 
 
+* ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
 
 
-
-
-
-
-
-
-* ( int * ) note_silts_counts
-
-=
-
-* ( int * ) note_silts_counts + 1;
 
 }
 
@@ -169,34 +132,7 @@ while
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts ) = '\0';
-
-
-
-
-
-
-
-
-
-
-
-
-
+* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts )  =  '\0';
 
 
 
@@ -230,20 +166,8 @@ note_silts_counts = NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 return NULL;
+
 
 
 }
