@@ -205,9 +205,9 @@
 #include "./roots/lakes/stones/copy.bases"
 
 #include "./roots/lakes/stones/append.bases"
-//
-#include "./roots/lakes/stones/measure.bases"
 
+#include "./roots/lakes/stones/measure.bases"
+//
 #include "./roots/lakes/stones/compare.bases"
 
 #include "./roots/lakes/stones/find.bases"
