@@ -34,6 +34,70 @@ void * * that_waters_results
 
 
 
+if (  ( void * ) ( void * * ) that_waters_results == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_stones_targets == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_stones_found == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) * ( void * * ) that_waters_results != NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
