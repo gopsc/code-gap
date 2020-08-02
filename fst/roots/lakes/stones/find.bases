@@ -98,18 +98,6 @@ return NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 void * note_silts_lengths_targets = NULL;
 
 
@@ -118,7 +106,7 @@ while ( note_silts_lengths_targets == NULL )
 
 {
 
-note_silts_lengths_targets = malloc ( 1 * sizeof ( int ) );
+note_silts_lengths_targets = malloc (  1 * sizeof ( int )  );
 
 }
 
@@ -131,40 +119,20 @@ note_silts_lengths_targets = malloc ( 1 * sizeof ( int ) );
 
 
 
+
+
+
 * ( int * ) note_silts_lengths_targets = 0;
 
 
-while
 
-(
-
-* ( ( char * ) that_stones_targets + * ( int * ) note_silts_lengths_targets ) != '\0'
-
-)
+while (  * (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_lengths_targets  )  !=  '\0'  )
 
 {
 
-* ( int * ) note_silts_lengths_targets
-
-=
-
-* ( int * ) note_silts_lengths_targets + 1;
+* ( int * ) note_silts_lengths_targets  =  * ( int * ) note_silts_lengths_targets  +  1;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -182,7 +150,7 @@ while ( note_silts_lengths_found == NULL )
 
 {
 
-note_silts_lengths_found = malloc ( 1 *  sizeof ( int ) );
+note_silts_lengths_found = malloc (  1 *  sizeof ( int )  );
 
 }
 
@@ -196,24 +164,16 @@ note_silts_lengths_found = malloc ( 1 *  sizeof ( int ) );
 
 
 
+
+
 * ( int * ) note_silts_lengths_found = 0;
 
 
-while
-
-(
-
-* ( ( char * ) that_stones_found + * ( int * ) note_silts_lengths_found ) != '\0'
-
-)
+while (  * (  ( char * ) that_stones_found  +  * ( int * ) note_silts_lengths_found  )  !=  '\0'  )
 
 {
 
-* ( int * ) note_silts_lengths_found
-
-=
-
-* ( int * ) note_silts_lengths_found + 1;
+* ( int * ) note_silts_lengths_found  =  * ( int * ) note_silts_lengths_found  +  1;
 
 }
 
@@ -225,33 +185,10 @@ while
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if
-
-(
-
-* ( int * ) note_silts_lengths_targets
-
-<
-
-* ( int * ) note_silts_lengths_found
-
-)
+if (  * ( int * ) note_silts_lengths_targets  <  * ( int * ) note_silts_lengths_found  )
 
 {
+
 
 
 
@@ -294,7 +231,6 @@ note_silts_lengths_targets = NULL;
 
 
 
-
 * ( int * ) note_silts_lengths_found = 0;
 
 
@@ -319,25 +255,11 @@ note_silts_lengths_found = NULL;
 
 
 
-
-
 return NULL;
 
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -355,27 +277,13 @@ while ( note_silts_counts_targets == NULL )
 
 {
 
-note_silts_counts_targets = malloc ( 1 *  sizeof ( int ) );
+note_silts_counts_targets = malloc (  1 *  sizeof ( int )  );
 
 }
 
 
 
 * ( int * ) note_silts_counts_targets = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -393,26 +301,13 @@ while ( note_silts_counts_found == NULL )
 
 {
 
-note_silts_counts_found = malloc ( 1 * sizeof ( int ) );
+note_silts_counts_found = malloc (  1 * sizeof ( int )  );
 
 }
 
 
 
 * ( int * ) note_silts_counts_found = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -430,7 +325,7 @@ while ( note_silts_switches == NULL )
 
 {
 
-note_silts_switches = malloc ( 1 *  sizeof ( int ) );
+note_silts_switches = malloc (  1 *  sizeof ( int )  );
 
 }
 
@@ -446,46 +341,17 @@ note_silts_switches = malloc ( 1 *  sizeof ( int ) );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * ( int * ) note_silts_counts_targets = 0;
+
 
 
 * ( int * ) note_silts_switches = 0;
 
 
-while
 
-(
-
-* ( int * ) note_silts_counts_targets
-
-<
-
-* ( int * ) note_silts_lengths_targets
-
-)
+while (  * ( int * ) note_silts_counts_targets  <  * ( int * ) note_silts_lengths_targets  )
 
 {
-
-
-
-
-
-
 
 
 
@@ -498,21 +364,10 @@ while
 * ( int * ) note_silts_counts_found = 0;
 
 
-while
 
-(
-
-* ( int * ) note_silts_counts_found
-
-<
-
-* ( int * ) note_silts_lengths_found
-
-)
+while (  * ( int * ) note_silts_counts_found  <  * ( int * ) note_silts_lengths_found  )
 
 {
-
-
 
 
 
@@ -526,29 +381,39 @@ if
 
 (
 
-* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts_targets + * ( int * ) note_silts_counts_found )
+* (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_targets  +  * ( int * ) note_silts_counts_found  )
 
 !=
 
-* ( ( char * ) that_stones_found + * ( int * ) note_silts_counts_found )
+* (  ( char * ) that_stones_found  +  * ( int * ) note_silts_counts_found  )
 
 )
 
 {
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_switches = 0;
+
+
+
+
+
+
+
 
 
 break;
 
+
+
 }
-
-
-
-
-
-
 
 
 
@@ -562,11 +427,11 @@ else if
 
 (
 
-* ( ( char * ) that_stones_targets + * ( int * ) note_silts_counts_targets + * ( int * ) note_silts_counts_found )
+* (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_targets  +  * ( int * ) note_silts_counts_found  )
 
 ==
 
-* ( ( char * ) that_stones_found + * ( int * ) note_silts_counts_found )
+* (  ( char * ) that_stones_found  +  * ( int * ) note_silts_counts_found  )
 
 )
 
@@ -584,16 +449,9 @@ else if
 
 
 
+* ( int * ) note_silts_counts_found  =  * ( int * ) note_silts_counts_found  +  1;
 
 
-
-
-
-* ( int * ) note_silts_counts_found
-
-=
-
-* ( int * ) note_silts_counts_found + 1;
 
 }
 
@@ -605,13 +463,7 @@ else if
 
 
 
-
-
-
-
-
-
-if ( * ( int * ) note_silts_switches == 1 )
+if (  * ( int * ) note_silts_switches  ==  1  )
 
 {
 
@@ -623,9 +475,7 @@ if ( * ( int * ) note_silts_switches == 1 )
 
 
 
-
-* that_waters_results = ( char * ) that_stones_targets + * ( int * ) note_silts_counts_targets;
-
+* that_waters_results  =  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_targets;
 
 
 
@@ -637,24 +487,7 @@ if ( * ( int * ) note_silts_switches == 1 )
 
 break;
 
-}
 
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_counts_targets
-
-=
-
-* ( int * ) note_silts_counts_targets + 1;
 
 }
 
@@ -666,6 +499,11 @@ break;
 
 
 
+* ( int * ) note_silts_counts_targets  =  * ( int * ) note_silts_counts_targets  +  1;
+
+
+
+}
 
 
 
@@ -675,32 +513,13 @@ break;
 
 
 
-
-
-
-
-
-
-if ( * ( int * ) note_silts_switches == 0 )
+if (  * ( int * ) note_silts_switches  ==  0  )
 
 {
 
 * that_waters_results = NULL;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -734,8 +553,6 @@ note_silts_lengths_targets = NULL;
 
 
 
-
-
 * ( int * ) note_silts_lengths_found = 0;
 
 
@@ -751,9 +568,6 @@ free ( note_silts_lengths_found );
 
 
 note_silts_lengths_found = NULL;
-
-
-
 
 
 
@@ -787,8 +601,6 @@ note_silts_counts_targets = NULL;
 
 
 
-
-
 * ( int * ) note_silts_counts_found = 0;
 
 
@@ -804,8 +616,6 @@ free ( note_silts_counts_found );
 
 
 note_silts_counts_found = NULL;
-
-
 
 
 
@@ -839,21 +649,9 @@ note_silts_switches = NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 return  NULL;
+
+
 
 }
 
