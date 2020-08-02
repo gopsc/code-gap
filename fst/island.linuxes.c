@@ -218,10 +218,10 @@
 
 
 #include "./roots/trees/dirents/is.linuxes" // note_structure
-//
+
 #include "./roots/trees/dirents/create.linuxes"
 
-
+//
 #include "./roots/trees/files/is.linuxes" // note_structure
 
 #include "./roots/trees/files/write.computers" // note_files
