@@ -68,7 +68,7 @@ return NULL;
 
 
 
-if (  ( void * ) * ( void * * ) that_stones_results == NULL  )
+if (  ( void * ) * ( void * * ) that_stones_results != NULL  )
 
 {
 
@@ -104,7 +104,19 @@ void * note_files_got = NULL;
 
 
 
-note_files_got = ( void * ) fopen ( that_stones_names, "rb" );
+note_files_got
+
+=
+
+( void * ) fopen (
+
+
+( void * ) that_stones_names,
+
+( void * ) "rb"
+
+
+);
 
 
 
@@ -121,10 +133,14 @@ if
 {
 
 
+
 * ( int * ) that_silts_results = 0;
 
 
+
 return NULL;
+
+
 
 }
 
@@ -136,35 +152,7 @@ return NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 void * note_waters_resized = NULL;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
