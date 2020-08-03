@@ -22,7 +22,6 @@ void * that_stones_names,
 
 void * * that_stones_results,
 
-
 void * that_silts_results
 
 )
@@ -37,12 +36,61 @@ void * that_silts_results
 
 
 
+if (  ( void * ) ( void * * ) that_stones_results == NULL  )
+
+{
+
+return NULL;
+
+}
 
 
 
 
 
 
+
+
+
+if (  ( void * ) that_stones_names == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) * ( void * * ) that_stones_results == NULL  )
+
+{
+
+return NULL;
+
+}
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_silts_results == NULL  )
+
+{
+
+return NULL;
+
+}
 
 
 
@@ -57,6 +105,11 @@ void * note_files_got = NULL;
 
 
 note_files_got = ( void * ) fopen ( that_stones_names, "rb" );
+
+
+
+
+
 
 
 
