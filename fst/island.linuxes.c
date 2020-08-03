@@ -12,16 +12,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*
 
 #include <stdlib.h>
@@ -59,13 +49,6 @@
 
 
 
-
-
-
-
-
-
-
 #include <math.h>
                                // for pi
                                // for trigonometric function
@@ -85,13 +68,6 @@
 
 #include <fcntl.h>
                               // for network socket
-
-
-
-
-
-
-
 
 
 
@@ -128,26 +104,12 @@
 
 
 
-
-
-
-
-
-
-
 #include <arpa/inet.h>
                                     // for network
 
 
 
 #include <unistd.h>
-
-
-
-
-
-
-
 
 
 
@@ -194,13 +156,6 @@
 
 
 
-
-
-
-
-
-
-
 #include <arduino.h>
 
 
@@ -219,18 +174,9 @@
 
 
 
-
-
-
-
-
-
-
 #include <wiringpi.h>
 
 */
-
-
 
 
 
@@ -293,7 +239,7 @@
 #include "./roots/trees/files/read.computers" // note_files, not return failed
 
 
-
+//
 
 #include "./branches/threads/prepare.bases"
 
