@@ -34,9 +34,29 @@ void * that_silts_results
 
 
 
+if (  ( void * ) that_stones_names == NULL  )
+
+{
+
+return NULL;
+
+}
 
 
 
+
+
+
+
+
+
+if (  ( void * ) that_silts_results == NULL  )
+
+{
+
+return NULL;
+
+}
 
 
 
@@ -54,7 +74,7 @@ while ( note_structures_status == NULL )
 
 {
 
-note_structures_status = malloc ( 1 * sizeof ( struct stat ) );
+note_structures_status = malloc (  1 * sizeof ( struct stat )  );
 
 }
 
@@ -66,20 +86,19 @@ note_structures_status = malloc ( 1 * sizeof ( struct stat ) );
 
 
 
+if (
 
 
+lstat (
+
+( void * ) that_stones_names,
+
+( void * ) note_structures_status
+
+) == 0
 
 
-
-
-
-
-
-
-
-
-
-if ( lstat ( that_stones_names, note_structures_status ) == 0 )
+)
 
 {
    
@@ -91,26 +110,13 @@ if ( lstat ( that_stones_names, note_structures_status ) == 0 )
 
 
 
+if ( S_ISREG (
 
+( * ( struct stat * ) note_structures_status ) . st_mode
 
-
-
-
-if 
-
-(
-
-S_ISREG ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
-
-)
+) != 0 )
 
 {
-
-
-
-
-
-
 
 
 
@@ -130,13 +136,6 @@ S_ISREG ( ( * ( struct stat * ) note_structures_status ) . st_mode ) != 0
 
 
 
-
-
-
-
-
-
-
 if ( note_structures_status != NULL )
 
 {
@@ -157,27 +156,15 @@ note_structures_status = NULL;
 
 
 
-
-
 return  NULL;
 
+
+
 }
 
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -197,20 +184,6 @@ return  NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if ( note_structures_status != NULL )
 
 {
@@ -231,21 +204,9 @@ note_structures_status = NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 return  NULL;
+
+
 
 }
 

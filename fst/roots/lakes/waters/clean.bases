@@ -134,11 +134,11 @@ while
 
 
 
-* (  ( int8_t * ) that_waters_clean + * ( int * ) note_silts_counts  )
+* (  ( __int8_t * ) that_waters_clean + * ( int * ) note_silts_counts  )
 
 =
 
-( int8_t ) * ( int * ) that_silts_values;
+( __int8_t ) * ( int * ) that_silts_values;
 
 
 

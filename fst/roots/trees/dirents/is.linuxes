@@ -110,19 +110,11 @@ lstat (
 
 
 
-if
+if ( S_ISDIR ( (
 
-(
+* ( struct stat * ) note_structures_status ) . st_mode
 
-
-S_ISDIR (
-
-( * ( struct stat * ) note_structures_status ) . st_mode
-
-) != 0
-
-
-)
+) != 0 )
 
 {
 
