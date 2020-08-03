@@ -162,59 +162,9 @@ void * note_waters_resized = NULL;
 
 
 
-if ( * that_stones_results == NULL )
+if (  ( void * ) * ( void * * ) that_stones_results == NULL  )
 
 {
-
-
-
-
-
-
-
-note_waters_resized = NULL;
-
-
-
-while ( note_waters_resized == NULL )
-
-{
-
-note_waters_resized = malloc ( 1 * sizeof ( char ) );
-
-}
-
-
-
-* ( char * ) note_waters_resized = '\0';
-
-
-
-
-* that_stones_results = note_waters_resized;
-
-
-
-note_waters_resized = NULL;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -232,22 +182,9 @@ while ( note_waters_resized == NULL )
 
 {
 
-note_waters_resized = realloc
-
-(
-
-* that_stones_results,
-
-1 * ( sizeof ( char ) )
-
-);
+note_waters_resized = malloc (  1 * sizeof ( char )  );
 
 }
-
-
-
-* ( char * ) note_waters_resized = '\0';
-
 
 
 
@@ -265,33 +202,11 @@ note_waters_resized = NULL;
 
 
 
+* ( char * ) * ( void * * ) that_stones_results = '\0';
 
 
 
-
-
-
-
-
-
-
-
-
-* ( char * ) * that_stones_results = '\0';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -309,28 +224,13 @@ while ( note_stones_read == NULL )
 
 {
 
-note_stones_read = malloc ( 2 * sizeof ( char ) );
+note_stones_read = malloc (  2 * sizeof ( char )  );
 
 }
 
 
 
 * ( char * ) note_stones_read = '\0';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,7 +248,7 @@ while ( note_silts_counts == NULL )
 
 {
 
-note_silts_counts = malloc ( 1 * sizeof ( int ) );
+note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 }
 
@@ -362,63 +262,49 @@ note_silts_counts = malloc ( 1 * sizeof ( int ) );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-while
-
-( fgets ( note_stones_read, 2, ( FILE * ) note_files_got ) != NULL )
-
-{
-
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_counts = 0;
 
 
 while
 
 (
 
-* ( ( char * ) * that_stones_results + * ( int * ) note_silts_counts ) != '\0'
+
+fgets (
+
+
+( void * ) note_stones_read,
+
+2,
+
+( FILE * ) note_files_got
+
+
+) != NULL
+
 
 )
 
 {
 
-* ( int * ) note_silts_counts
 
-=
 
-* ( int * ) note_silts_counts + 1;
+
+
+
+
+
+
+* ( int * ) note_silts_counts = 0;
+
+
+
+while (  * (  ( char * ) * that_stones_results  +  * ( int * ) note_silts_counts  )  !=  '\0'  )
+
+{
+
+* ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
 
 }
-
-
-
-
 
 
 
@@ -437,15 +323,17 @@ while ( note_waters_resized == NULL )
 {
 
 
+
 note_waters_resized = realloc
 
 (
 
-* that_stones_results,
+( void * ) * ( void * * ) that_stones_results,
 
-( 1 + 1 + * ( int * ) note_silts_counts ) * sizeof ( char )
+(  1  +  1  +  * ( int * ) note_silts_counts  )  *  sizeof ( char )
 
 );
+
 
 
 }
@@ -453,7 +341,6 @@ note_waters_resized = realloc
 
 
 * that_stones_results = note_waters_resized;
-
 
 
 
@@ -467,12 +354,7 @@ note_waters_resized = NULL;
 
 
 
-
-
-
-
-
-* ( ( char * ) * that_stones_results + * ( int * ) note_silts_counts ) = * ( char * ) note_stones_read;
+* (  ( char * ) * that_stones_results  +  * ( int * ) note_silts_counts  )  =  * ( char * ) note_stones_read;
 
 
 
@@ -482,9 +364,7 @@ note_waters_resized = NULL;
 
 
 
-* ( ( char * ) * that_stones_results + * ( int * ) note_silts_counts + 1 ) = '\0';
-
-
+* (  ( char * ) * that_stones_results  +  * ( int * ) note_silts_counts  +  1  )  =  '\0';
 
 
 
@@ -509,19 +389,12 @@ note_waters_resized = NULL;
 
 
 
+
+
+
+
+
 * ( int * ) that_silts_results = 1;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -539,7 +412,7 @@ while ( note_silts_results == NULL )
 
 {
 
-note_silts_results = malloc ( 1 * sizeof ( int ) );
+note_silts_results = malloc (  1 * sizeof ( int )  );
 
 }
 
@@ -555,45 +428,18 @@ note_silts_results = malloc ( 1 * sizeof ( int ) );
 
 
 
+* ( int * ) note_silts_results = fclose (  ( void * ) note_files_got  );
 
 
 
 
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_results = fclose ( note_files_got );
-
-
-
-
-if ( * ( int * ) note_silts_results == -1 )
+if (  * ( int * ) note_silts_results == -1  )
 
 {
 
 * ( int * ) that_silts_results = 0;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -627,10 +473,6 @@ note_stones_read = NULL;
 
 
 
-
-
-
-
 * ( int * ) note_silts_counts = 0;
 
 
@@ -646,10 +488,6 @@ free ( note_silts_counts );
 
 
 note_silts_counts = NULL;
-
-
-
-
 
 
 
@@ -683,20 +521,9 @@ note_silts_results = NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 return NULL;
+
+
 
 }
 
