@@ -1,1 +1,3 @@
-add prepare of lengths of locks
+add mutex locks type
+
+add variable to save length of mutex locks

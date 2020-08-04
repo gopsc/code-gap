@@ -3,9 +3,7 @@
 #include "./../../roots/threads/prepare.bases"
 
 /*
-#include "./../../roots/threads/locks/prepare.computers"
-
-#include "./../../roots/threads/locks/begin.computers"
+#include "./../../roots/threads/locks/mutex/prepare.computers"
 */
 
 #include "./../../roots/lakes/prepare.bases"
@@ -17,6 +15,9 @@
 
 #include "./../../roots/lakes/waves/free.bases"
 
+/*
+#include "./../../roots/lakes/locks/mutex/begin.computers"
+*/
 
 #include "./../../roots/lakes/stones/copy.bases"
 
