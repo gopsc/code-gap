@@ -2,11 +2,6 @@
 
 #include "./../../roots/threads/prepare.bases"
 
-/*
-#include "./../../roots/threads/locks/end.bases"
-
-#include "./../../roots/threads/locks/drop.bases"
-*/
 
 #include "./../../roots/lakes/prepare.bases"
 
@@ -17,6 +12,9 @@
 
 #include "./../../roots/lakes/waves/free.bases"
 
+/*
+#include "./../../roots/lakes/locks/mutex/end.computers"
+*/
 
 #include "./../../roots/lakes/stones/copy.bases"
 
