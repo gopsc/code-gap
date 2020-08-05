@@ -1334,7 +1334,44 @@ that_waters_lakes
 /*
 
 
-begin_fst_roots_threads_locks
+prepare_fst_roots_lakes_locks_mutex
+
+(
+
+
+
+( that_fst_roots_threads_prepare_waters * )
+
+
+(  & (  * (  * (  (
+
+
+( that_fst_roots_threads_prepare_waters * * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes
+
+
+)  + 0 )  + 2 )  )  )
+
+
+
+);
+
+
+
+
+
+
+
+
+
+begin_fst_roots_lakes_locks_mutex
 
 (
 
