@@ -1388,7 +1388,20 @@ note_silts_sizes
 
 
 
-()
+( 1 *
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_threads_locks_prepare_mutex_sizes
+
+
+);
 
 
 
@@ -1509,6 +1522,30 @@ that_waters_lakes
 = that_fst_roots_lakes_prepare;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_sizes = 0;
+
+*/
 
 
 
