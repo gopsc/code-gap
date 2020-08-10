@@ -5,4 +5,7 @@ change path of blank formol parameters return
 
 add type transforms when a function return
 
+
 clean results in a beginning of a conditional selection code block
+
+clean variables after a loop code block
