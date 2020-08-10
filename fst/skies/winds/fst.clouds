@@ -1,10 +1,8 @@
 change processes order of pre-compile instructions
 
 
-add device type chose pre-compile instructions
-
-
 change path of blank formol parameters return
 
-
 add type transforms when a function return
+
+clean results in a beginning of a conditional selection code block
