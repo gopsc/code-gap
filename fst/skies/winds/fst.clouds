@@ -3,6 +3,8 @@ change processes order of pre-compile instructions
 
 add blank formal parameters return
 
+add formal parameters return through sizeof()
+
 
 add type transforms when a function return
 
