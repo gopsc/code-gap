@@ -575,7 +575,7 @@ drop_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters * )
 
-// & ( that_fst_roots_threads_prepare_waters )
+& // ( that_fst_roots_threads_prepare_waters )
 
 
 (
@@ -583,7 +583,7 @@ drop_fst_branches_lakes_waves
 
 // ( that_fst_roots_threads_prepare_waters )
 
-// * ( that_fst_roots_threads_prepare_waters * )
+* ( that_fst_roots_threads_prepare_waters * )
 
 
 ( that_fst_roots_threads_prepare_waters )
