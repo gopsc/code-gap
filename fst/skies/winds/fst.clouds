@@ -8,6 +8,9 @@ add formal parameters return through sizeof()
 change order of formal parameters returns
 
 
+
+add type transforms when a number be used
+
 add type transforms when a function return
 
 
@@ -16,4 +19,7 @@ clean results in a beginning of a conditional selection code block
 clean variables after a loop code block
 
 
-declare all variables before value them
+
+declare all fish variables before value
+
+fish variables before standard variable
