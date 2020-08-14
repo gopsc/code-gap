@@ -14,3 +14,6 @@ add type transforms when a function return
 clean results in a beginning of a conditional selection code block
 
 clean variables after a loop code block
+
+
+declare all variables before value them
