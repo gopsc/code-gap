@@ -7,6 +7,8 @@ add formal parameters return through sizeof()
 
 change order of formal parameters returns
 
+blank results return
+
 
 
 add type transforms when a number be used
