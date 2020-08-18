@@ -20,11 +20,11 @@ typedef char that_fst_roots_threads_prepare_stones;
 
 
 
-void * that_fst_roots_threads_prepare_waters_sizes = NULL;
+void * that_fst_roots_threads_prepare_waters_sizes  =  ( void * ) NULL;
 
-void * that_fst_roots_threads_prepare_silts_sizes = NULL;
+void * that_fst_roots_threads_prepare_silts_sizes  =  ( void * ) NULL;
 
-void * that_fst_roots_threads_prepare_stones_sizes = NULL;
+void * that_fst_roots_threads_prepare_stones_sizes  =  ( void * ) NULL;
 
 
 
