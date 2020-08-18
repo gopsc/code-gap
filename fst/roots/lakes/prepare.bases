@@ -12,7 +12,7 @@
 
 
 
-void * that_fst_roots_lakes_prepare = NULL;
+void * that_fst_roots_lakes_prepare  =  ( void * ) NULL;
 
 
 
