@@ -52,11 +52,19 @@ char * argv []
 
 
 
-if (  * ( int * ) ( void * ) & argc  ==  0  )
+if
+
+(
+
+
+( int ) argc  ==  ( int ) 0
+
+
+)
 
 {
 
-return 0;
+return  ( int ) 0;
 
 }
 
@@ -84,7 +92,7 @@ return 0;
 
 
 
-void * note_silts_counts = NULL;
+void * note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -94,11 +102,11 @@ void * note_silts_counts = NULL;
 
 
 
-while (  ( void * ) note_silts_counts == NULL  )
+while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 {
 
-note_silts_counts = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_counts   =   malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -110,7 +118,7 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -127,7 +135,7 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -137,23 +145,39 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-while (  * ( int * ) note_silts_counts  <  * ( int * ) ( void * ) & argc  )
-
-{
-
-
-
-
-
-
-
-
-
-if (  ( void * ) * (  ( void * * ) argv  +  * ( int * ) note_silts_counts  ) == NULL  )
+while (   ( int ) * ( int * ) ( void * ) note_silts_counts   <   ( int ) argc   )
 
 {
 
-return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (   ( void * ) * ( void * * ) (   ( void * * ) argv   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )   ==   ( void * ) NULL   )
+
+{
+
+return  ( int ) 0;
 
 }
 
@@ -165,7 +189,29 @@ return 0;
 
 
 
-* ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) * ( int * ) ( void * ) note_silts_counts   +   ( int ) 1;
+
+
+
+
+
+
 
 
 
@@ -186,7 +232,7 @@ return 0;
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -196,7 +242,7 @@ return 0;
 
 
 
-if (  ( void * ) note_silts_counts != NULL  )
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
 
@@ -212,7 +258,7 @@ free (  ( void * ) note_silts_counts  );
 
 
 
-note_silts_counts = NULL;
+/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -243,7 +289,7 @@ seed_fst_branches_flowers
 (
 
 
-( void * ) & argc,
+( void * ) ( int * ) &  /* ( int ) */  argc,
 
 
 ( void * * ) argv
@@ -275,7 +321,7 @@ seed_fst_branches_flowers
 
 
 
-return 0;
+return  ( int ) 0;
 
 
 
