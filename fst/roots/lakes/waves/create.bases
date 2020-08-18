@@ -101,7 +101,7 @@ return  ( void * ) NULL;
 
 
 
-void * note_waters_created = NULL;
+void * note_waters_created  =  ( void * ) NULL;
 
 
 
@@ -111,11 +111,11 @@ void * note_waters_created = NULL;
 
 
 
-while (  ( void * ) note_waters_created == NULL )
+while (  ( void * ) note_waters_created  ==  ( void * ) NULL  )
 
 {
 
-note_waters_created = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_waters_created   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -127,7 +127,7 @@ note_waters_created = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_waters_created = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_waters_created   =   ( int ) 0;
 
 
 
@@ -153,7 +153,7 @@ note_waters_created = malloc (  1 * sizeof ( int )  );
 
 
 
-* that_waters_created = note_waters_created;
+/* ( void * ) */  * ( void * * ) that_waters_created   =   ( void * ) note_waters_created;
 
 
 
@@ -170,7 +170,7 @@ note_waters_created = malloc (  1 * sizeof ( int )  );
 
 
 
-note_waters_created = NULL;
+/* ( void * ) */  note_waters_created  =  ( void * ) NULL;
 
 
 
@@ -196,7 +196,7 @@ note_waters_created = NULL;
 
 
 
-return NULL;
+return  ( void * ) NULL;
 
 
 
