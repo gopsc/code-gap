@@ -46,11 +46,11 @@ void * * that_waters_data
 
 
 
-if (  ( void * ) ( void * * ) that_waters_data == NULL  )
+if (   ( void * ) ( void * * ) that_waters_data   ==   ( void * ) NULL   )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -69,11 +69,11 @@ return NULL;
 
 
 
-if (  ( void * ) * that_waters_data == NULL  )
+if (   ( void * ) * ( void * * ) that_waters_data   ==   ( void * ) NULL   )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -101,7 +101,13 @@ return NULL;
 
 
 
-free (  ( void * ) * that_waters_data  );
+if (   ( void * ) * ( void * * ) that_waters_data   !=   ( void * ) NULL   )
+
+{
+
+free (   ( void * ) * ( void * * ) that_waters_data   );
+
+}
 
 
 
@@ -111,7 +117,7 @@ free (  ( void * ) * that_waters_data  );
 
 
 
-* that_waters_data = NULL;
+/* ( void * ) */  * ( void * * ) that_waters_data   =   ( void * ) NULL;
 
 
 
@@ -137,7 +143,7 @@ free (  ( void * ) * that_waters_data  );
 
 
 
-return NULL;
+return  ( void * ) NULL;
 
 
 
