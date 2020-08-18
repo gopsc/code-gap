@@ -6,4 +6,4 @@ add lakes type check
 
 add value process at early return
 
-add clean process before fish
+add clean after memory resize
