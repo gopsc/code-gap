@@ -87,7 +87,7 @@ free (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  );
 
 
 
-* ( int * ) that_fst_roots_threads_prepare_silts_sizes = 0;
+/* ( int ) */  * ( int * ) ( void * ) that_fst_roots_threads_prepare_silts_sizes   =   ( int ) 0;
 
 
 
@@ -97,7 +97,7 @@ free (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  );
 
 
 
-if (  ( void * ) that_fst_roots_threads_prepare_silts_sizes != NULL  )
+if (  ( void * ) that_fst_roots_threads_prepare_silts_sizes  !=  ( void * ) NULL  )
 
 {
 
@@ -113,7 +113,7 @@ free (  ( void * ) that_fst_roots_threads_prepare_silts_sizes  );
 
 
 
-that_fst_roots_threads_prepare_silts_sizes = NULL;
+/* ( void * ) */  that_fst_roots_threads_prepare_silts_sizes   =   ( void * ) NULL;
 
 
 
