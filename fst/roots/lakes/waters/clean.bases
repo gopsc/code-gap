@@ -50,11 +50,11 @@ void * that_silts_values
 
 
 
-if (  ( void * ) that_waters_clean == NULL  )
+if (  ( void * ) that_waters_clean  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -66,11 +66,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_silts_lengths == NULL  )
+if (  ( void * ) that_silts_lengths  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -82,11 +82,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_silts_values == NULL  )
+if (  ( void * ) that_silts_values  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -114,7 +114,7 @@ return NULL;
 
 
 
-void * note_silts_counts = NULL;
+void * note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -124,11 +124,11 @@ void * note_silts_counts = NULL;
 
 
 
-while (  ( void * ) note_silts_counts == NULL  )
+while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 {
 
-note_silts_counts = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -140,7 +140,7 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -157,7 +157,7 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -167,19 +167,7 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-while
-
-(
-
-
-* ( int * ) note_silts_counts
-
-<
-
-* ( int * ) that_silts_lengths
-
-
-)
+while (    ( int ) * ( int * ) ( void * ) note_silts_counts    <    ( int ) * ( int * ) ( void * ) that_silts_lengths    )
 
 {
 
@@ -207,11 +195,15 @@ while
 
 
 
-* (  ( __int8_t * ) that_waters_clean + * ( int * ) note_silts_counts  )
+/* ( __int8_t ) */  * ( __int8_t * )
+
+(   ( __int8_t * ) ( void * ) that_waters_clean   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
 
 =
 
-( __int8_t ) * ( int * ) that_silts_values;
+
+( __int8_t ) ( int ) * ( int * ) ( void * ) that_silts_values;
 
 
 
@@ -237,7 +229,19 @@ while
 
 
 
-* ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts
+
+
+=
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
++
+
+
+( int ) 1;
 
 
 
@@ -264,7 +268,7 @@ while
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -274,7 +278,7 @@ while
 
 
 
-if (  ( void * ) note_silts_counts != NULL )
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
 
@@ -290,7 +294,7 @@ free (  ( void * ) note_silts_counts  );
 
 
 
-note_silts_counts = NULL;
+/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -316,7 +320,7 @@ note_silts_counts = NULL;
 
 
 
-return NULL;
+return  ( void * ) NULL;
 
 
 
