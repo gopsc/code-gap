@@ -30,6 +30,22 @@ void * * that_waters_data
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) ( void * * ) that_waters_data == NULL  )
 
 {
@@ -37,6 +53,13 @@ if (  ( void * ) ( void * * ) that_waters_data == NULL  )
 return NULL;
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -62,7 +85,29 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 free (  ( void * ) * that_waters_data  );
+
+
+
+
+
+
 
 
 
@@ -76,7 +121,29 @@ free (  ( void * ) * that_waters_data  );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return NULL;
+
+
+
+
+
+
 
 
 
