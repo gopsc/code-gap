@@ -34,6 +34,22 @@ void * that_silts_values
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) that_waters_clean == NULL  )
 
 {
@@ -82,7 +98,29 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_counts = NULL;
+
+
+
+
+
+
 
 
 
@@ -96,6 +134,12 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_counts = 0;
 
 
@@ -106,7 +150,20 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_counts = 0;
+
+
+
+
+
+
 
 
 
@@ -134,6 +191,22 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * (  ( __int8_t * ) that_waters_clean + * ( int * ) note_silts_counts  )
 
 =
@@ -148,11 +221,40 @@ while
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
 
 
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -166,6 +268,12 @@ while
 
 
 
+
+
+
+
+
+
 if (  ( void * ) note_silts_counts != NULL )
 
 {
@@ -173,6 +281,12 @@ if (  ( void * ) note_silts_counts != NULL )
 free (  ( void * ) note_silts_counts  );
 
 }
+
+
+
+
+
+
 
 
 
@@ -186,7 +300,29 @@ note_silts_counts = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return NULL;
+
+
+
+
+
+
 
 
 
