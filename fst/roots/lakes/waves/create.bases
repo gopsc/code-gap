@@ -30,11 +30,27 @@ void * * that_waters_created
 
 
 
-if (  ( void * ) ( void * * ) that_waters_created == NULL  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (   ( void * ) ( void * * ) that_waters_created   ==   ( void * ) NULL   )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -46,13 +62,36 @@ return NULL;
 
 
 
-if (  ( void * ) * that_waters_created != NULL  )
+
+
+
+
+
+
+
+if (   ( void * ) * ( void * * ) that_waters_created   !=   ( void * ) NULL   )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -66,6 +105,12 @@ void * note_waters_created = NULL;
 
 
 
+
+
+
+
+
+
 while (  ( void * ) note_waters_created == NULL )
 
 {
@@ -76,7 +121,29 @@ note_waters_created = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_waters_created = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,12 +163,46 @@ note_waters_created = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+
 note_waters_created = NULL;
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return NULL;
+
+
+
+
+
+
 
 
 
