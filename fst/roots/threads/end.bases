@@ -28,11 +28,33 @@ void * end_fst_roots_threads ()
 
 
 
-* ( int * ) that_fst_roots_threads_prepare_waters_sizes = 0;
 
 
 
-if (  ( void * ) that_fst_roots_threads_prepare_waters_sizes != NULL  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) that_fst_roots_threads_prepare_waters_sizes   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  !=  ( void * ) NULL  )
 
 {
 
@@ -42,7 +64,20 @@ free (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  );
 
 
 
-that_fst_roots_threads_prepare_waters_sizes = NULL;
+
+
+
+
+
+
+/* ( void * ) */  that_fst_roots_threads_prepare_waters_sizes  =  ( void * ) NULL;
+
+
+
+
+
+
+
 
 
 
@@ -56,6 +91,12 @@ that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
 
+
+
+
+
+
+
 if (  ( void * ) that_fst_roots_threads_prepare_silts_sizes != NULL  )
 
 {
@@ -63,6 +104,12 @@ if (  ( void * ) that_fst_roots_threads_prepare_silts_sizes != NULL  )
 free (  ( void * ) that_fst_roots_threads_prepare_silts_sizes  );
 
 }
+
+
+
+
+
+
 
 
 
@@ -76,7 +123,20 @@ that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 
 
+
+
+
+
+
+
+
 * ( int * ) that_fst_roots_threads_prepare_stones_sizes = 0;
+
+
+
+
+
+
 
 
 
@@ -90,6 +150,12 @@ free (  ( void * ) that_fst_roots_threads_prepare_stones_sizes  );
 
 
 
+
+
+
+
+
+
 that_fst_roots_threads_prepare_stones_sizes = NULL;
 
 
@@ -100,7 +166,29 @@ that_fst_roots_threads_prepare_stones_sizes = NULL;
 
 
 
-return NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
+
+
+
+
+
+
 
 
 
