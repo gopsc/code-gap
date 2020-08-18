@@ -87,7 +87,7 @@ while (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  ==  ( void * ) 
 
 
 
-that_fst_roots_threads_prepare_silts_sizes = NULL;
+/* ( void * ) */  that_fst_roots_threads_prepare_silts_sizes  =  ( void * ) NULL;
 
 
 
@@ -97,13 +97,13 @@ that_fst_roots_threads_prepare_silts_sizes = NULL;
 
 
 
-while (  ( void * ) that_fst_roots_threads_prepare_silts_sizes == NULL  )
+while (  ( void * ) that_fst_roots_threads_prepare_silts_sizes  ==  ( void * ) NULL  )
 
 
 
 {
 
-that_fst_roots_threads_prepare_silts_sizes = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  that_fst_roots_threads_prepare_silts_sizes   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -115,7 +115,7 @@ that_fst_roots_threads_prepare_silts_sizes = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) that_fst_roots_threads_prepare_silts_sizes = 0;
+/* ( int ) */  * ( int * ) ( void * ) that_fst_roots_threads_prepare_silts_sizes   =   ( int ) 0;
 
 
 
