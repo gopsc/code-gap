@@ -106,7 +106,7 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 {
 
-/* ( void * ) */  note_silts_counts   =   malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 

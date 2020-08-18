@@ -28,21 +28,56 @@ void * begin_fst_roots_threads ()
 
 
 
-that_fst_roots_threads_prepare_waters_sizes = NULL;
 
 
 
-while (  ( void * ) that_fst_roots_threads_prepare_waters_sizes == NULL  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  that_fst_roots_threads_prepare_waters_sizes  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) that_fst_roots_threads_prepare_waters_sizes  ==  ( void * ) NULL  )
 
 {
 
-that_fst_roots_threads_prepare_waters_sizes = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  that_fst_roots_threads_prepare_waters_sizes   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
 
 
-* ( int * ) that_fst_roots_threads_prepare_waters_sizes = 0;
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) that_fst_roots_threads_prepare_waters_sizes   =   ( int ) 0;
+
+
+
+
+
+
+
 
 
 
@@ -53,6 +88,11 @@ that_fst_roots_threads_prepare_waters_sizes = malloc (  1 * sizeof ( int )  );
 
 
 that_fst_roots_threads_prepare_silts_sizes = NULL;
+
+
+
+
+
 
 
 
@@ -69,7 +109,20 @@ that_fst_roots_threads_prepare_silts_sizes = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) that_fst_roots_threads_prepare_silts_sizes = 0;
+
+
+
+
+
+
+
 
 
 
@@ -83,6 +136,12 @@ that_fst_roots_threads_prepare_stones_sizes = NULL;
 
 
 
+
+
+
+
+
+
 while (  ( void * ) that_fst_roots_threads_prepare_stones_sizes == NULL  )
 
 {
@@ -90,6 +149,12 @@ while (  ( void * ) that_fst_roots_threads_prepare_stones_sizes == NULL  )
 that_fst_roots_threads_prepare_stones_sizes = malloc (  1 * sizeof ( int )  );
 
 }
+
+
+
+
+
+
 
 
 
@@ -103,11 +168,30 @@ that_fst_roots_threads_prepare_stones_sizes = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+
 * ( int * ) that_fst_roots_threads_prepare_waters_sizes  =  1 * sizeof ( void * );
 
 
 
+
+
+
+
+
+
 * ( int * ) that_fst_roots_threads_prepare_silts_sizes  =  1 * sizeof ( int );
+
+
+
+
+
+
 
 
 
@@ -121,7 +205,29 @@ that_fst_roots_threads_prepare_stones_sizes = malloc (  1 * sizeof ( int )  );
 
 
 
-return NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
+
+
+
+
+
+
 
 
 
