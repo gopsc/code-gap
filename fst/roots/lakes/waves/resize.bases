@@ -33,11 +33,27 @@ void * that_silts_sizes
 
 
 
-if (  ( void * ) ( void * * ) that_waters_resized == NULL  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (  ( void * ) ( void * * ) that_waters_resized  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -49,11 +65,18 @@ return NULL;
 
 
 
-if (  ( void * ) * that_waters_resized == NULL  )
+
+
+
+
+
+
+
+if (   ( void * ) * ( void * * ) that_waters_resized   ==   ( void * ) NULL   )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -65,11 +88,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_silts_sizes == NULL  )
+if (  ( void * ) that_silts_sizes  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -81,40 +104,54 @@ return NULL;
 
 
 
-void * note_waters_resized = NULL;
 
 
 
-while (  ( void * ) note_waters_resized == NULL  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_waters_resized  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 {
 
 
 
+/* ( void * ) */  note_waters_resized  =  ( void * ) realloc
 
-
-
-
-
-
-note_waters_resized = realloc
 
 (
 
-( void * ) * that_waters_resized,
 
-* ( int * ) that_silts_sizes
+( void * ) * ( void * * ) that_waters_resized,
+
+
+( int ) * ( int * ) ( void * ) that_silts_sizes
+
 
 );
 
 
 
-
-
-
-
-
-
 }
 
 
@@ -125,7 +162,6 @@ note_waters_resized = realloc
 
 
 
-* that_waters_resized = note_waters_resized;
 
 
 
@@ -135,12 +171,63 @@ note_waters_resized = realloc
 
 
 
-note_waters_resized = NULL;
 
 
 
 
-return NULL;
+
+
+
+/* ( void * ) */  * ( void * * )  that_waters_resized   =   ( void * ) note_waters_resized;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
+
+
+
+
+
+
 
 
 
