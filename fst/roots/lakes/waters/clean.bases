@@ -16,11 +16,15 @@ void * clean_fst_roots_lakes_waters
 
 (
 
+
 void * that_waters_clean,
+
 
 void * that_silts_lengths,
 
+
 void * that_silts_values
+
 
 )
 
@@ -167,7 +171,21 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 
 
-while (    ( int ) * ( int * ) ( void * ) note_silts_counts    <    ( int ) * ( int * ) ( void * ) that_silts_lengths    )
+while
+
+(
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+<
+
+
+( int ) * ( int * ) ( void * ) that_silts_lengths
+
+
+)
 
 {
 
@@ -197,10 +215,27 @@ while (    ( int ) * ( int * ) ( void * ) note_silts_counts    <    ( int ) * ( 
 
 /* ( __int8_t ) */  * ( __int8_t * )
 
-(   ( __int8_t * ) ( void * ) that_waters_clean   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
+(
+
+
+( __int8_t * ) ( void * ) that_waters_clean
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+)
+
+
 
 
 =
+
+
 
 
 ( __int8_t ) ( int ) * ( int * ) ( void * ) that_silts_values;
