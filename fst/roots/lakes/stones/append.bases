@@ -288,7 +288,7 @@ while
 
 
 
-* ( int * ) note_silts_counts_append = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts_append   =   ( int ) 0;
 
 
 
@@ -298,7 +298,44 @@ while
 
 
 
-while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_append  )  !=  '\0'  )
+while
+
+(
+
+
+
+
+( char ) * ( char * )
+
+
+(
+
+
+( char * ) ( void * ) that_stones_append
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_append
+
+
+)
+
+
+
+
+!=
+
+
+
+
+( char ) '\0'
+
+
+
+
+)
 
 {
 
@@ -326,11 +363,53 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
-* (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_targets  +  * ( int * ) note_silts_counts_append  )
+/* ( char ) */  * ( char * )
+
+
+(
+
+
+( char * ) ( void * ) that_stones_targets
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_targets
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_append
+
+
+)
+
+
+
 
 =
 
-* (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_append  );
+
+
+
+( char ) * ( char * )
+
+
+(
+
+
+( char * ) ( void * ) that_stones_append
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_append
+
+
+);
 
 
 
@@ -356,7 +435,21 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
-* ( int * ) note_silts_counts_append  =  * ( int * ) note_silts_counts_append  +  1;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts_append
+
+
+=
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_append
+
+
++
+
+
+( int )
+
+1;
 
 
 
@@ -376,7 +469,38 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
-* (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_targets  +  * ( int * ) note_silts_counts_append  )  =  '\0';
+/* ( char ) */  * ( char * )
+
+
+(
+
+
+( char * ) ( void * ) that_stones_targets
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_targets
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts_append
+
+
+)
+
+
+
+
+=
+
+
+
+
+( char ) '\0';
 
 
 
@@ -402,7 +526,7 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
-* ( int * ) note_silts_counts_targets = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts_targets   =   ( int ) 0;
 
 
 
@@ -412,11 +536,11 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
-if ( note_silts_counts_targets != NULL )
+if (  ( void * ) note_silts_counts_targets  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_counts_targets );
+free (  ( void * ) note_silts_counts_targets  );
 
 }
 
@@ -428,7 +552,7 @@ free ( note_silts_counts_targets );
 
 
 
-note_silts_counts_targets = NULL;
+/* ( void * ) */  note_silts_counts_targets  =  ( void * ) NULL;
 
 
 
@@ -445,7 +569,7 @@ note_silts_counts_targets = NULL;
 
 
 
-* ( int * ) note_silts_counts_append = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts_append   =   ( int ) 0;
 
 
 
@@ -455,11 +579,11 @@ note_silts_counts_targets = NULL;
 
 
 
-if ( note_silts_counts_append != NULL )
+if (  ( void * ) note_silts_counts_append  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_counts_append );
+free (  ( void * ) note_silts_counts_append  );
 
 }
 
@@ -471,7 +595,7 @@ free ( note_silts_counts_append );
 
 
 
-note_silts_counts_append = NULL;
+/* ( void * ) */ note_silts_counts_append  =  ( void * ) NULL;
 
 
 
@@ -497,7 +621,7 @@ note_silts_counts_append = NULL;
 
 
 
-return  NULL;
+return  ( void * ) NULL;
 
 
 
