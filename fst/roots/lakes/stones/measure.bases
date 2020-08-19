@@ -48,11 +48,11 @@ void * that_silts_results
 
 
 
-if (  ( void * ) that_stones_targets == NULL  )
+if (  ( void * ) that_stones_targets  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -64,11 +64,34 @@ return NULL;
 
 
 
-if (  ( void * ) that_silts_results == NULL  )
+if (  ( void * ) that_silts_results  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (   ( int ) * ( int * ) ( void * ) that_silts_results   !=   ( int ) 0   )
+
+{
+
+return  ( void * ) NULL;
 
 }
 
