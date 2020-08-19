@@ -169,15 +169,6 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-
-
-
-
-
-
-
-
-
 /* ( void * ) */  * ( void * * )  that_waters_resized   =   ( void * ) note_waters_resized;
 
 
