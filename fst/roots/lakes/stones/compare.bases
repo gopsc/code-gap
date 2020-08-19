@@ -34,6 +34,22 @@ void * that_silts_results
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) that_stones_compared == NULL  )
 
 {
@@ -82,7 +98,29 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_lengths_compared = NULL;
+
+
+
+
+
+
 
 
 
@@ -96,6 +134,12 @@ note_silts_lengths_compared = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compared = 0;
 
 
@@ -106,7 +150,20 @@ note_silts_lengths_compared = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compared = 0;
+
+
+
+
+
+
 
 
 
@@ -126,7 +183,29 @@ while (  * (  ( char * ) that_stones_compared  +  * ( int * ) note_silts_lengths
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_lengths_compare = NULL;
+
+
+
+
+
+
 
 
 
@@ -140,6 +219,12 @@ note_silts_lengths_compare = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compare = 0;
 
 
@@ -150,7 +235,20 @@ note_silts_lengths_compare = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compare = 0;
+
+
+
+
+
+
 
 
 
@@ -174,7 +272,29 @@ while (  * (  ( char * ) that_stones_compare  +  * ( int * ) note_silts_lengths_
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_counts = NULL;
+
+
+
+
+
+
 
 
 
@@ -188,7 +308,29 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_counts = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -210,7 +352,39 @@ if (  * ( int * ) note_silts_lengths_compared  !=  * ( int * ) note_silts_length
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) that_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -224,6 +398,12 @@ if (  * ( int * ) note_silts_lengths_compared  !=  * ( int * ) note_silts_length
 
 
 
+
+
+
+
+
+
 if ( note_silts_lengths_compared != NULL )
 
 {
@@ -231,6 +411,12 @@ if ( note_silts_lengths_compared != NULL )
 free ( note_silts_lengths_compared );
 
 }
+
+
+
+
+
+
 
 
 
@@ -244,7 +430,20 @@ note_silts_lengths_compared = NULL;
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compare = 0;
+
+
+
+
+
+
 
 
 
@@ -258,6 +457,12 @@ free ( note_silts_lengths_compare );
 
 
 
+
+
+
+
+
+
 note_silts_lengths_compare = NULL;
 
 
@@ -268,7 +473,20 @@ note_silts_lengths_compare = NULL;
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_counts = 0;
+
+
+
+
+
+
 
 
 
@@ -282,7 +500,29 @@ free ( note_silts_counts );
 
 
 
+
+
+
+
+
+
 note_silts_counts = NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,7 +536,29 @@ return  NULL;
 
 
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -310,9 +572,31 @@ return  NULL;
 
 
 
+
+
+
+
+
+
 while (  * ( int * ) note_silts_counts  <  * ( int * ) note_silts_lengths_compared  )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -344,7 +628,39 @@ if
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) that_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,6 +674,12 @@ if
 
 
 
+
+
+
+
+
+
 if ( note_silts_lengths_compared != NULL )
 
 {
@@ -365,6 +687,12 @@ if ( note_silts_lengths_compared != NULL )
 free ( note_silts_lengths_compared );
 
 }
+
+
+
+
+
+
 
 
 
@@ -378,7 +706,20 @@ note_silts_lengths_compared = NULL;
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compare = 0;
+
+
+
+
+
+
 
 
 
@@ -392,7 +733,20 @@ free ( note_silts_lengths_compare );
 
 
 
+
+
+
+
+
+
 note_silts_lengths_compare = NULL;
+
+
+
+
+
+
+
 
 
 
@@ -406,6 +760,12 @@ note_silts_lengths_compare = NULL;
 
 
 
+
+
+
+
+
+
 if ( note_silts_counts != NULL )
 
 {
@@ -413,6 +773,12 @@ if ( note_silts_counts != NULL )
 free ( note_silts_counts  );
 
 }
+
+
+
+
+
+
 
 
 
@@ -426,11 +792,49 @@ note_silts_counts = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return  NULL;
 
 
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -444,7 +848,29 @@ return  NULL;
 
 
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -464,6 +890,22 @@ return  NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) note_silts_lengths_compared = 0;
 
 
@@ -479,6 +921,13 @@ free ( note_silts_lengths_compared );
 
 
 note_silts_lengths_compared = NULL;
+
+
+
+
+
+
+
 
 
 
@@ -512,6 +961,13 @@ note_silts_lengths_compare = NULL;
 
 
 
+
+
+
+
+
+
+
 * ( int * ) note_silts_counts = 0;
 
 
@@ -536,7 +992,29 @@ note_silts_counts = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return  NULL;
+
+
+
+
+
+
 
 
 
