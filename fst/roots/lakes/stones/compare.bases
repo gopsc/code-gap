@@ -675,7 +675,7 @@ return  ( void * ) NULL;
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
 
 
 
@@ -685,7 +685,21 @@ return  ( void * ) NULL;
 
 
 
-while (  * ( int * ) note_silts_counts  <  * ( int * ) note_silts_lengths_compared  )
+while
+
+(
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+<
+
+
+( int ) * ( int * ) ( void * ) note_silts_lengths_compared
+
+
+)
 
 {
 
@@ -717,11 +731,53 @@ if
 
 (
 
-* (  ( char * ) that_stones_compared  +  * ( int * ) note_silts_counts  )
+
+
+
+( char ) * ( char * )
+
+
+(
+
+
+( char * ) ( void * ) that_stones_compared
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+)
+
+
+
 
 !=
 
-* (  ( char * ) that_stones_compare  +  * ( int * ) note_silts_counts )
+
+
+
+( char ) * ( char * )
+
+
+(
+
+
+( char * ) ( void * ) that_stones_compare
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+)
+
+
+
 
 )
 
@@ -751,7 +807,7 @@ if
 
 
 
-* ( int * ) that_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 
 
@@ -777,7 +833,7 @@ if
 
 
 
-* ( int * ) note_silts_lengths_compared = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compared   =   ( int ) 0;
 
 
 
@@ -787,11 +843,11 @@ if
 
 
 
-if ( note_silts_lengths_compared != NULL )
+if (  ( void * ) note_silts_lengths_compared  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_lengths_compared );
+free (  ( void * ) note_silts_lengths_compared  );
 
 }
 
@@ -803,7 +859,7 @@ free ( note_silts_lengths_compared );
 
 
 
-note_silts_lengths_compared = NULL;
+/* ( void * ) */  note_silts_lengths_compared  =  ( void * ) NULL;
 
 
 
@@ -820,7 +876,7 @@ note_silts_lengths_compared = NULL;
 
 
 
-* ( int * ) note_silts_lengths_compare = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compare  =  ( int ) 0;
 
 
 
@@ -830,11 +886,11 @@ note_silts_lengths_compared = NULL;
 
 
 
-if ( note_silts_lengths_compare != NULL )
+if (  ( void * ) note_silts_lengths_compare  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_lengths_compare );
+free (  ( void * ) note_silts_lengths_compare  );
 
 }
 
@@ -846,7 +902,7 @@ free ( note_silts_lengths_compare );
 
 
 
-note_silts_lengths_compare = NULL;
+/* ( void * ) */  note_silts_lengths_compare  =  ( void * ) NULL;
 
 
 
@@ -863,7 +919,7 @@ note_silts_lengths_compare = NULL;
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
 
 
 
@@ -873,11 +929,11 @@ note_silts_lengths_compare = NULL;
 
 
 
-if ( note_silts_counts != NULL )
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_counts  );
+free (  ( void * ) note_silts_counts  );
 
 }
 
@@ -889,7 +945,7 @@ free ( note_silts_counts  );
 
 
 
-note_silts_counts = NULL;
+/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -915,43 +971,7 @@ note_silts_counts = NULL;
 
 
 
-return  NULL;
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
+return  ( void * ) NULL;
 
 
 
@@ -987,7 +1007,29 @@ return  NULL;
 
 
 
-* ( int * ) that_silts_results = 1;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts
+
+
+=
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts
+
+
++
+
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -1013,21 +1055,59 @@ return  NULL;
 
 
 
-* ( int * ) note_silts_lengths_compared = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 1;
 
 
 
-if ( note_silts_lengths_compared != NULL )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compared   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_lengths_compared  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_lengths_compared );
+free (  ( void * ) note_silts_lengths_compared  );
 
 }
 
 
 
-note_silts_lengths_compared = NULL;
+
+
+
+
+
+
+/* ( void * ) */  note_silts_lengths_compared   =  ( void * ) NULL;
 
 
 
@@ -1044,21 +1124,33 @@ note_silts_lengths_compared = NULL;
 
 
 
-* ( int * ) note_silts_lengths_compare = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compare   =   ( int ) 0;
 
 
 
-if ( note_silts_lengths_compare != NULL )
+
+
+
+
+
+
+if (  ( void * ) note_silts_lengths_compare  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_lengths_compare );
+free (  ( void * ) note_silts_lengths_compare  );
 
 }
 
 
 
-note_silts_lengths_compare = NULL;
+
+
+
+
+
+
+/* ( void * ) */ note_silts_lengths_compare  =  ( void * ) NULL;
 
 
 
@@ -1075,21 +1167,33 @@ note_silts_lengths_compare = NULL;
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
 
 
 
-if ( note_silts_counts != NULL )
+
+
+
+
+
+
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_counts  );
+free (  ( void * ) note_silts_counts  );
 
 }
 
 
 
-note_silts_counts = NULL;
+
+
+
+
+
+
+/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -1115,7 +1219,7 @@ note_silts_counts = NULL;
 
 
 
-return  NULL;
+return  ( void * ) NULL;
 
 
 
