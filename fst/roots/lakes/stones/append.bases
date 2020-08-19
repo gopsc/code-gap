@@ -32,6 +32,22 @@ void * that_stones_append
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) that_stones_targets == NULL  )
 
 {
@@ -64,7 +80,29 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_counts_targets = NULL;
+
+
+
+
+
+
 
 
 
@@ -78,7 +116,20 @@ note_silts_counts_targets = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_counts_targets = 0;
+
+
+
+
+
+
+
 
 
 
@@ -92,6 +143,12 @@ void * note_silts_counts_append = NULL;
 
 
 
+
+
+
+
+
+
 while ( note_silts_counts_append == NULL )
 
 {
@@ -102,7 +159,29 @@ note_silts_counts_append = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_counts_append = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -116,23 +195,35 @@ note_silts_counts_append = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 while (  * (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_targets  )  !=  '\0'  )
 
 {
 
-
-
-
-
-
-
-
-
 * ( int * ) note_silts_counts_targets  =  * ( int * ) note_silts_counts_targets  +  1;
 
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,9 +237,31 @@ while (  * (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts_t
 
 
 
+
+
+
+
+
+
 while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_append  )  !=  '\0'  )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -172,7 +285,29 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) note_silts_counts_append  =  * ( int * ) note_silts_counts_append  +  1;
+
+
+
+
+
+
 
 
 
@@ -196,7 +331,29 @@ while (  * (  ( char * ) that_stones_append  +  * ( int * ) note_silts_counts_ap
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) note_silts_counts_targets = 0;
+
+
+
+
+
+
 
 
 
@@ -210,7 +367,20 @@ free ( note_silts_counts_targets );
 
 
 
+
+
+
+
+
+
 note_silts_counts_targets = NULL;
+
+
+
+
+
+
+
 
 
 
@@ -224,6 +394,12 @@ note_silts_counts_targets = NULL;
 
 
 
+
+
+
+
+
+
 if ( note_silts_counts_append != NULL )
 
 {
@@ -231,6 +407,12 @@ if ( note_silts_counts_append != NULL )
 free ( note_silts_counts_append );
 
 }
+
+
+
+
+
+
 
 
 
@@ -244,7 +426,29 @@ note_silts_counts_append = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return  NULL;
+
+
+
+
+
+
 
 
 
