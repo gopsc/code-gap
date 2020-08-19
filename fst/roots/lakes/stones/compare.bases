@@ -1013,7 +1013,7 @@ return  ( void * ) NULL;
 =
 
 
-/* ( int ) */  * ( int * ) ( void * )  note_silts_counts
+( int ) * ( int * ) ( void * )  note_silts_counts
 
 
 +
@@ -1030,6 +1030,28 @@ return  ( void * ) NULL;
 
 
 }
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts
+
+
+=
+
+
+( int ) * ( int * ) ( void * )  note_silts_counts
+
+
++
+
+
+( int ) 1;
 
 
 
