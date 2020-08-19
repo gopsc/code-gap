@@ -46,7 +46,7 @@ void * * that_waters_data
 
 
 
-if (   ( void * ) ( void * * ) that_waters_data   ==   ( void * ) NULL   )
+if (  ( void * ) ( void * * ) that_waters_data  ==  ( void * ) NULL  )
 
 {
 
@@ -69,7 +69,7 @@ return  ( void * ) NULL;
 
 
 
-if (   ( void * ) * ( void * * ) that_waters_data   ==   ( void * ) NULL   )
+if (  ( void * ) * ( void * * ) that_waters_data  ==  ( void * ) NULL  )
 
 {
 
@@ -108,6 +108,13 @@ if (   ( void * ) * ( void * * ) that_waters_data   !=   ( void * ) NULL   )
 free (   ( void * ) * ( void * * ) that_waters_data   );
 
 }
+
+
+
+
+
+
+
 
 
 
