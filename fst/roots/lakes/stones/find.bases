@@ -50,11 +50,11 @@ void * * that_waters_results
 
 
 
-if (  ( void * ) ( void * * ) that_waters_results == NULL  )
+if (  ( void * ) ( void * * ) that_waters_results  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -73,11 +73,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_stones_targets == NULL  )
+if (  ( void * ) that_stones_targets  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -89,11 +89,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_stones_found == NULL  )
+if (  ( void * ) that_stones_found  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -105,11 +105,11 @@ return NULL;
 
 
 
-if (  ( void * ) * ( void * * ) that_waters_results != NULL  )
+if (  ( void * ) * ( void * * ) that_waters_results  !=  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
