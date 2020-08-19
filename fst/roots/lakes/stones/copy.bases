@@ -155,12 +155,36 @@ while
 (
 
 
+
+
 ( char ) * ( char * )
 
-(   ( char * ) ( void * ) that_stones_copied   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
+(
 
 
-!=  ( char ) '\0'
+( char * ) ( void * ) that_stones_copied
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+)
+
+
+
+
+!=
+
+
+
+
+( char ) '\0'
+
+
 
 
 )
@@ -193,15 +217,45 @@ while
 
 /* ( char ) */  * ( char * )
 
-(   ( char * ) ( void * ) that_stones_targets   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
+(
+
+
+( char * ) ( void * ) that_stones_targets
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+)
+
+
 
 
 =
 
 
+
+
 ( char ) * ( char * )
 
-(   ( char * ) ( void * ) that_stones_copied   +   ( int ) * ( int * ) ( void * ) note_silts_counts   );
+
+(
+
+
+( char * ) ( void * ) that_stones_copied
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+);
 
 
 
@@ -261,10 +315,27 @@ while
 
 /* ( char ) */  * ( char * )
 
-(   ( char * ) ( void * ) that_stones_targets   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
+(
+
+
+( char * ) ( void * ) that_stones_targets
+
+
++
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
+)
+
+
 
 
 =
+
+
 
 
 ( char ) '\0';
