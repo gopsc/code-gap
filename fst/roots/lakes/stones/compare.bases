@@ -157,6 +157,101 @@ while (  ( void * ) note_silts_lengths_compared  ==  ( void * ) NULL  )
 
 
 
+void * note_silts_lengths_compare  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_silts_lengths_compare  ==  ( void * ) NULL  )
+
+{
+
+/* ( void * ) */  note_silts_lengths_compare   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compare   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_counts  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
+
+{
+
+/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compared   =   ( int ) 0;
 
 
@@ -243,58 +338,6 @@ while
 
 
 
-
-
-
-
-
-
-
-
-
-void * note_silts_lengths_compare  =  ( void * ) NULL;
-
-
-
-
-
-
-
-
-
-while (  ( void * ) note_silts_lengths_compare  ==  ( void * ) NULL  )
-
-{
-
-/* ( void * ) */  note_silts_lengths_compare   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
-
-}
-
-
-
-
-
-
-
-
-
-/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compare   =   ( int ) 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compare   =   ( int ) 0;
 
 
@@ -350,7 +393,9 @@ while
 
 /* ( int ) */  * ( int * ) ( void * ) note_silts_lengths_compare
 
+
 =
+
 
 ( int ) * ( int * ) ( void * )  note_silts_lengths_compare
 
@@ -388,23 +433,151 @@ while
 
 
 
-void * note_silts_counts  =  ( void * ) NULL;
+if
+
+(
 
 
+( int ) * ( int * ) ( void * ) note_silts_lengths_compared
 
 
+!=
 
 
+( int ) * ( int * ) ( void * ) note_silts_lengths_compare
 
 
-
-while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
+)
 
 {
 
-/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compared   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_lengths_compared  !=  ( void * ) NULL  )
+
+{
+
+free (  ( void * ) note_silts_lengths_compared  );
 
 }
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_lengths_compared   =   ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_compare   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_lengths_compare  !=  ( void * ) NULL  )
+
+{
+
+free (  ( void * ) note_silts_lengths_compare  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_lengths_compare   =   ( void * ) NULL;
+
+
+
+
+
+
+
 
 
 
@@ -424,91 +597,11 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if (  * ( int * ) note_silts_lengths_compared  !=  * ( int * ) note_silts_lengths_compare  )
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) that_silts_results = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_lengths_compared = 0;
-
-
-
-
-
-
-
-
-
-if ( note_silts_lengths_compared != NULL )
-
-{
-
-free ( note_silts_lengths_compared );
+free (  ( void * ) note_silts_counts  );
 
 }
 
@@ -520,7 +613,7 @@ free ( note_silts_lengths_compared );
 
 
 
-note_silts_lengths_compared = NULL;
+/* ( void * ) */  note_silts_counts   =  ( void * ) NULL;
 
 
 
@@ -537,7 +630,6 @@ note_silts_lengths_compared = NULL;
 
 
 
-* ( int * ) note_silts_lengths_compare = 0;
 
 
 
@@ -547,92 +639,7 @@ note_silts_lengths_compared = NULL;
 
 
 
-if ( note_silts_lengths_compare != NULL )
-
-{
-
-free ( note_silts_lengths_compare );
-
-}
-
-
-
-
-
-
-
-
-
-note_silts_lengths_compare = NULL;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_counts = 0;
-
-
-
-
-
-
-
-
-
-if ( note_silts_counts != NULL )
-
-{
-
-free ( note_silts_counts );
-
-}
-
-
-
-
-
-
-
-
-
-note_silts_counts = NULL;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-return  NULL;
+return  ( void * ) NULL;
 
 
 
