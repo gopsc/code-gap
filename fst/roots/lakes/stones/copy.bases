@@ -33,11 +33,27 @@ void * that_stones_copied
 
 
 
-if (  ( void * ) that_stones_targets == NULL  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_stones_targets  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -49,11 +65,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_stones_copied == NULL  )
+if (  ( void * ) that_stones_copied  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -65,21 +81,49 @@ return NULL;
 
 
 
-void * note_silts_counts = NULL;
 
 
 
-while ( note_silts_counts == NULL )
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_counts  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 {
 
-note_silts_counts = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
 
 
-* ( int * ) note_silts_counts = 0;
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
 
 
 
@@ -89,10 +133,37 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts = 0;
 
 
-while (  * (  ( char * ) that_stones_copied  +  * ( int * ) note_silts_counts  )  !=  '\0'  )
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+
+( char ) * ( char * )
+
+(   ( char * ) ( void * ) that_stones_copied   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
+
+!=  ( char ) '\0'
+
+
+)
 
 {
 
@@ -104,11 +175,33 @@ while (  * (  ( char * ) that_stones_copied  +  * ( int * ) note_silts_counts  )
 
 
 
-* (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+(   ( char * ) ( void * ) that_stones_targets   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
 
 =
 
-* (  ( char * ) that_stones_copied  +  * ( int * ) note_silts_counts  );
+
+( char ) * ( char * )
+
+(   ( char * ) ( void * ) that_stones_copied   +   ( int ) * ( int * ) ( void * ) note_silts_counts   );
 
 
 
@@ -118,7 +211,41 @@ while (  * (  ( char * ) that_stones_copied  +  * ( int * ) note_silts_counts  )
 
 
 
-* ( int * ) note_silts_counts  =  * ( int * ) note_silts_counts  +  1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts
+
+
+=
+
+
+( int ) * ( int * ) ( void * ) note_silts_counts
+
+
++
+
+
+( int ) 1;
+
+
+
+
+
+
 
 
 
@@ -132,7 +259,15 @@ while (  * (  ( char * ) that_stones_copied  +  * ( int * ) note_silts_counts  )
 
 
 
-* (  ( char * ) that_stones_targets  +  * ( int * ) note_silts_counts  )  =  '\0';
+/* ( char ) */  * ( char * )
+
+(   ( char * ) ( void * ) that_stones_targets   +   ( int ) * ( int * ) ( void * ) note_silts_counts   )
+
+
+=
+
+
+( char ) '\0';
 
 
 
@@ -142,21 +277,40 @@ while (  * (  ( char * ) that_stones_copied  +  * ( int * ) note_silts_counts  )
 
 
 
-* ( int * ) note_silts_counts = 0;
 
 
 
-if ( note_silts_counts != NULL )
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) note_silts_counts   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_counts );
+free (  ( void * ) note_silts_counts  );
 
 }
 
 
 
-note_silts_counts = NULL;
+
+
+
+
+
+
+/* ( void * ) */ note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -166,7 +320,29 @@ note_silts_counts = NULL;
 
 
 
-return NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
+
+
+
+
+
+
 
 
 
