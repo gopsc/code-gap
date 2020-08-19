@@ -16,15 +16,11 @@ void * clean_fst_roots_lakes_waters
 
 (
 
-
 void * that_waters_clean,
-
 
 void * that_silts_lengths,
 
-
 void * that_silts_values
-
 
 )
 
