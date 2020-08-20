@@ -226,9 +226,9 @@
 
 #include "./roots/trees/remove.computers"
 
-//
-#include "./roots/trees/dirents/is.linuxes" // note_structure
 
+#include "./roots/trees/dirents/is.linuxes" // note_structure
+//
 #include "./roots/trees/dirents/create.linuxes"
 
 
