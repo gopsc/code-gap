@@ -34,6 +34,22 @@ void * that_silts_results
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) that_stones_names == NULL  )
 
 {
@@ -57,6 +73,45 @@ if (  ( void * ) that_silts_results == NULL  )
 return NULL;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (  ( int ) * ( int * ) ( void * ) that_silts_results  !=  ( int ) 0  )
+
+{
+
+return  ( void * ) NULL;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
