@@ -125,6 +125,12 @@ void * note_silts_results = NULL;
 
 
 
+
+
+
+
+
+
 while ( note_silts_results == NULL )
 
 {
@@ -135,7 +141,29 @@ note_silts_results =  malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,23 +183,7 @@ note_silts_results =  malloc (  1 * sizeof ( int )  );
 
 
 
-if (  * ( int * ) note_silts_results == -1  )
-
-{
-
-* ( int * ) that_silts_results = 0;
-
-}
-
-
-
-
-
-
-
-
-
-else if (  * ( int * ) note_silts_results == 0  )
+if (  * ( int * ) note_silts_results == 0  )
 
 {
 
@@ -187,7 +199,55 @@ else if (  * ( int * ) note_silts_results == 0  )
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* ( int * ) that_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) note_silts_results = 0;
+
+
+
+
+
+
 
 
 
@@ -201,6 +261,12 @@ free ( note_silts_results );
 
 
 
+
+
+
+
+
+
 note_silts_results = NULL;
 
 
@@ -211,7 +277,29 @@ note_silts_results = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return NULL;
+
+
+
+
+
+
 
 
 
