@@ -612,7 +612,7 @@ return  ( void * ) NULL;
 
 
 
-void * note_silts_counts_targets = NULL;
+void * note_silts_counts_targets  =  ( void * ) NULL;
 
 
 
@@ -622,11 +622,11 @@ void * note_silts_counts_targets = NULL;
 
 
 
-while ( note_silts_counts_targets == NULL )
+while (   ( void * ) note_silts_counts_targets  ==  ( void * ) NULL  )
 
 {
 
-note_silts_counts_targets = malloc (  1 *  sizeof ( int )  );
+/* ( void * ) */  note_silts_counts_targets   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -638,7 +638,7 @@ note_silts_counts_targets = malloc (  1 *  sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts_targets = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts_targets   =   ( int ) 0;
 
 
 
@@ -655,7 +655,7 @@ note_silts_counts_targets = malloc (  1 *  sizeof ( int )  );
 
 
 
-void * note_silts_counts_found = NULL;
+void * note_silts_counts_found  =  ( void * ) NULL;
 
 
 
@@ -665,11 +665,11 @@ void * note_silts_counts_found = NULL;
 
 
 
-while ( note_silts_counts_found == NULL )
+while (  ( void * ) note_silts_counts_found  ==  ( void * ) NULL  )
 
 {
 
-note_silts_counts_found = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_counts_found   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -681,7 +681,7 @@ note_silts_counts_found = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts_found = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts_found   =   ( int ) 0;
 
 
 
@@ -698,7 +698,7 @@ note_silts_counts_found = malloc (  1 * sizeof ( int )  );
 
 
 
-void * note_silts_switches = NULL;
+void * note_silts_switches  =  ( void * ) NULL;
 
 
 
@@ -708,11 +708,11 @@ void * note_silts_switches = NULL;
 
 
 
-while ( note_silts_switches == NULL )
+while (  ( void * ) note_silts_switches  ==  ( void * ) NULL  )
 
 {
 
-note_silts_switches = malloc (  1 *  sizeof ( int )  );
+/* ( void * ) */  note_silts_switches   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -724,7 +724,7 @@ note_silts_switches = malloc (  1 *  sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_switches = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_switches   =   ( int ) 0;
 
 
 
