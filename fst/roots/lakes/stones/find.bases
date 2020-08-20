@@ -413,7 +413,21 @@ while
 
 
 
-if (  * ( int * ) note_silts_lengths_targets  <  * ( int * ) note_silts_lengths_found  )
+if
+
+(
+
+
+( int ) * ( int * ) ( void * ) note_silts_lengths_targets
+
+
+<
+
+
+( int ) * ( int * ) ( void * ) note_silts_lengths_found
+
+
+)
 
 {
 
@@ -441,7 +455,7 @@ if (  * ( int * ) note_silts_lengths_targets  <  * ( int * ) note_silts_lengths_
 
 
 
-* that_waters_results = NULL;
+/* ( void * ) */  * ( void * * ) that_waters_results   =   ( void * ) NULL;
 
 
 
@@ -467,7 +481,7 @@ if (  * ( int * ) note_silts_lengths_targets  <  * ( int * ) note_silts_lengths_
 
 
 
-* ( int * ) note_silts_lengths_targets = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_targets   =   ( int ) 0;
 
 
 
@@ -477,11 +491,11 @@ if (  * ( int * ) note_silts_lengths_targets  <  * ( int * ) note_silts_lengths_
 
 
 
-if ( note_silts_lengths_targets != NULL )
+if (  ( void * ) note_silts_lengths_targets  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_lengths_targets );
+free (  ( void * ) note_silts_lengths_targets  );
 
 }
 
@@ -493,7 +507,7 @@ free ( note_silts_lengths_targets );
 
 
 
-note_silts_lengths_targets = NULL;
+/* ( void * ) */  note_silts_lengths_targets  =  ( void * ) NULL;
 
 
 
@@ -510,7 +524,7 @@ note_silts_lengths_targets = NULL;
 
 
 
-* ( int * ) note_silts_lengths_found = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_found   =   ( int ) 0;
 
 
 
@@ -520,11 +534,11 @@ note_silts_lengths_targets = NULL;
 
 
 
-if ( note_silts_lengths_found != NULL )
+if (  ( void * ) note_silts_lengths_found  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_lengths_found );
+free (  ( void * ) note_silts_lengths_found  );
 
 }
 
@@ -536,7 +550,7 @@ free ( note_silts_lengths_found );
 
 
 
-note_silts_lengths_found = NULL;
+/* ( void * ) */  note_silts_lengths_found  =  ( void * ) NULL;
 
 
 
@@ -562,7 +576,7 @@ note_silts_lengths_found = NULL;
 
 
 
-return NULL;
+return  ( void * ) NULL;
 
 
 
