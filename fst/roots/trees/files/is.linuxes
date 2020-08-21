@@ -121,6 +121,58 @@ return  ( void * ) NULL;
 
 
 
+void * note_silts_counts  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
+
+{
+
+/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_structures_status  =  ( void * ) NULL;
 
 
@@ -313,6 +365,58 @@ free (  ( void * ) note_structures_status  );
 
 
 
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
+
+{
+
+free (  ( void * ) note_silts_counts  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return  ( void * ) NULL;
 
 
@@ -396,6 +500,58 @@ free (  ( void * ) note_structures_status  );
 
 
 /* ( void * ) */  note_structures_status  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
+
+{
+
+free (  ( void * ) note_silts_counts  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
 
 
 
