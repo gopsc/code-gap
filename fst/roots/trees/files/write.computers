@@ -139,7 +139,7 @@ return  ( void * ) NULL;
 
 
 
-void * note_files_saved = NULL;
+void * note_files_saved  =  ( void * ) NULL;
 
 
 
@@ -153,9 +153,8 @@ void * note_files_saved = NULL;
 
 =
 
-( void * ) fopen
+( void * ) fopen (
 
-(
 
 ( void * ) that_stones_names,
 
@@ -468,7 +467,7 @@ while (  ( void * ) note_silts_results  ==  ( void * ) NULL  )
 
 
 
-* ( int * ) note_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
 
 
 
@@ -478,11 +477,11 @@ while (  ( void * ) note_silts_results  ==  ( void * ) NULL  )
 
 
 
-* ( int * ) note_silts_results
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results
 
 =
 
-fprintf (
+( int ) fprintf (
 
 
 ( void * ) note_files_saved,
@@ -490,6 +489,7 @@ fprintf (
 ( void * ) "%s",
 
 ( void * ) that_stones_contents
+
 
 );
 
@@ -508,11 +508,23 @@ fprintf (
 
 
 
-if (  * ( int * ) note_silts_results  !=  * ( int * ) note_silts_lengths_contents  )
+if
+
+(
+
+
+( int ) * ( int * ) ( void * ) note_silts_results
+
+!=
+
+( int ) * ( int * ) ( void * ) note_silts_lengths_contents
+
+
+)
 
 {
 
-* ( int * ) that_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 }
 
@@ -524,53 +536,23 @@ if (  * ( int * ) note_silts_results  !=  * ( int * ) note_silts_lengths_content
 
 
 
-else if (  * ( int * ) note_silts_results  ==  * ( int * ) note_silts_lengths_contents  )
+else if
+
+(
+
+
+( int ) * ( int * ) ( void * ) note_silts_results
+
+==
+
+( int ) * ( int * ) ( void * ) note_silts_lengths_contents
+
+
+)
 
 {
 
-* ( int * ) that_silts_results = 1;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ( int * ) note_silts_results = fclose (  ( void * ) note_files_saved  );
-
-
-
-
-
-
-
-
-
-if ( * ( int * ) note_silts_results == -1 )
-
-{
-
-* ( int * ) that_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 1;
 
 }
 
@@ -598,7 +580,17 @@ if ( * ( int * ) note_silts_results == -1 )
 
 
 
-* ( int * ) note_silts_lengths_contents = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results
+
+=
+
+( int ) fclose (
+
+
+( void * ) note_files_saved
+
+
+);
 
 
 
@@ -608,11 +600,11 @@ if ( * ( int * ) note_silts_results == -1 )
 
 
 
-if ( note_silts_lengths_contents != NULL )
+if (  ( int ) * ( int * ) ( void * ) note_silts_results  ==  ( int ) -1  )
 
 {
 
-free ( note_silts_lengths_contents );
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 }
 
@@ -624,7 +616,6 @@ free ( note_silts_lengths_contents );
 
 
 
-note_silts_lengths_contents = NULL;
 
 
 
@@ -641,6 +632,7 @@ note_silts_lengths_contents = NULL;
 
 
 
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_contents   =   ( int ) 0;
 
 
 
@@ -650,21 +642,11 @@ note_silts_lengths_contents = NULL;
 
 
 
-* ( int * ) note_silts_results = 0;
-
-
-
-
-
-
-
-
-
-if ( note_silts_results != NULL )
+if (  ( void * ) note_silts_lengths_contents  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_results );
+free (  ( void * ) note_silts_lengths_contents  );
 
 }
 
@@ -676,7 +658,7 @@ free ( note_silts_results );
 
 
 
-note_silts_results = NULL;
+/* ( void * ) */ note_silts_lengths_contents  =  ( void * ) NULL;
 
 
 
@@ -702,7 +684,59 @@ note_silts_results = NULL;
 
 
 
-return  NULL;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+if (  ( void * ) note_silts_results  !=  ( void * ) NULL  )
+
+{
+
+free (  ( void * ) note_silts_results  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_results  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
 
 
 
