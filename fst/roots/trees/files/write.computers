@@ -149,11 +149,13 @@ void * note_files_saved = NULL;
 
 
 
-note_files_saved
+/* ( void * ) */  note_files_saved
 
 =
 
-( void * ) fopen (
+( void * ) fopen
+
+(
 
 ( void * ) that_stones_names,
 
@@ -177,17 +179,93 @@ note_files_saved
 
 
 
-if ( note_files_saved == NULL )
+if (  ( void * ) note_files_saved  ==  ( void * ) NULL  )
 
 {
 
 
 
-* ( int * ) that_silts_results = 0;
 
 
 
-return NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * ) that_silts_results   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_files_saved  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
+
+
+
+
+
+
 
 
 
