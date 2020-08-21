@@ -295,7 +295,7 @@ return  ( void * ) NULL;
 
 
 
-void * note_silts_lengths_contents = NULL;
+void * note_silts_lengths_contents  =  ( void * ) NULL;
 
 
 
@@ -305,11 +305,11 @@ void * note_silts_lengths_contents = NULL;
 
 
 
-while ( note_silts_lengths_contents == NULL )
+while (  ( void * ) note_silts_lengths_contents  ==  ( void * ) NULL  )
 
 {
 
-note_silts_lengths_contents = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_lengths_contents   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -321,7 +321,7 @@ note_silts_lengths_contents = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_lengths_contents = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_contents   =   ( int ) 0;
 
 
 
@@ -338,7 +338,7 @@ note_silts_lengths_contents = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_lengths_contents = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_contents   =   ( int ) 0;
 
 
 
@@ -348,11 +348,47 @@ note_silts_lengths_contents = malloc (  1 * sizeof ( int )  );
 
 
 
-while (  * (  ( char * ) that_stones_contents  +  * ( int * ) note_silts_lengths_contents  )  !=  '\0'  )
+while
+
+(
+
+
+( char ) * ( char * )
+
+(
+
+( char * ) ( void * ) that_stones_contents
+
++
+
+( int ) * ( int * ) ( void * ) note_silts_lengths_contents
+
+)
+
+
+!=
+
+
+( char ) '\0'
+
+
+)
 
 {
 
-* ( int * ) note_silts_lengths_contents  =  * ( int * ) note_silts_lengths_contents  +  1;
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_contents
+
+=
+
+( int ) * ( int * ) ( void * )  note_silts_lengths_contents
+
++
+
+( int ) 1;
+
+
 
 }
 
@@ -407,6 +443,15 @@ note_silts_results = malloc (  1 * sizeof ( int )  );
 
 
 * ( int * ) note_silts_results = 0;
+
+
+
+
+
+
+
+
+
 
 
 
