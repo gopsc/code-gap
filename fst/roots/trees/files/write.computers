@@ -416,7 +416,7 @@ while
 
 
 
-void * note_silts_results = NULL;
+void * note_silts_results  =  ( void * ) NULL;
 
 
 
@@ -426,11 +426,11 @@ void * note_silts_results = NULL;
 
 
 
-while ( note_silts_results == NULL )
+while (  ( void * ) note_silts_results  ==  ( void * ) NULL  )
 
 {
 
-note_silts_results = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_results   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -442,7 +442,7 @@ note_silts_results = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
 
 
 
