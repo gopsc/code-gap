@@ -51,11 +51,11 @@ void * that_silts_results
 
 
 
-if (  ( void * ) that_stones_names == NULL  )
+if (  ( void * ) that_stones_names  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -67,11 +67,34 @@ return NULL;
 
 
 
-if (  ( void * ) that_silts_results == NULL  )
+if (  ( void * ) that_silts_results  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (   ( int ) * ( int * ) ( void * )  that_silts_results  ==  ( int ) 0   )
+
+{
+
+return  ( void * ) NULL;
 
 }
 
@@ -99,7 +122,7 @@ return NULL;
 
 
 
-void * note_silts_results = NULL;
+void * note_silts_results  =  ( void * ) NULL;
 
 
 
@@ -109,11 +132,11 @@ void * note_silts_results = NULL;
 
 
 
-while ( note_silts_results == NULL )
+while (  ( void * ) note_silts_results  ==  ( void * ) NULL  )
 
 {
 
-note_silts_results = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_results   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -125,7 +148,7 @@ note_silts_results = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
 
 
 
@@ -151,10 +174,11 @@ note_silts_results = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_results = mkdir (
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) mkdir (
 
 
 ( void * ) that_stones_names,
+
 
 S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH
 
@@ -176,20 +200,11 @@ S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH
 
 
 
-
-
-
-
-
-
-
-
-
-if (  * ( int * ) note_silts_results == -1  )
+if (   ( int ) * ( int * ) ( void * )  note_silts_results  ==  ( int ) -1   )
 
 {
 
-* ( int * ) that_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 }
 
@@ -201,11 +216,11 @@ if (  * ( int * ) note_silts_results == -1  )
 
 
 
-else if (  * ( int * ) note_silts_results == 0  )
+else if (   ( int ) * ( int * ) ( void * )  note_silts_results  ==  ( int ) 0   )
 
 {
 
-* ( int * ) that_silts_results = 1;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 1;
 
 }
 
@@ -233,7 +248,7 @@ else if (  * ( int * ) note_silts_results == 0  )
 
 
 
-* ( int * ) note_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
 
 
 
@@ -243,11 +258,11 @@ else if (  * ( int * ) note_silts_results == 0  )
 
 
 
-if ( note_silts_results != NULL )
+if (  ( void * ) note_silts_results  !=  ( void * ) NULL  )
 
 {
 
-free ( note_silts_results );
+free (  ( void * ) note_silts_results  );
 
 }
 
@@ -259,7 +274,7 @@ free ( note_silts_results );
 
 
 
-note_silts_results = NULL;
+/* ( void * ) */  note_silts_results   =   ( void * ) NULL;
 
 
 
@@ -285,7 +300,7 @@ note_silts_results = NULL;
 
 
 
-return NULL;
+return  ( void * ) NULL;
 
 
 
