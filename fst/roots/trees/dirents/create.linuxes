@@ -35,6 +35,22 @@ void * that_silts_results
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) that_stones_names == NULL  )
 
 {
@@ -67,7 +83,29 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_results = NULL;
+
+
+
+
+
+
 
 
 
@@ -81,7 +119,29 @@ note_silts_results = malloc (  1 * sizeof ( int )  );
 
 
 
+
+
+
+
+
+
 * ( int * ) note_silts_results = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,7 +169,13 @@ S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH
 
 
 
-* ( int * ) note_silts_results = 0;
+
+
+
+
+
+
+
 
 
 
@@ -151,7 +217,29 @@ else if (  * ( int * ) note_silts_results == 0  )
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * ( int * ) note_silts_results = 0;
+
+
+
+
+
+
 
 
 
@@ -165,6 +253,12 @@ free ( note_silts_results );
 
 
 
+
+
+
+
+
+
 note_silts_results = NULL;
 
 
@@ -175,7 +269,29 @@ note_silts_results = NULL;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return NULL;
+
+
+
+
+
+
 
 
 
