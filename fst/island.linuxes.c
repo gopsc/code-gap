@@ -231,9 +231,9 @@
 
 #include "./roots/trees/dirents/create.linuxes"
 
-//
-#include "./roots/trees/files/is.linuxes" // note_structure
 
+#include "./roots/trees/files/is.linuxes" // note_structure
+//
 #include "./roots/trees/files/write.computers" // note_files
 
 #include "./roots/trees/files/read.computers" // note_files; maybe read even wrong

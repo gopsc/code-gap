@@ -89,7 +89,7 @@ return  ( void * ) NULL;
 
 
 
-if (  ( int ) ( int * ) ( void * ) that_silts_results  !=  ( int ) 0  )
+if (  ( int ) * ( int * ) ( void * ) that_silts_results  !=  ( int ) 0  )
 
 {
 
@@ -514,7 +514,7 @@ while
 
 +
 
-( int ) ( int * ) ( void * ) note_silts_counts
+( int ) * ( int * ) ( void * ) note_silts_counts
 
 )
 
@@ -809,7 +809,7 @@ while
 
 +
 
-( int ) ( int * ) ( void * ) note_silts_counts
+( int ) * ( int * ) ( void * ) note_silts_counts
 
 )
 
