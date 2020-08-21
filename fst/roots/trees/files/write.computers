@@ -149,6 +149,118 @@ void * note_files_saved  =  ( void * ) NULL;
 
 
 
+
+
+
+
+
+
+
+void * note_silts_lengths_contents  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_silts_lengths_contents  ==  ( void * ) NULL  )
+
+{
+
+/* ( void * ) */  note_silts_lengths_contents   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_contents   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_results  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) note_silts_results  ==  ( void * ) NULL  )
+
+{
+
+/* ( void * ) */  note_silts_results   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_files_saved  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
 /* ( void * ) */  note_files_saved
 
 =
@@ -162,13 +274,6 @@ void * note_files_saved  =  ( void * ) NULL;
 
 
 );
-
-
-
-
-
-
-
 
 
 
@@ -249,6 +354,40 @@ if (  ( void * ) note_files_saved  ==  ( void * ) NULL  )
 
 
 
+/* ( void * ) */  note_silts_lengths_contents  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_results  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -269,58 +408,6 @@ return  ( void * ) NULL;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void * note_silts_lengths_contents  =  ( void * ) NULL;
-
-
-
-
-
-
-
-
-
-while (  ( void * ) note_silts_lengths_contents  ==  ( void * ) NULL  )
-
-{
-
-/* ( void * ) */  note_silts_lengths_contents   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
-
-}
-
-
-
-
-
-
-
-
-
-/* ( int ) */  * ( int * ) ( void * )  note_silts_lengths_contents   =   ( int ) 0;
 
 
 
@@ -390,58 +477,6 @@ while
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void * note_silts_results  =  ( void * ) NULL;
-
-
-
-
-
-
-
-
-
-while (  ( void * ) note_silts_results  ==  ( void * ) NULL  )
-
-{
-
-/* ( void * ) */  note_silts_results   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
-
-}
-
-
-
-
-
-
-
-
-
-/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
 
 
 
@@ -571,6 +606,23 @@ else if
 
 
 
+/* ( int ) */  * ( int * ) ( void * )  note_silts_results   =   ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -600,6 +652,16 @@ else if
 
 
 
+/* ( void * ) */  note_files_saved  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
 if (  ( int ) * ( int * ) ( void * ) note_silts_results  ==  ( int ) -1  )
 
 {
@@ -607,15 +669,6 @@ if (  ( int ) * ( int * ) ( void * ) note_silts_results  ==  ( int ) -1  )
 /* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -659,15 +712,6 @@ free (  ( void * ) note_silts_lengths_contents  );
 
 
 /* ( void * ) */ note_silts_lengths_contents  =  ( void * ) NULL;
-
-
-
-
-
-
-
-
-
 
 
 
