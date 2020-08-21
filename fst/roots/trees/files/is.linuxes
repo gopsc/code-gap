@@ -121,7 +121,7 @@ return  ( void * ) NULL;
 
 
 
-void * note_structures_status = NULL;
+void * note_structures_status  =  ( void * ) NULL;
 
 
 
@@ -131,11 +131,11 @@ void * note_structures_status = NULL;
 
 
 
-while ( note_structures_status == NULL )
+while (  ( void * ) note_structures_status  ==  ( void * ) NULL  )
 
 {
 
-note_structures_status = malloc (  1 * sizeof ( struct stat )  );
+/* ( void * ) */  note_structures_status   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( struct stat )   );
 
 }
 
@@ -166,13 +166,13 @@ note_structures_status = malloc (  1 * sizeof ( struct stat )  );
 if (
 
 
-lstat (
+( int ) lstat (
 
 ( void * ) that_stones_names,
 
 ( void * ) note_structures_status
 
-) == 0
+)  ==  ( int ) 0
 
 
 )
@@ -208,13 +208,13 @@ if
 (
 
 
-S_ISREG (
+( int ) S_ISREG (
 
 
-( * ( struct stat * ) note_structures_status ) . st_mode
+(   ( struct stat ) * ( struct stat * ) ( void * ) note_structures_status )  .  st_mode
 
 
-)  !=  0
+)  !=  ( int ) 0
 
 
 )
@@ -245,7 +245,7 @@ S_ISREG (
 
 
 
-* ( int * ) that_silts_results = 1;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 1;
 
 
 
@@ -271,11 +271,11 @@ S_ISREG (
 
 
 
-if ( note_structures_status != NULL )
+if (  ( void * ) note_structures_status  !=  ( void * ) NULL  )
 
 {
 
-free ( note_structures_status );
+free (  ( void * ) note_structures_status  );
 
 }
 
@@ -287,7 +287,7 @@ free ( note_structures_status );
 
 
 
-note_structures_status = NULL;
+/* ( void * ) */  note_structures_status  =  ( void * ) NULL;
 
 
 
@@ -313,7 +313,7 @@ note_structures_status = NULL;
 
 
 
-return  NULL;
+return  ( void * ) NULL;
 
 
 
@@ -353,7 +353,7 @@ return  NULL;
 
 
 
-* ( int * ) that_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 
 
@@ -379,11 +379,11 @@ return  NULL;
 
 
 
-if ( note_structures_status != NULL )
+if (  ( void * ) note_structures_status  !=  ( void * ) NULL  )
 
 {
 
-free ( note_structures_status );
+free (  ( void * ) note_structures_status  );
 
 }
 
@@ -395,7 +395,7 @@ free ( note_structures_status );
 
 
 
-note_structures_status = NULL;
+/* ( void * ) */  note_structures_status  =  ( void * ) NULL;
 
 
 
@@ -421,7 +421,7 @@ note_structures_status = NULL;
 
 
 
-return  NULL;
+return  ( void * ) NULL;
 
 
 
