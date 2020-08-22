@@ -261,7 +261,24 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  that_stones_results  =  ( char ) '\0';
+/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  note_waters_resized  =  ( char ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  note_waters_resized  =  ( char ) '\0';
 
 
 
@@ -315,6 +332,13 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 void * note_stones_read  =  ( void * ) NULL;
+
+
+
+
+
+
+
 
 
 
