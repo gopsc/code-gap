@@ -52,11 +52,11 @@ void * that_silts_results
 
 
 
-if (  ( void * ) ( void * * ) that_stones_results == NULL  )
+if (  ( void * ) ( void * * ) that_stones_results  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -75,11 +75,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_stones_names == NULL  )
+if (  ( void * ) that_stones_names  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -91,11 +91,11 @@ return NULL;
 
 
 
-if (  ( void * ) * ( void * * ) that_stones_results != NULL  )
+if (  ( void * ) * ( void * * ) that_stones_results  !=  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -107,11 +107,11 @@ return NULL;
 
 
 
-if (  ( void * ) that_silts_results == NULL  )
+if (  ( void * ) that_silts_results  ==  ( void * ) NULL  )
 
 {
 
-return NULL;
+return  ( void * ) NULL;
 
 }
 
@@ -163,7 +163,7 @@ return  ( void * ) NULL;
 
 
 
-void * note_files_got = NULL;
+void * note_files_got  =  ( void * ) NULL;
 
 
 
@@ -173,7 +173,7 @@ void * note_files_got = NULL;
 
 
 
-note_files_got
+/* ( void * ) */  note_files_got
 
 =
 
@@ -195,19 +195,17 @@ note_files_got
 
 
 
-if
-
-( note_files_got == NULL )
+if (  ( void * ) note_files_got  ==  ( void * ) NULL  )
 
 {
 
 
 
-* ( int * ) that_silts_results = 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results  =  ( int ) 0;
 
 
 
-return NULL;
+return  ( void * ) NULL;
 
 
 
@@ -237,7 +235,7 @@ return NULL;
 
 
 
-void * note_waters_resized = NULL;
+void * note_waters_resized  =  ( void * ) NULL;
 
 
 
@@ -247,49 +245,11 @@ void * note_waters_resized = NULL;
 
 
 
-if (  ( void * ) * ( void * * ) that_stones_results == NULL  )
-
-{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-note_waters_resized = NULL;
-
-
-
-
-
-
-
-
-
-while ( note_waters_resized == NULL )
+while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 {
 
-note_waters_resized = malloc (  1 * sizeof ( char )  );
+/* ( void * ) */  note_waters_resized   =   ( void * ) malloc (   ( int ) 1   *   ( unsigned int ) ( int ) sizeof ( char )   );
 
 }
 
@@ -301,17 +261,7 @@ note_waters_resized = malloc (  1 * sizeof ( char )  );
 
 
 
-* that_stones_results = note_waters_resized;
-
-
-
-
-
-
-
-
-
-note_waters_resized = NULL;
+/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  that_stones_results  =  ( char ) '\0';
 
 
 
@@ -328,7 +278,7 @@ note_waters_resized = NULL;
 
 
 
-* ( char * ) * ( void * * ) that_stones_results = '\0';
+/* ( void * ) */  * ( void * * )  that_stones_results  =  ( void * ) note_waters_resized;
 
 
 
@@ -338,14 +288,7 @@ note_waters_resized = NULL;
 
 
 
-
-
-
-
-
-
-
-}
+/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
 
 
 
