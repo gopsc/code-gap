@@ -1,29 +1,7 @@
 change processes order of pre-compile instructions
 
 
-add blank formal parameters return
+change order of formal parameters
+
 
 add formal parameters return through sizeof()
-
-change order of formal parameters returns
-
-
-
-blank results return
-
-
-
-add type transforms when a number be used
-
-add type transforms when a function return
-
-
-clean results in a beginning of a conditional selection code block
-
-clean variables after a loop code block
-
-
-
-declare all fish variables before value
-
-fish variables before standard variable
