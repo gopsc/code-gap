@@ -314,7 +314,7 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-void * note_stones_read = NULL;
+void * note_stones_read  =  ( void * ) NULL;
 
 
 
@@ -324,11 +324,11 @@ void * note_stones_read = NULL;
 
 
 
-while ( note_stones_read == NULL )
+while (  ( void * ) note_stones_read  ==  ( void * ) NULL  )
 
 {
 
-note_stones_read = malloc (  2 * sizeof ( char )  );
+/* ( void * ) */  note_stones_read   =   ( void * ) malloc (   ( int ) 2   *   ( int ) ( unsigned int ) sizeof ( char )   );
 
 }
 
@@ -340,7 +340,7 @@ note_stones_read = malloc (  2 * sizeof ( char )  );
 
 
 
-* ( char * ) note_stones_read = '\0';
+/* ( char ) */  * ( char * )  ( void * )  note_stones_read   =   ( char ) '\0';
 
 
 
@@ -366,7 +366,7 @@ note_stones_read = malloc (  2 * sizeof ( char )  );
 
 
 
-void * note_silts_counts = NULL;
+void * note_silts_counts  =  ( void * ) NULL;
 
 
 
@@ -376,11 +376,11 @@ void * note_silts_counts = NULL;
 
 
 
-while ( note_silts_counts == NULL )
+while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 {
 
-note_silts_counts = malloc (  1 * sizeof ( int )  );
+/* ( void * ) */  note_silts_counts   =   ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -392,7 +392,7 @@ note_silts_counts = malloc (  1 * sizeof ( int )  );
 
 
 
-* ( int * ) note_silts_counts = 0;
+/* ( int ) */  * ( int * )  ( void * )  note_silts_counts   =   ( int ) 0;
 
 
 
