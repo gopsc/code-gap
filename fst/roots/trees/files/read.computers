@@ -36,6 +36,22 @@ void * that_silts_results
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (  ( void * ) ( void * * ) that_stones_results == NULL  )
 
 {
@@ -43,6 +59,13 @@ if (  ( void * ) ( void * * ) that_stones_results == NULL  )
 return NULL;
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -100,6 +123,46 @@ return NULL;
 
 
 
+
+
+
+
+
+
+
+
+if (  ( int ) * ( int * ) ( void * ) that_silts_results  !=  ( int ) 0  )
+
+{
+
+return  ( void * ) NULL;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_files_got = NULL;
 
 
@@ -143,6 +206,22 @@ return NULL;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
