@@ -340,6 +340,60 @@ while (  ( void * ) note_stones_read  ==  ( void * ) NULL  )
 
 
 
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+(
+
+( char * ) ( void * )  note_stones_read
+
++
+
+( int ) 0
+
+)  =  ( char ) 0;
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+(
+
+( char * ) ( void * )  note_stones_read
+
++
+
+( int ) 1
+
+)  =  ( char ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( char ) */  * ( char * )  ( void * )  note_stones_read   =   ( char ) '\0';
 
 
