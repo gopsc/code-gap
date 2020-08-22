@@ -655,17 +655,15 @@ while
 (
 
 
-fgets (
-
+( void * ) fgets (
 
 ( void * ) note_stones_read,
 
-2,
+( int ) 2,
 
 ( FILE * ) note_files_got
 
-
-) != NULL
+)  !=  ( void * ) NULL
 
 
 )
