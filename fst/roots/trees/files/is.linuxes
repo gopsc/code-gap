@@ -355,9 +355,11 @@ if (
 
 ( int ) lstat (
 
+
 ( void * ) that_stones_names,
 
 ( void * ) note_structures_status
+
 
 )  ==  ( int ) 0
 
