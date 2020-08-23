@@ -413,7 +413,6 @@ if (
 
 ( int ) S_ISDIR
 
-
 (
 
 
@@ -761,7 +760,7 @@ return  ( void * ) NULL;
 
 
 
-/* ( int ) * /  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
+/* ( int ) */  * ( int * ) ( void * )  that_silts_results   =   ( int ) 0;
 
 
 
