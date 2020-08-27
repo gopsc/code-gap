@@ -991,6 +991,7 @@ free_fst_roots_lakes_waves
 
 
 
+
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
@@ -1013,7 +1014,11 @@ that_waters_lakes
 
 
 
-)  +
+)
+
+
+
++
 
 
 ( that_fst_roots_threads_prepare_silts )
@@ -1026,7 +1031,22 @@ that_waters_lakes
 note_silts_counts
 
 
-)  + 1 )  )
+
+)
+
+
+
++
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+)  )
+
 
 
 
