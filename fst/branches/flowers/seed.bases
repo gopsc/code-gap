@@ -6,6 +6,11 @@
 #include "./../../roots/lakes/prepare.bases"
 
 
+#include "./../../roots/lakes/waves/create.bases"
+
+#include "./../../roots/lakes/waves/free.bases"
+
+
 
 #include "./../../branches/threads/begin.bases"
 
@@ -37,6 +42,10 @@
 #include "./../../branches/lakes/bubbles/threads/begin.bases"
 
 #include "./../../branches/lakes/bubbles/threads/end.bases"
+
+
+
+#include "./../../selfcheck/lakes/show.bases"
 
 
 
@@ -802,6 +811,7 @@ begin_fst_branches_lakes_bubbles_moons
 
 
 
+
 ( that_fst_roots_threads_prepare_waters )
 
 
@@ -818,9 +828,11 @@ that_fst_branches_lakes_prepare
 
 
 
+
 ( that_fst_roots_threads_prepare_waters )
 
 that_silts_moons,
+
 
 
 
@@ -836,6 +848,7 @@ that_silts_moons,
 
 
 that_waters_moons
+
 
 
 
