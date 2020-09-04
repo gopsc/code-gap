@@ -313,6 +313,11 @@
 
 
 
+#include "./selfcheck/lakes/show.bases"
+
+
+
+
 #include "./dreams/begin.bases"
 
 
