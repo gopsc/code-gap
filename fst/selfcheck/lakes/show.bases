@@ -53,7 +53,7 @@ show_fst_selfcheck_lakes
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_counts_test
+note_silts_counts
 
 
 =
@@ -83,7 +83,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_counts_test
+note_silts_counts
 
 
 
@@ -105,7 +105,7 @@ note_silts_counts_test
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_counts_test
+note_silts_counts
 
 
 =
@@ -137,7 +137,7 @@ note_silts_counts_test
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_counts_test
+note_silts_counts
 
 
 =
@@ -170,7 +170,7 @@ while
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_counts_test
+note_silts_counts
 
 
 
@@ -309,7 +309,7 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_counts_test
+note_silts_counts
 
 
 
@@ -365,7 +365,7 @@ note_silts_counts_test
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_counts_test
+note_silts_counts
 
 
 
@@ -382,7 +382,7 @@ note_silts_counts_test
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_counts_test
+note_silts_counts
 
 
 
