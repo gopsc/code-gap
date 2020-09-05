@@ -18,7 +18,43 @@ void * out_fst_roots_parks_stones
 
 ()
 
-{}
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+}
 
 
 
