@@ -1,0 +1,27 @@
+
+
+#include <stdlib.h>
+
+#include <stdio.h>
+
+
+
+
+#ifndef added_fst_roots_parks_stones_out
+
+#define added_fst_roots_parks_stones_out
+
+
+
+
+void * out_fst_roots_parks_stones
+
+()
+
+{}
+
+
+
+
+#endif
+
