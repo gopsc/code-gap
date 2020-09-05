@@ -16,9 +16,45 @@
 
 void * out_fst_roots_parks_silts
 
-()
+(
+
+void * that_silts_out
+
+)
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (  ( void * ) that_silts_out  ==  ( void * ) NULL  )
+
+{
+
+return  ( void * ) NULL;
+
+}
 
 
 
