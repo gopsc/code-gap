@@ -80,6 +80,40 @@ return  ( void * ) NULL;
 
 
 
+printf
+
+(
+
+( char * ) "%s",
+
+( char * ) ( void * )  that_stones_out
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return  ( void * ) NULL;
 
 

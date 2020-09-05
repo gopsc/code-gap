@@ -80,6 +80,40 @@ return  ( void * ) NULL;
 
 
 
+printf
+
+(
+
+( char * ) "%i",
+
+( int ) * ( int * )  ( void * ) that_silts_out
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return  ( void * ) NULL;
 
 
