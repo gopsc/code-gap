@@ -319,7 +319,7 @@
 
 
 
-#include "./selfcheck/lakes/show.bases"  // include stdio.h
+#include "./selfcheck/lakes/show.bases"
 
 
 

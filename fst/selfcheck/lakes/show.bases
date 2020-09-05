@@ -1,9 +1,5 @@
 
 
-#include <stdio.h>
-
-
-
 #include "./../../roots/threads/prepare.bases"
 
 
@@ -13,6 +9,11 @@
 #include "./../../roots/lakes/waves/create.bases"
 
 #include "./../../roots/lakes/waves/free.bases"
+
+
+#include "./../../roots/parks/silts/out.bases"
+
+#include "./../../roots/parks/stones/out.bases"
 
 
 
@@ -345,15 +346,9 @@ that_waters_lakes
 
 
 
-printf
+out_fst_roots_parks_stones
 
 (
-
-
-
-
-
-"%s\n",
 
 
 
@@ -411,6 +406,26 @@ note_silts_counts
 
 
 
+
+
+);
+
+
+
+
+
+
+
+
+
+out_fst_roots_parks_stones
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"\n"
 
 
 );
