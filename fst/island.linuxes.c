@@ -210,7 +210,10 @@
 #include "./roots/lakes/waves/resize.bases" // may stuck when it fail
 
 
-#include "./roots/lakes/waters/clean.bases"
+
+#include "./roots/lakes/waters/show.bases" // use __int8_t
+
+#include "./roots/lakes/waters/clean.bases" // use __int8_t
 
 
 #include "./roots/lakes/stones/copy.bases"

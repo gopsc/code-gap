@@ -16,7 +16,7 @@ void * clean_fst_roots_lakes_waters
 
 (
 
-void * that_waters_clean,
+void * that_waters_cleaned,
 
 void * that_silts_lengths,
 
@@ -50,7 +50,7 @@ void * that_silts_values
 
 
 
-if (  ( void * ) that_waters_clean  ==  ( void * ) NULL  )
+if (  ( void * ) that_waters_cleaned  ==  ( void * ) NULL  )
 
 {
 
@@ -215,7 +215,7 @@ while
 (
 
 
-( __int8_t * ) ( void * ) that_waters_clean
+( __int8_t * ) ( void * ) that_waters_cleaned
 
 
 +
