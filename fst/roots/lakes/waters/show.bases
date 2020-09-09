@@ -171,6 +171,16 @@ while (  ( void * ) ( void * * )  that_waters_results  ==  ( void * ) NULL  )
 
 
 
+/* ( char ) */  * ( char * )  ( void * ) that_waters_results  =  ( char ) '\0';
+
+
+
+
+
+
+
+
+
 
 
 
@@ -266,6 +276,34 @@ while
 )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
+
+{}
 
 
 
