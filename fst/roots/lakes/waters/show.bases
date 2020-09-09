@@ -87,7 +87,7 @@ return  ( void * ) NULL;
 
 
 
-if (  ( void * ) that_silts_sizes  ==  ( void * ) NULL  )
+if (  ( void * ) that_silts_lengths  ==  ( void * ) NULL  )
 
 {
 
