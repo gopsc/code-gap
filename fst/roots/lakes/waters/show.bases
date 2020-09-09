@@ -249,6 +249,32 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 
 
+void * note_waters_resized  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * ) ( void * )  note_silts_counts  =  ( int ) 0;
 
 
@@ -301,9 +327,94 @@ while
 
 
 
-if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
+/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
 
-{}
+
+
+
+
+
+
+
+
+while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
+
+{
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_waters_resized  =  ( void * ) realloc
+
+(
+
+
+
+
+( void * ) * ( void * * )  that_waters_results,
+
+
+
+
+(
+
+
+( int ) 1    +    ( int ) 1
+
+
++
+
+
+( int ) 2    *    ( int ) * ( int * )  ( void * ) note_silts_counts
+
+
+)
+
+
+*
+
+
+( int ) ( unsigned int )  sizeof ( char )
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) note_waters_resized;
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
 
 
 
