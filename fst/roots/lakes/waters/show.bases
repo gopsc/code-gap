@@ -135,6 +135,58 @@ return  ( void * ) NULL;
 
 
 
+/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (  ( void * ) ( void * * )  that_waters_results  ==  ( void * ) NULL  )
+
+{
+
+/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( char )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )  ( void * ) that_waters_results  =  ( char ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_counts;
 
 
