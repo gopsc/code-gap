@@ -197,6 +197,41 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 
 
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts  =  ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * ) ( void * )  note_silts_counts  =  ( int ) 0;
+
+
+
+
+
+
+
+
+
 if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
 
 {
