@@ -950,6 +950,89 @@ note_silts_sizes
 
 
 
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_sizes
+
+
+
+
+=
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
++
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_lengths
+
+
+
+
+)
+
+
+
+
+*
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_threads_prepare_stones_sizes
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
 
 
 
