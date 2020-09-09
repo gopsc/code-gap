@@ -1,0 +1,35 @@
+
+
+#include <>
+
+
+
+
+#ifndef added_fst_roots_lakes_waters
+
+#define added_fst_roots_lakes_waters
+
+
+void * show_fst_roots_lakes_waters
+
+(
+
+void * that_waters_showed,
+
+void * that_silts_sizes,
+
+void * * that_waters_results
+
+)
+
+{
+
+return  ( void * ) NULL;
+
+}
+
+
+
+
+#endif
+
