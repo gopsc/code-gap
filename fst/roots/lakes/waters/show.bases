@@ -16,7 +16,7 @@ void * show_fst_roots_lakes_waters
 
 void * that_waters_showed,
 
-void * that_silts_sizes,
+void * that_silts_lengths,
 
 void * * that_waters_results
 
