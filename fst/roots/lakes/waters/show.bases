@@ -135,7 +135,7 @@ return  ( void * ) NULL;
 
 
 
-/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) NULL;
+void * note_stones_results  =  ( void * ) NULL;
 
 
 
@@ -145,11 +145,11 @@ return  ( void * ) NULL;
 
 
 
-while (  ( void * ) * ( void * * )  that_waters_results  ==  ( void * ) NULL  )
+while (  ( void * ) note_stones_results  ==  ( void * ) NULL  )
 
 {
 
-/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( char )   );
+/* ( void * ) */  note_stones_results  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( char )   );
 
 }
 
@@ -161,7 +161,7 @@ while (  ( void * ) * ( void * * )  that_waters_results  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  that_waters_results  =  ( char ) 0;
+/* ( char ) */  * ( char * )  ( void * ) note_stones_results  =  ( char ) 0;
 
 
 
@@ -171,7 +171,24 @@ while (  ( void * ) * ( void * * )  that_waters_results  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  that_waters_results  =  ( char ) '\0';
+/* ( char ) */  * ( char * )  ( void * ) note_stones_results  =  ( char ) '\0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_waters_resized  =  ( void * ) NULL;
 
 
 
@@ -301,23 +318,6 @@ while (  ( void * ) note_silts_lengths_results  ==  ( void * ) NULL  )
 
 
 /* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_results  =  ( int ) 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void * note_waters_resized  =  ( void * ) NULL;
 
 
 
@@ -470,7 +470,7 @@ while
 (
 
 
-( char * )  ( void * ) * ( void * * )  that_waters_results
+( char * )  ( void * )  note_stones_results
 
 
 +
@@ -497,6 +497,22 @@ while
 )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -583,7 +599,7 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-( void * ) * ( void * * )  that_waters_results,
+( void * ) note_stones_results,
 
 
 
@@ -631,7 +647,7 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) note_waters_resized;
+/* ( void * ) */  note_stones_results  =  ( void * ) note_waters_resized;
 
 
 
@@ -668,7 +684,7 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-( char * )  ( void * ) * ( void * * )  that_waters_results
+( char * )  ( void * )  note_stones_results
 
 
 
@@ -713,7 +729,7 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
-( char * )  ( void * ) * ( void * * )  that_waters_results
+( char * )  ( void * )  note_stones_results
 
 
 
@@ -849,11 +865,15 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 /* ( int ) */  * ( int * ) ( void * )  note_silts_counts
 
+
 =
+
 
 ( int ) * ( int * ) ( void * )  note_silts_counts
 
+
 +
+
 
 ( int ) 1;
 
@@ -884,6 +904,67 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) note_stones_results;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_stones_results  =  ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
 
 
 
@@ -1013,24 +1094,6 @@ free (  ( void * ) note_silts_lengths_results  );
 
 
 /* ( void * ) */  note_silts_lengths_results  =  ( void * ) NULL;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
-
 
 
 
