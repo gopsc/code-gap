@@ -552,21 +552,65 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_numbers  =  ( int ) 1;
-
-
-
-
-
-
-
-
-
 do
 
-{}
+{
 
-while ( ( int ) 0 );
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_numbers
+
+
+=
+
+
+( int ) * ( int * )  ( void * ) note_silts_lengths_numbers
+
+
++
+
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+while
+
+(
+
+( int ) * ( int * )  ( void * ) note_silts_lengths_numbers  ==  0
+
+);
 
 
 
