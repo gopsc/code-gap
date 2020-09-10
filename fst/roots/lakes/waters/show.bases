@@ -145,7 +145,7 @@ return  ( void * ) NULL;
 
 
 
-while (  ( void * ) ( void * * )  that_waters_results  ==  ( void * ) NULL  )
+while (  ( void * ) * ( void * * )  that_waters_results  ==  ( void * ) NULL  )
 
 {
 
@@ -161,7 +161,7 @@ while (  ( void * ) ( void * * )  that_waters_results  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) that_waters_results  =  ( char ) 0;
+/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  that_waters_results  =  ( char ) 0;
 
 
 
@@ -171,7 +171,7 @@ while (  ( void * ) ( void * * )  that_waters_results  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) that_waters_results  =  ( char ) '\0';
+/* ( char ) */  * ( char * )  ( void * ) * ( void * * )  that_waters_results  =  ( char ) '\0';
 
 
 
@@ -470,7 +470,7 @@ while
 (
 
 
-( char * ) ( void * )  that_waters_results
+( char * )  ( void * ) * ( void * * )  that_waters_results
 
 
 +
@@ -649,6 +649,51 @@ while (  ( void * ) note_waters_resized  ==  ( void * ) NULL  )
 
 
 
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+
+
+
+(
+
+
+
+
+( char * )  ( void * ) * ( void * * )  that_waters_results
+
+
+
+
++
+
+
+
+
+( int ) * ( int * )  ( void * ) note_silts_lengths_results
+
+
+
+
+)
+
+
+
+
+=
+
+
+
+
+( char ) ' ';
 
 
 
