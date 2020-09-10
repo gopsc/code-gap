@@ -612,6 +612,66 @@ do
 
 
 
+while (  ( int ) * ( int * )  ( void * ) note_silts_counts_digits  <  ( int ) * ( int * )  ( void * ) note_silts_lengths_numbers  )
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits
+
+
+=
+
+
+( int ) * ( int * )  ( void * ) note_silts_counts_digits
+
+
++
+
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits  =  ( int ) 0;
 
 
