@@ -1457,7 +1457,7 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_waters_resized  =  ( int ) 0;
+/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
 
 
 
@@ -1652,7 +1652,11 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
-/* ( void * ) */  note_stones_results  =  ( void * ) NULL;
+/* ( void * ) */  note_stones_results
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1669,7 +1673,11 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
-/* ( void * ) */  note_waters_resized  =  ( void * ) NULL;
+/* ( void * ) */  note_waters_resized
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1686,7 +1694,13 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
-/* ( int ) */  * ( int * ) ( void * )  note_silts_counts  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) 0;
 
 
 
@@ -1696,7 +1710,17 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
-if (  ( void * ) note_silts_counts  !=  ( void * ) NULL  )
+if
+
+(
+
+( void * ) note_silts_counts
+
+!=
+
+( void * ) NULL
+
+)
 
 {
 
@@ -1712,7 +1736,11 @@ free (  ( void * ) note_silts_counts  );
 
 
 
-/* ( void * ) */  note_silts_counts  =  ( void * ) NULL;
+/* ( void * ) */  note_silts_counts
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1729,7 +1757,13 @@ free (  ( void * ) note_silts_counts  );
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_values  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values
+
+=
+
+( int ) 0;
 
 
 
@@ -1739,7 +1773,17 @@ free (  ( void * ) note_silts_counts  );
 
 
 
-if (  ( void * ) note_silts_values  !=  ( void * ) NULL  )
+if
+
+(
+
+( void * ) note_silts_values
+
+!=
+
+( void * ) NULL
+
+)
 
 {
 
@@ -1755,7 +1799,11 @@ free (  ( void * ) note_silts_values  );
 
 
 
-/* ( void * ) */  note_silts_values  =  ( void * ) NULL;
+/* ( void * ) */  note_silts_values
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1772,7 +1820,13 @@ free (  ( void * ) note_silts_values  );
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_numbers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+=
+
+( int ) 0;
 
 
 
@@ -1782,7 +1836,17 @@ free (  ( void * ) note_silts_values  );
 
 
 
-if (  ( void * ) note_silts_lengths_numbers  !=  ( void * ) NULL  )
+if
+
+(
+
+( void * ) note_silts_lengths_numbers
+
+!=
+
+( void * ) NULL
+
+)
 
 {
 
@@ -1798,7 +1862,11 @@ free (  ( void * ) note_silts_lengths_numbers  );
 
 
 
-/* ( void * ) */  note_silts_lengths_numbers  =  ( void * ) NULL;
+/* ( void * ) */  note_silts_lengths_numbers
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1815,7 +1883,13 @@ free (  ( void * ) note_silts_lengths_numbers  );
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
 
 
 
@@ -1825,7 +1899,17 @@ free (  ( void * ) note_silts_lengths_numbers  );
 
 
 
-if (  ( void * ) note_silts_counts_digits  !=  ( void * ) NULL  )
+if
+
+(
+
+( void * ) note_silts_counts_digits
+
+!=
+
+( void * ) NULL
+
+)
 
 {
 
@@ -1841,7 +1925,11 @@ free (  ( void * ) note_silts_counts_digits  );
 
 
 
-/* ( void * ) */  note_silts_counts_digits  =  ( void * ) NULL;
+/* ( void * ) */  note_silts_counts_digits
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1858,7 +1946,13 @@ free (  ( void * ) note_silts_counts_digits  );
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_powers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 0;
 
 
 
@@ -1868,7 +1962,17 @@ free (  ( void * ) note_silts_counts_digits  );
 
 
 
-if (  ( void * ) note_silts_powers  !=  ( void * ) NULL  )
+if
+
+(
+
+( void * ) note_silts_powers
+
+!=
+
+( void * ) NULL
+
+)
 
 {
 
@@ -1884,7 +1988,11 @@ free (  ( void * ) note_silts_powers  );
 
 
 
-/* ( void * ) */ note_silts_powers  =  ( void * ) NULL;
+/* ( void * ) */ note_silts_powers
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1901,7 +2009,13 @@ free (  ( void * ) note_silts_powers  );
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_results  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_lengths_results
+
+=
+
+( int ) 0;
 
 
 
@@ -1911,7 +2025,17 @@ free (  ( void * ) note_silts_powers  );
 
 
 
-if (  ( void * ) note_silts_lengths_results  !=  ( void * ) NULL  )
+if
+
+(
+
+( void * ) note_silts_lengths_results
+
+!=
+
+( void * ) NULL
+
+)
 
 {
 
@@ -1927,7 +2051,11 @@ free (  ( void * ) note_silts_lengths_results  );
 
 
 
-/* ( void * ) */  note_silts_lengths_results  =  ( void * ) NULL;
+/* ( void * ) */  note_silts_lengths_results
+
+=
+
+( void * ) NULL;
 
 
 
@@ -1953,7 +2081,7 @@ free (  ( void * ) note_silts_lengths_results  );
 
 
 
-return  ( void * ) NULL;
+return ( void * ) NULL;
 
 
 
