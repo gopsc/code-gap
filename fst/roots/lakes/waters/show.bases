@@ -1457,6 +1457,23 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
+/* ( int ) */  * ( int * )  ( void * ) note_waters_resized  =  ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * )  ( void * ) note_silts_values  =  ( int ) 0;
 
 
