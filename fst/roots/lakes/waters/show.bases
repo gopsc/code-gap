@@ -1626,7 +1626,13 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
-/* ( void * ) */  * ( void * * )  that_waters_results  =  ( void * ) note_stones_results;
+/* ( void * ) */  * ( void * * )
+
+that_waters_results
+
+=
+
+( void * ) note_stones_results;
 
 
 
