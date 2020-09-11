@@ -1428,7 +1428,7 @@ while
 (
 
 
-( int ) 1  +  ( int ) 1
+( int ) 1
 
 
 +
@@ -1437,6 +1437,14 @@ while
 ( int ) * ( int * )
 
 ( void * ) note_silts_lengths_results
+
+
++
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers
 
 
 )
@@ -1507,6 +1515,68 @@ sizeof ( char )
 
 
 
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits
+
+
+<
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( char ) */  * ( char * )
 
 
@@ -1524,6 +1594,14 @@ note_stones_results
 ( int ) * ( int * )
 
 ( void * ) note_silts_lengths_results
+
+
++
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits
 
 
 )
@@ -1549,6 +1627,70 @@ note_stones_results
 
 
 
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits
+
++
+
+1;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( char ) */  * ( char * )
 
 
@@ -1565,13 +1707,19 @@ note_stones_results
 
 (
 
-( int ) 1
-
-+
 
 ( int ) * ( int * )
 
 ( void * ) note_silts_lengths_results
+
+
++
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
 
 )
 
