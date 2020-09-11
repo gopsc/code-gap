@@ -1491,6 +1491,40 @@ if (  ( int ) * ( int * )  ( void * ) note_silts_counts  !=  ( int ) 0  )
 
 
 
+/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits  =  ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )  ( void * ) note_silts_powers  =  ( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_results  =  ( int ) 0;
 
 
