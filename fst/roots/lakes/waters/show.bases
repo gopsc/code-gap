@@ -1329,6 +1329,50 @@ note_stones_results
 
 
 
+if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts
+
+
+==
+
+
+( int ) 0
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( void * ) */  note_waters_resized
 
 =
@@ -1498,6 +1542,13 @@ note_stones_results
 
 
 
+
+
+
+
+
+
+
 /* ( char ) */  * ( char * )
 
 
@@ -1548,6 +1599,7 @@ note_stones_results
 
 
 
+}
 
 
 
@@ -1557,7 +1609,23 @@ note_stones_results
 
 
 
-if
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+else if
 
 (
 
@@ -1567,7 +1635,7 @@ if
 ( void * ) note_silts_counts
 
 
-!=
+>
 
 
 ( int ) 0
