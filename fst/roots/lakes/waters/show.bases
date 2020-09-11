@@ -1950,7 +1950,7 @@ note_stones_results
 
 /* ( int ) */  * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 =
 
@@ -1966,7 +1966,7 @@ note_stones_results
 
 /* ( int ) */  * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 =
 
@@ -1989,7 +1989,7 @@ while
 
 ( int ) * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 
 >
@@ -2069,7 +2069,7 @@ note_stones_results
 
 ( int ) * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 
 )
@@ -2109,13 +2109,13 @@ note_stones_results
 
 /* ( int ) */  * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 =
 
 ( int ) * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 -
 
@@ -2141,7 +2141,7 @@ note_stones_results
 
 /* ( int ) */  * ( int * )
 
-( void * ) note_silts_counts_digits
+( void * ) note_silts_counts_digits_two
 
 =
 
