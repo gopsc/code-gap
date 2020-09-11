@@ -877,17 +877,17 @@ do
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_numbers
+/* ( int ) */  * ( int * )
 
+( void * ) note_silts_lengths_numbers
 
 =
 
+( int ) * ( int * )
 
-( int ) * ( int * )  ( void * ) note_silts_lengths_numbers
-
+( void * ) note_silts_lengths_numbers
 
 +
-
 
 ( int ) 1;
 
@@ -915,7 +915,13 @@ do
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_powers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 0;
 
 
 
@@ -925,7 +931,13 @@ do
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_powers  =  ( int ) 1;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 1;
 
 
 
@@ -942,7 +954,13 @@ do
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
 
 
 
@@ -963,15 +981,15 @@ while
 
 (
 
+( int ) * ( int * )
 
-( int ) * ( int * )  ( void * ) note_silts_counts_digits
-
+( void * ) note_silts_counts_digits
 
 <
 
+( int ) * ( int * )
 
-( int ) * ( int * )  ( void * ) note_silts_lengths_numbers
-
+( void * ) note_silts_lengths_numbers
 
 )
 
@@ -1001,17 +1019,17 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits
+/* ( int ) */  * ( int * )
 
+( void * ) note_silts_counts_digits
 
 =
 
+( int ) * ( int * )
 
-( int ) * ( int * )  ( void * ) note_silts_counts_digits
-
+( void * ) note_silts_counts_digits
 
 +
-
 
 ( int ) 1;
 
@@ -1040,7 +1058,13 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
 
 
 
@@ -1072,7 +1096,13 @@ while
 
 (
 
-( int ) * ( int * )  ( void * ) note_silts_lengths_numbers  ==  0
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+==
+
+( int ) 0
 
 );
 
@@ -1084,7 +1114,13 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_powers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 0;
 
 
 
