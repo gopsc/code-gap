@@ -716,7 +716,13 @@ while
 
 
 
-/* ( int ) */  * ( int * ) ( void * )  note_silts_counts  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * )  note_silts_counts
+
+=
+
+( int ) 0;
 
 
 
@@ -731,13 +737,17 @@ while
 (
 
 
-( int ) * ( int * ) ( void * )  note_silts_counts
+( int ) * ( int * )
+
+( void * ) note_silts_counts
 
 
 <
 
 
-( int ) * ( int * ) ( void * )  that_silts_lengths
+( int ) * ( int * )
+
+( void * ) that_silts_lengths
 
 
 )
@@ -768,7 +778,13 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_values  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values
+
+=
+
+( int ) 0;
 
 
 
@@ -778,7 +794,9 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_values
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values
 
 
 
@@ -788,19 +806,25 @@ while
 
 
 
-( int )  ( __int8_t ) * ( __int8_t * )
+( int )
+
+( __int8_t ) * ( __int8_t * )
 
 
 (
 
 
-( __int8_t * ) ( void * )  that_waters_showed
+( __int8_t * ) ( void * )
+
+that_waters_showed
 
 
 +
 
 
-( int ) * ( int * )  ( void * ) note_silts_counts
+( int ) * ( int * )
+
+( void * ) note_silts_counts
 
 
 );
@@ -829,7 +853,13 @@ while
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_numbers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+=
+
+( int ) 0;
 
 
 
