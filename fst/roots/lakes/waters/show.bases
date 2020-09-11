@@ -1746,7 +1746,9 @@ note_stones_results
 
 =
 
-( int ) 0;
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers;
 
 
 
@@ -1766,12 +1768,10 @@ while
 ( void * ) note_silts_counts_digits
 
 
-<
+>
 
 
-( int ) * ( int * )
-
-( void * ) note_silts_lengths_numbers
+( int ) 0
 
 
 )
@@ -1832,9 +1832,23 @@ note_stones_results
 +
 
 
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+
+-
+
+
 ( int ) * ( int * )
 
 ( void * ) note_silts_counts_digits
+
+
+)
 
 
 )
@@ -1879,9 +1893,9 @@ note_stones_results
 
 ( void * ) note_silts_counts_digits
 
-+
+-
 
-1;
+( int ) 1;
 
 
 
