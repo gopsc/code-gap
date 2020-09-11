@@ -644,6 +644,90 @@ while
 
 
 
+void * note_silts_counts_digits_two
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+( void * ) note_silts_counts_digits_two
+
+==
+
+( void * ) NULL
+
+)
+
+{
+
+
+
+/* ( void * ) */  note_silts_counts_digits_two
+
+
+=
+
+
+( void * ) malloc
+
+
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits_two
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_silts_powers
 
 =
@@ -2689,6 +2773,69 @@ free (  ( void * ) note_silts_counts_digits  );
 
 
 /* ( void * ) */  note_silts_counts_digits
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits_two
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+( void * ) note_silts_counts_digits_two
+
+!=
+
+( void * ) NULL
+
+)
+
+{
+
+free (  ( void * ) note_silts_counts_digits_two  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */ note_silts_counts_digits_two
 
 =
 
