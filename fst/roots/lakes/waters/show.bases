@@ -707,6 +707,71 @@ while
 
 
 
+void * note_silts_switches_separators
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+( void * ) note_silts_switches_separators
+
+==
+
+( void * ) NULL
+
+)
+
+{
+
+/* ( void * ) */  note_silts_switches_separators  =  ( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_switches_separators
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2458,6 +2523,69 @@ free (  ( void * ) note_silts_lengths_results  );
 
 
 /* ( void * ) */  note_silts_lengths_results
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_switches_separators
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+( void * ) note_silts_switches_separators
+
+!=
+
+( void * ) NULL
+
+)
+
+{
+
+free (  ( void * ) note_silts_switches_separators  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_switches_separators
 
 =
 
