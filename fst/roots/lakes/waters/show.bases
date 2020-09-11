@@ -1123,7 +1123,7 @@ while
 
 
 
-
+printf("%i\n",*(int*)note_silts_values);
 
 
 
