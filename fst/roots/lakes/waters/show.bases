@@ -1123,7 +1123,7 @@ while
 
 
 
-printf("%i\n",*(int*)note_silts_values);
+
 
 
 
@@ -1134,13 +1134,25 @@ while
 
 (
 
+
 ( int ) * ( int * )
 
-( void * ) note_silts_lengths_numbers
+( void * ) note_silts_values
 
-==
+
+/
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_powers
+
+
+>
+
 
 ( int ) 0
+
 
 );
 
