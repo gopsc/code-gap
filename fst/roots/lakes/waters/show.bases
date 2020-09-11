@@ -187,7 +187,11 @@ return ( void * ) NULL;
 
 
 
-void * note_stones_results  =  ( void * ) NULL;
+void * note_stones_results
+
+=
+
+( void * ) NULL;
 
 
 
@@ -197,11 +201,27 @@ void * note_stones_results  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_stones_results  ==  ( void * ) NULL  )
+while
+
+(
+
+( void * ) note_stones_results
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_stones_results  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( char )   );
+/* ( void * ) */  note_stones_results
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( char )   );
 
 }
 
@@ -213,7 +233,13 @@ while (  ( void * ) note_stones_results  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) note_stones_results  =  ( char ) 0;
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results
+
+=
+
+( char ) 0;
 
 
 
@@ -223,25 +249,13 @@ while (  ( void * ) note_stones_results  ==  ( void * ) NULL  )
 
 
 
-/* ( char ) */  * ( char * )  ( void * ) note_stones_results  =  ( char ) '\0';
+/* ( char ) */  * ( char * )
 
+( void * ) note_stones_results
 
+=
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-void * note_waters_resized  =  ( void * ) NULL;
-
+( char ) '\0';
 
 
 
@@ -257,7 +271,12 @@ void * note_waters_resized  =  ( void * ) NULL;
 
 
 
-void * note_silts_counts  =  ( void * ) NULL;
+
+void * note_waters_resized
+
+=
+
+( void * ) NULL;
 
 
 
@@ -267,11 +286,48 @@ void * note_silts_counts  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
+
+
+
+
+
+
+
+void * note_silts_counts
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+( void * ) note_silts_counts
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_silts_counts  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+/* ( void * ) */  note_silts_counts
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -283,7 +339,13 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_counts  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) 0;
 
 
 
@@ -300,7 +362,11 @@ while (  ( void * ) note_silts_counts  ==  ( void * ) NULL  )
 
 
 
-void * note_silts_values  =  ( void * ) NULL;
+void * note_silts_values
+
+=
+
+( void * ) NULL;
 
 
 
@@ -310,11 +376,27 @@ void * note_silts_values  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_silts_values  ==  ( void * ) NULL  )
+while
+
+(
+
+( void * ) note_silts_values
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_silts_values  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+/* ( void * ) */  note_silts_values
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -326,7 +408,13 @@ while (  ( void * ) note_silts_values  ==  ( void * ) NULL  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_values  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values
+
+=
+
+( int ) 0;
 
 
 
@@ -343,7 +431,11 @@ while (  ( void * ) note_silts_values  ==  ( void * ) NULL  )
 
 
 
-void * note_silts_lengths_numbers  =  ( void * ) NULL;
+void * note_silts_lengths_numbers
+
+=
+
+( void * ) NULL;
 
 
 
@@ -353,11 +445,27 @@ void * note_silts_lengths_numbers  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_silts_lengths_numbers  ==  ( void * ) NULL  )
+while
+
+(
+
+( void * ) note_silts_lengths_numbers
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_silts_lengths_numbers  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+/* ( void * ) */  note_silts_lengths_numbers
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -369,7 +477,13 @@ while (  ( void * ) note_silts_lengths_numbers  ==  ( void * ) NULL  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_numbers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+=
+
+( int ) 0;
 
 
 
@@ -386,7 +500,11 @@ while (  ( void * ) note_silts_lengths_numbers  ==  ( void * ) NULL  )
 
 
 
-void * note_silts_counts_digits  =  ( void * ) NULL;
+void * note_silts_counts_digits
+
+=
+
+( void * ) NULL;
 
 
 
@@ -396,11 +514,27 @@ void * note_silts_counts_digits  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_silts_counts_digits  ==  ( void * ) NULL  )
+while
+
+(
+
+( void * ) note_silts_counts_digits
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_silts_counts_digits  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+/* ( void * ) */  note_silts_counts_digits
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -412,7 +546,13 @@ while (  ( void * ) note_silts_counts_digits  ==  ( void * ) NULL  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_counts_digits  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
 
 
 
@@ -429,7 +569,11 @@ while (  ( void * ) note_silts_counts_digits  ==  ( void * ) NULL  )
 
 
 
-void * note_silts_powers  =  ( void * ) NULL;
+void * note_silts_powers
+
+=
+
+( void * ) NULL;
 
 
 
@@ -439,11 +583,27 @@ void * note_silts_powers  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_silts_powers  ==  ( void * ) NULL  )
+while
+
+(
+
+( void * ) note_silts_powers
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_silts_powers  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+/* ( void * ) */  note_silts_powers
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
 
 }
 
@@ -455,7 +615,13 @@ while (  ( void * ) note_silts_powers  ==  ( void * ) NULL  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_powers  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 0;
 
 
 
@@ -472,7 +638,11 @@ while (  ( void * ) note_silts_powers  ==  ( void * ) NULL  )
 
 
 
-void * note_silts_lengths_results  =  ( void * ) NULL;
+void * note_silts_lengths_results
+
+=
+
+( void * ) NULL;
 
 
 
@@ -482,11 +652,27 @@ void * note_silts_lengths_results  =  ( void * ) NULL;
 
 
 
-while (  ( void * ) note_silts_lengths_results  ==  ( void * ) NULL  )
+while
+
+(
+
+( void * ) note_silts_lengths_results
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-/* ( void * ) */  note_silts_lengths_results  =  ( void * ) malloc (   ( int ) 1   *   ( int ) ( unsigned int )  sizeof ( int )   );
+/* ( void * ) */  note_silts_lengths_results
+
+=
+
+( void * ) malloc
+
+(   ( int ) 1   *   ( int ) ( unsigned int )  sizeof ( int )   );
 
 }
 
@@ -498,7 +684,13 @@ while (  ( void * ) note_silts_lengths_results  ==  ( void * ) NULL  )
 
 
 
-/* ( int ) */  * ( int * )  ( void * ) note_silts_lengths_results  =  ( int ) 0;
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_lengths_results
+
+=
+
+( int ) 0;
 
 
 
