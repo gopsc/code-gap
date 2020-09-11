@@ -219,9 +219,12 @@ while
 
 /* ( void * ) */  note_stones_results
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -337,9 +340,12 @@ while
 
 /* ( void * ) */  note_silts_counts
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -418,9 +424,12 @@ while
 
 /* ( void * ) */  note_silts_values
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -499,9 +508,12 @@ while
 
 /* ( void * ) */  note_silts_lengths_numbers
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -580,9 +592,12 @@ while
 
 /* ( void * ) */  note_silts_counts_digits
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -661,9 +676,12 @@ while
 
 /* ( void * ) */  note_silts_powers
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -742,9 +760,12 @@ while
 
 /* ( void * ) */  note_silts_lengths_results
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
@@ -823,9 +844,12 @@ while
 
 /* ( void * ) */  note_silts_switches_separators
 
+
 =
 
+
 ( void * ) malloc
+
 
 (
 
