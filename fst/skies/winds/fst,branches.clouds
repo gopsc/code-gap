@@ -2,3 +2,5 @@ add lakes type check
 
 
 add space clean even when a space variable creating
+
+when a words fish be cleaned, the size should be the length plus one
