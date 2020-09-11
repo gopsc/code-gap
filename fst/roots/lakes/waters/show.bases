@@ -1394,6 +1394,22 @@ note_stones_results
 
 
 
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_switches_separators
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
 if
 
 (
@@ -1413,6 +1429,62 @@ if
 )
 
 {
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_switches_separators
+
+=
+
+( int ) 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts
+
+
+>
+
+
+( int ) 0
+
+
+)
+
+{
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_switches_separators
+
+=
+
+( int ) 1;
+
+
+
+}
 
 
 
@@ -1501,6 +1573,14 @@ while
 
 ( int ) * ( int * )
 
+( void * ) note_silts_switches_separators
+
+
++
+
+
+( int ) * ( int * )
+
 ( void * ) note_silts_lengths_results
 
 
@@ -1564,6 +1644,86 @@ sizeof ( char )
 =
 
 ( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_switches_separators
+
+
+==
+
+
+( int ) 1
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+
+(
+
+
+( char * ) ( void * )
+
+note_stones_results
+
+
++
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_results
+
+
+)
+
+
+=
+
+
+( char ) ',';
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -1651,6 +1811,14 @@ while
 ( char * ) ( void * )
 
 note_stones_results
+
+
++
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_switches_separators
 
 
 +
@@ -1770,6 +1938,14 @@ note_stones_results
 +
 
 
+( int ) * ( int * )
+
+( void * ) note_silts_switches_separators
+
+
++
+
+
 (
 
 
@@ -1796,67 +1972,6 @@ note_stones_results
 
 
 ( char ) '\0';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-else if
-
-(
-
-
-( int ) * ( int * )
-
-( void * ) note_silts_counts
-
-
->
-
-
-( int ) 0
-
-
-)
-
-{}
 
 
 
@@ -1998,6 +2113,29 @@ else if
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_lengths_results
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_switches_separators
 
 =
 
