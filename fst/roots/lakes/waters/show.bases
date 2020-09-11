@@ -2327,6 +2327,29 @@ note_stones_results
 
 /* ( int ) */  * ( int * )
 
+( void * ) note_silts_counts_digits_two
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
 ( void * ) note_silts_powers
 
 =
