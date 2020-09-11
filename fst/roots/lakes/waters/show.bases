@@ -215,13 +215,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_stones_results
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( char )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( char )
+
+);
+
+
 
 }
 
@@ -321,13 +333,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_silts_counts
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
 
 }
 
@@ -390,13 +414,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_silts_values
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
 
 }
 
@@ -459,13 +495,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_silts_lengths_numbers
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
 
 }
 
@@ -528,13 +576,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_silts_counts_digits
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
 
 }
 
@@ -597,13 +657,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_silts_powers
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
 
 }
 
@@ -666,13 +738,25 @@ while
 
 {
 
+
+
 /* ( void * ) */  note_silts_lengths_results
 
 =
 
 ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int )  sizeof ( int )   );
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int )  sizeof ( int )
+
+);
+
+
 
 }
 
@@ -735,9 +819,25 @@ while
 
 {
 
-/* ( void * ) */  note_silts_switches_separators  =  ( void * ) malloc
 
-(   ( int ) 1   *   ( int ) ( unsigned int ) sizeof ( int )   );
+
+/* ( void * ) */  note_silts_switches_separators
+
+=
+
+( void * ) malloc
+
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int ) sizeof ( int )
+
+);
+
+
 
 }
 
@@ -1731,6 +1831,22 @@ note_stones_results
 
 
 
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
 
 
 
