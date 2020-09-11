@@ -806,17 +806,22 @@ while
 
 ( __int8_t ) * ( __int8_t * )
 
+
 (
+
 
 ( __int8_t * ) ( void * )
 
 that_waters_showed
 
+
 +
+
 
 ( int ) * ( int * )
 
 ( void * ) note_silts_counts
+
 
 );
 
@@ -1126,27 +1131,40 @@ while
 (
 
 
+
+
 ( char ) * ( char * )
 
+
 (
+
 
 ( char * )  ( void * )
 
 note_stones_results
 
+
 +
+
 
 ( int ) * ( int * )
 
 ( void * ) note_silts_lengths_results
 
+
 )
+
+
 
 
 !=
 
 
+
+
 ( char ) '\0'
+
+
 
 
 )
@@ -1270,26 +1288,38 @@ while
 (
 
 
+
+
 ( void * ) note_stones_results,
+
+
 
 
 (
 
+
 ( int ) 1  +  ( int ) 1
 
+
 +
+
 
 ( int ) * ( int * )
 
 ( void * ) note_silts_lengths_results
 
+
 )
 
+
 *
+
 
 ( int ) ( unsigned int )
 
 sizeof ( char )
+
+
 
 
 );
@@ -1445,13 +1475,17 @@ if
 
 (
 
+
 ( int ) * ( int * )
 
 ( void * ) note_silts_counts
 
+
 !=
 
+
 ( int ) 0
+
 
 )
 
