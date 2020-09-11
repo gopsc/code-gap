@@ -48,11 +48,27 @@ void * * that_waters_results
 
 
 
-if (  ( void * ) ( void * * )  that_waters_results  ==  ( void * ) NULL  )
+if
+
+(
+
+
+( void * ) ( void * * )
+
+that_waters_results
+
+
+==
+
+
+( void * ) NULL
+
+
+)
 
 {
 
-return  ( void * ) NULL;
+return ( void * ) NULL;
 
 }
 
@@ -71,11 +87,21 @@ return  ( void * ) NULL;
 
 
 
-if (  ( void * ) that_waters_showed  ==  ( void * ) NULL  )
+if
+
+(
+
+( void * ) that_waters_showed
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-return  ( void * ) NULL;
+return ( void * ) NULL;
 
 }
 
@@ -87,11 +113,21 @@ return  ( void * ) NULL;
 
 
 
-if (  ( void * ) that_silts_lengths  ==  ( void * ) NULL  )
+if
+
+(
+
+( void * ) that_silts_lengths
+
+==
+
+( void * ) NULL
+
+)
 
 {
 
-return  ( void * ) NULL;
+return ( void * ) NULL;
 
 }
 
@@ -103,11 +139,27 @@ return  ( void * ) NULL;
 
 
 
-if (  ( void * ) * ( void * * )  that_waters_results  !=  ( void * ) NULL  )
+if
+
+(
+
+
+( void * ) * ( void * * )
+
+that_waters_results
+
+
+!=
+
+
+( void * ) NULL
+
+
+)
 
 {
 
-return  ( void * ) NULL;
+return ( void * ) NULL;
 
 }
 
