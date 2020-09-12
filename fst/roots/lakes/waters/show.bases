@@ -2255,7 +2255,7 @@ if
 ( void * ) note_silts_counts_digits_two
 
 
-==
+!=
 
 
 ( int ) * ( int * )
@@ -2292,7 +2292,7 @@ if
 ( void * ) note_silts_counts_digits_two
 
 
-==
+!=
 
 
 ( int ) 1
