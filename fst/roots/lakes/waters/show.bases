@@ -232,7 +232,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( char )
+( int ) ( unsigned int )
+
+sizeof ( char )
 
 );
 
@@ -353,7 +355,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -437,7 +441,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -456,6 +462,92 @@ while
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_values
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_values_calculated
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+( void * ) note_silts_values_calculated
+
+==
+
+( void * ) NULL
+
+)
+
+{
+
+
+
+/* ( void * ) */  note_silts_values_calculated
+
+
+=
+
+
+malloc
+
+
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int )
+
+sizeof ( int )
+
+);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values_calculated
 
 =
 
@@ -521,7 +613,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -605,7 +699,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -689,7 +785,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -773,7 +871,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -857,7 +957,9 @@ while
 
 *
 
-( int ) ( unsigned int )  sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -941,7 +1043,9 @@ while
 
 *
 
-( int ) ( unsigned int ) sizeof ( int )
+( int ) ( unsigned int )
+
+sizeof ( int )
 
 );
 
@@ -1868,6 +1972,15 @@ sizeof ( char )
 
 
 
+
+
+
+
+
+
+
+
+
 if
 
 (
@@ -1932,6 +2045,15 @@ note_stones_results
 
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3028,6 +3150,69 @@ free (  ( void * ) note_silts_values  );
 
 
 /* ( void * ) */  note_silts_values
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values_calculated
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+( void * ) note_silts_values_calculated
+
+!=
+
+( void * ) NULL
+
+)
+
+{
+
+free (  ( void * ) note_silts_values_calculated  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_values_calculated
 
 =
 
