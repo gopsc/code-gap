@@ -2245,6 +2245,93 @@ while
 
 
 
+if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits_two
+
+
+==
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_lengths_numbers
+
+
+)
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits_two
+
+
+==
+
+
+( int ) 1
+
+
++
+
+
+( int ) 0
+
+
+)
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( char ) */  * ( char * )
 
 
