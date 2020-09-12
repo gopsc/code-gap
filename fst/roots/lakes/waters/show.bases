@@ -2148,7 +2148,31 @@ while
 
 
 
-// note_silts_values_calculated
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values_calculated
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values_calculated
+
+=
+
+( int ) * ( int * )
+
+( void * ) note_silts_values;
 
 
 
@@ -2447,13 +2471,7 @@ if
 !=
 
 
-( int ) 1
-
-
-+
-
-
-( int ) 0
+( int ) 1  +  ( int ) 0
 
 
 )
@@ -2595,7 +2613,13 @@ note_stones_results
 
 
 
-// note_silts_values_cauculated
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values_calculated
+
+=
+
+( int ) 0;
 
 
 
