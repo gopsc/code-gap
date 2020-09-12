@@ -2026,6 +2026,32 @@ while
 
 
 
+// note_silts_values_calculated
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_powers
@@ -2265,7 +2291,11 @@ if
 
 )
 
-{}
+{
+
+
+
+}
 
 
 
@@ -2306,7 +2336,37 @@ if
 
 )
 
-{}
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// note_stones_results_digits
 
 
 
@@ -2413,6 +2473,42 @@ note_stones_results
 
 
 
+// note_silts_values_cauculated
+
+
+
+
+
+
+
+
+
+// note_stones_results_digits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_counts_digits_two
@@ -2468,6 +2564,15 @@ note_stones_results
 =
 
 ( int ) 0;
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2604,75 +2709,6 @@ note_stones_results
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_lengths_numbers
-
-=
-
-( int ) 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ( int ) */  * ( int * )
-
-( void * ) note_silts_counts_digits
-
-=
-
-( int ) 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ( int ) */  * ( int * )
-
-( void * ) note_silts_counts_digits_two
-
-=
-
-( int ) 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ( int ) */  * ( int * )
-
-( void * ) note_silts_powers
 
 =
 
