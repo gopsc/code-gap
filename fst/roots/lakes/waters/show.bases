@@ -2026,6 +2026,225 @@ while
 
 
 
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits
+
+
+<
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits_two
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
+
+=
+
+( int ) * ( int * )
+
+( void * ) note_silts_powers
+
+*
+
+( int ) 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts_digits
+
++
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts_digits
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ( char ) */  * ( char * )
 
 
@@ -2142,6 +2361,22 @@ note_stones_results
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_counts_digits_two
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_powers
 
 =
 
