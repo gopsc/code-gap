@@ -2837,6 +2837,433 @@ if
 
 
 
+if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated
+
+
+==
+
+
+( int ) 0
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '0';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 1
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '1';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 2
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '2';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 3
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '3';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 4
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '4';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 5
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '5';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 6
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '6';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 7
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '7';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 8
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '8';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated 
+
+
+==
+
+
+( int ) 9
+
+
+)
+
+{
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '9';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2898,10 +3325,16 @@ note_stones_results
 )
 
 
+
+
 =
 
 
-( char ) ' ';
+
+
+( char ) * ( char * )
+
+( void * ) note_stones_results_digits;
 
 
 
