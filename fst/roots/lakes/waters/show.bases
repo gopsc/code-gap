@@ -2448,6 +2448,129 @@ if
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ( int )  */  * ( int * )
+
+( void * ) note_silts_values_calculated
+
+
+
+
+=
+
+
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated
+
+
+
+
+-
+
+
+
+
+(
+
+
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated
+
+
+
+
+/
+
+
+
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_powers
+
+
+*
+
+
+( int ) 10
+
+
+)
+
+
+
+
+*
+
+
+
+
+(
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_powers
+
+
+*
+
+
+( int ) 10
+
+
+)
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -2484,6 +2607,66 @@ if
 )
 
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_values_calculated
+
+
+=
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_values_calculated
+
+
+/
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_powers;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
