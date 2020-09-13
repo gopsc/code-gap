@@ -289,6 +289,108 @@ sizeof ( char )
 
 
 
+void * note_stones_results_digits
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while
+
+(
+
+( void * ) note_stones_results_digits
+
+==
+
+( void * ) NULL
+
+)
+
+{
+
+
+
+/* ( void * ) */  note_stones_results_digits
+
+
+=
+
+
+( void * ) malloc
+
+
+(
+
+( int ) 1
+
+*
+
+( int ) ( unsigned int )
+
+sizeof ( char )
+
+);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) 0;
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '\0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void * note_waters_resized
 
 =
@@ -2434,7 +2536,7 @@ if
 ( void * ) note_silts_counts_digits_two
 
 
-!=
+<
 
 
 ( int ) * ( int * )
@@ -2598,7 +2700,7 @@ if
 ( void * ) note_silts_counts_digits_two
 
 
-!=
+>
 
 
 ( int ) 1  +  ( int ) 0
@@ -2693,7 +2795,7 @@ if
 
 
 
-
+ 
 
 
 // note_stones_results_digits
@@ -3217,6 +3319,85 @@ that_waters_results
 
 
 /* ( void * ) */  note_stones_results
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '\0';
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) 0;
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+( void * ) note_stones_results_digits
+
+!=
+
+( void * ) NULL
+
+)
+
+{
+
+free (  ( void * ) note_stones_results_digits  );
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */ note_stones_results_digits
 
 =
 
