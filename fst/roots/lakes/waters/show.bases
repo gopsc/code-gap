@@ -3389,7 +3389,7 @@ note_stones_results
 
 =
 
-( char ) 0;
+( char ) '\0';
 
 
 
@@ -3405,7 +3405,7 @@ note_stones_results
 
 =
 
-( char ) '\0';
+( char ) 0;
 
 
 
