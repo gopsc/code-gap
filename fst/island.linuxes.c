@@ -211,7 +211,7 @@
 
 
 
-#include "./roots/lakes/waters/show.bases" // use __int8_t,  only decimal system
+#include "./roots/lakes/waters/show.bases" // use __int8_t,  only decimal system,   maybe less than zero
 
 #include "./roots/lakes/waters/clean.bases" // use __int8_t
 
