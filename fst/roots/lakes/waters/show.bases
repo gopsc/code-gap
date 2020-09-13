@@ -2798,7 +2798,29 @@ if
  
 
 
-// note_stones_results_digits
+/* ( char * ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) 0;
+
+
+
+
+
+
+
+
+
+/* ( char * ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '\0';
 
 
 
@@ -2921,7 +2943,36 @@ note_stones_results
 
 
 
-// note_stones_results_digits
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) 0;
+
+
+
+
+
+
+
+
+
+/* ( char ) */  * ( char * )
+
+( void * ) note_stones_results_digits
+
+=
+
+( char ) '\0';
 
 
 
