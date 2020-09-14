@@ -1,6 +1,9 @@
 add type transforms before numbers
 
 
-add value process at early return
-
 add clean after memory resize
+
+add space clean even when a space variable creating
+
+
+add value process at early return
