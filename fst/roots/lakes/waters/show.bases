@@ -3586,27 +3586,6 @@ note_stones_results
 
 
 
-/* ( void * ) */  note_waters_resized
-
-=
-
-( void * ) NULL;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ( int ) */  * ( int * )
 
 ( void * ) note_silts_values
