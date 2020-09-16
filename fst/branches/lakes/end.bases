@@ -2320,7 +2320,9 @@ free_fst_roots_lakes_waves
 
 
 
-( that_fst_roots_threads_prepare_waters )
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
 
 
 
@@ -5583,7 +5585,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-/*
+
 
 // ( that_fst_roots_threads_prepare_silts )
 
@@ -5608,7 +5610,7 @@ note_silts_sizes
 
 
 
-
+/*
 
 // ( that_fst_roots_threads_prepare_silts )
 
@@ -5648,7 +5650,7 @@ note_silts_sizes
 
 that_fst_roots_threads_locks_prepare_mutex_sizes;
 
-
+*/
 
 
 
@@ -5693,7 +5695,7 @@ note_silts_values
 
 
 
-
+/*
 
 end_fst_roots_threads_locks
 
