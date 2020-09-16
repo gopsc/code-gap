@@ -1,1 +1,1 @@
-"i open my hands and the wind flows through my fingers"
+"i open my hands and the wind just flows through my fingers"
