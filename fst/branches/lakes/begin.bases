@@ -2201,9 +2201,6 @@ note_silts_sizes
 
 
 
-(
-
-
 ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -2211,10 +2208,7 @@ note_silts_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_fst_roots_threads_locks_prepare_mutex_sizes
-
-
-);
+that_fst_roots_threads_locks_prepare_mutex_sizes;
 
 */
 
