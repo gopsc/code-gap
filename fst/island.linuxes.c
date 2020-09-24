@@ -267,10 +267,10 @@
 #include "./branches/lakes/prepare.bases"
 
 #include "./branches/lakes/begin.bases"
-//
+
 #include "./branches/lakes/end.bases"
 
-
+//
 #include "./branches/lakes/waves/add.bases"  // support types include waters, silts and stones
 
 #include "./branches/lakes/waves/drop.bases"
