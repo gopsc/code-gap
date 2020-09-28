@@ -467,6 +467,7 @@ while
 
 
 
+
 ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -479,7 +480,9 @@ note_silts_counts
 
 
 
+
 <=
+
 
 
 
@@ -492,18 +495,48 @@ note_silts_counts
 ( that_fst_roots_threads_prepare_waters )
 
 
+
 (  * (  * (  (
+
 
 
 ( that_fst_roots_threads_prepare_waters * * )
 
-( that_fst_roots_threads_prepare_waters )
 
+( that_fst_roots_threads_prepare_waters )
 
 that_waters_lakes
 
 
-)  + 0 )  + 1 )  ) 
+
+)
+
+
+
++
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0
+
+
+
+)
+
+
+
++
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+)  ) 
+
 
 
 
