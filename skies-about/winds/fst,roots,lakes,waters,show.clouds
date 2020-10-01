@@ -1,1 +1,0 @@
-get values in the path one by one, and get words to show them

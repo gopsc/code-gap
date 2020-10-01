@@ -1,1 +1,0 @@
-use formal parameter to chose how big a byte is

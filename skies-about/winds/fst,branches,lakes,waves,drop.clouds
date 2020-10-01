@@ -1,1 +1,0 @@
-change the order of variable create and clean, switch before lengths
