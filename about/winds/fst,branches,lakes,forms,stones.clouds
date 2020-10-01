@@ -1,0 +1,1 @@
+add "fst/branches/lakes/forms/stones/*.bases"

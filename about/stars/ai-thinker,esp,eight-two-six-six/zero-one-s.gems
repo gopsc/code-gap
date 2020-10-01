@@ -1,0 +1,45 @@
+,, ai-thinker,eight-two-six-xix,zero-one-s.gems
+
+    vcc   rst ch_pd tx
+     |    |    |    |
+-----|----|----|----|-----
+|    o    o    o    o    |
+|                        |
+|    o    o    o    o    |
+|                        |
+|    |    |    |    |    |
+|    |    |    |    |    |
+|   rx  gpio0 gpio2 gnd  |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|             positive   |
+|                        |
+--------------------------
+
+,,
+
+vcc :  3.3 volt
+
+gnd :  groud
+
+
+tx :  serial write
+
+rx :  serial read
+
+
+rst :  reset
+
+
+ch_pd :  high for using, low for down ( ten throusands ohm )
+
+
+gpio0 :  high for working, low for download, could be blank
+
+gpio2 :  could be blank
+
+,
