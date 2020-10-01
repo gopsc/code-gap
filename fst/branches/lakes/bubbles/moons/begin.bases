@@ -976,8 +976,6 @@ end_fst_branches_lakes
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
@@ -988,15 +986,10 @@ end_fst_branches_lakes
 
 // ( that_fst_roots_threads_prepare_waters )
 
-* ( that_fst_roots_threads_prepare_waters * )
-
-
 note_waters_lakes_added
 
 
 )
-
-
 
 
 );

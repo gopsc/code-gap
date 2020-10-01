@@ -1,9 +1,0 @@
-change processes order of pre-compile instructions
-
-
-change order of formal parameters
-
-change lines rule in formalmeters
-
-
-add formal parameters return through sizeof()
