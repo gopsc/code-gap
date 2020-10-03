@@ -464,7 +464,7 @@ note_waters_lakes_lights
 
 
 
-/*
+
 
 if
 
@@ -473,7 +473,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_lakes_waters_lights
+note_waters_lakes_lights
 
 
 ==
@@ -486,9 +486,113 @@ that_fst_roots_lakes_prepare
 
 )
 
-{}
+{
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_lakes_bubbles
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_lakes_lights
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
 
