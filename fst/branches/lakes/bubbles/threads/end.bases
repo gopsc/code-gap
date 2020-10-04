@@ -305,6 +305,31 @@ that_fst_roots_lakes_prepare;
 
 
 
+/* ()
+
+note_waters_lakes_bubbles
+
+
+=
+
+
+()
+
+* ( * )
+
+
+()
+
+note_waters_lakes_bubbles;
+
+*/
+
+
+
+
+
+
+
 
 
 
@@ -537,7 +562,7 @@ note_waters_lakes_threads
 
 
 
-// ( that_fst_roots_threads_prepare_waters )
+( that_fst_roots_threads_prepare_waters )
 
 * ( that_fst_roots_threads_prepare_waters * )
 
@@ -622,6 +647,25 @@ note_waters_lakes_bubbles
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+drop_fst_branches_lakes_waves
+
+();
+
+*/
 
 
 
