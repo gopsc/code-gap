@@ -355,6 +355,42 @@ that_fst_roots_lakes_prepare;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_copied
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
 fish_fst_branches_lakes_waves
 
 (
@@ -514,6 +550,31 @@ that_fst_roots_lakes_prepare;
 
 
 
+/*
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_copied
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_copied;
+
+*/
+
+
+
+
+
 
 
 
@@ -657,15 +718,6 @@ note_stones_copied
 ( that_fst_roots_threads_prepare_silts )
 
 0;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -789,15 +841,6 @@ note_stones_copied,
 
 
 );
-
-
-
-
-
-
-
-
-
 
 
 
