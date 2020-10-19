@@ -1,9 +1,10 @@
-change processes order of pre-compile instructions
+change the order of pre-compile instructions
 
 
-change order of formal parameters
+add type note at start of big paragraph
 
-change lines rule in formalmeters
+
+change lines rule in formal parameters
 
 
 add formal parameters return through sizeof()
