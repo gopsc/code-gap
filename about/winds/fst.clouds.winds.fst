@@ -1,4 +1,4 @@
-change file name likes to "*.fst.roots.bases"
+change file name likes to "fst,*.bases.leaves.shadows.fst"
 
 
 change the order of pre-compile instructions
