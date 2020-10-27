@@ -1,1 +1,0 @@
-add create, drop, begin, end, lock and unlock function to fst/roots/lakes/locks/mutex
