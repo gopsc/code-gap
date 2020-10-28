@@ -3244,6 +3244,42 @@ note_silts_values
 
 
 
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_names
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 copy_fst_roots_lakes_stones
 
 (
@@ -3267,35 +3303,6 @@ note_waters_names_dirents
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_names
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
 
 
 
