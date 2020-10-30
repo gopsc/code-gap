@@ -1791,12 +1791,16 @@ create_fst_roots_lakes_waves
 (
 
 
+
+
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_lengths
+
+
 
 
 );
@@ -1875,12 +1879,16 @@ create_fst_roots_lakes_waves
 (
 
 
+
+
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_sizes
+
+
 
 
 );
@@ -1959,12 +1967,16 @@ create_fst_roots_lakes_waves
 (
 
 
+
+
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_values
+
+
 
 
 );
@@ -2247,12 +2259,16 @@ create_fst_roots_lakes_waves
 (
 
 
+
+
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_stones_names
+
+
 
 
 );
