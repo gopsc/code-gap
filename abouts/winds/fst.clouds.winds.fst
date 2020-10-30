@@ -7,7 +7,9 @@ change the order of pre-compile instructions
 add type note at start of big paragraphs
 
 
-add full conditions in condition selection code blocks
+add switches for cyclic and return
+
+dd full conditions in condition selection code blocks
 
 
 change lines rule in formal parameters
