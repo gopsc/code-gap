@@ -16,5 +16,7 @@ change lines rule in formal parameters
 
 change orders of variables creating
 
+use more specifi variable names
+
 
 add formal parameters return through sizeof()
