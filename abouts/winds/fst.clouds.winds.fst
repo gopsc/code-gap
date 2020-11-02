@@ -12,7 +12,11 @@ change public variable names like "that_silts_sizes_waters__fst_roots_threads_pr
 
 add switches for cyclic and return
 
-dd full conditions in condition selection code blocks
+add full conditions in condition selection code blocks
+
+use new cyclic judgement function, self-add at start, judgement at end
+
+judgement in every code block in the cyclic
 
 
 change lines rule in formal parameters
