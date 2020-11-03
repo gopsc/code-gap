@@ -7,7 +7,7 @@ change the order of pre-compile instructions
 add type note at start of big paragraphs
 
 
-change public variable names like "that_silts_sizes_waters__fst_roots_threads_prepare"
+change public variable names like "fst_roots_threads_prepare__that_silts_sizes"
 
 
 add switches for cyclic and return
@@ -16,7 +16,11 @@ add full conditions in condition selection code blocks
 
 use new cyclic judgement function, self-add at start, judgement at end
 
-judgement in every code block in the cyclic
+add return switch judgement at the end of cyclics
+
+add judgement of cyclic switch at every code block in the cyclic
+
+add judgement of return switch at every code block
 
 
 change lines rule in formal parameters
