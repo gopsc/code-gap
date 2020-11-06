@@ -25,7 +25,13 @@ change lake names like "fst,branches,flowers,seed,,fst,branches,lakes,begin"
 decide if we should make parts for a code block, if yes, we shoulds use switches divide it
 
 
+use binary switches
+
+
 add switches for cyclic and return
+
+
+add return choice and return threads switched
 
 
 add full conditions in condition selection code blocks
