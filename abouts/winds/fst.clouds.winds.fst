@@ -15,11 +15,14 @@ add type note at start of big paragraphs
 
 
 
-change public variable names like "fst_roots_threads_prepare__that_silts_sizes"
+change public variable names like "that_silts_sizes__fst_roots_threads_prepar"
 
 change lake names like "fst,branches,flowers,seed,,fst,branches,lakes,begin"
 
 
+
+
+add buffer variable to get results
 
 
 decide if we should make parts for a code block, if yes, we shoulds use switches divide it
@@ -31,7 +34,7 @@ use binary switches
 add switches for cyclic and return
 
 
-add return choice and return threads switched
+add return choice and return lights switches
 
 
 add full conditions in condition selection code blocks
