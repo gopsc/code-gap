@@ -347,82 +347,6 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_names_dirents
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
-note_stones_names
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
-note_waters_names
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
 note_waters_stones_addresses
 
 
@@ -631,16 +555,7 @@ that_fst_roots_lakes_prepare
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*
 
 // ( that_fst_roots_threads_prepare_waters )
 
@@ -654,70 +569,7 @@ note_waters_stones_addresses
 
 that_fst_roots_lakes_prepare;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_fish
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
@@ -771,7 +623,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-
+/*
 
 // ( that_fst_roots_threads_prepare_waters )
 
@@ -1106,6 +958,7 @@ note_waters_fish
 
 that_fst_roots_lakes_prepare;
 
+*/
 
 
 
@@ -1127,8 +980,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-
-
+/*
 
 // ( that_fst_roots_threads_prepare_waters )
 
@@ -1463,7 +1315,7 @@ note_waters_fish
 
 that_fst_roots_lakes_prepare;
 
-
+*/
 
 
 
