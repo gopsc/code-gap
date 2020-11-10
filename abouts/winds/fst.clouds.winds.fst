@@ -25,7 +25,9 @@ change public variable names like "that_silts_sizes__fst_roots_threads_prepar"
 
 change lake names like "fst,branches,flowers,seed,,fst,branches,lakes,begin"
 
-add lake extension name as a parameter
+add lake extension name as a parameter, start at ",fst,roots,flowers,seed"
+
+organize new full name of lake at start part of the file
 
 
 
