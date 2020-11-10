@@ -15,7 +15,7 @@ add type note at start of big paragraphs
 
 
 
-send parameter directly as a pointer
+send parameter directly as a pointer, maybe saved at current lake
 
 
 
