@@ -17,7 +17,10 @@ add type note at start of big paragraphs
 
 change public variable names like "that_silts_sizes__fst_roots_threads_prepar"
 
+
 change lake names like "fst,branches,flowers,seed,,fst,branches,lakes,begin"
+
+add lake extension name as a parameter
 
 
 
