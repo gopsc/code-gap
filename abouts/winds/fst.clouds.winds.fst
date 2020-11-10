@@ -15,6 +15,11 @@ add type note at start of big paragraphs
 
 
 
+send parameter directly as a pointer
+
+
+
+
 change public variable names like "that_silts_sizes__fst_roots_threads_prepar"
 
 
