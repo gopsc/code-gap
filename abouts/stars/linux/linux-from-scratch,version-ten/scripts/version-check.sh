@@ -160,3 +160,183 @@ echo
 
 
 
+ldd --version | head -n1 | cut -d" " -f2- # glibc version
+
+
+
+
+echo
+
+echo
+
+
+
+
+grep --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+gzip --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+cat /proc/version
+
+
+
+
+echo
+
+echo
+
+
+
+
+m4 --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+make --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+patch --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+echo Perl `perl -V:version`
+
+
+
+
+echo
+
+echo
+
+
+
+
+python3 --version
+
+
+
+
+echo
+
+echo
+
+
+
+
+sed --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+tar --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+makeinfo --version | head -n1  # texinfo version
+
+
+
+
+echo
+
+echo
+
+
+
+
+xz --version | head -n1
+
+
+
+
+echo
+
+echo
+
+
+
+
+echo 'int main () {}' > dummy.c && g++ -o dummy dummy.c
+
+
+if [ -xdummy ]
+  then echo "g++ compilation ok";
+
+else
+  echo "g++ compilation failed";
+
+fi
+
+
+rm -f dummy.c dummy
+
+
+
+
+echo
+
+echo
+
+
+
+
