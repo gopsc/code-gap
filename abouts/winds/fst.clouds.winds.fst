@@ -23,11 +23,17 @@ send parameter directly as a pointer, maybe saved at current lake
 change public variable names like "that_silts_sizes__fst_roots_threads_prepar"
 
 
-change lake names like "fst,branches,flowers,seed,,fst,branches,lakes,begin"
 
-add lake extension name as a parameter, start at ",fst,roots,flowers,seed"
+change lake names like "fst,branches,lakes,prepare,,,fst,branches,flowers,seed,,fst,branches,lakes,begin"
+
+add space in lake, to save extension name
+
+add lake extension name as a parameter, start at "fst,branches,lakes,prepare,,,fst,roots,flowers,seed"
 
 organize new full name of lake at start part of the file
+
+
+in a lake, add pointers to the up-level lake
 
 
 
