@@ -41,7 +41,7 @@ decide if we should make parts for a code block, if yes, we shoulds use switches
 use binary switches
 
 
-add switches for cyclic and return
+add switches for circulars and returns
 
 
 add return choice and return lights switches
@@ -74,6 +74,9 @@ change lines rule in formal parameters
 change orders of variables creating
 
 use more specifi variable names
+
+
+add time calculation variables
 
 
 
