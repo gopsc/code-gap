@@ -49,6 +49,8 @@ add return choice and return lights switches
 
 add full conditions in condition selection code blocks
 
+add full condition code blocks
+
 
 use new cyclic judgement function, counter plus at start, judgement at end
 

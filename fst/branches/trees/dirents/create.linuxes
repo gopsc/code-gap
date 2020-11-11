@@ -8965,13 +8965,6 @@ note_silts_switches_returns
 
 
 
-
-
-
-
-
-
-
 // ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -8988,13 +8981,6 @@ note_silts_switches_returns_results
 ( that_fst_roots_threads_prepare_silts )
 
 1;
-
-
-
-
-
-
-
 
 
 
