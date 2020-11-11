@@ -636,16 +636,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_switches_returns
-
-
 
 
 );
@@ -965,7 +961,7 @@ note_silts_switches_returns_lights
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 =
@@ -988,16 +984,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_switches_cyclics_one
-
-
+note_silts_switches_circulars_one
 
 
 );
@@ -1017,7 +1009,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 =
@@ -1053,7 +1045,7 @@ note_silts_switches_cyclics_one
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -1076,16 +1068,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_switches_cyclics_two
-
-
+note_silts_switches_circulars_two
 
 
 );
@@ -1105,7 +1093,7 @@ note_silts_switches_cyclics_two
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -1164,16 +1152,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_counts_steps_addresses_one
-
-
 
 
 );
@@ -1252,16 +1236,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_counts_steps_addresses_two
-
-
 
 
 );
@@ -1340,16 +1320,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_results
-
-
 
 
 );
@@ -1428,16 +1404,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_calculations_lakes_lengths
-
-
 
 
 );
@@ -1516,16 +1488,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_calculations_lakes_sizes
-
-
 
 
 );
@@ -1604,16 +1572,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_silts_calculations_lakes_values
-
-
 
 
 );
@@ -1896,16 +1860,12 @@ create_fst_roots_lakes_waves
 (
 
 
-
-
 ( that_fst_roots_threads_prepare_waters * )
 
 & // ( that_fst_roots_threads_prepare_waters )
 
 
 note_stones_addresses_copy
-
-
 
 
 );
@@ -2270,7 +2230,7 @@ note_silts_switches_returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 =
@@ -2334,7 +2294,7 @@ while
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 !=
@@ -2359,7 +2319,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 ==
@@ -2547,7 +2507,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 !=
@@ -2572,7 +2532,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 ==
@@ -3548,7 +3508,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 !=
@@ -3573,7 +3533,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 ==
@@ -3832,7 +3792,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 !=
@@ -3857,7 +3817,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 ==
@@ -3905,7 +3865,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -3969,7 +3929,7 @@ while
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 !=
@@ -3994,7 +3954,7 @@ note_silts_switches_cyclics_two
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 ==
@@ -4182,7 +4142,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 !=
@@ -4207,7 +4167,7 @@ note_silts_switches_cyclics_two
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 ==
@@ -4393,7 +4353,7 @@ that_fst_roots_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 =
@@ -4418,7 +4378,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -4592,7 +4552,7 @@ note_silts_switches_returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -4675,7 +4635,7 @@ note_silts_counts_steps_addresses_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -4734,7 +4694,7 @@ note_silts_switches_cyclics_two
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_two
+note_silts_switches_circulars_two
 
 
 =
@@ -4939,7 +4899,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 !=
@@ -4964,7 +4924,7 @@ note_silts_switches_cyclics_one
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches_cyclics_one
+note_silts_switches_circulars_one
 
 
 ==
