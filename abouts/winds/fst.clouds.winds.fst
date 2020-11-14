@@ -23,6 +23,12 @@ send parameter directly as a pointer, maybe saved at current lake
 change public variable names like "that_silts_sizes__fst_roots_threads_prepar"
 
 
+change type names to "that_forms_waters__fst_roots_threads_prepare"
+
+
+change function names to "that_functions_out_stones__fst_roots_parks"
+
+
 
 
 add buffer variable to get results
