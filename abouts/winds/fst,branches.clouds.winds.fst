@@ -22,6 +22,9 @@ list fishing as english words order
 in a lake, add pointers to the up-level lake
 
 
+add new lake type "lakes"
+
+
 
 
 add blank threads lake return
