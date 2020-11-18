@@ -70,6 +70,11 @@ selfcheck report to the lake name likes "fst,branches,flowers,seed,,fst,selfchec
 
 
 
+change the extension type transforms to notes
+
+
+
+
 change lines rule in formal parameters
 
 change orders of variables creating
