@@ -1884,13 +1884,6 @@ note_silts_switches_returns
 
 
 
-
-
-
-
-
-
-
 // ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -1907,13 +1900,6 @@ note_silts_switches_returns_results
 ( that_fst_roots_threads_prepare_silts )
 
 1;
-
-
-
-
-
-
-
 
 
 
@@ -2073,15 +2059,6 @@ that_fst_roots_lakes_prepare
 
 
 
-
-
-
-
-
-
-
-
-
 /*
 
 // ( that_fst_roots_threads_prepare_waters )
@@ -2097,15 +2074,6 @@ note_waters_stones_addresses
 that_fst_roots_lakes_prepare;
 
 */
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2145,13 +2113,6 @@ note_silts_switches_returns
 
 
 
-
-
-
-
-
-
-
 // ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -2177,13 +2138,6 @@ note_silts_switches_returns_results
 
 
 
-
-
-
-
-
-
-
 // ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -2200,15 +2154,6 @@ note_silts_switches_returns_lights
 ( that_fst_roots_threads_prepare_silts )
 
 0;
-
-
-
-
-
-
-
-
-
 
 
 
