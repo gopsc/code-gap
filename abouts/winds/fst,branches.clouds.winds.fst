@@ -2,11 +2,6 @@
 
 
 
-send the formal parameter as "that_fst_roots_threads_prepare_waters * *" the we can change the lake when it is in another one
-
-
-
-
 change lake names like "fst,branches,lakes,prepare,,,fst,branches,flowers,seed,,fst,branches,lakes,begin"
 
 add space in lake, to save extension name
