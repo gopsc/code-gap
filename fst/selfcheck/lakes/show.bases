@@ -14,9 +14,9 @@
 #include "./../../roots/lakes/stones/compare.bases"
 
 
-#include "./../../roots/parks/silts/out.bases"
+#include "./../../roots/parks/terminals/out-silts.bases"
 
-#include "./../../roots/parks/stones/out.bases"
+#include "./../../roots/parks/terminals/out-stones.bases"
 
 
 

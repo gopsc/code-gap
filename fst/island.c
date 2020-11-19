@@ -36,13 +36,6 @@
 
 
 
-#include "./roots/parks/silts/out.bases"
-
-
-#include "./roots/parks/stones/out.bases"
-
-
-
 #include "./roots/trees/remove.computers"
 
 
@@ -56,6 +49,12 @@
 #include "./roots/trees/files/write.computers" // note_files
 
 #include "./roots/trees/files/read.computers" // note_files; may read even wrong
+
+
+
+#include "./roots/parks/terminals/out-silts.bases"
+
+#include "./roots/parks/terminals/out-stones.bases"
 
 
 
