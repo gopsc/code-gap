@@ -51,7 +51,7 @@ that_waters_lakes_targets,
 
 that_fst_roots_threads_prepare_waters
 
-that_stones_names_targets,
+that_stones_names_lakes_targets,
 
 
 
@@ -62,7 +62,7 @@ that_waters_lakes_copied,
 
 that_fst_roots_threads_prepare_waters
 
-that_stones_names_copied
+that_stones_names_lakes_copied
 
 
 
@@ -200,7 +200,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names_targets
+that_stones_names_lakes_targets
 
 
 ==
@@ -286,7 +286,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names_copied
+that_stones_names_lakes_copied
 
 
 ==
@@ -529,7 +529,7 @@ that_waters_lakes_copied
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names_copied,
+that_stones_names_lakes_copied,
 
 
 
@@ -1577,7 +1577,7 @@ that_waters_lakes_targets
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names_targets,
+that_stones_names_lakes_targets,
 
 
 
