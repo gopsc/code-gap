@@ -45,10 +45,6 @@
 
 
 
-#include "./../../selfcheck/lakes/show.bases"
-
-
-
 #include "./../../dreams/begin.bases"
 
 
@@ -1083,30 +1079,7 @@ that_fst_branches_lakes_prepare
 
 
 
-show_fst_selfcheck_lakes
-
-(
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-
-(
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_branches_lakes_prepare
-
-
-)
-
-
-
-
-);
+;
 
 
 
