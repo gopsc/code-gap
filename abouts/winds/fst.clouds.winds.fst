@@ -53,13 +53,16 @@ add full condition code blocks
 
 use new cyclic judgement function, counter plus at start, judgement at end
 
+add return switch judgement at the start values, before the circular start
+
 add return switch judgement at the end of cyclics
+
+add judgement of continue switch at every code block in circular
 
 
 add judgement of cyclic switch at every code block in the cyclic
 
 add judgement of return switch at every code block
-
 
 
 
@@ -85,8 +88,5 @@ use more specifi variable names
 add time calculation variables
 
 
-
-
-add formal parameters return through sizeof()
 
 
