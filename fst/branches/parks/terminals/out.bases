@@ -1,8 +1,68 @@
 
 
-#ifndef out_fst_branches_parks_terminals
+#ifndef added_fst_branches_parks_terminals_out
 
-#define out_fst_branches_parks_terminals
+#define added_fst_branches_parks_terminals_out
+
+
+
+
+#include "./../../../roots/threads/prepare.bases"
+
+
+#include "./../../../roots/lakes/prepare.bases"
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+out_fst_branches_parks_terminals
+
+()
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+}
 
 
 
