@@ -1,5 +1,12 @@
 
 
+#ifndef added_fst_branches_lakes_forms_stones_copy
+
+#define added_fst_branches_lakes_forms_stones_copy
+
+
+
+
 #include "./../../../../roots/threads/prepare.bases"
 
 
@@ -25,13 +32,6 @@
 #include "./../../../../branches/lakes/waves/add.bases"
 
 #include "./../../../../branches/lakes/waves/fish.bases"
-
-
-
-
-#ifndef added_fst_branches_lakes_forms_stones_copy
-
-#define added_fst_branches_lakes_forms_stones_copy
 
 
 
