@@ -129,6 +129,10 @@
 
 
 
+#include "./branches/parks/terminals/out.bases"
+
+
+
 
 #include "./selfcheck/lakes/show.bases"
 
