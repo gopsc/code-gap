@@ -42,6 +42,8 @@ use binary switches
 
 add switches for circulars and returns
 
+create process control variable switches first
+
 
 add return choice and return lights switches
 
