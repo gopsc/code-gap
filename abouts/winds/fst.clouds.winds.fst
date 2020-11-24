@@ -31,6 +31,8 @@ change function names to "that_functions_out_stones__fst_roots_parks"
 
 
 
+note_waters_*_temporary before extension variables
+
 add buffer variable to get results
 
 
