@@ -136,6 +136,8 @@
 
 #include "./selfcheck/lakes/show.bases"
 
+#include "./selfcheck/lakes/judge-lights.bases"
+
 
 
 

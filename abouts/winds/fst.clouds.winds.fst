@@ -20,6 +20,9 @@ send formal parameter directly as a pointer, maybe saved at current lake
 
 
 
+change pre-compile instruction defining name like "added__fst_selfcheck_lakes__judge_lights"
+
+
 change public variable names like "that_silts_sizes__fst_roots_threads_prepare"
 
 
