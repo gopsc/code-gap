@@ -1931,6 +1931,26 @@ note_waters_lakes_moons;
 
 
 
+/*
+
+out_stones_fst_roots_parks_terminals
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"\n"
+
+
+);
+
+*/
+
+
+
+
+
 
 
 show_fst_selfcheck_lakes
