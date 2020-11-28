@@ -7,4 +7,64 @@
 
 
 
+#include "./../../roots/threads/prepare.bases"
+
+
+#include "./../../roots/lakes/prepare.bases"
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+judge_lights_fst_selfcheck_lakes
+
+()
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 #endif
