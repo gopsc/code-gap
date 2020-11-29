@@ -110,6 +110,8 @@
 
 #include "./branches/lakes/forms/stones/copy.bases"
 
+#include "./branches/lakes/forms/stones/append.bases"
+
 
 
 #include "./branches/trees/dirents/is.linuxes"
