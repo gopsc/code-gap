@@ -10,7 +10,7 @@ change the order of pre-compile instructions
 
 
 
-add type note at start of paragraphs
+add note at start of paragraphs
 
 
 
