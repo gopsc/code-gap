@@ -386,7 +386,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_waters_lakes_lights
+that_waters_lakes_ligthts
 
 
 ==
@@ -738,7 +738,7 @@ note_silts_switches_returns_lights
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes_temporary
+note_waters_lakes_bubbles
 
 
 =
@@ -774,7 +774,79 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_fish_temporary
+note_waters_lakes_lights
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_lights_no
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_lights_yes
 
 
 =
