@@ -61,18 +61,31 @@ seventh variables cleanning
 use binary switches
 
 
+
+
+change lines rule of variable creatings and droppings
+
+
+
+
 note_waters_*_temporary before extension variables
 
 
 add buffer variable to get results
 
 
+
+
 decide if we should make a part for a code block, if yes, we shoulds use switches divide it
+
+
 
 
 add switches for circulars and returns
 
 create processes control variable switches first
+
+
 
 
 add return choice and return lights switches
@@ -101,6 +114,7 @@ add judgement of continue switch at every code block in a circular
 add judgement of circular switch at every code block in the current circular
 
 add judgement of return switch at every code block
+
 
 
 
