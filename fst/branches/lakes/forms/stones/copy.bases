@@ -66,7 +66,7 @@ that_stones_names_lakes_copied,
 
 
 
-that_fst_roots_threads_prepare_waters
+that_fst_roots_threads_prepare_waters *
 
 that_waters_lakes_begin,
 
@@ -4649,6 +4649,9 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
+* ( that_fst_roots_threads_prepare_waters * )
+
+
 that_waters_lakes_begin
 
 
@@ -4932,7 +4935,7 @@ note_waters_lakes_bubbles;
 
 
 
-
+printf("2\n");
 
 
 if
