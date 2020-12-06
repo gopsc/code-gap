@@ -1,0 +1,1 @@
+graghy display of voice
