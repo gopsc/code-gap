@@ -1,5 +1,12 @@
 
 
+#ifndef added_fst_selfcheck_lakes_show
+
+#define added_fst_selfcheck_lakes_show
+
+
+
+
 #include "./../../roots/threads/prepare.bases"
 
 
@@ -17,13 +24,6 @@
 #include "./../../roots/parks/terminals/out-silts.bases"
 
 #include "./../../roots/parks/terminals/out-stones.bases"
-
-
-
-
-#ifndef added_fst_selfcheck_lakes_show
-
-#define added_fst_selfcheck_lakes_show
 
 
 
