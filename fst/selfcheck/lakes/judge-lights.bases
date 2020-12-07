@@ -2142,6 +2142,129 @@ if
 that_waters_lights_judged
 
 
+!=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_lights_no
+
+
+
+
+&&
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_waters_lights_judged
+
+
+!=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_lights_yes
+
+
+
+
+)
+
+{
+
+
+
+
+
+
+
+/*
+
+add_fst_branches_lakes_waves
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
+
+
+(
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes_results
+
+
+),
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_stones_names_lakes_results,
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+""
+
+
+
+
+);
+
+*/
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_waters_lights_judged
+
+
 ==
 
 
@@ -2388,7 +2511,7 @@ if
 that_waters_lights_judged
 
 
-!=
+==
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -2408,7 +2531,7 @@ note_waters_lights_no
 that_waters_lights_judged
 
 
-!=
+==
 
 
 ( that_fst_roots_threads_prepare_waters )
