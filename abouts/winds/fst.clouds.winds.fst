@@ -29,7 +29,7 @@ change public variable names like "that_silts_sizes__fst_roots_threads_prepare"
 change type names to "that_forms_waters__fst_roots_threads_prepare"
 
 
-change function names to "that_functions_out_stones__fst_roots_parks_terminals"
+change function names to "that_doors_out_stones__fst_roots_parks_terminals"
 
 
 
