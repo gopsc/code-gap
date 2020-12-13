@@ -1409,14 +1409,77 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test",
+"fst,test,appended",
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-"hello"
+"hi,"
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+add_fst_branches_lakes_waves
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
+
+
+(
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+that_fst_branches_lakes_prepare
+
+
+),
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"fst,test,append",
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"hello!"
 
 
 
@@ -1447,7 +1510,7 @@ that_fst_branches_lakes_prepare
 
 
 
-copy_fst_branches_lakes_forms_stones
+append_fst_branches_lakes_forms_stones
 
 (
 
@@ -1474,18 +1537,20 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test,copy",
+"fst,test,appended",
 
 
 
 
-( that_fst_roots_threads_prepare_waters )
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
 
 
 (
 
 
-( that_fst_roots_threads_prepare_waters )
+// ( that_fst_roots_threads_prepare_waters )
 
 that_fst_branches_lakes_prepare
 
@@ -1497,7 +1562,7 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test",
+"fst,test,append",
 
 
 
