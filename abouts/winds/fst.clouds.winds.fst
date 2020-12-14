@@ -13,6 +13,9 @@ change the order of pre-compile instructions
 add note at start of paragraphs
 
 
+different functions use one same code part
+
+
 
 
 send formal parameter directly as a pointer, maybe saved at current lake
