@@ -1,0 +1,1 @@
+files include a library or another file without extension name, copy them or compile them to another directory which is used to compile
