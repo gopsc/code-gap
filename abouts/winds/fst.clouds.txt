@@ -1,6 +1,6 @@
 
 
-change file name likes to "fst,*.bases.leaves.shadows.fst"
+,change file name likes to "fst,*.bases.leaves.shadows.fst"
 
 
 
@@ -11,6 +11,9 @@ change the order of pre-compile instructions
 
 
 add note at start of paragraphs
+
+
+paragragh note like ",variable-creatings ,extension-variable-creatings ,memory-creating"
 
 
 different functions use one same code part
