@@ -6,3 +6,8 @@
 
 fdisk /dev/*
 
+
+e2fsck -f /dev/sda
+
+resize2fs -p /dev/sda 1G
+
