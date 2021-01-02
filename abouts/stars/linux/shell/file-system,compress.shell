@@ -2,6 +2,16 @@
 
 
 
+# prepare
+
+# for x.tar.gz00, x.tar.gz01, ...
+
+
+cat x.tar.gz*  >> x.tar.gz
+
+
+
+
 # compress
 
 

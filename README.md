@@ -1,3 +1,15 @@
-,fst,gapfn
-,island
-,sub-system
+
+
+, fst, gapfc
+, island
+, subsystem
+
+
+,,
+
+compile script  ./fst/compile.sh
+
+
+,
+
+
