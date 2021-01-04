@@ -9,7 +9,9 @@
 
 ,,
 
-compile script  ./fst/compile.sh
+compile script is here
+
+./fst/compile.sh
 
 
 ,
