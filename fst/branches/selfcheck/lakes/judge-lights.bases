@@ -1,34 +1,34 @@
 
 
-#ifndef added__fst_selfcheck_lakes__judge_lights
+#ifndef added___fst_branches__selfcheck_lakes__judge_lights
 
-#define added__fst_selfcheck_lakes__judge_lights
-
-
-
-
-#include "./../../roots/threads/prepare.bases"
-
-
-#include "./../../roots/lakes/prepare.bases"
-
-
-#include "./../../roots/lakes/waves/create.bases"
-
-#include "./../../roots/lakes/waves/free.bases"
+#define added___fst_branches__selfcheck_lakes__judge_lights
 
 
 
-#include "./../../branches/lakes/waves/add.bases"
 
-#include "./../../branches/lakes/waves/fish.bases"
+#include "./../../../roots/threads/prepare.bases"
+
+
+#include "./../../../roots/lakes/prepare.bases"
+
+
+#include "./../../../roots/lakes/waves/create.bases"
+
+#include "./../../../roots/lakes/waves/free.bases"
+
+
+
+#include "./../../../branches/lakes/waves/add.bases"
+
+#include "./../../../branches/lakes/waves/fish.bases"
 
 
 
 
 that_fst_roots_threads_prepare_waters
 
-judge_lights_fst_selfcheck_lakes
+judge_lights_fst_branches_selfcheck_lakes
 
 (
 

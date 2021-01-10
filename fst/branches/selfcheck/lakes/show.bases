@@ -1,36 +1,36 @@
 
 
-#ifndef added_fst_selfcheck_lakes_show
+#ifndef added___fst_branches__selfcheck_lakes__show
 
-#define added_fst_selfcheck_lakes_show
-
-
+#define added___fst_branches__selfcheck_lakes__show
 
 
-#include "./../../roots/threads/prepare.bases"
 
 
-#include "./../../roots/lakes/prepare.bases"
+#include "./../../../roots/threads/prepare.bases"
 
 
-#include "./../../roots/lakes/waves/create.bases"
-
-#include "./../../roots/lakes/waves/free.bases"
+#include "./../../../roots/lakes/prepare.bases"
 
 
-#include "./../../roots/lakes/stones/compare.bases"
+#include "./../../../roots/lakes/waves/create.bases"
+
+#include "./../../../roots/lakes/waves/free.bases"
 
 
-#include "./../../roots/parks/terminals/out-silts.bases"
+#include "./../../../roots/lakes/stones/compare.bases"
 
-#include "./../../roots/parks/terminals/out-stones.bases"
+
+#include "./../../../roots/parks/terminals/out-silts.bases"
+
+#include "./../../../roots/parks/terminals/out-stones.bases"
 
 
 
 
 that_fst_roots_threads_prepare_waters
 
-show_fst_selfcheck_lakes
+show_fst_branches_selfcheck_lakes
 
 (
 

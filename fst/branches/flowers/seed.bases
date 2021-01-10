@@ -50,12 +50,10 @@
 #include "./../../branches/lakes/bubbles/threads/end.bases"
 
 
-
-#include "./../../selfcheck/lakes/show.bases"
-
+#include "./../../branches/selfcheck/lakes/show.bases"
 
 
-#include "./../../dreams/begin.bases"
+#include "./../../branches/dreams/begin.bases"
 
 
 
@@ -1711,7 +1709,7 @@ note_waters_stones__results_lights__test
 
 
 
-judge_lights_fst_selfcheck_lakes
+judge_lights_fst_branches_selfcheck_lakes
 
 (
 
@@ -3251,7 +3249,7 @@ out_stones_fst_roots_parks_terminals
 
 
 
-show_fst_selfcheck_lakes
+show_fst_branches_selfcheck_lakes
 
 (
 
@@ -3327,7 +3325,7 @@ out_stones_fst_roots_parks_terminals
 
 
 
-show_fst_selfcheck_lakes
+show_fst_branches_selfcheck_lakes
 
 (
 
@@ -3403,7 +3401,7 @@ out_stones_fst_roots_parks_terminals
 
 
 
-show_fst_selfcheck_lakes
+show_fst_branches_selfcheck_lakes
 
 (
 
@@ -3479,7 +3477,7 @@ out_stones_fst_roots_parks_terminals
 
 
 
-show_fst_selfcheck_lakes
+show_fst_branches_selfcheck_lakes
 
 (
 
@@ -3957,7 +3955,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-begin_fst_dreams
+begin_fst_branches_dreams
 
 (
 

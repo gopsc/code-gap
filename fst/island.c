@@ -135,20 +135,20 @@
 
 
 
+#include "./branches/selfcheck/lakes/show.bases"
 
-#include "./selfcheck/lakes/show.bases"
-
-#include "./selfcheck/lakes/judge-lights.bases"
-
+#include "./branches/selfcheck/lakes/judge-lights.bases"
 
 
 
-#include "./dreams/begin.bases"
+#include "./branches/dreams/begin.bases"
 
 
 
 
 #include "./branches/flowers/seed.bases"
 
+
 #include "./roots/flowers/seed.standards" // int main(), return 0
+
 
