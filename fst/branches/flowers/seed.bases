@@ -37,6 +37,11 @@
 #include "./../../branches/lakes/waves/fish.bases"
 
 
+#include "./../../branches/lakes/forms/stones/copy.bases"
+
+#include "./../../branches/lakes/forms/stones/append.bases"
+
+
 #include "./../../branches/lakes/bubbles/begin.bases"
 
 #include "./../../branches/lakes/bubbles/end.bases"
@@ -56,6 +61,8 @@
 
 #include "./../../branches/lakes/bubbles/threads/end.bases"
 
+
+#include "./../../branches/selfcheck/lakes/judge-lights.bases"
 
 #include "./../../branches/selfcheck/lakes/show.bases"
 
