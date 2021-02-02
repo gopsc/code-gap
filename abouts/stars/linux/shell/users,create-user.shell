@@ -1,0 +1,5 @@
+
+
+sudo useradd -m -G adm,dialout,cdrom,audio,plugdev,users,lpadmin,sambashare,vchiq,powerdev gap
+
+

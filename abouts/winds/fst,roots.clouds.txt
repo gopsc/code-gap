@@ -3,6 +3,9 @@
 add waitting if space creating and resizing out of memory
 
 
+use functions in "./fst/roots/lakes/waves"
+
+
 change lines rule again
 
 change lines rule at type transform

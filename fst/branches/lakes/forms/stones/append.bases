@@ -53,7 +53,7 @@ that_waters_lakes__objects,
 
 that_fst_roots_threads_prepare_waters
 
-that_stones_names__lakes__objects,
+that_stones_names__lakes_objects,
 
 
 
@@ -64,7 +64,7 @@ that_waters_lakes__subjects,
 
 that_fst_roots_threads_prepare_waters
 
-that_stones_names__lakes__subjects,
+that_stones_names__lakes_subjects,
 
 
 
@@ -75,7 +75,7 @@ that_waters_lakes__sources_results,
 
 that_fst_roots_threads_prepare_waters *
 
-that_waters__results
+that_waters_stones__results_lights__returns
 
 
 
@@ -151,7 +151,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-/*
+
 
 if
 
@@ -160,7 +160,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__objects
+that_stones_names__lakes_objects
 
 
 ==
@@ -177,7 +177,7 @@ that_fst_roots_lakes_prepare
 
 
 
-returns
+return
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -188,7 +188,7 @@ that_fst_roots_lakes_prepare;
 
 }
 
-*/
+
 
 
 
@@ -240,7 +240,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-/*
+
 
 if
 
@@ -249,7 +249,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__subjects
+that_stones_names__lakes_subjects
 
 
 ==
@@ -277,7 +277,7 @@ that_fst_roots_lakes_prepare;
 
 }
 
-*/
+
 
 
 
@@ -341,7 +341,7 @@ if
 ( that_fst_roots_threads_prepare_waters * )
 
 
-that_waters__results
+that_waters_stones__results_lights__returns
 
 
 ==
@@ -437,7 +437,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__objects
+that_stones_names__lakes_objects
 
 
 ==
@@ -526,7 +526,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__subjects
+that_stones_names__lakes_subjects
 
 
 ==
@@ -618,7 +618,7 @@ if
 * ( that_fst_roots_threads_prepare_waters * )
 
 
-that_waters__results
+that_waters_stones__results_lights__returns
 
 
 !=
@@ -756,7 +756,7 @@ note_silts_switches__returns
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -784,7 +784,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 );
@@ -804,7 +804,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -840,7 +840,7 @@ note_silts_switches__returns__results
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -868,7 +868,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 );
@@ -888,7 +888,7 @@ note_silts_switches__returns__lights
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -1032,7 +1032,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 =
@@ -1068,7 +1068,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_stones__results__lights_no
+note_waters_stones__results_lights__no
 
 
 =
@@ -1104,7 +1104,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_stones__results__lights_yes
+note_waters_stones__results_lights__yes
 
 
 =
@@ -1140,7 +1140,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -1168,7 +1168,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -1188,7 +1188,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -1224,7 +1224,7 @@ note_silts_calculators__lakes__lengths
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -1252,7 +1252,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 );
@@ -1272,7 +1272,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -1308,7 +1308,7 @@ note_silts_calculators__lakes__sizes
 
 that_fst_roots_threads_prepare_waters
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -1336,7 +1336,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -1356,7 +1356,7 @@ note_silts_calculators__lakes__values
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -1397,7 +1397,7 @@ note_silts_calculators__lakes__values
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -1427,7 +1427,7 @@ measure_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -1454,7 +1454,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -1479,7 +1479,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -1513,7 +1513,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 
@@ -1569,7 +1569,7 @@ that_fst_roots_threads_prepare_stones_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -1595,7 +1595,7 @@ note_silts_calculators__lakes__values
 
 that_fst_roots_threads_prepare_waters
 
-note_stones__targets
+note_stones__targets_appended
 
 
 =
@@ -1623,7 +1623,7 @@ create_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_stones__targets
+note_stones__targets_appended
 
 
 );
@@ -1643,7 +1643,7 @@ note_stones__targets
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets
+note_stones__targets_appended
 
 
 =
@@ -1680,14 +1680,14 @@ resize_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -1709,17 +1709,17 @@ clean_fst_roots_lakes_waters
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes,
+note_silts_calculators__lakes_sizes,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -1739,7 +1739,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -1771,7 +1771,7 @@ note_stones__targets,
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -1803,7 +1803,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -1835,7 +1835,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -1908,7 +1908,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -1940,7 +1940,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -2109,7 +2109,7 @@ that_waters_lakes__objects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__objects,
+that_stones_names__lakes_objects,
 
 
 
@@ -2216,7 +2216,7 @@ that_waters_lakes__objects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__objects,
+that_stones_names__lakes_objects,
 
 
 
@@ -2266,7 +2266,7 @@ that_waters_lakes__objects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__objects,
+that_stones_names__lakes_objects,
 
 
 
@@ -2579,7 +2579,7 @@ that_waters_lakes__subjects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__subjects,
+that_stones_names__lakes_subjects,
 
 
 
@@ -2685,7 +2685,7 @@ that_waters_lakes__subjects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__subjects,
+that_stones_names__lakes_subjects,
 
 
 
@@ -2735,7 +2735,7 @@ that_waters_lakes__subjects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__subjects,
+that_stones_names__lakes_subjects,
 
 
 
@@ -3000,7 +3000,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -3025,12 +3025,12 @@ measure_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -3057,7 +3057,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -3082,7 +3082,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -3116,7 +3116,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 
@@ -3172,7 +3172,7 @@ that_fst_roots_threads_prepare_stones_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -3204,17 +3204,17 @@ clean_fst_roots_lakes_waters
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes,
+note_silts_calculators__lakes_sizes,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -3234,7 +3234,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -3266,7 +3266,7 @@ note_stones__targets,
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -3298,7 +3298,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -3330,7 +3330,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -3541,7 +3541,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -3572,7 +3572,7 @@ note_waters_stones__objects,
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -3599,7 +3599,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -3624,7 +3624,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -3658,7 +3658,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 
@@ -3714,159 +3714,7 @@ that_fst_roots_threads_prepare_stones_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
-
-
-=
-
-
-( that_fst_roots_threads_prepare_silts )
-
-0;
-
-
-
-
-
-
-
-
-
-measure_fst_roots_lakes_stones
-
-(
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_waters_stones__subjects,
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__lengths
-
-
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_silts )
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__sizes
-
-
-
-
-=
-
-
-
-
-(
-
-
-
-
-( that_fst_roots_threads_prepare_silts )
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__sizes
-
-
-
-
-)
-
-
-
-
-+
-
-
-
-
-(
-
-
-
-
-( that_fst_roots_threads_prepare_silts )
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__lengths
-
-
-
-
-*
-
-
-
-
-( that_fst_roots_threads_prepare_silts )
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_threads_prepare_stones_sizes
-
-
-
-
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_silts )
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -3903,14 +3751,14 @@ resize_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -3932,17 +3780,17 @@ clean_fst_roots_lakes_waters
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes,
+note_silts_calculators__lakes_sizes,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -3962,7 +3810,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -3994,7 +3842,7 @@ note_stones__targets,
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -4026,7 +3874,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -4058,7 +3906,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -4269,7 +4117,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -4294,7 +4142,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -4312,6 +4160,1592 @@ note_waters_stones__objects
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+!=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0
+
+
+
+
+&&
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+==
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
+)
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+==
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0
+
+
+
+
+&&
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+!=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+measure_fst_roots_lakes_stones
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_stones__objects,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+
+
+=
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
++
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+
+
+)
+
+
+
+
+*
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_threads_prepare_stones_sizes
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+measure_fst_roots_lakes_stones
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_stones__subjects,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+*/
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+
+
+=
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+
+
+)
+
+
+
+
++
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+
+
+*
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_threads_prepare_stones_sizes
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+resize_fst_roots_lakes_waves
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
+
+
+note_stones__targets_appended,
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+measure_fst_roots_lakes_stones
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_stones__subjects,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+
+
+=
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
++
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+
+
+)
+
+
+
+
+*
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_threads_prepare_stones_sizes
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+measure_fst_roots_lakes_stones
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_waters_stones__objects,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+clean_fst_roots_lakes_waters
+
+(
+
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+( that_fst_roots_threads_prepare_stones * )
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_stones * )
+
+( that_fst_roots_threads_prepare_waters )
+
+
+note_stones__targets_appended
+
+
+
+
++
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+
+
+),
+
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes,
+
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+copy_fst_roots_lakes_stones
+
+(
+
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+( that_fst_roots_threads_prepare_stones * )
+
+
+
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_stones * )
+
+( that_fst_roots_threads_prepare_waters )
+
+
+note_stones__targets_appended
+
+
+
+
++
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+
+
+),
+
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+""
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_lengths
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+!=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0
+
+
+
+
+&&
+
+
+
+
+( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+==
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
+)
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+==
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0
+
+
+
+
+&&
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_switches__returns
+
+
+!=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+1
+
+
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+copy_fst_roots_lakes_stones
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_stones__targets_appended,
+
+
+( that_fst_roots_threads_prepare_waters )
+
+""
+
+
+);
+
+*/
+
+
+
+
+
+
+
 append_fst_roots_lakes_stones
 
 (
@@ -4319,7 +5753,7 @@ append_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -4370,7 +5804,7 @@ if
 
 
 
-( that_fst_roots_threads_prepare_silts )
+// ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
 
@@ -4395,7 +5829,7 @@ note_silts_switches__returns
 
 
 
-( that_fst_roots_threads_prepare_silts )
+// ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
 
@@ -4560,14 +5994,14 @@ that_waters_lakes__objects
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_stones_names__lakes__objects,
+that_stones_names__lakes_objects,
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets
+note_stones__targets_appended
 
 
 
@@ -4775,7 +6209,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -4800,12 +6234,12 @@ measure_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -4832,7 +6266,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -4857,7 +6291,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -4891,7 +6325,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 
@@ -4947,7 +6381,7 @@ that_fst_roots_threads_prepare_stones_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -4979,17 +6413,17 @@ clean_fst_roots_lakes_waters
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes,
+note_silts_calculators__lakes_sizes,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -5009,7 +6443,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -5041,7 +6475,7 @@ note_stones__targets,
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -5073,7 +6507,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -5105,7 +6539,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -5316,7 +6750,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -5346,10 +6780,17 @@ measure_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
+
+
+
+
+
+
+
 
 
 
@@ -5366,7 +6807,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -5391,7 +6832,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -5425,7 +6866,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 
@@ -5474,7 +6915,7 @@ that_fst_roots_threads_prepare_stones_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -5511,14 +6952,14 @@ resize_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -5540,17 +6981,17 @@ clean_fst_roots_lakes_waters
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes,
+note_silts_calculators__lakes_sizes,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -5570,7 +7011,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -5602,7 +7043,7 @@ note_stones__targets,
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -5634,7 +7075,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -5666,7 +7107,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -5804,7 +7245,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -5829,7 +7270,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -5868,7 +7309,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -5893,7 +7334,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -6090,7 +7531,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -6115,7 +7556,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -6271,7 +7712,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -6296,7 +7737,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -6335,7 +7776,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -6360,7 +7801,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -6403,7 +7844,7 @@ note_silts_switches__returns__results
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 =
@@ -6463,7 +7904,7 @@ note_waters_lakes__sources_results__bubbles
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 
@@ -6492,7 +7933,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 ==
@@ -6554,7 +7995,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -6579,7 +8020,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -6621,7 +8062,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 !=
@@ -6646,7 +8087,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 =
@@ -6659,7 +8100,7 @@ note_waters_lakes__sources_results__lights
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights;
+note_waters_lakes__sources_results__bubbles_lights;
 
 
 
@@ -6735,7 +8176,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -6760,7 +8201,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -6799,7 +8240,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -6824,7 +8265,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -6867,7 +8308,7 @@ note_silts_switches__returns__results
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_no
+note_waters_stones__results_lights__no
 
 
 =
@@ -6887,7 +8328,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_yes
+note_waters_stones__results_lights__yes
 
 
 =
@@ -6927,7 +8368,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 ),
@@ -6947,7 +8388,7 @@ note_waters_lakes__sources_results__lights
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_stones__results__lights_no
+note_waters_stones__results_lights__no
 
 
 
@@ -6977,7 +8418,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 ),
@@ -6997,7 +8438,7 @@ note_waters_lakes__sources_results__lights
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_stones__results__lights_yes
+note_waters_stones__results_lights__yes
 
 
 
@@ -7028,7 +8469,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_no
+note_waters_stones__results_lights__no
 
 
 ==
@@ -7048,7 +8489,7 @@ that_fst_roots_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_yes
+note_waters_stones__results_lights__yes
 
 
 ==
@@ -7112,7 +8553,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -7137,7 +8578,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -7181,7 +8622,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_no
+note_waters_stones__results_lights__no
 
 
 !=
@@ -7201,7 +8642,7 @@ that_fst_roots_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_yes
+note_waters_stones__results_lights__yes
 
 
 !=
@@ -7282,7 +8723,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -7307,7 +8748,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -7337,7 +8778,7 @@ note_silts_switches__returns__results
 * ( that_fst_roots_threads_prepare_waters * )
 
 
-that_waters__results
+that_waters_stones__results_lights__returns
 
 
 =
@@ -7379,7 +8820,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 !=
@@ -7404,7 +8845,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 ==
@@ -7459,7 +8900,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 ==
@@ -7484,7 +8925,7 @@ note_silts_switches__returns__lights
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 !=
@@ -7514,7 +8955,7 @@ note_silts_switches__returns__lights
 * ( that_fst_roots_threads_prepare_waters * )
 
 
-that_waters__results
+that_waters_stones__results_lights__returns
 
 
 =
@@ -7522,7 +8963,7 @@ that_waters__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_no;
+note_waters_stones__results_lights__no;
 
 
 
@@ -7556,7 +8997,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 !=
@@ -7581,7 +9022,7 @@ note_silts_switches__returns__lights
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 ==
@@ -7611,7 +9052,7 @@ note_silts_switches__returns__lights
 * ( that_fst_roots_threads_prepare_waters * )
 
 
-that_waters__results
+that_waters_stones__results_lights__returns
 
 
 =
@@ -7619,7 +9060,7 @@ that_waters__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_yes;
+note_waters_stones__results_lights__yes;
 
 
 
@@ -7720,7 +9161,7 @@ note_silts_switches__returns
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -7752,7 +9193,7 @@ note_silts_switches__returns__results
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -7877,7 +9318,7 @@ that_fst_roots_lakes_prepare;
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -7905,7 +9346,7 @@ free_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 );
@@ -7920,7 +9361,7 @@ note_silts_switches__returns__results
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__results
+note_silts_switches__returns_results
 
 
 =
@@ -7961,7 +9402,7 @@ that_fst_roots_lakes_prepare;
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -7989,7 +9430,7 @@ free_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 );
@@ -8004,7 +9445,7 @@ note_silts_switches__returns__lights
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_silts_switches__returns__lights
+note_silts_switches__returns_lights
 
 
 =
@@ -8148,7 +9589,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__sources_results__lights
+note_waters_lakes__sources_results__bubbles_lights
 
 
 =
@@ -8184,7 +9625,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_no
+note_waters_stones__results_lights__no
 
 
 =
@@ -8220,7 +9661,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__results__lights_yes
+note_waters_stones__results_lights__yes
 
 
 =
@@ -8261,7 +9702,7 @@ that_fst_roots_lakes_prepare;
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -8286,12 +9727,12 @@ measure_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -8318,7 +9759,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -8343,7 +9784,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 
@@ -8377,7 +9818,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 
@@ -8433,7 +9874,7 @@ that_fst_roots_threads_prepare_stones_sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -8465,17 +9906,17 @@ clean_fst_roots_lakes_waters
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes,
+note_silts_calculators__lakes_sizes,
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 );
@@ -8495,7 +9936,7 @@ copy_fst_roots_lakes_stones
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets,
+note_stones__targets_appended,
 
 
 ( that_fst_roots_threads_prepare_waters )
@@ -8527,7 +9968,7 @@ free_fst_roots_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets
+note_stones__targets_appended
 
 
 );
@@ -8542,7 +9983,7 @@ note_stones__targets
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_stones__targets
+note_stones__targets_appended
 
 
 =
@@ -8574,7 +10015,7 @@ that_fst_roots_lakes_prepare;
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -8606,7 +10047,7 @@ note_silts_calculators__lakes__lengths
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -8638,7 +10079,7 @@ note_silts_calculators__lakes__sizes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_values
 
 
 =
@@ -8679,7 +10120,7 @@ note_silts_calculators__lakes__values
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -8707,7 +10148,7 @@ free_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_calculators__lakes__lengths
+note_silts_calculators__lakes_lengths
 
 
 );
@@ -8722,91 +10163,7 @@ note_silts_calculators__lakes__lengths
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__lengths
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_silts )
-
-* ( that_fst_roots_threads_prepare_silts * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__sizes
-
-
-=
-
-
-( that_fst_roots_threads_prepare_silts )
-
-0;
-
-
-
-
-
-
-
-
-
-free_fst_roots_lakes_waves
-
-(
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-note_silts_calculators__lakes__sizes
-
-
-);
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_silts_calculators__lakes__sizes
+note_silts_calculators__lakes_lengths
 
 
 =
@@ -8847,7 +10204,7 @@ that_fst_roots_lakes_prepare;
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_sizes
 
 
 =
@@ -8875,7 +10232,7 @@ free_fst_roots_lakes_waves
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_sizes
 
 
 );
@@ -8890,7 +10247,91 @@ note_silts_calculators__lakes__values
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_silts_calculators__lakes__values
+note_silts_calculators__lakes_sizes
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_silts )
+
+* ( that_fst_roots_threads_prepare_silts * )
+
+
+( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
+
+
+=
+
+
+( that_fst_roots_threads_prepare_silts )
+
+0;
+
+
+
+
+
+
+
+
+
+free_fst_roots_lakes_waves
+
+(
+
+
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
+
+
+note_silts_calculators__lakes_values
+
+
+);
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_silts_calculators__lakes_values
 
 
 =

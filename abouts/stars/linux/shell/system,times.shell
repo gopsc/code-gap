@@ -1,0 +1,10 @@
+
+
+date
+
+
+
+
+sudo timedatectl set-ntp true
+
+
