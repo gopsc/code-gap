@@ -18,9 +18,6 @@
 #include "./../../roots/lakes/waves/free.bases"
 
 
-#include "./../../roots/parks/terminals/out-stones.bases"
-
-
 
 #include "./../../branches/threads/begin.bases"
 
@@ -32,14 +29,6 @@
 #include "./../../branches/lakes/begin.bases"
 
 #include "./../../branches/lakes/end.bases"
-
-
-#include "./../../branches/lakes/waves/fish.bases"
-
-
-#include "./../../branches/lakes/forms/stones/copy.bases"
-
-#include "./../../branches/lakes/forms/stones/append.bases"
 
 
 #include "./../../branches/lakes/bubbles/begin.bases"
@@ -60,11 +49,6 @@
 #include "./../../branches/lakes/bubbles/threads/begin.bases"
 
 #include "./../../branches/lakes/bubbles/threads/end.bases"
-
-
-#include "./../../branches/selfcheck/lakes/judge-lights.bases"
-
-#include "./../../branches/selfcheck/lakes/show.bases"
 
 
 #include "./../../branches/dreams/begin.bases"
