@@ -13,6 +13,19 @@
 #include "./../../roots/lakes/prepare.bases"
 
 
+#include "./../../roots/parks/terminals/out-stones.bases"
+
+
+
+#include "./../../branches/lakes/prepare.bases"
+
+
+#include "./../../branches/lakes/waves/fish.bases"
+
+
+#include "./../../branches/selfcheck/lakes/show.bases"
+
+
 
 
 that_fst_roots_threads_prepare_waters
