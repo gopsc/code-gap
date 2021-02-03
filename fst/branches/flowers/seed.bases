@@ -1576,14 +1576,14 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test,copied",
+"fst,test,appended",
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-""
+"hello,"
 
 
 
@@ -1639,14 +1639,14 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test,copy",
+"fst,test,append",
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-"hello!"
+"hi!"
 
 
 
@@ -1677,7 +1677,7 @@ that_fst_branches_lakes_prepare
 
 
 
-copy_fst_branches_lakes_forms_stones
+append_fst_branches_lakes_forms_stones
 
 (
 
@@ -1704,7 +1704,7 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test,copied",
+"fst,test,appended",
 
 
 
@@ -1729,7 +1729,7 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test,copy",
+"fst,test,append",
 
 
 
