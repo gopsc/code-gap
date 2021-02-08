@@ -129,7 +129,7 @@ note_silts_switches__returns
 
 
 
-
+/*
 
 that_fst_roots_threads_prepare_waters
 
@@ -143,7 +143,7 @@ note_waters_stones__results_lights__test
 
 that_fst_roots_lakes_prepare;
 
-
+*/
 
 
 
@@ -286,70 +286,7 @@ note_silts_switches__returns
 
 
 
-
-
-add_fst_branches_lakes_waves
-
-(
-
-
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-(
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-that_fst_branches_lakes_prepare
-
-
-),
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"stones",
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"fst,test,appended",
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"hello,"
-
-
-
-
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 
 add_fst_branches_lakes_waves
 
@@ -385,14 +322,14 @@ that_fst_branches_lakes_prepare
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,test,append",
+"fst,test",
 
 
 
 
 ( that_fst_roots_threads_prepare_waters )
 
-"hi!"
+""
 
 
 
@@ -423,107 +360,22 @@ that_fst_branches_lakes_prepare
 
 
 
-append_fst_branches_lakes_forms_stones
+;
 
-(
 
 
 
 
-( that_fst_roots_threads_prepare_waters * )
 
-& // ( that_fst_roots_threads_prepare_waters )
 
 
-(
 
 
-// ( that_fst_roots_threads_prepare_waters )
 
-that_fst_branches_lakes_prepare
 
 
-),
 
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"fst,test,appended",
-
-
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-(
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-that_fst_branches_lakes_prepare
-
-
-),
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"fst,test,append",
-
-
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-(
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-that_fst_branches_lakes_prepare
-
-
-),
-
-
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-note_waters_stones__results_lights__test
-
-
-
-
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 
 judge_lights_fst_branches_selfcheck_lakes
 
@@ -582,7 +434,7 @@ that_fst_branches_lakes_prepare
 
 );
 
-
+*/
 
 
 
@@ -819,7 +671,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-
+/*
 
 // ( that_fst_roots_threads_prepare_waters )
 
@@ -833,7 +685,7 @@ note_waters_stones__results_lights__test
 
 that_fst_roots_lakes_prepare;
 
-
+*/
 
 
 
