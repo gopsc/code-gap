@@ -14,6 +14,13 @@
 
 
 
+#include "./../../branches/lakes/prepare.bases"
+
+
+#include "./../../branches/selfcheck/lakes/judge-lights.bases"
+
+
+
 
 that_fst_roots_threads_prepare_waters
 
@@ -129,7 +136,7 @@ note_silts_switches__returns
 
 
 
-/*
+
 
 that_fst_roots_threads_prepare_waters
 
@@ -143,7 +150,7 @@ note_waters_stones__results_lights__test
 
 that_fst_roots_lakes_prepare;
 
-*/
+
 
 
 
@@ -336,7 +343,7 @@ that_fst_branches_lakes_prepare
 
 );
 
-
+*/
 
 
 
@@ -375,7 +382,16 @@ that_fst_branches_lakes_prepare
 
 
 
-/*
+
+
+
+
+
+
+
+
+
+
 
 judge_lights_fst_branches_selfcheck_lakes
 
@@ -434,7 +450,7 @@ that_fst_branches_lakes_prepare
 
 );
 
-*/
+
 
 
 
@@ -671,7 +687,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-/*
+
 
 // ( that_fst_roots_threads_prepare_waters )
 
@@ -685,7 +701,7 @@ note_waters_stones__results_lights__test
 
 that_fst_roots_lakes_prepare;
 
-*/
+
 
 
 
