@@ -2,11 +2,6 @@
 
 
 
-add "./fst/selfcheck" and "./fst/dreams" into "./fst/branches/flowers"
-
-
-
-
 change lake names like "fst,branches,lakes,prepare,,,fst,branches,flowers,seed,,fst,branches,lakes,begin"
 
 add space in lake, to save extension name
