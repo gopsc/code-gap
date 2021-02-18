@@ -1,0 +1,5 @@
+
+
+get name, content and length of a lake
+
+
