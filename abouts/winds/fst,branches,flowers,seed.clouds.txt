@@ -1,5 +1,10 @@
 
 
+move to "./fst/branches/flowers/seed/begin.bases"
+
+
+
+
 use formal parameters in, instead of global variables
 
 
