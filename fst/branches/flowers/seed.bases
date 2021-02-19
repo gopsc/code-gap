@@ -53,9 +53,19 @@
 
 #include "./../../branches/dreams/begin.bases"
 
-#include "./../../branches/dreams/test.bases"
 
-#include "./../../branches/dreams/show.bases"
+//#include "./../../branches/dreams/test/prepare.bases"
+
+#include "./../../branches/dreams/test/begin.bases"
+
+//#include "./../../branches/dreams/test/clean.bases"
+
+
+//#include "./../../branches/dreams/show/prepare.bases"
+
+#include "./../../branches/dreams/show/begin.bases"
+
+//#include "./../../branches/dreams/show/clean.bases"
 
 
 
