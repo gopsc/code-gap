@@ -141,21 +141,29 @@
 
 
 
-#include "./branches/dreams/begin.bases"
+#include "./branches/dreams/prepare.bases"
+
+#include "./branches/dreams/clean.bases"
 
 
-//#include "./branches/dreams/test/prepare.bases"
+#include "./branches/dreams/fall/begin.bases"
+
+
+#include "./branches/dreams/test/prepare.bases"
 
 #include "./branches/dreams/test/begin.bases"
 
-//#include "./branches/dreams/test/clean.bases"
+#include "./branches/dreams/test/clean.bases"
 
 
-//#include "./branches/dreams/show/prepare.bases"
+#include "./branches/dreams/show/prepare.bases"
 
 #include "./branches/dreams/show/begin.bases"
 
-//#include "./branches/dreams/show/clean.bases"
+#include "./branches/dreams/show/clean.bases"
+
+
+//#include "./branches/dreams/seed/begin.bases"
 
 
 
