@@ -69,6 +69,121 @@ that_waters_lakes__sources_cleaned
 
 
 
+if
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes__sources_cleaned
+
+
+==
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare
+
+
+)
+
+{
+
+
+
+return
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes__sources_cleaned
+
+
+==
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare
+
+
+)
+
+{
+
+
+
+return
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return
 
 
