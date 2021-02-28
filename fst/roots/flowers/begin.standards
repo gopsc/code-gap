@@ -1,0 +1,611 @@
+
+
+#include <stdlib.h>
+
+
+
+#include "./../../branches/flowers/begin.bases"
+
+
+
+
+#ifndef added___fst_roots__flowers___begin
+
+#define added___fst_roots__flowers___begin
+
+
+
+
+int main
+
+(
+
+int argc,
+
+char * argv []
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+if (
+
+
+( int ) argc
+
+
+==
+
+
+( int ) 0
+
+
+)
+
+{
+
+return  ( int ) 0;
+
+}
+
+*/
+
+
+
+
+
+
+
+if (
+
+
+( void * )
+
+( void * * )
+
+
+argv
+
+
+==
+
+
+( void * ) NULL
+
+
+)
+
+{
+
+return  ( int ) 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (
+
+
+( int ) argc
+
+
+==
+
+
+( int ) 0
+
+
+)
+
+{
+
+return  ( int ) 0;
+
+}
+
+
+
+
+
+
+
+/*
+
+if (
+
+
+( void * * ) argv
+
+
+==
+
+
+( void * ) NULL
+
+
+)
+
+{
+
+return  ( int ) 0;
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void * note_silts_counts
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+while (
+
+
+( void * ) note_silts_counts
+
+==
+
+( void * ) NULL
+
+
+)
+
+{
+
+
+
+/* ( void * ) */  note_silts_counts
+
+
+=
+
+
+( void * ) malloc (
+
+
+( int ) 1
+
+
+*
+
+
+( int ) ( unsigned int )
+
+sizeof ( int )
+
+
+);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+while (
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts
+
+
+<
+
+
+( int ) argc
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (
+
+
+( void * ) * ( void * * )
+
+
+(
+
+
+( void * * ) argv
+
+
++
+
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts
+
+
+)
+
+
+==
+
+
+( void * ) NULL
+
+
+)
+
+{
+
+return  ( int ) 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) * ( int * )
+
+( void * ) note_silts_counts
+
++
+
+( int ) 1;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ( int ) */  * ( int * )
+
+( void * ) note_silts_counts
+
+=
+
+( int ) 0;
+
+
+
+
+
+
+
+
+
+if (
+
+( void * ) note_silts_counts
+
+!=
+
+( void * ) NULL
+
+)
+
+{
+
+
+
+free (
+
+( void * ) note_silts_counts
+
+);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ( void * ) */  note_silts_counts
+
+=
+
+( void * ) NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+that_ways___fst_branches__flowers___begin
+
+(
+
+
+
+( void * ) ( int * )
+
+&  /* ( int ) */  argc,
+
+
+
+( void * * ) argv
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return  ( int ) 0;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+#endif
+
+

@@ -1,85 +1,86 @@
 
 
-#ifndef added___fst_branches__flowers___seed
+#ifndef added___fst_branches__dreams_seed___begin
 
-#define added___fst_branches__flowers___seed
-
-
-
-
-#include "./../../roots/threads/prepare.bases"
-
-
-#include "./../../roots/lakes/prepare.bases"
-
-
-#include "./../../roots/lakes/waves/create.bases"
-
-#include "./../../roots/lakes/waves/free.bases"
+#define added___fst_branches__dreams_seed___begin
 
 
 
-#include "./../../branches/threads/begin.bases"
 
-#include "./../../branches/threads/end.bases"
-
-
-#include "./../../branches/lakes/prepare.bases"
-
-#include "./../../branches/lakes/begin.bases"
-
-#include "./../../branches/lakes/end.bases"
+#include "./../../../roots/lakes/prepare.bases"
 
 
-#include "./../../branches/lakes/bubbles/begin.bases"
-
-#include "./../../branches/lakes/bubbles/end.bases"
+#include "./../../../roots/threads/prepare.bases"
 
 
-#include "./../../branches/lakes/bubbles/moons/begin.bases"
+#include "./../../../roots/lakes/waves/create.bases"
 
-#include "./../../branches/lakes/bubbles/moons/end.bases"
-
-
-#include "./../../branches/lakes/bubbles/lights/begin.bases"
-
-#include "./../../branches/lakes/bubbles/lights/end.bases"
+#include "./../../../roots/lakes/waves/free.bases"
 
 
-#include "./../../branches/lakes/bubbles/threads/begin.bases"
 
-#include "./../../branches/lakes/bubbles/threads/end.bases"
+#include "./../../../branches/threads/begin.bases"
 
-
-#include "./../../branches/dreams/prepare.bases"
-
-#include "./../../branches/dreams/clean.bases"
+#include "./../../../branches/threads/end.bases"
 
 
-#include "./../../branches/dreams/fall/begin.bases"
+#include "./../../../branches/lakes/prepare.bases"
+
+#include "./../../../branches/lakes/begin.bases"
+
+#include "./../../../branches/lakes/end.bases"
 
 
-#include "./../../branches/dreams/test/prepare.bases"
+#include "./../../../branches/lakes/bubbles/begin.bases"
 
-#include "./../../branches/dreams/test/begin.bases"
-
-#include "./../../branches/dreams/test/clean.bases"
+#include "./../../../branches/lakes/bubbles/end.bases"
 
 
-#include "./../../branches/dreams/show/prepare.bases"
+#include "./../../../branches/lakes/bubbles/moons/begin.bases"
 
-#include "./../../branches/dreams/show/begin.bases"
+#include "./../../../branches/lakes/bubbles/moons/end.bases"
 
-#include "./../../branches/dreams/show/clean.bases"
+
+#include "./../../../branches/lakes/bubbles/lights/begin.bases"
+
+#include "./../../../branches/lakes/bubbles/lights/end.bases"
+
+
+#include "./../../../branches/lakes/bubbles/threads/begin.bases"
+
+#include "./../../../branches/lakes/bubbles/threads/end.bases"
+
+
+#include "./../../../branches/dreams/prepare.bases"
+
+#include "./../../../branches/dreams/clean.bases"
+
+
+#include "./../../../branches/dreams/fall/begin.bases"
+
+
+#include "./../../../branches/dreams/test/prepare.bases"
+
+#include "./../../../branches/dreams/test/begin.bases"
+
+#include "./../../../branches/dreams/test/clean.bases"
+
+
+#include "./../../../branches/dreams/show/prepare.bases"
+
+#include "./../../../branches/dreams/show/begin.bases"
+
+#include "./../../../branches/dreams/show/clean.bases"
 
 
 
 
 that_fst_roots_threads_prepare_waters
 
-seed_fst_branches_flowers
+that_ways___fst_branches__dreams_seed___begin
 
 (
+
 
 
 that_fst_roots_threads_prepare_waters
@@ -89,7 +90,14 @@ that_silts_lengths__moons,
 
 that_fst_roots_threads_prepare_waters *
 
-that_waters_sources__moons
+that_waters_sources__moons,
+
+
+
+that_fst_roots_threads_prepare_waters *
+
+that_waters_lakes__sources
+
 
 
 )
@@ -265,14 +273,6 @@ if
 
 
 ( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-* ( that_fst_roots_threads_prepare_waters * )
-
 
 that_waters_sources__moons
 
