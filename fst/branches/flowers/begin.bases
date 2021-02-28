@@ -17,7 +17,7 @@
 #include "./../../branches/lakes/prepare.bases"
 
 
-#include "./../../branches/dreams/seed/begin.bases"
+#include "./../../branches/dreams/seeds/begin.bases"
 
 
 
@@ -283,7 +283,7 @@ that_fst_roots_lakes_prepare;
 
 
 
-that_ways___fst_branches__dreams_seed___begin
+that_ways___fst_branches__dreams_seeds___begin
 
 (
 
