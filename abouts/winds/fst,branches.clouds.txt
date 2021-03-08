@@ -2,6 +2,9 @@
 
 
 
+add blank charators in lake names
+
+
 change lake names like "fst,branches,lakes,prepare,,,fst,branches,flowers,seed,,fst,branches,lakes,begin"
 
 add space in lake, to save extension name
