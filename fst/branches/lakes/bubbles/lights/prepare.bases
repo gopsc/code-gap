@@ -1,5 +1,12 @@
 
 
+#ifndef added___fst_branches__lakes_bubbles_lights___prepare
+
+#define added___fst_branches__lakes_bubbles_lights___prepare
+
+
+
+
 #include "./../../../../roots/threads/prepare.bases"
 
 
@@ -17,16 +24,9 @@
 
 
 
-#ifndef added_fst_branches_lakes_bubbles_threads_begin
-
-#define added_fst_branches_lakes_bubbles_threads_begin
-
-
-
-
 that_fst_roots_threads_prepare_waters
 
-begin_fst_branches_lakes_bubbles_threads
+that_ways___fst_branches__lakes_bubbles_lights___prepare
 
 (
 
@@ -152,7 +152,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 =
@@ -335,7 +335,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 =
@@ -392,31 +392,6 @@ that_fst_roots_lakes_prepare;
 
 
 
-/*
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes_bubbles
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-* ( that_fst_roots_threads_prepare_waters * )
-
-
-( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes_bubbles;
-
-*/
-
-
-
-
-
 
 
 
@@ -428,7 +403,7 @@ note_waters_lakes_bubbles;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 =
@@ -464,7 +439,7 @@ begin_fst_branches_lakes
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 ),
@@ -475,7 +450,7 @@ note_waters_lakes_threads
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,branches,lakes,bubbles,threads,begin"
+"fst,branches,lakes,bubbles,lights,begin"
 
 
 
@@ -498,7 +473,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 ==
@@ -566,7 +541,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 =
@@ -659,140 +634,10 @@ add_fst_branches_lakes_waves
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 ),
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"silts",
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"waters",
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_threads_prepare_waters_sizes
-
-
-
-
-
-);
-
-
-
-
-
-
-
-
-
-add_fst_branches_lakes_waves
-
-(
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-(
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes_threads
-
-
-),
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"silts",
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"silts",
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_threads_prepare_silts_sizes
-
-
-
-
-
-);
-
-
-
-
-
-
-
-
-
-add_fst_branches_lakes_waves
-
-(
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters * )
-
-& // ( that_fst_roots_threads_prepare_waters )
-
-
-(
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes_threads
-
-
-),
-
-
-
-
-
-( that_fst_roots_threads_prepare_waters )
-
-"silts",
 
 
 
@@ -808,7 +653,76 @@ note_waters_lakes_threads
 
 ( that_fst_roots_threads_prepare_waters )
 
-that_fst_roots_threads_prepare_stones_sizes
+"yes",
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+""
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+add_fst_branches_lakes_waves
+
+(
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters * )
+
+& // ( that_fst_roots_threads_prepare_waters )
+
+
+(
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_lakes_lights
+
+
+),
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"stones",
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+"no",
+
+
+
+
+
+( that_fst_roots_threads_prepare_waters )
+
+""
 
 
 
@@ -882,7 +796,7 @@ note_waters_lakes_bubbles
 
 ( that_fst_roots_threads_prepare_waters )
 
-"fst,branches,lakes,bubbles,threads,begin",
+"fst,branches,lakes,bubbles,lights,begin",
 
 
 
@@ -896,7 +810,7 @@ note_waters_lakes_bubbles
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 )
@@ -960,7 +874,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes_threads
+note_waters_lakes_lights
 
 
 =

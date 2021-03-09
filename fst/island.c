@@ -87,24 +87,24 @@
 #include "./branches/lakes/forms/stones/append.bases"
 
 
-#include "./branches/lakes/bubbles/begin.bases"
+#include "./branches/lakes/bubbles/prepare.bases"
 
-#include "./branches/lakes/bubbles/end.bases"
-
-
-#include "./branches/lakes/bubbles/lights/begin.bases"
-
-#include "./branches/lakes/bubbles/lights/end.bases"
+#include "./branches/lakes/bubbles/clean.bases"
 
 
-#include "./branches/lakes/bubbles/threads/begin.bases"
+#include "./branches/lakes/bubbles/lights/prepare.bases"
 
-#include "./branches/lakes/bubbles/threads/end.bases"
+#include "./branches/lakes/bubbles/lights/clean.bases"
 
 
-#include "./branches/lakes/bubbles/moons/begin.bases"
+#include "./branches/lakes/bubbles/threads/prepare.bases"
 
-#include "./branches/lakes/bubbles/moons/end.bases"
+#include "./branches/lakes/bubbles/threads/clean.bases"
+
+
+#include "./branches/lakes/bubbles/moons/prepare.bases"
+
+#include "./branches/lakes/bubbles/moons/clean.bases"
 
 
 
@@ -143,18 +143,20 @@
 #include "./branches/dreams/fallings/begin.bases"
 
 
-#include "./branches/dreams/test/prepare.bases"
+#include "./branches/dreams/tests/prepare.bases"
 
-#include "./branches/dreams/test/begin.bases"
+#include "./branches/dreams/tests/begin.bases"
 
-#include "./branches/dreams/test/clean.bases"
+#include "./branches/dreams/tests/clean.bases"
 
 
-#include "./branches/dreams/show/prepare.bases"
+#include "./branches/dreams/showings/prepare.bases"
 
-#include "./branches/dreams/show/begin.bases"
+#include "./branches/dreams/showings/begin.bases"
 
-#include "./branches/dreams/show/clean.bases"
+#include "./branches/dreams/showings/clean.bases"
+
+
 
 
 #include "./branches/dreams/seeds/begin.bases"
@@ -162,13 +164,9 @@
 
 
 
-#include "./branches/flowers/begin.bases" // more complex
+#include "./branches/flowers/begin.bases" // no blank check yet
 
 
 #include "./roots/flowers/begin.standards" // int main(), return 0
-
-
-
-
 
 

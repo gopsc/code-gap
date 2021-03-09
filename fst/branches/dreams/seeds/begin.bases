@@ -1,8 +1,8 @@
 
 
-#ifndef added___fst_branches__dreams_seed___begin
+#ifndef added___fst_branches__dreams_seeds___begin
 
-#define added___fst_branches__dreams_seed___begin
+#define added___fst_branches__dreams_seeds___begin
 
 
 
@@ -29,24 +29,24 @@
 #include "./../../../branches/lakes/end.bases"
 
 
-#include "./../../../branches/lakes/bubbles/begin.bases"
+#include "./../../../branches/lakes/bubbles/prepare.bases"
 
-#include "./../../../branches/lakes/bubbles/end.bases"
-
-
-#include "./../../../branches/lakes/bubbles/moons/begin.bases"
-
-#include "./../../../branches/lakes/bubbles/moons/end.bases"
+#include "./../../../branches/lakes/bubbles/clean.bases"
 
 
-#include "./../../../branches/lakes/bubbles/lights/begin.bases"
+#include "./../../../branches/lakes/bubbles/lights/prepare.bases"
 
-#include "./../../../branches/lakes/bubbles/lights/end.bases"
+#include "./../../../branches/lakes/bubbles/lights/clean.bases"
 
 
-#include "./../../../branches/lakes/bubbles/threads/begin.bases"
+#include "./../../../branches/lakes/bubbles/threads/prepare.bases"
 
-#include "./../../../branches/lakes/bubbles/threads/end.bases"
+#include "./../../../branches/lakes/bubbles/threads/clean.bases"
+
+
+#include "./../../../branches/lakes/bubbles/moons/prepare.bases"
+
+#include "./../../../branches/lakes/bubbles/moons/clean.bases"
 
 
 #include "./../../../branches/dreams/prepare.bases"
@@ -57,18 +57,18 @@
 #include "./../../../branches/dreams/fallings/begin.bases"
 
 
-#include "./../../../branches/dreams/test/prepare.bases"
+#include "./../../../branches/dreams/tests/prepare.bases"
 
-#include "./../../../branches/dreams/test/begin.bases"
+#include "./../../../branches/dreams/tests/begin.bases"
 
-#include "./../../../branches/dreams/test/clean.bases"
+#include "./../../../branches/dreams/tests/clean.bases"
 
 
-#include "./../../../branches/dreams/show/prepare.bases"
+#include "./../../../branches/dreams/showings/prepare.bases"
 
-#include "./../../../branches/dreams/show/begin.bases"
+#include "./../../../branches/dreams/showings/begin.bases"
 
-#include "./../../../branches/dreams/show/clean.bases"
+#include "./../../../branches/dreams/showings/clean.bases"
 
 
 
@@ -582,15 +582,6 @@ note_silts_counters__sources_moons
 
 
 
-
-
-
-
-
-
-
-
-
 // ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -655,15 +646,6 @@ that_silts_lengths__moons
 )
 
 {
-
-
-
-
-
-
-
-
-
 
 
 
@@ -874,15 +856,6 @@ that_fst_roots_lakes_prepare;
 
 
 
-
-
-
-
-
-
-
-
-
 // ( that_fst_roots_threads_prepare_silts )
 
 * ( that_fst_roots_threads_prepare_silts * )
@@ -955,15 +928,6 @@ note_silts_counters__sources_moons
 ( that_fst_roots_threads_prepare_silts )
 
 0;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1381,7 +1345,7 @@ that_stones_names__lakes_sources
 
 
 
-begin_fst_branches_lakes_bubbles
+that_ways___fst_branches__lakes_bubbles___prepare
 
 (
 
@@ -1426,7 +1390,7 @@ that_waters_lakes__sources
 
 
 
-begin_fst_branches_lakes_bubbles_lights
+that_ways___fst_branches__lakes_bubbles_lights___prepare
 
 (
 
@@ -1462,7 +1426,7 @@ that_waters_lakes__sources
 
 
 
-begin_fst_branches_lakes_bubbles_threads
+that_ways___fst_branches__lakes_bubbles_threads___prepare
 
 (
 
@@ -1498,7 +1462,7 @@ that_waters_lakes__sources
 
 
 
-begin_fst_branches_lakes_bubbles_moons
+that_ways___fst_branches__lakes_bubbles_moons___prepare
 
 (
 
@@ -1613,7 +1577,7 @@ that_waters_lakes__sources
 
 
 
-that_ways___fst_branches__dreams_test___prepare
+that_ways___fst_branches__dreams_tests___prepare
 
 (
 
@@ -1649,7 +1613,7 @@ that_waters_lakes__sources
 
 
 
-that_ways___fst_branches__dreams_show___prepare
+that_ways___fst_branches__dreams_showings___prepare
 
 (
 
@@ -1862,16 +1826,7 @@ note_silts_switches__returns
 
 
 
-
-
-
-
-
-
-
-
-
-that_ways___fst_branches__dreams_test___begin
+that_ways___fst_branches__dreams_tests___begin
 
 (
 
@@ -1884,7 +1839,7 @@ that_ways___fst_branches__dreams_test___begin
 (
 
 
-// ( that_fst_roots_threads_prepare_waters )
+( that_fst_roots_threads_prepare_waters )
 
 * ( that_fst_roots_threads_prepare_waters * )
 
@@ -1926,7 +1881,7 @@ that_waters_lakes__sources
 
 
 
-that_ways___fst_branches__dreams_show___begin
+that_ways___fst_branches__dreams_showings___begin
 
 (
 
@@ -2012,15 +1967,6 @@ that_waters_lakes__sources
 
 
 
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -2191,7 +2137,7 @@ note_silts_switches__returns
 
 
 
-that_ways___fst_branches__dreams_test___clean
+that_ways___fst_branches__dreams_tests___clean
 
 (
 
@@ -2227,7 +2173,7 @@ that_waters_lakes__sources
 
 
 
-that_ways___fst_branches__dreams_show___clean
+that_ways___fst_branches__dreams_showings___clean
 
 (
 
@@ -2324,7 +2270,7 @@ that_waters_lakes__sources
 
 
 
-end_fst_branches_lakes_bubbles_lights
+that_ways___fst_branches__lakes_bubbles_lights___clean
 
 (
 
@@ -2360,7 +2306,7 @@ that_waters_lakes__sources
 
 
 
-end_fst_branches_lakes_bubbles_threads
+that_ways___fst_branches__lakes_bubbles_threads___clean
 
 (
 
@@ -2396,7 +2342,7 @@ that_waters_lakes__sources
 
 
 
-end_fst_branches_lakes_bubbles_moons
+that_ways___fst_branches__lakes_bubbles_moons___clean
 
 (
 
@@ -2439,7 +2385,7 @@ that_waters_lakes__sources
 
 
 
-end_fst_branches_lakes_bubbles
+that_ways___fst_branches__lakes_bubbles___prepare
 
 (
 
@@ -2832,4 +2778,5 @@ that_fst_roots_lakes_prepare;
 
 
 #endif
+
 

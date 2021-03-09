@@ -1,5 +1,11 @@
 
 
+#ifndef added___fst_branches__lakes_bubbles_moons___prepare
+
+#define added___fst_branches__lakes_bubbles_moons___prepare
+
+
+
 #include "./../../../../roots/threads/prepare.bases"
 
 
@@ -19,16 +25,9 @@
 
 
 
-#ifndef added_fst_branches_lakes_bubbles_moons_begin
-
-#define added_fst_branches_lakes_bubbles_moons_begin
-
-
-
-
 that_fst_roots_threads_prepare_waters
 
-begin_fst_branches_lakes_bubbles_moons
+that_ways___fst_branches__lakes_bubbles_moons___prepare
 
 (
 
