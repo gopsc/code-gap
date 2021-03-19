@@ -1986,13 +1986,6 @@ out_stones_fst_roots_parks_terminals
 
 
 
-
-
-
-
-
-
-
 show_fst_branches_selfcheck_lakes
 
 (
@@ -2033,6 +2026,48 @@ that_waters_lakes__sources_showed
 
 
 
+out_stones_fst_roots_parks_terminals
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+( that_fst_roots_threads_prepare_stones * )
+
+
+"\n"
+
+
+);
+
+
+
+
+
+
+
+/*
+
+that_ways___fst_branches__selfcheck_lakes___show
+
+();
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2053,13 +2088,6 @@ out_stones_fst_roots_parks_terminals
 
 
 );
-
-
-
-
-
-
-
 
 
 
@@ -2109,15 +2137,6 @@ note_waters_lakes__bubbles_lights
 
 
 
-
-
-
-
-
-
-
-
-
 out_stones_fst_roots_parks_terminals
 
 (
@@ -2129,13 +2148,6 @@ out_stones_fst_roots_parks_terminals
 
 
 );
-
-
-
-
-
-
-
 
 
 
@@ -2185,15 +2197,6 @@ note_waters_lakes__bubbles_threads
 
 
 
-
-
-
-
-
-
-
-
-
 out_stones_fst_roots_parks_terminals
 
 (
@@ -2205,13 +2208,6 @@ out_stones_fst_roots_parks_terminals
 
 
 );
-
-
-
-
-
-
-
 
 
 
@@ -2261,15 +2257,6 @@ note_waters_lakes__bubbles_moons
 
 
 
-
-
-
-
-
-
-
-
-
 out_stones_fst_roots_parks_terminals
 
 (
@@ -2283,6 +2270,18 @@ out_stones_fst_roots_parks_terminals
 );
 
 
+
+
+
+
+
+/*
+
+that_ways___fst_branches__selfcheck_lakes___show
+
+();
+
+*/
 
 
 
