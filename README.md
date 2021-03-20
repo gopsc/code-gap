@@ -7,7 +7,7 @@
 
 ,,
 
-not finish ...
+not finished ...
 
 
 ,,
