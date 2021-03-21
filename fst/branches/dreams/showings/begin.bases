@@ -351,7 +351,7 @@ note_silts_switches__returns
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 =
@@ -378,7 +378,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 =
@@ -398,7 +398,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 =
@@ -418,90 +418,7 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_lakes__bubbles_moons
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
-note_waters_lakes__dreams
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
-note_waters_lakes__dreams_tests
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-that_fst_roots_threads_prepare_waters
-
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__bubbles_moons
 
 
 =
@@ -537,7 +454,90 @@ that_fst_roots_lakes_prepare;
 
 that_fst_roots_threads_prepare_waters
 
-note_waters_stones__bubbles_moons__show
+note_waters_lakes__sources_showed__dreams
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_lakes__showed__dreams_tests
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_lakes__showed__dreams_showings
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+that_fst_roots_threads_prepare_waters
+
+note_waters_stones__checked__bubbles_moons_showings
 
 
 =
@@ -685,7 +685,7 @@ note_silts_switches__returns
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 =
@@ -748,7 +748,7 @@ that_waters_lakes__sources_showed
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 
@@ -777,7 +777,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 ==
@@ -842,7 +842,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 !=
@@ -867,7 +867,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 =
@@ -880,7 +880,7 @@ note_waters_lakes__bubbles
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles;
+note_waters_lakes__sources_showed__bubbles;
 
 
 
@@ -1079,7 +1079,7 @@ note_silts_switches__returns
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 =
@@ -1119,7 +1119,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 ),
@@ -1142,7 +1142,7 @@ note_waters_lakes__bubbles
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 
@@ -1171,7 +1171,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 ==
@@ -1236,7 +1236,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 !=
@@ -1261,7 +1261,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 =
@@ -1274,7 +1274,7 @@ note_waters_lakes__bubbles_lights
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_lights;
+note_waters_lakes__showed__bubbles_lights;
 
 
 
@@ -1312,7 +1312,7 @@ note_waters_lakes__bubbles_lights;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 =
@@ -1352,7 +1352,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 ),
@@ -1375,7 +1375,7 @@ note_waters_lakes__bubbles
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 
@@ -1404,7 +1404,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 ==
@@ -1469,7 +1469,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 !=
@@ -1494,7 +1494,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 =
@@ -1507,7 +1507,7 @@ note_waters_lakes__bubbles_threads
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_threads;
+note_waters_lakes__showed__bubbles_threads;
 
 
 
@@ -1545,7 +1545,7 @@ note_waters_lakes__bubbles_threads;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 =
@@ -1585,7 +1585,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
+note_waters_lakes__sources_showed__bubbles
 
 
 ),
@@ -1608,7 +1608,7 @@ note_waters_lakes__bubbles
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 
@@ -1637,7 +1637,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 ==
@@ -1702,7 +1702,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 !=
@@ -1727,7 +1727,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 =
@@ -1740,7 +1740,7 @@ note_waters_lakes__bubbles_moons
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons;
+note_waters_lakes__showed__bubbles_moons;
 
 
 
@@ -1939,7 +1939,7 @@ note_silts_switches__returns
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 =
@@ -2002,7 +2002,7 @@ that_waters_lakes__sources_showed
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 
@@ -2031,7 +2031,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 ==
@@ -2096,7 +2096,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 !=
@@ -2121,7 +2121,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 =
@@ -2134,7 +2134,7 @@ note_waters_lakes__dreams
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams;
+note_waters_lakes__sources_showed__dreams;
 
 
 
@@ -2334,7 +2334,7 @@ note_silts_switches__returns
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__dreams_tests
 
 
 =
@@ -2374,7 +2374,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 ),
@@ -2397,7 +2397,7 @@ note_waters_lakes__dreams
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__dreams_tests
 
 
 
@@ -2426,7 +2426,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__dreams_tests
 
 
 ==
@@ -2491,7 +2491,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__dreams_tests
 
 
 !=
@@ -2516,7 +2516,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__dreams_tests
 
 
 =
@@ -2529,7 +2529,7 @@ note_waters_lakes__dreams_tests
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests;
+note_waters_lakes__showed__dreams_tests;
 
 
 
@@ -2567,7 +2567,7 @@ note_waters_lakes__dreams_tests;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__dreams_showings
 
 
 =
@@ -2608,7 +2608,7 @@ fish_fst_branches_lakes_waves
 ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__dreams
 
 
 ),
@@ -2631,7 +2631,7 @@ note_waters_lakes__dreams
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__dreams_showings
 
 
 
@@ -2660,7 +2660,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__dreams_showings
 
 
 ==
@@ -2725,7 +2725,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__dreams_showings
 
 
 !=
@@ -2750,7 +2750,7 @@ that_fst_roots_lakes_prepare
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__dreams_showings
 
 
 =
@@ -2763,7 +2763,7 @@ note_waters_lakes__dreams_showings
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings;
+note_waters_lakes__showed__dreams_showings;
 
 
 
@@ -2962,7 +2962,7 @@ note_silts_switches__returns
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__bubbles_moons__show
+note_waters_stones__checked__bubbles_moons_showings
 
 
 =
@@ -3002,7 +3002,7 @@ fish_fst_branches_lakes_waves
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 ),
@@ -3025,7 +3025,7 @@ note_waters_lakes__bubbles_moons
 & // ( that_fst_roots_threads_prepare_waters )
 
 
-note_waters_stones__bubbles_moons__show
+note_waters_stones__checked__bubbles_moons_showings
 
 
 
@@ -3054,7 +3054,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__bubbles_moons__show
+note_waters_stones__checked__bubbles_moons_showings
 
 
 ==
@@ -3119,7 +3119,7 @@ if
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__bubbles_moons__show
+note_waters_stones__checked__bubbles_moons_showings
 
 
 !=
@@ -3465,7 +3465,7 @@ show_fst_branches_selfcheck_lakes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_lights
+note_waters_lakes__showed__bubbles_lights
 
 
 )
@@ -3524,7 +3524,7 @@ show_fst_branches_selfcheck_lakes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_threads
+note_waters_lakes__showed__bubbles_threads
 
 
 )
@@ -3583,7 +3583,7 @@ show_fst_branches_selfcheck_lakes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles_moons
+note_waters_lakes__showed__bubbles_moons
 
 
 )
@@ -3693,7 +3693,7 @@ show_fst_branches_selfcheck_lakes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__dreams_tests
 
 
 )
@@ -3739,7 +3739,7 @@ out_stones_fst_roots_parks_terminals
 
 /*
 
-show_fst_branches_selfcheck_lakes
+that_ways___fst_branches__selfcheck_lakes___show
 
 (
 
@@ -3752,7 +3752,7 @@ show_fst_branches_selfcheck_lakes
 
 ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__dreams_showings
 
 
 )
@@ -4000,109 +4000,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__bubbles
-
-
-=
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes__bubbles_lights
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes__bubbles_threads
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes__bubbles_moons
-
-
-=
-
-
-( that_fst_roots_threads_prepare_waters )
-
-that_fst_roots_lakes_prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ( that_fst_roots_threads_prepare_waters )
-
-note_waters_lakes__dreams
+note_waters_lakes__sources_showed__bubbles
 
 
 =
@@ -4129,7 +4027,7 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_tests
+note_waters_lakes__showed__bubbles_lights
 
 
 =
@@ -4149,7 +4047,27 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_lakes__dreams_showings
+note_waters_lakes__showed__bubbles_threads
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_lakes__showed__bubbles_moons
 
 
 =
@@ -4185,7 +4103,90 @@ that_fst_roots_lakes_prepare;
 
 // ( that_fst_roots_threads_prepare_waters )
 
-note_waters_stones__bubbles_moons__show
+note_waters_lakes__sources_showed__dreams
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_lakes__showed__dreams_tests
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_lakes__showed__dreams_showings
+
+
+=
+
+
+( that_fst_roots_threads_prepare_waters )
+
+that_fst_roots_lakes_prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ( that_fst_roots_threads_prepare_waters )
+
+note_waters_stones__checked__bubbles_moons_showings
 
 
 =
