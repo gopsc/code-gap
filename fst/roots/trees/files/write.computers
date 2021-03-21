@@ -523,7 +523,7 @@ while
 
 ( void * ) "%s",
 
-( void * ) that_stones_contents
+( char * ) ( void * )  that_stones_contents
 
 
 );
