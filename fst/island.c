@@ -18,6 +18,12 @@
 #include "./roots/lakes/waves/resize.bases" // may stuck when it fail
 
 
+#include "./roots/lakes/forms/waters/prepare.bases"
+
+#include "./roots/lakes/forms/silts/prepare.bases"
+
+#include "./roots/lakes/forms/stones/prepare.bases"
+
 
 #include "./roots/lakes/waters/show.bases" // use __int8_t,  only decimal system,   maybe less than zero
 
