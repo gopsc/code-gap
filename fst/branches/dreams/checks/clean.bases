@@ -1,0 +1,80 @@
+
+
+#ifndef added___fst_branches__dreams_checks___clean
+
+#define added___fst_branches__dreams_checks___clean
+
+
+
+
+#include "./../../../roots/lakes/prepare.bases"
+
+
+#include "./../../../roots/lakes/forms/waters/prepare.bases"
+
+
+
+
+that_forms___fst_roots__lakes_forms_waters___prepare *
+
+that_ways___fst_branches__dreams_checks___clean
+
+(
+
+
+that_forms___fst_roots__lakes_forms_waters___prepare *
+
+that_waters_lakes__sources_cleaned
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+that_waters___fst_roots__lakes___prepare;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+#endif
+
+

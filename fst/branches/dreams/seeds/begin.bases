@@ -57,6 +57,13 @@
 #include "./../../../branches/dreams/fallings/begin.bases"
 
 
+#include "./../../../branches/dreams/checks/prepare.bases"
+
+#include "./../../../branches/dreams/checks/begin.bases"
+
+#include "./../../../branches/dreams/checks/clean.bases"
+
+
 #include "./../../../branches/dreams/tests/prepare.bases"
 
 #include "./../../../branches/dreams/tests/begin.bases"
@@ -1577,6 +1584,38 @@ that_waters_lakes__sources
 
 
 
+that_ways___fst_branches__dreams_checks___prepare
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes__sources
+
+
+)
+
+
+);
+
+
+
+
+
+
+
+
+
 that_ways___fst_branches__dreams_tests___prepare
 
 (
@@ -1817,6 +1856,38 @@ note_silts_switches__returns
 
 
 
+
+
+
+
+
+
+
+
+
+that_ways___fst_branches__dreams_checks___begin
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes__sources
+
+
+)
+
+
+);
 
 
 
@@ -2166,6 +2237,38 @@ note_silts_switches__returns
 
 
 
+
+
+
+
+
+
+
+
+
+that_ways___fst_branches__dreams_checks___clean
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+
+(
+
+
+( that_fst_roots_threads_prepare_waters )
+
+* ( that_fst_roots_threads_prepare_waters * )
+
+
+that_waters_lakes__sources
+
+
+)
+
+
+);
 
 
 

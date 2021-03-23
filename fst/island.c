@@ -149,6 +149,13 @@
 #include "./branches/dreams/fallings/begin.bases"
 
 
+#include "./branches/dreams/checks/prepare.bases"
+
+#include "./branches/dreams/checks/begin.bases"
+
+#include "./branches/dreams/checks/clean.bases"
+
+
 #include "./branches/dreams/tests/prepare.bases"
 
 #include "./branches/dreams/tests/begin.bases"
