@@ -1,8 +1,4 @@
 
-
-#ifdef bases
-
-
 #ifndef added___fst_branches__dreams_checks___clean
 
 #define added___fst_branches__dreams_checks___clean
@@ -15,7 +11,11 @@
 
 #include "./../../../roots/lakes/forms/waters/prepare.bases"
 
+
 #include "./../../../roots/lakes/forms/silts/prepare.bases"
+
+
+#include "./../../../roots/lakes/forms/stones/prepare.bases"
 
 
 
@@ -464,6 +464,203 @@ that_waters___fst_roots__lakes___prepare;
 
 
 
+fish_fst_branches_lakes_waves
+
+(
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+
+(
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+that_waters_lakes__sources_cleaned
+
+
+),
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"fst,branches,dreams,prepare",
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * * )
+
+& // ( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+
+note_waters_lakes__sources_cleaned__dreams
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_waters_lakes__sources_cleaned__dreams
+
+
+==
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+that_waters___fst_roots__lakes___prepare
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+// ( that_forms___fst_roots__lakes_forms_silts___prepare )
+
+* ( that_forms___fst_roots__lakes_forms_silts___prepare * )
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_silts_switches__returns
+
+
+=
+
+
+( that_forms___fst_roots__lakes_forms_silts___prepare )
+
+1;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if
+
+(
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_waters_lakes__sources_cleaned__dreams
+
+
+!=
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+that_waters___fst_roots__lakes___prepare
+
+
+)
+
+{
+
+
+
+
+
+
+
+
+
+// ( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_waters_lakes__sources_cleaned__dreams
+
+
+=
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+* ( that_forms___fst_roots__lakes_forms_waters___prepare * * )
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_waters_lakes__sources_cleaned__dreams;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -760,9 +957,6 @@ that_waters___fst_roots__lakes___prepare;
 }
 
 
-
-
-#endif
 
 
 #endif

@@ -1,8 +1,5 @@
 
 
-#ifdef bases
-
-
 #ifndef added___fst_branches__dreams_checks___prepare
 
 #define added___fst_branches__dreams_checks___prepare
@@ -17,6 +14,9 @@
 
 
 #include "./../../../roots/lakes/forms/silts/prepare.bases"
+
+
+#include "./../../../roots/lakes/forms/stones/prepare.bases"
 
 
 
@@ -1283,9 +1283,6 @@ that_waters___fst_roots__lakes___prepare;
 }
 
 
-
-
-#endif
 
 
 #endif
