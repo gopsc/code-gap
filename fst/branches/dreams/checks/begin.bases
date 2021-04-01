@@ -33,9 +33,6 @@
 //#include "./../../../branches/lakes/forms/stones/compare.bases"
 
 
-//#include "./../../../branches/selfcheck/lakes/judge-lights.bases"
-
-
 #include "./../../../branches/dreams/checks/forms/blank.bases"
 
 
@@ -50,7 +47,12 @@ that_ways___fst_branches__dreams_checks___begin
 
 that_forms___fst_roots__lakes_forms_waters___prepare *
 
-that_waters_lakes__sources_checked
+that_waters_lakes__sources_checked,
+
+
+that_forms___fst_roots__lakes_forms_waters___prepare *
+
+that_waters_lakes__sources_lights
 
 
 )
