@@ -156,6 +156,9 @@
 #include "./branches/dreams/checks/forms/blank.bases"
 
 
+//#include "./branches/dreams/deamons/begin.bases"
+
+
 #include "./branches/dreams/tests/prepare.bases"
 
 #include "./branches/dreams/tests/clean.bases"
@@ -169,7 +172,7 @@
 
 //#include "./branches/dreams/snows/begin.bases"
 
-//#include "./branches/dreams/snows/deamon.bases"
+//#include "./branches/dreams/snows/deamons.bases"
 
 
 #include "./branches/dreams/showings/prepare.bases"
@@ -179,7 +182,21 @@
 #include "./branches/dreams/showings/begin.bases"
 
 
+//#include "./branches/dreams/spiders/prepare.bases"
+
+//#include "./branches/dreams/spiders/clean.bases"
+
+//#include "./branches/dreams/spiders/begin.bases"
+
+//#include "./branches/dreams/spiders/deamons.bases"
+
+
 #include "./branches/dreams/fallings/begin.bases"
+
+
+
+
+#include "./stars-ship.c"
 
 
 
