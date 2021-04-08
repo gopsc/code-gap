@@ -3,3 +3,6 @@
 check before dog
 
 
+add a fish to control seeds if some wrongs in checks
+
+
