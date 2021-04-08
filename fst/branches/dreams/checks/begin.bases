@@ -2958,7 +2958,62 @@ note_silts_switches__returns_curtains
 
 
 
-;
+add_fst_branches_lakes_waves
+
+(
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * * )
+
+& // ( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+
+(
+
+
+// ( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_waters_lakes__scripts_checked
+
+
+),
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"stones",
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"no",
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"wrong"
+
+
+
+
+);
 
 
 
@@ -2968,7 +3023,62 @@ note_silts_switches__returns_curtains
 
 
 
-;
+add_fst_branches_lakes_waves
+
+(
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * * )
+
+& // ( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+
+(
+
+
+// ( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+note_waters_lakes__scripts_checked
+
+
+),
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"stones",
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"yes",
+
+
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+( that_forms___fst_roots__lakes_forms_stones___prepare * )
+
+
+"ok"
+
+
+
+
+);
 
 
 
