@@ -540,6 +540,33 @@ that_waters___fst_roots__lakes___prepare;
 
 
 
+that_forms___fst_roots__lakes_forms_waters___prepare *
+
+note_waters_stones__results_lights__comparings
+
+
+=
+
+
+( that_forms___fst_roots__lakes_forms_waters___prepare * )
+
+that_waters___fst_roots__lakes___prepare;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -603,42 +630,6 @@ that_waters___fst_roots__lakes___prepare;
 
 
 
-
-
-
-
-
-
-
-
-
-that_forms___fst_roots__lakes_forms_waters___prepare *
-
-note_waters_lakes__scripts_checked
-
-
-=
-
-
-( that_forms___fst_roots__lakes_forms_waters___prepare * )
-
-that_waters___fst_roots__lakes___prepare;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 that_forms___fst_roots__lakes_forms_waters___prepare *
 
 note_waters_stones__results_checked
@@ -666,9 +657,18 @@ that_waters___fst_roots__lakes___prepare;
 
 
 
+
+
+
+
+
+
+
+
+
 that_forms___fst_roots__lakes_forms_waters___prepare *
 
-note_waters_stones__results_lights__comparings
+note_waters_lakes__scripts_checked
 
 
 =
@@ -3584,5 +3584,4 @@ that_waters___fst_roots__lakes___prepare;
 
 
 #endif
-
 
