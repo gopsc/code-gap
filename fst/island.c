@@ -92,6 +92,8 @@
 
 #include "./branches/lakes/forms/stones/append.bases"
 
+#include "./branches/lakes/forms/stones/compare.bases"
+
 
 #include "./branches/lakes/bubbles/prepare.bases"
 
