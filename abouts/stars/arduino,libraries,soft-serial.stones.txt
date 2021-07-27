@@ -1,0 +1,16 @@
+
+
+,,
+
+#include <SoftwareSerial.h>
+
+
+
+
+
+
+,,
+
+SoftwareSerial that_serial ( white, blank );
+
+
