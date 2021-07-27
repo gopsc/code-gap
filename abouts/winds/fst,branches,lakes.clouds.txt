@@ -1,16 +1,5 @@
-
-
-add curtains processes control variables in begin, to close lakes that opened if something went wrong
-
-add blank checks in end
-
-
-
-
 add new lake type "locks"
 
 add new lake type "lakes"
 
 add new lake type "ways", ( or functions )
-
-

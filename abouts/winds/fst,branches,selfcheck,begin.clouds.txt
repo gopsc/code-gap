@@ -1,5 +1,0 @@
-
-
-move some pieces in "./fst/branches/dreams/seeds/begin.bases" to "./fst/branches/selfcheck/begin.bases":
-
-

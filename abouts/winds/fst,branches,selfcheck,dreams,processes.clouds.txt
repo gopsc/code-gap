@@ -1,5 +1,0 @@
-
-
-proceses and threads manager
-
-

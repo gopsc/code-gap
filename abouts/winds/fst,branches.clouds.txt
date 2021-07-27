@@ -25,11 +25,6 @@ add new lake type "lakes"
 
 
 
-add lake lock changings and curtain switches
-
-
-
-
 add blank threads lake return
 
 add lakes type check

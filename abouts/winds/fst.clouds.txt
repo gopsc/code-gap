@@ -1,10 +1,5 @@
 
 
-use pre-compile instructions to chose device
-
-
-
-
 ,change file name likes to "fst,*.bases.leaves.shadows.fst"
 
 
