@@ -1,0 +1,46 @@
+
+
+void *  erase_roots_winbond_twenty_five_q ()
+
+{
+	
+
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x06 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+   
+SPI . transfer ( 0xC7 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+
+
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while  (  SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return NULL;
+
+}
+

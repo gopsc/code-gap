@@ -1,0 +1,64 @@
+
+
+void *  read_roots_winbond_twenty_five_q
+
+( 
+
+word pageNumber,
+
+byte pageBuffer [],
+
+int length
+
+) 
+
+{
+	
+
+// 16-bit data
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );
+    
+  
+SPI . transfer ( 0x03 );
+    
+SPI . transfer (  ( pageNumber >> 8 )  &  0xFF  );
+    
+SPI . transfer ( pageNumber & 0xFF );
+    
+SPI . transfer ( 0 );
+    
+    
+for (  int i = 0;  i < length;  i++  )
+    
+{
+
+pageBuffer [ i ]  =  SPI . transfer ( 0 );
+
+}
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+    
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while ( SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return NULL;
+
+}
+

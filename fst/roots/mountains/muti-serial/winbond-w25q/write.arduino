@@ -1,0 +1,72 @@
+
+
+void *  write_roots_winbond_twenty_five_q
+
+(
+
+word pageNumber,
+
+char pageBuffer [],
+
+int length
+
+) 
+
+{
+	
+
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x06 );
+    
+    
+digitalWrite ( SS, HIGH );
+    
+digitalWrite ( SS, LOW );  
+    
+    
+SPI . transfer ( 0x02 );
+    
+SPI . transfer (  ( pageNumber >>  8 )  &  0xFF  );
+    
+SPI . transfer ( pageNumber & 0xFF );
+    
+    
+SPI . transfer ( 0 );
+    
+    
+for (  int i = 0;  i < length;  i++  )
+    
+{
+
+SPI . transfer (  byte ( pageBuffer [ i ] )  );
+
+}
+    
+    
+digitalWrite ( SS, HIGH );
+    
+    
+
+
+
+digitalWrite ( SS, LOW );
+
+    
+SPI . transfer ( 0x05 );
+    
+while (  SPI . transfer ( 0 )  &  0x01  );
+
+    
+digitalWrite ( SS, HIGH );
+
+
+
+
+return NULL;
+
+}
+
