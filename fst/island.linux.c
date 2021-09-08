@@ -1,6 +1,8 @@
 
 
-#define   that_circuits___island
+#define  that_circuits___island
+
+#define  that_circuits___test
 
 
 
@@ -16,23 +18,23 @@
 #include "./roots/mountains/prepare/poems-third"
 
 
-#include "./roots/mountains/prepare/arduino"
+//#include "./roots/mountains/prepare/arduino"
 
-#include "./roots/mountains/prepare/arduino-nano"
+//#include "./roots/mountains/prepare/arduino-nano"
 
-#include "./roots/mountains/prepare/arduino-micro"
+//#include "./roots/mountains/prepare/arduino-micro"
 
-#include "./roots/mountains/prepare/renesas-gadget-citrus"
+//#include "./roots/mountains/prepare/renesas-gadget-citrus"
 
 
-#include "./roots/mountains/prepare/sgs-thomson-micro-controllers"
+//#include "./roots/mountains/prepare/sgs-thomson-micro-controllers"
 
-#include "./roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo"
+//#include "./roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo"
 
 
 #include "./roots/mountains/prepare/linux"
 
-#include "./roots/mountains/prepare/linux-intel"
+//#include "./roots/mountains/prepare/linux-intel"
 
 #include "./roots/mountains/prepare/linux-raspberrypi"
 
@@ -255,6 +257,8 @@
 
 #include "./roots/flowers/begin.standards" // int main(), return 0
 
-#include "./roots/flowers/begin.arduino"
+//#include "./roots/flowers/begin.arduino"
+
+//#include "./roots/flowers/begin.renesas-gadget-citrus.arduino"
 
 
