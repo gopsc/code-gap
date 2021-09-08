@@ -1,0 +1,37 @@
+
+
+#ifndef added___fst_roots__mountains_prepare___sgs-thomson-32l011k4t6-nucleo
+
+#define added___fst_roots__mountains_prepare___sgs-thomson-32l011k4t6-nucleo
+
+
+
+
+//#define that_circuits___poems-third
+
+
+//#define that_circuits___arduino
+
+//#define that_circuits___arduino-nano
+
+//#define that_circuits___arduino-micro
+
+//#define that_circuits___renesas-gadget-citrus
+
+
+//#define that_circuits___sgs—thomson-micro-controllers
+
+#define that_circuits___sgs-thomson-32l011k4t6-nucleo
+
+
+//#define that_circuits___linux
+
+//#define that_circuits___linux-intel
+
+//#define that_circuits___linux-raspberrypi
+
+
+
+
+#endif
+
