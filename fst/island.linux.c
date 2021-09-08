@@ -1,10 +1,52 @@
 
 
+#define   that_circuits___island
+
+
+
 #include "./roots/threads/prepare.bases"
 
 #include "./roots/threads/begin.bases"
 
 #include "./roots/threads/end.bases"
+
+
+
+
+#include "./roots/mountains/prepare/poems-third"
+
+
+#include "./roots/mountains/prepare/arduino"
+
+#include "./roots/mountains/prepare/arduino-nano"
+
+#include "./roots/mountains/prepare/arduino-micro"
+
+#include "./roots/mountains/prepare/renesas-gadget-citrus"
+
+
+#include "./roots/mountains/prepare/sgs-thomson-micro-controllers"
+
+#include "./roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo"
+
+
+#include "./roots/mountains/prepare/linux"
+
+#include "./roots/mountains/prepare/linux-intel"
+
+#include "./roots/mountains/prepare/linux-raspberrypi"
+
+
+#include "./roots/mountains/soft-serial/prepare.arduno"
+
+
+#include "./roots/mountains/muti-serial/prepare.arduino"
+
+#include "./roots/mountains/muti-serial/winbond-w25q/erase.arduino"
+
+#include "./roots/mountains/muti-serial/winbond-w25q/read.arduino"
+
+#include "./roots/mountains/muti-serial/winbond-w25q/write.arduino"
 
 
 
@@ -212,5 +254,7 @@
 
 
 #include "./roots/flowers/begin.standards" // int main(), return 0
+
+#include "./roots/flowers/begin.arduino"
 
 
