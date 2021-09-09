@@ -1,0 +1,4 @@
+
+
+rm ./island.c
+
