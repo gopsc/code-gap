@@ -12,15 +12,6 @@
 
 
 
-#include "./fst/roots/threads/prepare.bases"
-
-#include "./fst/roots/threads/begin.bases"
-
-#include "./fst/roots/threads/end.bases"
-
-
-
-
 #include "./fst/roots/mountains/prepare/poems-third"
 
 
@@ -33,9 +24,13 @@
 #include "./fst/roots/mountains/prepare/renesas-gadget-citrus"
 
 
-#include "./fst/roots/mountains/prepare/sgs-thomson-micro-controllers"
+#include "./fst/roots/mountains/prepare/sgs-thomson-micro-
 
-#include "./fst/roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo"
+controllers"
+
+#include "./fst/roots/mountains/prepare/sgs-thomson-32l011k4t6-
+
+nucleo"
 
 
 #include "./fst/roots/mountains/prepare/linux"
@@ -50,22 +45,43 @@
 
 #include "./fst/roots/mountains/muti-serial/prepare.arduino"
 
-#include "./fst/roots/mountains/muti-serial/winbond-w25q/erase.arduino"
+#include "./fst/roots/mountains/muti-serial/winbond-
 
-#include "./fst/roots/mountains/muti-serial/winbond-w25q/read.arduino"
+w25q/erase.arduino"
 
-#include "./fst/roots/mountains/muti-serial/winbond-w25q/write.arduino"
+#include "./fst/roots/mountains/muti-serial/winbond-
+
+w25q/read.arduino"
+
+#include "./fst/roots/mountains/muti-serial/winbond-
+
+w25q/write.arduino"
+
+
+
+
+#include "./fst/roots/threads/prepare.bases"
+
+#include "./fst/roots/threads/begin.bases"
+
+#include "./fst/roots/threads/end.bases"
 
 
 
 #include "./fst/roots/lakes/prepare.bases"
 
 
-#include "./fst/roots/lakes/waves/create.bases" // may stuck when it fail
+#include "./fst/roots/lakes/waves/create.bases" // may stuck when 
 
-#include "./fst/roots/lakes/waves/free.bases" // may run out when it fail
+it fail
 
-#include "./fst/roots/lakes/waves/resize.bases" // may stuck when it fail
+#include "./fst/roots/lakes/waves/free.bases" // may run out when 
+
+it fail
+
+#include "./fst/roots/lakes/waves/resize.bases" // may stuck when 
+
+it fail
 
 
 #include "./fst/roots/lakes/forms/waters/prepare.bases"
@@ -75,7 +91,9 @@
 #include "./fst/roots/lakes/forms/stones/prepare.bases"
 
 
-#include "./fst/roots/lakes/waters/show.bases" // use __int8_t,  only decimal system,   maybe less than zero
+#include "./fst/roots/lakes/waters/show.bases" // use __int8_t,  
+
+only decimal system,   maybe less than zero
 
 #include "./fst/roots/lakes/waters/clean.bases" // use __int8_t
 
@@ -104,7 +122,9 @@
 
 #include "./fst/roots/trees/files/write.computers" // note_files
 
-#include "./fst/roots/trees/files/read.computers" // note_files; may read even wrong
+#include "./fst/roots/trees/files/read.computers" // note_files; 
+
+may read even wrong
 
 
 
@@ -129,7 +149,9 @@
 #include "./fst/branches/lakes/end.bases"
 
 
-#include "./fst/branches/lakes/waves/add.bases"  // support types include waters, silts and stones
+#include "./fst/branches/lakes/waves/add.bases"  // support types 
+
+include waters, silts and stones
 
 #include "./fst/branches/lakes/waves/drop.bases"
 
@@ -258,13 +280,19 @@
 
 
 
-#include "./fst/branches/flowers/begin.bases" // no blank check yet
+#include "./fst/branches/flowers/begin.bases" // no blank check 
+
+yet
 
 
-#include "./fst/roots/flowers/begin.standards" // int main(), return 0
+#include "./fst/roots/flowers/begin.standards" // int main(), 
+
+return 0
 
 //#include "./fst/roots/flowers/begin.arduino"
 
-//#include "./fst/roots/flowers/begin.renesas-gadget-citrus.arduino"
+//#include "./fst/roots/flowers/begin.renesas-gadget-
+
+citrus.arduino"
 
 
