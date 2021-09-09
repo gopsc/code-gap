@@ -1,58 +1,47 @@
 
 
-echo  ''                                                             >   './island.c'
-
-echo  '#define that_circuits___island'                               >>  './island.c'
-
-echo  ''                                                             >>  './island.c'
-
-echo  ''                                                             >>  './island.c'
+cat './fst/roots/mountains/prepare/poems-third'                     >>  ',.island.c'
 
 
+cat './fst/roots/mountains/prepare/arduino'                         >>  './island.c'
+
+cat './fst/roots/mountains/prepare/arduino-nano'                    >>  './island.c'
+
+cat './fst/roots/mountains/prepare/arduino-micro'                   >>  './island.c'
+
+cat './fst/roots/mountains/prepare/renesas-gadget-citrus'           >>  './island.c'
 
 
-cat  './fst/roots/mountains/prepare/poems-third'                     >>  ',.island.c'
+cat './fst/roots/mountains/prepare/sgs-thomson-micro-controllers'   >>  './island.c'
+
+cat './fst/roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo'   >>  './island.c'
 
 
-#cat './fst/roots/mountains/prepare/arduino'                         >>  './island.c'
+cat './fst/roots/mountains/prepare/linux'                           >>  './island.c'
 
-#cat ‘./fst/roots/mountains/prepare/arduino-nano’                    >>  ‘./island.c’
+cat './fst/roots/mountains/prepare/linux-intel'                     >>  './island.c'
 
-#cat './fst/roots/mountains/prepare/arduino-micro'                   >>  './island.c'
-
-#cat './fst/roots/mountains/prepare/renesas-gadget-citrus'           >>  './island.c'
+cat './fst/roots/mountains/prepare/linux-raspberrypi'               >>  './island.c'
 
 
-#cat ‘./fst/roots/mountains/prepare/sgs-thomson-micro-controllers’   >>  ‘./island.c’
-
-#cat ‘./fst/roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo’   >>  ‘./island.c’
+cat './fst/roots/mountains/soft-serial/prepare.arduno'              >>  './island.c'
 
 
-cat  './fst/roots/mountains/prepare/linux'                           >>  './island.c'
+cat './fst/roots/mountains/muti-serial/prepare.arduino'             >>  './island.c'
 
-#cat './fst/roots/mountains/prepare/linux-intel'                     >>  './island.c'
+cat './fst/roots/mountains/muti-serial/winbond-w25q/erase.arduino'  >>  './island.c'
 
-cat  './fst/roots/mountains/prepare/linux-raspberrypi'               >>  './island.c'
+cat './fst/roots/mountains/muti-serial/winbond-w25q/read.arduino'   >>  './island.c'
 
-
-cat  './fst/roots/mountains/soft-serial/prepare.arduno'              >>  './island.c'
-
-
-cat  './fst/roots/mountains/muti-serial/prepare.arduino'             >>  './island.c'
-
-cat  './fst/roots/mountains/muti-serial/winbond-w25q/erase.arduino'  >>  './island.c'
-
-cat  './fst/roots/mountains/muti-serial/winbond-w25q/read.arduino'   >>  './island.c'
-
-cat  './fst/roots/mountains/muti-serial/winbond-w25q/write.arduino'  >>  './island.c'
+cat './fst/roots/mountains/muti-serial/winbond-w25q/write.arduino'  >>  './island.c'
 
 
 
-cat  './fst/roots/threads/prepare'                                   >>  './island.c'
+cat './fst/roots/threads/prepare'                                   >>  './island.c'
 
-cat  './fst/roots/threads/begin'                                     >>  './island.c'
+cat './fst/roots/threads/begin'                                     >>  './island.c'
 
-cat  './fst/roots/threads/end'                                       >>  './island.c'
+cat './fst/roots/threads/end'                                       >>  './island.c'
 
 
 
@@ -261,6 +250,6 @@ cat  './fst/roots/threads/end'                                       >>  './isla
 
 #include "./roots/flowers/begin.standards" // int main(), return 0
 
-cat  './fst/roots/flowers/begin.arduino'  >>  './island.c'
+cat './fst/roots/flowers/begin.arduino'  >>  './island.c'
 
 
