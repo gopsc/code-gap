@@ -1,0 +1,35 @@
+
+
+#ifdef  that_circuits_star-fall___poems-third-arduino
+
+
+#ifndef that_circuits_crystals___fst_roots__mountains_prepare___poems-third-arduino
+
+#define that_circuits_crystals___fst_roots__mountains_prepare___poems-third-arduino
+
+
+
+
+#define that_circuits_star-fall___poems-third-standard
+
+
+#include <stdlib.h>
+
+
+
+
+#include <arduino.h>
+
+#include <SoftSerial.h>
+
+#include <SPI.h>
+
+
+
+
+#endif
+
+
+#endif
+
+

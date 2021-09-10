@@ -7,8 +7,6 @@ cat './fst/roots/mountains/prepare/poems-third-arduino.arduino'      >>  './isla
 #cat './fst/roots/mountains/prepare/poems-java.java'                  >>  './island.java'
 
 
-#cat './fst/roots/mountains/prepare/arduino.arduino'                  >>  './island.c'
-
 #cat './fst/roots/mountains/prepare/arduino-nano.arduino'             >>  './island.c'
 
 #cat './fst/roots/mountains/prepare/arduino-micro.arduino'            >>  './island.c'
@@ -16,16 +14,17 @@ cat './fst/roots/mountains/prepare/poems-third-arduino.arduino'      >>  './isla
 cat './fst/roots/mountains/prepare/renesas-gadget-citrus.arduino'    >>  './island.c'
 
 
-#cat './fst/roots/mountains/prepare/sgs-thomson-micro-controllers.c'  >>  './island.c'
+cat './fst/roots/mountains/prepare/science-technology-consulting-8g1k08a.c'  >>  './island.c'
+
+cat './fst/roots/mountains/prepare/science-technology-consulting-15f104w.c'  >>  './island.c'
+
 
 cat './fst/roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo.c'  >>  './island.c'
 
 
-#cat './fst/roots/mountains/prepare/linux'                           >>  './island.c'
-
 cat './fst/roots/mountains/prepare/linux-intel'                     >>  './island.c'
 
-#cat './fst/roots/mountains/prepare/linux-raspberrypi'               >>  './island.c'
+cat './fst/roots/mountains/prepare/linux-raspberrypi'               >>  './island.c'
 
 
 cat './fst/roots/mountains/soft-serial/prepare.arduno'              >>  './island.c'

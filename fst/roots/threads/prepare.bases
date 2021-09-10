@@ -1,13 +1,86 @@
 
 
+#ifdef that_circuits_crystals____test
+
+#ifdef that_circuits_star-fall___poems-third-standard
+
+
+
+
+#ifdef that_circuits_mountains___linux-intel
+
+
 #include <stdlib.h>
 
 
+#endif
 
 
-#ifndef added_fst_roots_threads_prepare
 
-#define added_fst_roots_threads_prepare
+
+#ifdef that_circuits_mountains___linux_raspberrypi
+
+
+#include <stdlib.h>
+
+
+#endif
+
+
+
+
+#endif
+
+
+#ifdef that_circuits_star-fall___poems-third-arduino
+
+
+
+
+#ifdef that_circuits_mountains___arduino-nano
+
+
+#include <stdlib.h>
+
+
+#endif
+
+
+
+
+#ifdef that_circuits_mountains___arduino-micro
+
+
+#include <stdlib.h>
+
+
+#endif
+
+
+
+
+#ifdef that_circuits_mountains___renesas-gadget-citrus
+
+
+#include <stdlib.h>
+
+
+#endif
+
+
+
+
+#endif
+
+
+#endif
+
+
+
+
+#ifndef that_circuits_crystals___fst_roots__threads___prepare
+
+#define that_circuits_crystals___fst_roots__threads___prepare
 
 
 

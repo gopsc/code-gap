@@ -1,21 +1,23 @@
 
 
-echo  ''                                >   './island.c'
+touch                                                './island.c'
+
+echo  ''                                         >>  './island.c'
 
 
-echo  ''                                >>  './island.c'
+#echo  ''                                         >>  './island.c'
 
-echo  '#define that_circuits___island'  >>  './island.c'
-
-
-echo  ''                                >>  './island.c'
-
-#echo '#define that_circuits___test'    >>  './island.c'
+#echo  '#define that_circuits_crystals___island'  >>  './island.c'
 
 
-echo  ''                                >>  './island.c'
+#echo  ''                                         >>  './island.c'
 
-echo  ''                                >>  './island.c'
+#echo '#define that_circuits_crystals___test'     >>  './island.c'
+
+
+echo  ''                                         >>  './island.c'
+
+echo  ''                                         >>  './island.c'
 
 
 

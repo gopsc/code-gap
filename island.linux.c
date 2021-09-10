@@ -1,8 +1,8 @@
 
 
-#define  that_circuits___island
+//#define  that_circuits_crystals___island
 
-#define  that_circuits___test
+//#define  that_circuits_crystals___test
 
 
 #define  that_circuits_mountains___intel-linux
@@ -12,7 +12,7 @@
 
 
 
-#include "./fst/roots/mountains/prepare/poems-third"
+#include "./fst/roots/mountains/prepare/poems-third-standard.c"
 
 
 //#include "./fst/roots/mountains/prepare/arduino"
@@ -29,7 +29,7 @@
 //#include "./fst/roots/mountains/prepare/sgs-thomson-32l011k4t6-nucleo"
 
 
-#include "./fst/roots/mountains/prepare/linux"
+//#include "./fst/roots/mountains/prepare/linux"
 
 #include "./fst/roots/mountains/prepare/linux-intel"
 
