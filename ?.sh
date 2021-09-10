@@ -13,7 +13,7 @@ if  $#  -eq  1
 then
 
 
-    if  "$1" = 'test'
+    if  $1 = 'test'
     then
 
 
@@ -21,13 +21,14 @@ then
         echo  '#define that_circuits_crystals___test'    >>  './?.fst'
 
         echo  ''                                         >>  './?.fst'
-        echo  "#define that_circuits_test___$2"          >>  './?.fst'
+        echo  '#define that_circuits_test___'$2          >>  './?.fst'
 
         echo  ''                                         >>  './?.fst'
         echo  ''                                         >>  './?.fst'
 
 
-    elif
+    elif  $1 ! = 'test'
+    then
 
 
         echo  ''                                         >>  './?.fst'
@@ -36,14 +37,15 @@ then
         echo  ''                                         >>  './?.fst'
         echo  ''                                         >>  './?.fst'
 
-        echo  "#define that_circuits_mountains___$2"     >>  './?.fst'
+        echo  '#define that_circuits_mountains___'$2     >>  './?.fst'
         echo  ''                                         >>  './?.fst'
 
-        echo  "#define that_circuits_starfall___$3"      >>  './?.fst'
+        echo  '#define that_circuits_starfall___'$3      >>  './?.fst'
         echo  ''                                         >>  './?.fst'
 
         echo  ''                                         >>  './?.fst'
         echo  ''                                         >>  './?.fst'
+
 
 
     fi
@@ -232,7 +234,10 @@ cat './fst/roots/threads/end'                                       >>  './islan
 
 #include "./roots/flowers/begin.standards" // int main(), return 0
 cat './fst/roots/flowers/begin.arduino'  >>  './island.c'
+
 EOF
+
+cat './fst/roots/flowers/scripts.poems-third'  >>  './?.fst'
 
 
 
@@ -283,3 +288,5 @@ rm ./?.py
 rm ./?
 
 EOF
+
+
