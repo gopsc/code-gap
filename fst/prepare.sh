@@ -20,15 +20,15 @@ echo  ''                                >>  './island.c'
 
 
 
-if [  $#  -gt  3  ];then
+if [  $#  -gt  1  ];then
 
 
-    echo  '#define that_circuits_mountains___$1'  >>  './island.c'
+    echo  '#define that_circuits_mountains___'$1  >>  './island.c'
 
     echo  ''                                      >>  './island.c'
 
 
-    echo  '#define that_circuits_star-fall___$2'  >>  './island.c'
+    echo  '#define that_circuits_star-fall___'$2  >>  './island.c'
 
     echo  ''                                      >>  './island.c'
 
