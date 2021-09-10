@@ -1,0 +1,6 @@
+
+
+ssh-keygen -t rsa
+
+vi ~/.git/config
+
