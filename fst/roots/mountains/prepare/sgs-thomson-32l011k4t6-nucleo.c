@@ -12,15 +12,15 @@
 
 
 
-__uint8_t  that_silts_mountains__lightlings  =  0;
+__uint8_t  that_silts_mountains__candles  =  0;
 
 
 
 
 #endif
 
-#endif
 
+#endif
 
 #endif
 
