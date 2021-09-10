@@ -14,7 +14,7 @@ not finished ...
 
 compile script is here
 
-./fst/?.sh
+./?.sh
 
 
 ,
