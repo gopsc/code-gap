@@ -5,46 +5,75 @@
 # , prepare
 
 
+
+
 touch                                                './?.fst'
+
 echo  ''                                         >>  './?.fst'
 
 
-if  $#  -eq  1
+
+
+if  [  $#  -eq  3  ]
+
 then
 
 
-    if  $1 = 'test'
+    if  [  $1  =  'test'  ]
+
     then
 
 
+
+
         echo  ''                                         >>  './?.fst'
+
         echo  '#define that_circuits_crystals___test'    >>  './?.fst'
 
+
         echo  ''                                         >>  './?.fst'
+
         echo  '#define that_circuits_test___'$2          >>  './?.fst'
 
+
         echo  ''                                         >>  './?.fst'
+
         echo  ''                                         >>  './?.fst'
 
 
-    elif  $1 ! = 'test'
+
+
+    elif  [  $1  =  'island'  ]
+
     then
 
 
+
+
         echo  ''                                         >>  './?.fst'
+
         echo  '#define that_circuits_crystals___island'  >>  './?.fst'
 
+
         echo  ''                                         >>  './?.fst'
+
         echo  ''                                         >>  './?.fst'
+
 
         echo  '#define that_circuits_mountains___'$2     >>  './?.fst'
+
         echo  ''                                         >>  './?.fst'
+
 
         echo  '#define that_circuits_starfall___'$3      >>  './?.fst'
+
+        echo  ''                                         >>  './?.fst'
+
+
         echo  ''                                         >>  './?.fst'
 
         echo  ''                                         >>  './?.fst'
-        echo  ''                                         >>  './?.fst'
+
 
 
 
@@ -53,22 +82,38 @@ then
 fi
 
 
+:<<EOF
+
 cat './abouts/prepare/c-scripts.c'                    >>  './?.fst'
+
 cat './abouts/prepare/c-unix.c'                       >>  './?.fst'
+
 #cat './abouts/prepare/c-windows.c'                    >>  './?.fst'
+
 
 #cat './abouts/prepare/shell-unix.sh'                  >>  './?.fst'
 
-cat './abouts/prepare/c++-scripts.cpp'         >>  './island.fst'
-:<<EOF
+
+cat './abouts/prepare/c++-scripts.cpp'         >>  './£¿.fst'
+
 #cat './fst/roots/mountains/prepare/c++-unix.cpp'            >>  './island.fst'
+
 #cat './fst/roots/mountains/prepare/c++-windows.cpp'         >>  './island.fst'
+
 cat './fst/roots/mountains/prepare/c++-arduino.cpp'         >>  './island.fst'
 
-#cat './fst/roots/mountains/prepare/java.java'               >>  './island.fst'
 
-cat './fst/roots/mountains/prepare/python3-scripts.py'      >>  './island.fst'
-cat './fst/roots/mountains/prepare/python3-raspberrypi.py'  >>  './island.fst'
+cat './fst/roots/mountains/prepare/visual-basic.vb'         >>  './?.vb'
+
+
+#cat './fst/roots/mountains/prepare/java.java'               >>  './?.java'
+
+
+cat './fst/roots/mountains/prepare/python3-scripts.py'      >>  './?.py'
+
+cat './fst/roots/mountains/prepare/python3-raspberrypi.py'  >>  './?.py'
+
+
 
 
 
@@ -103,6 +148,20 @@ cat './fst/roots/mountains/prepare/circuits/sgs-thomson-32l011k4t6-nucleo.c'    
 
 cat './fst/roots/mountains/prepare/circuits/linux-intel'                              >>  './island.c'
 cat './fst/roots/mountains/prepare/circuits/linux-raspberrypi'                        >>  './island.c'
+
+
+cat './fst/roots/mountains/prepare/circuits/windows.poems-third'                      >>  './?.fst'
+
+cat './fst/roots/mountains/prepare/circuits/windows.visual-basic'                     >>  './?.visual-basic'
+
+cat './fst/roots/mountains/prepare/circuits/windows-cygwin.poems-third'               >>  './?.fst'
+
+
+cat './fst/roots/mountains/prepare/circuits/android.java'                             >>  './?.java'
+
+cat './fst/roots/mountains/prepare/circuits/android-termux.poems-third'               >>  './?.fst'
+
+
 
 
 cat './fst/roots/mountains/soft-serial/prepare.arduno'              >>  './island.c'
