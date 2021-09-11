@@ -7,14 +7,81 @@
 
 
 
-touch                                                './?.fst'
+touch                               './?.fst'
 
-echo  ''                                         >>  './?.fst'
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
 
 
-touch                                                './?.c'
+echo  ', circuits,'             >>  './?.fst'
 
-echo  ''                                         >>  './?.c'
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'island'                  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, mountains,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'scripts'                 >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, star,fall,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'fst'                     >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+
+touch                               './?.c'
+
+echo  ''                        >>  './?.c'
 
 
 
@@ -33,7 +100,7 @@ then
 
         echo  ''                                         >>  './?.c'
 
-        echo  '#define that_circuits_crystals___test'    >>  './?.c'
+        echo  '#define that_circuits___test'             >>  './?.c'
 
 
         echo  ''                                         >>  './?.c'
@@ -57,7 +124,7 @@ then
 
         echo  ''                                         >>  './?.c'
 
-        echo  '#define that_circuits_crystals___island'  >>  './?.c'
+        echo  '#define that_circuits___island'           >>  './?.c'
 
 
         echo  ''                                         >>  './?.c'
@@ -129,6 +196,7 @@ cat './fst/roots/mountains/prepare/python3-raspberrypi.py'  >>  './?.py'
 
 
 
+
 cat './fst/roots/mountains/prepare/star-fall/poems-third-common.poems-third             >>  './?.fst'
 cat './fst/roots/mountains/prepare/star-fall/poems-third-origin.poems-third'            >>  './?.fst'
 cat './fst/roots/mountains/prepare/star-fall/poems-third-unix.poems-third'              >>  './?.fst'
@@ -141,6 +209,13 @@ cat './fst/roots/mountains/prepare/star-fall/poems-annotation-arduino.arduino'  
 //cat './fst/roots/mountains/prepare/starfall/shell-bash.shell'                          >>  './?.fst'
 //cat './fst/roots/mountains/prepare/starfall/shell-ash.shell'                           >>  './?.fst'
 
+EOF
+
+
+cat './fst/roots/mountains/prepare/circuits/scripts'                                  >>  './?.fst'
+
+
+:<<EOF
 
 #cat './fst/roots/mountains/prepare/circuits/arduino-nano.arduino'                     >>  './island.c'
 #cat './fst/roots/mountains/prepare/circuits/arduino-micro.arduino'                    >>  './island.c'
@@ -321,21 +396,24 @@ EOF
 
 
 
+#cat ./?.fst
+
+
 cp  ./?.fst  ./?.convert
 
 :<<EOF
 
-mv  ./?.convert  ./?.c
+cp  ./?.convert  ./?.c
 
-mv  ./?.convert  ./?.cpp
+cp  ./?.convert  ./?.cpp
 
-mv  ./?.convert  ./?.sh
+cp  ./?.convert  ./?.sh
 
-mv  ./?.convert  ./?.vb
+cp  ./?.convert  ./?.vb
 
-mv  ./?.convert  ./?.java
+cp  ./?.convert  ./?.java
 
-mv  ./?.convert  ./?.py
+cp  ./?.convert  ./?.py
 
 EOF
 
