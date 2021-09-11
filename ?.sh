@@ -154,10 +154,10 @@ then
 fi
 
 
+
+
+cat './abouts/prepare/c-scripts.c'                    >>  './?.c'
 :<<EOF
-
-cat './abouts/prepare/c-scripts.c'                    >>  './?.fst'
-
 cat './abouts/prepare/c-unix.c'                       >>  './?.fst'
 
 #cat './abouts/prepare/c-windows.c'                    >>  './?.fst'
