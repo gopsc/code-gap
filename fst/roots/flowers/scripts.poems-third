@@ -1,7 +1,12 @@
 
 
+#ifdef that_circuits_crystals___island
+
+
 int main ()
 
 {}
 
+
+#endif
 

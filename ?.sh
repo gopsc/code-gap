@@ -12,6 +12,11 @@ touch                                                './?.fst'
 echo  ''                                         >>  './?.fst'
 
 
+touch                                                './?.c'
+
+echo  ''                                         >>  './?.c'
+
+
 
 
 if  [  $#  -eq  3  ]
@@ -26,19 +31,19 @@ then
 
 
 
-        echo  ''                                         >>  './?.fst'
+        echo  ''                                         >>  './?.c'
 
-        echo  '#define that_circuits_crystals___test'    >>  './?.fst'
-
-
-        echo  ''                                         >>  './?.fst'
-
-        echo  '#define that_circuits_test___'$2          >>  './?.fst'
+        echo  '#define that_circuits_crystals___test'    >>  './?.c'
 
 
-        echo  ''                                         >>  './?.fst'
+        echo  ''                                         >>  './?.c'
 
-        echo  ''                                         >>  './?.fst'
+        echo  '#define that_circuits_test___'$2          >>  './?.c'
+
+
+        echo  ''                                         >>  './?.c'
+
+        echo  ''                                         >>  './?.c'
 
 
 
@@ -50,29 +55,29 @@ then
 
 
 
-        echo  ''                                         >>  './?.fst'
+        echo  ''                                         >>  './?.c'
 
-        echo  '#define that_circuits_crystals___island'  >>  './?.fst'
-
-
-        echo  ''                                         >>  './?.fst'
-
-        echo  ''                                         >>  './?.fst'
+        echo  '#define that_circuits_crystals___island'  >>  './?.c'
 
 
-        echo  '#define that_circuits_mountains___'$2     >>  './?.fst'
+        echo  ''                                         >>  './?.c'
 
-        echo  ''                                         >>  './?.fst'
-
-
-        echo  '#define that_circuits_starfall___'$3      >>  './?.fst'
-
-        echo  ''                                         >>  './?.fst'
+        echo  ''                                         >>  './?.c'
 
 
-        echo  ''                                         >>  './?.fst'
+        echo  '#define that_circuits_mountains___'$2     >>  './?.c'
 
-        echo  ''                                         >>  './?.fst'
+        echo  ''                                         >>  './?.c'
+
+
+        echo  '#define that_circuits_starfall___'$3      >>  './?.c'
+
+        echo  ''                                         >>  './?.c'
+
+
+        echo  ''                                         >>  './?.c'
+
+        echo  ''                                         >>  './?.c'
 
 
 
@@ -291,12 +296,21 @@ cat './fst/roots/threads/end'                                       >>  './islan
 
 #include "./branches/flowers/begin.bases" // no blank check yet
 
+EOF
+
+
+cat './fst/roots/flowers/scripts.poems-third'  >>  './?.c'
+
+:<<EOF
+
 #include "./roots/flowers/begin.standards" // int main(), return 0
+
 cat './fst/roots/flowers/begin.arduino'  >>  './island.c'
 
 EOF
 
-cat './fst/roots/flowers/scripts.poems-third'  >>  './?.fst'
+
+
 
 
 
@@ -304,13 +318,25 @@ cat './fst/roots/flowers/scripts.poems-third'  >>  './?.fst'
 #
 # , convert
 
-cp  ./?.fst  ./?.c
+
+
+
+cp  ./?.fst  ./?.convert
 
 :<<EOF
-cp  ./?.fst  ./?.cpp
-cp  ./?.fst  ./?.sh
-cp  ./?.fst  ./?.java
-cp  ./?.fst  ./?.py
+
+mv  ./?.convert  ./?.c
+
+mv  ./?.convert  ./?.cpp
+
+mv  ./?.convert  ./?.sh
+
+mv  ./?.convert  ./?.vb
+
+mv  ./?.convert  ./?.java
+
+mv  ./?.convert  ./?.py
+
 EOF
 
 
@@ -321,11 +347,17 @@ EOF
 # , compile
 
 
+
+
 cc   ./?.c  -o ./?
 
 :<<EOF
+
 c++  ./?.cpp  (-std=c++0x)   (-lm)   (-lpthead)   (-lasound)   (-lwiringpi)   -o ?
+
 EOF
+
+
 
 
 
@@ -335,14 +367,29 @@ EOF
 # , clean
 
 
+
+
 rm ./?.fst
+
+rm ./?.convert
+
+
 rm ./?.c
 
 :<<EOF
+
 rm ./?.cpp
+
 rm ./?.sh
+
+rm ./?.vb
+
 rm ./?.java
+
 rm ./?.py
+
+
+
 
 rm ./?
 
