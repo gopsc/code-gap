@@ -193,17 +193,18 @@ fi
 #cat ./?.fst
 
 
-cat './abouts/prepare/c-scripts.c'                    >>  './?.c'
+circuits_crystals___past=`cat './abouts/prepare/c-scripts.c'            |  tee -a   './?.c'`
 
-cat './abouts/prepare/c-unix.c'                       >>  './?.c'
+circuits_crystals___past=`cat './abouts/prepare/c-unix.c'               |  tee -a   './?.c'`
 
-#cat './abouts/prepare/c-windows.c'                    >>  './?.c'
-
-
-cat './abouts/prepare/shell-unix.sh'                  >>  './?.sh'
+circuits_crystals___past=`cat './abouts/prepare/c-windows.c'            |  tee -a   './?.c'`
 
 
-cat './abouts/prepare/c++-scripts.cpp'                >>  './?.c'
+circuits_crystals___past=`cat './abouts/prepare/shell-unix.sh'          |  tee -a   './?.sh'`
+
+
+circuits_crystals___past=`cat './abouts/prepare/c_plus_scripts.cpp'     |  tee -a   './?.c'  './?.cpp'`
+
 :<<EOF
 #cat './fst/roots/mountains/prepare/c++-unix.cpp'            >>  './island.fst'
 

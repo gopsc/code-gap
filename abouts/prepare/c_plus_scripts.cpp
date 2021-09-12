@@ -11,7 +11,7 @@
 #ifdef that_circuits___island
 
 
-#ifdef that_circuits_starfall___c++-scripts
+#ifdef that_circuits_starfall___c_plus_scripts
 
 
 
