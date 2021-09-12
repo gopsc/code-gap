@@ -137,17 +137,17 @@ then
 
         circuits_crystals___forgiven=`echo  ''                                  | tee -a  './?.c' './?.cpp'`
 
-        circuits_crystals___past=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
+        circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
 
 
-        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+        circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
-        circuits_crystals___past=`echo  '#define that_circuits_test___'$2   | tee -a   './?.c' './?.cpp'`
+        circuits_crystals___forgiven=`echo  '#define that_circuits_test___'$2   | tee -a   './?.c' './?.cpp'`
 
 
-        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+        circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
-        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+        circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
 
 
@@ -193,21 +193,21 @@ fi
 #cat ./?.fst
 
 
-circuits_crystals___past=`cat './abouts/prepare/c-scripts.c'            |  tee -a   './?.c'`
+circuits_crystals___forgiven=`cat './abouts/prepare/c-scripts.c'            |  tee -a   './?.c'`
 
-circuits_crystals___past=`cat './abouts/prepare/c-unix.c'               |  tee -a   './?.c'`
+circuits_crystals___forgiven=`cat './abouts/prepare/c-unix.c'               |  tee -a   './?.c'`
 
-circuits_crystals___past=`cat './abouts/prepare/c-windows.c'            |  tee -a   './?.c'`
-
-
-circuits_crystals___past=`cat './abouts/prepare/shell-unix.sh'          |  tee -a   './?.sh'`
+circuits_crystals___forgiven=`cat './abouts/prepare/c-windows.c'            |  tee -a   './?.c'`
 
 
-circuits_crystals___past=`cat './abouts/prepare/c_plus_scripts.cpp'     |  tee -a   './?.c'  './?.cpp'`
+circuits_crystals___forgiven=`cat './abouts/prepare/shell-unix.sh'          |  tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/c_plus_scripts.cpp'     |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/c_plus_unix.cpp'        |  tee -a   './?.c'  './?.cpp'`
 
 :<<EOF
-#cat './fst/roots/mountains/prepare/c++-unix.cpp'            >>  './island.fst'
-
 #cat './fst/roots/mountains/prepare/c++-windows.cpp'         >>  './island.fst'
 
 cat './fst/roots/mountains/prepare/c++-arduino.cpp'         >>  './island.fst'
@@ -257,7 +257,7 @@ cat './fst/roots/mountains/prepare/star-fall/poems-annotation-arduino.arduino'  
 EOF
 
 
-cat './fst/roots/mountains/prepare/circuits/scripts'                                  >>  './?.fst'
+cat './fst/roots/prepare/circuits/scripts'                                  >>  './?.fst'
 
 
 :<<EOF
