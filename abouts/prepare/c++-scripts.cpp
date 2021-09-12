@@ -16,12 +16,12 @@
 
 
 
-#define that_circuits_starfall___poems-third-common
+#define that_circuits_starfall___poems_third_common
 
-#define that_circuits_starfall___poems-third-origin
+#define that_circuits_starfall___poems_third_origin
 
 
-#define that_circuits_starfall___poems-annotation-common
+#define that_circuits_starfall___poems_annotation_common
 
 
 
