@@ -203,13 +203,13 @@ circuits_crystals___forgiven=`cat './abouts/prepare/c-windows.c'            |  t
 circuits_crystals___forgiven=`cat './abouts/prepare/shell-unix.sh'          |  tee -a   './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './abouts/prepare/c_plus_scripts.cpp'     |  tee -a   './?.c'  './?.cpp'`
+circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-scripts.cpp'     |  tee -a   './?.c'  './?.cpp'`
 
-circuits_crystals___forgiven=`cat './abouts/prepare/c_plus_unix.cpp'        |  tee -a   './?.c'  './?.cpp'`
+circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-unix.cpp'        |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-windows.cpp'     |  tee -a   './?.c'  './?.cpp'`
 
 :<<EOF
-#cat './fst/roots/mountains/prepare/c++-windows.cpp'         >>  './island.fst'
-
 cat './fst/roots/mountains/prepare/c++-arduino.cpp'         >>  './island.fst'
 
 
@@ -246,13 +246,18 @@ cat './fst/roots/mountains/prepare/star-fall/poems-third-unix.poems-third'      
 
 cat './fst/roots/mountains/prepare/star-fall/poems-annotation-common.poems-annotation'  >>  './?.fst'
 
+cat './fst/roots/mountains/prepare/star-fall/poems-annotation-origin.poems-annotation'  >>  './?.fst'
+
+cat './fst/roots/mountains/prepare/star-fall/poems-annotation-windows.poems-annotation'  >>  './?.fst'
 
 cat './fst/roots/mountains/prepare/star-fall/poems-annotation-arduino.arduino'          >>  './?.fst'
 
 
-//cat './fst/roots/mountains/prepare/starfall/shell-bash.shell'                          >>  './?.fst'
+cat './fst/roots/mountains/prepare/star-fall/shell-unix.shell'                          >>  './?.fst'
 
-//cat './fst/roots/mountains/prepare/starfall/shell-ash.shell'                           >>  './?.fst'
+cat './fst/roots/mountains/prepare/starfall/shell-bash.shell'                          >>  './?.fst'
+
+cat './fst/roots/mountains/prepare/starfall/shell-ash.shell'                           >>  './?.fst'
 
 EOF
 
