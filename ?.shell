@@ -135,19 +135,19 @@ then
 
 
 
-        echo  ''                                         >>  './?.c'
+        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
-        echo  '#define that_circuits___test'             >>  './?.c'
-
-
-        echo  ''                                         >>  './?.c'
-
-        echo  '#define that_circuits_test___'$2          >>  './?.c'
+        circuits_crystals___past=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
 
 
-        echo  ''                                         >>  './?.c'
+        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
-        echo  ''                                         >>  './?.c'
+        circuits_crystals___past=`echo  '#define that_circuits_test___'$2   | tee -a   './?.c' './?.cpp'`
+
+
+        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+        circuits_crystals___past=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
 
 
