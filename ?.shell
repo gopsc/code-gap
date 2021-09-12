@@ -209,10 +209,10 @@ circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-unix.cpp'        |  t
 
 circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-windows.cpp'     |  tee -a   './?.c'  './?.cpp'`
 
+circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-arduino.cpp'     |  tee -a   './?.c'  './?.cpp'`
+
+
 :<<EOF
-cat './fst/roots/mountains/prepare/c++-arduino.cpp'         >>  './island.fst'
-
-
 cat './fst/roots/mountains/prepare/visual-basic.vb'         >>  './?.vb'
 
 
