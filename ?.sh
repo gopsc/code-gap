@@ -153,21 +153,21 @@ then
 
 fi
 
-
+cat ./?.fst
 
 
 cat './abouts/prepare/c-scripts.c'                    >>  './?.c'
+
+cat './abouts/prepare/c-unix.c'                       >>  './?.c'
+
+#cat './abouts/prepare/c-windows.c'                    >>  './?.c'
+
+
+cat './abouts/prepare/shell-unix.sh'                  >>  './?.sh'
+
+
+cat './abouts/prepare/c++-scripts.cpp'                >>  './?.c'
 :<<EOF
-cat './abouts/prepare/c-unix.c'                       >>  './?.fst'
-
-#cat './abouts/prepare/c-windows.c'                    >>  './?.fst'
-
-
-#cat './abouts/prepare/shell-unix.sh'                  >>  './?.fst'
-
-
-cat './abouts/prepare/c++-scripts.cpp'         >>  './£¿.fst'
-
 #cat './fst/roots/mountains/prepare/c++-unix.cpp'            >>  './island.fst'
 
 #cat './fst/roots/mountains/prepare/c++-windows.cpp'         >>  './island.fst'
@@ -374,6 +374,8 @@ cat './fst/roots/threads/end'                                       >>  './islan
 EOF
 
 
+cat './fst/roots/flowers/scripts'              >>  './?.fst'
+
 cat './fst/roots/flowers/scripts.poems-third'  >>  './?.c'
 
 :<<EOF
@@ -396,7 +398,6 @@ EOF
 
 
 
-#cat ./?.fst
 
 
 cp  ./?.fst  ./?.convert
