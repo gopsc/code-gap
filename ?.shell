@@ -10,37 +10,22 @@
 touch                               './?.fst'
 
 
-
-
-
 touch                               './?.c'
-
-echo  ''                        >>  './?.c'
-
 
 touch                               './?.cpp'
 
-echo  ''                        >>  './?.cpp'
-
-
 touch                               './?.sh'
-
-echo  ''                        >>  './?.sh'
-
 
 touch                               './?.java'
 
-echo  ''                        >>  './?.java'
-
-
 touch                               './?.vb'
-
-echo  ''                        >>  './?.vb'
-
 
 touch                               './?.py'
 
-echo  ''                        >>  './?.py'
+
+circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'` 
+
+
 
 
 
@@ -50,9 +35,118 @@ if  [  $#  -eq  3  ]
 then
 
 
-    if  [  $1  =  'test'  ]
+if  [  $1  =  'test'  ]
 
-    then
+then
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ', circuits,'             |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  'island'                  |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ', circuits, test,'       |  tee -a  './?.fst'`
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'scripts'                 >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, star,fall,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'fst'                     >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  '#define that_circuits_test___'$2   | tee -a   './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+
+
+
+#fi
+
+
+elif  [  $1  =  'island'  ]
+
+then
 
 
 
@@ -139,144 +233,40 @@ echo  ''                        >>  './?.fst'
 
 
 
-        circuits_crystals___forgiven=`echo  ''                                  | tee -a  './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
-        circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  '#define that_circuits___island'        | tee -a  './?.c' './?.cpp'`
 
 
-        circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
-        circuits_crystals___forgiven=`echo  '#define that_circuits_test___'$2   | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
 
-        circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  '#define that_circuits_mountains___'$2  | tee -a  './?.c' './?.cpp'`
 
-        circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
 
+circuits_crystals___forgiven=`echo  '#define that_circuits_starfall___'$3   | tee -a  './?.c' './?.cpp'`
 
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
-    elif  [  $1  =  'island'  ]
 
-    then
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
 
 
-echo  ''                        >>  './?.fst'
 
-echo  ''                        >>  './?.fst'
-
-
-echo  ', circuits,'             >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  'island'                  >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-echo  ', circuits, mountains,'  >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  'scripts'                 >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-echo  ', circuits, star,fall,'  >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  'fst'                     >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-
-
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-        circuits_crystals___forgiven=`echo  '#define that_circuits___island'        | tee -a  './?.c' './?.cpp'`
-
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-
-        circuits_crystals___forgiven=`echo  '#define that_circuits_mountains___'$2  | tee -a  './?.c' './?.cpp'`
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-
-        circuits_crystals___forgiven=`echo  '#define that_circuits_starfall___'$3   | tee -a  './?.c' './?.cpp'`
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-        circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
-
-
-
-
-    fi
+fi
 
 fi
 
 #cat ./?.fst
+
+
 
 
 circuits_crystals___forgiven=`cat './abouts/prepare/c-scripts.c'            |  tee -a   './?.c'`
