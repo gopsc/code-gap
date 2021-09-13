@@ -9,6 +9,54 @@
 
 touch                               './?.fst'
 
+
+
+
+
+touch                               './?.c'
+
+echo  ''                        >>  './?.c'
+
+
+touch                               './?.cpp'
+
+echo  ''                        >>  './?.cpp'
+
+
+touch                               './?.sh'
+
+echo  ''                        >>  './?.sh'
+
+
+touch                               './?.java'
+
+echo  ''                        >>  './?.java'
+
+
+touch                               './?.vb'
+
+echo  ''                        >>  './?.vb'
+
+
+touch                               './?.py'
+
+echo  ''                        >>  './?.py'
+
+
+
+
+if  [  $#  -eq  3  ]
+
+then
+
+
+    if  [  $1  =  'test'  ]
+
+    then
+
+
+
+
 echo  ''                        >>  './?.fst'
 
 echo  ''                        >>  './?.fst'
@@ -91,50 +139,6 @@ echo  ''                        >>  './?.fst'
 
 
 
-touch                               './?.c'
-
-echo  ''                        >>  './?.c'
-
-
-touch                               './?.cpp'
-
-echo  ''                        >>  './?.cpp'
-
-
-touch                               './?.sh'
-
-echo  ''                        >>  './?.sh'
-
-
-touch                               './?.java'
-
-echo  ''                        >>  './?.java'
-
-
-touch                               './?.vb'
-
-echo  ''                        >>  './?.vb'
-
-
-touch                               './?.py'
-
-echo  ''                        >>  './?.py'
-
-
-
-
-if  [  $#  -eq  3  ]
-
-then
-
-
-    if  [  $1  =  'test'  ]
-
-    then
-
-
-
-
         circuits_crystals___forgiven=`echo  ''                                  | tee -a  './?.c' './?.cpp'`
 
         circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
@@ -155,6 +159,88 @@ then
     elif  [  $1  =  'island'  ]
 
     then
+
+
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits,'             >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'island'                  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, mountains,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'scripts'                 >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, star,fall,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  'fst'                     >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
 
 
 
