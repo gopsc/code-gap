@@ -97,13 +97,13 @@ circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fs
 circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
 
-echo  ', circuits, star,fall,'  >>  './?.fst'
+circuits_crystals___forgiven=`echo  ', circuits, star,fall,'  |  tee -a  './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
-echo  ','                       >>  './?.fst'
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
 echo  $3                        >>  './?.fst'
 
@@ -267,26 +267,29 @@ fi
 
 
 
-circuits_crystals___forgiven=`cat './abouts/prepare/c-scripts.c'            |  tee -a   './?.c'`
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-scripts.c'         |  tee -a   './?.c'`
 
-circuits_crystals___forgiven=`cat './abouts/prepare/c-unix.c'               |  tee -a   './?.c'`
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-unix.c'            |  tee -a   './?.c'`
 
-circuits_crystals___forgiven=`cat './abouts/prepare/c-windows.c'            |  tee -a   './?.c'`
-
-
-circuits_crystals___forgiven=`cat './abouts/prepare/shell-unix.sh'          |  tee -a   './?.sh'`
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-windows.c'         |  tee -a   './?.c'`
 
 
-circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-scripts.cpp'     |  tee -a   './?.c'  './?.cpp'`
-
-circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-unix.cpp'        |  tee -a   './?.c'  './?.cpp'`
-
-circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-windows.cpp'     |  tee -a   './?.c'  './?.cpp'`
-
-circuits_crystals___forgiven=`cat './abouts/prepare/c-plus-arduino.cpp'     |  tee -a   './?.c'  './?.cpp'`
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/shell-unix.sh'       |  tee -a   './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './abouts/prepare/visual-basic.vb'        |  tee -a   './?.vb'`
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-scripts.cpp'  |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-unix.cpp'     |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-windows.cpp'  |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-arduino.cpp'  |  tee -a   './?.c'  './?.cpp'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/shell-unix.sh'    |  tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/visual-basic.vb'  |  tee -a   './?.vb'`
 
 
 :<<EOF
@@ -410,10 +413,16 @@ circuits_crystals___forgiven=`cat  './fst/roots/lakes/prepare'             |  te
 
 #include "./roots/lakes/forms/waters/prepare.bases"
 
+
 #include "./roots/lakes/forms/silts/prepare.bases"
+
 
 #include "./roots/lakes/forms/stones/prepare.bases"
 
+EOF
+
+circuits_crystals___forgiven=`cat  './fst/roots/lakes/forms/stones/convert.shell'                                       |  tee -a   './?.sh'`
+:<<EOF
 
 #include "./roots/lakes/waters/show.bases" // use __int8_t,  only decimal system,   maybe less than zero
 

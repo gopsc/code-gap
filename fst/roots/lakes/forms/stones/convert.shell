@@ -1,0 +1,90 @@
+
+
+if [  !  $circuits_crystals___fst_roots__lakes_forms_stones___convert  ]; then
+
+circuits_crystals___fst_roots__lakes_forms_stones___convert='yes'
+
+
+
+
+
+
+if [  $circuits___test ]; then
+
+
+if [  $circuits_test___fst_roots__lakes_forms_stones___convert  ]; then
+
+
+
+
+if [  !  $circuits___island  ]; then
+
+
+circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+
+fi
+
+
+
+
+if [  $circuits___island  ]; then
+
+if [  $circuits_starfall___shell_unix  ]; then
+
+
+
+
+function ways___fst_roots__lakes_forms_stones___convert {
+
+
+
+
+echo 'convert'
+
+
+
+
+}
+
+
+
+
+fi
+
+
+fi
+
+
+if [  $circuits___test  ]; then
+
+
+if [  $circuits_test___fst_roots__lakes_forms_stones___convert  ]; then
+
+
+
+
+unset $circuits___island
+
+
+
+
+fi
+
+
+fi
+
+
+
+
+fi
+
+
