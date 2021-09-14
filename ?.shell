@@ -105,7 +105,7 @@ circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fs
 
 circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
-echo  $3                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  $3                        |  tee -a  './?.fst'`
 
 echo  ''                        >>  './?.fst'
 
