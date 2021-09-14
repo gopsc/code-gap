@@ -50,7 +50,13 @@ if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
-echo ''
+that_stones___test\
+\
+=\
+`that_ways___fst_roots__trees_files___snakes ./test.sh`
+
+
+echo $that_stones___test
 
 
 

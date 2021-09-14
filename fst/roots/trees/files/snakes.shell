@@ -70,7 +70,7 @@ function that_ways___fst_roots__trees_files___snakes ()
 
 that_silts_lengths___snakes=''
 
-that_silts_lengths___snakes=$0
+that_silts_lengths___snakes=$#
 
 
 that_stones_names___snakes=''
@@ -90,7 +90,7 @@ that_stones_results___snakes=''
 
 
 
-if [  that_silts_lengths___snakes  -eq  1  ]; then
+if [  $that_silts_lengths___snakes  -eq  1  ]; then
 
 
 
@@ -128,7 +128,14 @@ unset  that_stones_names___snakes
 
 
 
-return  $that_stones_results___snakes
+#echo $that_stones_results___snakes  >  ./big-seas/test.sh
+
+
+
+
+#that_ways___fst_roots__trees_files___snakes=
+
+echo "$that_stones_results___snakes"
 
 
 }
@@ -149,7 +156,7 @@ fi
 if [  $that_circuits___test  ]; then
 
 
-if [  $that_circuits_test___fst_roots__trees_files___snakes  ]; then
+if [  $that_circuits_test___fst_roots__trees___snakes  ]; then
 
 
 

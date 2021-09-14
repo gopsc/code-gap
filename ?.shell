@@ -127,8 +127,12 @@ echo  ''                        >>  './?.fst'
 
 
 
-circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
 
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
@@ -160,6 +164,17 @@ circuits_crystals___forgiven=`echo  ''                                  | tee -a
 
 
 circuits_crystals___forgiven=`echo  "that_circuits_test___"$2"=''"      | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_starfall___"$3"=''"  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
 
 
@@ -255,7 +270,16 @@ echo  ''                        >>  './?.fst'
 
 
 
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
 circuits_crystals___forgiven=`echo  '#define that_circuits___island'        | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
 
 circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
@@ -267,15 +291,63 @@ circuits_crystals___forgiven=`echo  '#define that_circuits_mountains___'$2  | te
 
 circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
 
 circuits_crystals___forgiven=`echo  '#define that_circuits_starfall___'$3   | tee -a  './?.c' './?.cpp'`
 
 circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
 
 circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
 circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  "that_circuits___"$1"='yes'"        | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_mountains___"$2"='yes'"  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_starfall___"$3"='yes'"  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                     | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                     | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
 
 
@@ -724,7 +796,7 @@ EOF
 
 ./?
 
-bash ./?.sh  island  android-termux shell_unix
+bash ./?.sh 
 
 
 
