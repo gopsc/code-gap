@@ -28,6 +28,17 @@ fi
 
 
 
+if [  !  $circuits_starfall___shell_unix  ]; then
+
+
+circuits_starfall___shell_unix='yes'
+
+
+fi
+
+
+
+
 fi
 
 
@@ -46,11 +57,11 @@ if [  $circuits_starfall___shell_unix  ]; then
 function ways___fst_roots__lakes_forms_stones___convert {
 
 
-
+:<<EOF
 
 echo 'convert'
 
-
+EOF
 
 
 }

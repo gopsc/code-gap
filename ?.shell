@@ -142,6 +142,28 @@ circuits_crystals___forgiven=`echo  ''                                  | tee -a
 
 
 
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  "that_circuits___"$1"=''"           | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_test___"$2"=''"      | tee -a   './?.sh'`
+
+
+
+
 #fi
 
 
@@ -262,7 +284,23 @@ fi
 
 fi
 
+
+
+
 #cat ./?.fst
+#
+#
+#cat ./?.c
+#
+#cat ./?.cpp
+#
+#cat ./?.sh
+#
+#cat ./?.java
+#
+#cat ./?.vb
+#
+#cat ./?.py
 
 
 
@@ -452,6 +490,12 @@ circuits_crystals___forgiven=`cat  './fst/roots/lakes/forms/stones/convert.shell
 
 #include "./roots/trees/files/write.computers" // note_files
 
+EOF
+
+circuits_crystals___forgiven=`cat  './fst/roots/trees/files/snakes.shell'  |  tee -a  './?.sh'`
+
+:<<EOF
+
 #include "./roots/trees/files/read.computers" // note_files; may read even wrong
 
 
@@ -551,7 +595,7 @@ circuits_crystals___forgiven=`cat  './fst/roots/lakes/forms/stones/convert.shell
 #include "./branches/dreams/checks/forms/blank.bases"
 
 
-//#include "./branches/dreams/deamons/begin.bases"
+/#include "./branches/dreams/deamons/begin.bases"
 
 
 #include "./branches/dreams/tests/prepare.bases"
@@ -608,7 +652,10 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'              | 
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'  |  tee -a  './?.c' './?.cpp'`
 
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'        |  tee -a  './?.sh'`
+
 :<<EOF
+
 #include "./roots/flowers/begin.standards" // int main(), return 0
 
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'        |  tee -a './?.cpp'`
@@ -639,9 +686,9 @@ cp  ./?.convert  ./?.cpp
 
 cp  ./?.convert  ./?.sh
 
-cp  ./?.convert  ./?.vb
-
 cp  ./?.convert  ./?.java
+
+cp  ./?.convert  ./?.vb
 
 cp  ./?.convert  ./?.py
 
@@ -672,6 +719,20 @@ EOF
 
 # , ilyz
 #
+# , test
+
+
+./?
+
+bash ./?.sh  island  android-termux shell_unix
+
+
+
+
+
+
+# , ilyz
+#
 # , clean
 
 
@@ -688,13 +749,11 @@ rm ./?.cpp
 
 rm ./?.sh
 
-rm ./?.vb
-
 rm ./?.java
 
+rm ./?.vb
+
 rm ./?.py
-
-
 
 
 #rm ./?
