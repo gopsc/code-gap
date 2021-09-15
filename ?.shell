@@ -132,7 +132,7 @@ circuits_crystals___forgiven=`echo  ''                                      | te
 circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
 
 
-circuits_crystals___forgiven=`echo  '#define that_circuits___test'      | tee -a   './?.c' './?.cpp'`
+circuits_crystals___forgiven=`echo  '#define that_circuits___'$1        | tee -a   './?.c' './?.cpp'`
 
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
 
@@ -726,13 +726,13 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'  | 
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'        |  tee -a  './?.sh'`
 
-:<<EOF
 
-#include "./roots/flowers/begin.standards" // int main(), return 0
+#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'    |  tee -a  './?.c' './?.cpp'`
 
-#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'        |  tee -a './?.cpp'`
+#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'        |  tee -a  './?.cpp'`
 
-EOF
+
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'          |  tee -a  './?.sh'`
 
 
 
@@ -749,6 +749,8 @@ EOF
 
 
 cp  ./?.fst  ./?.convert
+
+#cat ./?.c
 
 :<<EOF
 
