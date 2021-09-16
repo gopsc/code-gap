@@ -727,6 +727,9 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'  | 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'        |  tee -a  './?.sh'`
 
 
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/cain.shell'           |  tee -a  './?.sh'`
+
+
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'    |  tee -a  './?.c' './?.cpp'`
 
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'        |  tee -a  './?.cpp'`
@@ -750,7 +753,23 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'          | 
 
 cp  ./?.fst  ./?.convert
 
-#cat ./?.c
+
+:<<EOF
+
+cp  ./?.fst.c     ./?.convert.c
+
+cp  ./?.fst.cpp   ./?.convert.cpp
+
+cp  ./?.fst.sh    ./?.convert.sh
+
+cp  ./?.fst.java  ./?.convert.java
+
+cp  ./?.fst.vb    ./?.convert.vb
+
+cp  ./?.fst.py    ./?.convert.py
+
+EOF
+
 
 :<<EOF
 

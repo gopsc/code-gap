@@ -48,33 +48,17 @@ if [  $that_circuits___island  ]; then
 if [  $that_circuits_starfall___shell_unix  ]; then
 
 
-
-
-
-
-
-:<<EOF
-
-that_stones___test\
-\
-=\
-\
-`that_ways___fst_roots__trees___snakes ./test.sh`
-
-
-echo $that_stones___test
-
-EOF
-
-
-
-
-
+echo ''
 
 
 fi
 
 
 fi
+
+
+
+
+#
 
 
