@@ -1,0 +1,35 @@
+
+
+:<<EOF
+
+rm ./?.fst.convert
+
+EOF
+
+
+rm ./?.fst
+
+
+rm ./?.c
+
+rm ./?.cpp
+
+
+#rm ./?.sh
+
+
+rm ./?.java
+
+
+rm ./?.vb
+
+rm ./?.py
+
+
+:<<EOF
+
+rm ./?.temporary
+
+EOF
+
+

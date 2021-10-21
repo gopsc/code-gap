@@ -1,0 +1,19 @@
+
+
+cc   ./?.c  -o  ./?.temporary
+
+:<<EOF
+
+c++  ./?.cpp/
+
+(-std=c++0x)/
+(-lm)/
+(-lpthead)/
+(-lasound)/
+(-lwiringpi)/
+
+-o  ./?.temporary
+
+EOF
+
+

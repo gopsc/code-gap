@@ -16,7 +16,7 @@ not finished ...
 
 compile script is here
 
-./?.sh
+./?.shell
 
 
 ,

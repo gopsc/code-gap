@@ -1,0 +1,436 @@
+
+
+
+
+if  [  -f  './?.fst.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.fst.temporary'`
+
+fi
+
+
+
+
+if  [  -f  './?.c.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.c.temporary'`
+
+fi
+
+
+
+
+touch                               './?.fst'
+
+
+touch                               './?.c'
+
+touch                               './?.cpp'
+
+
+touch                               './?.sh'
+
+
+touch                               './?.java'
+
+
+touch                               './?.vb'
+
+touch                               './?.py'
+
+
+
+
+
+
+circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'`
+
+circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'`
+
+
+
+
+if  [  $#  -eq  3  ]
+
+then
+
+
+if  [  $1  =  'test'  ]
+
+then
+
+
+
+
+circuits_crystals___forgiven=`echo  ', circuits,'             |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  $1                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ', circuits, test,'       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  $2                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ', circuits, star,fall,'  |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  $3                        |  tee -a  './?.fst'`
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  '#define that_circuits___'$1        | tee -a   './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  '#define that_circuits_test___'$2   | tee -a   './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.c' './?.cpp'`
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  "that_circuits___"$1"=''"           | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_test___"$2"=''"      | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_starfall___"$3"=''"  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+
+#fi
+
+
+elif  [  $1  =  'island'  ]
+
+then
+
+
+
+
+echo  ', circuits,'             >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  $1                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, mountains,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  $2                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ', circuits, star,fall,'  >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  $3                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+echo  ','                       >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+echo  ''                        >>  './?.fst'
+
+echo  ''                        >>  './?.fst'
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  '#define that_circuits___island'        | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  '#define that_circuits_mountains___'$2  | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  '#define that_circuits_starfall___'$3   | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a  './?.c' './?.cpp'`
+
+
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  "that_circuits___"$1"='yes'"        | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_mountains___"$2"='yes'"  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                      | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  "that_circuits_starfall___"$3"='yes'"  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                     | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                     | tee -a   './?.sh'`
+
+
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+
+
+
+
+fi
+
+fi
+
+
+
+
+#cat ./?.fst
+#
+#
+#cat ./?.c
+#
+#cat ./?.cpp
+#
+#
+#cat ./?.sh
+#
+#cat ./?.java
+#
+#
+#cat ./?.vb
+#
+#cat ./?.py
+
+
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-scripts.c'         |  tee -a   './?.c'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-unix.c'            |  tee -a   './?.c'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-windows.c'         |  tee -a   './?.c'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/shell-unix.sh'       |  tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-scripts.cpp'  |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-unix.cpp'     |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-windows.cpp'  |  tee -a   './?.c'  './?.cpp'`
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/c-plus-arduino.cpp'  |  tee -a   './?.c'  './?.cpp'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/shell-unix.sh'    |  tee -a   './?.sh'`
+
+
+circuits_crystals___forgiven=`cat './abouts/prepare/star-fall/visual-basic.vb'  |  tee -a   './?.vb'`
+
+
+:<<EOF
+
+#cat './fst/roots/mountains/prepare/java.java'               >>  './?.java'
+
+
+cat './fst/roots/mountains/prepare/python3-scripts.py'      >>  './?.py'
+
+cat './fst/roots/mountains/prepare/python3-raspberrypi.py'  >>  './?.py'
+
+
+EOF
+
+

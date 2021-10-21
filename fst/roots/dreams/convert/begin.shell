@@ -1,0 +1,65 @@
+
+
+:<<EOF
+
+cp  ./?.fst.temporary                ./?.fst.convert
+
+
+:<<EOF
+
+cp  ./?.fst.convert                  ./?.poems-third.convert
+
+cp  ./?.fst.convert                  ./?.poems-annotetion.convert
+
+
+cp  ./?.fst.convert                  ./?.shell.convert
+
+cp  ./?.fst.convert                  ./?.java.convert
+
+
+cp  ./?.fst.convert                  ./?.visual-basic.convert
+
+cp  ./?.fst.convert                  ./?.python.convert
+
+EOF
+
+:<<EOF
+
+cp  ./?.poems-third.temporary        ./?.poems-third.convert
+
+cp  ./?.poems-annotetion.temporary   ./?.poems-annotetion.convert
+
+
+cp  ./?.shell.temporary              ./?.shell.convert
+
+
+cp  ./?.java.temporary               ./?.java.convert
+
+
+cp  ./?.visual-basic.temporary       ./?.visual-basic.convert
+
+cp  ./?.python.temporary             ./?.python.convert
+
+EOF
+
+
+:<<EOF
+
+cp  ./?.poems-third.convert          ./?.c
+
+cp  ./?.poems-annotetion.convert     ./?.cpp
+
+
+cp  ./?.shell.convert                ./?.sh
+
+
+cp  ./?.java.convert                 ./?.java
+
+
+cp  ./?.visual-basic.convert         ./?.vb
+
+cp  ./?.python.convert               ./?.py
+
+EOF
+
+
