@@ -330,52 +330,54 @@ circuits_crystals___forgiven=''
 
 
 
+if  [  -f  './?.sh'  ]; then
 
-
-if  [  -f  './?.fst.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.fst.temporary'`
+circuits_crystals___forgiven=`rm './?.sh'`
 
 fi
 
 
 
 
-if  [  -f  './?.c.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.c.temporary'`
-
-fi
+circuits_crystals___forgiven=`touch   './?.fst'`
 
 
+circuits_crystals___forgiven=`touch   './?.c'`
+
+circuits_crystals___forgiven=`touch   './?.cpp'`
 
 
-touch                               './?.fst'
+circuits_crystals___forgiven=`touch   './?.sh'`
+
+circuits_crystals___forgiven=`touch   './?.java'`
 
 
-touch                               './?.c'
+circuits_crystals___forgiven=`touch   './?.vb'`
 
-touch                               './?.cpp'
-
-
-touch                               './?.sh'
-
-
-touch                               './?.java'
-
-
-touch                               './?.vb'
-
-touch                               './?.py'
+circuits_crystals___forgiven=`touch   './?.py'`
 
 
 
 
 
 
-circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'`
-
-circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'`
+circuits_crystals___forgiven=   \
+                                \
+`                               \
+                                \
+seq           2  |              \
+xargs -i echo '' |              \
+tee   -a                        \
+                                \
+'./?.fst'                       \
+'./?.c'                         \
+'./?.cpp'                       \
+'./?.sh'                        \
+'./?.java'                      \
+'./?.vb'                        \
+'./?.py'                        \
+                                \
+`
 
 
 
@@ -1113,6 +1115,7 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'          | 
 
 cp  ./?.fst.temporary                ./?.fst.convert
 
+EOF
 
 :<<EOF
 
@@ -1141,7 +1144,6 @@ cp  ./?.poems-annotetion.temporary   ./?.poems-annotetion.convert
 
 cp  ./?.shell.temporary              ./?.shell.convert
 
-
 cp  ./?.java.temporary               ./?.java.convert
 
 
@@ -1160,7 +1162,6 @@ cp  ./?.poems-annotetion.convert     ./?.cpp
 
 
 cp  ./?.shell.convert                ./?.sh
-
 
 cp  ./?.java.convert                 ./?.java
 
@@ -1200,11 +1201,68 @@ EOF
 
 
 
+
+
+if  [  -f  './?.fst.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.fst.temporary'`
+
+fi
+
+
+
+
+if  [  -f  './?.poems-third.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.poems-third.temporary'`
+
+fi
+
+
+
+
 :<<EOF
+
+rm ./?.fst.temporary
+
+
+rm ./?.poems-third.temporary
+
+rm ./?.poems-annotetion.temporary
+
+
+rm ./?.shell.temporary
+
+rm ./?.java.temporary
+
+
+rm ./?.visual-basic.temporary
+
+rm ./?.python.temporary
+
+
+
 
 rm ./?.fst.convert
 
+
+rm ./?.poems-third.convert
+
+rm ./?.poems-annotetion.convert
+
+
+rm ./?.shell.convert
+
+rm ./?.java.convert
+
+
+rm ./?.visual-basic.convert
+
+rm ./?.python.convert
+
 EOF
+
+
 
 
 rm ./?.fst
@@ -1217,7 +1275,6 @@ rm ./?.cpp
 
 #rm ./?.sh
 
-
 rm ./?.java
 
 
@@ -1226,11 +1283,15 @@ rm ./?.vb
 rm ./?.py
 
 
-:<<EOF
 
-rm ./?.temporary
 
-EOF
+
+
+if  [  -f  './?.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.temporary'`
+
+fi
 
 
 

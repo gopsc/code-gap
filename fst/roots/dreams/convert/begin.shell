@@ -4,6 +4,7 @@
 
 cp  ./?.fst.temporary                ./?.fst.convert
 
+EOF
 
 :<<EOF
 
@@ -32,7 +33,6 @@ cp  ./?.poems-annotetion.temporary   ./?.poems-annotetion.convert
 
 cp  ./?.shell.temporary              ./?.shell.convert
 
-
 cp  ./?.java.temporary               ./?.java.convert
 
 
@@ -51,7 +51,6 @@ cp  ./?.poems-annotetion.convert     ./?.cpp
 
 
 cp  ./?.shell.convert                ./?.sh
-
 
 cp  ./?.java.convert                 ./?.java
 

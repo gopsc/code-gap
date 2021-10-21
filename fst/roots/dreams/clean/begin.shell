@@ -1,10 +1,67 @@
 
 
+
+
+if  [  -f  './?.fst.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.fst.temporary'`
+
+fi
+
+
+
+
+if  [  -f  './?.poems-third.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.poems-third.temporary'`
+
+fi
+
+
+
+
 :<<EOF
+
+rm ./?.fst.temporary
+
+
+rm ./?.poems-third.temporary
+
+rm ./?.poems-annotetion.temporary
+
+
+rm ./?.shell.temporary
+
+rm ./?.java.temporary
+
+
+rm ./?.visual-basic.temporary
+
+rm ./?.python.temporary
+
+
+
 
 rm ./?.fst.convert
 
+
+rm ./?.poems-third.convert
+
+rm ./?.poems-annotetion.convert
+
+
+rm ./?.shell.convert
+
+rm ./?.java.convert
+
+
+rm ./?.visual-basic.convert
+
+rm ./?.python.convert
+
 EOF
+
+
 
 
 rm ./?.fst
@@ -17,7 +74,6 @@ rm ./?.cpp
 
 #rm ./?.sh
 
-
 rm ./?.java
 
 
@@ -26,10 +82,14 @@ rm ./?.vb
 rm ./?.py
 
 
-:<<EOF
 
-rm ./?.temporary
 
-EOF
+
+
+if  [  -f  './?.temporary'  ]; then
+
+circuits_crystals___forgiven=`rm './?.temporary'`
+
+fi
 
 

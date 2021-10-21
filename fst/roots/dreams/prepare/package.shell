@@ -1,55 +1,5 @@
 
 
-
-
-if  [  -f  './?.fst.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.fst.temporary'`
-
-fi
-
-
-
-
-if  [  -f  './?.c.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.c.temporary'`
-
-fi
-
-
-
-
-touch                               './?.fst'
-
-
-touch                               './?.c'
-
-touch                               './?.cpp'
-
-
-touch                               './?.sh'
-
-
-touch                               './?.java'
-
-
-touch                               './?.vb'
-
-touch                               './?.py'
-
-
-
-
-
-
-circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'`
-
-circuits_crystals___forgiven=`echo ''  |  tee -a  './?.fst' './?.c' './?.cpp' './?.sh' './?.java' './?.vb' './?.py'`
-
-
-
-
 if  [  $#  -eq  3  ]
 
 then

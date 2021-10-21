@@ -3,3 +3,55 @@
 circuits_crystals___forgiven=''
 
 
+
+
+if  [  -f  './?.sh'  ]; then
+
+circuits_crystals___forgiven=`rm './?.sh'`
+
+fi
+
+
+
+
+circuits_crystals___forgiven=`touch   './?.fst'`
+
+
+circuits_crystals___forgiven=`touch   './?.c'`
+
+circuits_crystals___forgiven=`touch   './?.cpp'`
+
+
+circuits_crystals___forgiven=`touch   './?.sh'`
+
+circuits_crystals___forgiven=`touch   './?.java'`
+
+
+circuits_crystals___forgiven=`touch   './?.vb'`
+
+circuits_crystals___forgiven=`touch   './?.py'`
+
+
+
+
+
+
+circuits_crystals___forgiven=   \
+                                \
+`                               \
+                                \
+seq           2  |              \
+xargs -i echo '' |              \
+tee   -a                        \
+                                \
+'./?.fst'                       \
+'./?.c'                         \
+'./?.cpp'                       \
+'./?.sh'                        \
+'./?.java'                      \
+'./?.vb'                        \
+'./?.py'                        \
+                                \
+`
+
+
