@@ -2,6 +2,21 @@
 
 
 
+that_circuits___island='yes'
+
+
+
+
+that_circuits_mountains___android_termux='yes'
+
+
+that_circuits_starfall___shell_unix='yes'
+
+
+
+
+
+
 if [  $that_circuits___test  ]; then
 
 
