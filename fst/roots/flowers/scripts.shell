@@ -1,8 +1,8 @@
 
 
-if [  !  $that_circuits_crystals___fst_roots__flowers___begin  ]; then
+if [  !  $that_circuits_crystals___fst_roots__flowers___scripts  ]; then
 
-that_circuits_crystals___fst_roots__flowers___begin='yes'
+that_circuits_crystals___fst_roots__flowers___scripts='yes'
 
 
 if [  $that_circuits_starfall___shell_unix  ]; then
@@ -15,7 +15,7 @@ if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
-function  that_ways___Fst_roots__flowers___begin
+function  that_ways___fst_roots__flowers___scripts
 
 {
 
