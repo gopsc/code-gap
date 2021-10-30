@@ -19,6 +19,11 @@ function  that_ways___Fst_roots__flowers___begin
 
 
 
+
+
+
+
+
 note_silts_switches='no'
 
 
@@ -116,7 +121,23 @@ $note_silts_switches='yes'           \
 
 
 
+if [  $note_silts_switches  ==  'no'  ]; then
+
+
+that_circuits_crystals___forgiven=''
+
+
+fi
+
+
+
+
+elif [  $note_silts_switches  ==  'yes'  ]; then
+
+
 if [  $that_circuits___test  ]; then
+
+
 
 
 that_ways___fst_branches__flowers___scripts  \
@@ -152,6 +173,7 @@ fi
 
 
 
+fi
 
 
 
@@ -164,6 +186,20 @@ fi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
