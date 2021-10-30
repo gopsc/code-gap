@@ -7,17 +7,33 @@ that_circuits_crystals___fst_roots__flowers___begin='yes'
 
 
 
+note_silts___tenderness=$#
+
+
+note_stones___tenderness=$@
+
+
+
+
+
+
+
 
 
 if [  $that_circuits___test  ]; then
 
 
-that_ways___fst_branches__flowers___scripts  $@
+that_ways___fst_branches__flowers___scripts  \
+                                             \
+                                             \
+$note_silts___tenderness                     \
+                                             \
+$note_stones___tenderness                    \
+                                             \
+;                                            \
 
 
 fi
-
-
 
 
 
@@ -25,10 +41,20 @@ fi
 if [  $that_circuits___island  ]; then
 
 
-that_ways___fst_branches__flowers___cain  $@
+that_ways___fst_branches__flowers___cain  \
+                                          \
+                                          \
+$note_silts___tenderness                  \
+                                          \
+$note_stones___tenderness                 \
+                                          \
+;                                         \
 
 
 fi
+
+
+
 
 
 
