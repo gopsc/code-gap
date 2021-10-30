@@ -94,9 +94,9 @@ echo '$note_silts___tenderness'  |   \
 grep  [^0-9]    >    /dev/null   &&  \
                                      \
                                      \
-$note_silts_switches='no'        ||  \
+note_silts_switches='no'         ||  \
                                      \
-$note_silts_switches='yes'           \
+note_silts_switches='yes'            \
                                      \
 ;                                    \
 
