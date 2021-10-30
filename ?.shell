@@ -515,7 +515,7 @@ circuits_crystals___forgiven=`echo  ''                                  | tee -a
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
 
-circuits_crystals___forgiven=`echo  "that_circuits___"$1"=''"           | tee -a   './?.sh'`
+circuits_crystals___forgiven=`echo  "that_circuits___"$1"='yes'"        | tee -a   './?.sh'`
 
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
@@ -527,18 +527,18 @@ circuits_crystals___forgiven=`echo  ''                                  | tee -a
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
 
-circuits_crystals___forgiven=`echo  "that_circuits_test___"$2"=''"      | tee -a   './?.sh'`
+circuits_crystals___forgiven=`echo  "that_circuits_test___"$2"='yes'"   | tee -a   './?.sh'`
 
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
 circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
 
 
-circuits_crystals___forgiven=`echo  "that_circuits_starfall___"$3"=''"  | tee -a   './?.sh'`
+circuits_crystals___forgiven=`echo  "that_circuits_starfall___"$3"='yes'"  | tee -a   './?.sh'`
 
-circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+circuits_crystals___forgiven=`echo  ''                                     | tee -a   './?.sh'`
 
-circuits_crystals___forgiven=`echo  ''                                  | tee -a   './?.sh'`
+circuits_crystals___forgiven=`echo  ''                                     | tee -a   './?.sh'`
 
 
 
@@ -553,19 +553,19 @@ then
 
 
 
-echo  ', circuits,'             >>  './?.fst'
+circuits_crystals___forgiven=`echo  ', circuits,'             | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ','                       >>  './?.fst'
+circuits_crystals___forgiven=`echo  ','                       | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  $1                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  $1                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
 echo  ','                       >>  './?.fst'
@@ -724,6 +724,10 @@ fi
 
 
 #cat ./?.fst
+#
+#that_ways___fst_roots__dreams_convertions___begin ()
+#
+#that_ways___fst_roots__dreams_clean___convertions ()
 #
 #
 #cat ./?.c
@@ -1104,16 +1108,16 @@ circuits_crystals___forgiven=`cat './fst/roots/dreams/clean/begin.shell'   |  te
 
 EOF
 
-#include "./branches/flowers/begin.bases" // no blank check yet
+#circuits_crystals___forgiven=`cat  './fst/branches/flowers/begin.poems-third` |  tee -a  './?.poems-third' // no blank check yet
 
 circuits_crystals___forgiven=`cat  './fst/branches/flowers/cain.shell'        |  tee -a  './?.sh'`
+
+circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.shell'     |  tee -a  './?.sh'`
 
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'              |  tee -a  './?.fst'`
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'  |  tee -a  './?.c' './?.cpp'`
-
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'        |  tee -a  './?.sh'`
 
 
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'    |  tee -a  './?.c' './?.cpp'`
@@ -1318,12 +1322,13 @@ that_circuits_crystals___fst_branches__flowers___cain='yes'
 
 
 
-
-
 if [  $that_circuits___test  ]; then
 
 
 if [  $that_circuits_test___fst_branches__flowers___cain  ]; then
+
+
+
 
 
 
@@ -1352,12 +1357,15 @@ fi
 
 
 
+
+
+
+
+
 fi
 
 
 fi
-
-
 
 
 
@@ -1387,7 +1395,39 @@ function that_ways___fst_branches__flowers___cain ()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 echo ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1415,15 +1455,15 @@ fi
 
 
 
-
-
-
-
-
 if  [  $that_circuits___test  ]; then
 
 
 if  [  $that_circuits_test___fst_branches__flowers___cain  ]; then
+
+
+
+
+
 
 
 
@@ -1436,15 +1476,29 @@ unset  $that_circuits_starfall___shell_unix
 
 
 
-fi
 
-
-fi
 
 
 
 
 fi
+
+
+fi
+
+
+
+
+fi
+
+
+
+
+
+if [  ! $that_circuits_crystals___fst_branches__flowers___scripts  ]; then
+
+
+that_circuits_crystals___fst_branches__flowers___scripts='yes'
 
 
 
@@ -1452,7 +1506,10 @@ fi
 if [  $that_circuits___test  ]; then
 
 
-if [  $that_circuits_test___fst_roots__flowers___scripts  ]; then
+if [  $that_circuits_test___fst_branches__flowers___scripts  ]; then
+
+
+
 
 
 
@@ -1481,12 +1538,15 @@ fi
 
 
 
+
+
+
+
+
 fi
 
 
 fi
-
-
 
 
 
@@ -1497,9 +1557,77 @@ if [  $that_circuits___island  ]; then
 if [  $that_circuits_starfall___shell_unix  ]; then
 
 
+
+
+
+
+
+
+
+function that_ways___fst_branches__flowers___scripts ()
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 echo ''
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 fi
 
 
@@ -1508,8 +1636,41 @@ fi
 
 
 
-#
+if [ $that_circuits___test ]; then
 
+
+if [ $that_circuits_starfall___shell_unix ]; then
+
+
+
+
+
+
+
+
+
+unset  $that_circuits___island
+
+
+unset  $that_circuits_test___fst_branches__flowers___scripts
+
+
+
+
+
+
+
+
+
+fi
+
+
+fi
+
+
+
+
+fi
 
 
 
