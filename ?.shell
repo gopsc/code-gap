@@ -471,22 +471,22 @@ circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fs
 
 circuits_crystals___forgiven=`echo  $3                        |  tee -a  './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
-echo  ''                        >>  './?.fst'
-
-
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
 
-echo  ''                        >>  './?.fst'
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
 
 
@@ -568,68 +568,68 @@ circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fs
 circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
-echo  ','                       >>  './?.fst'
+circuits_crystals___forgiven=`echo  ','                       | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
-
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
-echo  ', circuits, mountains,'  >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ','                       >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
-
-echo  $2                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ', circuits, mountains,'  | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
+circuits_crystals___forgiven=`echo  ','                       | tee -a   './?.fst'`
 
-echo  ', circuits, star,fall,'  >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  $2                        | tee -a   './?.fst'`
 
-echo  ','                       >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
-
-echo  $3                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ','                        | tee -a   './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ','                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  $3                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+
+
+circuits_crystals___forgiven=`echo  ','                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        | tee -a   './?.fst'`
 
 
 
@@ -946,24 +946,26 @@ circuits_crystals___forgiven=`cat  './fst/roots/trees/files/snakes.shell'  |  te
 EOF
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/prepare/begin.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/prepare/begin.shell'       |  tee -a  './?.sh'`
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/prepare/package.shell'   |  tee -a  './?.sh'`
-
-
-circuits_crystals___forgiven=`cat './fst/roots/dreams/package/begin.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/prepare/package.shell'     |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/convert/begin.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/package/begin.shell'       |  tee -a  './?.sh'`
+
+circuits_crystals___forgiven=`cat './fst/roots/dreams/package/annotetion.shell'  |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/compile/begin.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/convert/begin.shell'       |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/test/begin.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/compile/begin.shell'       |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/clean/begin.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/test/begin.shell'          |  tee -a  './?.sh'`
+
+
+circuits_crystals___forgiven=`cat './fst/roots/dreams/clean/begin.shell'         |  tee -a  './?.sh'`
 
 
 :<<EOF
@@ -1108,24 +1110,30 @@ circuits_crystals___forgiven=`cat './fst/roots/dreams/clean/begin.shell'   |  te
 
 EOF
 
-#circuits_crystals___forgiven=`cat  './fst/branches/flowers/begin.poems-third` |  tee -a  './?.poems-third' // no blank check yet
+#circuits_crystals___forgiven=`cat  './fst/branc hes/flowers/begin.poems-third`   |  tee -a  './?.poems-third' // no blank check yet
 
-circuits_crystals___forgiven=`cat  './fst/branches/flowers/cain.shell'        |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat  './fst/branches/flowers/cain.shell'           |  tee -a  './?.sh'`
 
-circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.shell'     |  tee -a  './?.sh'`
+#circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts'              |  tee -a  './?.fst'`
 
+circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.poems-third'  |  tee -a  './?.c' './?.cpp'`
 
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'              |  tee -a  './?.fst'`
-
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'  |  tee -a  './?.c' './?.cpp'`
-
-
-#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'    |  tee -a  './?.c' './?.cpp'`
-
-#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'        |  tee -a  './?.cpp'`
+circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.shell'        |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'          |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts   '              |  tee -a  './?.fst'`
+
+#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'       |  tee -a  './?.c' './?.cpp'`
+
+#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'           |  tee -a  './?.cpp'`
+
+
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'              |  tee -a  './?.sh'`
+
+
+
+
+
 
 
 
@@ -1929,14 +1937,5 @@ fi
 
 
 fi
-
-
-
-
-
-
-that_ways___fst_roots__flowers___begin
-
-
 
 
