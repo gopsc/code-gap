@@ -1140,7 +1140,7 @@ that_circuits_crystals___forgiven=`echo  ''                                     
 that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
 
 
-that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___begin'  |  tee -a  ‘./?.sh’`
+that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___begin'  |  tee -a  './?.sh'`
 
 that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
 
@@ -1702,6 +1702,9 @@ if [  !  $that_circuits_crystals___fst_roots__flowers___begin  ]; then
 that_circuits_crystals___fst_roots__flowers___begin='yes'
 
 
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
 
 
 
@@ -1906,6 +1909,25 @@ fi
 
 
 
+unset  $that_silts___tenderness
+
+
+unset  $that_stones___tenderness
+
+
+unset  $that_silts_switches
+
+
+
+
+
+
+
+
+
+fi
+
+
 fi
 
 
@@ -1913,6 +1935,7 @@ fi
 
 
 
+that_ways___fst_roots__flowers___begin
 
 
 
