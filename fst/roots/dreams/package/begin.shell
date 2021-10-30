@@ -334,7 +334,7 @@ circuits_crystals___forgiven=`cat  './fst/branches/flowers/cain.shell'          
 circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.shell'        |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts   '              |  tee -a  './?.fst'`
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'                 |  tee -a  './?.fst'`
 
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'       |  tee -a  './?.c' './?.cpp'`
 
