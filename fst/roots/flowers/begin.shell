@@ -20,6 +20,81 @@ note_stones___tenderness=$@
 
 
 
+
+
+
+
+
+
+
+if [  ! $note_silts___tenderness  ]; then
+
+
+fi
+
+
+
+
+
+
+
+
+
+if  [  ! $note_stones___tenderness  ]; then
+
+
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo '$note_silts___tenderness'  |   \
+                                     \
+grep  [^0-9]    >    /dev/null   &&  \
+                                     \
+                                     \
+$note_silts_switches='no'        ||  \
+                                     \
+$note_silts_switches='yes'           \
+                                     \
+;                                    \
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if [  $that_circuits___test  ]; then
 
 
@@ -52,6 +127,22 @@ $note_stones___tenderness                 \
 
 
 fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
