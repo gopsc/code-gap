@@ -7,6 +7,21 @@ that_circuits_crystals___fst_roots__flowers___begin='yes'
 
 
 
+
+
+
+
+
+function  that_ways___Fst_roots__flowers___begin
+
+{
+
+
+
+
+note_silts_switches='no'
+
+
 note_silts___tenderness=$#
 
 
@@ -30,6 +45,9 @@ note_stones___tenderness=$@
 if [  ! $note_silts___tenderness  ]; then
 
 
+note_silts_switches='no'
+
+
 fi
 
 
@@ -41,6 +59,9 @@ fi
 
 
 if  [  ! $note_stones___tenderness  ]; then
+
+
+note_silts_switches='no'
 
 
 fi
