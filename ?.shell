@@ -1116,20 +1116,18 @@ circuits_crystals___forgiven=`cat  './fst/branches/flowers/cain.shell'          
 
 #circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts'              |  tee -a  './?.fst'`
 
-circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.poems-third'  |  tee -a  './?.c' './?.cpp'`
+#circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.poems-third'  |  tee -a  './?.c' './?.cpp'`
 
 circuits_crystals___forgiven=`cat  './fst/branches/flowers/scripts.shell'        |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts   '              |  tee -a  './?.fst'`
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'                 |  tee -a  './?.fst'`
 
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.poems-third'       |  tee -a  './?.c' './?.cpp'`
 
 #circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'           |  tee -a  './?.cpp'`
 
-
-circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'              |  tee -a  './?.sh'`
-
+circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'           |  tee -a  './?.sh'`
 
 
 
@@ -1138,26 +1136,27 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'            
 
 
 
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
 
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
-
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
-
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 
-that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___begin'  |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
-
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___scripts'  |  tee -a  './?.sh'`
 
-that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 
 
@@ -1705,9 +1704,9 @@ fi
 
 
 
-if [  !  $that_circuits_crystals___fst_roots__flowers___begin  ]; then
+if [  !  $that_circuits_crystals___fst_roots__flowers___scripts  ]; then
 
-that_circuits_crystals___fst_roots__flowers___begin='yes'
+that_circuits_crystals___fst_roots__flowers___scripts='yes'
 
 
 if [  $that_circuits_starfall___shell_unix  ]; then
@@ -1720,7 +1719,7 @@ if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
-function  that_ways___Fst_roots__flowers___begin
+function  that_ways___fst_roots__flowers___scripts
 
 {
 
@@ -1799,9 +1798,9 @@ echo '$note_silts___tenderness'  |   \
 grep  [^0-9]    >    /dev/null   &&  \
                                      \
                                      \
-$note_silts_switches='no'        ||  \
+note_silts_switches='no'         ||  \
                                      \
-$note_silts_switches='yes'           \
+note_silts_switches='yes'            \
                                      \
 ;                                    \
 
@@ -1907,16 +1906,6 @@ fi
 
 
 
-}
-
-
-
-
-
-
-
-
-
 unset  $that_silts___tenderness
 
 
@@ -1933,9 +1922,28 @@ unset  $that_silts_switches
 
 
 
+}
+
+
+
+
+
+
+
+
+
 fi
 
 
 fi
+
+
+
+
+
+
+that_ways___fst_roots__flowers___scripts
+
+
 
 
