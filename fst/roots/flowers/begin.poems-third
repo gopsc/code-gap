@@ -1,6 +1,23 @@
 
 
+#ifndef added___fst_roots__flowers___begin
+
+#define added___fst_roots__flowers___begin
+
+
+#ifdef that_circuits___test
+
+#ifdef that_circuits_test___fst_roots__flowers___scripts
+
+
+
+
 #include <stdlib.h>
+
+
+
+
+#define that_circuits___island
 
 
 
@@ -9,9 +26,11 @@
 
 
 
-#ifndef added___fst_roots__flowers___begin
+#endif
 
-#define added___fst_roots__flowers___begin
+#endif
+
+
 
 
 #ifdef that_circuits___island
@@ -618,6 +637,25 @@ return  ( int ) 0;
 
 #endif
 
+
+#endif
+
+
+
+
+#ifdef that_circuits___test
+
+#ifdef that_circuits_test___fst_roots__flowers___scripts
+
+
+
+
+#undef that_circuits___island
+
+
+
+
+#endif
 
 #endif
 
