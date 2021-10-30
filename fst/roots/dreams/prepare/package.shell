@@ -74,22 +74,22 @@ circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fs
 
 circuits_crystals___forgiven=`echo  $3                        |  tee -a  './?.fst'`
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
-echo  ''                        >>  './?.fst'
-
-
-
-echo  ','                       >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
-
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
 
-echo  ''                        >>  './?.fst'
 
-echo  ''                        >>  './?.fst'
+circuits_crystals___forgiven=`echo  ','                       |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
+
+circuits_crystals___forgiven=`echo  ''                        |  tee -a  './?.fst'`
 
 
 
