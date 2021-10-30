@@ -1130,6 +1130,29 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.shell'          | 
 
 
 
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+
+that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___begin'  |  tee -a  ‘./?.sh’`
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                        |  tee -a  './?.sh'`
+
+
+
 :<<EOF
 
 cp  ./?.fst.temporary                ./?.fst.convert
@@ -1681,6 +1704,26 @@ that_circuits_crystals___fst_roots__flowers___begin='yes'
 
 
 
+
+
+
+
+
+function  that_ways___Fst_roots__flowers___begin
+
+{
+
+
+
+
+
+
+
+
+
+note_silts_switches='no'
+
+
 note_silts___tenderness=$#
 
 
@@ -1694,7 +1737,104 @@ note_stones___tenderness=$@
 
 
 
+
+
+
+
+
+
+
+if [  ! $note_silts___tenderness  ]; then
+
+
+note_silts_switches='no'
+
+
+fi
+
+
+
+
+
+
+
+
+
+if  [  ! $note_stones___tenderness  ]; then
+
+
+note_silts_switches='no'
+
+
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo '$note_silts___tenderness'  |   \
+                                     \
+grep  [^0-9]    >    /dev/null   &&  \
+                                     \
+                                     \
+$note_silts_switches='no'        ||  \
+                                     \
+$note_silts_switches='yes'           \
+                                     \
+;                                    \
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if [  $note_silts_switches  ==  'no'  ]; then
+
+
+that_circuits_crystals___forgiven=''
+
+
+fi
+
+
+
+
+if [  $note_silts_switches  ==  'yes'  ]; then
+
+
 if [  $that_circuits___test  ]; then
+
+
 
 
 that_ways___fst_branches__flowers___scripts  \
@@ -1730,11 +1870,50 @@ fi
 
 
 
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
 
 
 
 
 fi
+
+
+
+
+
+
+
+
 
 

@@ -132,7 +132,7 @@ fi
 
 
 
-elif [  $note_silts_switches  ==  'yes'  ]; then
+if [  $note_silts_switches  ==  'yes'  ]; then
 
 
 if [  $that_circuits___test  ]; then
