@@ -2,6 +2,65 @@
 
 
 
+that_circuits___island='yes'
+
+
+
+
+that_circuits_mountains___android_termux='yes'
+
+
+that_circuits_starfall___shell_unix='yes'
+
+
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+
+that_circuits___star_fall=shell_unix
+
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+that_circuits___star_fall=shell_unix
+
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+
+that_circuits___star_fall=shell_unix
+
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+that_circuits___star_fall=shell_unix
+
+
+fi
+
+
+
+
 if [  !  $circuits_crystals___fst_roots__lakes_forms_stones___convert  ]; then
 
 circuits_crystals___fst_roots__lakes_forms_stones___convert='yes'
@@ -470,7 +529,7 @@ fi
 
 if [  $that_circuits___island  ]; then
 
-if [  $that_circuits_starfall___fst_roots__dreams_prepare___package  ]; then
+if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
@@ -1517,9 +1576,9 @@ fi
 
 
 
-if [  $that_circuits___test  ]; then
+if [  $that_circuits___island  ]; then
 
-if [  $that_circuits_test___fst_roots__dreams_convert___scripts  ]; then
+if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
@@ -1671,7 +1730,7 @@ fi
 
 if [  $that_circuits___island  ]; then
 
-if [  $that_circuits_starfall___fst_roots__dreams_check___scripts  ]; then
+if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
@@ -1954,196 +2013,6 @@ fi
 
 fi
 
-
-
-
-if [  !  $that_circuits_crystals___fst_roots__dreams_circular___scripts  ]; then
-
-that_circuits_crystals___fst_roots__dreams_circular___scripts='yes'
-
-
-
-
-if [  $that_circuits___test  ]; then
-
-if [  $that_circuits_test___fst_roots__dreams_circulars___scripts  ]; then
-
-
-
-
-if [  !  $that_circuits___island  ]; then
-
-
-that_circuits___island='yes'
-
-
-fi
-
-
-
-
-fi
-
-fi
-
-
-
-
-if [  $that_circuits___island  ]; then
-
-if [  $that_circuits_starfall___shell_unix  ]; then
-
-
-
-
-function that_ways___fst_roots__dreams_circulars___scripts
-
-{
-
-
-
-
-
-
-
-
-
-if  [  -f  './?.fst.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.fst.temporary'`
-
-fi
-
-
-
-
-if  [  -f  './?.poems-third.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.poems-third.temporary'`
-
-fi
-
-
-
-
-:<<EOF
-
-rm ./?.fst.temporary
-
-
-rm ./?.poems-third.temporary
-
-rm ./?.poems-annotetion.temporary
-
-
-rm ./?.shell.temporary
-
-rm ./?.java.temporary
-
-
-rm ./?.visual-basic.temporary
-
-rm ./?.python.temporary
-
-
-
-
-rm ./?.fst.convert
-
-
-rm ./?.poems-third.convert
-
-rm ./?.poems-annotetion.convert
-
-
-rm ./?.shell.convert
-
-rm ./?.java.convert
-
-
-rm ./?.visual-basic.convert
-
-rm ./?.python.convert
-
-EOF
-
-
-
-
-rm ./?.fst
-
-
-rm ./?.c
-
-rm ./?.cpp
-
-
-#rm ./?.sh
-
-rm ./?.java
-
-
-rm ./?.vb
-
-rm ./?.py
-
-
-
-
-
-
-if  [  -f  './?.temporary'  ]; then
-
-circuits_crystals___forgiven=`rm './?.temporary'`
-
-fi
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-fi
-
-fi
-
-
-
-
-if [  $that_circuits___test  ]; then
-
-if [  $that_circuits_test___fst_roots__dreams_circular___scripts  ]; then
-
-
-
-
-if [  $that_circuits___island  ]; then
-
-
-unset $that_circuits___island
-
-
-fi
-
-
-
-
-fi
-
-fi
-
-
-
-
-fi
 
 
 
