@@ -5,6 +5,10 @@ if [  !  $that_circuits_crystals___fst_roots__flowers___scripts  ]; then
 that_circuits_crystals___fst_roots__flowers___scripts='yes'
 
 
+
+
+#if [  $that_circuits___island  ]; then
+
 if [  $that_circuits_starfall___shell_unix  ]; then
 
 
@@ -171,9 +175,9 @@ $note_stones___tenderness                 \
 ;                                         \
 
 
+
+
 fi
-
-
 
 
 fi
@@ -231,6 +235,9 @@ unset  $that_silts_switches
 fi
 
 
+
+
 fi
 
+#fi
 
