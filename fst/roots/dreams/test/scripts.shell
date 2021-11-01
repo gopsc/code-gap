@@ -48,13 +48,22 @@ function that_ways___fst_roots__dreams_test___scripts
 
 
 
+:<<EOF
+
+     ./?.temporary
+
+cp   ./?.temporary        ./?
+
+EOF
 
 
-#./?.temporary
+:<<EOF
 
-#bash ./?.sh.temporary
+bash ./?.shell.temporary
 
+cp   ./?.shell.temporary  ./?.shell
 
+EOF
 
 
 
