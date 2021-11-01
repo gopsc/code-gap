@@ -338,7 +338,7 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'                
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'     |  tee -a  './?.c' './?.cpp'`
 
-#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'           |  tee -a  './?.cpp'`
+#circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.arduino'         |  tee -a  './?.cpp'`
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'           |  tee -a  './?.sh'`
 
