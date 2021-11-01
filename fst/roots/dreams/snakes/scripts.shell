@@ -67,10 +67,11 @@ c++  ./?.cpp/
 
 EOF
 
+:<<EOF
 
 cp ./?.sh ./?.shell.temporary
 
-
+EOF
 
 
 
