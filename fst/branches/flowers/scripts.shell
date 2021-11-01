@@ -51,7 +51,7 @@ function that_ways___fst_branches__flowers___scripts ()
 
 
 
-note_stones___tenderness=$@
+note_stones___tenderness=$*
 
 
 

@@ -37,7 +37,7 @@ note_silts_switches='yes'
 note_silts___tenderness=$#
 
 
-note_stones___tenderness=$@
+note_stones___tenderness=$*
 
 
 

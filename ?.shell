@@ -340,7 +340,58 @@ fi
 
 
 
-circuits_crystals___forgiven=''
+if [  !  $that_circuits_crystals___fst_roots__dreams_prepare___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_prepare___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_prepare___scripts  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_prepare___scripts
+
+{
+
+echo hello
+
+
+
+
+
+
+
+that_circuits_crystals___forgiven=''
 
 
 
@@ -393,6 +444,104 @@ tee   -a                        \
 './?.py'                        \
                                 \
 `
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_prepare___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+
+if [  !  $that_circuits_crystals___fst_roots__dreams_prepare___package  ]; then
+
+that_circuits_crystals___fst_roots__dreams_prepare___package='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_prepare___package  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_prepare___package
+
+{
+
+
+
+
+
 
 
 
@@ -787,6 +936,98 @@ EOF
 
 
 
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_prepare___package  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+if  [  !  $that_circuits_crystals___fst_roots__dreams_package___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_package___scripts='yes'
+
+
+
+
+if  [  $that_circuits___test  ]; then
+
+if  [  $that_circuits_test___fst_roots__dreams_package___scripts  ]; then
+
+
+
+
+if  [  ! $that_circuits___island  ]; then
+
+
+$that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if  [  $that_circuits___island  ]; then
+
+if  [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_package___scripts
+
+{
+
+
+
+
+
+
+
 :<<EOF
 
 cat './fst/roots/mountains/prepare/star-fall/poems-third-common.poems-third             >>  './?.fst'
@@ -946,7 +1187,6 @@ circuits_crystals___forgiven=`cat  './fst/roots/trees/files/snakes.shell'  |  te
 EOF
 
 
-
 circuits_crystals___forgiven=`cat './fst/roots/dreams/prepare/scripts.shell'     |  tee -a  './?.sh'`
 
 circuits_crystals___forgiven=`cat './fst/roots/dreams/prepare/package.shell'     |  tee -a  './?.sh'`
@@ -969,7 +1209,9 @@ circuits_crystals___forgiven=`cat './fst/roots/dreams/snakes/scripts.shell'     
 circuits_crystals___forgiven=`cat './fst/roots/dreams/test/scripts.shell'        |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/circulars/scripts.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/circular/scripts.shell'    |  tee -a  './?.sh'`
+
+
 :<<EOF
 
 
@@ -1127,7 +1369,7 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts'                
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.poems-third'     |  tee -a  './?.c' './?.cpp'`
 
-#circuits_crystals___forgiven=`cat  './fst/roots/flowers/begin.arduino'           |  tee -a  './?.cpp'`
+#circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.arduino'         |  tee -a  './?.cpp'`
 
 circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'           |  tee -a  './?.sh'`
 
@@ -1139,6 +1381,111 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'          
 
 
 
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_package___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+if [  ! $that_circuits_crystals___fst_roots__dreams_package___annotetion  ]; then
+
+that_circuits_crystals___fst_roots__dreams_package___annotetion='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_package___annotetion  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_package___annotetion
+
+{
+
+
+
+
+
+
+
+
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
+
+
+that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___scripts  $*'  |  tee -a  './?.sh'`
+
 that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
@@ -1149,17 +1496,96 @@ that_circuits_crystals___forgiven=`echo  ''                                     
 that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 
-that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___scripts'  |  tee -a  './?.sh'`
-
-that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
-
-that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 
-that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
-that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_package___annotetion  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+if [  !  $that_circuits_crystals___fst_roots__dreams_convert___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_convert___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_convert___scripts  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___Fst_roots__dreams_convert___scripts
+
+{
 
 
 :<<EOF
@@ -1226,6 +1652,189 @@ EOF
 
 
 
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_convert___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+if [  !  $that_circuits_crystals___fst_roots__dreams_check___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_check___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_check___scripts  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_check___scripts
+
+{
+
+
+that_circuits_crystals___forgiven=''
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_check___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+if [  !  $that_circuits_crystals___fst_roots__dreams_snakes___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_snakes___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_snakes___scripts  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_snakes___scripts
+
+{
+
+
+
+
+
+
+
+
+
 cc   ./?.c  -o  ./?.temporary
 
 :<<EOF
@@ -1242,12 +1851,217 @@ c++  ./?.cpp/
 
 EOF
 
+:<<EOF
+
+cp ./?.sh ./?.shell.temporary
+
+EOF
 
 
 
-#./?.temporary
 
-#bash ./?.sh
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_snakes___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+if [  !  $that_circuits_crystals___fst_roots__dreams_test___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_test___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dream_test___scripts  ]; then
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_crystals___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_test___scripts
+
+{
+
+
+
+
+
+
+
+:<<EOF
+
+     ./?.temporary
+
+cp   ./?.temporary        ./?
+
+EOF
+
+
+:<<EOF
+
+bash ./?.shell.temporary
+
+cp   ./?.shell.temporary  ./?.shell
+
+EOF
+
+
+
+
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_test___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
+
+
+
+
+if [  !  $that_circuits_crystals___fst_roots__dreams_circular___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_circular___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_circulars___scripts  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_circulars___scripts
+
+{
+
+
+
 
 
 
@@ -1344,6 +2158,52 @@ circuits_crystals___forgiven=`rm './?.temporary'`
 
 fi
 
+
+
+
+
+
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_circular___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
 
 
 
@@ -1525,10 +2385,7 @@ fi
 
 
 
-
-
 if [  ! $that_circuits_crystals___fst_branches__flowers___scripts  ]; then
-
 
 that_circuits_crystals___fst_branches__flowers___scripts='yes'
 
@@ -1537,13 +2394,7 @@ that_circuits_crystals___fst_branches__flowers___scripts='yes'
 
 if [  $that_circuits___test  ]; then
 
-
 if [  $that_circuits_test___fst_branches__flowers___scripts  ]; then
-
-
-
-
-
 
 
 
@@ -1551,7 +2402,7 @@ if [  $that_circuits_test___fst_branches__flowers___scripts  ]; then
 if [  !  $that_circuits___island  ]; then
 
 
-that_circuits___island=''
+that_circuits___island='yes'
 
 
 fi
@@ -1559,24 +2410,7 @@ fi
 
 
 
-if [  !  $that_circuits_starfall___shell_unix  ]; then
-
-
-that_circuits_starfall___shell_unix=''
-
-
 fi
-
-
-
-
-
-
-
-
-
-fi
-
 
 fi
 
@@ -1585,13 +2419,7 @@ fi
 
 if [  $that_circuits___island  ]; then
 
-
 if [  $that_circuits_starfall___shell_unix  ]; then
-
-
-
-
-
 
 
 
@@ -1608,6 +2436,7 @@ function that_ways___fst_branches__flowers___scripts ()
 
 
 
+note_stones___tenderness=$*
 
 
 
@@ -1624,7 +2453,38 @@ function that_ways___fst_branches__flowers___scripts ()
 
 
 
-echo ''
+
+
+
+
+
+
+
+
+
+that_ways___fst_roots__dreams_prepare___scripts  ''
+
+that_ways___fst_roots__dreams_prepare___package  $note_stones___tenderness
+
+
+that_ways___fst_roots__dreams_package___scripts  ''
+
+that_ways___fst_roots__dreams_package___annotetion  ''
+
+
+that_ways___fst_roots__dreams_convert___scripts  ''
+
+
+that_ways___fst_roots__dreams_check___scripts  ''
+
+
+that_ways___fst_roots__dreams_snakes___scripts  ''
+
+
+that_ways___fst_roots__dreams_test___scripts  ''
+
+
+that_ways___fst_roots__dreams_circulars___scripts  ''
 
 
 
@@ -1670,32 +2530,19 @@ fi
 
 if [ $that_circuits___test ]; then
 
-
 if [ $that_circuits_starfall___shell_unix ]; then
-
-
-
-
-
 
 
 
 
 unset  $that_circuits___island
 
-
 unset  $that_circuits_test___fst_branches__flowers___scripts
 
 
 
 
-
-
-
-
-
 fi
-
 
 fi
 
@@ -1710,6 +2557,10 @@ if [  !  $that_circuits_crystals___fst_roots__flowers___scripts  ]; then
 
 that_circuits_crystals___fst_roots__flowers___scripts='yes'
 
+
+
+
+#if [  $that_circuits___island  ]; then
 
 if [  $that_circuits_starfall___shell_unix  ]; then
 
@@ -1733,13 +2584,13 @@ function  that_ways___fst_roots__flowers___scripts
 
 
 
-note_silts_switches='no'
+note_silts_switches='yes'
 
 
 note_silts___tenderness=$#
 
 
-note_stones___tenderness=$@
+note_stones___tenderness=$*
 
 
 
@@ -1754,7 +2605,7 @@ note_stones___tenderness=$@
 
 
 
-
+:<<EOF
 
 if [  ! $note_silts___tenderness  ]; then
 
@@ -1806,7 +2657,7 @@ note_silts_switches='yes'            \
                                      \
 ;                                    \
 
-
+EOF
 
 
 
@@ -1849,10 +2700,8 @@ if [  $that_circuits___test  ]; then
 
 
 
-that_ways___fst_branches__flowers___scripts  \
+that_ways___fst_branches__flowers___cain     \
                                              \
-                                             \
-$note_silts___tenderness                     \
                                              \
 $note_stones___tenderness                    \
                                              \
@@ -1867,19 +2716,17 @@ fi
 if [  $that_circuits___island  ]; then
 
 
-that_ways___fst_branches__flowers___cain  \
-                                          \
-                                          \
-$note_silts___tenderness                  \
-                                          \
-$note_stones___tenderness                 \
-                                          \
-;                                         \
+that_ways___fst_branches__flowers___scripts  \
+                                             \
+                                             \
+$note_stones___tenderness                    \
+                                             \
+;                                            \
+
+
 
 
 fi
-
-
 
 
 fi
@@ -1937,14 +2784,17 @@ unset  $that_silts_switches
 fi
 
 
+
+
 fi
 
+#fi
 
 
 
 
 
-that_ways___fst_roots__flowers___scripts
+that_ways___fst_roots__flowers___scripts  $*
 
 
 

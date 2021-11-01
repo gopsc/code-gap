@@ -62,7 +62,7 @@ that_circuits_crystals___forgiven=`echo  ''                                     
 that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
 
-that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___scripts'  |  tee -a  './?.sh'`
+that_circuits_crystals___forgiven=`echo  'that_ways___fst_roots__flowers___scripts  $*'  |  tee -a  './?.sh'`
 
 that_circuits_crystals___forgiven=`echo  ''                                          |  tee -a  './?.sh'`
 
