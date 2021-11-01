@@ -1,6 +1,57 @@
 
 
-circuits_crystals___forgiven=''
+if [  !  $that_circuits_crystals___fst_roots__dreams_prepare___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_prepare___scripts='yes'
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_prepare___scripts  ]; then
+
+
+
+
+if [  !  $that_circuits___island  ]; then
+
+
+that_circuits___island='yes'
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+if [  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_prepare___scripts
+
+{
+
+
+
+
+
+
+
+
+
+that_circuits_crystals___forgiven=''
 
 
 
@@ -53,5 +104,52 @@ tee   -a                        \
 './?.py'                        \
                                 \
 `
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+if [  $that_circuits___test  ]; then
+
+if [  $that_circuits_test___fst_roots__dreams_prepare___scripts  ]; then
+
+
+
+
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
 
 
