@@ -52,7 +52,7 @@ note_stones___tenderness=$@
 
 
 
-
+:<<EOF
 
 if [  ! $note_silts___tenderness  ]; then
 
@@ -104,7 +104,7 @@ note_silts_switches='yes'            \
                                      \
 ;                                    \
 
-
+EOF
 
 
 
@@ -150,8 +150,6 @@ if [  $that_circuits___test  ]; then
 that_ways___fst_branches__flowers___cain     \
                                              \
                                              \
-$note_silts___tenderness                     \
-                                             \
 $note_stones___tenderness                    \
                                              \
 ;                                            \
@@ -167,8 +165,6 @@ if [  $that_circuits___island  ]; then
 
 that_ways___fst_branches__flowers___scripts  \
                                              \
-                                             \
-$note_silts___tenderness                     \
                                              \
 $note_stones___tenderness                    \
                                              \
