@@ -1,37 +1,26 @@
 
 
-if [  !  $circuits_crystals___fst_roots__lakes_forms_stones___convert  ]; then
+if [  !  $that_circuits_crystals___fst_roots__lakes_forms_stones___convert  ]; then
 
-circuits_crystals___fst_roots__lakes_forms_stones___convert='yes'
-
-
+that_circuits_crystals___fst_roots__lakes_forms_stones___convert='yes'
 
 
 
 
-if [  $circuits___test ]; then
 
 
-if [  $circuits_test___fst_roots__lakes_forms_stones___convert  ]; then
+if [  $that_circuits___test ]; then
 
 
-
-
-if [  !  $circuits___island  ]; then
-
-
-circuits___island='yes'
-
-
-fi
+if [  $that_circuits_test___fst_roots__lakes_forms_stones___convert  ]; then
 
 
 
 
-if [  !  $circuits_starfall___shell_unix  ]; then
+if [  !  $that_circuits___island  ]; then
 
 
-circuits_starfall___shell_unix='yes'
+that_circuits___island='yes'
 
 
 fi
@@ -47,9 +36,9 @@ fi
 
 
 
-if [  $circuits___island  ]; then
+if [  $that_circuits___island  ]; then
 
-if [  $circuits_starfall___shell_unix  ]; then
+if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
@@ -57,11 +46,11 @@ if [  $circuits_starfall___shell_unix  ]; then
 function ways___fst_roots__lakes_forms_stones___convert {
 
 
-:<<EOF
 
-echo 'convert'
 
-EOF
+that_circuits_crystals___forgiven='convert'
+
+
 
 
 }
@@ -75,15 +64,21 @@ fi
 fi
 
 
-if [  $circuits___test  ]; then
+if [  $that_circuits___test  ]; then
 
 
-if [  $circuits_test___fst_roots__lakes_forms_stones___convert  ]; then
+if [  $that_circuits_test___fst_roots__lakes_forms_stones___convert  ]; then
 
 
 
 
-unset $circuits___island
+if [  $that_circuits___island  ]; then
+
+
+unset $that_circuits___island
+
+
+fi
 
 
 
