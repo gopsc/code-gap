@@ -68,6 +68,9 @@ c++  ./?.cpp/
 EOF
 
 
+cp ./?.sh ./?.shell.temporary
+
+
 
 
 
