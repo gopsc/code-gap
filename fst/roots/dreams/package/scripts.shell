@@ -1,5 +1,44 @@
 
 
+if  [  !  $that_circuits_crystals___fst_roots__dreams_package___scripts  ]; then
+
+that_circuits_crystals___fst_roots__dreams_package___scripts='yes'
+
+
+
+
+if  [  !  $that_circuits___test  ]; then
+
+if  [  !  $that_circuits_test___fst_roots__dreams_package___scripts  ]; then
+
+
+$that_circuits___island='yes'
+
+
+fi
+
+fi
+
+
+
+
+if  [  !  $that_circuits___island  ]; then
+
+if  [  !  $that_circuits_starfall___shell_unix  ]; then
+
+
+
+
+function that_ways___fst_roots__dreams_package___scripts
+
+{
+
+
+
+
+
+
+
 :<<EOF
 
 cat './fst/roots/mountains/prepare/star-fall/poems-third-common.poems-third             >>  './?.fst'
@@ -345,4 +384,22 @@ circuits_crystals___forgiven=`cat  './fst/roots/flowers/scripts.shell'          
 
 
 
+
+
+
+
+
+}
+
+
+
+
+fi
+
+fi
+
+
+
+
+fi
 
