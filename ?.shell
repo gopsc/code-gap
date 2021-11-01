@@ -383,7 +383,7 @@ function that_ways___fst_roots__dreams_prepare___scripts
 
 {
 
-echo hello
+
 
 
 
@@ -1583,7 +1583,7 @@ if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
-function that_ways___Fst_roots__dreams_convert___scripts
+function that_ways___fst_roots__dreams_convert___scripts
 
 {
 
@@ -1937,7 +1937,7 @@ fi
 
 if [  $that_circuits___island  ]; then
 
-if [  $that_circuits_crystals___shell_unix  ]; then
+if [  $that_circuits_starfall___shell_unix  ]; then
 
 
 
@@ -1950,6 +1950,9 @@ function that_ways___fst_roots__dreams_test___scripts
 
 
 
+
+
+that_circuits_crystals___forgiven=''
 
 
 :<<EOF
