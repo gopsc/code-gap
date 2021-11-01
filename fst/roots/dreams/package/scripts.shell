@@ -230,7 +230,7 @@ circuits_crystals___forgiven=`cat './fst/roots/dreams/snakes/scripts.shell'     
 circuits_crystals___forgiven=`cat './fst/roots/dreams/test/scripts.shell'        |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/circulars/scripts.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/circular/scripts.shell'    |  tee -a  './?.sh'`
 
 
 :<<EOF

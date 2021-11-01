@@ -376,14 +376,14 @@ if [  $that_circuits___island  ]; then
 
 if [  $that_circuits_starfall___shell_unix  ]; then
 
-
+echo hi
 
 
 function that_ways___fst_roots__dreams_prepare___scripts
 
 {
 
-
+echo hello
 
 
 
@@ -1209,7 +1209,7 @@ circuits_crystals___forgiven=`cat './fst/roots/dreams/snakes/scripts.shell'     
 circuits_crystals___forgiven=`cat './fst/roots/dreams/test/scripts.shell'        |  tee -a  './?.sh'`
 
 
-circuits_crystals___forgiven=`cat './fst/roots/dreams/circulars/scripts.shell'   |  tee -a  './?.sh'`
+circuits_crystals___forgiven=`cat './fst/roots/dreams/circular/scripts.shell'    |  tee -a  './?.sh'`
 
 
 :<<EOF
@@ -2261,23 +2261,23 @@ function that_ways___fst_branches__flowers___scripts ()
 
 
 
-that_ways___fst_roots__dreams_prepare___scripts
+that_ways___fst_roots__dreams_prepare___scripts  ''
 
-that_ways___fst_roots__dreams_prepare___package
-
-
-that_ways___fst_roots__dreams_package___scripts
-
-that_ways___fst_roots__dreams_package___annotetion
+that_ways___fst_roots__dreams_prepare___package  ''
 
 
-that_ways___fst_roots__dreams_convert___scripts
+that_ways___fst_roots__dreams_package___scripts  ''
+
+that_ways___fst_roots__dreams_package___annotetion  ''
 
 
-that_ways___fst_roots__dreams_check___scripts
+that_ways___fst_roots__dreams_convert___scripts  ''
 
 
-that_ways___fst_roots__dreams_snakes___scripts
+that_ways___fst_roots__dreams_check___scripts  ''
+
+
+that_ways___fst_roots__dreams_snakes___scripts  ''
 
 
 that_ways___fst_roots__dreams_test___scripts  ''
